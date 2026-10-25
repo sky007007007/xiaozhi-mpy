@@ -1,0 +1,667 @@
+mpy_source_file: extracted/DS1302.py.mpy
+source_file: DS1302.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[55] (* for static qstrs):
+    'DS1302.py' 
+    '<module>' *
+    '*' *
+    'machine' 
+    'DS1302' 
+    '__init__' *
+    'clk' 
+    'dio' 
+    'cs' 
+    'init' 
+    'OUT' 
+    'DecToHex' 
+    'HexToDec' 
+    'write_byte' 
+    'value' *
+    'read_byte' 
+    'IN' 
+    'getReg' 
+    'setReg' 
+    'wr' 
+    'start' *
+    'stop' *
+    'Second' 
+    'Minute' 
+    'Hour' 
+    'Weekday' 
+    'Day' 
+    'Month' 
+    'Year' 
+    'DateTime' 
+    'ram' 
+    'DS1302_REG_SECOND' 
+    'DS1302_REG_MINUTE' 
+    'DS1302_REG_HOUR' 
+    'DS1302_REG_DAY' 
+    'DS1302_REG_MONTH' 
+    'DS1302_REG_WEEKDAY' 
+    'DS1302_REG_YEAR' 
+    'DS1302_REG_WP' 
+    'DS1302_REG_CTRL' 
+    'DS1302_REG_RAM' 
+    '__name__' *
+    '__module__' *
+    '__qualname__' *
+    'self' *
+    'Pin' 
+    'dat' 
+    'reg' 
+    'second' 
+    'minute' 
+    'hour' 
+    'weekday' 
+    'day' 
+    'month' 
+    'year' 
+obj_table: [None]
+simple_name: <module>
+  raw bytecode: 83 10:18:01:48:25:25:25:25:25:25:25:25:25:45:80:10:02:2a:01:1b:03:69:22:81:00:16:1f:22:81:02:16:20:22:81:04:16:21:22:81:06:16:22:22:81:08:16:23:22:81:0a:16:24:22:81:0c:16:25:22:81:0e:16:26:22:81:10:16:27:22:81:40:16:28:54:32:00:10:04:34:02:16:04:51:63
+  prelude: (3, 0, 0, 0, 0, 0)
+  args: []
+  line info: 48:25:25:25:25:25:25:25:25:25:45
+  80          LOAD_CONST_SMALL_INT 0 
+  10:02       LOAD_CONST_STRING *
+  2a:01       BUILD_TUPLE 1
+  1b:03       IMPORT_NAME machine
+  69          IMPORT_STAR 
+  22:81:00    LOAD_CONST_SMALL_INT 128
+  16:1f       STORE_NAME DS1302_REG_SECOND
+  22:81:02    LOAD_CONST_SMALL_INT 130
+  16:20       STORE_NAME DS1302_REG_MINUTE
+  22:81:04    LOAD_CONST_SMALL_INT 132
+  16:21       STORE_NAME DS1302_REG_HOUR
+  22:81:06    LOAD_CONST_SMALL_INT 134
+  16:22       STORE_NAME DS1302_REG_DAY
+  22:81:08    LOAD_CONST_SMALL_INT 136
+  16:23       STORE_NAME DS1302_REG_MONTH
+  22:81:0a    LOAD_CONST_SMALL_INT 138
+  16:24       STORE_NAME DS1302_REG_WEEKDAY
+  22:81:0c    LOAD_CONST_SMALL_INT 140
+  16:25       STORE_NAME DS1302_REG_YEAR
+  22:81:0e    LOAD_CONST_SMALL_INT 142
+  16:26       STORE_NAME DS1302_REG_WP
+  22:81:10    LOAD_CONST_SMALL_INT 144
+  16:27       STORE_NAME DS1302_REG_CTRL
+  22:81:40    LOAD_CONST_SMALL_INT 192
+  16:28       STORE_NAME DS1302_REG_RAM
+  54          LOAD_BUILD_CLASS 
+  32:00       MAKE_FUNCTION 0
+  10:04       LOAD_CONST_STRING DS1302
+  34:02       CALL_FUNCTION 2
+  16:04       STORE_NAME DS1302
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [DS1302]
+simple_name: DS1302
+  raw bytecode: 161 08:4a:04:88:0e:84:07:64:64:84:07:84:09:84:07:64:60:64:40:64:20:64:20:68:60:68:60:68:60:68:60:68:60:68:60:68:60:88:0c:11:29:16:2a:10:04:16:2b:32:00:16:05:32:01:16:0b:32:02:16:0c:32:03:16:0d:32:04:16:0f:32:05:16:11:32:06:16:12:32:07:16:13:32:08:16:14:32:09:16:15:51:2a:01:53:33:0a:16:16:51:2a:01:53:33:0b:16:17:51:2a:01:53:33:0c:16:18:51:2a:01:53:33:0d:16:19:51:2a:01:53:33:0e:16:1a:51:2a:01:53:33:0f:16:1b:51:2a:01:53:33:10:16:1c:51:2a:01:53:33:11:16:1d:51:2a:01:53:33:12:16:1e:51:63
+  prelude: (2, 0, 0, 0, 0, 0)
+  args: []
+  line info: 88:0e:84:07:64:64:84:07:84:09:84:07:64:60:64:40:64:20:64:20:68:60:68:60:68:60:68:60:68:60:68:60:68:60:88:0c
+  11:29       LOAD_NAME __name__
+  16:2a       STORE_NAME __module__
+  10:04       LOAD_CONST_STRING DS1302
+  16:2b       STORE_NAME __qualname__
+  32:00       MAKE_FUNCTION 0
+  16:05       STORE_NAME __init__
+  32:01       MAKE_FUNCTION 1
+  16:0b       STORE_NAME DecToHex
+  32:02       MAKE_FUNCTION 2
+  16:0c       STORE_NAME HexToDec
+  32:03       MAKE_FUNCTION 3
+  16:0d       STORE_NAME write_byte
+  32:04       MAKE_FUNCTION 4
+  16:0f       STORE_NAME read_byte
+  32:05       MAKE_FUNCTION 5
+  16:11       STORE_NAME getReg
+  32:06       MAKE_FUNCTION 6
+  16:12       STORE_NAME setReg
+  32:07       MAKE_FUNCTION 7
+  16:13       STORE_NAME wr
+  32:08       MAKE_FUNCTION 8
+  16:14       STORE_NAME start
+  32:09       MAKE_FUNCTION 9
+  16:15       STORE_NAME stop
+  51          LOAD_CONST_NONE 
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:0a       MAKE_FUNCTION_DEFARGS 10
+  16:16       STORE_NAME Second
+  51          LOAD_CONST_NONE 
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:0b       MAKE_FUNCTION_DEFARGS 11
+  16:17       STORE_NAME Minute
+  51          LOAD_CONST_NONE 
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:0c       MAKE_FUNCTION_DEFARGS 12
+  16:18       STORE_NAME Hour
+  51          LOAD_CONST_NONE 
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:0d       MAKE_FUNCTION_DEFARGS 13
+  16:19       STORE_NAME Weekday
+  51          LOAD_CONST_NONE 
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:0e       MAKE_FUNCTION_DEFARGS 14
+  16:1a       STORE_NAME Day
+  51          LOAD_CONST_NONE 
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:0f       MAKE_FUNCTION_DEFARGS 15
+  16:1b       STORE_NAME Month
+  51          LOAD_CONST_NONE 
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:10       MAKE_FUNCTION_DEFARGS 16
+  16:1c       STORE_NAME Year
+  51          LOAD_CONST_NONE 
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:11       MAKE_FUNCTION_DEFARGS 17
+  16:1d       STORE_NAME DateTime
+  51          LOAD_CONST_NONE 
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:12       MAKE_FUNCTION_DEFARGS 18
+  16:1e       STORE_NAME ram
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [__init__, DecToHex, HexToDec, write_byte, read_byte, getReg, setReg, wr, start, stop, Second, Minute, Hour, Weekday, Day, Month, Year, DateTime, ram]
+simple_name: __init__
+  raw bytecode: 52 b0:04:16:05:2c:06:07:08:80:0f:24:24:24:2c:b1:b0:18:06:b2:b0:18:07:b3:b0:18:08:b0:13:06:14:09:12:2d:13:0a:36:01:59:b0:13:08:14:09:12:2d:13:0a:36:01:59:51:63
+  prelude: (7, 0, 0, 4, 0, 0)
+  args: ['self', 'clk', 'dio', 'cs']
+  line info: 80:0f:24:24:24:2c
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:06       STORE_ATTR clk
+  b2          LOAD_FAST 2 
+  b0          LOAD_FAST 0 
+  18:07       STORE_ATTR dio
+  b3          LOAD_FAST 3 
+  b0          LOAD_FAST 0 
+  18:08       STORE_ATTR cs
+  b0          LOAD_FAST 0 
+  13:06       LOAD_ATTR clk
+  14:09       LOAD_METHOD init
+  12:2d       LOAD_GLOBAL Pin
+  13:0a       LOAD_ATTR OUT
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:08       LOAD_ATTR cs
+  14:09       LOAD_METHOD init
+  12:2d       LOAD_GLOBAL Pin
+  13:0a       LOAD_ATTR OUT
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: DecToHex
+  raw bytecode: 17 22:0a:0b:2c:2e:80:16:b1:8a:f6:90:f4:b1:8a:f8:f2:63
+  prelude: (5, 0, 0, 2, 0, 0)
+  args: ['self', 'dat']
+  line info: 80:16
+  b1          LOAD_FAST 1 
+  8a          LOAD_CONST_SMALL_INT 10 
+  f6          BINARY_OP 31 __floordiv__ 
+  90          LOAD_CONST_SMALL_INT 16 
+  f4          BINARY_OP 29 __mul__ 
+  b1          LOAD_FAST 1 
+  8a          LOAD_CONST_SMALL_INT 10 
+  f8          BINARY_OP 33 __mod__ 
+  f2          BINARY_OP 27 __add__ 
+  63          RETURN_VALUE 
+  children: []
+simple_name: HexToDec
+  raw bytecode: 17 22:0a:0c:2c:2e:80:19:b1:90:f6:8a:f4:b1:90:f8:f2:63
+  prelude: (5, 0, 0, 2, 0, 0)
+  args: ['self', 'dat']
+  line info: 80:19
+  b1          LOAD_FAST 1 
+  90          LOAD_CONST_SMALL_INT 16 
+  f6          BINARY_OP 31 __floordiv__ 
+  8a          LOAD_CONST_SMALL_INT 10 
+  f4          BINARY_OP 29 __mul__ 
+  b1          LOAD_FAST 1 
+  90          LOAD_CONST_SMALL_INT 16 
+  f8          BINARY_OP 33 __mod__ 
+  f2          BINARY_OP 27 __add__ 
+  63          RETURN_VALUE 
+  children: []
+simple_name: write_byte
+  raw bytecode: 69 3a:12:0d:2c:2e:80:1c:2c:25:2d:29:b0:13:07:14:09:12:2d:13:0a:36:01:59:80:42:63:57:c2:b0:13:07:14:0e:b1:b2:f1:81:ef:36:01:59:b0:13:06:14:0e:81:36:01:59:b0:13:06:14:0e:80:36:01:59:81:e5:57:88:d7:43:18:59:51:63
+  prelude: (8, 0, 0, 2, 0, 0)
+  args: ['self', 'dat']
+  line info: 80:1c:2c:25:2d:29
+  b0          LOAD_FAST 0 
+  13:07       LOAD_ATTR dio
+  14:09       LOAD_METHOD init
+  12:2d       LOAD_GLOBAL Pin
+  13:0a       LOAD_ATTR OUT
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  80          LOAD_CONST_SMALL_INT 0 
+  42:63       JUMP 35
+  57          DUP_TOP 
+  c2          STORE_FAST 2 
+  b0          LOAD_FAST 0 
+  13:07       LOAD_ATTR dio
+  14:0e       LOAD_METHOD value
+  b1          LOAD_FAST 1 
+  b2          LOAD_FAST 2 
+  f1          BINARY_OP 26 __rshift__ 
+  81          LOAD_CONST_SMALL_INT 1 
+  ef          BINARY_OP 24 __and__ 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:06       LOAD_ATTR clk
+  14:0e       LOAD_METHOD value
+  81          LOAD_CONST_SMALL_INT 1 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:06       LOAD_ATTR clk
+  14:0e       LOAD_METHOD value
+  80          LOAD_CONST_SMALL_INT 0 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  81          LOAD_CONST_SMALL_INT 1 
+  e5          BINARY_OP 14 __iadd__ 
+  57          DUP_TOP 
+  88          LOAD_CONST_SMALL_INT 8 
+  d7          BINARY_OP 0 __lt__ 
+  43:18       POP_JUMP_IF_TRUE -40
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: read_byte
+  raw bytecode: 71 31:14:0f:2c:80:23:22:2c:25:2c:29:31:80:c1:b0:13:07:14:09:12:2d:13:10:36:01:59:80:42:62:57:c2:b1:b0:13:07:14:0e:36:00:b2:f0:ed:c1:b0:13:06:14:0e:81:36:01:59:b0:13:06:14:0e:80:36:01:59:81:e5:57:88:d7:43:19:59:b1:63
+  prelude: (7, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:23:22:2c:25:2c:29:31
+  80          LOAD_CONST_SMALL_INT 0 
+  c1          STORE_FAST 1 
+  b0          LOAD_FAST 0 
+  13:07       LOAD_ATTR dio
+  14:09       LOAD_METHOD init
+  12:2d       LOAD_GLOBAL Pin
+  13:10       LOAD_ATTR IN
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  80          LOAD_CONST_SMALL_INT 0 
+  42:62       JUMP 34
+  57          DUP_TOP 
+  c2          STORE_FAST 2 
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  13:07       LOAD_ATTR dio
+  14:0e       LOAD_METHOD value
+  36:00       CALL_METHOD 0
+  b2          LOAD_FAST 2 
+  f0          BINARY_OP 25 __lshift__ 
+  ed          BINARY_OP 22 __or__ 
+  c1          STORE_FAST 1 
+  b0          LOAD_FAST 0 
+  13:06       LOAD_ATTR clk
+  14:0e       LOAD_METHOD value
+  81          LOAD_CONST_SMALL_INT 1 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:06       LOAD_ATTR clk
+  14:0e       LOAD_METHOD value
+  80          LOAD_CONST_SMALL_INT 0 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  81          LOAD_CONST_SMALL_INT 1 
+  e5          BINARY_OP 14 __iadd__ 
+  57          DUP_TOP 
+  88          LOAD_CONST_SMALL_INT 8 
+  d7          BINARY_OP 0 __lt__ 
+  43:19       POP_JUMP_IF_TRUE -39
+  59          POP_TOP 
+  b1          LOAD_FAST 1 
+  63          RETURN_VALUE 
+  children: []
+simple_name: getReg
+  raw bytecode: 44 2a:12:11:2c:2f:80:2c:29:27:26:29:b0:13:08:14:0e:81:36:01:59:b0:14:0d:b1:36:01:59:b0:14:0f:36:00:c2:b0:13:08:14:0e:80:36:01:59:b2:63
+  prelude: (6, 0, 0, 2, 0, 0)
+  args: ['self', 'reg']
+  line info: 80:2c:29:27:26:29
+  b0          LOAD_FAST 0 
+  13:08       LOAD_ATTR cs
+  14:0e       LOAD_METHOD value
+  81          LOAD_CONST_SMALL_INT 1 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:0d       LOAD_METHOD write_byte
+  b1          LOAD_FAST 1 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:0f       LOAD_METHOD read_byte
+  36:00       CALL_METHOD 0
+  c2          STORE_FAST 2 
+  b0          LOAD_FAST 0 
+  13:08       LOAD_ATTR cs
+  14:0e       LOAD_METHOD value
+  80          LOAD_CONST_SMALL_INT 0 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b2          LOAD_FAST 2 
+  63          RETURN_VALUE 
+  children: []
+simple_name: setReg
+  raw bytecode: 45 2b:12:12:2c:2f:2e:80:33:29:27:27:b0:13:08:14:0e:81:36:01:59:b0:14:0d:b1:36:01:59:b0:14:0d:b2:36:01:59:b0:13:08:14:0e:80:36:01:59:51:63
+  prelude: (6, 0, 0, 3, 0, 0)
+  args: ['self', 'reg', 'dat']
+  line info: 80:33:29:27:27
+  b0          LOAD_FAST 0 
+  13:08       LOAD_ATTR cs
+  14:0e       LOAD_METHOD value
+  81          LOAD_CONST_SMALL_INT 1 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:0d       LOAD_METHOD write_byte
+  b1          LOAD_FAST 1 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:0d       LOAD_METHOD write_byte
+  b2          LOAD_FAST 2 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:08       LOAD_ATTR cs
+  14:0e       LOAD_METHOD value
+  80          LOAD_CONST_SMALL_INT 0 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: wr
+  raw bytecode: 40 33:10:13:2c:2f:2e:80:39:29:28:b0:14:12:12:26:80:36:02:59:b0:14:12:b1:b2:36:02:59:b0:14:12:12:26:22:81:00:36:02:59:51:63
+  prelude: (7, 0, 0, 3, 0, 0)
+  args: ['self', 'reg', 'dat']
+  line info: 80:39:29:28
+  b0          LOAD_FAST 0 
+  14:12       LOAD_METHOD setReg
+  12:26       LOAD_GLOBAL DS1302_REG_WP
+  80          LOAD_CONST_SMALL_INT 0 
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:12       LOAD_METHOD setReg
+  b1          LOAD_FAST 1 
+  b2          LOAD_FAST 2 
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:12       LOAD_METHOD setReg
+  12:26       LOAD_GLOBAL DS1302_REG_WP
+  22:81:00    LOAD_CONST_SMALL_INT 128
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: start
+  raw bytecode: 32 31:0a:14:2c:80:3e:2a:b0:14:11:12:1f:81:f2:36:01:c1:b0:14:13:12:1f:b1:22:80:7f:ef:36:02:59:51:63
+  prelude: (7, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:3e:2a
+  b0          LOAD_FAST 0 
+  14:11       LOAD_METHOD getReg
+  12:1f       LOAD_GLOBAL DS1302_REG_SECOND
+  81          LOAD_CONST_SMALL_INT 1 
+  f2          BINARY_OP 27 __add__ 
+  36:01       CALL_METHOD 1
+  c1          STORE_FAST 1 
+  b0          LOAD_FAST 0 
+  14:13       LOAD_METHOD wr
+  12:1f       LOAD_GLOBAL DS1302_REG_SECOND
+  b1          LOAD_FAST 1 
+  22:80:7f    LOAD_CONST_SMALL_INT 127
+  ef          BINARY_OP 24 __and__ 
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: stop
+  raw bytecode: 32 31:0a:15:2c:80:42:2a:b0:14:11:12:1f:81:f2:36:01:c1:b0:14:13:12:1f:b1:22:81:00:ed:36:02:59:51:63
+  prelude: (7, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:42:2a
+  b0          LOAD_FAST 0 
+  14:11       LOAD_METHOD getReg
+  12:1f       LOAD_GLOBAL DS1302_REG_SECOND
+  81          LOAD_CONST_SMALL_INT 1 
+  f2          BINARY_OP 27 __add__ 
+  36:01       CALL_METHOD 1
+  c1          STORE_FAST 1 
+  b0          LOAD_FAST 0 
+  14:13       LOAD_METHOD wr
+  12:1f       LOAD_GLOBAL DS1302_REG_SECOND
+  b1          LOAD_FAST 1 
+  22:81:00    LOAD_CONST_SMALL_INT 128
+  ed          BINARY_OP 22 __or__ 
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: Second
+  raw bytecode: 33 c2:01:0e:16:2c:30:80:46:25:52:b1:51:d9:44:52:b0:14:0c:b0:14:11:12:1f:81:f2:36:01:36:01:22:3c:f8:63
+  prelude: (9, 0, 0, 2, 0, 1)
+  args: ['self', 'second']
+  line info: 80:46:25:52
+  b1          LOAD_FAST 1 
+  51          LOAD_CONST_NONE 
+  d9          BINARY_OP 2 __eq__ 
+  44:52       POP_JUMP_IF_FALSE 18
+  b0          LOAD_FAST 0 
+  14:0c       LOAD_METHOD HexToDec
+  b0          LOAD_FAST 0 
+  14:11       LOAD_METHOD getReg
+  12:1f       LOAD_GLOBAL DS1302_REG_SECOND
+  81          LOAD_CONST_SMALL_INT 1 
+  f2          BINARY_OP 27 __add__ 
+  36:01       CALL_METHOD 1
+  36:01       CALL_METHOD 1
+  22:3c       LOAD_CONST_SMALL_INT 60
+  f8          BINARY_OP 33 __mod__ 
+  63          RETURN_VALUE 
+  children: []
+simple_name: Minute
+  raw bytecode: 30 c2:01:0e:17:2c:31:80:4c:25:4f:b1:51:d9:44:4f:b0:14:0c:b0:14:11:12:20:81:f2:36:01:36:01:63
+  prelude: (9, 0, 0, 2, 0, 1)
+  args: ['self', 'minute']
+  line info: 80:4c:25:4f
+  b1          LOAD_FAST 1 
+  51          LOAD_CONST_NONE 
+  d9          BINARY_OP 2 __eq__ 
+  44:4f       POP_JUMP_IF_FALSE 15
+  b0          LOAD_FAST 0 
+  14:0c       LOAD_METHOD HexToDec
+  b0          LOAD_FAST 0 
+  14:11       LOAD_METHOD getReg
+  12:20       LOAD_GLOBAL DS1302_REG_MINUTE
+  81          LOAD_CONST_SMALL_INT 1 
+  f2          BINARY_OP 27 __add__ 
+  36:01       CALL_METHOD 1
+  36:01       CALL_METHOD 1
+  63          RETURN_VALUE 
+  children: []
+simple_name: Hour
+  raw bytecode: 30 c2:01:0e:18:2c:32:80:52:25:4f:b1:51:d9:44:4f:b0:14:0c:b0:14:11:12:21:81:f2:36:01:36:01:63
+  prelude: (9, 0, 0, 2, 0, 1)
+  args: ['self', 'hour']
+  line info: 80:52:25:4f
+  b1          LOAD_FAST 1 
+  51          LOAD_CONST_NONE 
+  d9          BINARY_OP 2 __eq__ 
+  44:4f       POP_JUMP_IF_FALSE 15
+  b0          LOAD_FAST 0 
+  14:0c       LOAD_METHOD HexToDec
+  b0          LOAD_FAST 0 
+  14:11       LOAD_METHOD getReg
+  12:21       LOAD_GLOBAL DS1302_REG_HOUR
+  81          LOAD_CONST_SMALL_INT 1 
+  f2          BINARY_OP 27 __add__ 
+  36:01       CALL_METHOD 1
+  36:01       CALL_METHOD 1
+  63          RETURN_VALUE 
+  children: []
+simple_name: Weekday
+  raw bytecode: 30 c2:01:0e:19:2c:33:80:58:25:4f:b1:51:d9:44:4f:b0:14:0c:b0:14:11:12:24:81:f2:36:01:36:01:63
+  prelude: (9, 0, 0, 2, 0, 1)
+  args: ['self', 'weekday']
+  line info: 80:58:25:4f
+  b1          LOAD_FAST 1 
+  51          LOAD_CONST_NONE 
+  d9          BINARY_OP 2 __eq__ 
+  44:4f       POP_JUMP_IF_FALSE 15
+  b0          LOAD_FAST 0 
+  14:0c       LOAD_METHOD HexToDec
+  b0          LOAD_FAST 0 
+  14:11       LOAD_METHOD getReg
+  12:24       LOAD_GLOBAL DS1302_REG_WEEKDAY
+  81          LOAD_CONST_SMALL_INT 1 
+  f2          BINARY_OP 27 __add__ 
+  36:01       CALL_METHOD 1
+  36:01       CALL_METHOD 1
+  63          RETURN_VALUE 
+  children: []
+simple_name: Day
+  raw bytecode: 30 c2:01:0e:1a:2c:34:80:5e:25:4f:b1:51:d9:44:4f:b0:14:0c:b0:14:11:12:22:81:f2:36:01:36:01:63
+  prelude: (9, 0, 0, 2, 0, 1)
+  args: ['self', 'day']
+  line info: 80:5e:25:4f
+  b1          LOAD_FAST 1 
+  51          LOAD_CONST_NONE 
+  d9          BINARY_OP 2 __eq__ 
+  44:4f       POP_JUMP_IF_FALSE 15
+  b0          LOAD_FAST 0 
+  14:0c       LOAD_METHOD HexToDec
+  b0          LOAD_FAST 0 
+  14:11       LOAD_METHOD getReg
+  12:22       LOAD_GLOBAL DS1302_REG_DAY
+  81          LOAD_CONST_SMALL_INT 1 
+  f2          BINARY_OP 27 __add__ 
+  36:01       CALL_METHOD 1
+  36:01       CALL_METHOD 1
+  63          RETURN_VALUE 
+  children: []
+simple_name: Month
+  raw bytecode: 30 c2:01:0e:1b:2c:35:80:64:25:4f:b1:51:d9:44:4f:b0:14:0c:b0:14:11:12:23:81:f2:36:01:36:01:63
+  prelude: (9, 0, 0, 2, 0, 1)
+  args: ['self', 'month']
+  line info: 80:64:25:4f
+  b1          LOAD_FAST 1 
+  51          LOAD_CONST_NONE 
+  d9          BINARY_OP 2 __eq__ 
+  44:4f       POP_JUMP_IF_FALSE 15
+  b0          LOAD_FAST 0 
+  14:0c       LOAD_METHOD HexToDec
+  b0          LOAD_FAST 0 
+  14:11       LOAD_METHOD getReg
+  12:23       LOAD_GLOBAL DS1302_REG_MONTH
+  81          LOAD_CONST_SMALL_INT 1 
+  f2          BINARY_OP 27 __add__ 
+  36:01       CALL_METHOD 1
+  36:01       CALL_METHOD 1
+  63          RETURN_VALUE 
+  children: []
+simple_name: Year
+  raw bytecode: 34 c2:01:0e:1c:2c:36:80:6a:25:53:b1:51:d9:44:53:b0:14:0c:b0:14:11:12:25:81:f2:36:01:36:01:22:8f:50:f2:63
+  prelude: (9, 0, 0, 2, 0, 1)
+  args: ['self', 'year']
+  line info: 80:6a:25:53
+  b1          LOAD_FAST 1 
+  51          LOAD_CONST_NONE 
+  d9          BINARY_OP 2 __eq__ 
+  44:53       POP_JUMP_IF_FALSE 19
+  b0          LOAD_FAST 0 
+  14:0c       LOAD_METHOD HexToDec
+  b0          LOAD_FAST 0 
+  14:11       LOAD_METHOD getReg
+  12:25       LOAD_GLOBAL DS1302_REG_YEAR
+  81          LOAD_CONST_SMALL_INT 1 
+  f2          BINARY_OP 27 __add__ 
+  36:01       CALL_METHOD 1
+  36:01       CALL_METHOD 1
+  22:8f:50    LOAD_CONST_SMALL_INT 2000
+  f2          BINARY_OP 27 __add__ 
+  63          RETURN_VALUE 
+  children: []
+simple_name: DateTime
+  raw bytecode: 60 ca:01:1c:1d:2c:2e:80:70:25:1f:47:29:29:29:29:29:29:b1:51:d9:44:66:b0:14:1c:36:00:b0:14:1b:36:00:b0:14:1a:36:00:b0:14:19:36:00:b0:14:18:36:00:b0:14:17:36:00:b0:14:16:36:00:2b:07:63
+  prelude: (10, 0, 0, 2, 0, 1)
+  args: ['self', 'dat']
+  line info: 80:70:25:1f:47:29:29:29:29:29:29
+  b1          LOAD_FAST 1 
+  51          LOAD_CONST_NONE 
+  d9          BINARY_OP 2 __eq__ 
+  44:66       POP_JUMP_IF_FALSE 38
+  b0          LOAD_FAST 0 
+  14:1c       LOAD_METHOD Year
+  36:00       CALL_METHOD 0
+  b0          LOAD_FAST 0 
+  14:1b       LOAD_METHOD Month
+  36:00       CALL_METHOD 0
+  b0          LOAD_FAST 0 
+  14:1a       LOAD_METHOD Day
+  36:00       CALL_METHOD 0
+  b0          LOAD_FAST 0 
+  14:19       LOAD_METHOD Weekday
+  36:00       CALL_METHOD 0
+  b0          LOAD_FAST 0 
+  14:18       LOAD_METHOD Hour
+  36:00       CALL_METHOD 0
+  b0          LOAD_FAST 0 
+  14:17       LOAD_METHOD Minute
+  36:00       CALL_METHOD 0
+  b0          LOAD_FAST 0 
+  14:16       LOAD_METHOD Second
+  36:00       CALL_METHOD 0
+  2b:07       BUILD_LIST 7
+  63          RETURN_VALUE 
+  children: []
+simple_name: ram
+  raw bytecode: 32 bb:01:10:1e:2c:2f:2e:80:7c:25:50:b2:51:d9:44:50:b0:14:11:12:28:81:f2:b1:9f:f8:82:f4:f2:36:01:63
+  prelude: (8, 0, 0, 3, 0, 1)
+  args: ['self', 'reg', 'dat']
+  line info: 80:7c:25:50
+  b2          LOAD_FAST 2 
+  51          LOAD_CONST_NONE 
+  d9          BINARY_OP 2 __eq__ 
+  44:50       POP_JUMP_IF_FALSE 16
+  b0          LOAD_FAST 0 
+  14:11       LOAD_METHOD getReg
+  12:28       LOAD_GLOBAL DS1302_REG_RAM
+  81          LOAD_CONST_SMALL_INT 1 
+  f2          BINARY_OP 27 __add__ 
+  b1          LOAD_FAST 1 
+  9f          LOAD_CONST_SMALL_INT 31 
+  f8          BINARY_OP 33 __mod__ 
+  82          LOAD_CONST_SMALL_INT 2 
+  f4          BINARY_OP 29 __mul__ 
+  f2          BINARY_OP 27 __add__ 
+  36:01       CALL_METHOD 1
+  63          RETURN_VALUE 
+  children: []

@@ -1,0 +1,206 @@
+mpy_source_file: extracted/inisetup.py.mpy
+source_file: inisetup.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[27] (* for static qstrs):
+    'inisetup.py' 
+    '<module>' *
+    'vfs' 
+    'bdev' 
+    'flashbdev' 
+    'check_bootsec' 
+    'ioctl' 
+    'readblocks' 
+    'fs_corrupted' 
+    'time' 
+    'micropython' *
+    'kbd_intr' 
+    'sleep' 
+    'setup' 
+    'info' 
+    'VfsLfs2' 
+    'mkfs' 
+    'ffat' 
+    'VfsFat' 
+    'mount' 
+    '/' *
+    'boot.py' 
+    'w' 
+    'write' *
+    'bytearray' *
+    'print' *
+    'open' *
+obj_table: ['The filesystem appears to be corrupted. If you had important data there, you\nmay want to make a flash snapshot to try to recover it. Otherwise, perform\nfactory reprogramming of MicroPython firmware (completely erase flash, followed\nby firmware programming).\n', 'Performing initial setup', '# This file is executed on every boot (including wake-boot from deepsleep)\n#import esp\n#esp.osdebug(None)\n#import webrepl\n#webrepl.start()\n']
+simple_name: <module>
+  raw bytecode: 41 08:0e:01:26:6c:84:0d:84:13:80:51:1b:02:16:02:80:10:03:2a:01:1b:04:1c:03:16:03:59:32:00:16:05:32:01:16:08:32:02:16:0d:51:63
+  prelude: (2, 0, 0, 0, 0, 0)
+  args: []
+  line info: 26:6c:84:0d:84:13
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:02       IMPORT_NAME vfs
+  16:02       STORE_NAME vfs
+  80          LOAD_CONST_SMALL_INT 0 
+  10:03       LOAD_CONST_STRING bdev
+  2a:01       BUILD_TUPLE 1
+  1b:04       IMPORT_NAME flashbdev
+  1c:03       IMPORT_FROM bdev
+  16:03       STORE_NAME bdev
+  59          POP_TOP 
+  32:00       MAKE_FUNCTION 0
+  16:05       STORE_NAME check_bootsec
+  32:01       MAKE_FUNCTION 1
+  16:08       STORE_NAME fs_corrupted
+  32:02       MAKE_FUNCTION 2
+  16:0d       STORE_NAME setup
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [check_bootsec, fs_corrupted, setup]
+simple_name: check_bootsec
+  raw bytecode: 65 40:18:05:60:40:2d:29:22:25:27:22:28:23:22:12:18:12:03:14:06:85:80:36:02:34:01:c0:12:03:14:07:80:b0:36:02:59:52:c1:b0:5f:4b:12:c2:b2:22:81:7f:dc:44:48:50:c1:59:59:59:59:42:42:42:2c:b1:44:42:52:63
+  prelude: (9, 0, 0, 0, 0, 0)
+  args: []
+  line info: 60:40:2d:29:22:25:27:22:28:23:22
+  12:18       LOAD_GLOBAL bytearray
+  12:03       LOAD_GLOBAL bdev
+  14:06       LOAD_METHOD ioctl
+  85          LOAD_CONST_SMALL_INT 5 
+  80          LOAD_CONST_SMALL_INT 0 
+  36:02       CALL_METHOD 2
+  34:01       CALL_FUNCTION 1
+  c0          STORE_FAST 0 
+  12:03       LOAD_GLOBAL bdev
+  14:07       LOAD_METHOD readblocks
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  52          LOAD_CONST_TRUE 
+  c1          STORE_FAST 1 
+  b0          LOAD_FAST 0 
+  5f          GET_ITER_STACK 
+  4b:12       FOR_ITER 18
+  c2          STORE_FAST 2 
+  b2          LOAD_FAST 2 
+  22:81:7f    LOAD_CONST_SMALL_INT 255
+  dc          BINARY_OP 5 __ne__ 
+  44:48       POP_JUMP_IF_FALSE 8
+  50          LOAD_CONST_FALSE 
+  c1          STORE_FAST 1 
+  59          POP_TOP 
+  59          POP_TOP 
+  59          POP_TOP 
+  59          POP_TOP 
+  42:42       JUMP 2
+  42:2c       JUMP -20
+  b1          LOAD_FAST 1 
+  44:42       POP_JUMP_IF_FALSE 2
+  52          LOAD_CONST_TRUE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: fs_corrupted
+  raw bytecode: 47 20:14:08:80:12:25:65:47:20:22:85:07:80:51:1b:09:c0:80:51:1b:0a:c1:b1:14:0b:83:36:01:59:12:19:23:00:34:01:59:b0:14:0c:83:36:01:59:42:30:51:63
+  prelude: (5, 0, 0, 0, 0, 0)
+  args: []
+  line info: 80:12:25:65:47:20:22:85:07
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:09       IMPORT_NAME time
+  c0          STORE_FAST 0 
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:0a       IMPORT_NAME micropython
+  c1          STORE_FAST 1 
+  b1          LOAD_FAST 1 
+  14:0b       LOAD_METHOD kbd_intr
+  83          LOAD_CONST_SMALL_INT 3 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  12:19       LOAD_GLOBAL print
+  23:00       LOAD_CONST_OBJ 'The filesystem appears to be corrupted. If you had important data there, you\nmay want to make a flash snapshot to try to recover it. Otherwise, perform\nfactory reprogramming of MicroPython firmware (completely erase flash, followed\nby firmware programming).\n'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:0c       LOAD_METHOD sleep
+  83          LOAD_CONST_SMALL_INT 3 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  42:30       JUMP -16
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: setup
+  raw bytecode: 134 34:20:0d:80:25:25:27:2d:2b:2b:2d:2b:2b:2a:2b:23:88:08:12:05:34:00:59:12:19:23:01:34:01:59:12:03:14:0e:36:00:84:55:10:02:d9:44:56:12:02:13:0f:14:10:12:03:36:01:59:12:02:14:0f:12:03:36:01:c0:42:63:12:03:14:0e:36:00:84:55:10:11:d9:44:56:12:02:13:12:14:10:12:03:36:01:59:12:02:14:12:12:03:36:01:c0:42:40:12:02:14:13:b0:10:14:36:02:59:12:1a:10:15:10:16:34:02:47:0a:c1:b1:14:17:23:02:36:01:59:51:5c:5d:b0:63
+  prelude: (7, 1, 0, 0, 0, 0)
+  args: []
+  line info: 80:25:25:27:2d:2b:2b:2d:2b:2b:2a:2b:23:88:08
+  12:05       LOAD_GLOBAL check_bootsec
+  34:00       CALL_FUNCTION 0
+  59          POP_TOP 
+  12:19       LOAD_GLOBAL print
+  23:01       LOAD_CONST_OBJ 'Performing initial setup'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  12:03       LOAD_GLOBAL bdev
+  14:0e       LOAD_METHOD info
+  36:00       CALL_METHOD 0
+  84          LOAD_CONST_SMALL_INT 4 
+  55          LOAD_SUBSCR 
+  10:02       LOAD_CONST_STRING vfs
+  d9          BINARY_OP 2 __eq__ 
+  44:56       POP_JUMP_IF_FALSE 22
+  12:02       LOAD_GLOBAL vfs
+  13:0f       LOAD_ATTR VfsLfs2
+  14:10       LOAD_METHOD mkfs
+  12:03       LOAD_GLOBAL bdev
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  12:02       LOAD_GLOBAL vfs
+  14:0f       LOAD_METHOD VfsLfs2
+  12:03       LOAD_GLOBAL bdev
+  36:01       CALL_METHOD 1
+  c0          STORE_FAST 0 
+  42:63       JUMP 35
+  12:03       LOAD_GLOBAL bdev
+  14:0e       LOAD_METHOD info
+  36:00       CALL_METHOD 0
+  84          LOAD_CONST_SMALL_INT 4 
+  55          LOAD_SUBSCR 
+  10:11       LOAD_CONST_STRING ffat
+  d9          BINARY_OP 2 __eq__ 
+  44:56       POP_JUMP_IF_FALSE 22
+  12:02       LOAD_GLOBAL vfs
+  13:12       LOAD_ATTR VfsFat
+  14:10       LOAD_METHOD mkfs
+  12:03       LOAD_GLOBAL bdev
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  12:02       LOAD_GLOBAL vfs
+  14:12       LOAD_METHOD VfsFat
+  12:03       LOAD_GLOBAL bdev
+  36:01       CALL_METHOD 1
+  c0          STORE_FAST 0 
+  42:40       JUMP 0
+  12:02       LOAD_GLOBAL vfs
+  14:13       LOAD_METHOD mount
+  b0          LOAD_FAST 0 
+  10:14       LOAD_CONST_STRING /
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  12:1a       LOAD_GLOBAL open
+  10:15       LOAD_CONST_STRING boot.py
+  10:16       LOAD_CONST_STRING w
+  34:02       CALL_FUNCTION 2
+  47:0a       SETUP_WITH 10
+  c1          STORE_FAST 1 
+  b1          LOAD_FAST 1 
+  14:17       LOAD_METHOD write
+  23:02       LOAD_CONST_OBJ '# This file is executed on every boot (including wake-boot from deepsleep)\n#import esp\n#esp.osdebug(None)\n#import webrepl\n#webrepl.start()\n'
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  5c          WITH_CLEANUP 
+  5d          END_FINALLY 
+  b0          LOAD_FAST 0 
+  63          RETURN_VALUE 
+  children: []

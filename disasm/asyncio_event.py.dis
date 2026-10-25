@@ -1,0 +1,279 @@
+mpy_source_file: extracted/asyncio_event.py.mpy
+source_file: asyncio/event.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[32] (* for static qstrs):
+    'asyncio/event.py' 
+    '<module>' *
+    'core' 
+    'q1' 
+    'Event' 
+    'io' 
+    'ThreadSafeFlag' 
+    'IOBase' 
+    '__init__' *
+    'state' 
+    'TaskQueue' 
+    'waiting' 
+    'is_set' 
+    'set' *
+    '_task_queue' 
+    'push' 
+    'pop' *
+    'peek' 
+    'clear' *
+    'wait' 
+    'cur_task' 
+    'data' 
+    'ioctl' 
+    '_io_queue' 
+    'queue_read' 
+    'ImportError' *
+    '__name__' *
+    '__module__' *
+    '__qualname__' *
+    'self' *
+    'req' 
+    'flags' 
+obj_table: [None]
+simple_name: <module>
+  raw bytecode: 59 2c:02:01:81:10:02:2a:01:1b:03:1c:02:16:02:59:54:32:00:10:04:34:02:16:04:48:15:80:51:1b:05:16:05:54:32:01:10:06:11:05:13:07:34:03:16:06:4a:0a:57:11:19:df:44:43:59:4a:01:5d:51:63
+  prelude: (6, 1, 0, 0, 0, 0)
+  args: []
+  line info: 
+  81          LOAD_CONST_SMALL_INT 1 
+  10:02       LOAD_CONST_STRING core
+  2a:01       BUILD_TUPLE 1
+  1b:03       IMPORT_NAME q1
+  1c:02       IMPORT_FROM core
+  16:02       STORE_NAME core
+  59          POP_TOP 
+  54          LOAD_BUILD_CLASS 
+  32:00       MAKE_FUNCTION 0
+  10:04       LOAD_CONST_STRING Event
+  34:02       CALL_FUNCTION 2
+  16:04       STORE_NAME Event
+  48:15       SETUP_EXCEPT 21
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:05       IMPORT_NAME io
+  16:05       STORE_NAME io
+  54          LOAD_BUILD_CLASS 
+  32:01       MAKE_FUNCTION 1
+  10:06       LOAD_CONST_STRING ThreadSafeFlag
+  11:05       LOAD_NAME io
+  13:07       LOAD_ATTR IOBase
+  34:03       CALL_FUNCTION 3
+  16:06       STORE_NAME ThreadSafeFlag
+  4a:0a       POP_EXCEPT_JUMP 10
+  57          DUP_TOP 
+  11:19       LOAD_NAME ImportError
+  df          BINARY_OP 8 <exception match> 
+  44:43       POP_JUMP_IF_FALSE 3
+  59          POP_TOP 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [Event, ThreadSafeFlag]
+simple_name: Event
+  raw bytecode: 33 00:02:04:11:1a:16:1b:10:04:16:1c:32:00:16:08:32:01:16:0c:32:02:16:0d:32:03:16:12:32:04:16:13:51:63
+  prelude: (1, 0, 0, 0, 0, 0)
+  args: []
+  line info: 
+  11:1a       LOAD_NAME __name__
+  16:1b       STORE_NAME __module__
+  10:04       LOAD_CONST_STRING Event
+  16:1c       STORE_NAME __qualname__
+  32:00       MAKE_FUNCTION 0
+  16:08       STORE_NAME __init__
+  32:01       MAKE_FUNCTION 1
+  16:0c       STORE_NAME is_set
+  32:02       MAKE_FUNCTION 2
+  16:0d       STORE_NAME set
+  32:03       MAKE_FUNCTION 3
+  16:12       STORE_NAME clear
+  32:04       MAKE_FUNCTION 4
+  16:13       STORE_NAME wait
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [__init__, is_set, set, clear, wait]
+simple_name: __init__
+  raw bytecode: 19 11:04:08:1d:50:b0:18:09:12:02:14:0a:36:00:b0:18:0b:51:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 
+  50          LOAD_CONST_FALSE 
+  b0          LOAD_FAST 0 
+  18:09       STORE_ATTR state
+  12:02       LOAD_GLOBAL core
+  14:0a       LOAD_METHOD TaskQueue
+  36:00       CALL_METHOD 0
+  b0          LOAD_FAST 0 
+  18:0b       STORE_ATTR waiting
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: is_set
+  raw bytecode: 8 09:04:0c:1d:b0:13:09:63
+  prelude: (2, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 
+  b0          LOAD_FAST 0 
+  13:09       LOAD_ATTR state
+  63          RETURN_VALUE 
+  children: []
+simple_name: set
+  raw bytecode: 37 21:04:0d:1d:42:50:12:02:13:0e:14:0f:b0:13:0b:14:10:36:00:36:01:59:b0:13:0b:14:11:36:00:43:27:52:b0:18:09:51:63
+  prelude: (5, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 
+  42:50       JUMP 16
+  12:02       LOAD_GLOBAL core
+  13:0e       LOAD_ATTR _task_queue
+  14:0f       LOAD_METHOD push
+  b0          LOAD_FAST 0 
+  13:0b       LOAD_ATTR waiting
+  14:10       LOAD_METHOD pop
+  36:00       CALL_METHOD 0
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:0b       LOAD_ATTR waiting
+  14:11       LOAD_METHOD peek
+  36:00       CALL_METHOD 0
+  43:27       POP_JUMP_IF_TRUE -25
+  52          LOAD_CONST_TRUE 
+  b0          LOAD_FAST 0 
+  18:09       STORE_ATTR state
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: clear
+  raw bytecode: 10 11:04:12:1d:50:b0:18:09:51:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 
+  50          LOAD_CONST_FALSE 
+  b0          LOAD_FAST 0 
+  18:09       STORE_ATTR state
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: wait
+  raw bytecode: 36 99:40:04:13:1d:b0:13:09:43:58:b0:13:0b:14:0f:12:02:13:14:36:01:59:b0:13:0b:12:02:13:14:18:15:51:67:59:52:63
+  prelude: (4, 0, 1, 1, 0, 0)
+  args: ['self']
+  line info: 
+  b0          LOAD_FAST 0 
+  13:09       LOAD_ATTR state
+  43:58       POP_JUMP_IF_TRUE 24
+  b0          LOAD_FAST 0 
+  13:0b       LOAD_ATTR waiting
+  14:0f       LOAD_METHOD push
+  12:02       LOAD_GLOBAL core
+  13:14       LOAD_ATTR cur_task
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:0b       LOAD_ATTR waiting
+  12:02       LOAD_GLOBAL core
+  13:14       LOAD_ATTR cur_task
+  18:15       STORE_ATTR data
+  51          LOAD_CONST_NONE 
+  67          YIELD_VALUE 
+  59          POP_TOP 
+  52          LOAD_CONST_TRUE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: ThreadSafeFlag
+  raw bytecode: 33 00:02:06:11:1a:16:1b:10:06:16:1c:32:00:16:08:32:01:16:16:32:02:16:0d:32:03:16:12:32:04:16:13:51:63
+  prelude: (1, 0, 0, 0, 0, 0)
+  args: []
+  line info: 
+  11:1a       LOAD_NAME __name__
+  16:1b       STORE_NAME __module__
+  10:06       LOAD_CONST_STRING ThreadSafeFlag
+  16:1c       STORE_NAME __qualname__
+  32:00       MAKE_FUNCTION 0
+  16:08       STORE_NAME __init__
+  32:01       MAKE_FUNCTION 1
+  16:16       STORE_NAME ioctl
+  32:02       MAKE_FUNCTION 2
+  16:0d       STORE_NAME set
+  32:03       MAKE_FUNCTION 3
+  16:12       STORE_NAME clear
+  32:04       MAKE_FUNCTION 4
+  16:13       STORE_NAME wait
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [__init__, ioctl, set, clear, wait]
+simple_name: __init__
+  raw bytecode: 10 11:04:08:1d:80:b0:18:09:51:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:09       STORE_ATTR state
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: ioctl
+  raw bytecode: 17 23:08:16:1d:1e:1f:b1:83:d9:44:46:b0:13:09:b2:f4:63
+  prelude: (5, 0, 0, 3, 0, 0)
+  args: ['self', 'req', 'flags']
+  line info: 
+  b1          LOAD_FAST 1 
+  83          LOAD_CONST_SMALL_INT 3 
+  d9          BINARY_OP 2 __eq__ 
+  44:46       POP_JUMP_IF_FALSE 6
+  b0          LOAD_FAST 0 
+  13:09       LOAD_ATTR state
+  b2          LOAD_FAST 2 
+  f4          BINARY_OP 29 __mul__ 
+  63          RETURN_VALUE 
+  children: []
+simple_name: set
+  raw bytecode: 10 11:04:0d:1d:81:b0:18:09:51:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 
+  81          LOAD_CONST_SMALL_INT 1 
+  b0          LOAD_FAST 0 
+  18:09       STORE_ATTR state
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: clear
+  raw bytecode: 10 11:04:12:1d:80:b0:18:09:51:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:09       STORE_ATTR state
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: wait
+  raw bytecode: 27 99:40:04:13:1d:b0:13:09:43:4b:12:02:13:17:14:18:b0:36:01:67:59:80:b0:18:09:51:63
+  prelude: (4, 0, 1, 1, 0, 0)
+  args: ['self']
+  line info: 
+  b0          LOAD_FAST 0 
+  13:09       LOAD_ATTR state
+  43:4b       POP_JUMP_IF_TRUE 11
+  12:02       LOAD_GLOBAL core
+  13:17       LOAD_ATTR _io_queue
+  14:18       LOAD_METHOD queue_read
+  b0          LOAD_FAST 0 
+  36:01       CALL_METHOD 1
+  67          YIELD_VALUE 
+  59          POP_TOP 
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:09       STORE_ATTR state
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []

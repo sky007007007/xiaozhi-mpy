@@ -1,0 +1,1067 @@
+mpy_source_file: extracted/ovomini.py.mpy
+source_file: ovomini.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[171] (* for static qstrs):
+    'ovomini.py' 
+    '<module>' *
+    'time' 
+    'pinutil' 
+    'Pin' 
+    'I2C' 
+    'machine' 
+    'load' 
+    'PINS' 
+    'rgb' 
+    'boot' 
+    'oled_scl' 
+    'oled_sda' 
+    'oled_addr' 
+    'mic' 
+    'spk' 
+    'red' 
+    'orange' 
+    'yellow' 
+    'green' 
+    'cyan' 
+    'blue' 
+    'purple' 
+    'violet' 
+    'white' 
+    'pink' 
+    'warm' 
+    'off' 
+    '红' 
+    '红色' 
+    '橙' 
+    '橙色' 
+    '黄' 
+    '黄色' 
+    '绿' 
+    '绿色' 
+    '青' 
+    '青色' 
+    '蓝绿' 
+    '蓝' 
+    '蓝色' 
+    '紫' 
+    '紫色' 
+    '靛' 
+    '白' 
+    '白色' 
+    '粉' 
+    '粉色' 
+    '粉红' 
+    '暖白' 
+    '关' 
+    '关灯' 
+    '关闭' 
+    'startup' 
+    'scan' 
+    'scanning' 
+    'wifi' 
+    'portal' 
+    'connecting' 
+    'joined' 
+    'ble' 
+    'ready' 
+    'init' 
+    'error' 
+    'offline' 
+    'bye' 
+    'sleep' 
+    '_color_name' 
+    'items' *
+    'led_engine_mode' 
+    'xiaozhi_native' 
+    'led_mode' 
+    '_led_stop_native_blink' 
+    'led_blink' 
+    'q1' 
+    'get_i2c' 
+    'scl' 
+    'sda' 
+    'freq' 
+    'get_display' 
+    'no_oled' 
+    'SSD1306_I2C' 
+    'ssd1306' 
+    '_ws2812' 
+    'NeoPixel' 
+    'neopixel' 
+    'write' *
+    '_led_write' 
+    'led_write_name' 
+    '_led_rgb' 
+    'strip' *
+    'lower' *
+    'get' *
+    'set_led_color' 
+    'led_status' 
+    'led_color_from_text' 
+    '灯' 
+    '颜色' 
+    '亮' 
+    'led_tick' 
+    'ticks_ms' 
+    'ticks_diff' 
+    'ticks_add' 
+    'init_pins' 
+    'get_boot_button' 
+    'IN' 
+    'PULL_UP' 
+    'boot_pressed' 
+    'value' *
+    'led_on' 
+    'led_toggle' 
+    'led_take' 
+    'led_release' 
+    'boot_led' 
+    'led_breath_tick' 
+    'rgb_tick' 
+    'ble_data_tick' 
+    'display_text' 
+    'fill' 
+    'text' 
+    'show' 
+    'BOARD_NAME' 
+    'LED_PIN' 
+    'BOOT_PIN' 
+    'I2C_ID' 
+    'I2C_SCL' 
+    'I2C_SDA' 
+    'OLED_ADDR' 
+    'OLED_WIDTH' 
+    'OLED_HEIGHT' 
+    'VISIBLE_HEIGHT' 
+    'AUDIO_ENABLED' 
+    'MIC_PINS' 
+    'SPK_PINS' 
+    'CHAR_W' 
+    'LINE_PITCH' 
+    'CHARS_PER_LINE' 
+    'MAX_LINES' 
+    '_i2c' 
+    '_display' 
+    '_boot' 
+    '_pixel' 
+    '_led_on' 
+    'LED_COLORS' 
+    '_LED_ALIASES' 
+    '_LED_STATES' 
+    '_led_last' 
+    '_led_pattern' 
+    '_led_blink_ms' 
+    '_led_phase' 
+    '_led_next' 
+    '_led_manual' 
+    '_led_engine' 
+    '_rgb_phase' 
+    'on' 
+    'bool' *
+    'Exception' *
+    'OSError' *
+    'print' *
+    'color' 
+    'isinstance' *
+    'tuple' *
+    'list' *
+    'len' *
+    'int' *
+    'str' *
+    'state' 
+    'now' 
+    'lines' 
+    'clear' *
+    'enumerate' 
+obj_table: ['ESP32-S3 N16R8', (32, 0, 0), (32, 12, 0), (32, 24, 0), (0, 32, 0), (0, 24, 24), (0, 0, 32), (20, 0, 32), (24, 24, 24), (32, 8, 16), (32, 20, 8), (0, 0, 0), 'OLED disabled (pins: no_oled)', '[led] ws2812 unavailable:', 'disconnected']
+simple_name: <module>
+  raw bytecode: 737 10:fe:02:01:80:0e:46:26:52:47:64:29:29:23:29:29:69:26:26:65:64:20:4a:4a:24:24:2a:4a:24:24:24:24:64:20:22:25:25:25:25:25:25:25:25:25:25:25:48:22:2a:2a:2a:2a:2f:2a:2f:2a:2f:25:72:60:20:22:25:25:25:25:25:25:25:25:25:25:25:25:25:48:24:24:24:24:24:24:64:84:07:84:15:84:0c:84:07:84:0b:84:10:84:1c:84:0a:84:11:84:12:84:11:88:0f:84:08:84:07:64:40:68:40:64:60:84:0e:64:40:88:08:89:07:64:88:07:88:0a:80:51:1b:02:16:02:80:51:1b:03:16:03:80:10:04:10:05:2a:02:1b:06:1c:04:16:04:1c:05:16:05:59:11:03:14:07:36:00:59:23:00:16:79:11:03:13:08:10:09:55:16:7a:11:03:13:08:10:0a:55:16:7b:80:16:7c:11:03:13:08:10:0b:55:16:7d:11:03:13:08:10:0c:55:16:7e:11:03:13:08:10:0d:55:16:7f:22:81:00:16:81:00:22:80:40:16:81:01:22:3c:16:81:02:52:16:81:03:11:03:13:08:10:0e:55:16:81:04:11:03:13:08:10:0f:55:16:81:05:88:16:81:06:88:16:81:07:11:81:00:11:81:06:f6:16:81:08:11:81:02:11:81:07:f6:16:81:09:51:17:81:0a:51:17:81:0b:51:17:81:0c:51:17:81:0d:50:17:81:0e:2c:0c:23:01:10:10:62:23:02:10:11:62:23:03:10:12:62:23:04:10:13:62:23:05:10:14:62:23:06:10:15:62:23:07:10:16:62:23:07:10:17:62:23:08:10:18:62:23:09:10:19:62:23:0a:10:1a:62:23:0b:10:1b:62:16:81:0f:2c:19:10:10:10:1c:62:10:10:10:1d:62:10:11:10:1e:62:10:11:10:1f:62:10:12:10:20:62:10:12:10:21:62:10:13:10:22:62:10:13:10:23:62:10:14:10:24:62:10:14:10:25:62:10:14:10:26:62:10:15:10:27:62:10:15:10:28:62:10:16:10:29:62:10:16:10:2a:62:10:16:10:2b:62:10:18:10:2c:62:10:18:10:2d:62:10:19:10:2e:62:10:19:10:2f:62:10:19:10:30:62:10:1a:10:31:62:10:1b:10:32:62:10:1b:10:33:62:10:1b:10:34:62:16:81:10:2c:0e:10:10:10:35:62:10:10:10:36:62:10:10:10:37:62:10:10:10:38:62:10:16:10:39:62:10:14:10:3a:62:10:15:10:3b:62:10:15:10:3c:62:10:13:10:3d:62:10:15:10:3e:62:10:10:10:3f:62:10:10:10:40:62:10:18:10:41:62:10:15:10:42:62:16:81:11:51:17:81:12:51:17:81:13:80:17:81:14:50:17:81:15:80:17:81:16:50:17:81:17:50:17:81:18:32:00:16:43:32:01:16:45:32:02:16:48:32:03:16:4b:32:04:16:4f:32:05:16:53:32:06:16:57:32:07:16:59:32:08:16:5d:32:09:16:5e:32:0a:16:5f:51:2a:01:53:33:0b:16:63:32:0c:16:67:32:0d:16:68:32:0e:16:6b:52:2a:01:53:33:0f:16:6d:32:10:16:6e:32:11:16:6f:32:12:16:71:51:2a:01:53:33:13:16:72:10:15:2a:01:53:33:14:16:49:50:17:81:19:51:2a:01:53:33:15:16:73:51:2a:01:53:33:16:16:74:52:2a:01:53:33:17:16:75:51:63
+  prelude: (3, 0, 0, 0, 0, 0)
+  args: []
+  line info: 80:0e:46:26:52:47:64:29:29:23:29:29:69:26:26:65:64:20:4a:4a:24:24:2a:4a:24:24:24:24:64:20:22:25:25:25:25:25:25:25:25:25:25:25:48:22:2a:2a:2a:2a:2f:2a:2f:2a:2f:25:72:60:20:22:25:25:25:25:25:25:25:25:25:25:25:25:25:48:24:24:24:24:24:24:64:84:07:84:15:84:0c:84:07:84:0b:84:10:84:1c:84:0a:84:11:84:12:84:11:88:0f:84:08:84:07:64:40:68:40:64:60:84:0e:64:40:88:08:89:07:64:88:07:88:0a
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:02       IMPORT_NAME time
+  16:02       STORE_NAME time
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:03       IMPORT_NAME pinutil
+  16:03       STORE_NAME pinutil
+  80          LOAD_CONST_SMALL_INT 0 
+  10:04       LOAD_CONST_STRING Pin
+  10:05       LOAD_CONST_STRING I2C
+  2a:02       BUILD_TUPLE 2
+  1b:06       IMPORT_NAME machine
+  1c:04       IMPORT_FROM Pin
+  16:04       STORE_NAME Pin
+  1c:05       IMPORT_FROM I2C
+  16:05       STORE_NAME I2C
+  59          POP_TOP 
+  11:03       LOAD_NAME pinutil
+  14:07       LOAD_METHOD load
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  23:00       LOAD_CONST_OBJ 'ESP32-S3 N16R8'
+  16:79       STORE_NAME BOARD_NAME
+  11:03       LOAD_NAME pinutil
+  13:08       LOAD_ATTR PINS
+  10:09       LOAD_CONST_STRING rgb
+  55          LOAD_SUBSCR 
+  16:7a       STORE_NAME LED_PIN
+  11:03       LOAD_NAME pinutil
+  13:08       LOAD_ATTR PINS
+  10:0a       LOAD_CONST_STRING boot
+  55          LOAD_SUBSCR 
+  16:7b       STORE_NAME BOOT_PIN
+  80          LOAD_CONST_SMALL_INT 0 
+  16:7c       STORE_NAME I2C_ID
+  11:03       LOAD_NAME pinutil
+  13:08       LOAD_ATTR PINS
+  10:0b       LOAD_CONST_STRING oled_scl
+  55          LOAD_SUBSCR 
+  16:7d       STORE_NAME I2C_SCL
+  11:03       LOAD_NAME pinutil
+  13:08       LOAD_ATTR PINS
+  10:0c       LOAD_CONST_STRING oled_sda
+  55          LOAD_SUBSCR 
+  16:7e       STORE_NAME I2C_SDA
+  11:03       LOAD_NAME pinutil
+  13:08       LOAD_ATTR PINS
+  10:0d       LOAD_CONST_STRING oled_addr
+  55          LOAD_SUBSCR 
+  16:7f       STORE_NAME OLED_ADDR
+  22:81:00    LOAD_CONST_SMALL_INT 128
+  16:81:00    STORE_NAME OLED_WIDTH
+  22:80:40    LOAD_CONST_SMALL_INT 64
+  16:81:01    STORE_NAME OLED_HEIGHT
+  22:3c       LOAD_CONST_SMALL_INT 60
+  16:81:02    STORE_NAME VISIBLE_HEIGHT
+  52          LOAD_CONST_TRUE 
+  16:81:03    STORE_NAME AUDIO_ENABLED
+  11:03       LOAD_NAME pinutil
+  13:08       LOAD_ATTR PINS
+  10:0e       LOAD_CONST_STRING mic
+  55          LOAD_SUBSCR 
+  16:81:04    STORE_NAME MIC_PINS
+  11:03       LOAD_NAME pinutil
+  13:08       LOAD_ATTR PINS
+  10:0f       LOAD_CONST_STRING spk
+  55          LOAD_SUBSCR 
+  16:81:05    STORE_NAME SPK_PINS
+  88          LOAD_CONST_SMALL_INT 8 
+  16:81:06    STORE_NAME CHAR_W
+  88          LOAD_CONST_SMALL_INT 8 
+  16:81:07    STORE_NAME LINE_PITCH
+  11:81:00    LOAD_NAME OLED_WIDTH
+  11:81:06    LOAD_NAME CHAR_W
+  f6          BINARY_OP 31 __floordiv__ 
+  16:81:08    STORE_NAME CHARS_PER_LINE
+  11:81:02    LOAD_NAME VISIBLE_HEIGHT
+  11:81:07    LOAD_NAME LINE_PITCH
+  f6          BINARY_OP 31 __floordiv__ 
+  16:81:09    STORE_NAME MAX_LINES
+  51          LOAD_CONST_NONE 
+  17:81:0a    STORE_GLOBAL _i2c
+  51          LOAD_CONST_NONE 
+  17:81:0b    STORE_GLOBAL _display
+  51          LOAD_CONST_NONE 
+  17:81:0c    STORE_GLOBAL _boot
+  51          LOAD_CONST_NONE 
+  17:81:0d    STORE_GLOBAL _pixel
+  50          LOAD_CONST_FALSE 
+  17:81:0e    STORE_GLOBAL _led_on
+  2c:0c       BUILD_MAP 12
+  23:01       LOAD_CONST_OBJ (32, 0, 0)
+  10:10       LOAD_CONST_STRING red
+  62          STORE_MAP 
+  23:02       LOAD_CONST_OBJ (32, 12, 0)
+  10:11       LOAD_CONST_STRING orange
+  62          STORE_MAP 
+  23:03       LOAD_CONST_OBJ (32, 24, 0)
+  10:12       LOAD_CONST_STRING yellow
+  62          STORE_MAP 
+  23:04       LOAD_CONST_OBJ (0, 32, 0)
+  10:13       LOAD_CONST_STRING green
+  62          STORE_MAP 
+  23:05       LOAD_CONST_OBJ (0, 24, 24)
+  10:14       LOAD_CONST_STRING cyan
+  62          STORE_MAP 
+  23:06       LOAD_CONST_OBJ (0, 0, 32)
+  10:15       LOAD_CONST_STRING blue
+  62          STORE_MAP 
+  23:07       LOAD_CONST_OBJ (20, 0, 32)
+  10:16       LOAD_CONST_STRING purple
+  62          STORE_MAP 
+  23:07       LOAD_CONST_OBJ (20, 0, 32)
+  10:17       LOAD_CONST_STRING violet
+  62          STORE_MAP 
+  23:08       LOAD_CONST_OBJ (24, 24, 24)
+  10:18       LOAD_CONST_STRING white
+  62          STORE_MAP 
+  23:09       LOAD_CONST_OBJ (32, 8, 16)
+  10:19       LOAD_CONST_STRING pink
+  62          STORE_MAP 
+  23:0a       LOAD_CONST_OBJ (32, 20, 8)
+  10:1a       LOAD_CONST_STRING warm
+  62          STORE_MAP 
+  23:0b       LOAD_CONST_OBJ (0, 0, 0)
+  10:1b       LOAD_CONST_STRING off
+  62          STORE_MAP 
+  16:81:0f    STORE_NAME LED_COLORS
+  2c:19       BUILD_MAP 25
+  10:10       LOAD_CONST_STRING red
+  10:1c       LOAD_CONST_STRING 红
+  62          STORE_MAP 
+  10:10       LOAD_CONST_STRING red
+  10:1d       LOAD_CONST_STRING 红色
+  62          STORE_MAP 
+  10:11       LOAD_CONST_STRING orange
+  10:1e       LOAD_CONST_STRING 橙
+  62          STORE_MAP 
+  10:11       LOAD_CONST_STRING orange
+  10:1f       LOAD_CONST_STRING 橙色
+  62          STORE_MAP 
+  10:12       LOAD_CONST_STRING yellow
+  10:20       LOAD_CONST_STRING 黄
+  62          STORE_MAP 
+  10:12       LOAD_CONST_STRING yellow
+  10:21       LOAD_CONST_STRING 黄色
+  62          STORE_MAP 
+  10:13       LOAD_CONST_STRING green
+  10:22       LOAD_CONST_STRING 绿
+  62          STORE_MAP 
+  10:13       LOAD_CONST_STRING green
+  10:23       LOAD_CONST_STRING 绿色
+  62          STORE_MAP 
+  10:14       LOAD_CONST_STRING cyan
+  10:24       LOAD_CONST_STRING 青
+  62          STORE_MAP 
+  10:14       LOAD_CONST_STRING cyan
+  10:25       LOAD_CONST_STRING 青色
+  62          STORE_MAP 
+  10:14       LOAD_CONST_STRING cyan
+  10:26       LOAD_CONST_STRING 蓝绿
+  62          STORE_MAP 
+  10:15       LOAD_CONST_STRING blue
+  10:27       LOAD_CONST_STRING 蓝
+  62          STORE_MAP 
+  10:15       LOAD_CONST_STRING blue
+  10:28       LOAD_CONST_STRING 蓝色
+  62          STORE_MAP 
+  10:16       LOAD_CONST_STRING purple
+  10:29       LOAD_CONST_STRING 紫
+  62          STORE_MAP 
+  10:16       LOAD_CONST_STRING purple
+  10:2a       LOAD_CONST_STRING 紫色
+  62          STORE_MAP 
+  10:16       LOAD_CONST_STRING purple
+  10:2b       LOAD_CONST_STRING 靛
+  62          STORE_MAP 
+  10:18       LOAD_CONST_STRING white
+  10:2c       LOAD_CONST_STRING 白
+  62          STORE_MAP 
+  10:18       LOAD_CONST_STRING white
+  10:2d       LOAD_CONST_STRING 白色
+  62          STORE_MAP 
+  10:19       LOAD_CONST_STRING pink
+  10:2e       LOAD_CONST_STRING 粉
+  62          STORE_MAP 
+  10:19       LOAD_CONST_STRING pink
+  10:2f       LOAD_CONST_STRING 粉色
+  62          STORE_MAP 
+  10:19       LOAD_CONST_STRING pink
+  10:30       LOAD_CONST_STRING 粉红
+  62          STORE_MAP 
+  10:1a       LOAD_CONST_STRING warm
+  10:31       LOAD_CONST_STRING 暖白
+  62          STORE_MAP 
+  10:1b       LOAD_CONST_STRING off
+  10:32       LOAD_CONST_STRING 关
+  62          STORE_MAP 
+  10:1b       LOAD_CONST_STRING off
+  10:33       LOAD_CONST_STRING 关灯
+  62          STORE_MAP 
+  10:1b       LOAD_CONST_STRING off
+  10:34       LOAD_CONST_STRING 关闭
+  62          STORE_MAP 
+  16:81:10    STORE_NAME _LED_ALIASES
+  2c:0e       BUILD_MAP 14
+  10:10       LOAD_CONST_STRING red
+  10:35       LOAD_CONST_STRING startup
+  62          STORE_MAP 
+  10:10       LOAD_CONST_STRING red
+  10:36       LOAD_CONST_STRING scan
+  62          STORE_MAP 
+  10:10       LOAD_CONST_STRING red
+  10:37       LOAD_CONST_STRING scanning
+  62          STORE_MAP 
+  10:10       LOAD_CONST_STRING red
+  10:38       LOAD_CONST_STRING wifi
+  62          STORE_MAP 
+  10:16       LOAD_CONST_STRING purple
+  10:39       LOAD_CONST_STRING portal
+  62          STORE_MAP 
+  10:14       LOAD_CONST_STRING cyan
+  10:3a       LOAD_CONST_STRING connecting
+  62          STORE_MAP 
+  10:15       LOAD_CONST_STRING blue
+  10:3b       LOAD_CONST_STRING joined
+  62          STORE_MAP 
+  10:15       LOAD_CONST_STRING blue
+  10:3c       LOAD_CONST_STRING ble
+  62          STORE_MAP 
+  10:13       LOAD_CONST_STRING green
+  10:3d       LOAD_CONST_STRING ready
+  62          STORE_MAP 
+  10:15       LOAD_CONST_STRING blue
+  10:3e       LOAD_CONST_STRING init
+  62          STORE_MAP 
+  10:10       LOAD_CONST_STRING red
+  10:3f       LOAD_CONST_STRING error
+  62          STORE_MAP 
+  10:10       LOAD_CONST_STRING red
+  10:40       LOAD_CONST_STRING offline
+  62          STORE_MAP 
+  10:18       LOAD_CONST_STRING white
+  10:41       LOAD_CONST_STRING bye
+  62          STORE_MAP 
+  10:15       LOAD_CONST_STRING blue
+  10:42       LOAD_CONST_STRING sleep
+  62          STORE_MAP 
+  16:81:11    STORE_NAME _LED_STATES
+  51          LOAD_CONST_NONE 
+  17:81:12    STORE_GLOBAL _led_last
+  51          LOAD_CONST_NONE 
+  17:81:13    STORE_GLOBAL _led_pattern
+  80          LOAD_CONST_SMALL_INT 0 
+  17:81:14    STORE_GLOBAL _led_blink_ms
+  50          LOAD_CONST_FALSE 
+  17:81:15    STORE_GLOBAL _led_phase
+  80          LOAD_CONST_SMALL_INT 0 
+  17:81:16    STORE_GLOBAL _led_next
+  50          LOAD_CONST_FALSE 
+  17:81:17    STORE_GLOBAL _led_manual
+  50          LOAD_CONST_FALSE 
+  17:81:18    STORE_GLOBAL _led_engine
+  32:00       MAKE_FUNCTION 0
+  16:43       STORE_NAME _color_name
+  32:01       MAKE_FUNCTION 1
+  16:45       STORE_NAME led_engine_mode
+  32:02       MAKE_FUNCTION 2
+  16:48       STORE_NAME _led_stop_native_blink
+  32:03       MAKE_FUNCTION 3
+  16:4b       STORE_NAME get_i2c
+  32:04       MAKE_FUNCTION 4
+  16:4f       STORE_NAME get_display
+  32:05       MAKE_FUNCTION 5
+  16:53       STORE_NAME _ws2812
+  32:06       MAKE_FUNCTION 6
+  16:57       STORE_NAME _led_write
+  32:07       MAKE_FUNCTION 7
+  16:59       STORE_NAME _led_rgb
+  32:08       MAKE_FUNCTION 8
+  16:5d       STORE_NAME set_led_color
+  32:09       MAKE_FUNCTION 9
+  16:5e       STORE_NAME led_status
+  32:0a       MAKE_FUNCTION 10
+  16:5f       STORE_NAME led_color_from_text
+  51          LOAD_CONST_NONE 
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:0b       MAKE_FUNCTION_DEFARGS 11
+  16:63       STORE_NAME led_tick
+  32:0c       MAKE_FUNCTION 12
+  16:67       STORE_NAME init_pins
+  32:0d       MAKE_FUNCTION 13
+  16:68       STORE_NAME get_boot_button
+  32:0e       MAKE_FUNCTION 14
+  16:6b       STORE_NAME boot_pressed
+  52          LOAD_CONST_TRUE 
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:0f       MAKE_FUNCTION_DEFARGS 15
+  16:6d       STORE_NAME led_on
+  32:10       MAKE_FUNCTION 16
+  16:6e       STORE_NAME led_toggle
+  32:11       MAKE_FUNCTION 17
+  16:6f       STORE_NAME led_take
+  32:12       MAKE_FUNCTION 18
+  16:71       STORE_NAME boot_led
+  51          LOAD_CONST_NONE 
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:13       MAKE_FUNCTION_DEFARGS 19
+  16:72       STORE_NAME led_breath_tick
+  10:15       LOAD_CONST_STRING blue
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:14       MAKE_FUNCTION_DEFARGS 20
+  16:49       STORE_NAME led_blink
+  50          LOAD_CONST_FALSE 
+  17:81:19    STORE_GLOBAL _rgb_phase
+  51          LOAD_CONST_NONE 
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:15       MAKE_FUNCTION_DEFARGS 21
+  16:73       STORE_NAME rgb_tick
+  51          LOAD_CONST_NONE 
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:16       MAKE_FUNCTION_DEFARGS 22
+  16:74       STORE_NAME ble_data_tick
+  52          LOAD_CONST_TRUE 
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:17       MAKE_FUNCTION_DEFARGS 23
+  16:75       STORE_NAME display_text
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [_color_name, led_engine_mode, _led_stop_native_blink, get_i2c, get_display, _ws2812, _led_write, _led_rgb, set_led_color, led_status, led_color_from_text, led_tick, init_pins, get_boot_button, boot_pressed, led_on, led_toggle, led_take, boot_led, led_breath_tick, led_blink, rgb_tick, ble_data_tick, display_text]
+simple_name: _color_name
+  raw bytecode: 30 41:0e:43:09:80:74:2e:25:24:12:81:0f:14:44:36:00:5f:4b:0d:30:02:c1:c2:b2:b0:d9:44:42:b1:63
+  prelude: (9, 0, 0, 1, 0, 0)
+  args: ['rgb']
+  line info: 80:74:2e:25:24
+  12:81:0f    LOAD_GLOBAL LED_COLORS
+  14:44       LOAD_METHOD items
+  36:00       CALL_METHOD 0
+  5f          GET_ITER_STACK 
+  4b:0d       FOR_ITER 13
+  30:02       UNPACK_SEQUENCE 2
+  c1          STORE_FAST 1 
+  c2          STORE_FAST 2 
+  b2          LOAD_FAST 2 
+  b0          LOAD_FAST 0 
+  d9          BINARY_OP 2 __eq__ 
+  44:42       POP_JUMP_IF_FALSE 2
+  b1          LOAD_FAST 1 
+  63          RETURN_VALUE 
+  children: []
+simple_name: led_engine_mode
+  raw bytecode: 33 3d:22:45:81:1a:80:7b:60:40:20:2c:22:29:24:22:25:53:24:43:12:81:18:12:81:1b:b0:34:01:d9:44:42:51:63
+  prelude: (8, 1, 0, 1, 0, 0)
+  args: ['on']
+  line info: 80:7b:60:40:20:2c:22:29:24:22:25:53:24:43
+  12:81:18    LOAD_GLOBAL _led_engine
+  12:81:1b    LOAD_GLOBAL bool
+  b0          LOAD_FAST 0 
+  34:01       CALL_FUNCTION 1
+  d9          BINARY_OP 2 __eq__ 
+  44:42       POP_JUMP_IF_FALSE 2
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _led_stop_native_blink
+  raw bytecode: 46 34:10:48:80:90:60:25:22:25:53:12:81:18:44:5d:48:10:80:51:1b:46:c0:b0:14:49:10:4a:80:36:02:59:4a:0b:57:12:81:1c:df:44:43:59:4a:01:5d:51:63
+  prelude: (7, 1, 0, 0, 0, 0)
+  args: []
+  line info: 80:90:60:25:22:25:53
+  12:81:18    LOAD_GLOBAL _led_engine
+  44:5d       POP_JUMP_IF_FALSE 29
+  48:10       SETUP_EXCEPT 16
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:46       IMPORT_NAME xiaozhi_native
+  c0          STORE_FAST 0 
+  b0          LOAD_FAST 0 
+  14:49       LOAD_METHOD led_blink
+  10:4a       LOAD_CONST_STRING q1
+  80          LOAD_CONST_SMALL_INT 0 
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  4a:0b       POP_EXCEPT_JUMP 11
+  57          DUP_TOP 
+  12:81:1c    LOAD_GLOBAL Exception
+  df          BINARY_OP 8 <exception match> 
+  44:43       POP_JUMP_IF_FALSE 3
+  59          POP_TOP 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: get_i2c
+  raw bytecode: 52 38:0e:4b:80:9c:20:27:1f:21:12:81:0a:51:de:44:60:12:05:12:7c:10:4c:12:04:12:7d:34:01:10:4d:12:04:12:7e:34:01:10:4e:22:98:b5:00:34:86:01:17:81:0a:12:81:0a:63
+  prelude: (8, 0, 0, 0, 0, 0)
+  args: []
+  line info: 80:9c:20:27:1f:21
+  12:81:0a    LOAD_GLOBAL _i2c
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  44:60       POP_JUMP_IF_FALSE 32
+  12:05       LOAD_GLOBAL I2C
+  12:7c       LOAD_GLOBAL I2C_ID
+  10:4c       LOAD_CONST_STRING scl
+  12:04       LOAD_GLOBAL Pin
+  12:7d       LOAD_GLOBAL I2C_SCL
+  34:01       CALL_FUNCTION 1
+  10:4d       LOAD_CONST_STRING sda
+  12:04       LOAD_GLOBAL Pin
+  12:7e       LOAD_GLOBAL I2C_SDA
+  34:01       CALL_FUNCTION 1
+  10:4e       LOAD_CONST_STRING freq
+  22:98:b5:00 LOAD_CONST_SMALL_INT 400000
+  34:86:01    CALL_FUNCTION 769
+  17:81:0a    STORE_GLOBAL _i2c
+  12:81:0a    LOAD_GLOBAL _i2c
+  63          RETURN_VALUE 
+  children: []
+simple_name: get_display
+  raw bytecode: 68 28:12:4f:80:a3:20:27:29:28:4b:32:12:81:0b:51:de:44:6e:12:03:13:08:10:50:55:44:48:12:81:1d:23:0c:34:01:65:80:10:51:2a:01:1b:52:1c:51:c0:59:b0:12:81:00:12:81:01:12:4b:34:00:12:7f:34:04:17:81:0b:12:81:0b:63
+  prelude: (6, 0, 0, 0, 0, 0)
+  args: []
+  line info: 80:a3:20:27:29:28:4b:32
+  12:81:0b    LOAD_GLOBAL _display
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  44:6e       POP_JUMP_IF_FALSE 46
+  12:03       LOAD_GLOBAL pinutil
+  13:08       LOAD_ATTR PINS
+  10:50       LOAD_CONST_STRING no_oled
+  55          LOAD_SUBSCR 
+  44:48       POP_JUMP_IF_FALSE 8
+  12:81:1d    LOAD_GLOBAL OSError
+  23:0c       LOAD_CONST_OBJ 'OLED disabled (pins: no_oled)'
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  80          LOAD_CONST_SMALL_INT 0 
+  10:51       LOAD_CONST_STRING SSD1306_I2C
+  2a:01       BUILD_TUPLE 1
+  1b:52       IMPORT_NAME ssd1306
+  1c:51       IMPORT_FROM SSD1306_I2C
+  c0          STORE_FAST 0 
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  12:81:00    LOAD_GLOBAL OLED_WIDTH
+  12:81:01    LOAD_GLOBAL OLED_HEIGHT
+  12:4b       LOAD_GLOBAL get_i2c
+  34:00       CALL_FUNCTION 0
+  12:7f       LOAD_GLOBAL OLED_ADDR
+  34:04       CALL_FUNCTION 4
+  17:81:0b    STORE_GLOBAL _display
+  12:81:0b    LOAD_GLOBAL _display
+  63          RETURN_VALUE 
+  children: []
+simple_name: _ws2812
+  raw bytecode: 103 b8:02:1a:53:80:ae:20:20:28:22:4b:2d:27:54:29:2d:12:81:0d:51:de:44:cb:80:48:29:80:10:54:2a:01:1b:55:1c:54:c0:59:b0:12:04:12:7a:34:01:81:34:02:17:81:0d:23:0b:12:81:0d:80:56:12:81:0d:14:56:36:00:59:4a:20:57:12:81:1c:df:44:58:c1:49:0e:12:81:1e:23:0d:b1:34:02:59:50:17:81:0d:51:51:c1:28:01:5d:4a:01:5d:12:81:0d:63
+  prelude: (8, 2, 0, 0, 0, 0)
+  args: []
+  line info: 80:ae:20:20:28:22:4b:2d:27:54:29:2d
+  12:81:0d    LOAD_GLOBAL _pixel
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  44:cb:80    POP_JUMP_IF_FALSE 75
+  48:29       SETUP_EXCEPT 41
+  80          LOAD_CONST_SMALL_INT 0 
+  10:54       LOAD_CONST_STRING NeoPixel
+  2a:01       BUILD_TUPLE 1
+  1b:55       IMPORT_NAME neopixel
+  1c:54       IMPORT_FROM NeoPixel
+  c0          STORE_FAST 0 
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  12:04       LOAD_GLOBAL Pin
+  12:7a       LOAD_GLOBAL LED_PIN
+  34:01       CALL_FUNCTION 1
+  81          LOAD_CONST_SMALL_INT 1 
+  34:02       CALL_FUNCTION 2
+  17:81:0d    STORE_GLOBAL _pixel
+  23:0b       LOAD_CONST_OBJ (0, 0, 0)
+  12:81:0d    LOAD_GLOBAL _pixel
+  80          LOAD_CONST_SMALL_INT 0 
+  56          STORE_SUBSCR 
+  12:81:0d    LOAD_GLOBAL _pixel
+  14:56       LOAD_METHOD write
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  4a:20       POP_EXCEPT_JUMP 32
+  57          DUP_TOP 
+  12:81:1c    LOAD_GLOBAL Exception
+  df          BINARY_OP 8 <exception match> 
+  44:58       POP_JUMP_IF_FALSE 24
+  c1          STORE_FAST 1 
+  49:0e       SETUP_FINALLY 14
+  12:81:1e    LOAD_GLOBAL print
+  23:0d       LOAD_CONST_OBJ '[led] ws2812 unavailable:'
+  b1          LOAD_FAST 1 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  50          LOAD_CONST_FALSE 
+  17:81:0d    STORE_GLOBAL _pixel
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  c1          STORE_FAST 1 
+  28:01       DELETE_FAST 1
+  5d          END_FINALLY 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  12:81:0d    LOAD_GLOBAL _pixel
+  63          RETURN_VALUE 
+  children: []
+simple_name: _led_write
+  raw bytecode: 35 4d:30:57:09:80:be:20:20:27:22:65:22:26:25:2d:25:27:4e:23:22:25:23:22:24:26:4e:b0:12:81:12:d9:44:42:51:63
+  prelude: (10, 1, 0, 1, 0, 0)
+  args: ['rgb']
+  line info: 80:be:20:20:27:22:65:22:26:25:2d:25:27:4e:23:22:25:23:22:24:26:4e
+  b0          LOAD_FAST 0 
+  12:81:12    LOAD_GLOBAL _led_last
+  d9          BINARY_OP 2 __eq__ 
+  44:42       POP_JUMP_IF_FALSE 2
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _led_rgb
+  raw bytecode: 66 31:16:59:81:1f:80:da:3a:3b:2b:26:2f:2a:12:81:20:b0:12:81:21:12:81:22:2a:02:34:02:44:65:12:81:23:b0:34:01:83:d9:44:5b:12:81:24:b0:80:55:34:01:12:81:24:b0:81:55:34:01:12:81:24:b0:82:55:34:01:2a:03:63
+  prelude: (7, 0, 0, 1, 0, 0)
+  args: ['color']
+  line info: 80:da:3a:3b:2b:26:2f:2a
+  12:81:20    LOAD_GLOBAL isinstance
+  b0          LOAD_FAST 0 
+  12:81:21    LOAD_GLOBAL tuple
+  12:81:22    LOAD_GLOBAL list
+  2a:02       BUILD_TUPLE 2
+  34:02       CALL_FUNCTION 2
+  44:65       POP_JUMP_IF_FALSE 37
+  12:81:23    LOAD_GLOBAL len
+  b0          LOAD_FAST 0 
+  34:01       CALL_FUNCTION 1
+  83          LOAD_CONST_SMALL_INT 3 
+  d9          BINARY_OP 2 __eq__ 
+  44:5b       POP_JUMP_IF_FALSE 27
+  12:81:24    LOAD_GLOBAL int
+  b0          LOAD_FAST 0 
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  34:01       CALL_FUNCTION 1
+  12:81:24    LOAD_GLOBAL int
+  b0          LOAD_FAST 0 
+  81          LOAD_CONST_SMALL_INT 1 
+  55          LOAD_SUBSCR 
+  34:01       CALL_FUNCTION 1
+  12:81:24    LOAD_GLOBAL int
+  b0          LOAD_FAST 0 
+  82          LOAD_CONST_SMALL_INT 2 
+  55          LOAD_SUBSCR 
+  34:01       CALL_FUNCTION 1
+  2a:03       BUILD_TUPLE 3
+  63          RETURN_VALUE 
+  children: []
+simple_name: set_led_color
+  raw bytecode: 32 19:22:5d:81:1f:80:e4:40:20:26:25:22:24:24:24:24:27:25:26:12:59:b0:34:01:c1:b1:51:de:44:42:51:63
+  prelude: (4, 0, 0, 1, 0, 0)
+  args: ['color']
+  line info: 80:e4:40:20:26:25:22:24:24:24:24:27:25:26
+  12:59       LOAD_GLOBAL _led_rgb
+  b0          LOAD_FAST 0 
+  34:01       CALL_FUNCTION 1
+  c1          STORE_FAST 1 
+  b1          LOAD_FAST 1 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  44:42       POP_JUMP_IF_FALSE 2
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: led_status
+  raw bytecode: 28 29:24:5e:81:26:80:f5:40:20:26:22:2e:25:22:24:24:24:24:24:25:b0:23:0e:d9:44:42:51:63
+  prelude: (6, 0, 0, 1, 0, 0)
+  args: ['state']
+  line info: 80:f5:40:20:26:22:2e:25:22:24:24:24:24:24:25
+  b0          LOAD_FAST 0 
+  23:0e       LOAD_CONST_OBJ 'disconnected'
+  d9          BINARY_OP 2 __eq__ 
+  44:42       POP_JUMP_IF_FALSE 2
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: led_color_from_text
+  raw bytecode: 24 51:22:5f:77:90:07:20:23:22:27:35:22:26:2e:25:24:27:25:24:b0:43:42:51:63
+  prelude: (11, 0, 0, 1, 0, 0)
+  args: ['text']
+  line info: 90:07:20:23:22:27:35:22:26:2e:25:24:27:25:24
+  b0          LOAD_FAST 0 
+  43:42       POP_JUMP_IF_TRUE 2
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: led_tick
+  raw bytecode: 35 a1:01:20:63:81:27:90:18:20:20:2e:22:25:27:2e:22:2d:27:26:12:81:13:51:de:43:47:12:81:14:80:da:44:42:51:63
+  prelude: (5, 0, 0, 1, 0, 1)
+  args: ['now']
+  line info: 90:18:20:20:2e:22:25:27:2e:22:2d:27:26
+  12:81:13    LOAD_GLOBAL _led_pattern
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  43:47       POP_JUMP_IF_TRUE 7
+  12:81:14    LOAD_GLOBAL _led_blink_ms
+  80          LOAD_CONST_SMALL_INT 0 
+  da          BINARY_OP 3 __le__ 
+  44:42       POP_JUMP_IF_FALSE 2
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: init_pins
+  raw bytecode: 20 00:0e:67:90:27:20:20:24:25:50:17:81:0e:12:68:34:00:59:51:63
+  prelude: (1, 0, 0, 0, 0, 0)
+  args: []
+  line info: 90:27:20:20:24:25
+  50          LOAD_CONST_FALSE 
+  17:81:0e    STORE_GLOBAL _led_on
+  12:68       LOAD_GLOBAL get_boot_button
+  34:00       CALL_FUNCTION 0
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: get_boot_button
+  raw bytecode: 36 18:0c:68:90:2f:20:27:31:12:81:0c:51:de:44:51:12:04:12:7b:12:04:13:69:12:04:13:6a:34:03:17:81:0c:12:81:0c:63
+  prelude: (4, 0, 0, 0, 0, 0)
+  args: []
+  line info: 90:2f:20:27:31
+  12:81:0c    LOAD_GLOBAL _boot
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  44:51       POP_JUMP_IF_FALSE 17
+  12:04       LOAD_GLOBAL Pin
+  12:7b       LOAD_GLOBAL BOOT_PIN
+  12:04       LOAD_GLOBAL Pin
+  13:69       LOAD_ATTR IN
+  12:04       LOAD_GLOBAL Pin
+  13:6a       LOAD_ATTR PULL_UP
+  34:03       CALL_FUNCTION 3
+  17:81:0c    STORE_GLOBAL _boot
+  12:81:0c    LOAD_GLOBAL _boot
+  63          RETURN_VALUE 
+  children: []
+simple_name: boot_pressed
+  raw bytecode: 17 08:08:6b:90:36:20:12:68:34:00:14:6c:36:00:80:d9:63
+  prelude: (2, 0, 0, 0, 0, 0)
+  args: []
+  line info: 90:36:20
+  12:68       LOAD_GLOBAL get_boot_button
+  34:00       CALL_FUNCTION 0
+  14:6c       LOAD_METHOD value
+  36:00       CALL_METHOD 0
+  80          LOAD_CONST_SMALL_INT 0 
+  d9          BINARY_OP 2 __eq__ 
+  63          RETURN_VALUE 
+  children: []
+simple_name: led_on
+  raw bytecode: 23 91:01:0c:6d:81:1a:90:3b:20:12:5d:b0:44:44:10:13:42:42:10:1b:34:01:63
+  prelude: (3, 0, 0, 1, 0, 1)
+  args: ['on']
+  line info: 90:3b:20
+  12:5d       LOAD_GLOBAL set_led_color
+  b0          LOAD_FAST 0 
+  44:44       POP_JUMP_IF_FALSE 4
+  10:13       LOAD_CONST_STRING green
+  42:42       JUMP 2
+  10:1b       LOAD_CONST_STRING off
+  34:01       CALL_FUNCTION 1
+  63          RETURN_VALUE 
+  children: []
+simple_name: led_toggle
+  raw bytecode: 16 08:06:6e:90:40:12:6d:12:81:0e:d3:34:01:59:51:63
+  prelude: (2, 0, 0, 0, 0, 0)
+  args: []
+  line info: 90:40
+  12:6d       LOAD_GLOBAL led_on
+  12:81:0e    LOAD_GLOBAL _led_on
+  d3          UNARY_OP 3 <not> 
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: led_take
+  raw bytecode: 59 34:18:6f:90:46:20:20:24:24:24:25:22:25:50:50:17:81:18:51:17:81:12:50:17:81:17:12:48:34:00:59:48:0d:80:51:1b:46:c0:b0:14:70:36:00:59:4a:0b:57:12:81:1c:df:44:43:59:4a:01:5d:51:63
+  prelude: (7, 1, 0, 0, 0, 0)
+  args: []
+  line info: 90:46:20:20:24:24:24:25:22:25:50
+  50          LOAD_CONST_FALSE 
+  17:81:18    STORE_GLOBAL _led_engine
+  51          LOAD_CONST_NONE 
+  17:81:12    STORE_GLOBAL _led_last
+  50          LOAD_CONST_FALSE 
+  17:81:17    STORE_GLOBAL _led_manual
+  12:48       LOAD_GLOBAL _led_stop_native_blink
+  34:00       CALL_FUNCTION 0
+  59          POP_TOP 
+  48:0d       SETUP_EXCEPT 13
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:46       IMPORT_NAME xiaozhi_native
+  c0          STORE_FAST 0 
+  b0          LOAD_FAST 0 
+  14:70       LOAD_METHOD led_release
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  4a:0b       POP_EXCEPT_JUMP 11
+  57          DUP_TOP 
+  12:81:1c    LOAD_GLOBAL Exception
+  df          BINARY_OP 8 <exception match> 
+  44:43       POP_JUMP_IF_FALSE 3
+  59          POP_TOP 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: boot_led
+  raw bytecode: 20 08:08:71:90:54:25:12:6f:34:00:59:12:5d:10:1a:34:01:59:51:63
+  prelude: (2, 0, 0, 0, 0, 0)
+  args: []
+  line info: 90:54:25
+  12:6f       LOAD_GLOBAL led_take
+  34:00       CALL_FUNCTION 0
+  59          POP_TOP 
+  12:5d       LOAD_GLOBAL set_led_color
+  10:1a       LOAD_CONST_STRING warm
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: led_breath_tick
+  raw bytecode: 50 a9:01:12:72:81:27:90:59:20:25:27:2e:b0:51:de:44:47:12:02:14:64:36:00:c0:94:b0:22:97:38:f8:90:f4:22:97:38:f6:f2:c1:12:57:80:80:b1:2a:03:34:01:59:51:63
+  prelude: (6, 0, 0, 1, 0, 1)
+  args: ['now']
+  line info: 90:59:20:25:27:2e
+  b0          LOAD_FAST 0 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  44:47       POP_JUMP_IF_FALSE 7
+  12:02       LOAD_GLOBAL time
+  14:64       LOAD_METHOD ticks_ms
+  36:00       CALL_METHOD 0
+  c0          STORE_FAST 0 
+  94          LOAD_CONST_SMALL_INT 20 
+  b0          LOAD_FAST 0 
+  22:97:38    LOAD_CONST_SMALL_INT 3000
+  f8          BINARY_OP 33 __mod__ 
+  90          LOAD_CONST_SMALL_INT 16 
+  f4          BINARY_OP 29 __mul__ 
+  22:97:38    LOAD_CONST_SMALL_INT 3000
+  f6          BINARY_OP 31 __floordiv__ 
+  f2          BINARY_OP 27 __add__ 
+  c1          STORE_FAST 1 
+  12:57       LOAD_GLOBAL _led_write
+  80          LOAD_CONST_SMALL_INT 0 
+  80          LOAD_CONST_SMALL_INT 0 
+  b1          LOAD_FAST 1 
+  2a:03       BUILD_TUPLE 3
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: led_blink
+  raw bytecode: 32 9a:01:12:49:81:1a:81:1f:90:61:40:25:12:48:34:00:59:12:5d:b0:44:43:b1:42:42:10:1b:34:01:59:51:63
+  prelude: (4, 0, 0, 2, 0, 1)
+  args: ['on', 'color']
+  line info: 90:61:40:25
+  12:48       LOAD_GLOBAL _led_stop_native_blink
+  34:00       CALL_FUNCTION 0
+  59          POP_TOP 
+  12:5d       LOAD_GLOBAL set_led_color
+  b0          LOAD_FAST 0 
+  44:43       POP_JUMP_IF_FALSE 3
+  b1          LOAD_FAST 1 
+  42:42       JUMP 2
+  10:1b       LOAD_CONST_STRING off
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: rgb_tick
+  raw bytecode: 11 89:01:0c:73:81:27:90:6b:60:51:63
+  prelude: (2, 0, 0, 1, 0, 1)
+  args: ['now']
+  line info: 90:6b:60
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: ble_data_tick
+  raw bytecode: 58 99:01:14:74:81:27:90:72:40:20:25:27:27:b0:51:de:44:47:12:02:14:64:36:00:c0:12:81:19:d3:17:81:19:12:57:12:81:19:44:48:12:81:0f:10:13:55:42:46:12:81:0f:10:15:55:34:01:59:51:63
+  prelude: (4, 0, 0, 1, 0, 1)
+  args: ['now']
+  line info: 90:72:40:20:25:27:27
+  b0          LOAD_FAST 0 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  44:47       POP_JUMP_IF_FALSE 7
+  12:02       LOAD_GLOBAL time
+  14:64       LOAD_METHOD ticks_ms
+  36:00       CALL_METHOD 0
+  c0          STORE_FAST 0 
+  12:81:19    LOAD_GLOBAL _rgb_phase
+  d3          UNARY_OP 3 <not> 
+  17:81:19    STORE_GLOBAL _rgb_phase
+  12:57       LOAD_GLOBAL _led_write
+  12:81:19    LOAD_GLOBAL _rgb_phase
+  44:48       POP_JUMP_IF_FALSE 8
+  12:81:0f    LOAD_GLOBAL LED_COLORS
+  10:13       LOAD_CONST_STRING green
+  55          LOAD_SUBSCR 
+  42:46       JUMP 6
+  12:81:0f    LOAD_GLOBAL LED_COLORS
+  10:15       LOAD_CONST_STRING blue
+  55          LOAD_SUBSCR 
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: display_text
+  raw bytecode: 88 f2:01:1c:75:81:28:81:29:90:7c:20:25:23:27:34:3c:26:12:4f:34:00:c2:b1:44:47:b2:14:76:80:36:01:59:12:81:2a:b0:51:12:81:09:2e:02:55:34:01:5f:4b:20:30:02:c3:c4:b2:14:77:12:81:25:b4:34:01:51:12:81:08:2e:02:55:80:b3:12:81:07:f4:81:36:04:59:42:1e:b2:14:78:36:00:59:b2:63
+  prelude: (15, 0, 0, 2, 0, 1)
+  args: ['lines', 'clear']
+  line info: 90:7c:20:25:23:27:34:3c:26
+  12:4f       LOAD_GLOBAL get_display
+  34:00       CALL_FUNCTION 0
+  c2          STORE_FAST 2 
+  b1          LOAD_FAST 1 
+  44:47       POP_JUMP_IF_FALSE 7
+  b2          LOAD_FAST 2 
+  14:76       LOAD_METHOD fill
+  80          LOAD_CONST_SMALL_INT 0 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  12:81:2a    LOAD_GLOBAL enumerate
+  b0          LOAD_FAST 0 
+  51          LOAD_CONST_NONE 
+  12:81:09    LOAD_GLOBAL MAX_LINES
+  2e:02       BUILD_SLICE 2
+  55          LOAD_SUBSCR 
+  34:01       CALL_FUNCTION 1
+  5f          GET_ITER_STACK 
+  4b:20       FOR_ITER 32
+  30:02       UNPACK_SEQUENCE 2
+  c3          STORE_FAST 3 
+  c4          STORE_FAST 4 
+  b2          LOAD_FAST 2 
+  14:77       LOAD_METHOD text
+  12:81:25    LOAD_GLOBAL str
+  b4          LOAD_FAST 4 
+  34:01       CALL_FUNCTION 1
+  51          LOAD_CONST_NONE 
+  12:81:08    LOAD_GLOBAL CHARS_PER_LINE
+  2e:02       BUILD_SLICE 2
+  55          LOAD_SUBSCR 
+  80          LOAD_CONST_SMALL_INT 0 
+  b3          LOAD_FAST 3 
+  12:81:07    LOAD_GLOBAL LINE_PITCH
+  f4          BINARY_OP 29 __mul__ 
+  81          LOAD_CONST_SMALL_INT 1 
+  36:04       CALL_METHOD 4
+  59          POP_TOP 
+  42:1e       JUMP -34
+  b2          LOAD_FAST 2 
+  14:78       LOAD_METHOD show
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  b2          LOAD_FAST 2 
+  63          RETURN_VALUE 
+  children: []

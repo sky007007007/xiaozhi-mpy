@@ -1,0 +1,37 @@
+mpy_source_file: extracted/uasyncio.py.mpy
+source_file: uasyncio.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[6] (* for static qstrs):
+    'uasyncio.py' 
+    '<module>' *
+    '__getattr__' *
+    'asyncio' 
+    'attr' 
+    'getattr' *
+obj_table: [None]
+simple_name: <module>
+  raw bytecode: 9 00:02:01:32:00:16:02:51:63
+  prelude: (1, 0, 0, 0, 0, 0)
+  args: []
+  line info: 
+  32:00       MAKE_FUNCTION 0
+  16:02       STORE_NAME __getattr__
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [__getattr__]
+simple_name: __getattr__
+  raw bytecode: 16 21:04:02:04:80:51:1b:03:c1:12:05:b1:b0:34:02:63
+  prelude: (5, 0, 0, 1, 0, 0)
+  args: ['attr']
+  line info: 
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:03       IMPORT_NAME asyncio
+  c1          STORE_FAST 1 
+  12:05       LOAD_GLOBAL getattr
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  34:02       CALL_FUNCTION 2
+  63          RETURN_VALUE 
+  children: []

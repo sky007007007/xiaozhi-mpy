@@ -1,0 +1,518 @@
+mpy_source_file: extracted/pinutil.py.mpy
+source_file: pinutil.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[77] (* for static qstrs):
+    'pinutil.py' 
+    '<module>' *
+    'json' 
+    'mic' 
+    'mic_on' 
+    'spk_on' 
+    'spk' 
+    'oled_sda' 
+    'oled_scl' 
+    'oled_addr' 
+    'rgb' 
+    'boot' 
+    'no_oled' 
+    'oled_off' 
+    'get' *
+    '_int' 
+    '_clean' 
+    'append' *
+    '%s uses %d' 
+    'items' *
+    'fromkeys' 
+    'load' 
+    '_loaded' 
+    'esp32' 
+    'NVS' 
+    'xiaozhi' 
+    'get_blob' 
+    'pins' 
+    'loads' 
+    'decode' 
+    'update' *
+    ',' 
+    'join' *
+    'keys' *
+    'current' 
+    'defaults' 
+    'save' 
+    'set_blob' 
+    'dumps' 
+    'encode' 
+    'commit' 
+    'wipe' 
+    'erase_key' 
+    '<listcomp>' 
+    '<genexpr>' 
+    '<dictcomp>' 
+    'DEF_MIC' 
+    'DEF_SPK' 
+    'DEF_OLED_SDA' 
+    'DEF_OLED_SCL' 
+    'DEF_OLED_ADDR' 
+    'DEF_RGB' 
+    'DEF_BOOT' 
+    'range' *
+    '_BANNED' 
+    '_WARN' 
+    '_defaults' 
+    'PINS' 
+    'bool' *
+    'v' 
+    'lo' 
+    'hi' 
+    'int' *
+    'Exception' *
+    'd' 
+    'isinstance' *
+    'tuple' *
+    'list' *
+    'len' *
+    'any' *
+    'dict' *
+    'bytearray' *
+    'bytes' *
+    'print' *
+    'sorted' *
+    'str' *
+    '*' *
+obj_table: [(4, 5, 6), (1, 2, 3), (19, 20, 43, 44), ('mic', 'spk'), '%s needs 3 pins', '%s pin out of range', ('oled_sda', 'oled_scl', 'rgb', 'boot'), 'pin %d used twice (%s)', (None, 'bad oled_addr'), ('mic_on', 'spk_on'), '[pins] warn:', '[pins] overrides:', '[pins] read:', '[pins] save:', '[pins] wiped', '[pins] wipe:']
+simple_name: <module>
+  raw bytecode: 180 10:52:01:80:0b:66:24:24:23:23:24:24:63:20:28:44:43:22:25:24:24:25:25:25:25:25:25:66:20:64:40:8a:08:84:35:84:1c:84:10:84:11:84:1a:80:51:1b:02:16:02:23:00:16:2e:23:01:16:2f:88:16:30:89:16:31:22:3c:16:32:22:30:16:33:80:16:34:11:35:9a:a1:34:02:16:36:23:02:16:37:51:17:38:2c:0a:11:2e:10:03:62:52:10:04:62:52:10:05:62:11:2f:10:06:62:11:30:10:07:62:11:31:10:08:62:11:32:10:09:62:11:33:10:0a:62:11:34:10:0b:62:50:10:0c:62:16:39:32:00:16:0d:80:22:30:2a:02:53:33:01:16:0f:32:02:16:10:32:03:16:15:32:04:16:22:32:05:16:23:32:06:16:24:32:07:16:29:51:63
+  prelude: (3, 0, 0, 0, 0, 0)
+  args: []
+  line info: 80:0b:66:24:24:23:23:24:24:63:20:28:44:43:22:25:24:24:25:25:25:25:25:25:66:20:64:40:8a:08:84:35:84:1c:84:10:84:11:84:1a
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:02       IMPORT_NAME json
+  16:02       STORE_NAME json
+  23:00       LOAD_CONST_OBJ (4, 5, 6)
+  16:2e       STORE_NAME DEF_MIC
+  23:01       LOAD_CONST_OBJ (1, 2, 3)
+  16:2f       STORE_NAME DEF_SPK
+  88          LOAD_CONST_SMALL_INT 8 
+  16:30       STORE_NAME DEF_OLED_SDA
+  89          LOAD_CONST_SMALL_INT 9 
+  16:31       STORE_NAME DEF_OLED_SCL
+  22:3c       LOAD_CONST_SMALL_INT 60
+  16:32       STORE_NAME DEF_OLED_ADDR
+  22:30       LOAD_CONST_SMALL_INT 48
+  16:33       STORE_NAME DEF_RGB
+  80          LOAD_CONST_SMALL_INT 0 
+  16:34       STORE_NAME DEF_BOOT
+  11:35       LOAD_NAME range
+  9a          LOAD_CONST_SMALL_INT 26 
+  a1          LOAD_CONST_SMALL_INT 33 
+  34:02       CALL_FUNCTION 2
+  16:36       STORE_NAME _BANNED
+  23:02       LOAD_CONST_OBJ (19, 20, 43, 44)
+  16:37       STORE_NAME _WARN
+  51          LOAD_CONST_NONE 
+  17:38       STORE_GLOBAL _defaults
+  2c:0a       BUILD_MAP 10
+  11:2e       LOAD_NAME DEF_MIC
+  10:03       LOAD_CONST_STRING mic
+  62          STORE_MAP 
+  52          LOAD_CONST_TRUE 
+  10:04       LOAD_CONST_STRING mic_on
+  62          STORE_MAP 
+  52          LOAD_CONST_TRUE 
+  10:05       LOAD_CONST_STRING spk_on
+  62          STORE_MAP 
+  11:2f       LOAD_NAME DEF_SPK
+  10:06       LOAD_CONST_STRING spk
+  62          STORE_MAP 
+  11:30       LOAD_NAME DEF_OLED_SDA
+  10:07       LOAD_CONST_STRING oled_sda
+  62          STORE_MAP 
+  11:31       LOAD_NAME DEF_OLED_SCL
+  10:08       LOAD_CONST_STRING oled_scl
+  62          STORE_MAP 
+  11:32       LOAD_NAME DEF_OLED_ADDR
+  10:09       LOAD_CONST_STRING oled_addr
+  62          STORE_MAP 
+  11:33       LOAD_NAME DEF_RGB
+  10:0a       LOAD_CONST_STRING rgb
+  62          STORE_MAP 
+  11:34       LOAD_NAME DEF_BOOT
+  10:0b       LOAD_CONST_STRING boot
+  62          STORE_MAP 
+  50          LOAD_CONST_FALSE 
+  10:0c       LOAD_CONST_STRING no_oled
+  62          STORE_MAP 
+  16:39       STORE_NAME PINS
+  32:00       MAKE_FUNCTION 0
+  16:0d       STORE_NAME oled_off
+  80          LOAD_CONST_SMALL_INT 0 
+  22:30       LOAD_CONST_SMALL_INT 48
+  2a:02       BUILD_TUPLE 2
+  53          LOAD_NULL 
+  33:01       MAKE_FUNCTION_DEFARGS 1
+  16:0f       STORE_NAME _int
+  32:02       MAKE_FUNCTION 2
+  16:10       STORE_NAME _clean
+  32:03       MAKE_FUNCTION 3
+  16:15       STORE_NAME load
+  32:04       MAKE_FUNCTION 4
+  16:22       STORE_NAME current
+  32:05       MAKE_FUNCTION 5
+  16:23       STORE_NAME defaults
+  32:06       MAKE_FUNCTION 6
+  16:24       STORE_NAME save
+  32:07       MAKE_FUNCTION 7
+  16:29       STORE_NAME wipe
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [oled_off, _int, _clean, load, current, defaults, save, wipe]
+simple_name: oled_off
+  raw bytecode: 19 18:08:0d:80:2c:20:12:3a:12:39:14:0e:10:0c:36:01:34:01:63
+  prelude: (4, 0, 0, 0, 0, 0)
+  args: []
+  line info: 80:2c:20
+  12:3a       LOAD_GLOBAL bool
+  12:39       LOAD_GLOBAL PINS
+  14:0e       LOAD_METHOD get
+  10:0c       LOAD_CONST_STRING no_oled
+  36:01       CALL_METHOD 1
+  34:01       CALL_FUNCTION 1
+  63          RETURN_VALUE 
+  children: []
+simple_name: _int
+  raw bytecode: 32 cf:80:01:12:0f:3b:3c:3d:80:31:22:4f:23:48:08:12:3e:b0:34:01:c3:4a:0a:57:12:3f:df:44:43:59:51:63
+  prelude: (10, 1, 0, 3, 0, 2)
+  args: ['v', 'lo', 'hi']
+  line info: 80:31:22:4f:23
+  48:08       SETUP_EXCEPT 8
+  12:3e       LOAD_GLOBAL int
+  b0          LOAD_FAST 0 
+  34:01       CALL_FUNCTION 1
+  c3          STORE_FAST 3 
+  4a:0a       POP_EXCEPT_JUMP 10
+  57          DUP_TOP 
+  12:3f       LOAD_GLOBAL Exception
+  df          BINARY_OP 8 <exception match> 
+  44:43       POP_JUMP_IF_FALSE 3
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _clean
+  raw bytecode: 112 c1:10:67:10:40:80:39:20:24:23:26:27:25:22:36:28:26:2c:28:25:26:2f:2c:26:27:25:22:26:2b:28:26:2d:68:20:24:25:23:2c:25:2d:29:23:2c:28:26:2a:25:23:26:26:2d:26:25:2d:0b:2c:00:27:0b:2b:00:c1:23:03:5f:4b:6d:c2:b0:14:0e:b2:36:01:c3:b3:51:de:44:42:42:2f:12:41:b3:12:42:12:43:2a:02:34:02:44:49:12:44:b3:34:01:83:dc:44:48:51:23:04:b2:f8:2a:02:63
+  prelude: (25, 0, 0, 1, 0, 0)
+  args: ['d']
+  line info: 80:39:20:24:23:26:27:25:22:36:28:26:2c:28:25:26:2f:2c:26:27:25:22:26:2b:28:26:2d:68:20:24:25:23:2c:25:2d:29:23:2c:28:26:2a:25:23:26:26:2d:26:25:2d:0b
+  2c:00       BUILD_MAP 0
+  27:0b       STORE_DEREF 11
+  2b:00       BUILD_LIST 0
+  c1          STORE_FAST 1 
+  23:03       LOAD_CONST_OBJ ('mic', 'spk')
+  5f          GET_ITER_STACK 
+  4b:6d       FOR_ITER 109
+  c2          STORE_FAST 2 
+  b0          LOAD_FAST 0 
+  14:0e       LOAD_METHOD get
+  b2          LOAD_FAST 2 
+  36:01       CALL_METHOD 1
+  c3          STORE_FAST 3 
+  b3          LOAD_FAST 3 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  44:42       POP_JUMP_IF_FALSE 2
+  42:2f       JUMP -17
+  12:41       LOAD_GLOBAL isinstance
+  b3          LOAD_FAST 3 
+  12:42       LOAD_GLOBAL tuple
+  12:43       LOAD_GLOBAL list
+  2a:02       BUILD_TUPLE 2
+  34:02       CALL_FUNCTION 2
+  44:49       POP_JUMP_IF_FALSE 9
+  12:44       LOAD_GLOBAL len
+  b3          LOAD_FAST 3 
+  34:01       CALL_FUNCTION 1
+  83          LOAD_CONST_SMALL_INT 3 
+  dc          BINARY_OP 5 __ne__ 
+  44:48       POP_JUMP_IF_FALSE 8
+  51          LOAD_CONST_NONE 
+  23:04       LOAD_CONST_OBJ '%s needs 3 pins'
+  b2          LOAD_FAST 2 
+  f8          BINARY_OP 33 __mod__ 
+  2a:02       BUILD_TUPLE 2
+  63          RETURN_VALUE 
+  children: [<listcomp>]
+simple_name: <listcomp>
+  raw bytecode: 23 41:08:2b:4c:80:42:2b:00:b0:5f:4b:0a:c1:12:0f:b1:34:01:2f:14:42:34:63
+  prelude: (9, 0, 0, 1, 0, 0)
+  args: ['*']
+  line info: 80:42
+  2b:00       BUILD_LIST 0
+  b0          LOAD_FAST 0 
+  5f          GET_ITER_STACK 
+  4b:0a       FOR_ITER 10
+  c1          STORE_FAST 1 
+  12:0f       LOAD_GLOBAL _int
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  2f:14       STORE_COMP 20
+  42:34       JUMP -12
+  63          RETURN_VALUE 
+  children: []
+simple_name: load
+  raw bytecode: 40 f8:02:32:15:80:6e:20:20:2a:22:26:2c:22:25:28:28:29:24:35:29:29:23:28:25:2a:24:7d:31:12:39:14:0e:10:16:36:01:44:42:51:63
+  prelude: (16, 2, 0, 0, 0, 0)
+  args: []
+  line info: 80:6e:20:20:2a:22:26:2c:22:25:28:28:29:24:35:29:29:23:28:25:2a:24:7d:31
+  12:39       LOAD_GLOBAL PINS
+  14:0e       LOAD_METHOD get
+  10:16       LOAD_CONST_STRING _loaded
+  36:01       CALL_METHOD 1
+  44:42       POP_JUMP_IF_FALSE 2
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [<dictcomp>]
+simple_name: <dictcomp>
+  raw bytecode: 23 49:08:2d:4c:80:73:2c:00:b0:5f:4b:0a:30:02:c1:c2:b2:b1:2f:19:42:34:63
+  prelude: (10, 0, 0, 1, 0, 0)
+  args: ['*']
+  line info: 80:73
+  2c:00       BUILD_MAP 0
+  b0          LOAD_FAST 0 
+  5f          GET_ITER_STACK 
+  4b:0a       FOR_ITER 10
+  30:02       UNPACK_SEQUENCE 2
+  c1          STORE_FAST 1 
+  c2          STORE_FAST 2 
+  b2          LOAD_FAST 2 
+  b1          LOAD_FAST 1 
+  2f:19       STORE_COMP 25
+  42:34       JUMP -12
+  63          RETURN_VALUE 
+  children: []
+simple_name: current
+  raw bytecode: 107 18:1c:22:80:8a:20:22:2c:2c:28:28:28:28:28:28:28:2c:0a:12:43:12:39:10:03:55:34:01:10:03:62:12:43:12:39:10:06:55:34:01:10:06:62:12:39:10:04:55:10:04:62:12:39:10:05:55:10:05:62:12:39:10:07:55:10:07:62:12:39:10:08:55:10:08:62:12:39:10:09:55:10:09:62:12:39:10:0a:55:10:0a:62:12:39:10:0b:55:10:0b:62:12:39:10:0c:55:10:0c:62:63
+  prelude: (4, 0, 0, 0, 0, 0)
+  args: []
+  line info: 80:8a:20:22:2c:2c:28:28:28:28:28:28:28
+  2c:0a       BUILD_MAP 10
+  12:43       LOAD_GLOBAL list
+  12:39       LOAD_GLOBAL PINS
+  10:03       LOAD_CONST_STRING mic
+  55          LOAD_SUBSCR 
+  34:01       CALL_FUNCTION 1
+  10:03       LOAD_CONST_STRING mic
+  62          STORE_MAP 
+  12:43       LOAD_GLOBAL list
+  12:39       LOAD_GLOBAL PINS
+  10:06       LOAD_CONST_STRING spk
+  55          LOAD_SUBSCR 
+  34:01       CALL_FUNCTION 1
+  10:06       LOAD_CONST_STRING spk
+  62          STORE_MAP 
+  12:39       LOAD_GLOBAL PINS
+  10:04       LOAD_CONST_STRING mic_on
+  55          LOAD_SUBSCR 
+  10:04       LOAD_CONST_STRING mic_on
+  62          STORE_MAP 
+  12:39       LOAD_GLOBAL PINS
+  10:05       LOAD_CONST_STRING spk_on
+  55          LOAD_SUBSCR 
+  10:05       LOAD_CONST_STRING spk_on
+  62          STORE_MAP 
+  12:39       LOAD_GLOBAL PINS
+  10:07       LOAD_CONST_STRING oled_sda
+  55          LOAD_SUBSCR 
+  10:07       LOAD_CONST_STRING oled_sda
+  62          STORE_MAP 
+  12:39       LOAD_GLOBAL PINS
+  10:08       LOAD_CONST_STRING oled_scl
+  55          LOAD_SUBSCR 
+  10:08       LOAD_CONST_STRING oled_scl
+  62          STORE_MAP 
+  12:39       LOAD_GLOBAL PINS
+  10:09       LOAD_CONST_STRING oled_addr
+  55          LOAD_SUBSCR 
+  10:09       LOAD_CONST_STRING oled_addr
+  62          STORE_MAP 
+  12:39       LOAD_GLOBAL PINS
+  10:0a       LOAD_CONST_STRING rgb
+  55          LOAD_SUBSCR 
+  10:0a       LOAD_CONST_STRING rgb
+  62          STORE_MAP 
+  12:39       LOAD_GLOBAL PINS
+  10:0b       LOAD_CONST_STRING boot
+  55          LOAD_SUBSCR 
+  10:0b       LOAD_CONST_STRING boot
+  62          STORE_MAP 
+  12:39       LOAD_GLOBAL PINS
+  10:0c       LOAD_CONST_STRING no_oled
+  55          LOAD_SUBSCR 
+  10:0c       LOAD_CONST_STRING no_oled
+  62          STORE_MAP 
+  63          RETURN_VALUE 
+  children: []
+simple_name: defaults
+  raw bytecode: 120 20:1e:23:80:9a:20:36:22:2b:2b:27:27:27:27:27:27:27:12:38:51:de:d3:44:44:12:38:42:4a:32:00:12:39:14:13:36:00:34:01:c0:2c:0a:12:43:b0:10:03:55:34:01:10:03:62:12:43:b0:10:06:55:34:01:10:06:62:b0:10:04:55:10:04:62:b0:10:05:55:10:05:62:b0:10:07:55:10:07:62:b0:10:08:55:10:08:62:b0:10:09:55:10:09:62:b0:10:0a:55:10:0a:62:b0:10:0b:55:10:0b:62:b0:10:0c:55:10:0c:62:63
+  prelude: (5, 0, 0, 0, 0, 0)
+  args: []
+  line info: 80:9a:20:36:22:2b:2b:27:27:27:27:27:27:27
+  12:38       LOAD_GLOBAL _defaults
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:44       POP_JUMP_IF_FALSE 4
+  12:38       LOAD_GLOBAL _defaults
+  42:4a       JUMP 10
+  32:00       MAKE_FUNCTION 0
+  12:39       LOAD_GLOBAL PINS
+  14:13       LOAD_METHOD items
+  36:00       CALL_METHOD 0
+  34:01       CALL_FUNCTION 1
+  c0          STORE_FAST 0 
+  2c:0a       BUILD_MAP 10
+  12:43       LOAD_GLOBAL list
+  b0          LOAD_FAST 0 
+  10:03       LOAD_CONST_STRING mic
+  55          LOAD_SUBSCR 
+  34:01       CALL_FUNCTION 1
+  10:03       LOAD_CONST_STRING mic
+  62          STORE_MAP 
+  12:43       LOAD_GLOBAL list
+  b0          LOAD_FAST 0 
+  10:06       LOAD_CONST_STRING spk
+  55          LOAD_SUBSCR 
+  34:01       CALL_FUNCTION 1
+  10:06       LOAD_CONST_STRING spk
+  62          STORE_MAP 
+  b0          LOAD_FAST 0 
+  10:04       LOAD_CONST_STRING mic_on
+  55          LOAD_SUBSCR 
+  10:04       LOAD_CONST_STRING mic_on
+  62          STORE_MAP 
+  b0          LOAD_FAST 0 
+  10:05       LOAD_CONST_STRING spk_on
+  55          LOAD_SUBSCR 
+  10:05       LOAD_CONST_STRING spk_on
+  62          STORE_MAP 
+  b0          LOAD_FAST 0 
+  10:07       LOAD_CONST_STRING oled_sda
+  55          LOAD_SUBSCR 
+  10:07       LOAD_CONST_STRING oled_sda
+  62          STORE_MAP 
+  b0          LOAD_FAST 0 
+  10:08       LOAD_CONST_STRING oled_scl
+  55          LOAD_SUBSCR 
+  10:08       LOAD_CONST_STRING oled_scl
+  62          STORE_MAP 
+  b0          LOAD_FAST 0 
+  10:09       LOAD_CONST_STRING oled_addr
+  55          LOAD_SUBSCR 
+  10:09       LOAD_CONST_STRING oled_addr
+  62          STORE_MAP 
+  b0          LOAD_FAST 0 
+  10:0a       LOAD_CONST_STRING rgb
+  55          LOAD_SUBSCR 
+  10:0a       LOAD_CONST_STRING rgb
+  62          STORE_MAP 
+  b0          LOAD_FAST 0 
+  10:0b       LOAD_CONST_STRING boot
+  55          LOAD_SUBSCR 
+  10:0b       LOAD_CONST_STRING boot
+  62          STORE_MAP 
+  b0          LOAD_FAST 0 
+  10:0c       LOAD_CONST_STRING no_oled
+  55          LOAD_SUBSCR 
+  10:0c       LOAD_CONST_STRING no_oled
+  62          STORE_MAP 
+  63          RETURN_VALUE 
+  children: [<dictcomp>]
+simple_name: <dictcomp>
+  raw bytecode: 23 49:08:2d:4c:80:9b:2c:00:b0:5f:4b:0a:30:02:c1:c2:b2:b1:2f:19:42:34:63
+  prelude: (10, 0, 0, 1, 0, 0)
+  args: ['*']
+  line info: 80:9b
+  2c:00       BUILD_MAP 0
+  b0          LOAD_FAST 0 
+  5f          GET_ITER_STACK 
+  4b:0a       FOR_ITER 10
+  30:02       UNPACK_SEQUENCE 2
+  c1          STORE_FAST 1 
+  c2          STORE_FAST 2 
+  b2          LOAD_FAST 2 
+  b1          LOAD_FAST 1 
+  2f:19       STORE_COMP 25
+  42:34       JUMP -12
+  63          RETURN_VALUE 
+  children: []
+simple_name: save
+  raw bytecode: 43 d9:02:2a:24:40:80:ab:20:29:25:65:20:27:29:27:29:22:25:68:33:26:28:4e:28:12:10:b0:34:01:30:02:c1:c2:b1:51:de:44:45:50:b2:2a:02:63
+  prelude: (12, 2, 0, 1, 0, 0)
+  args: ['d']
+  line info: 80:ab:20:29:25:65:20:27:29:27:29:22:25:68:33:26:28:4e:28
+  12:10       LOAD_GLOBAL _clean
+  b0          LOAD_FAST 0 
+  34:01       CALL_FUNCTION 1
+  30:02       UNPACK_SEQUENCE 2
+  c1          STORE_FAST 1 
+  c2          STORE_FAST 2 
+  b1          LOAD_FAST 1 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  44:45       POP_JUMP_IF_FALSE 5
+  50          LOAD_CONST_FALSE 
+  b2          LOAD_FAST 2 
+  2a:02       BUILD_TUPLE 2
+  63          RETURN_VALUE 
+  children: []
+simple_name: wipe
+  raw bytecode: 79 c0:02:14:29:80:c5:20:22:25:28:28:26:52:48:24:80:51:1b:17:c0:b0:14:18:10:19:36:01:c1:b1:14:2a:10:1b:36:01:59:b1:14:28:36:00:59:12:49:23:0e:34:01:59:4a:1a:57:12:3f:df:44:53:c2:49:09:12:49:23:0f:b2:34:02:59:51:51:c2:28:02:5d:4a:01:5d:51:63
+  prelude: (9, 2, 0, 0, 0, 0)
+  args: []
+  line info: 80:c5:20:22:25:28:28:26:52
+  48:24       SETUP_EXCEPT 36
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:17       IMPORT_NAME esp32
+  c0          STORE_FAST 0 
+  b0          LOAD_FAST 0 
+  14:18       LOAD_METHOD NVS
+  10:19       LOAD_CONST_STRING xiaozhi
+  36:01       CALL_METHOD 1
+  c1          STORE_FAST 1 
+  b1          LOAD_FAST 1 
+  14:2a       LOAD_METHOD erase_key
+  10:1b       LOAD_CONST_STRING pins
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b1          LOAD_FAST 1 
+  14:28       LOAD_METHOD commit
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  12:49       LOAD_GLOBAL print
+  23:0e       LOAD_CONST_OBJ '[pins] wiped'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  4a:1a       POP_EXCEPT_JUMP 26
+  57          DUP_TOP 
+  12:3f       LOAD_GLOBAL Exception
+  df          BINARY_OP 8 <exception match> 
+  44:53       POP_JUMP_IF_FALSE 19
+  c2          STORE_FAST 2 
+  49:09       SETUP_FINALLY 9
+  12:49       LOAD_GLOBAL print
+  23:0f       LOAD_CONST_OBJ '[pins] wipe:'
+  b2          LOAD_FAST 2 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  c2          STORE_FAST 2 
+  28:02       DELETE_FAST 2
+  5d          END_FINALLY 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []

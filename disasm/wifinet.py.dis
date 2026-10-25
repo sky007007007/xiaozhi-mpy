@@ -1,0 +1,618 @@
+mpy_source_file: extracted/wifinet.py.mpy
+source_file: wifinet.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[64] (* for static qstrs):
+    'wifinet.py' 
+    '<module>' *
+    'esp32' 
+    'json' 
+    'time' 
+    '_nvs' 
+    'NVS' 
+    'xiaozhi' 
+    '_get_blob' 
+    'get_blob' 
+    'loads' 
+    'decode' 
+    '_put_blob' 
+    'set_blob' 
+    'dumps' 
+    'encode' 
+    'commit' 
+    '_put_creds_mirror' 
+    'creds' 
+    'ssid' 
+    'pass' 
+    '_single' 
+    'get' *
+    'q1' 
+    'load' 
+    'netlist' 
+    'nets' 
+    'append' *
+    'last' 
+    'save' 
+    'insert' *
+    'mark_used' 
+    'remove' *
+    'erase_key' 
+    'wipe' 
+    'connect' 
+    'network' 
+    'WLAN' 
+    'STA_IF' 
+    'active' 
+    'sleep_ms' 
+    'isconnected' 
+    'config' 
+    'essid' 
+    'disconnect' 
+    'ticks_ms' 
+    'ticks_diff' 
+    '[wifi] ok' 
+    'ifconfig' 
+    '<listcomp>' 
+    'MAX_NETS' 
+    'key' *
+    'size' 
+    'bytearray' *
+    'bytes' *
+    'Exception' *
+    'obj' 
+    'print' *
+    'isinstance' *
+    'dict' *
+    'pw' 
+    'len' *
+    'timeout_ms' 
+    '*' *
+obj_table: ['[wifi] mirror:', '[wifi] mark:', '[wifi] creds wiped', '[wifi] wipe:']
+simple_name: <module>
+  raw bytecode: 103 08:36:01:80:0e:26:26:46:63:64:20:84:0c:64:40:84:0c:84:0b:84:19:84:13:84:0e:84:1a:84:0b:80:51:1b:02:16:02:80:51:1b:03:16:03:80:51:1b:04:16:04:88:16:32:32:00:16:05:32:01:16:08:32:02:16:0c:32:03:16:11:32:04:16:15:32:05:16:18:32:06:16:1d:32:07:16:1f:32:08:16:20:32:09:16:22:22:81:ea:30:2a:01:53:33:0a:16:23:51:63
+  prelude: (2, 0, 0, 0, 0, 0)
+  args: []
+  line info: 80:0e:26:26:46:63:64:20:84:0c:64:40:84:0c:84:0b:84:19:84:13:84:0e:84:1a:84:0b
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:02       IMPORT_NAME esp32
+  16:02       STORE_NAME esp32
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:03       IMPORT_NAME json
+  16:03       STORE_NAME json
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:04       IMPORT_NAME time
+  16:04       STORE_NAME time
+  88          LOAD_CONST_SMALL_INT 8 
+  16:32       STORE_NAME MAX_NETS
+  32:00       MAKE_FUNCTION 0
+  16:05       STORE_NAME _nvs
+  32:01       MAKE_FUNCTION 1
+  16:08       STORE_NAME _get_blob
+  32:02       MAKE_FUNCTION 2
+  16:0c       STORE_NAME _put_blob
+  32:03       MAKE_FUNCTION 3
+  16:11       STORE_NAME _put_creds_mirror
+  32:04       MAKE_FUNCTION 4
+  16:15       STORE_NAME _single
+  32:05       MAKE_FUNCTION 5
+  16:18       STORE_NAME load
+  32:06       MAKE_FUNCTION 6
+  16:1d       STORE_NAME save
+  32:07       MAKE_FUNCTION 7
+  16:1f       STORE_NAME mark_used
+  32:08       MAKE_FUNCTION 8
+  16:20       STORE_NAME remove
+  32:09       MAKE_FUNCTION 9
+  16:22       STORE_NAME wipe
+  22:81:ea:30 LOAD_CONST_SMALL_INT 30000
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:0a       MAKE_FUNCTION_DEFARGS 10
+  16:23       STORE_NAME connect
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [_nvs, _get_blob, _put_blob, _put_creds_mirror, _single, load, save, mark_used, remove, wipe, connect]
+simple_name: _nvs
+  raw bytecode: 14 10:06:05:80:16:12:02:14:06:10:07:36:01:63
+  prelude: (3, 0, 0, 0, 0, 0)
+  args: []
+  line info: 80:16
+  12:02       LOAD_GLOBAL esp32
+  14:06       LOAD_METHOD NVS
+  10:07       LOAD_CONST_STRING xiaozhi
+  36:01       CALL_METHOD 1
+  63          RETURN_VALUE 
+  children: []
+simple_name: _get_blob
+  raw bytecode: 37 4e:16:08:33:34:80:1a:22:26:2b:23:22:7c:48:2b:12:35:b1:34:01:c2:12:05:34:00:14:09:b0:b2:36:02:c3:b3:43:42:51:63
+  prelude: (10, 1, 0, 2, 0, 0)
+  args: ['key', 'size']
+  line info: 80:1a:22:26:2b:23:22:7c
+  48:2b       SETUP_EXCEPT 43
+  12:35       LOAD_GLOBAL bytearray
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  c2          STORE_FAST 2 
+  12:05       LOAD_GLOBAL _nvs
+  34:00       CALL_FUNCTION 0
+  14:09       LOAD_METHOD get_blob
+  b0          LOAD_FAST 0 
+  b2          LOAD_FAST 2 
+  36:02       CALL_METHOD 2
+  c3          STORE_FAST 3 
+  b3          LOAD_FAST 3 
+  43:42       POP_JUMP_IF_TRUE 2
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _put_blob
+  raw bytecode: 40 3a:0c:0c:33:38:80:26:35:12:05:34:00:14:0d:b0:12:03:14:0e:b1:36:01:14:0f:36:00:36:02:59:12:05:34:00:14:10:36:00:59:51:63
+  prelude: (8, 0, 0, 2, 0, 0)
+  args: ['key', 'obj']
+  line info: 80:26:35
+  12:05       LOAD_GLOBAL _nvs
+  34:00       CALL_FUNCTION 0
+  14:0d       LOAD_METHOD set_blob
+  b0          LOAD_FAST 0 
+  12:03       LOAD_GLOBAL json
+  14:0e       LOAD_METHOD dumps
+  b1          LOAD_FAST 1 
+  36:01       CALL_METHOD 1
+  14:0f       LOAD_METHOD encode
+  36:00       CALL_METHOD 0
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  12:05       LOAD_GLOBAL _nvs
+  34:00       CALL_FUNCTION 0
+  14:10       LOAD_METHOD commit
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _put_creds_mirror
+  raw bytecode: 53 d9:02:14:11:13:80:2b:40:22:28:27:35:4f:48:2a:12:18:34:00:5f:4b:21:c1:b1:80:55:b0:d9:44:57:12:0c:10:12:2c:02:b1:80:55:10:13:62:b1:81:55:10:14:62:34:02:59:51:63
+  prelude: (12, 2, 0, 1, 0, 0)
+  args: ['ssid']
+  line info: 80:2b:40:22:28:27:35:4f
+  48:2a       SETUP_EXCEPT 42
+  12:18       LOAD_GLOBAL load
+  34:00       CALL_FUNCTION 0
+  5f          GET_ITER_STACK 
+  4b:21       FOR_ITER 33
+  c1          STORE_FAST 1 
+  b1          LOAD_FAST 1 
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  b0          LOAD_FAST 0 
+  d9          BINARY_OP 2 __eq__ 
+  44:57       POP_JUMP_IF_FALSE 23
+  12:0c       LOAD_GLOBAL _put_blob
+  10:12       LOAD_CONST_STRING creds
+  2c:02       BUILD_MAP 2
+  b1          LOAD_FAST 1 
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  10:13       LOAD_CONST_STRING ssid
+  62          STORE_MAP 
+  b1          LOAD_FAST 1 
+  81          LOAD_CONST_SMALL_INT 1 
+  55          LOAD_SUBSCR 
+  10:14       LOAD_CONST_STRING pass
+  62          STORE_MAP 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _single
+  raw bytecode: 33 28:14:15:80:37:20:2a:29:22:2c:23:22:12:08:10:12:22:83:00:34:02:c0:12:3a:b0:12:3b:34:02:43:42:51:63
+  prelude: (6, 0, 0, 0, 0, 0)
+  args: []
+  line info: 80:37:20:2a:29:22:2c:23:22
+  12:08       LOAD_GLOBAL _get_blob
+  10:12       LOAD_CONST_STRING creds
+  22:83:00    LOAD_CONST_SMALL_INT 384
+  34:02       CALL_FUNCTION 2
+  c0          STORE_FAST 0 
+  12:3a       LOAD_GLOBAL isinstance
+  b0          LOAD_FAST 0 
+  12:3b       LOAD_GLOBAL dict
+  34:02       CALL_FUNCTION 2
+  43:42       POP_JUMP_IF_TRUE 2
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: load
+  raw bytecode: 175 80:10:29:18:80:42:60:40:2a:23:23:2a:2f:32:3e:29:25:2f:27:44:28:28:24:06:12:08:10:19:22:88:00:34:02:c0:2b:00:c1:51:27:06:12:3a:b0:12:3b:34:02:44:c8:80:b0:14:16:10:1a:36:01:45:02:2a:00:5f:4b:31:c2:12:3a:b2:12:3b:34:02:44:65:b2:14:16:10:13:36:01:44:5c:b1:14:1b:b2:10:13:55:51:a0:2e:02:55:b2:14:16:10:14:36:01:45:02:10:17:2a:02:36:01:59:42:0d:b0:14:16:10:1c:36:01:27:06:12:15:34:00:c3:b3:44:53:b3:80:55:32:00:b1:34:01:dd:d3:44:47:b1:14:1b:b3:36:01:59:25:06:44:54:b6:20:01:01:b1:34:01:c4:b6:20:02:01:b1:34:01:c5:b4:b5:f2:c1:b1:63
+  prelude: (17, 0, 0, 0, 0, 0)
+  args: []
+  line info: 80:42:60:40:2a:23:23:2a:2f:32:3e:29:25:2f:27:44:28:28:24:06
+  12:08       LOAD_GLOBAL _get_blob
+  10:19       LOAD_CONST_STRING netlist
+  22:88:00    LOAD_CONST_SMALL_INT 1024
+  34:02       CALL_FUNCTION 2
+  c0          STORE_FAST 0 
+  2b:00       BUILD_LIST 0
+  c1          STORE_FAST 1 
+  51          LOAD_CONST_NONE 
+  27:06       STORE_DEREF 6
+  12:3a       LOAD_GLOBAL isinstance
+  b0          LOAD_FAST 0 
+  12:3b       LOAD_GLOBAL dict
+  34:02       CALL_FUNCTION 2
+  44:c8:80    POP_JUMP_IF_FALSE 72
+  b0          LOAD_FAST 0 
+  14:16       LOAD_METHOD get
+  10:1a       LOAD_CONST_STRING nets
+  36:01       CALL_METHOD 1
+  45:02       JUMP_IF_TRUE_OR_POP 2
+  2a:00       BUILD_TUPLE 0
+  5f          GET_ITER_STACK 
+  4b:31       FOR_ITER 49
+  c2          STORE_FAST 2 
+  12:3a       LOAD_GLOBAL isinstance
+  b2          LOAD_FAST 2 
+  12:3b       LOAD_GLOBAL dict
+  34:02       CALL_FUNCTION 2
+  44:65       POP_JUMP_IF_FALSE 37
+  b2          LOAD_FAST 2 
+  14:16       LOAD_METHOD get
+  10:13       LOAD_CONST_STRING ssid
+  36:01       CALL_METHOD 1
+  44:5c       POP_JUMP_IF_FALSE 28
+  b1          LOAD_FAST 1 
+  14:1b       LOAD_METHOD append
+  b2          LOAD_FAST 2 
+  10:13       LOAD_CONST_STRING ssid
+  55          LOAD_SUBSCR 
+  51          LOAD_CONST_NONE 
+  a0          LOAD_CONST_SMALL_INT 32 
+  2e:02       BUILD_SLICE 2
+  55          LOAD_SUBSCR 
+  b2          LOAD_FAST 2 
+  14:16       LOAD_METHOD get
+  10:14       LOAD_CONST_STRING pass
+  36:01       CALL_METHOD 1
+  45:02       JUMP_IF_TRUE_OR_POP 2
+  10:17       LOAD_CONST_STRING q1
+  2a:02       BUILD_TUPLE 2
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  42:0d       JUMP -51
+  b0          LOAD_FAST 0 
+  14:16       LOAD_METHOD get
+  10:1c       LOAD_CONST_STRING last
+  36:01       CALL_METHOD 1
+  27:06       STORE_DEREF 6
+  12:15       LOAD_GLOBAL _single
+  34:00       CALL_FUNCTION 0
+  c3          STORE_FAST 3 
+  b3          LOAD_FAST 3 
+  44:53       POP_JUMP_IF_FALSE 19
+  b3          LOAD_FAST 3 
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  32:00       MAKE_FUNCTION 0
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  dd          BINARY_OP 6 <in> 
+  d3          UNARY_OP 3 <not> 
+  44:47       POP_JUMP_IF_FALSE 7
+  b1          LOAD_FAST 1 
+  14:1b       LOAD_METHOD append
+  b3          LOAD_FAST 3 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  25:06       LOAD_DEREF 6
+  44:54       POP_JUMP_IF_FALSE 20
+  b6          LOAD_FAST 6 
+  20:01:01    MAKE_CLOSURE 1
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  c4          STORE_FAST 4 
+  b6          LOAD_FAST 6 
+  20:02:01    MAKE_CLOSURE 2
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  c5          STORE_FAST 5 
+  b4          LOAD_FAST 4 
+  b5          LOAD_FAST 5 
+  f2          BINARY_OP 27 __add__ 
+  c1          STORE_FAST 1 
+  b1          LOAD_FAST 1 
+  63          RETURN_VALUE 
+  children: [<listcomp>]
+simple_name: <listcomp>
+  raw bytecode: 21 41:08:31:3f:80:50:2b:00:b0:5f:4b:08:c1:b1:80:55:2f:14:42:36:63
+  prelude: (9, 0, 0, 1, 0, 0)
+  args: ['*']
+  line info: 80:50
+  2b:00       BUILD_LIST 0
+  b0          LOAD_FAST 0 
+  5f          GET_ITER_STACK 
+  4b:08       FOR_ITER 8
+  c1          STORE_FAST 1 
+  b1          LOAD_FAST 1 
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  2f:14       STORE_COMP 20
+  42:36       JUMP -10
+  63          RETURN_VALUE 
+  children: []
+simple_name: save
+  raw bytecode: 42 72:29:1d:13:3c:80:5b:20:2d:24:22:2a:23:2a:2f:32:3f:28:3d:29:32:3d:00:25:00:45:02:10:17:51:a0:2e:02:55:27:00:25:00:43:42:50:63
+  prelude: (15, 0, 0, 2, 0, 0)
+  args: ['ssid', 'pw']
+  line info: 80:5b:20:2d:24:22:2a:23:2a:2f:32:3f:28:3d:29:32:3d:00
+  25:00       LOAD_DEREF 0
+  45:02       JUMP_IF_TRUE_OR_POP 2
+  10:17       LOAD_CONST_STRING q1
+  51          LOAD_CONST_NONE 
+  a0          LOAD_CONST_SMALL_INT 32 
+  2e:02       BUILD_SLICE 2
+  55          LOAD_SUBSCR 
+  27:00       STORE_DEREF 0
+  25:00       LOAD_DEREF 0
+  43:42       POP_JUMP_IF_TRUE 2
+  50          LOAD_CONST_FALSE 
+  63          RETURN_VALUE 
+  children: [<listcomp>]
+simple_name: <listcomp>
+  raw bytecode: 29 4a:0a:31:3f:3f:80:65:2b:00:b1:5f:4b:0f:c2:b2:10:13:55:25:00:dc:44:34:b2:2f:14:42:2f:63
+  prelude: (10, 0, 0, 2, 0, 0)
+  args: ['*', '*']
+  line info: 80:65
+  2b:00       BUILD_LIST 0
+  b1          LOAD_FAST 1 
+  5f          GET_ITER_STACK 
+  4b:0f       FOR_ITER 15
+  c2          STORE_FAST 2 
+  b2          LOAD_FAST 2 
+  10:13       LOAD_CONST_STRING ssid
+  55          LOAD_SUBSCR 
+  25:00       LOAD_DEREF 0
+  dc          BINARY_OP 5 __ne__ 
+  44:34       POP_JUMP_IF_FALSE -12
+  b2          LOAD_FAST 2 
+  2f:14       STORE_COMP 20
+  42:2f       JUMP -17
+  63          RETURN_VALUE 
+  children: []
+simple_name: mark_used
+  raw bytecode: 62 c9:02:18:1f:13:80:6e:20:22:2a:34:2d:22:51:51:48:46:12:08:10:19:22:88:00:34:02:c1:12:3a:b1:12:3b:34:02:44:49:b1:14:16:10:1a:36:01:42:41:51:c2:b2:44:4a:b0:32:00:b2:34:01:dd:d3:44:42:51:63
+  prelude: (10, 2, 0, 1, 0, 0)
+  args: ['ssid']
+  line info: 80:6e:20:22:2a:34:2d:22:51:51
+  48:46       SETUP_EXCEPT 70
+  12:08       LOAD_GLOBAL _get_blob
+  10:19       LOAD_CONST_STRING netlist
+  22:88:00    LOAD_CONST_SMALL_INT 1024
+  34:02       CALL_FUNCTION 2
+  c1          STORE_FAST 1 
+  12:3a       LOAD_GLOBAL isinstance
+  b1          LOAD_FAST 1 
+  12:3b       LOAD_GLOBAL dict
+  34:02       CALL_FUNCTION 2
+  44:49       POP_JUMP_IF_FALSE 9
+  b1          LOAD_FAST 1 
+  14:16       LOAD_METHOD get
+  10:1a       LOAD_CONST_STRING nets
+  36:01       CALL_METHOD 1
+  42:41       JUMP 1
+  51          LOAD_CONST_NONE 
+  c2          STORE_FAST 2 
+  b2          LOAD_FAST 2 
+  44:4a       POP_JUMP_IF_FALSE 10
+  b0          LOAD_FAST 0 
+  32:00       MAKE_FUNCTION 0
+  b2          LOAD_FAST 2 
+  34:01       CALL_FUNCTION 1
+  dd          BINARY_OP 6 <in> 
+  d3          UNARY_OP 3 <not> 
+  44:42       POP_JUMP_IF_FALSE 2
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [<listcomp>]
+simple_name: <listcomp>
+  raw bytecode: 25 49:08:31:3f:80:72:2b:00:b0:5f:4b:0c:c1:b1:14:16:10:13:36:01:2f:14:42:32:63
+  prelude: (10, 0, 0, 1, 0, 0)
+  args: ['*']
+  line info: 80:72
+  2b:00       BUILD_LIST 0
+  b0          LOAD_FAST 0 
+  5f          GET_ITER_STACK 
+  4b:0c       FOR_ITER 12
+  c1          STORE_FAST 1 
+  b1          LOAD_FAST 1 
+  14:16       LOAD_METHOD get
+  10:13       LOAD_CONST_STRING ssid
+  36:01       CALL_METHOD 1
+  2f:14       STORE_COMP 20
+  42:32       JUMP -14
+  63          RETURN_VALUE 
+  children: []
+simple_name: remove
+  raw bytecode: 121 59:31:20:13:80:7c:20:2a:23:22:29:50:28:26:28:25:23:2b:29:24:26:27:51:2b:2f:33:00:12:08:10:19:22:88:00:34:02:c1:2b:00:c2:51:c3:12:3a:b1:12:3b:34:02:44:58:32:00:b1:14:16:10:1a:36:01:45:02:2a:00:34:01:c2:b1:14:16:10:1c:36:01:c3:12:3d:b2:34:01:c4:b0:20:01:01:b2:34:01:c2:12:15:34:00:c5:b2:43:58:12:05:34:00:14:21:10:19:36:01:59:12:05:34:00:14:10:36:00:59:b4:80:dc:63
+  prelude: (12, 0, 0, 1, 0, 0)
+  args: ['ssid']
+  line info: 80:7c:20:2a:23:22:29:50:28:26:28:25:23:2b:29:24:26:27:51:2b:2f:33:00
+  12:08       LOAD_GLOBAL _get_blob
+  10:19       LOAD_CONST_STRING netlist
+  22:88:00    LOAD_CONST_SMALL_INT 1024
+  34:02       CALL_FUNCTION 2
+  c1          STORE_FAST 1 
+  2b:00       BUILD_LIST 0
+  c2          STORE_FAST 2 
+  51          LOAD_CONST_NONE 
+  c3          STORE_FAST 3 
+  12:3a       LOAD_GLOBAL isinstance
+  b1          LOAD_FAST 1 
+  12:3b       LOAD_GLOBAL dict
+  34:02       CALL_FUNCTION 2
+  44:58       POP_JUMP_IF_FALSE 24
+  32:00       MAKE_FUNCTION 0
+  b1          LOAD_FAST 1 
+  14:16       LOAD_METHOD get
+  10:1a       LOAD_CONST_STRING nets
+  36:01       CALL_METHOD 1
+  45:02       JUMP_IF_TRUE_OR_POP 2
+  2a:00       BUILD_TUPLE 0
+  34:01       CALL_FUNCTION 1
+  c2          STORE_FAST 2 
+  b1          LOAD_FAST 1 
+  14:16       LOAD_METHOD get
+  10:1c       LOAD_CONST_STRING last
+  36:01       CALL_METHOD 1
+  c3          STORE_FAST 3 
+  12:3d       LOAD_GLOBAL len
+  b2          LOAD_FAST 2 
+  34:01       CALL_FUNCTION 1
+  c4          STORE_FAST 4 
+  b0          LOAD_FAST 0 
+  20:01:01    MAKE_CLOSURE 1
+  b2          LOAD_FAST 2 
+  34:01       CALL_FUNCTION 1
+  c2          STORE_FAST 2 
+  12:15       LOAD_GLOBAL _single
+  34:00       CALL_FUNCTION 0
+  c5          STORE_FAST 5 
+  b2          LOAD_FAST 2 
+  43:58       POP_JUMP_IF_TRUE 24
+  12:05       LOAD_GLOBAL _nvs
+  34:00       CALL_FUNCTION 0
+  14:21       LOAD_METHOD erase_key
+  10:19       LOAD_CONST_STRING netlist
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  12:05       LOAD_GLOBAL _nvs
+  34:00       CALL_FUNCTION 0
+  14:10       LOAD_METHOD commit
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  b4          LOAD_FAST 4 
+  80          LOAD_CONST_SMALL_INT 0 
+  dc          BINARY_OP 5 __ne__ 
+  63          RETURN_VALUE 
+  children: [<listcomp>]
+simple_name: <listcomp>
+  raw bytecode: 38 49:0a:31:3f:80:81:27:2b:00:b0:5f:4b:18:c1:12:3a:b1:12:3b:34:02:44:34:b1:14:16:10:13:36:01:44:2b:b1:2f:14:42:26:63
+  prelude: (10, 0, 0, 1, 0, 0)
+  args: ['*']
+  line info: 80:81:27
+  2b:00       BUILD_LIST 0
+  b0          LOAD_FAST 0 
+  5f          GET_ITER_STACK 
+  4b:18       FOR_ITER 24
+  c1          STORE_FAST 1 
+  12:3a       LOAD_GLOBAL isinstance
+  b1          LOAD_FAST 1 
+  12:3b       LOAD_GLOBAL dict
+  34:02       CALL_FUNCTION 2
+  44:34       POP_JUMP_IF_FALSE -12
+  b1          LOAD_FAST 1 
+  14:16       LOAD_METHOD get
+  10:13       LOAD_CONST_STRING ssid
+  36:01       CALL_METHOD 1
+  44:2b       POP_JUMP_IF_FALSE -21
+  b1          LOAD_FAST 1 
+  2f:14       STORE_COMP 20
+  42:26       JUMP -26
+  63          RETURN_VALUE 
+  children: []
+simple_name: wipe
+  raw bytecode: 78 b8:02:12:22:80:96:22:25:28:28:26:52:48:24:12:05:34:00:c0:b0:14:21:10:12:36:01:59:b0:14:21:10:19:36:01:59:b0:14:10:36:00:59:12:39:23:02:34:01:59:4a:1a:57:12:37:df:44:53:c1:49:09:12:39:23:03:b1:34:02:59:51:51:c1:28:01:5d:4a:01:5d:51:63
+  prelude: (8, 2, 0, 0, 0, 0)
+  args: []
+  line info: 80:96:22:25:28:28:26:52
+  48:24       SETUP_EXCEPT 36
+  12:05       LOAD_GLOBAL _nvs
+  34:00       CALL_FUNCTION 0
+  c0          STORE_FAST 0 
+  b0          LOAD_FAST 0 
+  14:21       LOAD_METHOD erase_key
+  10:12       LOAD_CONST_STRING creds
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:21       LOAD_METHOD erase_key
+  10:19       LOAD_CONST_STRING netlist
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:10       LOAD_METHOD commit
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  12:39       LOAD_GLOBAL print
+  23:02       LOAD_CONST_OBJ '[wifi] creds wiped'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  4a:1a       POP_EXCEPT_JUMP 26
+  57          DUP_TOP 
+  12:37       LOAD_GLOBAL Exception
+  df          BINARY_OP 8 <exception match> 
+  44:53       POP_JUMP_IF_FALSE 19
+  c1          STORE_FAST 1 
+  49:09       SETUP_FINALLY 9
+  12:39       LOAD_GLOBAL print
+  23:03       LOAD_CONST_OBJ '[wifi] wipe:'
+  b1          LOAD_FAST 1 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  c1          STORE_FAST 1 
+  28:01       DELETE_FAST 1
+  5d          END_FINALLY 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: connect
+  raw bytecode: 92 df:01:3a:23:13:3c:3e:80:a1:60:25:29:27:27:2a:27:22:2b:4b:23:26:2a:28:28:27:22:31:28:22:31:2c:26:80:51:1b:24:c3:b3:14:25:b3:13:26:36:01:c4:b4:14:27:36:00:43:51:b4:14:27:52:36:01:59:12:04:14:28:22:81:48:36:01:59:b4:14:29:36:00:44:6b:48:0f:b4:14:2a:10:2b:36:01:b0:d9:44:42:52:63
+  prelude: (12, 1, 0, 3, 0, 1)
+  args: ['ssid', 'pw', 'timeout_ms']
+  line info: 80:a1:60:25:29:27:27:2a:27:22:2b:4b:23:26:2a:28:28:27:22:31:28:22:31:2c:26
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:24       IMPORT_NAME network
+  c3          STORE_FAST 3 
+  b3          LOAD_FAST 3 
+  14:25       LOAD_METHOD WLAN
+  b3          LOAD_FAST 3 
+  13:26       LOAD_ATTR STA_IF
+  36:01       CALL_METHOD 1
+  c4          STORE_FAST 4 
+  b4          LOAD_FAST 4 
+  14:27       LOAD_METHOD active
+  36:00       CALL_METHOD 0
+  43:51       POP_JUMP_IF_TRUE 17
+  b4          LOAD_FAST 4 
+  14:27       LOAD_METHOD active
+  52          LOAD_CONST_TRUE 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  12:04       LOAD_GLOBAL time
+  14:28       LOAD_METHOD sleep_ms
+  22:81:48    LOAD_CONST_SMALL_INT 200
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b4          LOAD_FAST 4 
+  14:29       LOAD_METHOD isconnected
+  36:00       CALL_METHOD 0
+  44:6b       POP_JUMP_IF_FALSE 43
+  48:0f       SETUP_EXCEPT 15
+  b4          LOAD_FAST 4 
+  14:2a       LOAD_METHOD config
+  10:2b       LOAD_CONST_STRING essid
+  36:01       CALL_METHOD 1
+  b0          LOAD_FAST 0 
+  d9          BINARY_OP 2 __eq__ 
+  44:42       POP_JUMP_IF_FALSE 2
+  52          LOAD_CONST_TRUE 
+  63          RETURN_VALUE 
+  children: []

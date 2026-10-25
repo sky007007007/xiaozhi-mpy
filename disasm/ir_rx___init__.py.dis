@@ -1,0 +1,350 @@
+mpy_source_file: extracted/ir_rx___init__.py.mpy
+source_file: ir_rx/__init__.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[63] (* for static qstrs):
+    'ir_rx/__init__.py' 
+    '<module>' *
+    'Timer' 
+    'Pin' 
+    'machine' 
+    'array' 
+    'ticks_us' 
+    'utime' 
+    'IR_RX' 
+    '__init__' *
+    '_pin' 
+    '_nedges' 
+    '_tblock' 
+    'callback' 
+    'args' *
+    '_errf' 
+    'verbose' 
+    'i' 
+    '_times' 
+    'irq' 
+    'handler' 
+    '_cb_pin' 
+    'trigger' 
+    'IRQ_FALLING' 
+    'IRQ_RISING' 
+    'edge' 
+    'Timer_id' 
+    'tim' 
+    'decode' 
+    'cb' 
+    'init' 
+    'period' 
+    'mode' 
+    'ONE_SHOT' 
+    'do_callback' 
+    'error_function' 
+    'close' *
+    'deinit' 
+    '<lambda>' 
+    '<genexpr>' 
+    '__name__' *
+    '__module__' *
+    '__qualname__' *
+    'REPEAT' 
+    'BADSTART' 
+    'BADBLOCK' 
+    'BADREP' 
+    'OVERRUN' 
+    'BADDATA' 
+    'BADADDR' 
+    'self' *
+    'pin' 
+    'nedges' 
+    'tblock' 
+    'range' *
+    'line' 
+    'cmd' 
+    'addr' 
+    'ext' 
+    'thresh' 
+    'func' 
+    '_' *
+    '*' *
+obj_table: [None]
+simple_name: <module>
+  raw bytecode: 62 10:0e:01:80:08:32:2c:8c:0c:80:10:02:10:03:2a:02:1b:04:1c:02:16:02:1c:03:16:03:59:80:10:05:2a:01:1b:05:1c:05:16:05:59:80:10:06:2a:01:1b:07:1c:06:16:06:59:54:32:00:10:08:34:02:16:08:51:63
+  prelude: (3, 0, 0, 0, 0, 0)
+  args: []
+  line info: 80:08:32:2c:8c:0c
+  80          LOAD_CONST_SMALL_INT 0 
+  10:02       LOAD_CONST_STRING Timer
+  10:03       LOAD_CONST_STRING Pin
+  2a:02       BUILD_TUPLE 2
+  1b:04       IMPORT_NAME machine
+  1c:02       IMPORT_FROM Timer
+  16:02       STORE_NAME Timer
+  1c:03       IMPORT_FROM Pin
+  16:03       STORE_NAME Pin
+  59          POP_TOP 
+  80          LOAD_CONST_SMALL_INT 0 
+  10:05       LOAD_CONST_STRING array
+  2a:01       BUILD_TUPLE 1
+  1b:05       IMPORT_NAME array
+  1c:05       IMPORT_FROM array
+  16:05       STORE_NAME array
+  59          POP_TOP 
+  80          LOAD_CONST_SMALL_INT 0 
+  10:06       LOAD_CONST_STRING ticks_us
+  2a:01       BUILD_TUPLE 1
+  1b:07       IMPORT_NAME utime
+  1c:06       IMPORT_FROM ticks_us
+  16:06       STORE_NAME ticks_us
+  59          POP_TOP 
+  54          LOAD_BUILD_CLASS 
+  32:00       MAKE_FUNCTION 0
+  10:08       LOAD_CONST_STRING IR_RX
+  34:02       CALL_FUNCTION 2
+  16:08       STORE_NAME IR_RX
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [IR_RX]
+simple_name: IR_RX
+  raw bytecode: 78 08:24:08:88:17:63:43:23:23:23:23:23:43:84:10:84:09:88:07:64:11:28:16:29:10:08:16:2a:7f:16:1a:7f:16:2b:7e:16:2c:7d:16:2d:7c:16:2e:7b:16:2f:7a:16:30:79:16:31:32:00:16:09:32:01:16:15:80:2a:01:53:33:02:16:22:32:03:16:23:32:04:16:24:51:63
+  prelude: (2, 0, 0, 0, 0, 0)
+  args: []
+  line info: 88:17:63:43:23:23:23:23:23:43:84:10:84:09:88:07:64
+  11:28       LOAD_NAME __name__
+  16:29       STORE_NAME __module__
+  10:08       LOAD_CONST_STRING IR_RX
+  16:2a       STORE_NAME __qualname__
+  7f          LOAD_CONST_SMALL_INT -1 
+  16:1a       STORE_NAME Timer_id
+  7f          LOAD_CONST_SMALL_INT -1 
+  16:2b       STORE_NAME REPEAT
+  7e          LOAD_CONST_SMALL_INT -2 
+  16:2c       STORE_NAME BADSTART
+  7d          LOAD_CONST_SMALL_INT -3 
+  16:2d       STORE_NAME BADBLOCK
+  7c          LOAD_CONST_SMALL_INT -4 
+  16:2e       STORE_NAME BADREP
+  7b          LOAD_CONST_SMALL_INT -5 
+  16:2f       STORE_NAME OVERRUN
+  7a          LOAD_CONST_SMALL_INT -6 
+  16:30       STORE_NAME BADDATA
+  79          LOAD_CONST_SMALL_INT -7 
+  16:31       STORE_NAME BADADDR
+  32:00       MAKE_FUNCTION 0
+  16:09       STORE_NAME __init__
+  32:01       MAKE_FUNCTION 1
+  16:15       STORE_NAME _cb_pin
+  80          LOAD_CONST_SMALL_INT 0 
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:02       MAKE_FUNCTION_DEFARGS 2
+  16:22       STORE_NAME do_callback
+  32:03       MAKE_FUNCTION 3
+  16:23       STORE_NAME error_function
+  32:04       MAKE_FUNCTION 4
+  16:24       STORE_NAME close
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [__init__, _cb_pin, do_callback, error_function, close]
+simple_name: __init__
+  raw bytecode: 119 e1:84:80:40:26:09:32:33:34:35:0d:80:24:24:24:24:24:24:25:44:35:37:24:2a:b1:b0:18:0a:b2:b0:18:0b:b3:b0:18:0c:b4:b0:18:0d:b5:b0:18:0e:32:00:b0:18:0f:50:b0:18:10:12:05:10:11:32:01:12:36:b2:81:f2:34:01:5e:34:01:34:02:b0:18:12:b1:14:13:10:14:b0:13:15:10:16:12:03:13:17:12:03:13:18:ed:36:84:00:59:80:b0:18:19:12:02:b0:13:1a:34:01:b0:18:1b:b0:13:1c:b0:18:1d:51:63
+  prelude: (13, 0, 4, 5, 0, 0)
+  args: ['self', 'pin', 'nedges', 'tblock', 'callback']
+  line info: 80:24:24:24:24:24:24:25:44:35:37:24:2a
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:0a       STORE_ATTR _pin
+  b2          LOAD_FAST 2 
+  b0          LOAD_FAST 0 
+  18:0b       STORE_ATTR _nedges
+  b3          LOAD_FAST 3 
+  b0          LOAD_FAST 0 
+  18:0c       STORE_ATTR _tblock
+  b4          LOAD_FAST 4 
+  b0          LOAD_FAST 0 
+  18:0d       STORE_ATTR callback
+  b5          LOAD_FAST 5 
+  b0          LOAD_FAST 0 
+  18:0e       STORE_ATTR args
+  32:00       MAKE_FUNCTION 0
+  b0          LOAD_FAST 0 
+  18:0f       STORE_ATTR _errf
+  50          LOAD_CONST_FALSE 
+  b0          LOAD_FAST 0 
+  18:10       STORE_ATTR verbose
+  12:05       LOAD_GLOBAL array
+  10:11       LOAD_CONST_STRING i
+  32:01       MAKE_FUNCTION 1
+  12:36       LOAD_GLOBAL range
+  b2          LOAD_FAST 2 
+  81          LOAD_CONST_SMALL_INT 1 
+  f2          BINARY_OP 27 __add__ 
+  34:01       CALL_FUNCTION 1
+  5e          GET_ITER 
+  34:01       CALL_FUNCTION 1
+  34:02       CALL_FUNCTION 2
+  b0          LOAD_FAST 0 
+  18:12       STORE_ATTR _times
+  b1          LOAD_FAST 1 
+  14:13       LOAD_METHOD irq
+  10:14       LOAD_CONST_STRING handler
+  b0          LOAD_FAST 0 
+  13:15       LOAD_ATTR _cb_pin
+  10:16       LOAD_CONST_STRING trigger
+  12:03       LOAD_GLOBAL Pin
+  13:17       LOAD_ATTR IRQ_FALLING
+  12:03       LOAD_GLOBAL Pin
+  13:18       LOAD_ATTR IRQ_RISING
+  ed          BINARY_OP 22 __or__ 
+  36:84:00    CALL_METHOD 512
+  59          POP_TOP 
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:19       STORE_ATTR edge
+  12:02       LOAD_GLOBAL Timer
+  b0          LOAD_FAST 0 
+  13:1a       LOAD_ATTR Timer_id
+  34:01       CALL_FUNCTION 1
+  b0          LOAD_FAST 0 
+  18:1b       STORE_ATTR tim
+  b0          LOAD_FAST 0 
+  13:1c       LOAD_ATTR decode
+  b0          LOAD_FAST 0 
+  18:1d       STORE_ATTR cb
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [<lambda>, <genexpr>]
+simple_name: <lambda>
+  raw bytecode: 8 09:08:26:3d:80:29:51:63
+  prelude: (2, 0, 0, 1, 0, 0)
+  args: ['_']
+  line info: 80:29
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: <genexpr>
+  raw bytecode: 21 b1:40:08:27:3e:80:2c:53:b0:53:53:4b:06:c1:80:67:59:42:38:51:63
+  prelude: (7, 0, 1, 1, 0, 0)
+  args: ['*']
+  line info: 80:2c
+  53          LOAD_NULL 
+  b0          LOAD_FAST 0 
+  53          LOAD_NULL 
+  53          LOAD_NULL 
+  4b:06       FOR_ITER 6
+  c1          STORE_FAST 1 
+  80          LOAD_CONST_SMALL_INT 0 
+  67          YIELD_VALUE 
+  59          POP_TOP 
+  42:38       JUMP -8
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _cb_pin
+  raw bytecode: 75 52:14:15:32:37:80:34:45:29:25:39:28:12:06:34:00:c2:b0:13:19:b0:13:0b:da:44:6f:b0:13:19:43:59:b0:13:1b:14:1e:10:1f:b0:13:0c:10:20:12:02:13:21:10:0d:b0:13:1d:36:86:00:59:b2:b0:13:12:b0:13:19:56:b0:57:13:19:81:e5:5a:18:19:51:63
+  prelude: (11, 0, 0, 2, 0, 0)
+  args: ['self', 'line']
+  line info: 80:34:45:29:25:39:28
+  12:06       LOAD_GLOBAL ticks_us
+  34:00       CALL_FUNCTION 0
+  c2          STORE_FAST 2 
+  b0          LOAD_FAST 0 
+  13:19       LOAD_ATTR edge
+  b0          LOAD_FAST 0 
+  13:0b       LOAD_ATTR _nedges
+  da          BINARY_OP 3 __le__ 
+  44:6f       POP_JUMP_IF_FALSE 47
+  b0          LOAD_FAST 0 
+  13:19       LOAD_ATTR edge
+  43:59       POP_JUMP_IF_TRUE 25
+  b0          LOAD_FAST 0 
+  13:1b       LOAD_ATTR tim
+  14:1e       LOAD_METHOD init
+  10:1f       LOAD_CONST_STRING period
+  b0          LOAD_FAST 0 
+  13:0c       LOAD_ATTR _tblock
+  10:20       LOAD_CONST_STRING mode
+  12:02       LOAD_GLOBAL Timer
+  13:21       LOAD_ATTR ONE_SHOT
+  10:0d       LOAD_CONST_STRING callback
+  b0          LOAD_FAST 0 
+  13:1d       LOAD_ATTR cb
+  36:86:00    CALL_METHOD 768
+  59          POP_TOP 
+  b2          LOAD_FAST 2 
+  b0          LOAD_FAST 0 
+  13:12       LOAD_ATTR _times
+  b0          LOAD_FAST 0 
+  13:19       LOAD_ATTR edge
+  56          STORE_SUBSCR 
+  b0          LOAD_FAST 0 
+  57          DUP_TOP 
+  13:19       LOAD_ATTR edge
+  81          LOAD_CONST_SMALL_INT 1 
+  e5          BINARY_OP 14 __iadd__ 
+  5a          ROT_TWO 
+  18:19       STORE_ATTR edge
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: do_callback
+  raw bytecode: 47 d9:05:16:22:32:38:39:3a:3b:80:3d:24:25:4f:80:b0:18:19:b1:b4:db:44:4f:b0:14:0d:b1:b2:b3:b0:13:0e:88:37:04:59:42:47:b0:14:0f:b1:36:01:59:51:63
+  prelude: (12, 0, 0, 5, 0, 1)
+  args: ['self', 'cmd', 'addr', 'ext', 'thresh']
+  line info: 80:3d:24:25:4f
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:19       STORE_ATTR edge
+  b1          LOAD_FAST 1 
+  b4          LOAD_FAST 4 
+  db          BINARY_OP 4 __ge__ 
+  44:4f       POP_JUMP_IF_FALSE 15
+  b0          LOAD_FAST 0 
+  14:0d       LOAD_METHOD callback
+  b1          LOAD_FAST 1 
+  b2          LOAD_FAST 2 
+  b3          LOAD_FAST 3 
+  b0          LOAD_FAST 0 
+  13:0e       LOAD_ATTR args
+  88          LOAD_CONST_SMALL_INT 8 
+  37:04       CALL_METHOD_VAR_KW 4
+  59          POP_TOP 
+  42:47       JUMP 7
+  b0          LOAD_FAST 0 
+  14:0f       LOAD_METHOD _errf
+  b1          LOAD_FAST 1 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: error_function
+  raw bytecode: 13 1a:0a:23:32:3c:80:44:b1:b0:18:0f:51:63
+  prelude: (4, 0, 0, 2, 0, 0)
+  args: ['self', 'func']
+  line info: 80:44
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:0f       STORE_ATTR _errf
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: close
+  raw bytecode: 29 21:0a:24:32:80:47:2c:b0:13:0a:14:13:10:14:51:36:82:00:59:b0:13:1b:14:25:36:00:59:51:63
+  prelude: (5, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:47:2c
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR _pin
+  14:13       LOAD_METHOD irq
+  10:14       LOAD_CONST_STRING handler
+  51          LOAD_CONST_NONE 
+  36:82:00    CALL_METHOD 256
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:1b       LOAD_ATTR tim
+  14:25       LOAD_METHOD deinit
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []

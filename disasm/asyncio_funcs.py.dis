@@ -1,0 +1,414 @@
+mpy_source_file: extracted/asyncio_funcs.py.mpy
+source_file: asyncio/funcs.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[43] (* for static qstrs):
+    'asyncio/funcs.py' 
+    '<module>' *
+    'core' 
+    'q1' 
+    'sleep' 
+    '_Remove' 
+    'return_exceptions' 
+    '_run' 
+    'data' 
+    'cancel' 
+    'CancelledError' 
+    'wait_for' 
+    '_promote_to_task' 
+    'create_task' 
+    'cur_task' 
+    'value' *
+    'args' *
+    'TimeoutError' 
+    'wait_for_ms' 
+    'sleep_ms' 
+    'gather' 
+    'state' 
+    'remove' *
+    'done' 
+    '_task_queue' 
+    'push' 
+    '<listcomp>' 
+    'waiter' 
+    'aw' 
+    'BaseException' *
+    'timeout' 
+    '__name__' *
+    '__module__' *
+    '__qualname__' *
+    'staticmethod' *
+    'len' *
+    'isinstance' *
+    'StopIteration' *
+    'RuntimeError' *
+    'int' *
+    't' 
+    '*' *
+    'er' 
+obj_table: ["can't gather"]
+simple_name: <module>
+  raw bytecode: 56 18:02:01:81:10:02:2a:01:1b:03:1c:02:16:02:59:32:00:16:07:11:02:13:04:2a:01:53:33:01:16:0b:32:02:16:12:54:32:03:10:05:34:02:16:05:53:2c:00:50:10:06:62:33:04:16:14:51:63
+  prelude: (4, 0, 0, 0, 0, 0)
+  args: []
+  line info: 
+  81          LOAD_CONST_SMALL_INT 1 
+  10:02       LOAD_CONST_STRING core
+  2a:01       BUILD_TUPLE 1
+  1b:03       IMPORT_NAME q1
+  1c:02       IMPORT_FROM core
+  16:02       STORE_NAME core
+  59          POP_TOP 
+  32:00       MAKE_FUNCTION 0
+  16:07       STORE_NAME _run
+  11:02       LOAD_NAME core
+  13:04       LOAD_ATTR sleep
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:01       MAKE_FUNCTION_DEFARGS 1
+  16:0b       STORE_NAME wait_for
+  32:02       MAKE_FUNCTION 2
+  16:12       STORE_NAME wait_for_ms
+  54          LOAD_BUILD_CLASS 
+  32:03       MAKE_FUNCTION 3
+  10:05       LOAD_CONST_STRING _Remove
+  34:02       CALL_FUNCTION 2
+  16:05       STORE_NAME _Remove
+  53          LOAD_NULL 
+  2c:00       BUILD_MAP 0
+  50          LOAD_CONST_FALSE 
+  10:06       LOAD_CONST_STRING return_exceptions
+  62          STORE_MAP 
+  33:04       MAKE_FUNCTION_DEFARGS 4
+  16:14       STORE_NAME gather
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [_run, wait_for, wait_for_ms, _Remove, gather]
+simple_name: _run
+  raw bytecode: 66 d2:42:06:07:1b:1c:48:09:b1:5e:51:68:c2:52:c3:4a:16:57:12:1d:df:44:4f:c4:49:05:51:c2:b4:c3:51:51:c4:28:04:5d:4a:01:5d:b0:13:08:51:de:44:52:b0:14:09:36:00:44:4b:12:02:14:0a:b3:b2:36:02:b0:18:08:51:63
+  prelude: (11, 2, 1, 2, 0, 0)
+  args: ['waiter', 'aw']
+  line info: 
+  48:09       SETUP_EXCEPT 9
+  b1          LOAD_FAST 1 
+  5e          GET_ITER 
+  51          LOAD_CONST_NONE 
+  68          YIELD_FROM 
+  c2          STORE_FAST 2 
+  52          LOAD_CONST_TRUE 
+  c3          STORE_FAST 3 
+  4a:16       POP_EXCEPT_JUMP 22
+  57          DUP_TOP 
+  12:1d       LOAD_GLOBAL BaseException
+  df          BINARY_OP 8 <exception match> 
+  44:4f       POP_JUMP_IF_FALSE 15
+  c4          STORE_FAST 4 
+  49:05       SETUP_FINALLY 5
+  51          LOAD_CONST_NONE 
+  c2          STORE_FAST 2 
+  b4          LOAD_FAST 4 
+  c3          STORE_FAST 3 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  c4          STORE_FAST 4 
+  28:04       DELETE_FAST 4
+  5d          END_FINALLY 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  b0          LOAD_FAST 0 
+  13:08       LOAD_ATTR data
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  44:52       POP_JUMP_IF_FALSE 18
+  b0          LOAD_FAST 0 
+  14:09       LOAD_METHOD cancel
+  36:00       CALL_METHOD 0
+  44:4b       POP_JUMP_IF_FALSE 11
+  12:02       LOAD_GLOBAL core
+  14:0a       LOAD_METHOD CancelledError
+  b3          LOAD_FAST 3 
+  b2          LOAD_FAST 2 
+  36:02       CALL_METHOD 2
+  b0          LOAD_FAST 0 
+  18:08       STORE_ATTR data
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: wait_for
+  raw bytecode: 25 db:43:08:0b:1c:1e:04:12:02:14:0c:b0:36:01:c0:b1:51:de:44:45:b0:5e:51:68:63
+  prelude: (12, 2, 1, 3, 0, 1)
+  args: ['aw', 'timeout', 'sleep']
+  line info: 
+  12:02       LOAD_GLOBAL core
+  14:0c       LOAD_METHOD _promote_to_task
+  b0          LOAD_FAST 0 
+  36:01       CALL_METHOD 1
+  c0          STORE_FAST 0 
+  b1          LOAD_FAST 1 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  44:45       POP_JUMP_IF_FALSE 5
+  b0          LOAD_FAST 0 
+  5e          GET_ITER 
+  51          LOAD_CONST_NONE 
+  68          YIELD_FROM 
+  63          RETURN_VALUE 
+  children: []
+simple_name: wait_for_ms
+  raw bytecode: 16 2a:06:12:1c:1e:12:0b:b0:b1:12:02:13:13:34:03:63
+  prelude: (6, 0, 0, 2, 0, 0)
+  args: ['aw', 'timeout']
+  line info: 
+  12:0b       LOAD_GLOBAL wait_for
+  b0          LOAD_FAST 0 
+  b1          LOAD_FAST 1 
+  12:02       LOAD_GLOBAL core
+  13:13       LOAD_ATTR sleep_ms
+  34:03       CALL_FUNCTION 3
+  63          RETURN_VALUE 
+  children: []
+simple_name: _Remove
+  raw bytecode: 21 08:02:05:11:1f:16:20:10:05:16:21:11:22:32:00:34:01:16:16:51:63
+  prelude: (2, 0, 0, 0, 0, 0)
+  args: []
+  line info: 
+  11:1f       LOAD_NAME __name__
+  16:20       STORE_NAME __module__
+  10:05       LOAD_CONST_STRING _Remove
+  16:21       STORE_NAME __qualname__
+  11:22       LOAD_NAME staticmethod
+  32:00       MAKE_FUNCTION 0
+  34:01       CALL_FUNCTION 1
+  16:16       STORE_NAME remove
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [remove]
+simple_name: remove
+  raw bytecode: 6 09:04:16:28:51:63
+  prelude: (2, 0, 0, 1, 0, 0)
+  args: ['t']
+  line info: 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: gather
+  raw bytecode: 281 f0:ca:80:c0:40:85:01:14:06:00:07:08:b0:b7:b8:20:00:03:c2:32:01:b1:34:01:c3:80:27:07:12:23:b3:34:01:80:42:c4:80:57:c4:b3:b4:55:13:15:52:de:44:4e:b2:b3:b4:55:18:15:25:07:81:e5:27:07:42:69:b3:b4:55:13:15:43:5b:12:24:b3:b4:55:13:08:12:25:34:02:43:4c:25:00:43:48:12:23:b3:34:01:d1:27:07:42:47:12:26:23:00:34:01:65:81:e5:58:5a:d7:43:b6:7f:59:59:12:02:13:0e:27:08:50:c5:25:07:80:d8:44:66:12:05:25:08:18:08:48:05:51:67:59:4a:19:57:12:02:13:0a:df:44:50:c6:49:06:52:c5:b6:27:07:51:51:c6:28:06:5d:4a:01:5d:12:23:b3:34:01:80:42:da:80:57:c4:b3:b4:55:13:15:b2:de:44:53:52:b3:b4:55:18:15:b5:44:48:b3:b4:55:14:09:36:00:59:42:7a:12:24:b3:b4:55:13:08:12:25:34:02:44:4c:b3:b4:55:13:08:13:0f:b3:b4:56:42:61:25:00:44:4a:b3:b4:55:13:08:b3:b4:56:42:53:12:24:25:07:12:27:34:02:44:49:b3:b4:55:13:08:27:07:42:40:81:e5:58:5a:d7:43:a0:7f:59:59:25:07:44:43:25:07:65:b3:63
+  prelude: (15, 2, 13, 0, 1, 0)
+  args: ['return_exceptions']
+  line info: 00:07:08
+  b0          LOAD_FAST 0 
+  b7          LOAD_FAST 7 
+  b8          LOAD_FAST 8 
+  20:00:03    MAKE_CLOSURE 0
+  c2          STORE_FAST 2 
+  32:01       MAKE_FUNCTION 1
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  c3          STORE_FAST 3 
+  80          LOAD_CONST_SMALL_INT 0 
+  27:07       STORE_DEREF 7
+  12:23       LOAD_GLOBAL len
+  b3          LOAD_FAST 3 
+  34:01       CALL_FUNCTION 1
+  80          LOAD_CONST_SMALL_INT 0 
+  42:c4:80    JUMP 68
+  57          DUP_TOP 
+  c4          STORE_FAST 4 
+  b3          LOAD_FAST 3 
+  b4          LOAD_FAST 4 
+  55          LOAD_SUBSCR 
+  13:15       LOAD_ATTR state
+  52          LOAD_CONST_TRUE 
+  de          BINARY_OP 7 <is> 
+  44:4e       POP_JUMP_IF_FALSE 14
+  b2          LOAD_FAST 2 
+  b3          LOAD_FAST 3 
+  b4          LOAD_FAST 4 
+  55          LOAD_SUBSCR 
+  18:15       STORE_ATTR state
+  25:07       LOAD_DEREF 7
+  81          LOAD_CONST_SMALL_INT 1 
+  e5          BINARY_OP 14 __iadd__ 
+  27:07       STORE_DEREF 7
+  42:69       JUMP 41
+  b3          LOAD_FAST 3 
+  b4          LOAD_FAST 4 
+  55          LOAD_SUBSCR 
+  13:15       LOAD_ATTR state
+  43:5b       POP_JUMP_IF_TRUE 27
+  12:24       LOAD_GLOBAL isinstance
+  b3          LOAD_FAST 3 
+  b4          LOAD_FAST 4 
+  55          LOAD_SUBSCR 
+  13:08       LOAD_ATTR data
+  12:25       LOAD_GLOBAL StopIteration
+  34:02       CALL_FUNCTION 2
+  43:4c       POP_JUMP_IF_TRUE 12
+  25:00       LOAD_DEREF 0
+  43:48       POP_JUMP_IF_TRUE 8
+  12:23       LOAD_GLOBAL len
+  b3          LOAD_FAST 3 
+  34:01       CALL_FUNCTION 1
+  d1          UNARY_OP 1 __neg__ 
+  27:07       STORE_DEREF 7
+  42:47       JUMP 7
+  12:26       LOAD_GLOBAL RuntimeError
+  23:00       LOAD_CONST_OBJ "can't gather"
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  81          LOAD_CONST_SMALL_INT 1 
+  e5          BINARY_OP 14 __iadd__ 
+  58          DUP_TOP_TWO 
+  5a          ROT_TWO 
+  d7          BINARY_OP 0 __lt__ 
+  43:b6:7f    POP_JUMP_IF_TRUE -74
+  59          POP_TOP 
+  59          POP_TOP 
+  12:02       LOAD_GLOBAL core
+  13:0e       LOAD_ATTR cur_task
+  27:08       STORE_DEREF 8
+  50          LOAD_CONST_FALSE 
+  c5          STORE_FAST 5 
+  25:07       LOAD_DEREF 7
+  80          LOAD_CONST_SMALL_INT 0 
+  d8          BINARY_OP 1 __gt__ 
+  44:66       POP_JUMP_IF_FALSE 38
+  12:05       LOAD_GLOBAL _Remove
+  25:08       LOAD_DEREF 8
+  18:08       STORE_ATTR data
+  48:05       SETUP_EXCEPT 5
+  51          LOAD_CONST_NONE 
+  67          YIELD_VALUE 
+  59          POP_TOP 
+  4a:19       POP_EXCEPT_JUMP 25
+  57          DUP_TOP 
+  12:02       LOAD_GLOBAL core
+  13:0a       LOAD_ATTR CancelledError
+  df          BINARY_OP 8 <exception match> 
+  44:50       POP_JUMP_IF_FALSE 16
+  c6          STORE_FAST 6 
+  49:06       SETUP_FINALLY 6
+  52          LOAD_CONST_TRUE 
+  c5          STORE_FAST 5 
+  b6          LOAD_FAST 6 
+  27:07       STORE_DEREF 7
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  c6          STORE_FAST 6 
+  28:06       DELETE_FAST 6
+  5d          END_FINALLY 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  12:23       LOAD_GLOBAL len
+  b3          LOAD_FAST 3 
+  34:01       CALL_FUNCTION 1
+  80          LOAD_CONST_SMALL_INT 0 
+  42:da:80    JUMP 90
+  57          DUP_TOP 
+  c4          STORE_FAST 4 
+  b3          LOAD_FAST 3 
+  b4          LOAD_FAST 4 
+  55          LOAD_SUBSCR 
+  13:15       LOAD_ATTR state
+  b2          LOAD_FAST 2 
+  de          BINARY_OP 7 <is> 
+  44:53       POP_JUMP_IF_FALSE 19
+  52          LOAD_CONST_TRUE 
+  b3          LOAD_FAST 3 
+  b4          LOAD_FAST 4 
+  55          LOAD_SUBSCR 
+  18:15       STORE_ATTR state
+  b5          LOAD_FAST 5 
+  44:48       POP_JUMP_IF_FALSE 8
+  b3          LOAD_FAST 3 
+  b4          LOAD_FAST 4 
+  55          LOAD_SUBSCR 
+  14:09       LOAD_METHOD cancel
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  42:7a       JUMP 58
+  12:24       LOAD_GLOBAL isinstance
+  b3          LOAD_FAST 3 
+  b4          LOAD_FAST 4 
+  55          LOAD_SUBSCR 
+  13:08       LOAD_ATTR data
+  12:25       LOAD_GLOBAL StopIteration
+  34:02       CALL_FUNCTION 2
+  44:4c       POP_JUMP_IF_FALSE 12
+  b3          LOAD_FAST 3 
+  b4          LOAD_FAST 4 
+  55          LOAD_SUBSCR 
+  13:08       LOAD_ATTR data
+  13:0f       LOAD_ATTR value
+  b3          LOAD_FAST 3 
+  b4          LOAD_FAST 4 
+  56          STORE_SUBSCR 
+  42:61       JUMP 33
+  25:00       LOAD_DEREF 0
+  44:4a       POP_JUMP_IF_FALSE 10
+  b3          LOAD_FAST 3 
+  b4          LOAD_FAST 4 
+  55          LOAD_SUBSCR 
+  13:08       LOAD_ATTR data
+  b3          LOAD_FAST 3 
+  b4          LOAD_FAST 4 
+  56          STORE_SUBSCR 
+  42:53       JUMP 19
+  12:24       LOAD_GLOBAL isinstance
+  25:07       LOAD_DEREF 7
+  12:27       LOAD_GLOBAL int
+  34:02       CALL_FUNCTION 2
+  44:49       POP_JUMP_IF_FALSE 9
+  b3          LOAD_FAST 3 
+  b4          LOAD_FAST 4 
+  55          LOAD_SUBSCR 
+  13:08       LOAD_ATTR data
+  27:07       STORE_DEREF 7
+  42:40       JUMP 0
+  81          LOAD_CONST_SMALL_INT 1 
+  e5          BINARY_OP 14 __iadd__ 
+  58          DUP_TOP_TWO 
+  5a          ROT_TWO 
+  d7          BINARY_OP 0 __lt__ 
+  43:a0:7f    POP_JUMP_IF_TRUE -96
+  59          POP_TOP 
+  59          POP_TOP 
+  25:07       LOAD_DEREF 7
+  44:43       POP_JUMP_IF_FALSE 3
+  25:07       LOAD_DEREF 7
+  65          RAISE_OBJ 
+  b3          LOAD_FAST 3 
+  63          RETURN_VALUE 
+  children: [done, <listcomp>]
+simple_name: done
+  raw bytecode: 21 b9:04:0c:17:29:29:29:28:2a:25:02:13:08:12:05:de:d3:44:42:51:63
+  prelude: (8, 0, 0, 5, 0, 0)
+  args: ['*', '*', '*', 't', 'er']
+  line info: 
+  25:02       LOAD_DEREF 2
+  13:08       LOAD_ATTR data
+  12:05       LOAD_GLOBAL _Remove
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:42       POP_JUMP_IF_FALSE 2
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: <listcomp>
+  raw bytecode: 23 49:04:1a:29:2b:00:b0:5f:4b:0c:c1:12:02:14:0c:b1:36:01:2f:14:42:32:63
+  prelude: (10, 0, 0, 1, 0, 0)
+  args: ['*']
+  line info: 
+  2b:00       BUILD_LIST 0
+  b0          LOAD_FAST 0 
+  5f          GET_ITER_STACK 
+  4b:0c       FOR_ITER 12
+  c1          STORE_FAST 1 
+  12:02       LOAD_GLOBAL core
+  14:0c       LOAD_METHOD _promote_to_task
+  b1          LOAD_FAST 1 
+  36:01       CALL_METHOD 1
+  2f:14       STORE_COMP 20
+  42:32       JUMP -14
+  63          RETURN_VALUE 
+  children: []

@@ -1,0 +1,814 @@
+mpy_source_file: extracted/pn532.py.mpy
+source_file: pn532.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[51] (* for static qstrs):
+    'pn532.py' 
+    '<module>' *
+    'const' *
+    'micropython' *
+    'machine' 
+    'utime' 
+    'PN532Uart' 
+    '__init__' *
+    'UART' 
+    'baudrate' 
+    'tx' 
+    'rx' 
+    'uart' 
+    'debug' 
+    'wait_read_len' 
+    'ticks_ms' 
+    'any' *
+    'read' *
+    '_write_frame' 
+    'AssertionError' *
+    'write' *
+    '_read_frame' 
+    'call_function' 
+    'SAM_configuration' 
+    'params' 
+    'get_firmware_version' 
+    'read_passive_target' 
+    'release_targets' 
+    '<listcomp>' 
+    '_WAKEUP' 
+    '_ACK' 
+    '_FRAME_START' 
+    'object' *
+    '__name__' *
+    '__module__' *
+    '__qualname__' *
+    'self' *
+    'uart_no' 
+    'len' *
+    'RuntimeError' *
+    'data' 
+    'bytearray' *
+    'sum' *
+    'print' *
+    'bytes' *
+    'command' 
+    'enumerate' 
+    'tuple' *
+    'card_baud' 
+    '*' *
+    'hex' 
+obj_table: [b'UU\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', b'\x00\x00\xff\x00\xff\x00', b'\x00\x00\xff', 'No response from PN532!', 'Data must be array of 1 to 255 bytes.', '_write_frame: ', 'Removing %d bytes in the read buffer', '_write_frame: ACK: ', 'Did not receive expected ACK from PN532!', '_read_frame: frame_start + header:', 'Response does not begin with _FRAME_START!', 'Response length checksum did not match length!', '_read_frame: data: ', 'Response checksum did not match expected value: ', 'Response does not include Frame End', 'Received smaller than expected frame', 'Received unexpected command response!', 'Sending SAM_CONFIGURATION', 'SAM_configuration:', 'Sending GET_FIRMWARE_VERSION', 'Failed to detect the PN532', 'Sending INIT_PASSIVE_TARGET', 'More than one card detected!', 'Found card with unexpectedly long UID!', 'Release Targets']
+simple_name: <module>
+  raw bytecode: 61 18:14:01:2c:26:66:60:84:0f:24:64:40:80:10:02:2a:01:1b:03:1c:02:16:02:59:80:51:1b:04:16:04:80:51:1b:05:16:05:23:00:16:1d:23:01:16:1e:23:02:16:1f:54:32:00:10:06:11:20:34:03:16:06:51:63
+  prelude: (4, 0, 0, 0, 0, 0)
+  args: []
+  line info: 2c:26:66:60:84:0f:24:64:40
+  80          LOAD_CONST_SMALL_INT 0 
+  10:02       LOAD_CONST_STRING const
+  2a:01       BUILD_TUPLE 1
+  1b:03       IMPORT_NAME micropython
+  1c:02       IMPORT_FROM const
+  16:02       STORE_NAME const
+  59          POP_TOP 
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:04       IMPORT_NAME machine
+  16:04       STORE_NAME machine
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:05       IMPORT_NAME utime
+  16:05       STORE_NAME utime
+  23:00       LOAD_CONST_OBJ b'UU\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+  16:1d       STORE_NAME _WAKEUP
+  23:01       LOAD_CONST_OBJ b'\x00\x00\xff\x00\xff\x00'
+  16:1e       STORE_NAME _ACK
+  23:02       LOAD_CONST_OBJ b'\x00\x00\xff'
+  16:1f       STORE_NAME _FRAME_START
+  54          LOAD_BUILD_CLASS 
+  32:00       MAKE_FUNCTION 0
+  10:06       LOAD_CONST_STRING PN532Uart
+  11:20       LOAD_NAME object
+  34:03       CALL_FUNCTION 3
+  16:06       STORE_NAME PN532Uart
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [PN532Uart]
+simple_name: PN532Uart
+  raw bytecode: 83 10:28:06:88:1e:60:8a:0a:84:0c:84:34:84:23:89:18:84:08:84:0d:88:14:11:21:16:22:10:06:16:23:51:51:50:2a:03:53:33:00:16:07:32:01:16:0e:32:02:16:12:32:03:16:15:2b:00:2a:01:53:33:04:16:16:32:05:16:17:32:06:16:19:80:2a:01:53:33:07:16:1a:32:08:16:1b:51:63
+  prelude: (3, 0, 0, 0, 0, 0)
+  args: []
+  line info: 88:1e:60:8a:0a:84:0c:84:34:84:23:89:18:84:08:84:0d:88:14
+  11:21       LOAD_NAME __name__
+  16:22       STORE_NAME __module__
+  10:06       LOAD_CONST_STRING PN532Uart
+  16:23       STORE_NAME __qualname__
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  50          LOAD_CONST_FALSE 
+  2a:03       BUILD_TUPLE 3
+  53          LOAD_NULL 
+  33:00       MAKE_FUNCTION_DEFARGS 0
+  16:07       STORE_NAME __init__
+  32:01       MAKE_FUNCTION 1
+  16:0e       STORE_NAME wait_read_len
+  32:02       MAKE_FUNCTION 2
+  16:12       STORE_NAME _write_frame
+  32:03       MAKE_FUNCTION 3
+  16:15       STORE_NAME _read_frame
+  2b:00       BUILD_LIST 0
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:04       MAKE_FUNCTION_DEFARGS 4
+  16:16       STORE_NAME call_function
+  32:05       MAKE_FUNCTION 5
+  16:17       STORE_NAME SAM_configuration
+  32:06       MAKE_FUNCTION 6
+  16:19       STORE_NAME get_firmware_version
+  80          LOAD_CONST_SMALL_INT 0 
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:07       MAKE_FUNCTION_DEFARGS 7
+  16:1a       STORE_NAME read_passive_target
+  32:08       MAKE_FUNCTION 8
+  16:1b       STORE_NAME release_targets
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [__init__, wait_read_len, _write_frame, _read_frame, call_function, SAM_configuration, get_firmware_version, read_passive_target, release_targets]
+simple_name: __init__
+  raw bytecode: 69 e9:85:01:16:07:24:25:0a:0b:0d:80:22:26:59:51:b2:44:5c:b3:44:59:12:04:14:08:b1:10:09:22:87:84:00:10:0a:b2:10:0b:b3:36:86:01:b0:18:0c:42:51:12:04:14:08:b1:10:09:22:87:84:00:36:82:01:b0:18:0c:b4:b0:18:0d:51:63
+  prelude: (14, 0, 0, 5, 0, 3)
+  args: ['self', 'uart_no', 'tx', 'rx', 'debug']
+  line info: 80:22:26:59:51
+  b2          LOAD_FAST 2 
+  44:5c       POP_JUMP_IF_FALSE 28
+  b3          LOAD_FAST 3 
+  44:59       POP_JUMP_IF_FALSE 25
+  12:04       LOAD_GLOBAL machine
+  14:08       LOAD_METHOD UART
+  b1          LOAD_FAST 1 
+  10:09       LOAD_CONST_STRING baudrate
+  22:87:84:00 LOAD_CONST_SMALL_INT 115200
+  10:0a       LOAD_CONST_STRING tx
+  b2          LOAD_FAST 2 
+  10:0b       LOAD_CONST_STRING rx
+  b3          LOAD_FAST 3 
+  36:86:01    CALL_METHOD 769
+  b0          LOAD_FAST 0 
+  18:0c       STORE_ATTR uart
+  42:51       JUMP 17
+  12:04       LOAD_GLOBAL machine
+  14:08       LOAD_METHOD UART
+  b1          LOAD_FAST 1 
+  10:09       LOAD_CONST_STRING baudrate
+  22:87:84:00 LOAD_CONST_SMALL_INT 115200
+  36:82:01    CALL_METHOD 257
+  b0          LOAD_FAST 0 
+  18:0c       STORE_ATTR uart
+  b4          LOAD_FAST 4 
+  b0          LOAD_FAST 0 
+  18:0d       STORE_ATTR debug
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: wait_read_len
+  raw bytecode: 80 3a:18:0e:24:26:80:2c:24:27:24:22:57:2a:47:22:87:68:c2:12:05:14:0f:36:00:c3:b3:b2:f2:c4:42:42:42:40:b0:13:0c:14:10:36:00:b1:d7:44:4a:12:05:14:0f:36:00:b4:d7:43:29:12:05:14:0f:36:00:b4:db:44:47:12:27:23:03:34:01:65:b0:13:0c:14:11:b1:36:01:63
+  prelude: (8, 0, 0, 2, 0, 0)
+  args: ['self', 'len']
+  line info: 80:2c:24:27:24:22:57:2a:47
+  22:87:68    LOAD_CONST_SMALL_INT 1000
+  c2          STORE_FAST 2 
+  12:05       LOAD_GLOBAL utime
+  14:0f       LOAD_METHOD ticks_ms
+  36:00       CALL_METHOD 0
+  c3          STORE_FAST 3 
+  b3          LOAD_FAST 3 
+  b2          LOAD_FAST 2 
+  f2          BINARY_OP 27 __add__ 
+  c4          STORE_FAST 4 
+  42:42       JUMP 2
+  42:40       JUMP 0
+  b0          LOAD_FAST 0 
+  13:0c       LOAD_ATTR uart
+  14:10       LOAD_METHOD any
+  36:00       CALL_METHOD 0
+  b1          LOAD_FAST 1 
+  d7          BINARY_OP 0 __lt__ 
+  44:4a       POP_JUMP_IF_FALSE 10
+  12:05       LOAD_GLOBAL utime
+  14:0f       LOAD_METHOD ticks_ms
+  36:00       CALL_METHOD 0
+  b4          LOAD_FAST 4 
+  d7          BINARY_OP 0 __lt__ 
+  43:29       POP_JUMP_IF_TRUE -23
+  12:05       LOAD_GLOBAL utime
+  14:0f       LOAD_METHOD ticks_ms
+  36:00       CALL_METHOD 0
+  b4          LOAD_FAST 4 
+  db          BINARY_OP 4 __ge__ 
+  44:47       POP_JUMP_IF_FALSE 7
+  12:27       LOAD_GLOBAL RuntimeError
+  23:03       LOAD_CONST_OBJ 'No response from PN532!'
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  b0          LOAD_FAST 0 
+  13:0c       LOAD_ATTR uart
+  14:11       LOAD_METHOD read
+  b1          LOAD_FAST 1 
+  36:01       CALL_METHOD 1
+  63          RETURN_VALUE 
+  children: []
+simple_name: _write_frame
+  raw bytecode: 286 52:48:12:24:28:80:38:20:1f:83:0a:26:28:24:24:26:2b:28:2b:27:28:29:64:25:6c:60:4a:28:22:25:27:29:4d:6d:4c:25:2c:26:b1:51:de:d3:44:55:81:12:26:b1:34:01:57:5b:d7:46:06:22:81:7f:d7:42:42:5a:59:43:47:12:13:23:04:34:01:65:12:26:b1:34:01:c2:12:29:b2:88:f2:34:01:c3:80:b3:80:56:80:b3:81:56:22:81:7f:b3:82:56:12:2a:b3:80:83:2e:02:55:34:01:c4:b2:22:81:7f:ef:b3:83:56:b2:d2:81:f2:22:81:7f:ef:b3:84:56:b1:b3:85:7e:2e:02:56:b4:12:2a:b1:34:01:e5:c4:b4:d2:22:81:7f:ef:b3:7e:56:80:b3:7f:56:b0:13:0d:44:4c:12:2b:23:05:32:00:b3:34:01:34:02:59:b0:13:0c:14:14:12:1d:36:01:59:b0:13:0c:14:10:36:00:c5:42:5d:b0:13:0d:44:47:12:2b:23:06:34:01:59:b0:13:0c:14:11:b5:36:01:59:b0:13:0c:14:10:36:00:c5:b5:80:d8:43:1e:b0:13:0c:14:14:12:2c:b3:34:01:36:01:59:b0:14:0e:12:26:12:1e:34:01:36:01:c6:b0:13:0d:44:4c:12:2b:23:07:32:01:b6:34:01:34:02:59:b6:12:1e:dc:44:47:12:27:23:08:34:01:65:51:63
+  prelude: (11, 0, 0, 2, 0, 0)
+  args: ['self', 'data']
+  line info: 80:38:20:1f:83:0a:26:28:24:24:26:2b:28:2b:27:28:29:64:25:6c:60:4a:28:22:25:27:29:4d:6d:4c:25:2c:26
+  b1          LOAD_FAST 1 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:55       POP_JUMP_IF_FALSE 21
+  81          LOAD_CONST_SMALL_INT 1 
+  12:26       LOAD_GLOBAL len
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  57          DUP_TOP 
+  5b          ROT_THREE 
+  d7          BINARY_OP 0 __lt__ 
+  46:06       JUMP_IF_FALSE_OR_POP 6
+  22:81:7f    LOAD_CONST_SMALL_INT 255
+  d7          BINARY_OP 0 __lt__ 
+  42:42       JUMP 2
+  5a          ROT_TWO 
+  59          POP_TOP 
+  43:47       POP_JUMP_IF_TRUE 7
+  12:13       LOAD_GLOBAL AssertionError
+  23:04       LOAD_CONST_OBJ 'Data must be array of 1 to 255 bytes.'
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  12:26       LOAD_GLOBAL len
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  c2          STORE_FAST 2 
+  12:29       LOAD_GLOBAL bytearray
+  b2          LOAD_FAST 2 
+  88          LOAD_CONST_SMALL_INT 8 
+  f2          BINARY_OP 27 __add__ 
+  34:01       CALL_FUNCTION 1
+  c3          STORE_FAST 3 
+  80          LOAD_CONST_SMALL_INT 0 
+  b3          LOAD_FAST 3 
+  80          LOAD_CONST_SMALL_INT 0 
+  56          STORE_SUBSCR 
+  80          LOAD_CONST_SMALL_INT 0 
+  b3          LOAD_FAST 3 
+  81          LOAD_CONST_SMALL_INT 1 
+  56          STORE_SUBSCR 
+  22:81:7f    LOAD_CONST_SMALL_INT 255
+  b3          LOAD_FAST 3 
+  82          LOAD_CONST_SMALL_INT 2 
+  56          STORE_SUBSCR 
+  12:2a       LOAD_GLOBAL sum
+  b3          LOAD_FAST 3 
+  80          LOAD_CONST_SMALL_INT 0 
+  83          LOAD_CONST_SMALL_INT 3 
+  2e:02       BUILD_SLICE 2
+  55          LOAD_SUBSCR 
+  34:01       CALL_FUNCTION 1
+  c4          STORE_FAST 4 
+  b2          LOAD_FAST 2 
+  22:81:7f    LOAD_CONST_SMALL_INT 255
+  ef          BINARY_OP 24 __and__ 
+  b3          LOAD_FAST 3 
+  83          LOAD_CONST_SMALL_INT 3 
+  56          STORE_SUBSCR 
+  b2          LOAD_FAST 2 
+  d2          UNARY_OP 2 __invert__ 
+  81          LOAD_CONST_SMALL_INT 1 
+  f2          BINARY_OP 27 __add__ 
+  22:81:7f    LOAD_CONST_SMALL_INT 255
+  ef          BINARY_OP 24 __and__ 
+  b3          LOAD_FAST 3 
+  84          LOAD_CONST_SMALL_INT 4 
+  56          STORE_SUBSCR 
+  b1          LOAD_FAST 1 
+  b3          LOAD_FAST 3 
+  85          LOAD_CONST_SMALL_INT 5 
+  7e          LOAD_CONST_SMALL_INT -2 
+  2e:02       BUILD_SLICE 2
+  56          STORE_SUBSCR 
+  b4          LOAD_FAST 4 
+  12:2a       LOAD_GLOBAL sum
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  e5          BINARY_OP 14 __iadd__ 
+  c4          STORE_FAST 4 
+  b4          LOAD_FAST 4 
+  d2          UNARY_OP 2 __invert__ 
+  22:81:7f    LOAD_CONST_SMALL_INT 255
+  ef          BINARY_OP 24 __and__ 
+  b3          LOAD_FAST 3 
+  7e          LOAD_CONST_SMALL_INT -2 
+  56          STORE_SUBSCR 
+  80          LOAD_CONST_SMALL_INT 0 
+  b3          LOAD_FAST 3 
+  7f          LOAD_CONST_SMALL_INT -1 
+  56          STORE_SUBSCR 
+  b0          LOAD_FAST 0 
+  13:0d       LOAD_ATTR debug
+  44:4c       POP_JUMP_IF_FALSE 12
+  12:2b       LOAD_GLOBAL print
+  23:05       LOAD_CONST_OBJ '_write_frame: '
+  32:00       MAKE_FUNCTION 0
+  b3          LOAD_FAST 3 
+  34:01       CALL_FUNCTION 1
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:0c       LOAD_ATTR uart
+  14:14       LOAD_METHOD write
+  12:1d       LOAD_GLOBAL _WAKEUP
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:0c       LOAD_ATTR uart
+  14:10       LOAD_METHOD any
+  36:00       CALL_METHOD 0
+  c5          STORE_FAST 5 
+  42:5d       JUMP 29
+  b0          LOAD_FAST 0 
+  13:0d       LOAD_ATTR debug
+  44:47       POP_JUMP_IF_FALSE 7
+  12:2b       LOAD_GLOBAL print
+  23:06       LOAD_CONST_OBJ 'Removing %d bytes in the read buffer'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:0c       LOAD_ATTR uart
+  14:11       LOAD_METHOD read
+  b5          LOAD_FAST 5 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:0c       LOAD_ATTR uart
+  14:10       LOAD_METHOD any
+  36:00       CALL_METHOD 0
+  c5          STORE_FAST 5 
+  b5          LOAD_FAST 5 
+  80          LOAD_CONST_SMALL_INT 0 
+  d8          BINARY_OP 1 __gt__ 
+  43:1e       POP_JUMP_IF_TRUE -34
+  b0          LOAD_FAST 0 
+  13:0c       LOAD_ATTR uart
+  14:14       LOAD_METHOD write
+  12:2c       LOAD_GLOBAL bytes
+  b3          LOAD_FAST 3 
+  34:01       CALL_FUNCTION 1
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:0e       LOAD_METHOD wait_read_len
+  12:26       LOAD_GLOBAL len
+  12:1e       LOAD_GLOBAL _ACK
+  34:01       CALL_FUNCTION 1
+  36:01       CALL_METHOD 1
+  c6          STORE_FAST 6 
+  b0          LOAD_FAST 0 
+  13:0d       LOAD_ATTR debug
+  44:4c       POP_JUMP_IF_FALSE 12
+  12:2b       LOAD_GLOBAL print
+  23:07       LOAD_CONST_OBJ '_write_frame: ACK: '
+  32:01       MAKE_FUNCTION 1
+  b6          LOAD_FAST 6 
+  34:01       CALL_FUNCTION 1
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  b6          LOAD_FAST 6 
+  12:1e       LOAD_GLOBAL _ACK
+  dc          BINARY_OP 5 __ne__ 
+  44:47       POP_JUMP_IF_FALSE 7
+  12:27       LOAD_GLOBAL RuntimeError
+  23:08       LOAD_CONST_OBJ 'Did not receive expected ACK from PN532!'
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [<listcomp>, <listcomp>]
+simple_name: <listcomp>
+  raw bytecode: 23 41:08:1c:31:80:52:2b:00:b0:5f:4b:0a:c1:12:32:b1:34:01:2f:14:42:34:63
+  prelude: (9, 0, 0, 1, 0, 0)
+  args: ['*']
+  line info: 80:52
+  2b:00       BUILD_LIST 0
+  b0          LOAD_FAST 0 
+  5f          GET_ITER_STACK 
+  4b:0a       FOR_ITER 10
+  c1          STORE_FAST 1 
+  12:32       LOAD_GLOBAL hex
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  2f:14       STORE_COMP 20
+  42:34       JUMP -12
+  63          RETURN_VALUE 
+  children: []
+simple_name: <listcomp>
+  raw bytecode: 23 41:08:1c:31:80:67:2b:00:b0:5f:4b:0a:c1:12:32:b1:34:01:2f:14:42:34:63
+  prelude: (9, 0, 0, 1, 0, 0)
+  args: ['*']
+  line info: 80:67
+  2b:00       BUILD_LIST 0
+  b0          LOAD_FAST 0 
+  5f          GET_ITER_STACK 
+  4b:0a       FOR_ITER 10
+  c1          STORE_FAST 1 
+  12:32       LOAD_GLOBAL hex
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  2f:14       STORE_COMP 20
+  42:34       JUMP -12
+  63          RETURN_VALUE 
+  children: []
+simple_name: _read_frame
+  raw bytecode: 186 49:2e:15:24:80:6c:60:40:2e:25:4c:3b:67:24:24:2b:67:49:25:4c:2a:25:48:27:67:b0:14:0e:12:26:12:1f:34:01:82:f2:36:01:c1:b0:13:0d:44:4c:12:2b:23:09:32:00:b1:34:01:34:02:59:12:26:b1:34:01:12:26:12:1f:34:01:82:f2:d7:43:4b:b1:51:7e:2e:02:55:12:1f:dc:44:47:12:27:23:0a:34:01:65:b1:7e:55:c2:b1:7f:55:c3:b2:b3:f2:22:81:7f:ef:80:dc:44:47:12:27:23:0b:34:01:65:b0:14:0e:b2:82:f2:36:01:c4:b0:13:0d:44:4c:12:2b:23:0c:32:01:b4:34:01:34:02:59:12:2a:b4:34:01:22:81:7f:ef:c5:b5:80:dc:44:48:12:27:23:0d:b5:34:02:65:b4:7f:55:80:dc:44:47:12:27:23:0e:34:01:65:b4:80:b2:2e:02:55:63
+  prelude: (10, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:6c:60:40:2e:25:4c:3b:67:24:24:2b:67:49:25:4c:2a:25:48:27:67
+  b0          LOAD_FAST 0 
+  14:0e       LOAD_METHOD wait_read_len
+  12:26       LOAD_GLOBAL len
+  12:1f       LOAD_GLOBAL _FRAME_START
+  34:01       CALL_FUNCTION 1
+  82          LOAD_CONST_SMALL_INT 2 
+  f2          BINARY_OP 27 __add__ 
+  36:01       CALL_METHOD 1
+  c1          STORE_FAST 1 
+  b0          LOAD_FAST 0 
+  13:0d       LOAD_ATTR debug
+  44:4c       POP_JUMP_IF_FALSE 12
+  12:2b       LOAD_GLOBAL print
+  23:09       LOAD_CONST_OBJ '_read_frame: frame_start + header:'
+  32:00       MAKE_FUNCTION 0
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  12:26       LOAD_GLOBAL len
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  12:26       LOAD_GLOBAL len
+  12:1f       LOAD_GLOBAL _FRAME_START
+  34:01       CALL_FUNCTION 1
+  82          LOAD_CONST_SMALL_INT 2 
+  f2          BINARY_OP 27 __add__ 
+  d7          BINARY_OP 0 __lt__ 
+  43:4b       POP_JUMP_IF_TRUE 11
+  b1          LOAD_FAST 1 
+  51          LOAD_CONST_NONE 
+  7e          LOAD_CONST_SMALL_INT -2 
+  2e:02       BUILD_SLICE 2
+  55          LOAD_SUBSCR 
+  12:1f       LOAD_GLOBAL _FRAME_START
+  dc          BINARY_OP 5 __ne__ 
+  44:47       POP_JUMP_IF_FALSE 7
+  12:27       LOAD_GLOBAL RuntimeError
+  23:0a       LOAD_CONST_OBJ 'Response does not begin with _FRAME_START!'
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  b1          LOAD_FAST 1 
+  7e          LOAD_CONST_SMALL_INT -2 
+  55          LOAD_SUBSCR 
+  c2          STORE_FAST 2 
+  b1          LOAD_FAST 1 
+  7f          LOAD_CONST_SMALL_INT -1 
+  55          LOAD_SUBSCR 
+  c3          STORE_FAST 3 
+  b2          LOAD_FAST 2 
+  b3          LOAD_FAST 3 
+  f2          BINARY_OP 27 __add__ 
+  22:81:7f    LOAD_CONST_SMALL_INT 255
+  ef          BINARY_OP 24 __and__ 
+  80          LOAD_CONST_SMALL_INT 0 
+  dc          BINARY_OP 5 __ne__ 
+  44:47       POP_JUMP_IF_FALSE 7
+  12:27       LOAD_GLOBAL RuntimeError
+  23:0b       LOAD_CONST_OBJ 'Response length checksum did not match length!'
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  b0          LOAD_FAST 0 
+  14:0e       LOAD_METHOD wait_read_len
+  b2          LOAD_FAST 2 
+  82          LOAD_CONST_SMALL_INT 2 
+  f2          BINARY_OP 27 __add__ 
+  36:01       CALL_METHOD 1
+  c4          STORE_FAST 4 
+  b0          LOAD_FAST 0 
+  13:0d       LOAD_ATTR debug
+  44:4c       POP_JUMP_IF_FALSE 12
+  12:2b       LOAD_GLOBAL print
+  23:0c       LOAD_CONST_OBJ '_read_frame: data: '
+  32:01       MAKE_FUNCTION 1
+  b4          LOAD_FAST 4 
+  34:01       CALL_FUNCTION 1
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  12:2a       LOAD_GLOBAL sum
+  b4          LOAD_FAST 4 
+  34:01       CALL_FUNCTION 1
+  22:81:7f    LOAD_CONST_SMALL_INT 255
+  ef          BINARY_OP 24 __and__ 
+  c5          STORE_FAST 5 
+  b5          LOAD_FAST 5 
+  80          LOAD_CONST_SMALL_INT 0 
+  dc          BINARY_OP 5 __ne__ 
+  44:48       POP_JUMP_IF_FALSE 8
+  12:27       LOAD_GLOBAL RuntimeError
+  23:0d       LOAD_CONST_OBJ 'Response checksum did not match expected value: '
+  b5          LOAD_FAST 5 
+  34:02       CALL_FUNCTION 2
+  65          RAISE_OBJ 
+  b4          LOAD_FAST 4 
+  7f          LOAD_CONST_SMALL_INT -1 
+  55          LOAD_SUBSCR 
+  80          LOAD_CONST_SMALL_INT 0 
+  dc          BINARY_OP 5 __ne__ 
+  44:47       POP_JUMP_IF_FALSE 7
+  12:27       LOAD_GLOBAL RuntimeError
+  23:0e       LOAD_CONST_OBJ 'Response does not include Frame End'
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  b4          LOAD_FAST 4 
+  80          LOAD_CONST_SMALL_INT 0 
+  b2          LOAD_FAST 2 
+  2e:02       BUILD_SLICE 2
+  55          LOAD_SUBSCR 
+  63          RETURN_VALUE 
+  children: [<listcomp>, <listcomp>]
+simple_name: <listcomp>
+  raw bytecode: 23 41:08:1c:31:80:73:2b:00:b0:5f:4b:0a:c1:12:32:b1:34:01:2f:14:42:34:63
+  prelude: (9, 0, 0, 1, 0, 0)
+  args: ['*']
+  line info: 80:73
+  2b:00       BUILD_LIST 0
+  b0          LOAD_FAST 0 
+  5f          GET_ITER_STACK 
+  4b:0a       FOR_ITER 10
+  c1          STORE_FAST 1 
+  12:32       LOAD_GLOBAL hex
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  2f:14       STORE_COMP 20
+  42:34       JUMP -12
+  63          RETURN_VALUE 
+  children: []
+simple_name: <listcomp>
+  raw bytecode: 23 41:08:1c:31:80:82:2b:00:b0:5f:4b:0a:c1:12:32:b1:34:01:2f:14:42:34:63
+  prelude: (9, 0, 0, 1, 0, 0)
+  args: ['*']
+  line info: 80:82
+  2b:00       BUILD_LIST 0
+  b0          LOAD_FAST 0 
+  5f          GET_ITER_STACK 
+  4b:0a       FOR_ITER 10
+  c1          STORE_FAST 1 
+  12:32       LOAD_GLOBAL hex
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  2f:14       STORE_COMP 20
+  42:34       JUMP -12
+  63          RETURN_VALUE 
+  children: []
+simple_name: call_function
+  raw bytecode: 129 f3:01:26:16:24:2d:18:80:8f:60:20:2c:26:28:2c:68:27:46:29:47:32:67:12:29:82:12:26:b2:34:01:f2:34:01:c3:22:81:54:b3:80:56:b1:22:81:7f:ef:b3:81:56:12:2e:b2:34:01:5f:4b:0c:30:02:c4:c5:b5:b3:82:b4:f2:56:42:32:b0:14:12:b3:36:01:59:b0:14:15:36:00:c6:12:26:b6:34:01:82:d7:44:47:12:27:23:0f:34:01:65:b6:80:55:22:81:55:d9:44:49:b6:81:55:b1:81:f2:d9:43:47:12:27:23:10:34:01:65:b6:82:51:2e:02:55:63
+  prelude: (15, 0, 0, 3, 0, 1)
+  args: ['self', 'command', 'params']
+  line info: 80:8f:60:20:2c:26:28:2c:68:27:46:29:47:32:67
+  12:29       LOAD_GLOBAL bytearray
+  82          LOAD_CONST_SMALL_INT 2 
+  12:26       LOAD_GLOBAL len
+  b2          LOAD_FAST 2 
+  34:01       CALL_FUNCTION 1
+  f2          BINARY_OP 27 __add__ 
+  34:01       CALL_FUNCTION 1
+  c3          STORE_FAST 3 
+  22:81:54    LOAD_CONST_SMALL_INT 212
+  b3          LOAD_FAST 3 
+  80          LOAD_CONST_SMALL_INT 0 
+  56          STORE_SUBSCR 
+  b1          LOAD_FAST 1 
+  22:81:7f    LOAD_CONST_SMALL_INT 255
+  ef          BINARY_OP 24 __and__ 
+  b3          LOAD_FAST 3 
+  81          LOAD_CONST_SMALL_INT 1 
+  56          STORE_SUBSCR 
+  12:2e       LOAD_GLOBAL enumerate
+  b2          LOAD_FAST 2 
+  34:01       CALL_FUNCTION 1
+  5f          GET_ITER_STACK 
+  4b:0c       FOR_ITER 12
+  30:02       UNPACK_SEQUENCE 2
+  c4          STORE_FAST 4 
+  c5          STORE_FAST 5 
+  b5          LOAD_FAST 5 
+  b3          LOAD_FAST 3 
+  82          LOAD_CONST_SMALL_INT 2 
+  b4          LOAD_FAST 4 
+  f2          BINARY_OP 27 __add__ 
+  56          STORE_SUBSCR 
+  42:32       JUMP -14
+  b0          LOAD_FAST 0 
+  14:12       LOAD_METHOD _write_frame
+  b3          LOAD_FAST 3 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:15       LOAD_METHOD _read_frame
+  36:00       CALL_METHOD 0
+  c6          STORE_FAST 6 
+  12:26       LOAD_GLOBAL len
+  b6          LOAD_FAST 6 
+  34:01       CALL_FUNCTION 1
+  82          LOAD_CONST_SMALL_INT 2 
+  d7          BINARY_OP 0 __lt__ 
+  44:47       POP_JUMP_IF_FALSE 7
+  12:27       LOAD_GLOBAL RuntimeError
+  23:0f       LOAD_CONST_OBJ 'Received smaller than expected frame'
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  b6          LOAD_FAST 6 
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  22:81:55    LOAD_CONST_SMALL_INT 213
+  d9          BINARY_OP 2 __eq__ 
+  44:49       POP_JUMP_IF_FALSE 9
+  b6          LOAD_FAST 6 
+  81          LOAD_CONST_SMALL_INT 1 
+  55          LOAD_SUBSCR 
+  b1          LOAD_FAST 1 
+  81          LOAD_CONST_SMALL_INT 1 
+  f2          BINARY_OP 27 __add__ 
+  d9          BINARY_OP 2 __eq__ 
+  43:47       POP_JUMP_IF_TRUE 7
+  12:27       LOAD_GLOBAL RuntimeError
+  23:10       LOAD_CONST_OBJ 'Received unexpected command response!'
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  b6          LOAD_FAST 6 
+  82          LOAD_CONST_SMALL_INT 2 
+  51          LOAD_CONST_NONE 
+  2e:02       BUILD_SLICE 2
+  55          LOAD_SUBSCR 
+  63          RETURN_VALUE 
+  children: []
+simple_name: SAM_configuration
+  raw bytecode: 56 41:10:17:24:80:a7:25:47:2f:25:b0:13:0d:44:47:12:2b:23:11:34:01:59:b0:14:16:94:10:18:81:94:81:2b:03:36:82:01:c1:b0:13:0d:44:4c:12:2b:23:12:32:00:b1:34:01:34:02:59:51:63
+  prelude: (9, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:a7:25:47:2f:25
+  b0          LOAD_FAST 0 
+  13:0d       LOAD_ATTR debug
+  44:47       POP_JUMP_IF_FALSE 7
+  12:2b       LOAD_GLOBAL print
+  23:11       LOAD_CONST_OBJ 'Sending SAM_CONFIGURATION'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:16       LOAD_METHOD call_function
+  94          LOAD_CONST_SMALL_INT 20 
+  10:18       LOAD_CONST_STRING params
+  81          LOAD_CONST_SMALL_INT 1 
+  94          LOAD_CONST_SMALL_INT 20 
+  81          LOAD_CONST_SMALL_INT 1 
+  2b:03       BUILD_LIST 3
+  36:82:01    CALL_METHOD 257
+  c1          STORE_FAST 1 
+  b0          LOAD_FAST 0 
+  13:0d       LOAD_ATTR debug
+  44:4c       POP_JUMP_IF_FALSE 12
+  12:2b       LOAD_GLOBAL print
+  23:12       LOAD_CONST_OBJ 'SAM_configuration:'
+  32:00       MAKE_FUNCTION 0
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [<listcomp>]
+simple_name: <listcomp>
+  raw bytecode: 23 41:08:1c:31:80:ac:2b:00:b0:5f:4b:0a:c1:12:32:b1:34:01:2f:14:42:34:63
+  prelude: (9, 0, 0, 1, 0, 0)
+  args: ['*']
+  line info: 80:ac
+  2b:00       BUILD_LIST 0
+  b0          LOAD_FAST 0 
+  5f          GET_ITER_STACK 
+  4b:0a       FOR_ITER 10
+  c1          STORE_FAST 1 
+  12:32       LOAD_GLOBAL hex
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  2f:14       STORE_COMP 20
+  42:34       JUMP -12
+  63          RETURN_VALUE 
+  children: []
+simple_name: get_firmware_version
+  raw bytecode: 50 21:16:19:24:80:af:60:20:25:47:27:25:27:b0:13:0d:44:47:12:2b:23:13:34:01:59:b0:14:16:82:36:01:c1:b1:51:de:44:47:12:27:23:14:34:01:65:12:2f:b1:34:01:63
+  prelude: (5, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:af:60:20:25:47:27:25:27
+  b0          LOAD_FAST 0 
+  13:0d       LOAD_ATTR debug
+  44:47       POP_JUMP_IF_FALSE 7
+  12:2b       LOAD_GLOBAL print
+  23:13       LOAD_CONST_OBJ 'Sending GET_FIRMWARE_VERSION'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:16       LOAD_METHOD call_function
+  82          LOAD_CONST_SMALL_INT 2 
+  36:01       CALL_METHOD 1
+  c1          STORE_FAST 1 
+  b1          LOAD_FAST 1 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  44:47       POP_JUMP_IF_FALSE 7
+  12:27       LOAD_GLOBAL RuntimeError
+  23:14       LOAD_CONST_OBJ 'Failed to detect the PN532'
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  12:2f       LOAD_GLOBAL tuple
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  63          RETURN_VALUE 
+  children: []
+simple_name: read_passive_target
+  raw bytecode: 84 c2:01:1c:1a:24:30:80:bc:60:40:25:47:70:27:27:27:67:b0:13:0d:44:47:12:2b:23:15:34:01:59:b0:14:16:22:80:4a:10:18:81:b1:2b:02:36:82:01:c2:b2:80:55:81:dc:44:47:12:27:23:16:34:01:65:b2:85:55:87:d8:44:47:12:27:23:17:34:01:65:b2:86:86:b2:85:55:f2:2e:02:55:63
+  prelude: (9, 0, 0, 2, 0, 1)
+  args: ['self', 'card_baud']
+  line info: 80:bc:60:40:25:47:70:27:27:27:67
+  b0          LOAD_FAST 0 
+  13:0d       LOAD_ATTR debug
+  44:47       POP_JUMP_IF_FALSE 7
+  12:2b       LOAD_GLOBAL print
+  23:15       LOAD_CONST_OBJ 'Sending INIT_PASSIVE_TARGET'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:16       LOAD_METHOD call_function
+  22:80:4a    LOAD_CONST_SMALL_INT 74
+  10:18       LOAD_CONST_STRING params
+  81          LOAD_CONST_SMALL_INT 1 
+  b1          LOAD_FAST 1 
+  2b:02       BUILD_LIST 2
+  36:82:01    CALL_METHOD 257
+  c2          STORE_FAST 2 
+  b2          LOAD_FAST 2 
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  81          LOAD_CONST_SMALL_INT 1 
+  dc          BINARY_OP 5 __ne__ 
+  44:47       POP_JUMP_IF_FALSE 7
+  12:27       LOAD_GLOBAL RuntimeError
+  23:16       LOAD_CONST_OBJ 'More than one card detected!'
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  b2          LOAD_FAST 2 
+  85          LOAD_CONST_SMALL_INT 5 
+  55          LOAD_SUBSCR 
+  87          LOAD_CONST_SMALL_INT 7 
+  d8          BINARY_OP 1 __gt__ 
+  44:47       POP_JUMP_IF_FALSE 7
+  12:27       LOAD_GLOBAL RuntimeError
+  23:17       LOAD_CONST_OBJ 'Found card with unexpectedly long UID!'
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  b2          LOAD_FAST 2 
+  86          LOAD_CONST_SMALL_INT 6 
+  86          LOAD_CONST_SMALL_INT 6 
+  b2          LOAD_FAST 2 
+  85          LOAD_CONST_SMALL_INT 5 
+  55          LOAD_SUBSCR 
+  f2          BINARY_OP 27 __add__ 
+  2e:02       BUILD_SLICE 2
+  55          LOAD_SUBSCR 
+  63          RETURN_VALUE 
+  children: []
+simple_name: release_targets
+  raw bytecode: 37 31:0c:1b:24:80:d0:25:27:b0:13:0d:44:47:12:2b:23:18:34:01:59:b0:14:16:22:80:52:10:18:80:2b:01:36:82:01:c1:51:63
+  prelude: (7, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:d0:25:27
+  b0          LOAD_FAST 0 
+  13:0d       LOAD_ATTR debug
+  44:47       POP_JUMP_IF_FALSE 7
+  12:2b       LOAD_GLOBAL print
+  23:18       LOAD_CONST_OBJ 'Release Targets'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:16       LOAD_METHOD call_function
+  22:80:52    LOAD_CONST_SMALL_INT 82
+  10:18       LOAD_CONST_STRING params
+  80          LOAD_CONST_SMALL_INT 0 
+  2b:01       BUILD_LIST 1
+  36:82:01    CALL_METHOD 257
+  c1          STORE_FAST 1 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []

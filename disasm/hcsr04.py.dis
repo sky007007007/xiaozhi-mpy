@@ -1,0 +1,213 @@
+mpy_source_file: extracted/hcsr04.py.mpy
+source_file: hcsr04.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[31] (* for static qstrs):
+    'hcsr04.py' 
+    '<module>' *
+    'machine' 
+    'time' 
+    'Pin' 
+    '0.2.0' 
+    'HCSR04' 
+    '__init__' *
+    'echo_timeout_us' 
+    'mode' 
+    'OUT' 
+    'pull' 
+    'trigger' 
+    'value' *
+    'IN' 
+    'echo' 
+    '_send_pulse_and_wait' 
+    'sleep_us' 
+    'time_pulse_us' 
+    'args' *
+    'distance_mm' 
+    'distance_cm' 
+    '__version__' 
+    '__author__' 
+    '__license__' 
+    '__name__' *
+    '__module__' *
+    '__qualname__' *
+    'self' *
+    'trigger_pin' 
+    'echo_pin' 
+obj_table: ['Roberto Sánchez', 'Apache License 2.0. https://www.apache.org/licenses/LICENSE-2.0', 'Out of range', 29.100000381469727]
+simple_name: <module>
+  raw bytecode: 55 10:0c:01:2c:4c:24:24:44:80:51:1b:02:16:02:80:51:1b:03:16:03:80:10:04:2a:01:1b:02:1c:04:16:04:59:10:05:16:16:23:00:16:17:23:01:16:18:54:32:00:10:06:34:02:16:06:51:63
+  prelude: (3, 0, 0, 0, 0, 0)
+  args: []
+  line info: 2c:4c:24:24:44
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:02       IMPORT_NAME machine
+  16:02       STORE_NAME machine
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:03       IMPORT_NAME time
+  16:03       STORE_NAME time
+  80          LOAD_CONST_SMALL_INT 0 
+  10:04       LOAD_CONST_STRING Pin
+  2a:01       BUILD_TUPLE 1
+  1b:02       IMPORT_NAME machine
+  1c:04       IMPORT_FROM Pin
+  16:04       STORE_NAME Pin
+  59          POP_TOP 
+  10:05       LOAD_CONST_STRING 0.2.0
+  16:16       STORE_NAME __version__
+  23:00       LOAD_CONST_OBJ 'Roberto Sánchez'
+  16:17       STORE_NAME __author__
+  23:01       LOAD_CONST_OBJ 'Apache License 2.0. https://www.apache.org/licenses/LICENSE-2.0'
+  16:18       STORE_NAME __license__
+  54          LOAD_BUILD_CLASS 
+  32:00       MAKE_FUNCTION 0
+  10:06       LOAD_CONST_STRING HCSR04
+  34:02       CALL_FUNCTION 2
+  16:06       STORE_NAME HCSR04
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [HCSR04]
+simple_name: HCSR04
+  raw bytecode: 44 08:12:06:88:09:8b:08:84:0f:84:07:11:19:16:1a:10:06:16:1b:22:81:ea:30:2a:01:53:33:00:16:07:32:01:16:10:32:02:16:14:32:03:16:15:51:63
+  prelude: (2, 0, 0, 0, 0, 0)
+  args: []
+  line info: 88:09:8b:08:84:0f:84:07
+  11:19       LOAD_NAME __name__
+  16:1a       STORE_NAME __module__
+  10:06       LOAD_CONST_STRING HCSR04
+  16:1b       STORE_NAME __qualname__
+  22:81:ea:30 LOAD_CONST_SMALL_INT 30000
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:00       MAKE_FUNCTION_DEFARGS 0
+  16:07       STORE_NAME __init__
+  32:01       MAKE_FUNCTION 1
+  16:10       STORE_NAME _send_pulse_and_wait
+  32:02       MAKE_FUNCTION 2
+  16:14       STORE_NAME distance_mm
+  32:03       MAKE_FUNCTION 3
+  16:15       STORE_NAME distance_cm
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [__init__, _send_pulse_and_wait, distance_mm, distance_cm]
+simple_name: __init__
+  raw bytecode: 64 c8:05:14:07:1c:1d:1e:08:80:0b:24:32:49:b3:b0:18:08:12:04:b1:10:09:12:04:13:0a:10:0b:51:34:84:01:b0:18:0c:b0:13:0c:14:0d:80:36:01:59:12:04:b2:10:09:12:04:13:0e:10:0b:51:34:84:01:b0:18:0f:51:63
+  prelude: (10, 0, 0, 4, 0, 1)
+  args: ['self', 'trigger_pin', 'echo_pin', 'echo_timeout_us']
+  line info: 80:0b:24:32:49
+  b3          LOAD_FAST 3 
+  b0          LOAD_FAST 0 
+  18:08       STORE_ATTR echo_timeout_us
+  12:04       LOAD_GLOBAL Pin
+  b1          LOAD_FAST 1 
+  10:09       LOAD_CONST_STRING mode
+  12:04       LOAD_GLOBAL Pin
+  13:0a       LOAD_ATTR OUT
+  10:0b       LOAD_CONST_STRING pull
+  51          LOAD_CONST_NONE 
+  34:84:01    CALL_FUNCTION 513
+  b0          LOAD_FAST 0 
+  18:0c       STORE_ATTR trigger
+  b0          LOAD_FAST 0 
+  13:0c       LOAD_ATTR trigger
+  14:0d       LOAD_METHOD value
+  80          LOAD_CONST_SMALL_INT 0 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  12:04       LOAD_GLOBAL Pin
+  b2          LOAD_FAST 2 
+  10:09       LOAD_CONST_STRING mode
+  12:04       LOAD_GLOBAL Pin
+  13:0e       LOAD_ATTR IN
+  10:0b       LOAD_CONST_STRING pull
+  51          LOAD_CONST_NONE 
+  34:84:01    CALL_FUNCTION 513
+  b0          LOAD_FAST 0 
+  18:0f       STORE_ATTR echo
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _send_pulse_and_wait
+  raw bytecode: 78 c1:02:1c:10:1c:80:13:29:28:29:28:29:22:2e:4b:2b:27:b0:13:0c:14:0d:80:36:01:59:12:03:14:11:85:36:01:59:b0:13:0c:14:0d:81:36:01:59:12:03:14:11:8a:36:01:59:b0:13:0c:14:0d:80:36:01:59:48:10:12:02:14:12:b0:13:0f:81:b0:13:08:36:03:c1:b1:63
+  prelude: (9, 2, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:13:29:28:29:28:29:22:2e:4b:2b:27
+  b0          LOAD_FAST 0 
+  13:0c       LOAD_ATTR trigger
+  14:0d       LOAD_METHOD value
+  80          LOAD_CONST_SMALL_INT 0 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  12:03       LOAD_GLOBAL time
+  14:11       LOAD_METHOD sleep_us
+  85          LOAD_CONST_SMALL_INT 5 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:0c       LOAD_ATTR trigger
+  14:0d       LOAD_METHOD value
+  81          LOAD_CONST_SMALL_INT 1 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  12:03       LOAD_GLOBAL time
+  14:11       LOAD_METHOD sleep_us
+  8a          LOAD_CONST_SMALL_INT 10 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:0c       LOAD_ATTR trigger
+  14:0d       LOAD_METHOD value
+  80          LOAD_CONST_SMALL_INT 0 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  48:10       SETUP_EXCEPT 16
+  12:02       LOAD_GLOBAL machine
+  14:12       LOAD_METHOD time_pulse_us
+  b0          LOAD_FAST 0 
+  13:0f       LOAD_ATTR echo
+  81          LOAD_CONST_SMALL_INT 1 
+  b0          LOAD_FAST 0 
+  13:08       LOAD_ATTR echo_timeout_us
+  36:03       CALL_METHOD 3
+  c1          STORE_FAST 1 
+  b1          LOAD_FAST 1 
+  63          RETURN_VALUE 
+  children: []
+simple_name: distance_mm
+  raw bytecode: 26 21:0c:14:1c:80:22:46:2a:b0:14:10:36:00:c1:b1:22:80:64:f4:22:84:46:f6:c2:b2:63
+  prelude: (5, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:22:46:2a
+  b0          LOAD_FAST 0 
+  14:10       LOAD_METHOD _send_pulse_and_wait
+  36:00       CALL_METHOD 0
+  c1          STORE_FAST 1 
+  b1          LOAD_FAST 1 
+  22:80:64    LOAD_CONST_SMALL_INT 100
+  f4          BINARY_OP 29 __mul__ 
+  22:84:46    LOAD_CONST_SMALL_INT 582
+  f6          BINARY_OP 31 __floordiv__ 
+  c2          STORE_FAST 2 
+  b2          LOAD_FAST 2 
+  63          RETURN_VALUE 
+  children: []
+simple_name: distance_cm
+  raw bytecode: 23 21:0c:15:1c:80:29:46:27:b0:14:10:36:00:c1:b1:82:f7:23:03:f7:c2:b2:63
+  prelude: (5, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:29:46:27
+  b0          LOAD_FAST 0 
+  14:10       LOAD_METHOD _send_pulse_and_wait
+  36:00       CALL_METHOD 0
+  c1          STORE_FAST 1 
+  b1          LOAD_FAST 1 
+  82          LOAD_CONST_SMALL_INT 2 
+  f7          BINARY_OP 32 __truediv__ 
+  23:03       LOAD_CONST_OBJ 29.100000381469727
+  f7          BINARY_OP 32 __truediv__ 
+  c2          STORE_FAST 2 
+  b2          LOAD_FAST 2 
+  63          RETURN_VALUE 
+  children: []

@@ -1,0 +1,1002 @@
+mpy_source_file: extracted/simple.py.mpy
+source_file: simple.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[66] (* for static qstrs):
+    'simple.py' 
+    '<module>' *
+    'usocket' 
+    'ustruct' 
+    'hexlify' 
+    'ubinascii' 
+    'MQTTException' 
+    'MQTTClient' 
+    '__init__' *
+    'client_id' 
+    'sock' 
+    'server' 
+    'port' 
+    'ssl' 
+    'ssl_params' 
+    'pid' 
+    'cb' 
+    'user' 
+    'pswd' 
+    'keepalive' 
+    'lw_topic' 
+    'lw_msg' 
+    'lw_qos' 
+    'lw_retain' 
+    '_send_str' 
+    'write' *
+    'pack' 
+    '!H' 
+    '_recv_len' 
+    'read' *
+    'set_callback' 
+    'set_last_will' 
+    'AssertionError' *
+    'connect' 
+    'socket' 
+    'getaddrinfo' 
+    'ussl' 
+    'wrap_socket' 
+    'disconnect' 
+    'close' *
+    'ping' 
+    'publish' 
+    'pack_into' 
+    'wait_msg' 
+    'subscribe' 
+    '!BH' 
+    'to_bytes' *
+    'little' *
+    'setblocking' 
+    'check_msg' 
+    'struct' 
+    'Exception' *
+    '__name__' *
+    '__module__' *
+    '__qualname__' *
+    'self' *
+    'password' 
+    's' 
+    'len' *
+    'f' 
+    'topic' 
+    'msg' 
+    'retain' 
+    'qos' 
+    'clean_session' 
+    'bytearray' *
+obj_table: [b'\x10\x00\x00\x00\x00\x00', b'\x04MQTT\x04\x02\x00\x00', b'\xe0\x00', b'\xc0\x00', b'0\x00\x00\x00', b'\x02', 'Subscribe callback is not set', b'\x82\x00\x00\x00']
+simple_name: <module>
+  raw bytecode: 53 18:0a:01:26:26:4c:6b:80:51:1b:02:16:22:80:51:1b:03:16:32:80:10:04:2a:01:1b:05:1c:04:16:04:59:54:32:00:10:06:11:33:34:03:16:06:54:32:01:10:07:34:02:16:07:51:63
+  prelude: (4, 0, 0, 0, 0, 0)
+  args: []
+  line info: 26:26:4c:6b
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:02       IMPORT_NAME usocket
+  16:22       STORE_NAME socket
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:03       IMPORT_NAME ustruct
+  16:32       STORE_NAME struct
+  80          LOAD_CONST_SMALL_INT 0 
+  10:04       LOAD_CONST_STRING hexlify
+  2a:01       BUILD_TUPLE 1
+  1b:05       IMPORT_NAME ubinascii
+  1c:04       IMPORT_FROM hexlify
+  16:04       STORE_NAME hexlify
+  59          POP_TOP 
+  54          LOAD_BUILD_CLASS 
+  32:00       MAKE_FUNCTION 0
+  10:06       LOAD_CONST_STRING MQTTException
+  11:33       LOAD_NAME Exception
+  34:03       CALL_FUNCTION 3
+  16:06       STORE_NAME MQTTException
+  54          LOAD_BUILD_CLASS 
+  32:01       MAKE_FUNCTION 1
+  10:07       LOAD_CONST_STRING MQTTClient
+  34:02       CALL_FUNCTION 2
+  16:07       STORE_NAME MQTTClient
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [MQTTException, MQTTClient]
+simple_name: MQTTException
+  raw bytecode: 15 00:06:06:68:40:11:34:16:35:10:06:16:36:51:63
+  prelude: (1, 0, 0, 0, 0, 0)
+  args: []
+  line info: 68:40
+  11:34       LOAD_NAME __name__
+  16:35       STORE_NAME __module__
+  10:06       LOAD_CONST_STRING MQTTException
+  16:36       STORE_NAME __qualname__
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: MQTTClient
+  raw bytecode: 112 28:30:07:88:09:25:89:13:64:20:84:0a:64:89:08:88:2e:64:20:64:89:22:88:11:84:20:11:34:16:35:10:07:16:36:80:51:51:80:50:2c:00:2a:06:53:33:00:16:08:32:01:16:18:32:02:16:1c:32:03:16:1e:50:80:2a:02:53:33:04:16:1f:52:2a:01:53:33:05:16:21:32:06:16:26:32:07:16:28:50:80:2a:02:53:33:08:16:29:80:2a:01:53:33:09:16:2c:32:0a:16:2b:32:0b:16:31:51:63
+  prelude: (6, 0, 0, 0, 0, 0)
+  args: []
+  line info: 88:09:25:89:13:64:20:84:0a:64:89:08:88:2e:64:20:64:89:22:88:11:84:20
+  11:34       LOAD_NAME __name__
+  16:35       STORE_NAME __module__
+  10:07       LOAD_CONST_STRING MQTTClient
+  16:36       STORE_NAME __qualname__
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  80          LOAD_CONST_SMALL_INT 0 
+  50          LOAD_CONST_FALSE 
+  2c:00       BUILD_MAP 0
+  2a:06       BUILD_TUPLE 6
+  53          LOAD_NULL 
+  33:00       MAKE_FUNCTION_DEFARGS 0
+  16:08       STORE_NAME __init__
+  32:01       MAKE_FUNCTION 1
+  16:18       STORE_NAME _send_str
+  32:02       MAKE_FUNCTION 2
+  16:1c       STORE_NAME _recv_len
+  32:03       MAKE_FUNCTION 3
+  16:1e       STORE_NAME set_callback
+  50          LOAD_CONST_FALSE 
+  80          LOAD_CONST_SMALL_INT 0 
+  2a:02       BUILD_TUPLE 2
+  53          LOAD_NULL 
+  33:04       MAKE_FUNCTION_DEFARGS 4
+  16:1f       STORE_NAME set_last_will
+  52          LOAD_CONST_TRUE 
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:05       MAKE_FUNCTION_DEFARGS 5
+  16:21       STORE_NAME connect
+  32:06       MAKE_FUNCTION 6
+  16:26       STORE_NAME disconnect
+  32:07       MAKE_FUNCTION 7
+  16:28       STORE_NAME ping
+  50          LOAD_CONST_FALSE 
+  80          LOAD_CONST_SMALL_INT 0 
+  2a:02       BUILD_TUPLE 2
+  53          LOAD_NULL 
+  33:08       MAKE_FUNCTION_DEFARGS 8
+  16:29       STORE_NAME publish
+  80          LOAD_CONST_SMALL_INT 0 
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:09       MAKE_FUNCTION_DEFARGS 9
+  16:2c       STORE_NAME subscribe
+  32:0a       MAKE_FUNCTION 10
+  16:2b       STORE_NAME wait_msg
+  32:0b       MAKE_FUNCTION 11
+  16:31       STORE_NAME check_msg
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [__init__, _send_str, _recv_len, set_callback, set_last_will, connect, disconnect, ping, publish, subscribe, wait_msg, check_msg]
+simple_name: __init__
+  raw bytecode: 113 d1:80:85:01:38:08:37:09:0b:0c:11:38:13:0d:0e:80:0b:25:2d:24:24:24:24:24:24:24:24:24:24:24:24:24:24:b3:80:d9:44:4d:b7:44:46:22:80:c5:33:42:43:22:8e:5b:c3:b1:b0:18:09:51:b0:18:0a:b2:b0:18:0b:b3:b0:18:0c:b7:b0:18:0d:b8:b0:18:0e:80:b0:18:0f:51:b0:18:10:b4:b0:18:11:b5:b0:18:12:b6:b0:18:13:51:b0:18:14:51:b0:18:15:80:b0:18:16:50:b0:18:17:51:63
+  prelude: (11, 0, 0, 9, 0, 6)
+  args: ['self', 'client_id', 'server', 'port', 'user', 'password', 'keepalive', 'ssl', 'ssl_params']
+  line info: 80:0b:25:2d:24:24:24:24:24:24:24:24:24:24:24:24:24:24
+  b3          LOAD_FAST 3 
+  80          LOAD_CONST_SMALL_INT 0 
+  d9          BINARY_OP 2 __eq__ 
+  44:4d       POP_JUMP_IF_FALSE 13
+  b7          LOAD_FAST 7 
+  44:46       POP_JUMP_IF_FALSE 6
+  22:80:c5:33 LOAD_CONST_SMALL_INT 8883
+  42:43       JUMP 3
+  22:8e:5b    LOAD_CONST_SMALL_INT 1883
+  c3          STORE_FAST 3 
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:09       STORE_ATTR client_id
+  51          LOAD_CONST_NONE 
+  b0          LOAD_FAST 0 
+  18:0a       STORE_ATTR sock
+  b2          LOAD_FAST 2 
+  b0          LOAD_FAST 0 
+  18:0b       STORE_ATTR server
+  b3          LOAD_FAST 3 
+  b0          LOAD_FAST 0 
+  18:0c       STORE_ATTR port
+  b7          LOAD_FAST 7 
+  b0          LOAD_FAST 0 
+  18:0d       STORE_ATTR ssl
+  b8          LOAD_FAST 8 
+  b0          LOAD_FAST 0 
+  18:0e       STORE_ATTR ssl_params
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:0f       STORE_ATTR pid
+  51          LOAD_CONST_NONE 
+  b0          LOAD_FAST 0 
+  18:10       STORE_ATTR cb
+  b4          LOAD_FAST 4 
+  b0          LOAD_FAST 0 
+  18:11       STORE_ATTR user
+  b5          LOAD_FAST 5 
+  b0          LOAD_FAST 0 
+  18:12       STORE_ATTR pswd
+  b6          LOAD_FAST 6 
+  b0          LOAD_FAST 0 
+  18:13       STORE_ATTR keepalive
+  51          LOAD_CONST_NONE 
+  b0          LOAD_FAST 0 
+  18:14       STORE_ATTR lw_topic
+  51          LOAD_CONST_NONE 
+  b0          LOAD_FAST 0 
+  18:15       STORE_ATTR lw_msg
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:16       STORE_ATTR lw_qos
+  50          LOAD_CONST_FALSE 
+  b0          LOAD_FAST 0 
+  18:17       STORE_ATTR lw_retain
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _send_str
+  raw bytecode: 40 42:0c:18:37:39:80:1e:35:b0:13:0a:14:19:12:32:14:1a:10:1b:12:3a:b1:34:01:36:02:36:01:59:b0:13:0a:14:19:b1:36:01:59:51:63
+  prelude: (9, 0, 0, 2, 0, 0)
+  args: ['self', 's']
+  line info: 80:1e:35
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR sock
+  14:19       LOAD_METHOD write
+  12:32       LOAD_GLOBAL struct
+  14:1a       LOAD_METHOD pack
+  10:1b       LOAD_CONST_STRING !H
+  12:3a       LOAD_GLOBAL len
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  36:02       CALL_METHOD 2
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR sock
+  14:19       LOAD_METHOD write
+  b1          LOAD_FAST 1 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _recv_len
+  raw bytecode: 47 31:16:1c:37:80:22:22:22:20:2b:2a:27:22:80:c1:80:c2:b0:13:0a:14:1d:81:36:01:80:55:c3:b1:b3:22:80:7f:ef:b2:f0:e0:c1:b3:22:81:00:ef:43:42:b1:63
+  prelude: (7, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:22:22:22:20:2b:2a:27:22
+  80          LOAD_CONST_SMALL_INT 0 
+  c1          STORE_FAST 1 
+  80          LOAD_CONST_SMALL_INT 0 
+  c2          STORE_FAST 2 
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR sock
+  14:1d       LOAD_METHOD read
+  81          LOAD_CONST_SMALL_INT 1 
+  36:01       CALL_METHOD 1
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  c3          STORE_FAST 3 
+  b1          LOAD_FAST 1 
+  b3          LOAD_FAST 3 
+  22:80:7f    LOAD_CONST_SMALL_INT 127
+  ef          BINARY_OP 24 __and__ 
+  b2          LOAD_FAST 2 
+  f0          BINARY_OP 25 __lshift__ 
+  e0          BINARY_OP 9 __ior__ 
+  c1          STORE_FAST 1 
+  b3          LOAD_FAST 3 
+  22:81:00    LOAD_CONST_SMALL_INT 128
+  ef          BINARY_OP 24 __and__ 
+  43:42       POP_JUMP_IF_TRUE 2
+  b1          LOAD_FAST 1 
+  63          RETURN_VALUE 
+  children: []
+simple_name: set_callback
+  raw bytecode: 13 1a:0a:1e:37:3b:80:2c:b1:b0:18:10:51:63
+  prelude: (4, 0, 0, 2, 0, 0)
+  args: ['self', 'f']
+  line info: 80:2c
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:10       STORE_ATTR cb
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: set_last_will
+  raw bytecode: 59 b9:84:01:1a:1f:37:3c:3d:3e:3f:80:2f:32:26:24:24:24:80:b4:57:5b:da:46:04:82:da:42:42:5a:59:43:43:12:20:65:b1:43:43:12:20:65:b1:b0:18:14:b2:b0:18:15:b4:b0:18:16:b3:b0:18:17:51:63
+  prelude: (8, 0, 0, 5, 0, 2)
+  args: ['self', 'topic', 'msg', 'retain', 'qos']
+  line info: 80:2f:32:26:24:24:24
+  80          LOAD_CONST_SMALL_INT 0 
+  b4          LOAD_FAST 4 
+  57          DUP_TOP 
+  5b          ROT_THREE 
+  da          BINARY_OP 3 __le__ 
+  46:04       JUMP_IF_FALSE_OR_POP 4
+  82          LOAD_CONST_SMALL_INT 2 
+  da          BINARY_OP 3 __le__ 
+  42:42       JUMP 2
+  5a          ROT_TWO 
+  59          POP_TOP 
+  43:43       POP_JUMP_IF_TRUE 3
+  12:20       LOAD_GLOBAL AssertionError
+  65          RAISE_OBJ 
+  b1          LOAD_FAST 1 
+  43:43       POP_JUMP_IF_TRUE 3
+  12:20       LOAD_GLOBAL AssertionError
+  65          RAISE_OBJ 
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:14       STORE_ATTR lw_topic
+  b2          LOAD_FAST 2 
+  b0          LOAD_FAST 0 
+  18:15       STORE_ATTR lw_msg
+  b4          LOAD_FAST 4 
+  b0          LOAD_FAST 0 
+  18:16       STORE_ATTR lw_qos
+  b3          LOAD_FAST 3 
+  b0          LOAD_FAST 0 
+  18:17       STORE_ATTR lw_retain
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: connect
+  raw bytecode: 450 f2:01:5a:21:37:40:80:37:29:31:29:25:25:31:27:47:2c:26:28:36:2a:25:2d:2c:2e:25:36:38:4c:22:22:2c:24:2b:44:2c:29:29:25:29:29:28:29:29:29:31:27:28:12:22:14:22:36:00:b0:18:0a:12:22:14:23:b0:13:0b:b0:13:0c:36:02:80:55:7f:55:c2:b0:13:0a:14:21:b2:36:01:59:b0:13:0d:44:56:80:51:1b:24:c3:b3:14:25:b0:13:0a:53:b0:13:0e:80:37:82:01:b0:18:0a:12:41:23:00:34:01:c4:12:41:23:01:34:01:c5:8a:82:f2:12:3a:b0:13:09:34:01:f2:c6:b1:81:f0:b5:86:56:b0:13:11:51:de:d3:44:60:b6:82:12:3a:b0:13:11:34:01:f2:82:f2:12:3a:b0:13:12:34:01:f2:e5:c6:b5:86:58:55:22:81:40:e0:5b:56:b0:13:13:44:67:b0:13:13:22:84:80:00:d7:43:43:12:20:65:b5:87:58:55:b0:13:13:88:f1:e0:5b:56:b5:88:58:55:b0:13:13:22:81:7f:ef:e0:5b:56:b0:13:14:44:7a:b6:82:12:3a:b0:13:14:34:01:f2:82:f2:12:3a:b0:13:15:34:01:f2:e5:c6:b5:86:58:55:84:b0:13:16:81:ef:83:f0:ed:b0:13:16:82:ef:83:f0:ed:e0:5b:56:b5:86:58:55:b0:13:17:85:f0:e0:5b:56:81:c7:42:54:b6:22:80:7f:ef:22:81:00:ed:b4:b7:56:b6:87:e4:c6:b7:81:e5:c7:b6:22:80:7f:d8:43:25:b6:b4:b7:56:b0:13:0a:14:19:b4:b7:82:f2:36:02:59:b0:13:0a:14:19:b5:36:01:59:b0:14:18:b0:13:09:36:01:59:b0:13:14:44:52:b0:14:18:b0:13:14:36:01:59:b0:14:18:b0:13:15:36:01:59:b0:13:11:51:de:d3:44:52:b0:14:18:b0:13:11:36:01:59:b0:14:18:b0:13:12:36:01:59:b0:13:0a:14:1d:84:36:01:c8:b8:80:55:a0:d9:44:47:b8:81:55:82:d9:43:43:12:20:65:b8:83:55:80:dc:44:48:12:06:b8:83:55:34:01:65:b8:82:55:81:ef:63
+  prelude: (15, 0, 0, 2, 0, 1)
+  args: ['self', 'clean_session']
+  line info: 80:37:29:31:29:25:25:31:27:47:2c:26:28:36:2a:25:2d:2c:2e:25:36:38:4c:22:22:2c:24:2b:44:2c:29:29:25:29:29:28:29:29:29:31:27:28
+  12:22       LOAD_GLOBAL socket
+  14:22       LOAD_METHOD socket
+  36:00       CALL_METHOD 0
+  b0          LOAD_FAST 0 
+  18:0a       STORE_ATTR sock
+  12:22       LOAD_GLOBAL socket
+  14:23       LOAD_METHOD getaddrinfo
+  b0          LOAD_FAST 0 
+  13:0b       LOAD_ATTR server
+  b0          LOAD_FAST 0 
+  13:0c       LOAD_ATTR port
+  36:02       CALL_METHOD 2
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  7f          LOAD_CONST_SMALL_INT -1 
+  55          LOAD_SUBSCR 
+  c2          STORE_FAST 2 
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR sock
+  14:21       LOAD_METHOD connect
+  b2          LOAD_FAST 2 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:0d       LOAD_ATTR ssl
+  44:56       POP_JUMP_IF_FALSE 22
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:24       IMPORT_NAME ussl
+  c3          STORE_FAST 3 
+  b3          LOAD_FAST 3 
+  14:25       LOAD_METHOD wrap_socket
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR sock
+  53          LOAD_NULL 
+  b0          LOAD_FAST 0 
+  13:0e       LOAD_ATTR ssl_params
+  80          LOAD_CONST_SMALL_INT 0 
+  37:82:01    CALL_METHOD_VAR_KW 257
+  b0          LOAD_FAST 0 
+  18:0a       STORE_ATTR sock
+  12:41       LOAD_GLOBAL bytearray
+  23:00       LOAD_CONST_OBJ b'\x10\x00\x00\x00\x00\x00'
+  34:01       CALL_FUNCTION 1
+  c4          STORE_FAST 4 
+  12:41       LOAD_GLOBAL bytearray
+  23:01       LOAD_CONST_OBJ b'\x04MQTT\x04\x02\x00\x00'
+  34:01       CALL_FUNCTION 1
+  c5          STORE_FAST 5 
+  8a          LOAD_CONST_SMALL_INT 10 
+  82          LOAD_CONST_SMALL_INT 2 
+  f2          BINARY_OP 27 __add__ 
+  12:3a       LOAD_GLOBAL len
+  b0          LOAD_FAST 0 
+  13:09       LOAD_ATTR client_id
+  34:01       CALL_FUNCTION 1
+  f2          BINARY_OP 27 __add__ 
+  c6          STORE_FAST 6 
+  b1          LOAD_FAST 1 
+  81          LOAD_CONST_SMALL_INT 1 
+  f0          BINARY_OP 25 __lshift__ 
+  b5          LOAD_FAST 5 
+  86          LOAD_CONST_SMALL_INT 6 
+  56          STORE_SUBSCR 
+  b0          LOAD_FAST 0 
+  13:11       LOAD_ATTR user
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:60       POP_JUMP_IF_FALSE 32
+  b6          LOAD_FAST 6 
+  82          LOAD_CONST_SMALL_INT 2 
+  12:3a       LOAD_GLOBAL len
+  b0          LOAD_FAST 0 
+  13:11       LOAD_ATTR user
+  34:01       CALL_FUNCTION 1
+  f2          BINARY_OP 27 __add__ 
+  82          LOAD_CONST_SMALL_INT 2 
+  f2          BINARY_OP 27 __add__ 
+  12:3a       LOAD_GLOBAL len
+  b0          LOAD_FAST 0 
+  13:12       LOAD_ATTR pswd
+  34:01       CALL_FUNCTION 1
+  f2          BINARY_OP 27 __add__ 
+  e5          BINARY_OP 14 __iadd__ 
+  c6          STORE_FAST 6 
+  b5          LOAD_FAST 5 
+  86          LOAD_CONST_SMALL_INT 6 
+  58          DUP_TOP_TWO 
+  55          LOAD_SUBSCR 
+  22:81:40    LOAD_CONST_SMALL_INT 192
+  e0          BINARY_OP 9 __ior__ 
+  5b          ROT_THREE 
+  56          STORE_SUBSCR 
+  b0          LOAD_FAST 0 
+  13:13       LOAD_ATTR keepalive
+  44:67       POP_JUMP_IF_FALSE 39
+  b0          LOAD_FAST 0 
+  13:13       LOAD_ATTR keepalive
+  22:84:80:00 LOAD_CONST_SMALL_INT 65536
+  d7          BINARY_OP 0 __lt__ 
+  43:43       POP_JUMP_IF_TRUE 3
+  12:20       LOAD_GLOBAL AssertionError
+  65          RAISE_OBJ 
+  b5          LOAD_FAST 5 
+  87          LOAD_CONST_SMALL_INT 7 
+  58          DUP_TOP_TWO 
+  55          LOAD_SUBSCR 
+  b0          LOAD_FAST 0 
+  13:13       LOAD_ATTR keepalive
+  88          LOAD_CONST_SMALL_INT 8 
+  f1          BINARY_OP 26 __rshift__ 
+  e0          BINARY_OP 9 __ior__ 
+  5b          ROT_THREE 
+  56          STORE_SUBSCR 
+  b5          LOAD_FAST 5 
+  88          LOAD_CONST_SMALL_INT 8 
+  58          DUP_TOP_TWO 
+  55          LOAD_SUBSCR 
+  b0          LOAD_FAST 0 
+  13:13       LOAD_ATTR keepalive
+  22:81:7f    LOAD_CONST_SMALL_INT 255
+  ef          BINARY_OP 24 __and__ 
+  e0          BINARY_OP 9 __ior__ 
+  5b          ROT_THREE 
+  56          STORE_SUBSCR 
+  b0          LOAD_FAST 0 
+  13:14       LOAD_ATTR lw_topic
+  44:7a       POP_JUMP_IF_FALSE 58
+  b6          LOAD_FAST 6 
+  82          LOAD_CONST_SMALL_INT 2 
+  12:3a       LOAD_GLOBAL len
+  b0          LOAD_FAST 0 
+  13:14       LOAD_ATTR lw_topic
+  34:01       CALL_FUNCTION 1
+  f2          BINARY_OP 27 __add__ 
+  82          LOAD_CONST_SMALL_INT 2 
+  f2          BINARY_OP 27 __add__ 
+  12:3a       LOAD_GLOBAL len
+  b0          LOAD_FAST 0 
+  13:15       LOAD_ATTR lw_msg
+  34:01       CALL_FUNCTION 1
+  f2          BINARY_OP 27 __add__ 
+  e5          BINARY_OP 14 __iadd__ 
+  c6          STORE_FAST 6 
+  b5          LOAD_FAST 5 
+  86          LOAD_CONST_SMALL_INT 6 
+  58          DUP_TOP_TWO 
+  55          LOAD_SUBSCR 
+  84          LOAD_CONST_SMALL_INT 4 
+  b0          LOAD_FAST 0 
+  13:16       LOAD_ATTR lw_qos
+  81          LOAD_CONST_SMALL_INT 1 
+  ef          BINARY_OP 24 __and__ 
+  83          LOAD_CONST_SMALL_INT 3 
+  f0          BINARY_OP 25 __lshift__ 
+  ed          BINARY_OP 22 __or__ 
+  b0          LOAD_FAST 0 
+  13:16       LOAD_ATTR lw_qos
+  82          LOAD_CONST_SMALL_INT 2 
+  ef          BINARY_OP 24 __and__ 
+  83          LOAD_CONST_SMALL_INT 3 
+  f0          BINARY_OP 25 __lshift__ 
+  ed          BINARY_OP 22 __or__ 
+  e0          BINARY_OP 9 __ior__ 
+  5b          ROT_THREE 
+  56          STORE_SUBSCR 
+  b5          LOAD_FAST 5 
+  86          LOAD_CONST_SMALL_INT 6 
+  58          DUP_TOP_TWO 
+  55          LOAD_SUBSCR 
+  b0          LOAD_FAST 0 
+  13:17       LOAD_ATTR lw_retain
+  85          LOAD_CONST_SMALL_INT 5 
+  f0          BINARY_OP 25 __lshift__ 
+  e0          BINARY_OP 9 __ior__ 
+  5b          ROT_THREE 
+  56          STORE_SUBSCR 
+  81          LOAD_CONST_SMALL_INT 1 
+  c7          STORE_FAST 7 
+  42:54       JUMP 20
+  b6          LOAD_FAST 6 
+  22:80:7f    LOAD_CONST_SMALL_INT 127
+  ef          BINARY_OP 24 __and__ 
+  22:81:00    LOAD_CONST_SMALL_INT 128
+  ed          BINARY_OP 22 __or__ 
+  b4          LOAD_FAST 4 
+  b7          LOAD_FAST 7 
+  56          STORE_SUBSCR 
+  b6          LOAD_FAST 6 
+  87          LOAD_CONST_SMALL_INT 7 
+  e4          BINARY_OP 13 __irshift__ 
+  c6          STORE_FAST 6 
+  b7          LOAD_FAST 7 
+  81          LOAD_CONST_SMALL_INT 1 
+  e5          BINARY_OP 14 __iadd__ 
+  c7          STORE_FAST 7 
+  b6          LOAD_FAST 6 
+  22:80:7f    LOAD_CONST_SMALL_INT 127
+  d8          BINARY_OP 1 __gt__ 
+  43:25       POP_JUMP_IF_TRUE -27
+  b6          LOAD_FAST 6 
+  b4          LOAD_FAST 4 
+  b7          LOAD_FAST 7 
+  56          STORE_SUBSCR 
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR sock
+  14:19       LOAD_METHOD write
+  b4          LOAD_FAST 4 
+  b7          LOAD_FAST 7 
+  82          LOAD_CONST_SMALL_INT 2 
+  f2          BINARY_OP 27 __add__ 
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR sock
+  14:19       LOAD_METHOD write
+  b5          LOAD_FAST 5 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:18       LOAD_METHOD _send_str
+  b0          LOAD_FAST 0 
+  13:09       LOAD_ATTR client_id
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:14       LOAD_ATTR lw_topic
+  44:52       POP_JUMP_IF_FALSE 18
+  b0          LOAD_FAST 0 
+  14:18       LOAD_METHOD _send_str
+  b0          LOAD_FAST 0 
+  13:14       LOAD_ATTR lw_topic
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:18       LOAD_METHOD _send_str
+  b0          LOAD_FAST 0 
+  13:15       LOAD_ATTR lw_msg
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:11       LOAD_ATTR user
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:52       POP_JUMP_IF_FALSE 18
+  b0          LOAD_FAST 0 
+  14:18       LOAD_METHOD _send_str
+  b0          LOAD_FAST 0 
+  13:11       LOAD_ATTR user
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:18       LOAD_METHOD _send_str
+  b0          LOAD_FAST 0 
+  13:12       LOAD_ATTR pswd
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR sock
+  14:1d       LOAD_METHOD read
+  84          LOAD_CONST_SMALL_INT 4 
+  36:01       CALL_METHOD 1
+  c8          STORE_FAST 8 
+  b8          LOAD_FAST 8 
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  a0          LOAD_CONST_SMALL_INT 32 
+  d9          BINARY_OP 2 __eq__ 
+  44:47       POP_JUMP_IF_FALSE 7
+  b8          LOAD_FAST 8 
+  81          LOAD_CONST_SMALL_INT 1 
+  55          LOAD_SUBSCR 
+  82          LOAD_CONST_SMALL_INT 2 
+  d9          BINARY_OP 2 __eq__ 
+  43:43       POP_JUMP_IF_TRUE 3
+  12:20       LOAD_GLOBAL AssertionError
+  65          RAISE_OBJ 
+  b8          LOAD_FAST 8 
+  83          LOAD_CONST_SMALL_INT 3 
+  55          LOAD_SUBSCR 
+  80          LOAD_CONST_SMALL_INT 0 
+  dc          BINARY_OP 5 __ne__ 
+  44:48       POP_JUMP_IF_FALSE 8
+  12:06       LOAD_GLOBAL MQTTException
+  b8          LOAD_FAST 8 
+  83          LOAD_CONST_SMALL_INT 3 
+  55          LOAD_SUBSCR 
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  b8          LOAD_FAST 8 
+  82          LOAD_CONST_SMALL_INT 2 
+  55          LOAD_SUBSCR 
+  81          LOAD_CONST_SMALL_INT 1 
+  ef          BINARY_OP 24 __and__ 
+  63          RETURN_VALUE 
+  children: []
+simple_name: disconnect
+  raw bytecode: 27 19:0a:26:37:80:65:2a:b0:13:0a:14:19:23:02:36:01:59:b0:13:0a:14:27:36:00:59:51:63
+  prelude: (4, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:65:2a
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR sock
+  14:19       LOAD_METHOD write
+  23:02       LOAD_CONST_OBJ b'\xe0\x00'
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR sock
+  14:27       LOAD_METHOD close
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: ping
+  raw bytecode: 18 19:08:28:37:80:69:b0:13:0a:14:19:23:03:36:01:59:51:63
+  prelude: (4, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:69
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR sock
+  14:19       LOAD_METHOD write
+  23:03       LOAD_CONST_OBJ b'\xc0\x00'
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: publish
+  raw bytecode: 262 81:94:01:4e:29:37:3c:3d:3e:3f:80:6c:27:2c:2e:25:24:2c:22:22:2c:24:2b:24:2c:27:25:29:24:2c:2a:29:25:20:26:27:29:29:29:2a:25:26:25:12:41:23:04:34:01:c5:b5:80:58:55:b4:81:f0:b3:ed:e0:5b:56:82:12:3a:b1:34:01:f2:12:3a:b2:34:01:f2:c6:b4:80:d8:44:44:b6:82:e5:c6:b6:22:81:80:80:00:d7:43:43:12:20:65:81:c7:42:54:b6:22:80:7f:ef:22:81:00:ed:b5:b7:56:b6:87:e4:c6:b7:81:e5:c7:b6:22:80:7f:d8:43:25:b6:b5:b7:56:b0:13:0a:14:19:b5:b7:81:f2:36:02:59:b0:14:18:b1:36:01:59:b4:80:d8:44:63:b0:57:13:0f:81:e5:5a:18:0f:b0:13:0f:c8:12:32:14:2a:10:1b:b5:80:b8:36:04:59:b0:13:0a:14:19:b5:82:36:02:59:b0:13:0a:14:19:b2:36:01:59:b4:81:d9:44:7d:b0:14:2b:36:00:c9:b9:22:80:40:d9:44:6c:b0:13:0a:14:1d:81:36:01:c6:b6:23:05:d9:43:43:12:20:65:b0:13:0a:14:1d:82:36:01:ca:ba:80:55:88:f0:ba:81:55:ed:ca:b8:ba:d9:44:42:51:63
+  prelude: (17, 0, 0, 5, 0, 2)
+  args: ['self', 'topic', 'msg', 'retain', 'qos']
+  line info: 80:6c:27:2c:2e:25:24:2c:22:22:2c:24:2b:24:2c:27:25:29:24:2c:2a:29:25:20:26:27:29:29:29:2a:25:26:25
+  12:41       LOAD_GLOBAL bytearray
+  23:04       LOAD_CONST_OBJ b'0\x00\x00\x00'
+  34:01       CALL_FUNCTION 1
+  c5          STORE_FAST 5 
+  b5          LOAD_FAST 5 
+  80          LOAD_CONST_SMALL_INT 0 
+  58          DUP_TOP_TWO 
+  55          LOAD_SUBSCR 
+  b4          LOAD_FAST 4 
+  81          LOAD_CONST_SMALL_INT 1 
+  f0          BINARY_OP 25 __lshift__ 
+  b3          LOAD_FAST 3 
+  ed          BINARY_OP 22 __or__ 
+  e0          BINARY_OP 9 __ior__ 
+  5b          ROT_THREE 
+  56          STORE_SUBSCR 
+  82          LOAD_CONST_SMALL_INT 2 
+  12:3a       LOAD_GLOBAL len
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  f2          BINARY_OP 27 __add__ 
+  12:3a       LOAD_GLOBAL len
+  b2          LOAD_FAST 2 
+  34:01       CALL_FUNCTION 1
+  f2          BINARY_OP 27 __add__ 
+  c6          STORE_FAST 6 
+  b4          LOAD_FAST 4 
+  80          LOAD_CONST_SMALL_INT 0 
+  d8          BINARY_OP 1 __gt__ 
+  44:44       POP_JUMP_IF_FALSE 4
+  b6          LOAD_FAST 6 
+  82          LOAD_CONST_SMALL_INT 2 
+  e5          BINARY_OP 14 __iadd__ 
+  c6          STORE_FAST 6 
+  b6          LOAD_FAST 6 
+  22:81:80:80:00 LOAD_CONST_SMALL_INT 2097152
+  d7          BINARY_OP 0 __lt__ 
+  43:43       POP_JUMP_IF_TRUE 3
+  12:20       LOAD_GLOBAL AssertionError
+  65          RAISE_OBJ 
+  81          LOAD_CONST_SMALL_INT 1 
+  c7          STORE_FAST 7 
+  42:54       JUMP 20
+  b6          LOAD_FAST 6 
+  22:80:7f    LOAD_CONST_SMALL_INT 127
+  ef          BINARY_OP 24 __and__ 
+  22:81:00    LOAD_CONST_SMALL_INT 128
+  ed          BINARY_OP 22 __or__ 
+  b5          LOAD_FAST 5 
+  b7          LOAD_FAST 7 
+  56          STORE_SUBSCR 
+  b6          LOAD_FAST 6 
+  87          LOAD_CONST_SMALL_INT 7 
+  e4          BINARY_OP 13 __irshift__ 
+  c6          STORE_FAST 6 
+  b7          LOAD_FAST 7 
+  81          LOAD_CONST_SMALL_INT 1 
+  e5          BINARY_OP 14 __iadd__ 
+  c7          STORE_FAST 7 
+  b6          LOAD_FAST 6 
+  22:80:7f    LOAD_CONST_SMALL_INT 127
+  d8          BINARY_OP 1 __gt__ 
+  43:25       POP_JUMP_IF_TRUE -27
+  b6          LOAD_FAST 6 
+  b5          LOAD_FAST 5 
+  b7          LOAD_FAST 7 
+  56          STORE_SUBSCR 
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR sock
+  14:19       LOAD_METHOD write
+  b5          LOAD_FAST 5 
+  b7          LOAD_FAST 7 
+  81          LOAD_CONST_SMALL_INT 1 
+  f2          BINARY_OP 27 __add__ 
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:18       LOAD_METHOD _send_str
+  b1          LOAD_FAST 1 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b4          LOAD_FAST 4 
+  80          LOAD_CONST_SMALL_INT 0 
+  d8          BINARY_OP 1 __gt__ 
+  44:63       POP_JUMP_IF_FALSE 35
+  b0          LOAD_FAST 0 
+  57          DUP_TOP 
+  13:0f       LOAD_ATTR pid
+  81          LOAD_CONST_SMALL_INT 1 
+  e5          BINARY_OP 14 __iadd__ 
+  5a          ROT_TWO 
+  18:0f       STORE_ATTR pid
+  b0          LOAD_FAST 0 
+  13:0f       LOAD_ATTR pid
+  c8          STORE_FAST 8 
+  12:32       LOAD_GLOBAL struct
+  14:2a       LOAD_METHOD pack_into
+  10:1b       LOAD_CONST_STRING !H
+  b5          LOAD_FAST 5 
+  80          LOAD_CONST_SMALL_INT 0 
+  b8          LOAD_FAST 8 
+  36:04       CALL_METHOD 4
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR sock
+  14:19       LOAD_METHOD write
+  b5          LOAD_FAST 5 
+  82          LOAD_CONST_SMALL_INT 2 
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR sock
+  14:19       LOAD_METHOD write
+  b2          LOAD_FAST 2 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b4          LOAD_FAST 4 
+  81          LOAD_CONST_SMALL_INT 1 
+  d9          BINARY_OP 2 __eq__ 
+  44:7d       POP_JUMP_IF_FALSE 61
+  b0          LOAD_FAST 0 
+  14:2b       LOAD_METHOD wait_msg
+  36:00       CALL_METHOD 0
+  c9          STORE_FAST 9 
+  b9          LOAD_FAST 9 
+  22:80:40    LOAD_CONST_SMALL_INT 64
+  d9          BINARY_OP 2 __eq__ 
+  44:6c       POP_JUMP_IF_FALSE 44
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR sock
+  14:1d       LOAD_METHOD read
+  81          LOAD_CONST_SMALL_INT 1 
+  36:01       CALL_METHOD 1
+  c6          STORE_FAST 6 
+  b6          LOAD_FAST 6 
+  23:05       LOAD_CONST_OBJ b'\x02'
+  d9          BINARY_OP 2 __eq__ 
+  43:43       POP_JUMP_IF_TRUE 3
+  12:20       LOAD_GLOBAL AssertionError
+  65          RAISE_OBJ 
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR sock
+  14:1d       LOAD_METHOD read
+  82          LOAD_CONST_SMALL_INT 2 
+  36:01       CALL_METHOD 1
+  ca          STORE_FAST 10 
+  ba          LOAD_FAST 10 
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  88          LOAD_CONST_SMALL_INT 8 
+  f0          BINARY_OP 25 __lshift__ 
+  ba          LOAD_FAST 10 
+  81          LOAD_CONST_SMALL_INT 1 
+  55          LOAD_SUBSCR 
+  ed          BINARY_OP 22 __or__ 
+  ca          STORE_FAST 10 
+  b8          LOAD_FAST 8 
+  ba          LOAD_FAST 10 
+  d9          BINARY_OP 2 __eq__ 
+  44:42       POP_JUMP_IF_FALSE 2
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: subscribe
+  raw bytecode: 173 eb:01:28:2c:37:3c:3f:80:8e:2f:27:29:39:29:27:30:20:26:27:29:35:29:28:b0:13:10:51:de:d3:43:47:12:20:23:06:34:01:65:12:41:23:07:34:01:c3:b0:57:13:0f:81:e5:5a:18:0f:12:32:14:2a:10:2d:b3:81:82:82:f2:12:3a:b1:34:01:f2:81:f2:b0:13:0f:36:05:59:b0:13:0a:14:19:b3:36:01:59:b0:14:18:b1:36:01:59:b0:13:0a:14:19:b2:14:2e:81:10:2f:36:02:36:01:59:b0:14:2b:36:00:c4:b4:22:81:10:d9:44:71:b0:13:0a:14:1d:84:36:01:c5:b5:81:55:b3:82:55:d9:44:49:b5:82:55:b3:83:55:d9:43:43:12:20:65:b5:83:55:22:81:00:d9:44:48:12:06:b5:83:55:34:01:65:51:63
+  prelude: (14, 0, 0, 3, 0, 1)
+  args: ['self', 'topic', 'qos']
+  line info: 80:8e:2f:27:29:39:29:27:30:20:26:27:29:35:29:28
+  b0          LOAD_FAST 0 
+  13:10       LOAD_ATTR cb
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  43:47       POP_JUMP_IF_TRUE 7
+  12:20       LOAD_GLOBAL AssertionError
+  23:06       LOAD_CONST_OBJ 'Subscribe callback is not set'
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  12:41       LOAD_GLOBAL bytearray
+  23:07       LOAD_CONST_OBJ b'\x82\x00\x00\x00'
+  34:01       CALL_FUNCTION 1
+  c3          STORE_FAST 3 
+  b0          LOAD_FAST 0 
+  57          DUP_TOP 
+  13:0f       LOAD_ATTR pid
+  81          LOAD_CONST_SMALL_INT 1 
+  e5          BINARY_OP 14 __iadd__ 
+  5a          ROT_TWO 
+  18:0f       STORE_ATTR pid
+  12:32       LOAD_GLOBAL struct
+  14:2a       LOAD_METHOD pack_into
+  10:2d       LOAD_CONST_STRING !BH
+  b3          LOAD_FAST 3 
+  81          LOAD_CONST_SMALL_INT 1 
+  82          LOAD_CONST_SMALL_INT 2 
+  82          LOAD_CONST_SMALL_INT 2 
+  f2          BINARY_OP 27 __add__ 
+  12:3a       LOAD_GLOBAL len
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  f2          BINARY_OP 27 __add__ 
+  81          LOAD_CONST_SMALL_INT 1 
+  f2          BINARY_OP 27 __add__ 
+  b0          LOAD_FAST 0 
+  13:0f       LOAD_ATTR pid
+  36:05       CALL_METHOD 5
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR sock
+  14:19       LOAD_METHOD write
+  b3          LOAD_FAST 3 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:18       LOAD_METHOD _send_str
+  b1          LOAD_FAST 1 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR sock
+  14:19       LOAD_METHOD write
+  b2          LOAD_FAST 2 
+  14:2e       LOAD_METHOD to_bytes
+  81          LOAD_CONST_SMALL_INT 1 
+  10:2f       LOAD_CONST_STRING little
+  36:02       CALL_METHOD 2
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:2b       LOAD_METHOD wait_msg
+  36:00       CALL_METHOD 0
+  c4          STORE_FAST 4 
+  b4          LOAD_FAST 4 
+  22:81:10    LOAD_CONST_SMALL_INT 144
+  d9          BINARY_OP 2 __eq__ 
+  44:71       POP_JUMP_IF_FALSE 49
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR sock
+  14:1d       LOAD_METHOD read
+  84          LOAD_CONST_SMALL_INT 4 
+  36:01       CALL_METHOD 1
+  c5          STORE_FAST 5 
+  b5          LOAD_FAST 5 
+  81          LOAD_CONST_SMALL_INT 1 
+  55          LOAD_SUBSCR 
+  b3          LOAD_FAST 3 
+  82          LOAD_CONST_SMALL_INT 2 
+  55          LOAD_SUBSCR 
+  d9          BINARY_OP 2 __eq__ 
+  44:49       POP_JUMP_IF_FALSE 9
+  b5          LOAD_FAST 5 
+  82          LOAD_CONST_SMALL_INT 2 
+  55          LOAD_SUBSCR 
+  b3          LOAD_FAST 3 
+  83          LOAD_CONST_SMALL_INT 3 
+  55          LOAD_SUBSCR 
+  d9          BINARY_OP 2 __eq__ 
+  43:43       POP_JUMP_IF_TRUE 3
+  12:20       LOAD_GLOBAL AssertionError
+  65          RAISE_OBJ 
+  b5          LOAD_FAST 5 
+  83          LOAD_CONST_SMALL_INT 3 
+  55          LOAD_SUBSCR 
+  22:81:00    LOAD_CONST_SMALL_INT 128
+  d9          BINARY_OP 2 __eq__ 
+  44:48       POP_JUMP_IF_FALSE 8
+  12:06       LOAD_GLOBAL MQTTException
+  b5          LOAD_FAST 5 
+  83          LOAD_CONST_SMALL_INT 3 
+  55          LOAD_SUBSCR 
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: wait_msg
+  raw bytecode: 60 71:42:2b:37:80:9f:29:29:25:22:26:26:26:2b:28:22:24:2a:22:26:29:2a:29:26:25:29:2a:24:29:28:27:27:2c:2b:27:b0:13:0a:14:1d:81:36:01:c1:b0:13:0a:14:30:52:36:01:59:b1:51:de:44:42:51:63
+  prelude: (15, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:9f:29:29:25:22:26:26:26:2b:28:22:24:2a:22:26:29:2a:29:26:25:29:2a:24:29:28:27:27:2c:2b:27
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR sock
+  14:1d       LOAD_METHOD read
+  81          LOAD_CONST_SMALL_INT 1 
+  36:01       CALL_METHOD 1
+  c1          STORE_FAST 1 
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR sock
+  14:30       LOAD_METHOD setblocking
+  52          LOAD_CONST_TRUE 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b1          LOAD_FAST 1 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  44:42       POP_JUMP_IF_FALSE 2
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: check_msg
+  raw bytecode: 22 19:0a:31:37:80:bf:29:b0:13:0a:14:30:50:36:01:59:b0:14:2b:36:00:63
+  prelude: (4, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:bf:29
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR sock
+  14:30       LOAD_METHOD setblocking
+  50          LOAD_CONST_FALSE 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:2b       LOAD_METHOD wait_msg
+  36:00       CALL_METHOD 0
+  63          RETURN_VALUE 
+  children: []

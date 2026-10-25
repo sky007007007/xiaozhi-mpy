@@ -1,0 +1,285 @@
+mpy_source_file: extracted/ir_rx_test.py.mpy
+source_file: ir_rx/test.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[47] (* for static qstrs):
+    'ir_rx/test.py' 
+    '<module>' *
+    'platform' 
+    'sys' 
+    'time' 
+    'gc' 
+    'Pin' 
+    'freq' 
+    'machine' 
+    'print_error' 
+    'ir_rx.print_error' 
+    'NEC_8' 
+    'NEC_16' 
+    'SAMSUNG' 
+    'ir_rx.nec' 
+    'SONY_12' 
+    'SONY_15' 
+    'SONY_20' 
+    'ir_rx.sony' 
+    'RC5_IR' 
+    'RC6_M0' 
+    'ir_rx.philips' 
+    'MCE' 
+    'ir_rx.mce' 
+    'pyboard' 
+    'X3' 
+    'IN' 
+    'esp8266' 
+    'esp32' 
+    'esp32_LoBo' 
+    'rp2' 
+    'cb' 
+    'format' *
+    'test' 
+    'error_function' 
+    'running' 
+    'sleep' 
+    'collect' 
+    'close' *
+    'p' 
+    's' 
+    'print' *
+    'data' 
+    'addr' 
+    'ctrl' 
+    'proto' 
+    'KeyboardInterrupt' *
+obj_table: ['Test for IR receiver. Run:\nfrom ir_rx.test import test\ntest() for NEC 8 bit protocol,\ntest(1) for NEC 16 bit,\ntest(2) for Sony SIRC 12 bit,\ntest(3) for Sony SIRC 15 bit,\ntest(4) for Sony SIRC 20 bit,\ntest(5) for Philips RC-5 protocol,\ntest(6) for RC6 mode 0.\ntest(7) for Microsoft Vista MCE.\ntest(8) for Samsung.\n\nHit ctrl-c to stop, then ctrl-d to soft reset.', 'Repeat code.', 'Data 0x{:02x} Addr 0x{:04x} Ctrl 0x{:02x}']
+simple_name: <module>
+  raw bytecode: 286 18:36:01:80:08:2c:26:26:32:6c:38:38:32:6c:27:2f:27:2b:2d:2e:2d:27:6d:84:07:88:10:84:0e:80:10:02:2a:01:1b:03:1c:02:16:02:59:80:51:1b:04:16:04:80:51:1b:05:16:05:80:10:06:10:07:2a:02:1b:08:1c:06:16:06:1c:07:16:07:59:80:10:09:2a:01:1b:0a:1c:09:16:09:59:80:10:0b:10:0c:10:0d:2a:03:1b:0e:1c:0b:16:0b:1c:0c:16:0c:1c:0d:16:0d:59:80:10:0f:10:10:10:11:2a:03:1b:12:1c:0f:16:0f:1c:10:16:10:1c:11:16:11:59:80:10:13:10:14:2a:02:1b:15:1c:13:16:13:1c:14:16:14:59:80:10:16:2a:01:1b:17:1c:16:16:16:59:11:02:10:18:d9:44:4f:11:06:10:19:11:06:13:1a:34:02:16:27:42:ce:80:11:02:10:1b:d9:44:58:11:07:22:80:cc:a5:d0:00:34:01:59:11:06:8d:11:06:13:1a:34:02:16:27:42:6f:11:02:10:1c:d9:43:47:11:02:10:1d:d9:44:4d:11:06:97:11:06:13:1a:34:02:16:27:42:54:11:02:10:1e:d9:44:4d:11:06:90:11:06:13:1a:34:02:16:27:42:40:32:00:16:1f:80:2a:01:53:33:01:16:21:23:00:16:28:11:29:11:28:34:01:59:51:63
+  prelude: (4, 0, 0, 0, 0, 0)
+  args: []
+  line info: 80:08:2c:26:26:32:6c:38:38:32:6c:27:2f:27:2b:2d:2e:2d:27:6d:84:07:88:10:84:0e
+  80          LOAD_CONST_SMALL_INT 0 
+  10:02       LOAD_CONST_STRING platform
+  2a:01       BUILD_TUPLE 1
+  1b:03       IMPORT_NAME sys
+  1c:02       IMPORT_FROM platform
+  16:02       STORE_NAME platform
+  59          POP_TOP 
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:04       IMPORT_NAME time
+  16:04       STORE_NAME time
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:05       IMPORT_NAME gc
+  16:05       STORE_NAME gc
+  80          LOAD_CONST_SMALL_INT 0 
+  10:06       LOAD_CONST_STRING Pin
+  10:07       LOAD_CONST_STRING freq
+  2a:02       BUILD_TUPLE 2
+  1b:08       IMPORT_NAME machine
+  1c:06       IMPORT_FROM Pin
+  16:06       STORE_NAME Pin
+  1c:07       IMPORT_FROM freq
+  16:07       STORE_NAME freq
+  59          POP_TOP 
+  80          LOAD_CONST_SMALL_INT 0 
+  10:09       LOAD_CONST_STRING print_error
+  2a:01       BUILD_TUPLE 1
+  1b:0a       IMPORT_NAME ir_rx.print_error
+  1c:09       IMPORT_FROM print_error
+  16:09       STORE_NAME print_error
+  59          POP_TOP 
+  80          LOAD_CONST_SMALL_INT 0 
+  10:0b       LOAD_CONST_STRING NEC_8
+  10:0c       LOAD_CONST_STRING NEC_16
+  10:0d       LOAD_CONST_STRING SAMSUNG
+  2a:03       BUILD_TUPLE 3
+  1b:0e       IMPORT_NAME ir_rx.nec
+  1c:0b       IMPORT_FROM NEC_8
+  16:0b       STORE_NAME NEC_8
+  1c:0c       IMPORT_FROM NEC_16
+  16:0c       STORE_NAME NEC_16
+  1c:0d       IMPORT_FROM SAMSUNG
+  16:0d       STORE_NAME SAMSUNG
+  59          POP_TOP 
+  80          LOAD_CONST_SMALL_INT 0 
+  10:0f       LOAD_CONST_STRING SONY_12
+  10:10       LOAD_CONST_STRING SONY_15
+  10:11       LOAD_CONST_STRING SONY_20
+  2a:03       BUILD_TUPLE 3
+  1b:12       IMPORT_NAME ir_rx.sony
+  1c:0f       IMPORT_FROM SONY_12
+  16:0f       STORE_NAME SONY_12
+  1c:10       IMPORT_FROM SONY_15
+  16:10       STORE_NAME SONY_15
+  1c:11       IMPORT_FROM SONY_20
+  16:11       STORE_NAME SONY_20
+  59          POP_TOP 
+  80          LOAD_CONST_SMALL_INT 0 
+  10:13       LOAD_CONST_STRING RC5_IR
+  10:14       LOAD_CONST_STRING RC6_M0
+  2a:02       BUILD_TUPLE 2
+  1b:15       IMPORT_NAME ir_rx.philips
+  1c:13       IMPORT_FROM RC5_IR
+  16:13       STORE_NAME RC5_IR
+  1c:14       IMPORT_FROM RC6_M0
+  16:14       STORE_NAME RC6_M0
+  59          POP_TOP 
+  80          LOAD_CONST_SMALL_INT 0 
+  10:16       LOAD_CONST_STRING MCE
+  2a:01       BUILD_TUPLE 1
+  1b:17       IMPORT_NAME ir_rx.mce
+  1c:16       IMPORT_FROM MCE
+  16:16       STORE_NAME MCE
+  59          POP_TOP 
+  11:02       LOAD_NAME platform
+  10:18       LOAD_CONST_STRING pyboard
+  d9          BINARY_OP 2 __eq__ 
+  44:4f       POP_JUMP_IF_FALSE 15
+  11:06       LOAD_NAME Pin
+  10:19       LOAD_CONST_STRING X3
+  11:06       LOAD_NAME Pin
+  13:1a       LOAD_ATTR IN
+  34:02       CALL_FUNCTION 2
+  16:27       STORE_NAME p
+  42:ce:80    JUMP 78
+  11:02       LOAD_NAME platform
+  10:1b       LOAD_CONST_STRING esp8266
+  d9          BINARY_OP 2 __eq__ 
+  44:58       POP_JUMP_IF_FALSE 24
+  11:07       LOAD_NAME freq
+  22:80:cc:a5:d0:00 LOAD_CONST_SMALL_INT 160000000
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  11:06       LOAD_NAME Pin
+  8d          LOAD_CONST_SMALL_INT 13 
+  11:06       LOAD_NAME Pin
+  13:1a       LOAD_ATTR IN
+  34:02       CALL_FUNCTION 2
+  16:27       STORE_NAME p
+  42:6f       JUMP 47
+  11:02       LOAD_NAME platform
+  10:1c       LOAD_CONST_STRING esp32
+  d9          BINARY_OP 2 __eq__ 
+  43:47       POP_JUMP_IF_TRUE 7
+  11:02       LOAD_NAME platform
+  10:1d       LOAD_CONST_STRING esp32_LoBo
+  d9          BINARY_OP 2 __eq__ 
+  44:4d       POP_JUMP_IF_FALSE 13
+  11:06       LOAD_NAME Pin
+  97          LOAD_CONST_SMALL_INT 23 
+  11:06       LOAD_NAME Pin
+  13:1a       LOAD_ATTR IN
+  34:02       CALL_FUNCTION 2
+  16:27       STORE_NAME p
+  42:54       JUMP 20
+  11:02       LOAD_NAME platform
+  10:1e       LOAD_CONST_STRING rp2
+  d9          BINARY_OP 2 __eq__ 
+  44:4d       POP_JUMP_IF_FALSE 13
+  11:06       LOAD_NAME Pin
+  90          LOAD_CONST_SMALL_INT 16 
+  11:06       LOAD_NAME Pin
+  13:1a       LOAD_ATTR IN
+  34:02       CALL_FUNCTION 2
+  16:27       STORE_NAME p
+  42:40       JUMP 0
+  32:00       MAKE_FUNCTION 0
+  16:1f       STORE_NAME cb
+  80          LOAD_CONST_SMALL_INT 0 
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:01       MAKE_FUNCTION_DEFARGS 1
+  16:21       STORE_NAME test
+  23:00       LOAD_CONST_OBJ 'Test for IR receiver. Run:\nfrom ir_rx.test import test\ntest() for NEC 8 bit protocol,\ntest(1) for NEC 16 bit,\ntest(2) for Sony SIRC 12 bit,\ntest(3) for Sony SIRC 15 bit,\ntest(4) for Sony SIRC 20 bit,\ntest(5) for Philips RC-5 protocol,\ntest(6) for RC6 mode 0.\ntest(7) for Microsoft Vista MCE.\ntest(8) for Samsung.\n\nHit ctrl-c to stop, then ctrl-d to soft reset.'
+  16:28       STORE_NAME s
+  11:29       LOAD_NAME print
+  11:28       LOAD_NAME s
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [cb, test]
+simple_name: cb
+  raw bytecode: 40 43:10:1f:2a:2b:2c:80:21:25:49:b0:80:d7:44:49:12:29:23:01:34:01:59:42:4e:12:29:23:02:14:20:b0:b1:b2:36:03:34:01:59:51:63
+  prelude: (9, 0, 0, 3, 0, 0)
+  args: ['data', 'addr', 'ctrl']
+  line info: 80:21:25:49
+  b0          LOAD_FAST 0 
+  80          LOAD_CONST_SMALL_INT 0 
+  d7          BINARY_OP 0 __lt__ 
+  44:49       POP_JUMP_IF_FALSE 9
+  12:29       LOAD_GLOBAL print
+  23:01       LOAD_CONST_OBJ 'Repeat code.'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  42:4e       JUMP 14
+  12:29       LOAD_GLOBAL print
+  23:02       LOAD_CONST_OBJ 'Data 0x{:02x} Addr 0x{:04x} Ctrl 0x{:02x}'
+  14:20       LOAD_METHOD format
+  b0          LOAD_FAST 0 
+  b1          LOAD_FAST 1 
+  b2          LOAD_FAST 2 
+  36:03       CALL_METHOD 3
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: test
+  raw bytecode: 100 dd:01:18:21:2d:80:28:35:2a:68:22:20:27:28:52:12:0b:12:0c:12:0f:12:10:12:11:12:13:12:14:12:16:12:0d:2a:09:c1:b1:b0:55:12:27:12:1f:34:02:c2:b2:14:22:12:09:36:01:59:48:1a:12:29:10:23:34:01:59:12:04:14:24:85:36:01:59:12:05:14:25:36:00:59:42:28:4a:10:57:12:2e:df:44:49:59:b2:14:26:36:00:59:4a:01:5d:51:63
+  prelude: (12, 1, 0, 1, 0, 1)
+  args: ['proto']
+  line info: 80:28:35:2a:68:22:20:27:28:52
+  12:0b       LOAD_GLOBAL NEC_8
+  12:0c       LOAD_GLOBAL NEC_16
+  12:0f       LOAD_GLOBAL SONY_12
+  12:10       LOAD_GLOBAL SONY_15
+  12:11       LOAD_GLOBAL SONY_20
+  12:13       LOAD_GLOBAL RC5_IR
+  12:14       LOAD_GLOBAL RC6_M0
+  12:16       LOAD_GLOBAL MCE
+  12:0d       LOAD_GLOBAL SAMSUNG
+  2a:09       BUILD_TUPLE 9
+  c1          STORE_FAST 1 
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  55          LOAD_SUBSCR 
+  12:27       LOAD_GLOBAL p
+  12:1f       LOAD_GLOBAL cb
+  34:02       CALL_FUNCTION 2
+  c2          STORE_FAST 2 
+  b2          LOAD_FAST 2 
+  14:22       LOAD_METHOD error_function
+  12:09       LOAD_GLOBAL print_error
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  48:1a       SETUP_EXCEPT 26
+  12:29       LOAD_GLOBAL print
+  10:23       LOAD_CONST_STRING running
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  12:04       LOAD_GLOBAL time
+  14:24       LOAD_METHOD sleep
+  85          LOAD_CONST_SMALL_INT 5 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  12:05       LOAD_GLOBAL gc
+  14:25       LOAD_METHOD collect
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  42:28       JUMP -24
+  4a:10       POP_EXCEPT_JUMP 16
+  57          DUP_TOP 
+  12:2e       LOAD_GLOBAL KeyboardInterrupt
+  df          BINARY_OP 8 <exception match> 
+  44:49       POP_JUMP_IF_FALSE 9
+  59          POP_TOP 
+  b2          LOAD_FAST 2 
+  14:26       LOAD_METHOD close
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []

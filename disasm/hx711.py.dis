@@ -1,0 +1,523 @@
+mpy_source_file: extracted/hx711.py.mpy
+source_file: hx711.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[48] (* for static qstrs):
+    'hx711.py' 
+    '<module>' *
+    'sleep_us' 
+    'time' 
+    'utime' 
+    'Pin' 
+    'machine' 
+    'const' *
+    'micropython' *
+    'HX711Exception' 
+    'InvalidMode' 
+    'DeviceIsNotReady' 
+    'HX711' 
+    'setter' 
+    '__init__' *
+    'IN' 
+    'd_out_pin' 
+    'OUT' 
+    'value' *
+    'pd_sck_pin' 
+    'channel' 
+    '__repr__' *
+    '_convert_from_twos_complement' 
+    'DATA_BITS' 
+    '_set_channel' 
+    '_channel' 
+    '_wait' 
+    'READY_TIMEOUT_SEC' 
+    'is_ready' 
+    'CHANNEL_A_128' 
+    'CHANNEL_A_64' 
+    'CHANNEL_B_32' 
+    'power_off' 
+    'SLEEP_DELAY_USEC' 
+    'power_on' 
+    'read' *
+    'Exception' *
+    'object' *
+    '__name__' *
+    '__module__' *
+    '__qualname__' *
+    'MAX_VALUE' 
+    'MIN_VALUE' 
+    'property' 
+    'self' *
+    'd_out' 
+    'pd_sck' 
+    'raw' 
+obj_table: ['HX711 on channel %s, gain=%s', ('A', 128), ('A', 64), ('B', 32), 'Gain should be one of HX711.CHANNEL_A_128, HX711.CHANNEL_A_64, HX711.CHANNEL_B_32']
+simple_name: <module>
+  raw bytecode: 97 18:0e:01:32:2c:4c:6b:6b:6b:80:10:02:10:03:2a:02:1b:04:1c:02:16:02:1c:03:16:03:59:80:10:05:2a:01:1b:06:1c:05:16:05:59:80:10:07:2a:01:1b:08:1c:07:16:07:59:54:32:00:10:09:11:24:34:03:16:09:54:32:01:10:0a:11:09:34:03:16:0a:54:32:02:10:0b:11:09:34:03:16:0b:54:32:03:10:0c:11:25:34:03:16:0c:51:63
+  prelude: (4, 0, 0, 0, 0, 0)
+  args: []
+  line info: 32:2c:4c:6b:6b:6b
+  80          LOAD_CONST_SMALL_INT 0 
+  10:02       LOAD_CONST_STRING sleep_us
+  10:03       LOAD_CONST_STRING time
+  2a:02       BUILD_TUPLE 2
+  1b:04       IMPORT_NAME utime
+  1c:02       IMPORT_FROM sleep_us
+  16:02       STORE_NAME sleep_us
+  1c:03       IMPORT_FROM time
+  16:03       STORE_NAME time
+  59          POP_TOP 
+  80          LOAD_CONST_SMALL_INT 0 
+  10:05       LOAD_CONST_STRING Pin
+  2a:01       BUILD_TUPLE 1
+  1b:06       IMPORT_NAME machine
+  1c:05       IMPORT_FROM Pin
+  16:05       STORE_NAME Pin
+  59          POP_TOP 
+  80          LOAD_CONST_SMALL_INT 0 
+  10:07       LOAD_CONST_STRING const
+  2a:01       BUILD_TUPLE 1
+  1b:08       IMPORT_NAME micropython
+  1c:07       IMPORT_FROM const
+  16:07       STORE_NAME const
+  59          POP_TOP 
+  54          LOAD_BUILD_CLASS 
+  32:00       MAKE_FUNCTION 0
+  10:09       LOAD_CONST_STRING HX711Exception
+  11:24       LOAD_NAME Exception
+  34:03       CALL_FUNCTION 3
+  16:09       STORE_NAME HX711Exception
+  54          LOAD_BUILD_CLASS 
+  32:01       MAKE_FUNCTION 1
+  10:0a       LOAD_CONST_STRING InvalidMode
+  11:09       LOAD_NAME HX711Exception
+  34:03       CALL_FUNCTION 3
+  16:0a       STORE_NAME InvalidMode
+  54          LOAD_BUILD_CLASS 
+  32:02       MAKE_FUNCTION 2
+  10:0b       LOAD_CONST_STRING DeviceIsNotReady
+  11:09       LOAD_NAME HX711Exception
+  34:03       CALL_FUNCTION 3
+  16:0b       STORE_NAME DeviceIsNotReady
+  54          LOAD_BUILD_CLASS 
+  32:03       MAKE_FUNCTION 3
+  10:0c       LOAD_CONST_STRING HX711
+  11:25       LOAD_NAME object
+  34:03       CALL_FUNCTION 3
+  16:0c       STORE_NAME HX711
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [HX711Exception, InvalidMode, DeviceIsNotReady, HX711]
+simple_name: HX711Exception
+  raw bytecode: 15 00:06:09:68:40:11:26:16:27:10:09:16:28:51:63
+  prelude: (1, 0, 0, 0, 0, 0)
+  args: []
+  line info: 68:40
+  11:26       LOAD_NAME __name__
+  16:27       STORE_NAME __module__
+  10:09       LOAD_CONST_STRING HX711Exception
+  16:28       STORE_NAME __qualname__
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: InvalidMode
+  raw bytecode: 15 00:06:0a:88:08:11:26:16:27:10:0a:16:28:51:63
+  prelude: (1, 0, 0, 0, 0, 0)
+  args: []
+  line info: 88:08
+  11:26       LOAD_NAME __name__
+  16:27       STORE_NAME __module__
+  10:0a       LOAD_CONST_STRING InvalidMode
+  16:28       STORE_NAME __qualname__
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: DeviceIsNotReady
+  raw bytecode: 15 00:06:0b:88:0b:11:26:16:27:10:0b:16:28:51:63
+  prelude: (1, 0, 0, 0, 0, 0)
+  args: []
+  line info: 88:0b
+  11:26       LOAD_NAME __name__
+  16:27       STORE_NAME __module__
+  10:0b       LOAD_CONST_STRING DeviceIsNotReady
+  16:28       STORE_NAME __qualname__
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: HX711
+  raw bytecode: 138 08:3c:0c:88:0f:23:23:43:23:27:27:23:45:68:40:64:64:60:64:60:84:07:88:0a:8a:11:64:20:64:60:64:40:11:26:16:27:10:0c:16:28:81:16:1d:83:16:1e:82:16:1f:98:16:17:22:83:ff:ff:7f:16:29:22:84:80:80:00:16:2a:85:16:1b:22:80:50:16:21:81:2a:01:53:33:00:16:0e:32:01:16:15:32:02:16:16:32:03:16:18:32:04:16:1a:11:2b:32:05:34:01:16:14:11:14:13:0d:32:06:34:01:16:14:32:07:16:1c:32:08:16:20:32:09:16:22:50:2a:01:53:33:0a:16:23:51:63
+  prelude: (2, 0, 0, 0, 0, 0)
+  args: []
+  line info: 88:0f:23:23:43:23:27:27:23:45:68:40:64:64:60:64:60:84:07:88:0a:8a:11:64:20:64:60:64:40
+  11:26       LOAD_NAME __name__
+  16:27       STORE_NAME __module__
+  10:0c       LOAD_CONST_STRING HX711
+  16:28       STORE_NAME __qualname__
+  81          LOAD_CONST_SMALL_INT 1 
+  16:1d       STORE_NAME CHANNEL_A_128
+  83          LOAD_CONST_SMALL_INT 3 
+  16:1e       STORE_NAME CHANNEL_A_64
+  82          LOAD_CONST_SMALL_INT 2 
+  16:1f       STORE_NAME CHANNEL_B_32
+  98          LOAD_CONST_SMALL_INT 24 
+  16:17       STORE_NAME DATA_BITS
+  22:83:ff:ff:7f LOAD_CONST_SMALL_INT 8388607
+  16:29       STORE_NAME MAX_VALUE
+  22:84:80:80:00 LOAD_CONST_SMALL_INT 8388608
+  16:2a       STORE_NAME MIN_VALUE
+  85          LOAD_CONST_SMALL_INT 5 
+  16:1b       STORE_NAME READY_TIMEOUT_SEC
+  22:80:50    LOAD_CONST_SMALL_INT 80
+  16:21       STORE_NAME SLEEP_DELAY_USEC
+  81          LOAD_CONST_SMALL_INT 1 
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:00       MAKE_FUNCTION_DEFARGS 0
+  16:0e       STORE_NAME __init__
+  32:01       MAKE_FUNCTION 1
+  16:15       STORE_NAME __repr__
+  32:02       MAKE_FUNCTION 2
+  16:16       STORE_NAME _convert_from_twos_complement
+  32:03       MAKE_FUNCTION 3
+  16:18       STORE_NAME _set_channel
+  32:04       MAKE_FUNCTION 4
+  16:1a       STORE_NAME _wait
+  11:2b       LOAD_NAME property
+  32:05       MAKE_FUNCTION 5
+  34:01       CALL_FUNCTION 1
+  16:14       STORE_NAME channel
+  11:14       LOAD_NAME channel
+  13:0d       LOAD_ATTR setter
+  32:06       MAKE_FUNCTION 6
+  34:01       CALL_FUNCTION 1
+  16:14       STORE_NAME channel
+  32:07       MAKE_FUNCTION 7
+  16:1c       STORE_NAME is_ready
+  32:08       MAKE_FUNCTION 8
+  16:20       STORE_NAME power_off
+  32:09       MAKE_FUNCTION 9
+  16:22       STORE_NAME power_on
+  50          LOAD_CONST_FALSE 
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:0a       MAKE_FUNCTION_DEFARGS 10
+  16:23       STORE_NAME read
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [__init__, __repr__, _convert_from_twos_complement, _set_channel, _wait, channel, channel, is_ready, power_off, power_on, read]
+simple_name: __init__
+  raw bytecode: 46 c0:05:12:0e:2c:2d:2e:14:80:1a:2c:30:12:05:b1:12:05:13:0f:34:02:b0:18:10:12:05:b2:12:05:13:11:10:12:80:34:82:02:b0:18:13:b3:b0:18:14:51:63
+  prelude: (9, 0, 0, 4, 0, 1)
+  args: ['self', 'd_out', 'pd_sck', 'channel']
+  line info: 80:1a:2c:30
+  12:05       LOAD_GLOBAL Pin
+  b1          LOAD_FAST 1 
+  12:05       LOAD_GLOBAL Pin
+  13:0f       LOAD_ATTR IN
+  34:02       CALL_FUNCTION 2
+  b0          LOAD_FAST 0 
+  18:10       STORE_ATTR d_out_pin
+  12:05       LOAD_GLOBAL Pin
+  b2          LOAD_FAST 2 
+  12:05       LOAD_GLOBAL Pin
+  13:11       LOAD_ATTR OUT
+  10:12       LOAD_CONST_STRING value
+  80          LOAD_CONST_SMALL_INT 0 
+  34:82:02    CALL_FUNCTION 258
+  b0          LOAD_FAST 0 
+  18:13       STORE_ATTR pd_sck_pin
+  b3          LOAD_FAST 3 
+  b0          LOAD_FAST 0 
+  18:14       STORE_ATTR channel
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: __repr__
+  raw bytecode: 13 11:08:15:2c:80:1f:23:00:b0:13:14:f8:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:1f
+  23:00       LOAD_CONST_OBJ 'HX711 on channel %s, gain=%s'
+  b0          LOAD_FAST 0 
+  13:14       LOAD_ATTR channel
+  f8          BINARY_OP 33 __mod__ 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _convert_from_twos_complement
+  raw bytecode: 30 2a:0e:16:2c:12:80:23:2b:28:b1:81:b0:13:17:81:f3:f0:ef:44:48:b1:81:b0:13:17:f0:e6:c1:b1:63
+  prelude: (6, 0, 0, 2, 0, 0)
+  args: ['self', 'value']
+  line info: 80:23:2b:28
+  b1          LOAD_FAST 1 
+  81          LOAD_CONST_SMALL_INT 1 
+  b0          LOAD_FAST 0 
+  13:17       LOAD_ATTR DATA_BITS
+  81          LOAD_CONST_SMALL_INT 1 
+  f3          BINARY_OP 28 __sub__ 
+  f0          BINARY_OP 25 __lshift__ 
+  ef          BINARY_OP 24 __and__ 
+  44:48       POP_JUMP_IF_FALSE 8
+  b1          LOAD_FAST 1 
+  81          LOAD_CONST_SMALL_INT 1 
+  b0          LOAD_FAST 0 
+  13:17       LOAD_ATTR DATA_BITS
+  f0          BINARY_OP 25 __lshift__ 
+  e6          BINARY_OP 15 __isub__ 
+  c1          STORE_FAST 1 
+  b1          LOAD_FAST 1 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _set_channel
+  raw bytecode: 45 31:0c:18:2c:80:29:28:29:b0:13:19:80:42:56:57:c1:b0:13:13:14:12:81:36:01:59:b0:13:13:14:12:80:36:01:59:81:e5:58:5a:d7:43:25:59:59:51:63
+  prelude: (7, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:29:28:29
+  b0          LOAD_FAST 0 
+  13:19       LOAD_ATTR _channel
+  80          LOAD_CONST_SMALL_INT 0 
+  42:56       JUMP 22
+  57          DUP_TOP 
+  c1          STORE_FAST 1 
+  b0          LOAD_FAST 0 
+  13:13       LOAD_ATTR pd_sck_pin
+  14:12       LOAD_METHOD value
+  81          LOAD_CONST_SMALL_INT 1 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:13       LOAD_ATTR pd_sck_pin
+  14:12       LOAD_METHOD value
+  80          LOAD_CONST_SMALL_INT 0 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  81          LOAD_CONST_SMALL_INT 1 
+  e5          BINARY_OP 14 __iadd__ 
+  58          DUP_TOP_TWO 
+  5a          ROT_TWO 
+  d7          BINARY_OP 0 __lt__ 
+  43:25       POP_JUMP_IF_TRUE -27
+  59          POP_TOP 
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _wait
+  raw bytecode: 42 19:0e:1a:2c:80:2f:25:22:2c:12:03:34:00:c1:42:51:12:03:34:00:b1:f3:b0:13:1b:d8:44:45:12:0b:34:00:65:b0:14:1c:36:00:44:28:51:63
+  prelude: (4, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:2f:25:22:2c
+  12:03       LOAD_GLOBAL time
+  34:00       CALL_FUNCTION 0
+  c1          STORE_FAST 1 
+  42:51       JUMP 17
+  12:03       LOAD_GLOBAL time
+  34:00       CALL_FUNCTION 0
+  b1          LOAD_FAST 1 
+  f3          BINARY_OP 28 __sub__ 
+  b0          LOAD_FAST 0 
+  13:1b       LOAD_ATTR READY_TIMEOUT_SEC
+  d8          BINARY_OP 1 __gt__ 
+  44:45       POP_JUMP_IF_FALSE 5
+  12:0b       LOAD_GLOBAL DeviceIsNotReady
+  34:00       CALL_FUNCTION 0
+  65          RAISE_OBJ 
+  b0          LOAD_FAST 0 
+  14:1c       LOAD_METHOD is_ready
+  36:00       CALL_METHOD 0
+  44:28       POP_JUMP_IF_FALSE -24
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: channel
+  raw bytecode: 23 11:12:14:2c:80:37:29:23:29:23:29:b0:13:19:b0:13:1d:d9:44:43:23:01:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:37:29:23:29:23:29
+  b0          LOAD_FAST 0 
+  13:19       LOAD_ATTR _channel
+  b0          LOAD_FAST 0 
+  13:1d       LOAD_ATTR CHANNEL_A_128
+  d9          BINARY_OP 2 __eq__ 
+  44:43       POP_JUMP_IF_FALSE 3
+  23:01       LOAD_CONST_OBJ ('A', 128)
+  63          RETURN_VALUE 
+  children: []
+simple_name: channel
+  raw bytecode: 98 3a:1a:14:2c:12:80:41:30:47:44:27:46:28:29:52:b1:b0:13:1d:b0:13:1e:b0:13:1f:2a:03:dd:d3:44:47:12:0a:23:04:34:01:65:b1:b0:18:19:b0:14:1c:36:00:43:46:b0:14:1a:36:00:59:b0:13:17:80:42:56:57:c2:b0:13:13:14:12:81:36:01:59:b0:13:13:14:12:80:36:01:59:81:e5:58:5a:d7:43:25:59:59:b0:14:18:36:00:59:51:63
+  prelude: (8, 0, 0, 2, 0, 0)
+  args: ['self', 'value']
+  line info: 80:41:30:47:44:27:46:28:29:52
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  13:1d       LOAD_ATTR CHANNEL_A_128
+  b0          LOAD_FAST 0 
+  13:1e       LOAD_ATTR CHANNEL_A_64
+  b0          LOAD_FAST 0 
+  13:1f       LOAD_ATTR CHANNEL_B_32
+  2a:03       BUILD_TUPLE 3
+  dd          BINARY_OP 6 <in> 
+  d3          UNARY_OP 3 <not> 
+  44:47       POP_JUMP_IF_FALSE 7
+  12:0a       LOAD_GLOBAL InvalidMode
+  23:04       LOAD_CONST_OBJ 'Gain should be one of HX711.CHANNEL_A_128, HX711.CHANNEL_A_64, HX711.CHANNEL_B_32'
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:19       STORE_ATTR _channel
+  b0          LOAD_FAST 0 
+  14:1c       LOAD_METHOD is_ready
+  36:00       CALL_METHOD 0
+  43:46       POP_JUMP_IF_TRUE 6
+  b0          LOAD_FAST 0 
+  14:1a       LOAD_METHOD _wait
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:17       LOAD_ATTR DATA_BITS
+  80          LOAD_CONST_SMALL_INT 0 
+  42:56       JUMP 22
+  57          DUP_TOP 
+  c2          STORE_FAST 2 
+  b0          LOAD_FAST 0 
+  13:13       LOAD_ATTR pd_sck_pin
+  14:12       LOAD_METHOD value
+  81          LOAD_CONST_SMALL_INT 1 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:13       LOAD_ATTR pd_sck_pin
+  14:12       LOAD_METHOD value
+  80          LOAD_CONST_SMALL_INT 0 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  81          LOAD_CONST_SMALL_INT 1 
+  e5          BINARY_OP 14 __iadd__ 
+  58          DUP_TOP_TWO 
+  5a          ROT_TWO 
+  d7          BINARY_OP 0 __lt__ 
+  43:25       POP_JUMP_IF_TRUE -27
+  59          POP_TOP 
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:18       LOAD_METHOD _set_channel
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: is_ready
+  raw bytecode: 16 11:08:1c:2c:80:51:b0:13:10:14:12:36:00:80:d9:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:51
+  b0          LOAD_FAST 0 
+  13:10       LOAD_ATTR d_out_pin
+  14:12       LOAD_METHOD value
+  36:00       CALL_METHOD 0
+  80          LOAD_CONST_SMALL_INT 0 
+  d9          BINARY_OP 2 __eq__ 
+  63          RETURN_VALUE 
+  children: []
+simple_name: power_off
+  raw bytecode: 36 19:0c:20:2c:80:55:29:29:b0:13:13:14:12:80:36:01:59:b0:13:13:14:12:81:36:01:59:12:02:b0:13:21:34:01:59:51:63
+  prelude: (4, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:55:29:29
+  b0          LOAD_FAST 0 
+  13:13       LOAD_ATTR pd_sck_pin
+  14:12       LOAD_METHOD value
+  80          LOAD_CONST_SMALL_INT 0 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:13       LOAD_ATTR pd_sck_pin
+  14:12       LOAD_METHOD value
+  81          LOAD_CONST_SMALL_INT 1 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  12:02       LOAD_GLOBAL sleep_us
+  b0          LOAD_FAST 0 
+  13:21       LOAD_ATTR SLEEP_DELAY_USEC
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: power_on
+  raw bytecode: 24 19:0a:22:2c:80:5b:29:b0:13:13:14:12:80:36:01:59:b0:13:19:b0:18:14:51:63
+  prelude: (4, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:5b:29
+  b0          LOAD_FAST 0 
+  13:13       LOAD_ATTR pd_sck_pin
+  14:12       LOAD_METHOD value
+  80          LOAD_CONST_SMALL_INT 0 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:19       LOAD_ATTR _channel
+  b0          LOAD_FAST 0 
+  18:14       STORE_ATTR channel
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: read
+  raw bytecode: 91 c2:01:1e:23:2c:2f:80:60:27:46:22:28:29:29:35:46:23:42:b0:14:1c:36:00:43:46:b0:14:1a:36:00:59:80:c2:b0:13:17:80:42:62:57:c3:b0:13:13:14:12:81:36:01:59:b0:13:13:14:12:80:36:01:59:b2:81:f0:b0:13:10:14:12:36:00:ed:c2:81:e5:58:5a:d7:43:19:59:59:b0:14:18:36:00:59:b1:44:42:b2:63
+  prelude: (9, 0, 0, 2, 0, 1)
+  args: ['self', 'raw']
+  line info: 80:60:27:46:22:28:29:29:35:46:23:42
+  b0          LOAD_FAST 0 
+  14:1c       LOAD_METHOD is_ready
+  36:00       CALL_METHOD 0
+  43:46       POP_JUMP_IF_TRUE 6
+  b0          LOAD_FAST 0 
+  14:1a       LOAD_METHOD _wait
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  80          LOAD_CONST_SMALL_INT 0 
+  c2          STORE_FAST 2 
+  b0          LOAD_FAST 0 
+  13:17       LOAD_ATTR DATA_BITS
+  80          LOAD_CONST_SMALL_INT 0 
+  42:62       JUMP 34
+  57          DUP_TOP 
+  c3          STORE_FAST 3 
+  b0          LOAD_FAST 0 
+  13:13       LOAD_ATTR pd_sck_pin
+  14:12       LOAD_METHOD value
+  81          LOAD_CONST_SMALL_INT 1 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:13       LOAD_ATTR pd_sck_pin
+  14:12       LOAD_METHOD value
+  80          LOAD_CONST_SMALL_INT 0 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b2          LOAD_FAST 2 
+  81          LOAD_CONST_SMALL_INT 1 
+  f0          BINARY_OP 25 __lshift__ 
+  b0          LOAD_FAST 0 
+  13:10       LOAD_ATTR d_out_pin
+  14:12       LOAD_METHOD value
+  36:00       CALL_METHOD 0
+  ed          BINARY_OP 22 __or__ 
+  c2          STORE_FAST 2 
+  81          LOAD_CONST_SMALL_INT 1 
+  e5          BINARY_OP 14 __iadd__ 
+  58          DUP_TOP_TWO 
+  5a          ROT_TWO 
+  d7          BINARY_OP 0 __lt__ 
+  43:19       POP_JUMP_IF_TRUE -39
+  59          POP_TOP 
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:18       LOAD_METHOD _set_channel
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  b1          LOAD_FAST 1 
+  44:42       POP_JUMP_IF_FALSE 2
+  b2          LOAD_FAST 2 
+  63          RETURN_VALUE 
+  children: []

@@ -1,0 +1,460 @@
+mpy_source_file: extracted/i2c_lcd.py.mpy
+source_file: i2c_lcd.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[38] (* for static qstrs):
+    'i2c_lcd.py' 
+    '<module>' *
+    'LcdApi' 
+    'lcd_api' 
+    'I2C' 
+    'machine' 
+    'sleep_ms' 
+    'time' 
+    'I2cLcd' 
+    '__init__' *
+    'i2c' 
+    'i2c_addr' 
+    'writeto' 
+    'hal_write_init_nibble' 
+    'LCD_FUNCTION_RESET' 
+    'LCD_FUNCTION' 
+    'LCD_FUNCTION_2LINES' 
+    'hal_write_command' 
+    'hal_backlight_on' 
+    'hal_backlight_off' 
+    'backlight' 
+    'hal_write_data' 
+    'DEFAULT_I2C_ADDR' 
+    'MASK_RS' 
+    'MASK_RW' 
+    'MASK_E' 
+    'SHIFT_BACKLIGHT' 
+    'SHIFT_DATA' 
+    '__name__' *
+    '__module__' *
+    '__qualname__' *
+    'self' *
+    'num_lines' 
+    'num_columns' 
+    'bytearray' *
+    'nibble' 
+    'cmd' 
+    'data' 
+obj_table: [None]
+simple_name: <module>
+  raw bytecode: 79 18:14:01:2c:2c:4c:43:23:23:23:23:43:80:10:02:2a:01:1b:03:1c:02:16:02:59:80:10:04:2a:01:1b:05:1c:04:16:04:59:80:10:06:2a:01:1b:07:1c:06:16:06:59:a7:16:16:81:16:17:82:16:18:84:16:19:83:16:1a:84:16:1b:54:32:00:10:08:11:02:34:03:16:08:51:63
+  prelude: (4, 0, 0, 0, 0, 0)
+  args: []
+  line info: 2c:2c:4c:43:23:23:23:23:43
+  80          LOAD_CONST_SMALL_INT 0 
+  10:02       LOAD_CONST_STRING LcdApi
+  2a:01       BUILD_TUPLE 1
+  1b:03       IMPORT_NAME lcd_api
+  1c:02       IMPORT_FROM LcdApi
+  16:02       STORE_NAME LcdApi
+  59          POP_TOP 
+  80          LOAD_CONST_SMALL_INT 0 
+  10:04       LOAD_CONST_STRING I2C
+  2a:01       BUILD_TUPLE 1
+  1b:05       IMPORT_NAME machine
+  1c:04       IMPORT_FROM I2C
+  16:04       STORE_NAME I2C
+  59          POP_TOP 
+  80          LOAD_CONST_SMALL_INT 0 
+  10:06       LOAD_CONST_STRING sleep_ms
+  2a:01       BUILD_TUPLE 1
+  1b:07       IMPORT_NAME time
+  1c:06       IMPORT_FROM sleep_ms
+  16:06       STORE_NAME sleep_ms
+  59          POP_TOP 
+  a7          LOAD_CONST_SMALL_INT 39 
+  16:16       STORE_NAME DEFAULT_I2C_ADDR
+  81          LOAD_CONST_SMALL_INT 1 
+  16:17       STORE_NAME MASK_RS
+  82          LOAD_CONST_SMALL_INT 2 
+  16:18       STORE_NAME MASK_RW
+  84          LOAD_CONST_SMALL_INT 4 
+  16:19       STORE_NAME MASK_E
+  83          LOAD_CONST_SMALL_INT 3 
+  16:1a       STORE_NAME SHIFT_BACKLIGHT
+  84          LOAD_CONST_SMALL_INT 4 
+  16:1b       STORE_NAME SHIFT_DATA
+  54          LOAD_BUILD_CLASS 
+  32:00       MAKE_FUNCTION 0
+  10:08       LOAD_CONST_STRING I2cLcd
+  11:02       LOAD_NAME LcdApi
+  34:03       CALL_FUNCTION 3
+  16:08       STORE_NAME I2cLcd
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [I2cLcd]
+simple_name: I2cLcd
+  raw bytecode: 49 00:1a:08:88:0e:84:13:64:60:64:20:64:20:84:0b:11:1c:16:1d:10:08:16:1e:32:00:16:09:32:01:16:0d:32:02:16:12:32:03:16:13:32:04:16:11:32:05:16:15:51:63
+  prelude: (1, 0, 0, 0, 0, 0)
+  args: []
+  line info: 88:0e:84:13:64:60:64:20:64:20:84:0b
+  11:1c       LOAD_NAME __name__
+  16:1d       STORE_NAME __module__
+  10:08       LOAD_CONST_STRING I2cLcd
+  16:1e       STORE_NAME __qualname__
+  32:00       MAKE_FUNCTION 0
+  16:09       STORE_NAME __init__
+  32:01       MAKE_FUNCTION 1
+  16:0d       STORE_NAME hal_write_init_nibble
+  32:02       MAKE_FUNCTION 2
+  16:12       STORE_NAME hal_backlight_on
+  32:03       MAKE_FUNCTION 3
+  16:13       STORE_NAME hal_backlight_off
+  32:04       MAKE_FUNCTION 4
+  16:11       STORE_NAME hal_write_command
+  32:05       MAKE_FUNCTION 5
+  16:15       STORE_NAME hal_write_data
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [__init__, hal_write_init_nibble, hal_backlight_on, hal_backlight_off, hal_write_command, hal_write_data]
+simple_name: __init__
+  raw bytecode: 153 d1:04:30:09:1f:0a:0b:20:21:80:0f:24:24:32:26:29:26:29:26:29:26:29:26:2a:24:25:26:b1:b0:18:0a:b2:b0:18:0b:b0:13:0a:14:0c:b0:13:0b:12:22:80:2b:01:34:01:36:02:59:12:06:94:34:01:59:b0:14:0d:b0:13:0e:36:01:59:12:06:85:34:01:59:b0:14:0d:b0:13:0e:36:01:59:12:06:81:34:01:59:b0:14:0d:b0:13:0e:36:01:59:12:06:81:34:01:59:b0:14:0d:b0:13:0f:36:01:59:12:06:81:34:01:59:12:02:14:09:b0:b3:b4:36:03:59:b0:13:0f:c5:b3:81:d8:44:46:b5:b0:13:10:e0:c5:b0:14:11:b5:36:01:59:51:63
+  prelude: (11, 0, 0, 5, 0, 0)
+  args: ['self', 'i2c', 'i2c_addr', 'num_lines', 'num_columns']
+  line info: 80:0f:24:24:32:26:29:26:29:26:29:26:29:26:2a:24:25:26
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:0a       STORE_ATTR i2c
+  b2          LOAD_FAST 2 
+  b0          LOAD_FAST 0 
+  18:0b       STORE_ATTR i2c_addr
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR i2c
+  14:0c       LOAD_METHOD writeto
+  b0          LOAD_FAST 0 
+  13:0b       LOAD_ATTR i2c_addr
+  12:22       LOAD_GLOBAL bytearray
+  80          LOAD_CONST_SMALL_INT 0 
+  2b:01       BUILD_LIST 1
+  34:01       CALL_FUNCTION 1
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  12:06       LOAD_GLOBAL sleep_ms
+  94          LOAD_CONST_SMALL_INT 20 
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:0d       LOAD_METHOD hal_write_init_nibble
+  b0          LOAD_FAST 0 
+  13:0e       LOAD_ATTR LCD_FUNCTION_RESET
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  12:06       LOAD_GLOBAL sleep_ms
+  85          LOAD_CONST_SMALL_INT 5 
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:0d       LOAD_METHOD hal_write_init_nibble
+  b0          LOAD_FAST 0 
+  13:0e       LOAD_ATTR LCD_FUNCTION_RESET
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  12:06       LOAD_GLOBAL sleep_ms
+  81          LOAD_CONST_SMALL_INT 1 
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:0d       LOAD_METHOD hal_write_init_nibble
+  b0          LOAD_FAST 0 
+  13:0e       LOAD_ATTR LCD_FUNCTION_RESET
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  12:06       LOAD_GLOBAL sleep_ms
+  81          LOAD_CONST_SMALL_INT 1 
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:0d       LOAD_METHOD hal_write_init_nibble
+  b0          LOAD_FAST 0 
+  13:0f       LOAD_ATTR LCD_FUNCTION
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  12:06       LOAD_GLOBAL sleep_ms
+  81          LOAD_CONST_SMALL_INT 1 
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  12:02       LOAD_GLOBAL LcdApi
+  14:09       LOAD_METHOD __init__
+  b0          LOAD_FAST 0 
+  b3          LOAD_FAST 3 
+  b4          LOAD_FAST 4 
+  36:03       CALL_METHOD 3
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:0f       LOAD_ATTR LCD_FUNCTION
+  c5          STORE_FAST 5 
+  b3          LOAD_FAST 3 
+  81          LOAD_CONST_SMALL_INT 1 
+  d8          BINARY_OP 1 __gt__ 
+  44:46       POP_JUMP_IF_FALSE 6
+  b5          LOAD_FAST 5 
+  b0          LOAD_FAST 0 
+  13:10       LOAD_ATTR LCD_FUNCTION_2LINES
+  e0          BINARY_OP 9 __ior__ 
+  c5          STORE_FAST 5 
+  b0          LOAD_FAST 0 
+  14:11       LOAD_METHOD hal_write_command
+  b5          LOAD_FAST 5 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: hal_write_init_nibble
+  raw bytecode: 59 42:0e:0d:1f:23:80:23:29:35:b1:84:f1:8f:ef:12:1b:f0:c2:b0:13:0a:14:0c:b0:13:0b:12:22:b2:12:19:ed:2b:01:34:01:36:02:59:b0:13:0a:14:0c:b0:13:0b:12:22:b2:2b:01:34:01:36:02:59:51:63
+  prelude: (9, 0, 0, 2, 0, 0)
+  args: ['self', 'nibble']
+  line info: 80:23:29:35
+  b1          LOAD_FAST 1 
+  84          LOAD_CONST_SMALL_INT 4 
+  f1          BINARY_OP 26 __rshift__ 
+  8f          LOAD_CONST_SMALL_INT 15 
+  ef          BINARY_OP 24 __and__ 
+  12:1b       LOAD_GLOBAL SHIFT_DATA
+  f0          BINARY_OP 25 __lshift__ 
+  c2          STORE_FAST 2 
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR i2c
+  14:0c       LOAD_METHOD writeto
+  b0          LOAD_FAST 0 
+  13:0b       LOAD_ATTR i2c_addr
+  12:22       LOAD_GLOBAL bytearray
+  b2          LOAD_FAST 2 
+  12:19       LOAD_GLOBAL MASK_E
+  ed          BINARY_OP 22 __or__ 
+  2b:01       BUILD_LIST 1
+  34:01       CALL_FUNCTION 1
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR i2c
+  14:0c       LOAD_METHOD writeto
+  b0          LOAD_FAST 0 
+  13:0b       LOAD_ATTR i2c_addr
+  12:22       LOAD_GLOBAL bytearray
+  b2          LOAD_FAST 2 
+  2b:01       BUILD_LIST 1
+  34:01       CALL_FUNCTION 1
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: hal_backlight_on
+  raw bytecode: 29 31:08:12:1f:80:29:b0:13:0a:14:0c:b0:13:0b:12:22:81:12:1a:f0:2b:01:34:01:36:02:59:51:63
+  prelude: (7, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:29
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR i2c
+  14:0c       LOAD_METHOD writeto
+  b0          LOAD_FAST 0 
+  13:0b       LOAD_ATTR i2c_addr
+  12:22       LOAD_GLOBAL bytearray
+  81          LOAD_CONST_SMALL_INT 1 
+  12:1a       LOAD_GLOBAL SHIFT_BACKLIGHT
+  f0          BINARY_OP 25 __lshift__ 
+  2b:01       BUILD_LIST 1
+  34:01       CALL_FUNCTION 1
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: hal_backlight_off
+  raw bytecode: 26 29:08:13:1f:80:2d:b0:13:0a:14:0c:b0:13:0b:12:22:80:2b:01:34:01:36:02:59:51:63
+  prelude: (6, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:2d
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR i2c
+  14:0c       LOAD_METHOD writeto
+  b0          LOAD_FAST 0 
+  13:0b       LOAD_ATTR i2c_addr
+  12:22       LOAD_GLOBAL bytearray
+  80          LOAD_CONST_SMALL_INT 0 
+  2b:01       BUILD_LIST 1
+  34:01       CALL_FUNCTION 1
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: hal_write_command
+  raw bytecode: 135 42:18:11:1f:24:80:31:30:35:32:2e:35:32:25:b0:13:14:12:1a:f0:b1:84:f1:8f:ef:12:1b:f0:ed:c2:b0:13:0a:14:0c:b0:13:0b:12:22:b2:12:19:ed:2b:01:34:01:36:02:59:b0:13:0a:14:0c:b0:13:0b:12:22:b2:2b:01:34:01:36:02:59:b0:13:14:12:1a:f0:b1:8f:ef:12:1b:f0:ed:c2:b0:13:0a:14:0c:b0:13:0b:12:22:b2:12:19:ed:2b:01:34:01:36:02:59:b0:13:0a:14:0c:b0:13:0b:12:22:b2:2b:01:34:01:36:02:59:b1:83:da:44:46:12:06:85:34:01:59:51:63
+  prelude: (9, 0, 0, 2, 0, 0)
+  args: ['self', 'cmd']
+  line info: 80:31:30:35:32:2e:35:32:25
+  b0          LOAD_FAST 0 
+  13:14       LOAD_ATTR backlight
+  12:1a       LOAD_GLOBAL SHIFT_BACKLIGHT
+  f0          BINARY_OP 25 __lshift__ 
+  b1          LOAD_FAST 1 
+  84          LOAD_CONST_SMALL_INT 4 
+  f1          BINARY_OP 26 __rshift__ 
+  8f          LOAD_CONST_SMALL_INT 15 
+  ef          BINARY_OP 24 __and__ 
+  12:1b       LOAD_GLOBAL SHIFT_DATA
+  f0          BINARY_OP 25 __lshift__ 
+  ed          BINARY_OP 22 __or__ 
+  c2          STORE_FAST 2 
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR i2c
+  14:0c       LOAD_METHOD writeto
+  b0          LOAD_FAST 0 
+  13:0b       LOAD_ATTR i2c_addr
+  12:22       LOAD_GLOBAL bytearray
+  b2          LOAD_FAST 2 
+  12:19       LOAD_GLOBAL MASK_E
+  ed          BINARY_OP 22 __or__ 
+  2b:01       BUILD_LIST 1
+  34:01       CALL_FUNCTION 1
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR i2c
+  14:0c       LOAD_METHOD writeto
+  b0          LOAD_FAST 0 
+  13:0b       LOAD_ATTR i2c_addr
+  12:22       LOAD_GLOBAL bytearray
+  b2          LOAD_FAST 2 
+  2b:01       BUILD_LIST 1
+  34:01       CALL_FUNCTION 1
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:14       LOAD_ATTR backlight
+  12:1a       LOAD_GLOBAL SHIFT_BACKLIGHT
+  f0          BINARY_OP 25 __lshift__ 
+  b1          LOAD_FAST 1 
+  8f          LOAD_CONST_SMALL_INT 15 
+  ef          BINARY_OP 24 __and__ 
+  12:1b       LOAD_GLOBAL SHIFT_DATA
+  f0          BINARY_OP 25 __lshift__ 
+  ed          BINARY_OP 22 __or__ 
+  c2          STORE_FAST 2 
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR i2c
+  14:0c       LOAD_METHOD writeto
+  b0          LOAD_FAST 0 
+  13:0b       LOAD_ATTR i2c_addr
+  12:22       LOAD_GLOBAL bytearray
+  b2          LOAD_FAST 2 
+  12:19       LOAD_GLOBAL MASK_E
+  ed          BINARY_OP 22 __or__ 
+  2b:01       BUILD_LIST 1
+  34:01       CALL_FUNCTION 1
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR i2c
+  14:0c       LOAD_METHOD writeto
+  b0          LOAD_FAST 0 
+  13:0b       LOAD_ATTR i2c_addr
+  12:22       LOAD_GLOBAL bytearray
+  b2          LOAD_FAST 2 
+  2b:01       BUILD_LIST 1
+  34:01       CALL_FUNCTION 1
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b1          LOAD_FAST 1 
+  83          LOAD_CONST_SMALL_INT 3 
+  da          BINARY_OP 3 __le__ 
+  44:46       POP_JUMP_IF_FALSE 6
+  12:06       LOAD_GLOBAL sleep_ms
+  85          LOAD_CONST_SMALL_INT 5 
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: hal_write_data
+  raw bytecode: 128 42:14:15:1f:25:80:3c:33:35:32:31:35:12:17:b0:13:14:12:1a:f0:ed:b1:84:f1:8f:ef:12:1b:f0:ed:c2:b0:13:0a:14:0c:b0:13:0b:12:22:b2:12:19:ed:2b:01:34:01:36:02:59:b0:13:0a:14:0c:b0:13:0b:12:22:b2:2b:01:34:01:36:02:59:12:17:b0:13:14:12:1a:f0:ed:b1:8f:ef:12:1b:f0:ed:c2:b0:13:0a:14:0c:b0:13:0b:12:22:b2:12:19:ed:2b:01:34:01:36:02:59:b0:13:0a:14:0c:b0:13:0b:12:22:b2:2b:01:34:01:36:02:59:51:63
+  prelude: (9, 0, 0, 2, 0, 0)
+  args: ['self', 'data']
+  line info: 80:3c:33:35:32:31:35
+  12:17       LOAD_GLOBAL MASK_RS
+  b0          LOAD_FAST 0 
+  13:14       LOAD_ATTR backlight
+  12:1a       LOAD_GLOBAL SHIFT_BACKLIGHT
+  f0          BINARY_OP 25 __lshift__ 
+  ed          BINARY_OP 22 __or__ 
+  b1          LOAD_FAST 1 
+  84          LOAD_CONST_SMALL_INT 4 
+  f1          BINARY_OP 26 __rshift__ 
+  8f          LOAD_CONST_SMALL_INT 15 
+  ef          BINARY_OP 24 __and__ 
+  12:1b       LOAD_GLOBAL SHIFT_DATA
+  f0          BINARY_OP 25 __lshift__ 
+  ed          BINARY_OP 22 __or__ 
+  c2          STORE_FAST 2 
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR i2c
+  14:0c       LOAD_METHOD writeto
+  b0          LOAD_FAST 0 
+  13:0b       LOAD_ATTR i2c_addr
+  12:22       LOAD_GLOBAL bytearray
+  b2          LOAD_FAST 2 
+  12:19       LOAD_GLOBAL MASK_E
+  ed          BINARY_OP 22 __or__ 
+  2b:01       BUILD_LIST 1
+  34:01       CALL_FUNCTION 1
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR i2c
+  14:0c       LOAD_METHOD writeto
+  b0          LOAD_FAST 0 
+  13:0b       LOAD_ATTR i2c_addr
+  12:22       LOAD_GLOBAL bytearray
+  b2          LOAD_FAST 2 
+  2b:01       BUILD_LIST 1
+  34:01       CALL_FUNCTION 1
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  12:17       LOAD_GLOBAL MASK_RS
+  b0          LOAD_FAST 0 
+  13:14       LOAD_ATTR backlight
+  12:1a       LOAD_GLOBAL SHIFT_BACKLIGHT
+  f0          BINARY_OP 25 __lshift__ 
+  ed          BINARY_OP 22 __or__ 
+  b1          LOAD_FAST 1 
+  8f          LOAD_CONST_SMALL_INT 15 
+  ef          BINARY_OP 24 __and__ 
+  12:1b       LOAD_GLOBAL SHIFT_DATA
+  f0          BINARY_OP 25 __lshift__ 
+  ed          BINARY_OP 22 __or__ 
+  c2          STORE_FAST 2 
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR i2c
+  14:0c       LOAD_METHOD writeto
+  b0          LOAD_FAST 0 
+  13:0b       LOAD_ATTR i2c_addr
+  12:22       LOAD_GLOBAL bytearray
+  b2          LOAD_FAST 2 
+  12:19       LOAD_GLOBAL MASK_E
+  ed          BINARY_OP 22 __or__ 
+  2b:01       BUILD_LIST 1
+  34:01       CALL_FUNCTION 1
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR i2c
+  14:0c       LOAD_METHOD writeto
+  b0          LOAD_FAST 0 
+  13:0b       LOAD_ATTR i2c_addr
+  12:22       LOAD_GLOBAL bytearray
+  b2          LOAD_FAST 2 
+  2b:01       BUILD_LIST 1
+  34:01       CALL_FUNCTION 1
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []

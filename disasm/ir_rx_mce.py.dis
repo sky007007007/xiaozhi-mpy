@@ -1,0 +1,381 @@
+mpy_source_file: extracted/ir_rx_mce.py.mpy
+source_file: ir_rx/mce.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[36] (* for static qstrs):
+    'ir_rx/mce.py' 
+    '<module>' *
+    'ticks_us' 
+    'ticks_diff' 
+    'utime' 
+    'IR_RX' 
+    'ir_rx' 
+    'MCE' 
+    '__init__' *
+    'decode' 
+    '_times' 
+    'BADSTART' 
+    'edge' 
+    'OVERRUN' 
+    'BADBLOCK' 
+    'verbose' 
+    'x' 
+    'BADDATA' 
+    'args' *
+    'do_callback' 
+    'check' 
+    'init_cs' 
+    '__name__' *
+    '__module__' *
+    '__qualname__' *
+    '*' *
+    'self' *
+    'pin' 
+    'callback' 
+    'super' *
+    '_' *
+    'RuntimeError' *
+    'print' *
+    'int' *
+    'bin' 
+    'v' 
+obj_table: ['Bad block 3 Width']
+simple_name: <module>
+  raw bytecode: 50 18:0a:01:80:08:32:4c:80:10:02:10:03:2a:02:1b:04:1c:02:16:02:1c:03:16:03:59:80:10:05:2a:01:1b:06:1c:05:16:05:59:54:32:00:10:07:11:05:34:03:16:07:51:63
+  prelude: (4, 0, 0, 0, 0, 0)
+  args: []
+  line info: 80:08:32:4c
+  80          LOAD_CONST_SMALL_INT 0 
+  10:02       LOAD_CONST_STRING ticks_us
+  10:03       LOAD_CONST_STRING ticks_diff
+  2a:02       BUILD_TUPLE 2
+  1b:04       IMPORT_NAME utime
+  1c:02       IMPORT_FROM ticks_us
+  16:02       STORE_NAME ticks_us
+  1c:03       IMPORT_FROM ticks_diff
+  16:03       STORE_NAME ticks_diff
+  59          POP_TOP 
+  80          LOAD_CONST_SMALL_INT 0 
+  10:05       LOAD_CONST_STRING IR_RX
+  2a:01       BUILD_TUPLE 1
+  1b:06       IMPORT_NAME ir_rx
+  1c:05       IMPORT_FROM IR_RX
+  16:05       STORE_NAME IR_RX
+  59          POP_TOP 
+  54          LOAD_BUILD_CLASS 
+  32:00       MAKE_FUNCTION 0
+  10:07       LOAD_CONST_STRING MCE
+  11:05       LOAD_NAME IR_RX
+  34:03       CALL_FUNCTION 3
+  16:07       STORE_NAME MCE
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [MCE]
+simple_name: MCE
+  raw bytecode: 32 08:0d:07:88:0c:23:66:20:00:11:16:16:17:10:07:16:18:84:16:15:b0:20:00:01:16:08:32:01:16:09:b0:63
+  prelude: (2, 0, 0, 0, 0, 0)
+  args: []
+  line info: 88:0c:23:66:20:00
+  11:16       LOAD_NAME __name__
+  16:17       STORE_NAME __module__
+  10:07       LOAD_CONST_STRING MCE
+  16:18       STORE_NAME __qualname__
+  84          LOAD_CONST_SMALL_INT 4 
+  16:15       STORE_NAME init_cs
+  b0          LOAD_FAST 0 
+  20:00:01    MAKE_CLOSURE 0
+  16:08       STORE_NAME __init__
+  32:01       MAKE_FUNCTION 1
+  16:09       STORE_NAME decode
+  b0          LOAD_FAST 0 
+  63          RETURN_VALUE 
+  children: [__init__, decode]
+simple_name: __init__
+  raw bytecode: 30 e0:84:80:40:0e:08:19:1a:1b:1c:80:0f:12:1d:25:00:b1:15:08:b2:a2:99:b3:b4:90:37:05:59:51:63
+  prelude: (13, 0, 4, 4, 0, 0)
+  args: ['*', 'self', 'pin', 'callback']
+  line info: 80:0f
+  12:1d       LOAD_GLOBAL super
+  25:00       LOAD_DEREF 0
+  b1          LOAD_FAST 1 
+  15:08       LOAD_SUPER_METHOD __init__
+  b2          LOAD_FAST 2 
+  a2          LOAD_CONST_SMALL_INT 34 
+  99          LOAD_CONST_SMALL_INT 25 
+  b3          LOAD_FAST 3 
+  b4          LOAD_FAST 4 
+  90          LOAD_CONST_SMALL_INT 16 
+  37:05       CALL_METHOD_VAR_KW 5
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: decode
+  raw bytecode: 403 aa:12:4f:09:1a:1e:80:12:85:0b:23:31:31:1f:27:29:25:2f:54:22:22:22:22:46:27:49:33:33:31:29:2a:26:2a:24:4f:30:26:29:27:24:71:55:00:b0:20:00:01:c2:48:b6:02:12:03:25:00:13:0a:81:55:25:00:13:0a:80:55:34:02:c3:12:03:25:00:13:0a:82:55:25:00:13:0a:81:55:34:02:c4:22:8e:08:b3:57:5b:d7:46:06:22:91:18:d7:42:42:5a:59:44:53:22:86:20:b4:57:5b:d7:46:06:22:89:30:d7:42:42:5a:59:43:49:12:1f:25:00:13:0b:34:01:65:25:00:13:0c:c5:8e:b5:57:5b:da:46:04:a2:da:42:42:5a:59:43:54:12:1f:b5:9c:d8:44:46:25:00:13:0d:42:44:25:00:13:0b:34:01:65:81:c6:81:c7:80:c8:82:c9:80:42:f8:80:57:c1:b9:b5:82:f3:d8:44:49:12:1f:25:00:13:0e:34:01:65:12:03:25:00:13:0a:b9:81:f2:55:25:00:13:0a:b9:55:34:02:ca:22:81:7a:ba:57:5b:d7:46:06:22:8a:46:d7:42:42:5a:59:43:5a:25:00:13:0f:46:0a:12:20:23:00:ba:10:10:b9:34:04:59:12:1f:25:00:13:0e:34:01:65:12:21:ba:22:85:6e:d7:34:01:cb:b7:bb:81:ee:e1:c7:b8:b7:44:43:b6:42:41:80:e0:c8:b6:81:e3:c6:b9:81:bb:f2:e5:c9:81:e5:57:90:d7:43:82:7f:59:25:00:13:0f:46:09:12:20:12:22:b8:34:01:34:01:59:b2:b8:34:01:43:49:12:1f:25:00:13:11:34:01:65:b8:86:f1:22:3f:ef:cc:b8:8f:ef:cd:b8:84:f1:83:ef:ce:4a:1e:57:12:1f:df:44:57:cf:49:0d:bf:13:12:80:55:80:80:5b:5a:cc:cd:ce:51:51:cf:28:0f:5d:4a:01:5d:25:00:14:13:bc:bd:be:36:03:59:51:63
+  prelude: (22, 2, 0, 2, 0, 0)
+  args: ['self', '_']
+  line info: 80:12:85:0b:23:31:31:1f:27:29:25:2f:54:22:22:22:22:46:27:49:33:33:31:29:2a:26:2a:24:4f:30:26:29:27:24:71:55:00
+  b0          LOAD_FAST 0 
+  20:00:01    MAKE_CLOSURE 0
+  c2          STORE_FAST 2 
+  48:b6:02    SETUP_EXCEPT 310
+  12:03       LOAD_GLOBAL ticks_diff
+  25:00       LOAD_DEREF 0
+  13:0a       LOAD_ATTR _times
+  81          LOAD_CONST_SMALL_INT 1 
+  55          LOAD_SUBSCR 
+  25:00       LOAD_DEREF 0
+  13:0a       LOAD_ATTR _times
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  34:02       CALL_FUNCTION 2
+  c3          STORE_FAST 3 
+  12:03       LOAD_GLOBAL ticks_diff
+  25:00       LOAD_DEREF 0
+  13:0a       LOAD_ATTR _times
+  82          LOAD_CONST_SMALL_INT 2 
+  55          LOAD_SUBSCR 
+  25:00       LOAD_DEREF 0
+  13:0a       LOAD_ATTR _times
+  81          LOAD_CONST_SMALL_INT 1 
+  55          LOAD_SUBSCR 
+  34:02       CALL_FUNCTION 2
+  c4          STORE_FAST 4 
+  22:8e:08    LOAD_CONST_SMALL_INT 1800
+  b3          LOAD_FAST 3 
+  57          DUP_TOP 
+  5b          ROT_THREE 
+  d7          BINARY_OP 0 __lt__ 
+  46:06       JUMP_IF_FALSE_OR_POP 6
+  22:91:18    LOAD_CONST_SMALL_INT 2200
+  d7          BINARY_OP 0 __lt__ 
+  42:42       JUMP 2
+  5a          ROT_TWO 
+  59          POP_TOP 
+  44:53       POP_JUMP_IF_FALSE 19
+  22:86:20    LOAD_CONST_SMALL_INT 800
+  b4          LOAD_FAST 4 
+  57          DUP_TOP 
+  5b          ROT_THREE 
+  d7          BINARY_OP 0 __lt__ 
+  46:06       JUMP_IF_FALSE_OR_POP 6
+  22:89:30    LOAD_CONST_SMALL_INT 1200
+  d7          BINARY_OP 0 __lt__ 
+  42:42       JUMP 2
+  5a          ROT_TWO 
+  59          POP_TOP 
+  43:49       POP_JUMP_IF_TRUE 9
+  12:1f       LOAD_GLOBAL RuntimeError
+  25:00       LOAD_DEREF 0
+  13:0b       LOAD_ATTR BADSTART
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  25:00       LOAD_DEREF 0
+  13:0c       LOAD_ATTR edge
+  c5          STORE_FAST 5 
+  8e          LOAD_CONST_SMALL_INT 14 
+  b5          LOAD_FAST 5 
+  57          DUP_TOP 
+  5b          ROT_THREE 
+  da          BINARY_OP 3 __le__ 
+  46:04       JUMP_IF_FALSE_OR_POP 4
+  a2          LOAD_CONST_SMALL_INT 34 
+  da          BINARY_OP 3 __le__ 
+  42:42       JUMP 2
+  5a          ROT_TWO 
+  59          POP_TOP 
+  43:54       POP_JUMP_IF_TRUE 20
+  12:1f       LOAD_GLOBAL RuntimeError
+  b5          LOAD_FAST 5 
+  9c          LOAD_CONST_SMALL_INT 28 
+  d8          BINARY_OP 1 __gt__ 
+  44:46       POP_JUMP_IF_FALSE 6
+  25:00       LOAD_DEREF 0
+  13:0d       LOAD_ATTR OVERRUN
+  42:44       JUMP 4
+  25:00       LOAD_DEREF 0
+  13:0b       LOAD_ATTR BADSTART
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  81          LOAD_CONST_SMALL_INT 1 
+  c6          STORE_FAST 6 
+  81          LOAD_CONST_SMALL_INT 1 
+  c7          STORE_FAST 7 
+  80          LOAD_CONST_SMALL_INT 0 
+  c8          STORE_FAST 8 
+  82          LOAD_CONST_SMALL_INT 2 
+  c9          STORE_FAST 9 
+  80          LOAD_CONST_SMALL_INT 0 
+  42:f8:80    JUMP 120
+  57          DUP_TOP 
+  c1          STORE_FAST 1 
+  b9          LOAD_FAST 9 
+  b5          LOAD_FAST 5 
+  82          LOAD_CONST_SMALL_INT 2 
+  f3          BINARY_OP 28 __sub__ 
+  d8          BINARY_OP 1 __gt__ 
+  44:49       POP_JUMP_IF_FALSE 9
+  12:1f       LOAD_GLOBAL RuntimeError
+  25:00       LOAD_DEREF 0
+  13:0e       LOAD_ATTR BADBLOCK
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  12:03       LOAD_GLOBAL ticks_diff
+  25:00       LOAD_DEREF 0
+  13:0a       LOAD_ATTR _times
+  b9          LOAD_FAST 9 
+  81          LOAD_CONST_SMALL_INT 1 
+  f2          BINARY_OP 27 __add__ 
+  55          LOAD_SUBSCR 
+  25:00       LOAD_DEREF 0
+  13:0a       LOAD_ATTR _times
+  b9          LOAD_FAST 9 
+  55          LOAD_SUBSCR 
+  34:02       CALL_FUNCTION 2
+  ca          STORE_FAST 10 
+  22:81:7a    LOAD_CONST_SMALL_INT 250
+  ba          LOAD_FAST 10 
+  57          DUP_TOP 
+  5b          ROT_THREE 
+  d7          BINARY_OP 0 __lt__ 
+  46:06       JUMP_IF_FALSE_OR_POP 6
+  22:8a:46    LOAD_CONST_SMALL_INT 1350
+  d7          BINARY_OP 0 __lt__ 
+  42:42       JUMP 2
+  5a          ROT_TWO 
+  59          POP_TOP 
+  43:5a       POP_JUMP_IF_TRUE 26
+  25:00       LOAD_DEREF 0
+  13:0f       LOAD_ATTR verbose
+  46:0a       JUMP_IF_FALSE_OR_POP 10
+  12:20       LOAD_GLOBAL print
+  23:00       LOAD_CONST_OBJ 'Bad block 3 Width'
+  ba          LOAD_FAST 10 
+  10:10       LOAD_CONST_STRING x
+  b9          LOAD_FAST 9 
+  34:04       CALL_FUNCTION 4
+  59          POP_TOP 
+  12:1f       LOAD_GLOBAL RuntimeError
+  25:00       LOAD_DEREF 0
+  13:0e       LOAD_ATTR BADBLOCK
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  12:21       LOAD_GLOBAL int
+  ba          LOAD_FAST 10 
+  22:85:6e    LOAD_CONST_SMALL_INT 750
+  d7          BINARY_OP 0 __lt__ 
+  34:01       CALL_FUNCTION 1
+  cb          STORE_FAST 11 
+  b7          LOAD_FAST 7 
+  bb          LOAD_FAST 11 
+  81          LOAD_CONST_SMALL_INT 1 
+  ee          BINARY_OP 23 __xor__ 
+  e1          BINARY_OP 10 __ixor__ 
+  c7          STORE_FAST 7 
+  b8          LOAD_FAST 8 
+  b7          LOAD_FAST 7 
+  44:43       POP_JUMP_IF_FALSE 3
+  b6          LOAD_FAST 6 
+  42:41       JUMP 1
+  80          LOAD_CONST_SMALL_INT 0 
+  e0          BINARY_OP 9 __ior__ 
+  c8          STORE_FAST 8 
+  b6          LOAD_FAST 6 
+  81          LOAD_CONST_SMALL_INT 1 
+  e3          BINARY_OP 12 __ilshift__ 
+  c6          STORE_FAST 6 
+  b9          LOAD_FAST 9 
+  81          LOAD_CONST_SMALL_INT 1 
+  bb          LOAD_FAST 11 
+  f2          BINARY_OP 27 __add__ 
+  e5          BINARY_OP 14 __iadd__ 
+  c9          STORE_FAST 9 
+  81          LOAD_CONST_SMALL_INT 1 
+  e5          BINARY_OP 14 __iadd__ 
+  57          DUP_TOP 
+  90          LOAD_CONST_SMALL_INT 16 
+  d7          BINARY_OP 0 __lt__ 
+  43:82:7f    POP_JUMP_IF_TRUE -126
+  59          POP_TOP 
+  25:00       LOAD_DEREF 0
+  13:0f       LOAD_ATTR verbose
+  46:09       JUMP_IF_FALSE_OR_POP 9
+  12:20       LOAD_GLOBAL print
+  12:22       LOAD_GLOBAL bin
+  b8          LOAD_FAST 8 
+  34:01       CALL_FUNCTION 1
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  b2          LOAD_FAST 2 
+  b8          LOAD_FAST 8 
+  34:01       CALL_FUNCTION 1
+  43:49       POP_JUMP_IF_TRUE 9
+  12:1f       LOAD_GLOBAL RuntimeError
+  25:00       LOAD_DEREF 0
+  13:11       LOAD_ATTR BADDATA
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  b8          LOAD_FAST 8 
+  86          LOAD_CONST_SMALL_INT 6 
+  f1          BINARY_OP 26 __rshift__ 
+  22:3f       LOAD_CONST_SMALL_INT 63
+  ef          BINARY_OP 24 __and__ 
+  cc          STORE_FAST 12 
+  b8          LOAD_FAST 8 
+  8f          LOAD_CONST_SMALL_INT 15 
+  ef          BINARY_OP 24 __and__ 
+  cd          STORE_FAST 13 
+  b8          LOAD_FAST 8 
+  84          LOAD_CONST_SMALL_INT 4 
+  f1          BINARY_OP 26 __rshift__ 
+  83          LOAD_CONST_SMALL_INT 3 
+  ef          BINARY_OP 24 __and__ 
+  ce          STORE_FAST 14 
+  4a:1e       POP_EXCEPT_JUMP 30
+  57          DUP_TOP 
+  12:1f       LOAD_GLOBAL RuntimeError
+  df          BINARY_OP 8 <exception match> 
+  44:57       POP_JUMP_IF_FALSE 23
+  cf          STORE_FAST 15 
+  49:0d       SETUP_FINALLY 13
+  bf          LOAD_FAST 15 
+  13:12       LOAD_ATTR args
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  80          LOAD_CONST_SMALL_INT 0 
+  80          LOAD_CONST_SMALL_INT 0 
+  5b          ROT_THREE 
+  5a          ROT_TWO 
+  cc          STORE_FAST 12 
+  cd          STORE_FAST 13 
+  ce          STORE_FAST 14 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  cf          STORE_FAST 15 
+  28:0f       DELETE_FAST 15
+  5d          END_FINALLY 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  25:00       LOAD_DEREF 0
+  14:13       LOAD_METHOD do_callback
+  bc          LOAD_FAST 12 
+  bd          LOAD_FAST 13 
+  be          LOAD_FAST 14 
+  36:03       CALL_METHOD 3
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [check]
+simple_name: check
+  raw bytecode: 25 3a:1a:14:19:23:80:13:28:22:24:25:25:25:24:2c:25:00:13:15:7f:d9:44:42:52:63
+  prelude: (8, 0, 0, 2, 0, 0)
+  args: ['*', 'v']
+  line info: 80:13:28:22:24:25:25:25:24:2c
+  25:00       LOAD_DEREF 0
+  13:15       LOAD_ATTR init_cs
+  7f          LOAD_CONST_SMALL_INT -1 
+  d9          BINARY_OP 2 __eq__ 
+  44:42       POP_JUMP_IF_FALSE 2
+  52          LOAD_CONST_TRUE 
+  63          RETURN_VALUE 
+  children: []

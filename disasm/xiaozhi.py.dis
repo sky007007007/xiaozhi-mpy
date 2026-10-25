@@ -1,0 +1,1429 @@
+mpy_source_file: extracted/xiaozhi.py.mpy
+source_file: xiaozhi.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[171] (* for static qstrs):
+    'xiaozhi.py' 
+    '<module>' *
+    'json' 
+    'time' 
+    'xiaozhi_native' 
+    'connecting' 
+    'ready' 
+    'listening' 
+    'speaking' 
+    'processing' 
+    'XiaoZhiError' 
+    'XiaoZhi' 
+    'status_led' 
+    'led_blink' 
+    'apply_pins' 
+    'mic_on' 
+    'spk_on' 
+    'mic' 
+    'spk' 
+    'led' 
+    'set_pins' 
+    '[xz] pins:' 
+    'log' 
+    'connect_wifi' 
+    'network' 
+    'WLAN' 
+    'STA_IF' 
+    'active' 
+    'sleep_ms' 
+    'isconnected' 
+    'config' 
+    'essid' 
+    'disconnect' 
+    'connect' 
+    'ticks_add' 
+    'ticks_ms' 
+    'ticks_diff' 
+    'pm' 
+    'PM_NONE' 
+    '_loads' 
+    'loads' 
+    '_native_state' 
+    'idle' 
+    'goodbye' 
+    '__init__' *
+    '_handlers' 
+    '_connected' 
+    '_ready_seen' 
+    '_state' 
+    'get' *
+    'ota_url' 
+    '_ota_url' 
+    'ws_url' 
+    '_ws_url' 
+    'token' 
+    '_token' 
+    'volume' 
+    '_volume' 
+    '_started' 
+    '_mcp_ready' 
+    '_install_native_handlers' 
+    'on' 
+    'state' 
+    '_on_native_state' 
+    'wake' 
+    '_on_native_wake' 
+    'stt' 
+    '_on_native_stt' 
+    'llm' 
+    '_on_native_llm' 
+    'tts' 
+    '_on_native_tts' 
+    'mcp' 
+    '_on_native_mcp' 
+    'error' 
+    '_on_native_error' 
+    'binding' 
+    '_on_native_binding' 
+    'setdefault' *
+    'append' *
+    'off' 
+    'remove' *
+    '_emit' 
+    '_emit_error' 
+    'where' 
+    'exc' 
+    'connected' 
+    'sleep' 
+    'dismissed' 
+    'status' 
+    'reason' 
+    'prev' 
+    'q1' 
+    'word' 
+    'asr' 
+    'text' 
+    'payload' 
+    'native' 
+    'code' 
+    'message' 
+    'init' 
+    '_native_init' 
+    'start' *
+    'stop' *
+    'start_listening' 
+    'listen' 
+    'auto' 
+    'manual' 
+    'stop_listening' 
+    'abort' 
+    'send_text' 
+    'set_volume' 
+    'tool' 
+    'register_tool' 
+    'object' *
+    'type' *
+    'properties' 
+    'dumps' 
+    'mcp_tool' 
+    'close' *
+    'deco' 
+    '_decorator' 
+    '_call' 
+    'mcp_error' 
+    'ok' 
+    'mcp_reply' 
+    '_native' 
+    'DEFAULT_OTA_URL' 
+    'DISCONNECTED' 
+    'CONNECTING' 
+    'READY' 
+    'LISTENING' 
+    'SPEAKING' 
+    'PROCESSING' 
+    '_EVENTS' 
+    'Exception' *
+    'mode' 
+    'color' 
+    'period_ms' 
+    'int' *
+    'print' *
+    '__name__' *
+    '__module__' *
+    '__qualname__' *
+    'ssid' 
+    'password' 
+    'timeout_ms' 
+    'fallback' 
+    'isinstance' *
+    'dict' *
+    'value' *
+    'property' 
+    'self' *
+    'max' 
+    'min' 
+    'event' 
+    'cb' 
+    'msg' 
+    'tuple' *
+    'str' *
+    'bool' *
+    'automatic' 
+    'name' 
+    'description' 
+    'input_schema' 
+    'handler' 
+    '*' *
+    'f' 
+    'func' 
+    'pair' 
+    'args' *
+obj_table: ['https://api.tenclass.net/xiaozhi/ota/', 'disconnected', ('status', 'connected', 'disconnected', 'asr', 'llm', 'tts', 'say', 'mcp', 'tool', 'system', 'server', 'error', 'message', 'binding', 'wake'), '[xiaozhi] warning: unknown event %r', '[xiaozhi] event %s: %s', 'not connected', '[mcp] tool %s: %s']
+simple_name: <module>
+  raw bytecode: 157 20:40:01:60:60:26:46:66:84:08:84:09:8c:14:64:20:44:25:25:25:25:25:45:20:65:60:6c:20:8b:1b:84:08:84:0b:80:51:1b:02:16:02:80:51:1b:03:16:03:80:51:1b:04:16:7e:32:00:16:0c:32:01:16:0d:51:51:51:51:51:2a:05:53:33:02:16:0e:32:03:16:16:23:00:16:7f:23:01:16:81:00:10:05:16:81:01:10:06:16:81:02:10:07:16:81:03:10:08:16:81:04:10:09:16:81:05:23:02:16:81:06:54:32:04:10:0a:11:81:07:34:03:16:0a:22:81:ea:30:2a:01:53:33:05:16:17:32:06:16:27:32:07:16:29:54:32:08:10:0b:34:02:16:0b:51:63
+  prelude: (5, 0, 0, 0, 0, 0)
+  args: []
+  line info: 60:60:26:46:66:84:08:84:09:8c:14:64:20:44:25:25:25:25:25:45:20:65:60:6c:20:8b:1b:84:08:84:0b
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:02       IMPORT_NAME json
+  16:02       STORE_NAME json
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:03       IMPORT_NAME time
+  16:03       STORE_NAME time
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:04       IMPORT_NAME xiaozhi_native
+  16:7e       STORE_NAME _native
+  32:00       MAKE_FUNCTION 0
+  16:0c       STORE_NAME status_led
+  32:01       MAKE_FUNCTION 1
+  16:0d       STORE_NAME led_blink
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  2a:05       BUILD_TUPLE 5
+  53          LOAD_NULL 
+  33:02       MAKE_FUNCTION_DEFARGS 2
+  16:0e       STORE_NAME apply_pins
+  32:03       MAKE_FUNCTION 3
+  16:16       STORE_NAME log
+  23:00       LOAD_CONST_OBJ 'https://api.tenclass.net/xiaozhi/ota/'
+  16:7f       STORE_NAME DEFAULT_OTA_URL
+  23:01       LOAD_CONST_OBJ 'disconnected'
+  16:81:00    STORE_NAME DISCONNECTED
+  10:05       LOAD_CONST_STRING connecting
+  16:81:01    STORE_NAME CONNECTING
+  10:06       LOAD_CONST_STRING ready
+  16:81:02    STORE_NAME READY
+  10:07       LOAD_CONST_STRING listening
+  16:81:03    STORE_NAME LISTENING
+  10:08       LOAD_CONST_STRING speaking
+  16:81:04    STORE_NAME SPEAKING
+  10:09       LOAD_CONST_STRING processing
+  16:81:05    STORE_NAME PROCESSING
+  23:02       LOAD_CONST_OBJ ('status', 'connected', 'disconnected', 'asr', 'llm', 'tts', 'say', 'mcp', 'tool', 'system', 'server', 'error', 'message', 'binding', 'wake')
+  16:81:06    STORE_NAME _EVENTS
+  54          LOAD_BUILD_CLASS 
+  32:04       MAKE_FUNCTION 4
+  10:0a       LOAD_CONST_STRING XiaoZhiError
+  11:81:07    LOAD_NAME Exception
+  34:03       CALL_FUNCTION 3
+  16:0a       STORE_NAME XiaoZhiError
+  22:81:ea:30 LOAD_CONST_SMALL_INT 30000
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:05       MAKE_FUNCTION_DEFARGS 5
+  16:17       STORE_NAME connect_wifi
+  32:06       MAKE_FUNCTION 6
+  16:27       STORE_NAME _loads
+  32:07       MAKE_FUNCTION 7
+  16:29       STORE_NAME _native_state
+  54          LOAD_BUILD_CLASS 
+  32:08       MAKE_FUNCTION 8
+  10:0b       LOAD_CONST_STRING XiaoZhi
+  34:02       CALL_FUNCTION 2
+  16:0b       STORE_NAME XiaoZhi
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [status_led, led_blink, apply_pins, log, XiaoZhiError, connect_wifi, _loads, _native_state, XiaoZhi]
+simple_name: status_led
+  raw bytecode: 35 35:10:0c:81:08:80:0d:20:22:52:48:0a:12:7e:14:0c:b0:36:01:59:4a:0b:57:12:81:07:df:44:43:59:4a:01:5d:51:63
+  prelude: (7, 1, 0, 1, 0, 0)
+  args: ['mode']
+  line info: 80:0d:20:22:52
+  48:0a       SETUP_EXCEPT 10
+  12:7e       LOAD_GLOBAL _native
+  14:0c       LOAD_METHOD status_led
+  b0          LOAD_FAST 0 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  4a:0b       POP_EXCEPT_JUMP 11
+  57          DUP_TOP 
+  12:81:07    LOAD_GLOBAL Exception
+  df          BINARY_OP 8 <exception match> 
+  44:43       POP_JUMP_IF_FALSE 3
+  59          POP_TOP 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: led_blink
+  raw bytecode: 43 3e:14:0d:81:09:81:0a:80:15:40:22:58:48:10:12:7e:14:0d:b0:12:81:0b:b1:34:01:36:02:59:4a:0b:57:12:81:07:df:44:43:59:4a:01:5d:51:63
+  prelude: (8, 1, 0, 2, 0, 0)
+  args: ['color', 'period_ms']
+  line info: 80:15:40:22:58
+  48:10       SETUP_EXCEPT 16
+  12:7e       LOAD_GLOBAL _native
+  14:0d       LOAD_METHOD led_blink
+  b0          LOAD_FAST 0 
+  12:81:0b    LOAD_GLOBAL int
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  4a:0b       POP_EXCEPT_JUMP 11
+  57          DUP_TOP 
+  12:81:07    LOAD_GLOBAL Exception
+  df          BINARY_OP 8 <exception match> 
+  44:43       POP_JUMP_IF_FALSE 3
+  59          POP_TOP 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: apply_pins
+  raw bytecode: 125 e1:87:80:01:26:0e:11:12:13:0f:10:80:1e:60:60:37:26:25:26:25:26:25:22:57:2c:02:b3:44:43:81:42:41:80:10:0f:62:b4:44:43:81:42:41:80:10:10:62:c5:b0:51:de:d3:44:45:b0:b5:10:11:56:b1:51:de:d3:44:45:b1:b5:10:12:56:b2:51:de:d3:44:45:b2:b5:10:13:56:48:0d:12:7e:14:14:53:b5:80:37:82:00:59:4a:1c:57:12:81:07:df:44:54:c6:49:0a:12:81:0c:10:15:b6:34:02:59:51:51:c6:28:06:5d:4a:01:5d:51:63
+  prelude: (13, 2, 0, 5, 0, 5)
+  args: ['mic', 'spk', 'led', 'mic_on', 'spk_on']
+  line info: 80:1e:60:60:37:26:25:26:25:26:25:22:57
+  2c:02       BUILD_MAP 2
+  b3          LOAD_FAST 3 
+  44:43       POP_JUMP_IF_FALSE 3
+  81          LOAD_CONST_SMALL_INT 1 
+  42:41       JUMP 1
+  80          LOAD_CONST_SMALL_INT 0 
+  10:0f       LOAD_CONST_STRING mic_on
+  62          STORE_MAP 
+  b4          LOAD_FAST 4 
+  44:43       POP_JUMP_IF_FALSE 3
+  81          LOAD_CONST_SMALL_INT 1 
+  42:41       JUMP 1
+  80          LOAD_CONST_SMALL_INT 0 
+  10:10       LOAD_CONST_STRING spk_on
+  62          STORE_MAP 
+  c5          STORE_FAST 5 
+  b0          LOAD_FAST 0 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:45       POP_JUMP_IF_FALSE 5
+  b0          LOAD_FAST 0 
+  b5          LOAD_FAST 5 
+  10:11       LOAD_CONST_STRING mic
+  56          STORE_SUBSCR 
+  b1          LOAD_FAST 1 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:45       POP_JUMP_IF_FALSE 5
+  b1          LOAD_FAST 1 
+  b5          LOAD_FAST 5 
+  10:12       LOAD_CONST_STRING spk
+  56          STORE_SUBSCR 
+  b2          LOAD_FAST 2 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:45       POP_JUMP_IF_FALSE 5
+  b2          LOAD_FAST 2 
+  b5          LOAD_FAST 5 
+  10:13       LOAD_CONST_STRING led
+  56          STORE_SUBSCR 
+  48:0d       SETUP_EXCEPT 13
+  12:7e       LOAD_GLOBAL _native
+  14:14       LOAD_METHOD set_pins
+  53          LOAD_NULL 
+  b5          LOAD_FAST 5 
+  80          LOAD_CONST_SMALL_INT 0 
+  37:82:00    CALL_METHOD_VAR_KW 256
+  59          POP_TOP 
+  4a:1c       POP_EXCEPT_JUMP 28
+  57          DUP_TOP 
+  12:81:07    LOAD_GLOBAL Exception
+  df          BINARY_OP 8 <exception match> 
+  44:54       POP_JUMP_IF_FALSE 20
+  c6          STORE_FAST 6 
+  49:0a       SETUP_FINALLY 10
+  12:81:0c    LOAD_GLOBAL print
+  10:15       LOAD_CONST_STRING [xz] pins:
+  b6          LOAD_FAST 6 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  c6          STORE_FAST 6 
+  28:06       DELETE_FAST 6
+  5d          END_FINALLY 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: log
+  raw bytecode: 18 98:80:80:40:06:16:80:32:12:81:0c:b0:81:35:01:59:51:63
+  prelude: (4, 0, 4, 0, 0, 0)
+  args: []
+  line info: 80:32
+  12:81:0c    LOAD_GLOBAL print
+  b0          LOAD_FAST 0 
+  81          LOAD_CONST_SMALL_INT 1 
+  35:01       CALL_FUNCTION_VAR_KW 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: XiaoZhiError
+  raw bytecode: 18 00:06:0a:8b:46:11:81:0d:16:81:0e:10:0a:16:81:0f:51:63
+  prelude: (1, 0, 0, 0, 0, 0)
+  args: []
+  line info: 8b:46
+  11:81:0d    LOAD_NAME __name__
+  16:81:0e    STORE_NAME __module__
+  10:0a       LOAD_CONST_STRING XiaoZhiError
+  16:81:0f    STORE_NAME __qualname__
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: connect_wifi
+  raw bytecode: 93 df:01:3c:17:81:10:81:11:81:12:80:4a:25:29:27:27:2a:27:22:2b:4c:23:26:2a:28:2e:22:31:22:31:22:56:23:80:51:1b:18:c3:b3:14:19:b3:13:1a:36:01:c4:b4:14:1b:36:00:43:51:b4:14:1b:52:36:01:59:12:03:14:1c:22:81:48:36:01:59:b4:14:1d:36:00:44:6c:48:0f:b4:14:1e:10:1f:36:01:b0:d9:44:42:52:63
+  prelude: (12, 1, 0, 3, 0, 1)
+  args: ['ssid', 'password', 'timeout_ms']
+  line info: 80:4a:25:29:27:27:2a:27:22:2b:4c:23:26:2a:28:2e:22:31:22:31:22:56:23
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:18       IMPORT_NAME network
+  c3          STORE_FAST 3 
+  b3          LOAD_FAST 3 
+  14:19       LOAD_METHOD WLAN
+  b3          LOAD_FAST 3 
+  13:1a       LOAD_ATTR STA_IF
+  36:01       CALL_METHOD 1
+  c4          STORE_FAST 4 
+  b4          LOAD_FAST 4 
+  14:1b       LOAD_METHOD active
+  36:00       CALL_METHOD 0
+  43:51       POP_JUMP_IF_TRUE 17
+  b4          LOAD_FAST 4 
+  14:1b       LOAD_METHOD active
+  52          LOAD_CONST_TRUE 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  12:03       LOAD_GLOBAL time
+  14:1c       LOAD_METHOD sleep_ms
+  22:81:48    LOAD_CONST_SMALL_INT 200
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b4          LOAD_FAST 4 
+  14:1d       LOAD_METHOD isconnected
+  36:00       CALL_METHOD 0
+  44:6c       POP_JUMP_IF_FALSE 44
+  48:0f       SETUP_EXCEPT 15
+  b4          LOAD_FAST 4 
+  14:1e       LOAD_METHOD config
+  10:1f       LOAD_CONST_STRING essid
+  36:01       CALL_METHOD 1
+  b0          LOAD_FAST 0 
+  d9          BINARY_OP 2 __eq__ 
+  44:42       POP_JUMP_IF_FALSE 2
+  52          LOAD_CONST_TRUE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _loads
+  raw bytecode: 33 46:12:27:5f:81:13:80:65:22:52:23:48:0a:12:02:14:28:b0:36:01:c2:4a:0b:57:12:81:07:df:44:43:59:b1:63
+  prelude: (9, 1, 0, 2, 0, 0)
+  args: ['text', 'fallback']
+  line info: 80:65:22:52:23
+  48:0a       SETUP_EXCEPT 10
+  12:02       LOAD_GLOBAL json
+  14:28       LOAD_METHOD loads
+  b0          LOAD_FAST 0 
+  36:01       CALL_METHOD 1
+  c2          STORE_FAST 2 
+  4a:0b       POP_EXCEPT_JUMP 11
+  57          DUP_TOP 
+  12:81:07    LOAD_GLOBAL Exception
+  df          BINARY_OP 8 <exception match> 
+  44:43       POP_JUMP_IF_FALSE 3
+  59          POP_TOP 
+  b1          LOAD_FAST 1 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _native_state
+  raw bytecode: 23 39:16:29:81:16:80:6d:26:24:26:24:58:22:b0:10:2a:d9:44:44:12:81:02:63
+  prelude: (8, 0, 0, 1, 0, 0)
+  args: ['value']
+  line info: 80:6d:26:24:26:24:58:22
+  b0          LOAD_FAST 0 
+  10:2a       LOAD_CONST_STRING idle
+  d9          BINARY_OP 2 __eq__ 
+  44:44       POP_JUMP_IF_FALSE 4
+  12:81:02    LOAD_GLOBAL READY
+  63          RETURN_VALUE 
+  children: []
+simple_name: XiaoZhi
+  raw bytecode: 211 08:6a:0b:8b:78:84:0d:84:0c:88:0c:64:40:84:07:64:84:16:84:0a:64:20:64:64:84:09:64:84:07:69:20:69:60:64:60:84:0b:64:64:20:88:07:44:64:60:64:60:64:60:64:20:88:19:89:18:11:81:0d:16:81:0e:10:0b:16:81:0f:32:00:16:2c:32:01:16:3c:51:2a:01:53:33:02:16:3d:32:03:16:50:32:04:16:52:32:05:16:53:32:06:16:3f:32:07:16:41:32:08:16:43:32:09:16:45:32:0a:16:47:32:0b:16:49:32:0c:16:4b:32:0d:16:4d:11:81:17:32:0e:34:01:16:3e:11:81:17:32:0f:34:01:16:56:32:10:16:64:32:11:16:65:32:12:16:66:32:13:16:67:50:2a:01:53:33:14:16:68:11:68:16:40:32:15:16:6c:32:16:16:6d:32:17:16:6e:32:18:16:6f:51:2a:01:53:33:19:16:70:51:51:2a:02:53:33:1a:16:71:32:1b:16:77:51:63
+  prelude: (2, 0, 0, 0, 0, 0)
+  args: []
+  line info: 8b:78:84:0d:84:0c:88:0c:64:40:84:07:64:84:16:84:0a:64:20:64:64:84:09:64:84:07:69:20:69:60:64:60:84:0b:64:64:20:88:07:44:64:60:64:60:64:60:64:20:88:19:89:18
+  11:81:0d    LOAD_NAME __name__
+  16:81:0e    STORE_NAME __module__
+  10:0b       LOAD_CONST_STRING XiaoZhi
+  16:81:0f    STORE_NAME __qualname__
+  32:00       MAKE_FUNCTION 0
+  16:2c       STORE_NAME __init__
+  32:01       MAKE_FUNCTION 1
+  16:3c       STORE_NAME _install_native_handlers
+  51          LOAD_CONST_NONE 
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:02       MAKE_FUNCTION_DEFARGS 2
+  16:3d       STORE_NAME on
+  32:03       MAKE_FUNCTION 3
+  16:50       STORE_NAME off
+  32:04       MAKE_FUNCTION 4
+  16:52       STORE_NAME _emit
+  32:05       MAKE_FUNCTION 5
+  16:53       STORE_NAME _emit_error
+  32:06       MAKE_FUNCTION 6
+  16:3f       STORE_NAME _on_native_state
+  32:07       MAKE_FUNCTION 7
+  16:41       STORE_NAME _on_native_wake
+  32:08       MAKE_FUNCTION 8
+  16:43       STORE_NAME _on_native_stt
+  32:09       MAKE_FUNCTION 9
+  16:45       STORE_NAME _on_native_llm
+  32:0a       MAKE_FUNCTION 10
+  16:47       STORE_NAME _on_native_tts
+  32:0b       MAKE_FUNCTION 11
+  16:49       STORE_NAME _on_native_mcp
+  32:0c       MAKE_FUNCTION 12
+  16:4b       STORE_NAME _on_native_error
+  32:0d       MAKE_FUNCTION 13
+  16:4d       STORE_NAME _on_native_binding
+  11:81:17    LOAD_NAME property
+  32:0e       MAKE_FUNCTION 14
+  34:01       CALL_FUNCTION 1
+  16:3e       STORE_NAME state
+  11:81:17    LOAD_NAME property
+  32:0f       MAKE_FUNCTION 15
+  34:01       CALL_FUNCTION 1
+  16:56       STORE_NAME connected
+  32:10       MAKE_FUNCTION 16
+  16:64       STORE_NAME init
+  32:11       MAKE_FUNCTION 17
+  16:65       STORE_NAME _native_init
+  32:12       MAKE_FUNCTION 18
+  16:66       STORE_NAME start
+  32:13       MAKE_FUNCTION 19
+  16:67       STORE_NAME stop
+  50          LOAD_CONST_FALSE 
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:14       MAKE_FUNCTION_DEFARGS 20
+  16:68       STORE_NAME start_listening
+  11:68       LOAD_NAME start_listening
+  16:40       STORE_NAME wake
+  32:15       MAKE_FUNCTION 21
+  16:6c       STORE_NAME stop_listening
+  32:16       MAKE_FUNCTION 22
+  16:6d       STORE_NAME abort
+  32:17       MAKE_FUNCTION 23
+  16:6e       STORE_NAME send_text
+  32:18       MAKE_FUNCTION 24
+  16:6f       STORE_NAME set_volume
+  51          LOAD_CONST_NONE 
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:19       MAKE_FUNCTION_DEFARGS 25
+  16:70       STORE_NAME tool
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  2a:02       BUILD_TUPLE 2
+  53          LOAD_NULL 
+  33:1a       MAKE_FUNCTION_DEFARGS 26
+  16:71       STORE_NAME register_tool
+  32:1b       MAKE_FUNCTION 27
+  16:77       STORE_NAME close
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [__init__, _install_native_handlers, on, off, _emit, _emit_error, _on_native_state, _on_native_wake, _on_native_stt, _on_native_llm, _on_native_tts, _on_native_mcp, _on_native_error, _on_native_binding, state, connected, init, _native_init, start, stop, start_listening, stop_listening, abort, send_text, set_volume, tool, register_tool, close]
+simple_name: __init__
+  raw bytecode: 119 d1:80:40:20:2c:81:18:80:79:25:24:24:26:2c:2a:2a:1f:21:24:24:2c:00:b0:18:2d:50:b0:18:2e:50:b0:18:2f:12:81:00:b0:18:30:b1:14:31:10:32:12:7f:36:02:b0:18:33:b1:14:31:10:34:36:01:b0:18:35:b1:14:31:10:36:36:01:b0:18:37:12:81:19:80:12:81:1a:22:80:64:12:81:0b:b1:14:31:10:38:22:80:64:36:02:34:01:34:02:34:02:b0:18:39:50:b0:18:3a:50:b0:18:3b:b0:14:3c:36:00:59:51:63
+  prelude: (11, 0, 2, 1, 0, 0)
+  args: ['self']
+  line info: 80:79:25:24:24:26:2c:2a:2a:1f:21:24:24
+  2c:00       BUILD_MAP 0
+  b0          LOAD_FAST 0 
+  18:2d       STORE_ATTR _handlers
+  50          LOAD_CONST_FALSE 
+  b0          LOAD_FAST 0 
+  18:2e       STORE_ATTR _connected
+  50          LOAD_CONST_FALSE 
+  b0          LOAD_FAST 0 
+  18:2f       STORE_ATTR _ready_seen
+  12:81:00    LOAD_GLOBAL DISCONNECTED
+  b0          LOAD_FAST 0 
+  18:30       STORE_ATTR _state
+  b1          LOAD_FAST 1 
+  14:31       LOAD_METHOD get
+  10:32       LOAD_CONST_STRING ota_url
+  12:7f       LOAD_GLOBAL DEFAULT_OTA_URL
+  36:02       CALL_METHOD 2
+  b0          LOAD_FAST 0 
+  18:33       STORE_ATTR _ota_url
+  b1          LOAD_FAST 1 
+  14:31       LOAD_METHOD get
+  10:34       LOAD_CONST_STRING ws_url
+  36:01       CALL_METHOD 1
+  b0          LOAD_FAST 0 
+  18:35       STORE_ATTR _ws_url
+  b1          LOAD_FAST 1 
+  14:31       LOAD_METHOD get
+  10:36       LOAD_CONST_STRING token
+  36:01       CALL_METHOD 1
+  b0          LOAD_FAST 0 
+  18:37       STORE_ATTR _token
+  12:81:19    LOAD_GLOBAL max
+  80          LOAD_CONST_SMALL_INT 0 
+  12:81:1a    LOAD_GLOBAL min
+  22:80:64    LOAD_CONST_SMALL_INT 100
+  12:81:0b    LOAD_GLOBAL int
+  b1          LOAD_FAST 1 
+  14:31       LOAD_METHOD get
+  10:38       LOAD_CONST_STRING volume
+  22:80:64    LOAD_CONST_SMALL_INT 100
+  36:02       CALL_METHOD 2
+  34:01       CALL_FUNCTION 1
+  34:02       CALL_FUNCTION 2
+  34:02       CALL_FUNCTION 2
+  b0          LOAD_FAST 0 
+  18:39       STORE_ATTR _volume
+  50          LOAD_CONST_FALSE 
+  b0          LOAD_FAST 0 
+  18:3a       STORE_ATTR _started
+  50          LOAD_CONST_FALSE 
+  b0          LOAD_FAST 0 
+  18:3b       STORE_ATTR _mcp_ready
+  b0          LOAD_FAST 0 
+  14:3c       LOAD_METHOD _install_native_handlers
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _install_native_handlers
+  raw bytecode: 112 21:18:3c:81:18:80:86:2c:2c:2c:2c:2c:2c:2c:12:7e:14:3d:10:3e:b0:13:3f:36:02:59:12:7e:14:3d:10:40:b0:13:41:36:02:59:12:7e:14:3d:10:42:b0:13:43:36:02:59:12:7e:14:3d:10:44:b0:13:45:36:02:59:12:7e:14:3d:10:46:b0:13:47:36:02:59:12:7e:14:3d:10:48:b0:13:49:36:02:59:12:7e:14:3d:10:4a:b0:13:4b:36:02:59:12:7e:14:3d:10:4c:b0:13:4d:36:02:59:51:63
+  prelude: (5, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:86:2c:2c:2c:2c:2c:2c:2c
+  12:7e       LOAD_GLOBAL _native
+  14:3d       LOAD_METHOD on
+  10:3e       LOAD_CONST_STRING state
+  b0          LOAD_FAST 0 
+  13:3f       LOAD_ATTR _on_native_state
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  12:7e       LOAD_GLOBAL _native
+  14:3d       LOAD_METHOD on
+  10:40       LOAD_CONST_STRING wake
+  b0          LOAD_FAST 0 
+  13:41       LOAD_ATTR _on_native_wake
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  12:7e       LOAD_GLOBAL _native
+  14:3d       LOAD_METHOD on
+  10:42       LOAD_CONST_STRING stt
+  b0          LOAD_FAST 0 
+  13:43       LOAD_ATTR _on_native_stt
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  12:7e       LOAD_GLOBAL _native
+  14:3d       LOAD_METHOD on
+  10:44       LOAD_CONST_STRING llm
+  b0          LOAD_FAST 0 
+  13:45       LOAD_ATTR _on_native_llm
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  12:7e       LOAD_GLOBAL _native
+  14:3d       LOAD_METHOD on
+  10:46       LOAD_CONST_STRING tts
+  b0          LOAD_FAST 0 
+  13:47       LOAD_ATTR _on_native_tts
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  12:7e       LOAD_GLOBAL _native
+  14:3d       LOAD_METHOD on
+  10:48       LOAD_CONST_STRING mcp
+  b0          LOAD_FAST 0 
+  13:49       LOAD_ATTR _on_native_mcp
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  12:7e       LOAD_GLOBAL _native
+  14:3d       LOAD_METHOD on
+  10:4a       LOAD_CONST_STRING error
+  b0          LOAD_FAST 0 
+  13:4b       LOAD_ATTR _on_native_error
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  12:7e       LOAD_GLOBAL _native
+  14:3d       LOAD_METHOD on
+  10:4c       LOAD_CONST_STRING binding
+  b0          LOAD_FAST 0 
+  13:4d       LOAD_ATTR _on_native_binding
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: on
+  raw bytecode: 56 bb:01:a0:01:3d:81:18:81:1b:81:1c:80:92:29:2c:25:66:20:22:32:00:01:25:01:12:81:06:dd:d3:44:4c:12:16:23:03:25:01:2a:01:f8:34:01:59:b2:51:de:44:48:b0:b1:20:00:02:c3:b3:63
+  prelude: (8, 0, 0, 3, 0, 1)
+  args: ['self', 'event', 'cb']
+  line info: 80:92:29:2c:25:66:20:22:32:00:01
+  25:01       LOAD_DEREF 1
+  12:81:06    LOAD_GLOBAL _EVENTS
+  dd          BINARY_OP 6 <in> 
+  d3          UNARY_OP 3 <not> 
+  44:4c       POP_JUMP_IF_FALSE 12
+  12:16       LOAD_GLOBAL log
+  23:03       LOAD_CONST_OBJ '[xiaozhi] warning: unknown event %r'
+  25:01       LOAD_DEREF 1
+  2a:01       BUILD_TUPLE 1
+  f8          BINARY_OP 33 __mod__ 
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  b2          LOAD_FAST 2 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  44:48       POP_JUMP_IF_FALSE 8
+  b0          LOAD_FAST 0 
+  b1          LOAD_FAST 1 
+  20:00:02    MAKE_CLOSURE 0
+  c3          STORE_FAST 3 
+  b3          LOAD_FAST 3 
+  63          RETURN_VALUE 
+  children: [deco]
+simple_name: deco
+  raw bytecode: 24 33:14:78:81:26:81:26:81:27:80:96:2a:25:00:14:3d:25:01:b2:36:02:59:b2:63
+  prelude: (7, 0, 0, 3, 0, 0)
+  args: ['*', '*', 'f']
+  line info: 80:96:2a
+  25:00       LOAD_DEREF 0
+  14:3d       LOAD_METHOD on
+  25:01       LOAD_DEREF 1
+  b2          LOAD_FAST 2 
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b2          LOAD_FAST 2 
+  63          RETURN_VALUE 
+  children: []
+simple_name: off
+  raw bytecode: 39 33:16:50:81:18:81:1b:81:1c:80:9e:29:28:b0:13:2d:14:31:b1:36:01:c3:b3:44:4c:b2:b3:dd:44:47:b3:14:51:b2:36:01:59:51:63
+  prelude: (7, 0, 0, 3, 0, 0)
+  args: ['self', 'event', 'cb']
+  line info: 80:9e:29:28
+  b0          LOAD_FAST 0 
+  13:2d       LOAD_ATTR _handlers
+  14:31       LOAD_METHOD get
+  b1          LOAD_FAST 1 
+  36:01       CALL_METHOD 1
+  c3          STORE_FAST 3 
+  b3          LOAD_FAST 3 
+  44:4c       POP_JUMP_IF_FALSE 12
+  b2          LOAD_FAST 2 
+  b3          LOAD_FAST 3 
+  dd          BINARY_OP 6 <in> 
+  44:47       POP_JUMP_IF_FALSE 7
+  b3          LOAD_FAST 3 
+  14:51       LOAD_METHOD remove
+  b2          LOAD_FAST 2 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _emit
+  raw bytecode: 78 fb:02:18:52:81:18:81:1b:81:1d:80:a3:33:22:51:12:81:1e:b0:13:2d:14:31:b1:2a:00:36:02:34:01:5f:4b:2b:c3:48:07:b3:b2:34:01:59:4a:1f:57:12:81:07:df:44:57:c4:49:0d:12:16:23:04:b1:b4:2a:02:f8:34:01:59:51:51:c4:28:04:5d:4a:01:5d:42:13:51:63
+  prelude: (16, 2, 0, 3, 0, 0)
+  args: ['self', 'event', 'msg']
+  line info: 80:a3:33:22:51
+  12:81:1e    LOAD_GLOBAL tuple
+  b0          LOAD_FAST 0 
+  13:2d       LOAD_ATTR _handlers
+  14:31       LOAD_METHOD get
+  b1          LOAD_FAST 1 
+  2a:00       BUILD_TUPLE 0
+  36:02       CALL_METHOD 2
+  34:01       CALL_FUNCTION 1
+  5f          GET_ITER_STACK 
+  4b:2b       FOR_ITER 43
+  c3          STORE_FAST 3 
+  48:07       SETUP_EXCEPT 7
+  b3          LOAD_FAST 3 
+  b2          LOAD_FAST 2 
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  4a:1f       POP_EXCEPT_JUMP 31
+  57          DUP_TOP 
+  12:81:07    LOAD_GLOBAL Exception
+  df          BINARY_OP 8 <exception match> 
+  44:57       POP_JUMP_IF_FALSE 23
+  c4          STORE_FAST 4 
+  49:0d       SETUP_FINALLY 13
+  12:16       LOAD_GLOBAL log
+  23:04       LOAD_CONST_OBJ '[xiaozhi] event %s: %s'
+  b1          LOAD_FAST 1 
+  b4          LOAD_FAST 4 
+  2a:02       BUILD_TUPLE 2
+  f8          BINARY_OP 33 __mod__ 
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  c4          STORE_FAST 4 
+  28:04       DELETE_FAST 4
+  5d          END_FINALLY 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  42:13       JUMP -45
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _emit_error
+  raw bytecode: 34 43:0e:53:81:18:54:55:80:aa:b0:14:52:10:4a:2c:02:b1:10:54:62:12:81:1f:b2:34:01:10:55:62:36:02:59:51:63
+  prelude: (9, 0, 0, 3, 0, 0)
+  args: ['self', 'where', 'exc']
+  line info: 80:aa
+  b0          LOAD_FAST 0 
+  14:52       LOAD_METHOD _emit
+  10:4a       LOAD_CONST_STRING error
+  2c:02       BUILD_MAP 2
+  b1          LOAD_FAST 1 
+  10:54       LOAD_CONST_STRING where
+  62          STORE_MAP 
+  12:81:1f    LOAD_GLOBAL str
+  b2          LOAD_FAST 2 
+  34:01       CALL_FUNCTION 1
+  10:55       LOAD_CONST_STRING exc
+  62          STORE_MAP 
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _on_native_state
+  raw bytecode: 149 52:2c:3f:81:18:81:16:80:ad:24:26:64:60:34:25:24:24:32:27:24:25:2b:29:2f:b0:13:30:c2:12:29:b1:34:01:c3:b3:b0:18:30:b3:12:81:02:d9:44:6c:12:7e:14:56:36:00:44:64:b0:13:3b:44:5f:b0:13:2e:43:58:52:b0:18:2e:52:b0:18:2f:b0:14:52:10:56:2c:01:12:81:02:10:3e:62:36:02:59:42:64:b3:12:81:00:d9:44:5d:50:b0:18:2e:b1:10:2b:d9:c4:b0:14:52:23:01:2c:02:b4:10:57:62:b4:10:58:62:36:02:59:42:40:b0:14:52:10:59:2c:03:b3:10:3e:62:b1:10:5a:62:b2:10:5b:62:36:02:59:51:63
+  prelude: (11, 0, 0, 2, 0, 0)
+  args: ['self', 'value']
+  line info: 80:ad:24:26:64:60:34:25:24:24:32:27:24:25:2b:29:2f
+  b0          LOAD_FAST 0 
+  13:30       LOAD_ATTR _state
+  c2          STORE_FAST 2 
+  12:29       LOAD_GLOBAL _native_state
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  c3          STORE_FAST 3 
+  b3          LOAD_FAST 3 
+  b0          LOAD_FAST 0 
+  18:30       STORE_ATTR _state
+  b3          LOAD_FAST 3 
+  12:81:02    LOAD_GLOBAL READY
+  d9          BINARY_OP 2 __eq__ 
+  44:6c       POP_JUMP_IF_FALSE 44
+  12:7e       LOAD_GLOBAL _native
+  14:56       LOAD_METHOD connected
+  36:00       CALL_METHOD 0
+  44:64       POP_JUMP_IF_FALSE 36
+  b0          LOAD_FAST 0 
+  13:3b       LOAD_ATTR _mcp_ready
+  44:5f       POP_JUMP_IF_FALSE 31
+  b0          LOAD_FAST 0 
+  13:2e       LOAD_ATTR _connected
+  43:58       POP_JUMP_IF_TRUE 24
+  52          LOAD_CONST_TRUE 
+  b0          LOAD_FAST 0 
+  18:2e       STORE_ATTR _connected
+  52          LOAD_CONST_TRUE 
+  b0          LOAD_FAST 0 
+  18:2f       STORE_ATTR _ready_seen
+  b0          LOAD_FAST 0 
+  14:52       LOAD_METHOD _emit
+  10:56       LOAD_CONST_STRING connected
+  2c:01       BUILD_MAP 1
+  12:81:02    LOAD_GLOBAL READY
+  10:3e       LOAD_CONST_STRING state
+  62          STORE_MAP 
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  42:64       JUMP 36
+  b3          LOAD_FAST 3 
+  12:81:00    LOAD_GLOBAL DISCONNECTED
+  d9          BINARY_OP 2 __eq__ 
+  44:5d       POP_JUMP_IF_FALSE 29
+  50          LOAD_CONST_FALSE 
+  b0          LOAD_FAST 0 
+  18:2e       STORE_ATTR _connected
+  b1          LOAD_FAST 1 
+  10:2b       LOAD_CONST_STRING goodbye
+  d9          BINARY_OP 2 __eq__ 
+  c4          STORE_FAST 4 
+  b0          LOAD_FAST 0 
+  14:52       LOAD_METHOD _emit
+  23:01       LOAD_CONST_OBJ 'disconnected'
+  2c:02       BUILD_MAP 2
+  b4          LOAD_FAST 4 
+  10:57       LOAD_CONST_STRING sleep
+  62          STORE_MAP 
+  b4          LOAD_FAST 4 
+  10:58       LOAD_CONST_STRING dismissed
+  62          STORE_MAP 
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  42:40       JUMP 0
+  b0          LOAD_FAST 0 
+  14:52       LOAD_METHOD _emit
+  10:59       LOAD_CONST_STRING status
+  2c:03       BUILD_MAP 3
+  b3          LOAD_FAST 3 
+  10:3e       LOAD_CONST_STRING state
+  62          STORE_MAP 
+  b1          LOAD_FAST 1 
+  10:5a       LOAD_CONST_STRING reason
+  62          STORE_MAP 
+  b2          LOAD_FAST 2 
+  10:5b       LOAD_CONST_STRING prev
+  62          STORE_MAP 
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _on_native_wake
+  raw bytecode: 28 3a:0c:41:81:18:5d:80:ca:b0:14:52:10:40:2c:01:b1:45:02:10:5c:10:5d:62:36:02:59:51:63
+  prelude: (8, 0, 0, 2, 0, 0)
+  args: ['self', 'word']
+  line info: 80:ca
+  b0          LOAD_FAST 0 
+  14:52       LOAD_METHOD _emit
+  10:40       LOAD_CONST_STRING wake
+  2c:01       BUILD_MAP 1
+  b1          LOAD_FAST 1 
+  45:02       JUMP_IF_TRUE_OR_POP 2
+  10:5c       LOAD_CONST_STRING q1
+  10:5d       LOAD_CONST_STRING word
+  62          STORE_MAP 
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _on_native_stt
+  raw bytecode: 43 4a:0e:43:81:18:5f:80:cd:28:12:27:b1:2c:00:34:02:c2:b0:14:52:10:5e:2c:01:b2:14:31:10:5f:36:01:45:02:10:5c:10:5f:62:36:02:59:51:63
+  prelude: (10, 0, 0, 2, 0, 0)
+  args: ['self', 'text']
+  line info: 80:cd:28
+  12:27       LOAD_GLOBAL _loads
+  b1          LOAD_FAST 1 
+  2c:00       BUILD_MAP 0
+  34:02       CALL_FUNCTION 2
+  c2          STORE_FAST 2 
+  b0          LOAD_FAST 0 
+  14:52       LOAD_METHOD _emit
+  10:5e       LOAD_CONST_STRING asr
+  2c:01       BUILD_MAP 1
+  b2          LOAD_FAST 2 
+  14:31       LOAD_METHOD get
+  10:5f       LOAD_CONST_STRING text
+  36:01       CALL_METHOD 1
+  45:02       JUMP_IF_TRUE_OR_POP 2
+  10:5c       LOAD_CONST_STRING q1
+  10:5f       LOAD_CONST_STRING text
+  62          STORE_MAP 
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _on_native_llm
+  raw bytecode: 25 3a:0c:45:81:18:5f:80:d1:b0:14:52:10:44:12:27:b1:2c:00:34:02:36:02:59:51:63
+  prelude: (8, 0, 0, 2, 0, 0)
+  args: ['self', 'text']
+  line info: 80:d1
+  b0          LOAD_FAST 0 
+  14:52       LOAD_METHOD _emit
+  10:44       LOAD_CONST_STRING llm
+  12:27       LOAD_GLOBAL _loads
+  b1          LOAD_FAST 1 
+  2c:00       BUILD_MAP 0
+  34:02       CALL_FUNCTION 2
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _on_native_tts
+  raw bytecode: 25 3a:0c:47:81:18:5f:80:d4:b0:14:52:10:46:12:27:b1:2c:00:34:02:36:02:59:51:63
+  prelude: (8, 0, 0, 2, 0, 0)
+  args: ['self', 'text']
+  line info: 80:d4
+  b0          LOAD_FAST 0 
+  14:52       LOAD_METHOD _emit
+  10:46       LOAD_CONST_STRING tts
+  12:27       LOAD_GLOBAL _loads
+  b1          LOAD_FAST 1 
+  2c:00       BUILD_MAP 0
+  34:02       CALL_FUNCTION 2
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _on_native_mcp
+  raw bytecode: 57 42:14:49:81:18:5f:80:d7:28:25:64:2c:12:27:b1:2c:00:34:02:c2:b0:13:3b:43:50:52:b0:18:3b:b0:14:3f:12:7e:14:3e:36:00:36:01:59:b0:14:52:10:48:2c:01:b2:10:60:62:36:02:59:51:63
+  prelude: (9, 0, 0, 2, 0, 0)
+  args: ['self', 'text']
+  line info: 80:d7:28:25:64:2c
+  12:27       LOAD_GLOBAL _loads
+  b1          LOAD_FAST 1 
+  2c:00       BUILD_MAP 0
+  34:02       CALL_FUNCTION 2
+  c2          STORE_FAST 2 
+  b0          LOAD_FAST 0 
+  13:3b       LOAD_ATTR _mcp_ready
+  43:50       POP_JUMP_IF_TRUE 16
+  52          LOAD_CONST_TRUE 
+  b0          LOAD_FAST 0 
+  18:3b       STORE_ATTR _mcp_ready
+  b0          LOAD_FAST 0 
+  14:3f       LOAD_METHOD _on_native_state
+  12:7e       LOAD_GLOBAL _native
+  14:3e       LOAD_METHOD state
+  36:00       CALL_METHOD 0
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:52       LOAD_METHOD _emit
+  10:48       LOAD_CONST_STRING mcp
+  2c:01       BUILD_MAP 1
+  b2          LOAD_FAST 2 
+  10:60       LOAD_CONST_STRING payload
+  62          STORE_MAP 
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _on_native_error
+  raw bytecode: 23 2a:0c:4b:81:18:5f:80:e0:b0:14:53:10:61:b1:45:02:10:4a:36:02:59:51:63
+  prelude: (6, 0, 0, 2, 0, 0)
+  args: ['self', 'text']
+  line info: 80:e0
+  b0          LOAD_FAST 0 
+  14:53       LOAD_METHOD _emit_error
+  10:61       LOAD_CONST_STRING native
+  b1          LOAD_FAST 1 
+  45:02       JUMP_IF_TRUE_OR_POP 2
+  10:4a       LOAD_CONST_STRING error
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _on_native_binding
+  raw bytecode: 58 4a:10:4d:81:18:5f:80:e3:28:35:12:27:b1:2c:00:34:02:c2:b0:14:52:10:4c:2c:02:b2:14:31:10:62:36:01:45:02:10:5c:10:62:62:b2:14:31:10:63:36:01:45:02:10:5c:10:63:62:36:02:59:51:63
+  prelude: (10, 0, 0, 2, 0, 0)
+  args: ['self', 'text']
+  line info: 80:e3:28:35
+  12:27       LOAD_GLOBAL _loads
+  b1          LOAD_FAST 1 
+  2c:00       BUILD_MAP 0
+  34:02       CALL_FUNCTION 2
+  c2          STORE_FAST 2 
+  b0          LOAD_FAST 0 
+  14:52       LOAD_METHOD _emit
+  10:4c       LOAD_CONST_STRING binding
+  2c:02       BUILD_MAP 2
+  b2          LOAD_FAST 2 
+  14:31       LOAD_METHOD get
+  10:62       LOAD_CONST_STRING code
+  36:01       CALL_METHOD 1
+  45:02       JUMP_IF_TRUE_OR_POP 2
+  10:5c       LOAD_CONST_STRING q1
+  10:62       LOAD_CONST_STRING code
+  62          STORE_MAP 
+  b2          LOAD_FAST 2 
+  14:31       LOAD_METHOD get
+  10:63       LOAD_CONST_STRING message
+  36:01       CALL_METHOD 1
+  45:02       JUMP_IF_TRUE_OR_POP 2
+  10:5c       LOAD_CONST_STRING q1
+  10:63       LOAD_CONST_STRING message
+  62          STORE_MAP 
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: state
+  raw bytecode: 18 19:0a:3e:81:18:80:eb:12:29:12:7e:14:3e:36:00:34:01:63
+  prelude: (4, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:eb
+  12:29       LOAD_GLOBAL _native_state
+  12:7e       LOAD_GLOBAL _native
+  14:3e       LOAD_METHOD state
+  36:00       CALL_METHOD 0
+  34:01       CALL_FUNCTION 1
+  63          RETURN_VALUE 
+  children: []
+simple_name: connected
+  raw bytecode: 19 19:0a:56:81:18:80:ef:12:81:20:12:7e:14:56:36:00:34:01:63
+  prelude: (4, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:ef
+  12:81:20    LOAD_GLOBAL bool
+  12:7e       LOAD_GLOBAL _native
+  14:56       LOAD_METHOD connected
+  36:00       CALL_METHOD 0
+  34:01       CALL_FUNCTION 1
+  63          RETURN_VALUE 
+  children: []
+simple_name: init
+  raw bytecode: 27 11:10:64:81:18:80:f4:25:26:24:b0:13:3a:43:4a:b0:14:65:36:00:59:52:b0:18:3a:b0:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:f4:25:26:24
+  b0          LOAD_FAST 0 
+  13:3a       LOAD_ATTR _started
+  43:4a       POP_JUMP_IF_TRUE 10
+  b0          LOAD_FAST 0 
+  14:65       LOAD_METHOD _native_init
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  52          LOAD_CONST_TRUE 
+  b0          LOAD_FAST 0 
+  18:3a       STORE_ATTR _started
+  b0          LOAD_FAST 0 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _native_init
+  raw bytecode: 80 31:1a:65:81:18:80:fa:29:25:27:25:27:25:27:2b:2c:01:b0:13:39:10:38:62:c1:b0:13:33:44:47:b0:13:33:b1:10:32:56:b0:13:35:44:47:b0:13:35:b1:10:34:56:b0:13:37:44:47:b0:13:37:b1:10:36:56:12:7e:14:64:53:b1:80:37:82:00:59:12:7e:14:66:36:00:59:51:63
+  prelude: (7, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:fa:29:25:27:25:27:25:27:2b
+  2c:01       BUILD_MAP 1
+  b0          LOAD_FAST 0 
+  13:39       LOAD_ATTR _volume
+  10:38       LOAD_CONST_STRING volume
+  62          STORE_MAP 
+  c1          STORE_FAST 1 
+  b0          LOAD_FAST 0 
+  13:33       LOAD_ATTR _ota_url
+  44:47       POP_JUMP_IF_FALSE 7
+  b0          LOAD_FAST 0 
+  13:33       LOAD_ATTR _ota_url
+  b1          LOAD_FAST 1 
+  10:32       LOAD_CONST_STRING ota_url
+  56          STORE_SUBSCR 
+  b0          LOAD_FAST 0 
+  13:35       LOAD_ATTR _ws_url
+  44:47       POP_JUMP_IF_FALSE 7
+  b0          LOAD_FAST 0 
+  13:35       LOAD_ATTR _ws_url
+  b1          LOAD_FAST 1 
+  10:34       LOAD_CONST_STRING ws_url
+  56          STORE_SUBSCR 
+  b0          LOAD_FAST 0 
+  13:37       LOAD_ATTR _token
+  44:47       POP_JUMP_IF_FALSE 7
+  b0          LOAD_FAST 0 
+  13:37       LOAD_ATTR _token
+  b1          LOAD_FAST 1 
+  10:36       LOAD_CONST_STRING token
+  56          STORE_SUBSCR 
+  12:7e       LOAD_GLOBAL _native
+  14:64       LOAD_METHOD init
+  53          LOAD_NULL 
+  b1          LOAD_FAST 1 
+  80          LOAD_CONST_SMALL_INT 0 
+  37:82:00    CALL_METHOD_VAR_KW 256
+  59          POP_TOP 
+  12:7e       LOAD_GLOBAL _native
+  14:66       LOAD_METHOD start
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: start
+  raw bytecode: 13 11:0a:66:81:18:90:05:b0:14:64:36:00:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 90:05
+  b0          LOAD_FAST 0 
+  14:64       LOAD_METHOD init
+  36:00       CALL_METHOD 0
+  63          RETURN_VALUE 
+  children: []
+simple_name: stop
+  raw bytecode: 21 11:0c:67:81:18:90:08:24:50:b0:18:3a:12:7e:14:67:36:00:59:51:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 90:08:24
+  50          LOAD_CONST_FALSE 
+  b0          LOAD_FAST 0 
+  18:3a       STORE_ATTR _started
+  12:7e       LOAD_GLOBAL _native
+  14:67       LOAD_METHOD stop
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: start_listening
+  raw bytecode: 38 b2:01:16:68:81:18:81:21:90:0c:28:2e:22:30:12:7e:14:56:36:00:43:50:b0:14:53:10:69:12:0a:23:05:34:01:36:02:59:50:63
+  prelude: (7, 0, 0, 2, 0, 1)
+  args: ['self', 'automatic']
+  line info: 90:0c:28:2e:22:30
+  12:7e       LOAD_GLOBAL _native
+  14:56       LOAD_METHOD connected
+  36:00       CALL_METHOD 0
+  43:50       POP_JUMP_IF_TRUE 16
+  b0          LOAD_FAST 0 
+  14:53       LOAD_METHOD _emit_error
+  10:69       LOAD_CONST_STRING listen
+  12:0a       LOAD_GLOBAL XiaoZhiError
+  23:05       LOAD_CONST_OBJ 'not connected'
+  34:01       CALL_FUNCTION 1
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  50          LOAD_CONST_FALSE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: stop_listening
+  raw bytecode: 23 11:10:6c:81:18:90:15:2b:22:27:12:7e:14:3e:36:00:10:07:dc:44:42:50:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 90:15:2b:22:27
+  12:7e       LOAD_GLOBAL _native
+  14:3e       LOAD_METHOD state
+  36:00       CALL_METHOD 0
+  10:07       LOAD_CONST_STRING listening
+  dc          BINARY_OP 5 __ne__ 
+  44:42       POP_JUMP_IF_FALSE 2
+  50          LOAD_CONST_FALSE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: abort
+  raw bytecode: 20 11:10:6d:81:18:90:1b:28:22:27:12:7e:14:56:36:00:43:42:50:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 90:1b:28:22:27
+  12:7e       LOAD_GLOBAL _native
+  14:56       LOAD_METHOD connected
+  36:00       CALL_METHOD 0
+  43:42       POP_JUMP_IF_TRUE 2
+  50          LOAD_CONST_FALSE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: send_text
+  raw bytecode: 21 22:12:6e:81:18:5f:90:21:28:22:28:12:7e:14:56:36:00:43:42:50:63
+  prelude: (5, 0, 0, 2, 0, 0)
+  args: ['self', 'text']
+  line info: 90:21:28:22:28
+  12:7e       LOAD_GLOBAL _native
+  14:56       LOAD_METHOD connected
+  36:00       CALL_METHOD 0
+  43:42       POP_JUMP_IF_TRUE 2
+  50          LOAD_CONST_FALSE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: set_volume
+  raw bytecode: 44 3a:0e:6f:81:18:38:90:27:37:12:81:19:80:12:81:1a:22:80:64:12:81:0b:b1:34:01:34:02:34:02:b0:18:39:12:7e:14:6f:b0:13:39:36:01:59:51:63
+  prelude: (8, 0, 0, 2, 0, 0)
+  args: ['self', 'volume']
+  line info: 90:27:37
+  12:81:19    LOAD_GLOBAL max
+  80          LOAD_CONST_SMALL_INT 0 
+  12:81:1a    LOAD_GLOBAL min
+  22:80:64    LOAD_CONST_SMALL_INT 100
+  12:81:0b    LOAD_GLOBAL int
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  34:02       CALL_FUNCTION 2
+  34:02       CALL_FUNCTION 2
+  b0          LOAD_FAST 0 
+  18:39       STORE_ATTR _volume
+  12:7e       LOAD_GLOBAL _native
+  14:6f       LOAD_METHOD set_volume
+  b0          LOAD_FAST 0 
+  13:39       LOAD_ATTR _volume
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: tool
+  raw bytecode: 34 c0:05:9e:80:01:70:81:18:81:22:81:23:81:24:90:2b:80:0d:88:09:00:01:02:03:b0:b1:b2:b3:20:00:04:c4:b4:63
+  prelude: (9, 0, 0, 4, 0, 1)
+  args: ['self', 'name', 'description', 'input_schema']
+  line info: 90:2b:80:0d:88:09:00:01:02:03
+  b0          LOAD_FAST 0 
+  b1          LOAD_FAST 1 
+  b2          LOAD_FAST 2 
+  b3          LOAD_FAST 3 
+  20:00:04    MAKE_CLOSURE 0
+  c4          STORE_FAST 4 
+  b4          LOAD_FAST 4 
+  63          RETURN_VALUE 
+  children: [_decorator]
+simple_name: _decorator
+  raw bytecode: 42 d9:04:21:79:81:26:81:26:81:26:81:26:81:28:90:39:65:40:2e:04:b4:20:00:01:c5:25:00:14:71:25:01:25:02:25:03:b5:36:04:59:25:04:63
+  prelude: (12, 0, 0, 5, 0, 0)
+  args: ['*', '*', '*', '*', 'func']
+  line info: 90:39:65:40:2e:04
+  b4          LOAD_FAST 4 
+  20:00:01    MAKE_CLOSURE 0
+  c5          STORE_FAST 5 
+  25:00       LOAD_DEREF 0
+  14:71       LOAD_METHOD register_tool
+  25:01       LOAD_DEREF 1
+  25:02       LOAD_DEREF 2
+  25:03       LOAD_DEREF 3
+  b5          LOAD_FAST 5 
+  36:04       CALL_METHOD 4
+  59          POP_TOP 
+  25:04       LOAD_DEREF 4
+  63          RETURN_VALUE 
+  children: [_call]
+simple_name: _call
+  raw bytecode: 34 2a:12:7a:81:26:81:2a:90:3a:2b:23:12:81:14:b1:12:81:15:34:02:43:43:2c:00:c1:25:00:53:b1:80:35:82:00:63
+  prelude: (6, 0, 0, 2, 0, 0)
+  args: ['*', 'args']
+  line info: 90:3a:2b:23
+  12:81:14    LOAD_GLOBAL isinstance
+  b1          LOAD_FAST 1 
+  12:81:15    LOAD_GLOBAL dict
+  34:02       CALL_FUNCTION 2
+  43:43       POP_JUMP_IF_TRUE 3
+  2c:00       BUILD_MAP 0
+  c1          STORE_FAST 1 
+  25:00       LOAD_DEREF 0
+  53          LOAD_NULL 
+  b1          LOAD_FAST 1 
+  80          LOAD_CONST_SMALL_INT 0 
+  35:82:00    CALL_FUNCTION_VAR_KW 256
+  63          RETURN_VALUE 
+  children: []
+simple_name: register_tool
+  raw bytecode: 68 e9:84:01:a2:01:71:81:18:81:22:81:23:81:24:81:25:90:44:30:48:86:12:01:04:b3:45:0c:2c:02:10:72:10:73:62:2c:00:10:74:62:c5:12:02:14:75:b5:36:01:c6:b1:b4:20:00:02:c7:12:7e:14:76:25:01:b2:b6:b7:36:04:59:51:63
+  prelude: (14, 0, 0, 5, 0, 2)
+  args: ['self', 'name', 'description', 'input_schema', 'handler']
+  line info: 90:44:30:48:86:12:01:04
+  b3          LOAD_FAST 3 
+  45:0c       JUMP_IF_TRUE_OR_POP 12
+  2c:02       BUILD_MAP 2
+  10:72       LOAD_CONST_STRING object
+  10:73       LOAD_CONST_STRING type
+  62          STORE_MAP 
+  2c:00       BUILD_MAP 0
+  10:74       LOAD_CONST_STRING properties
+  62          STORE_MAP 
+  c5          STORE_FAST 5 
+  12:02       LOAD_GLOBAL json
+  14:75       LOAD_METHOD dumps
+  b5          LOAD_FAST 5 
+  36:01       CALL_METHOD 1
+  c6          STORE_FAST 6 
+  b1          LOAD_FAST 1 
+  b4          LOAD_FAST 4 
+  20:00:02    MAKE_CLOSURE 0
+  c7          STORE_FAST 7 
+  12:7e       LOAD_GLOBAL _native
+  14:76       LOAD_METHOD mcp_tool
+  25:01       LOAD_DEREF 1
+  b2          LOAD_FAST 2 
+  b6          LOAD_FAST 6 
+  b7          LOAD_FAST 7 
+  36:04       CALL_METHOD 4
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [_call]
+simple_name: _call
+  raw bytecode: 101 8b:12:2c:7a:81:26:81:26:81:29:90:48:25:28:22:5c:2d:32:2a:25:23:22:54:32:2a:b2:30:02:c3:c4:12:27:b4:2c:00:34:02:c5:48:12:25:01:51:de:d3:44:47:25:01:b5:34:01:42:41:51:c6:4a:33:57:12:81:07:df:44:6b:c7:49:21:12:16:23:06:25:00:b7:2a:02:f8:34:01:59:12:7e:14:7b:b3:22:fe:81:25:12:81:1f:b7:34:01:36:03:59:51:63
+  prelude: (18, 2, 0, 3, 0, 0)
+  args: ['*', '*', 'pair']
+  line info: 90:48:25:28:22:5c:2d:32:2a:25:23:22:54:32:2a
+  b2          LOAD_FAST 2 
+  30:02       UNPACK_SEQUENCE 2
+  c3          STORE_FAST 3 
+  c4          STORE_FAST 4 
+  12:27       LOAD_GLOBAL _loads
+  b4          LOAD_FAST 4 
+  2c:00       BUILD_MAP 0
+  34:02       CALL_FUNCTION 2
+  c5          STORE_FAST 5 
+  48:12       SETUP_EXCEPT 18
+  25:01       LOAD_DEREF 1
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:47       POP_JUMP_IF_FALSE 7
+  25:01       LOAD_DEREF 1
+  b5          LOAD_FAST 5 
+  34:01       CALL_FUNCTION 1
+  42:41       JUMP 1
+  51          LOAD_CONST_NONE 
+  c6          STORE_FAST 6 
+  4a:33       POP_EXCEPT_JUMP 51
+  57          DUP_TOP 
+  12:81:07    LOAD_GLOBAL Exception
+  df          BINARY_OP 8 <exception match> 
+  44:6b       POP_JUMP_IF_FALSE 43
+  c7          STORE_FAST 7 
+  49:21       SETUP_FINALLY 33
+  12:16       LOAD_GLOBAL log
+  23:06       LOAD_CONST_OBJ '[mcp] tool %s: %s'
+  25:00       LOAD_DEREF 0
+  b7          LOAD_FAST 7 
+  2a:02       BUILD_TUPLE 2
+  f8          BINARY_OP 33 __mod__ 
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  12:7e       LOAD_GLOBAL _native
+  14:7b       LOAD_METHOD mcp_error
+  b3          LOAD_FAST 3 
+  22:fe:81:25 LOAD_CONST_SMALL_INT -32603
+  12:81:1f    LOAD_GLOBAL str
+  b7          LOAD_FAST 7 
+  34:01       CALL_FUNCTION 1
+  36:03       CALL_METHOD 3
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: close
+  raw bytecode: 15 11:0a:77:81:18:90:5c:b0:14:67:36:00:59:51:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 90:5c
+  b0          LOAD_FAST 0 
+  14:67       LOAD_METHOD stop
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []

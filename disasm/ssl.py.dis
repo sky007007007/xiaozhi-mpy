@@ -1,0 +1,304 @@
+mpy_source_file: extracted/ssl.py.mpy
+source_file: ssl.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[40] (* for static qstrs):
+    'ssl.py' 
+    '<module>' *
+    'tls' 
+    '*' *
+    'SSLContext' 
+    '0.2.1' 
+    'setter' 
+    'wrap_socket' 
+    'load_cert_chain' 
+    'load_verify_locations' 
+    'cadata' 
+    'verify_mode' 
+    'server_side' 
+    'do_handshake_on_connect' 
+    'server_hostname' 
+    '__init__' *
+    '_context' 
+    'rb' 
+    'read' *
+    'CERT_NONE' 
+    '__version__' 
+    '__name__' *
+    '__module__' *
+    '__qualname__' *
+    'property' 
+    'sock' 
+    'key' *
+    'cert' 
+    'cert_reqs' 
+    'do_handshake' 
+    'PROTOCOL_TLS_SERVER' 
+    'PROTOCOL_TLS_CLIENT' 
+    'self' *
+    'val' 
+    'certfile' 
+    'keyfile' 
+    'isinstance' *
+    'str' *
+    'open' *
+    'cafile' 
+obj_table: [None]
+simple_name: <module>
+  raw bytecode: 47 30:02:01:80:51:1b:02:16:02:80:10:03:2a:01:1b:02:69:54:32:00:10:04:34:02:16:04:50:51:51:11:13:51:51:52:2a:07:53:33:01:16:07:10:05:16:14:51:63
+  prelude: (7, 0, 0, 0, 0, 0)
+  args: []
+  line info: 
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:02       IMPORT_NAME tls
+  16:02       STORE_NAME tls
+  80          LOAD_CONST_SMALL_INT 0 
+  10:03       LOAD_CONST_STRING *
+  2a:01       BUILD_TUPLE 1
+  1b:02       IMPORT_NAME tls
+  69          IMPORT_STAR 
+  54          LOAD_BUILD_CLASS 
+  32:00       MAKE_FUNCTION 0
+  10:04       LOAD_CONST_STRING SSLContext
+  34:02       CALL_FUNCTION 2
+  16:04       STORE_NAME SSLContext
+  50          LOAD_CONST_FALSE 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  11:13       LOAD_NAME CERT_NONE
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  52          LOAD_CONST_TRUE 
+  2a:07       BUILD_TUPLE 7
+  53          LOAD_NULL 
+  33:01       MAKE_FUNCTION_DEFARGS 1
+  16:07       STORE_NAME wrap_socket
+  10:05       LOAD_CONST_STRING 0.2.1
+  16:14       STORE_NAME __version__
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [SSLContext, wrap_socket]
+simple_name: SSLContext
+  raw bytecode: 58 10:02:04:11:15:16:16:10:04:16:17:32:00:16:0f:11:18:32:01:34:01:16:0b:11:0b:13:06:32:02:34:01:16:0b:32:03:16:08:51:51:2a:02:53:33:04:16:09:50:52:51:2a:03:53:33:05:16:07:51:63
+  prelude: (3, 0, 0, 0, 0, 0)
+  args: []
+  line info: 
+  11:15       LOAD_NAME __name__
+  16:16       STORE_NAME __module__
+  10:04       LOAD_CONST_STRING SSLContext
+  16:17       STORE_NAME __qualname__
+  32:00       MAKE_FUNCTION 0
+  16:0f       STORE_NAME __init__
+  11:18       LOAD_NAME property
+  32:01       MAKE_FUNCTION 1
+  34:01       CALL_FUNCTION 1
+  16:0b       STORE_NAME verify_mode
+  11:0b       LOAD_NAME verify_mode
+  13:06       LOAD_ATTR setter
+  32:02       MAKE_FUNCTION 2
+  34:01       CALL_FUNCTION 1
+  16:0b       STORE_NAME verify_mode
+  32:03       MAKE_FUNCTION 3
+  16:08       STORE_NAME load_cert_chain
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  2a:02       BUILD_TUPLE 2
+  53          LOAD_NULL 
+  33:04       MAKE_FUNCTION_DEFARGS 4
+  16:09       STORE_NAME load_verify_locations
+  50          LOAD_CONST_FALSE 
+  52          LOAD_CONST_TRUE 
+  51          LOAD_CONST_NONE 
+  2a:03       BUILD_TUPLE 3
+  53          LOAD_NULL 
+  33:05       MAKE_FUNCTION_DEFARGS 5
+  16:07       STORE_NAME wrap_socket
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [__init__, verify_mode, verify_mode, load_cert_chain, load_verify_locations, wrap_socket]
+simple_name: __init__
+  raw bytecode: 27 a9:80:80:40:04:0f:20:12:02:14:04:b1:81:37:01:b0:18:10:12:13:b0:13:10:18:0b:51:63
+  prelude: (6, 0, 4, 1, 0, 0)
+  args: ['self']
+  line info: 
+  12:02       LOAD_GLOBAL tls
+  14:04       LOAD_METHOD SSLContext
+  b1          LOAD_FAST 1 
+  81          LOAD_CONST_SMALL_INT 1 
+  37:01       CALL_METHOD_VAR_KW 1
+  b0          LOAD_FAST 0 
+  18:10       STORE_ATTR _context
+  12:13       LOAD_GLOBAL CERT_NONE
+  b0          LOAD_FAST 0 
+  13:10       LOAD_ATTR _context
+  18:0b       STORE_ATTR verify_mode
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: verify_mode
+  raw bytecode: 10 09:04:0b:20:b0:13:10:13:0b:63
+  prelude: (2, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 
+  b0          LOAD_FAST 0 
+  13:10       LOAD_ATTR _context
+  13:0b       LOAD_ATTR verify_mode
+  63          RETURN_VALUE 
+  children: []
+simple_name: verify_mode
+  raw bytecode: 13 1a:06:0b:20:21:b1:b0:13:10:18:0b:51:63
+  prelude: (4, 0, 0, 2, 0, 0)
+  args: ['self', 'val']
+  line info: 
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  13:10       LOAD_ATTR _context
+  18:0b       STORE_ATTR verify_mode
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: load_cert_chain
+  raw bytecode: 74 47:08:08:20:22:23:12:24:b1:12:25:34:02:44:53:12:26:b1:10:11:34:02:47:08:c3:b3:14:12:36:00:c1:51:5c:5d:12:24:b2:12:25:34:02:44:53:12:26:b2:10:11:34:02:47:08:c3:b3:14:12:36:00:c2:51:5c:5d:b0:13:10:14:08:b1:b2:36:02:59:51:63
+  prelude: (9, 1, 0, 3, 0, 0)
+  args: ['self', 'certfile', 'keyfile']
+  line info: 
+  12:24       LOAD_GLOBAL isinstance
+  b1          LOAD_FAST 1 
+  12:25       LOAD_GLOBAL str
+  34:02       CALL_FUNCTION 2
+  44:53       POP_JUMP_IF_FALSE 19
+  12:26       LOAD_GLOBAL open
+  b1          LOAD_FAST 1 
+  10:11       LOAD_CONST_STRING rb
+  34:02       CALL_FUNCTION 2
+  47:08       SETUP_WITH 8
+  c3          STORE_FAST 3 
+  b3          LOAD_FAST 3 
+  14:12       LOAD_METHOD read
+  36:00       CALL_METHOD 0
+  c1          STORE_FAST 1 
+  51          LOAD_CONST_NONE 
+  5c          WITH_CLEANUP 
+  5d          END_FINALLY 
+  12:24       LOAD_GLOBAL isinstance
+  b2          LOAD_FAST 2 
+  12:25       LOAD_GLOBAL str
+  34:02       CALL_FUNCTION 2
+  44:53       POP_JUMP_IF_FALSE 19
+  12:26       LOAD_GLOBAL open
+  b2          LOAD_FAST 2 
+  10:11       LOAD_CONST_STRING rb
+  34:02       CALL_FUNCTION 2
+  47:08       SETUP_WITH 8
+  c3          STORE_FAST 3 
+  b3          LOAD_FAST 3 
+  14:12       LOAD_METHOD read
+  36:00       CALL_METHOD 0
+  c2          STORE_FAST 2 
+  51          LOAD_CONST_NONE 
+  5c          WITH_CLEANUP 
+  5d          END_FINALLY 
+  b0          LOAD_FAST 0 
+  13:10       LOAD_ATTR _context
+  14:08       LOAD_METHOD load_cert_chain
+  b1          LOAD_FAST 1 
+  b2          LOAD_FAST 2 
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: load_verify_locations
+  raw bytecode: 41 c7:80:01:08:09:20:27:0a:b1:44:53:12:26:b1:10:11:34:02:47:08:c3:b3:14:12:36:00:c2:51:5c:5d:b0:13:10:14:09:b2:36:01:59:51:63
+  prelude: (9, 1, 0, 3, 0, 2)
+  args: ['self', 'cafile', 'cadata']
+  line info: 
+  b1          LOAD_FAST 1 
+  44:53       POP_JUMP_IF_FALSE 19
+  12:26       LOAD_GLOBAL open
+  b1          LOAD_FAST 1 
+  10:11       LOAD_CONST_STRING rb
+  34:02       CALL_FUNCTION 2
+  47:08       SETUP_WITH 8
+  c3          STORE_FAST 3 
+  b3          LOAD_FAST 3 
+  14:12       LOAD_METHOD read
+  36:00       CALL_METHOD 0
+  c2          STORE_FAST 2 
+  51          LOAD_CONST_NONE 
+  5c          WITH_CLEANUP 
+  5d          END_FINALLY 
+  b0          LOAD_FAST 0 
+  13:10       LOAD_ATTR _context
+  14:09       LOAD_METHOD load_verify_locations
+  b2          LOAD_FAST 2 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: wrap_socket
+  raw bytecode: 29 e9:85:01:0c:07:20:19:0c:0d:0e:b0:13:10:14:07:b1:10:0c:b2:10:0d:b3:10:0e:b4:36:86:01:63
+  prelude: (14, 0, 0, 5, 0, 3)
+  args: ['self', 'sock', 'server_side', 'do_handshake_on_connect', 'server_hostname']
+  line info: 
+  b0          LOAD_FAST 0 
+  13:10       LOAD_ATTR _context
+  14:07       LOAD_METHOD wrap_socket
+  b1          LOAD_FAST 1 
+  10:0c       LOAD_CONST_STRING server_side
+  b2          LOAD_FAST 2 
+  10:0d       LOAD_CONST_STRING do_handshake_on_connect
+  b3          LOAD_FAST 3 
+  10:0e       LOAD_CONST_STRING server_hostname
+  b4          LOAD_FAST 4 
+  36:86:01    CALL_METHOD 769
+  63          RETURN_VALUE 
+  children: []
+simple_name: wrap_socket
+  raw bytecode: 76 88:91:85:01:12:07:19:0c:1a:1b:1c:0a:0e:1d:12:04:b1:44:44:12:1e:42:42:12:1f:34:01:c8:b3:43:43:b2:44:48:b8:14:08:b3:b2:36:02:59:b5:44:4a:b8:14:09:10:0a:b5:36:82:00:59:b4:b8:18:0b:b8:14:07:b0:10:0c:b1:10:0d:b7:10:0e:b6:36:86:01:63
+  prelude: (18, 0, 0, 8, 0, 7)
+  args: ['sock', 'server_side', 'key', 'cert', 'cert_reqs', 'cadata', 'server_hostname', 'do_handshake']
+  line info: 
+  12:04       LOAD_GLOBAL SSLContext
+  b1          LOAD_FAST 1 
+  44:44       POP_JUMP_IF_FALSE 4
+  12:1e       LOAD_GLOBAL PROTOCOL_TLS_SERVER
+  42:42       JUMP 2
+  12:1f       LOAD_GLOBAL PROTOCOL_TLS_CLIENT
+  34:01       CALL_FUNCTION 1
+  c8          STORE_FAST 8 
+  b3          LOAD_FAST 3 
+  43:43       POP_JUMP_IF_TRUE 3
+  b2          LOAD_FAST 2 
+  44:48       POP_JUMP_IF_FALSE 8
+  b8          LOAD_FAST 8 
+  14:08       LOAD_METHOD load_cert_chain
+  b3          LOAD_FAST 3 
+  b2          LOAD_FAST 2 
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b5          LOAD_FAST 5 
+  44:4a       POP_JUMP_IF_FALSE 10
+  b8          LOAD_FAST 8 
+  14:09       LOAD_METHOD load_verify_locations
+  10:0a       LOAD_CONST_STRING cadata
+  b5          LOAD_FAST 5 
+  36:82:00    CALL_METHOD 256
+  59          POP_TOP 
+  b4          LOAD_FAST 4 
+  b8          LOAD_FAST 8 
+  18:0b       STORE_ATTR verify_mode
+  b8          LOAD_FAST 8 
+  14:07       LOAD_METHOD wrap_socket
+  b0          LOAD_FAST 0 
+  10:0c       LOAD_CONST_STRING server_side
+  b1          LOAD_FAST 1 
+  10:0d       LOAD_CONST_STRING do_handshake_on_connect
+  b7          LOAD_FAST 7 
+  10:0e       LOAD_CONST_STRING server_hostname
+  b6          LOAD_FAST 6 
+  36:86:01    CALL_METHOD 769
+  63          RETURN_VALUE 
+  children: []

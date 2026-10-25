@@ -1,0 +1,3503 @@
+mpy_source_file: extracted/hid_services.py.mpy
+source_file: hid_services.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[214] (* for static qstrs):
+    'hid_services.py' 
+    '<module>' *
+    'const' *
+    'micropython' *
+    'struct' 
+    'bluetooth' 
+    'json' 
+    'binascii' 
+    'UUID' 
+    'FLAG_READ' 
+    'FLAG_WRITE' 
+    'FLAG_NOTIFY' 
+    'Advertiser' 
+    'HumanInterfaceDevice' 
+    'Joystick' 
+    'Mouse' 
+    'Keyboard' 
+    'Homebrew' 
+    '1' 
+    'advertising_payload' 
+    'pack' 
+    'B' 
+    '<h' 
+    'decode_field' 
+    'append' *
+    'decode_name' 
+    'utf-8' *
+    'q1' 
+    'decode_services' 
+    'unpack' 
+    '<d' 
+    '__init__' *
+    '_ble' 
+    'name' 
+    'services' 
+    'appearance' 
+    '_payload' 
+    'advertising' 
+    'start_advertising' 
+    'gap_advertise' 
+    'adv_data' 
+    'stop_advertising' 
+    'BLE' 
+    'adv' 
+    'DEVICE_STOPPED' 
+    'device_state' 
+    'conn_handle' 
+    'state_change_callback' 
+    'io_capability' 
+    'bond' 
+    'le_secure' 
+    'device_name' 
+    'service_uuids' 
+    'device_appearance' 
+    'battery_level' 
+    'model_number' 
+    'serial_number' 
+    'firmware_revision' 
+    'hardware_revision' 
+    'software_revision' 
+    'manufacture_name' 
+    'pnp_manufacturer_source' 
+    'pnp_manufacturer_uuid' 
+    'pnp_product_id' 
+    'pnp_product_version' 
+    'DIS' 
+    'BAS' 
+    'HID_INPUT_REPORT' 
+    'passkey' 
+    'keys' *
+    'load_secrets' 
+    'ble_irq' 
+    'set_state' 
+    'DEVICE_CONNECTED' 
+    'DEVICE_IDLE' 
+    'passkey_callback' 
+    'gap_passkey' 
+    'save_secrets' 
+    'items' *
+    'get' *
+    'start' *
+    'irq' 
+    'active' 
+    'config' 
+    'gap_name' 
+    'mtu' 
+    'mitm' 
+    'io' 
+    'BLE on' 
+    'write_service_characteristics' 
+    'h_bat' 
+    'gatts_write' 
+    '<BHHH' 
+    '<B' 
+    'stop' *
+    'DEVICE_ADVERTISING' 
+    'gap_disconnect' 
+    'keys.json' 
+    'r' 
+    'load' 
+    'a2b_base64' 
+    'w' 
+    'dump' 
+    'is_running' 
+    'is_connected' 
+    'is_advertising' 
+    'get_state' 
+    'set_state_change_callback' 
+    'get_device_name' 
+    'get_services_uuids' 
+    'get_appearance' 
+    'get_battery_level' 
+    'set_battery_level' 
+    'set_device_information' 
+    'set_device_revision' 
+    'set_device_pnp_information' 
+    'set_bonding' 
+    'set_le_secure' 
+    'set_io_capability' 
+    'set_passkey_callback' 
+    'set_passkey' 
+    'notify_battery_level' 
+    'gatts_notify' 
+    'notify_hid_report' 
+    'HIDS' 
+    'x' 
+    'y' 
+    'button1' 
+    'button2' 
+    'button3' 
+    'button4' 
+    'button5' 
+    'button6' 
+    'button7' 
+    'button8' 
+    'gatts_register_services' 
+    'h_rep' 
+    'bbB' 
+    '<BB' 
+    'set_axes' 
+    'set_buttons' 
+    'Bbbb' 
+    'set_wheel' 
+    'modifiers' 
+    'keypresses' 
+    'kb_callback' 
+    'gatts_read' 
+    'h_repout' 
+    '8B' 
+    'set_modifiers' 
+    'set_keys' 
+    'set_kb_callback' 
+    '_append' 
+    'BB' 
+    'string_pack' 
+    's' 
+    'encode' 
+    'UTF-8' 
+    '<listcomp>' 
+    'b2a_base64' 
+    'F_READ' 
+    'F_WRITE' 
+    'F_READ_WRITE' 
+    'F_READ_NOTIFY' 
+    'ATT_F_READ' 
+    'ATT_F_WRITE' 
+    'object' *
+    '__name__' *
+    '__module__' *
+    '__qualname__' *
+    'self' *
+    'limited_disc' 
+    'br_edr' 
+    'bytearray' *
+    'bytes' *
+    'len' *
+    'payload' 
+    'adv_type' 
+    'str' *
+    'ble' 
+    'print' *
+    'event' 
+    'data' 
+    'handles' 
+    'open' *
+    'state' 
+    'callback' 
+    'level' 
+    'super' *
+    'b1' 
+    'b2' 
+    'b3' 
+    'b4' 
+    'b5' 
+    'b6' 
+    'b7' 
+    'b8' 
+    'right_gui' 
+    'right_alt' 
+    'right_shift' 
+    'right_control' 
+    'left_gui' 
+    'left_alt' 
+    'left_shift' 
+    'left_control' 
+    'k0' 
+    'k1' 
+    'k2' 
+    'k3' 
+    'k4' 
+    'k5' 
+    '*' *
+    'value' *
+    'in_str' 
+obj_table: ['Generic HID Device', 'Bluetooth Joystick', 'Bluetooth Mouse', 'Bluetooth Keyboard', 'Advertiser created: ', ' with services: ', 'Started advertising', 'Stopped advertising', 'Server created', 'Central connected: ', 'Central disconnected: ', 'MTU exchanged: ', 'Connection update', 'encryption update', 'passkey action', 'displaying passkey', 'prompting for passkey', 'unknown action', 'gatts done: ', 'set secret: ', 'get secret: ', 'Unhandled IRQ event: ', 'Writing service characteristics', 'Writing device information service characteristics', 'Writing battery service characteristics', 'Server stopped', 'no secrets available', 'failed to save secrets', 'Notify battery level: ', 'Registering services', 'Server started', 'Writing hid service characteristics', b'\x01\x01\x00\x02', b'\x01', 'Notify with report: ', 'Keyboard changed by Central']
+simple_name: <module>
+  raw bytecode: 175 18:2e:01:20:2c:26:26:26:26:4c:27:27:2c:4c:24:84:36:89:48:9c:30:8b:71:8b:76:80:10:02:2a:01:1b:03:1c:02:16:02:59:80:51:1b:04:16:04:80:51:1b:05:16:05:80:51:1b:06:16:06:80:51:1b:07:16:07:80:10:08:2a:01:1b:05:1c:08:16:08:59:11:05:13:09:16:81:20:11:05:13:0a:16:81:21:11:05:13:09:11:05:13:0a:ed:16:81:22:11:05:13:09:11:05:13:0b:ed:16:81:23:81:16:81:24:82:16:81:25:54:32:00:10:0c:34:02:16:0c:54:32:01:10:0d:11:81:26:34:03:16:0d:54:32:02:10:0e:11:0d:34:03:16:0e:54:32:03:10:0f:11:0d:34:03:16:0f:54:32:04:10:10:11:0d:34:03:16:10:51:63
+  prelude: (4, 0, 0, 0, 0, 0)
+  args: []
+  line info: 20:2c:26:26:26:26:4c:27:27:2c:4c:24:84:36:89:48:9c:30:8b:71:8b:76
+  80          LOAD_CONST_SMALL_INT 0 
+  10:02       LOAD_CONST_STRING const
+  2a:01       BUILD_TUPLE 1
+  1b:03       IMPORT_NAME micropython
+  1c:02       IMPORT_FROM const
+  16:02       STORE_NAME const
+  59          POP_TOP 
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:04       IMPORT_NAME struct
+  16:04       STORE_NAME struct
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:05       IMPORT_NAME bluetooth
+  16:05       STORE_NAME bluetooth
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:06       IMPORT_NAME json
+  16:06       STORE_NAME json
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:07       IMPORT_NAME binascii
+  16:07       STORE_NAME binascii
+  80          LOAD_CONST_SMALL_INT 0 
+  10:08       LOAD_CONST_STRING UUID
+  2a:01       BUILD_TUPLE 1
+  1b:05       IMPORT_NAME bluetooth
+  1c:08       IMPORT_FROM UUID
+  16:08       STORE_NAME UUID
+  59          POP_TOP 
+  11:05       LOAD_NAME bluetooth
+  13:09       LOAD_ATTR FLAG_READ
+  16:81:20    STORE_NAME F_READ
+  11:05       LOAD_NAME bluetooth
+  13:0a       LOAD_ATTR FLAG_WRITE
+  16:81:21    STORE_NAME F_WRITE
+  11:05       LOAD_NAME bluetooth
+  13:09       LOAD_ATTR FLAG_READ
+  11:05       LOAD_NAME bluetooth
+  13:0a       LOAD_ATTR FLAG_WRITE
+  ed          BINARY_OP 22 __or__ 
+  16:81:22    STORE_NAME F_READ_WRITE
+  11:05       LOAD_NAME bluetooth
+  13:09       LOAD_ATTR FLAG_READ
+  11:05       LOAD_NAME bluetooth
+  13:0b       LOAD_ATTR FLAG_NOTIFY
+  ed          BINARY_OP 22 __or__ 
+  16:81:23    STORE_NAME F_READ_NOTIFY
+  81          LOAD_CONST_SMALL_INT 1 
+  16:81:24    STORE_NAME ATT_F_READ
+  82          LOAD_CONST_SMALL_INT 2 
+  16:81:25    STORE_NAME ATT_F_WRITE
+  54          LOAD_BUILD_CLASS 
+  32:00       MAKE_FUNCTION 0
+  10:0c       LOAD_CONST_STRING Advertiser
+  34:02       CALL_FUNCTION 2
+  16:0c       STORE_NAME Advertiser
+  54          LOAD_BUILD_CLASS 
+  32:01       MAKE_FUNCTION 1
+  10:0d       LOAD_CONST_STRING HumanInterfaceDevice
+  11:81:26    LOAD_NAME object
+  34:03       CALL_FUNCTION 3
+  16:0d       STORE_NAME HumanInterfaceDevice
+  54          LOAD_BUILD_CLASS 
+  32:02       MAKE_FUNCTION 2
+  10:0e       LOAD_CONST_STRING Joystick
+  11:0d       LOAD_NAME HumanInterfaceDevice
+  34:03       CALL_FUNCTION 3
+  16:0e       STORE_NAME Joystick
+  54          LOAD_BUILD_CLASS 
+  32:03       MAKE_FUNCTION 3
+  10:0f       LOAD_CONST_STRING Mouse
+  11:0d       LOAD_NAME HumanInterfaceDevice
+  34:03       CALL_FUNCTION 3
+  16:0f       STORE_NAME Mouse
+  54          LOAD_BUILD_CLASS 
+  32:04       MAKE_FUNCTION 4
+  10:10       LOAD_CONST_STRING Keyboard
+  11:0d       LOAD_NAME HumanInterfaceDevice
+  34:03       CALL_FUNCTION 3
+  16:10       STORE_NAME Keyboard
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [Advertiser, HumanInterfaceDevice, Joystick, Mouse, Keyboard]
+simple_name: Advertiser
+  raw bytecode: 88 20:20:0c:8b:46:8c:1e:84:09:64:20:84:0a:79:60:20:64:40:11:81:27:16:81:28:10:0c:16:81:29:50:50:51:51:80:2a:05:53:33:00:16:13:32:01:16:17:32:02:16:19:32:03:16:1c:11:08:22:b0:12:34:01:2b:01:11:02:22:87:40:34:01:23:00:2a:03:53:33:04:16:1f:32:05:16:26:32:06:16:29:51:63
+  prelude: (5, 0, 0, 0, 0, 0)
+  args: []
+  line info: 8b:46:8c:1e:84:09:64:20:84:0a:79:60:20:64:40
+  11:81:27    LOAD_NAME __name__
+  16:81:28    STORE_NAME __module__
+  10:0c       LOAD_CONST_STRING Advertiser
+  16:81:29    STORE_NAME __qualname__
+  50          LOAD_CONST_FALSE 
+  50          LOAD_CONST_FALSE 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  80          LOAD_CONST_SMALL_INT 0 
+  2a:05       BUILD_TUPLE 5
+  53          LOAD_NULL 
+  33:00       MAKE_FUNCTION_DEFARGS 0
+  16:13       STORE_NAME advertising_payload
+  32:01       MAKE_FUNCTION 1
+  16:17       STORE_NAME decode_field
+  32:02       MAKE_FUNCTION 2
+  16:19       STORE_NAME decode_name
+  32:03       MAKE_FUNCTION 3
+  16:1c       STORE_NAME decode_services
+  11:08       LOAD_NAME UUID
+  22:b0:12    LOAD_CONST_SMALL_INT 6162
+  34:01       CALL_FUNCTION 1
+  2b:01       BUILD_LIST 1
+  11:02       LOAD_NAME const
+  22:87:40    LOAD_CONST_SMALL_INT 960
+  34:01       CALL_FUNCTION 1
+  23:00       LOAD_CONST_OBJ 'Generic HID Device'
+  2a:03       BUILD_TUPLE 3
+  53          LOAD_NULL 
+  33:04       MAKE_FUNCTION_DEFARGS 4
+  16:1f       STORE_NAME __init__
+  32:05       MAKE_FUNCTION 5
+  16:26       STORE_NAME start_advertising
+  32:06       MAKE_FUNCTION 6
+  16:29       STORE_NAME stop_advertising
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [advertising_payload, decode_field, decode_name, decode_services, __init__, start_advertising, stop_advertising]
+simple_name: advertising_payload
+  raw bytecode: 178 82:95:80:01:3d:13:81:2a:81:2b:81:2c:21:22:23:80:47:47:65:20:42:7a:23:46:24:25:27:2a:28:2a:28:2a:4b:23:4e:09:12:81:2d:34:00:27:09:b9:20:00:01:c6:b6:81:12:04:14:14:10:15:b1:44:43:81:42:41:82:b2:44:43:98:42:41:84:f2:36:02:34:02:59:b3:44:46:b6:89:b3:34:02:59:b4:44:c5:80:b4:5f:4b:41:c7:12:81:2e:b7:34:01:c8:12:81:2f:b8:34:01:82:d9:44:48:b6:83:b8:34:02:59:42:64:12:81:2f:b8:34:01:84:d9:44:48:b6:85:b8:34:02:59:42:52:12:81:2f:b8:34:01:90:d9:44:48:b6:87:b8:34:02:59:42:40:42:bd:7f:b5:44:4e:b6:99:12:04:14:14:10:16:b5:36:02:34:02:59:25:09:63
+  prelude: (17, 0, 0, 6, 0, 5)
+  args: ['self', 'limited_disc', 'br_edr', 'name', 'services', 'appearance']
+  line info: 80:47:47:65:20:42:7a:23:46:24:25:27:2a:28:2a:28:2a:4b:23:4e:09
+  12:81:2d    LOAD_GLOBAL bytearray
+  34:00       CALL_FUNCTION 0
+  27:09       STORE_DEREF 9
+  b9          LOAD_FAST 9 
+  20:00:01    MAKE_CLOSURE 0
+  c6          STORE_FAST 6 
+  b6          LOAD_FAST 6 
+  81          LOAD_CONST_SMALL_INT 1 
+  12:04       LOAD_GLOBAL struct
+  14:14       LOAD_METHOD pack
+  10:15       LOAD_CONST_STRING B
+  b1          LOAD_FAST 1 
+  44:43       POP_JUMP_IF_FALSE 3
+  81          LOAD_CONST_SMALL_INT 1 
+  42:41       JUMP 1
+  82          LOAD_CONST_SMALL_INT 2 
+  b2          LOAD_FAST 2 
+  44:43       POP_JUMP_IF_FALSE 3
+  98          LOAD_CONST_SMALL_INT 24 
+  42:41       JUMP 1
+  84          LOAD_CONST_SMALL_INT 4 
+  f2          BINARY_OP 27 __add__ 
+  36:02       CALL_METHOD 2
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  b3          LOAD_FAST 3 
+  44:46       POP_JUMP_IF_FALSE 6
+  b6          LOAD_FAST 6 
+  89          LOAD_CONST_SMALL_INT 9 
+  b3          LOAD_FAST 3 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  b4          LOAD_FAST 4 
+  44:c5:80    POP_JUMP_IF_FALSE 69
+  b4          LOAD_FAST 4 
+  5f          GET_ITER_STACK 
+  4b:41       FOR_ITER 65
+  c7          STORE_FAST 7 
+  12:81:2e    LOAD_GLOBAL bytes
+  b7          LOAD_FAST 7 
+  34:01       CALL_FUNCTION 1
+  c8          STORE_FAST 8 
+  12:81:2f    LOAD_GLOBAL len
+  b8          LOAD_FAST 8 
+  34:01       CALL_FUNCTION 1
+  82          LOAD_CONST_SMALL_INT 2 
+  d9          BINARY_OP 2 __eq__ 
+  44:48       POP_JUMP_IF_FALSE 8
+  b6          LOAD_FAST 6 
+  83          LOAD_CONST_SMALL_INT 3 
+  b8          LOAD_FAST 8 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  42:64       JUMP 36
+  12:81:2f    LOAD_GLOBAL len
+  b8          LOAD_FAST 8 
+  34:01       CALL_FUNCTION 1
+  84          LOAD_CONST_SMALL_INT 4 
+  d9          BINARY_OP 2 __eq__ 
+  44:48       POP_JUMP_IF_FALSE 8
+  b6          LOAD_FAST 6 
+  85          LOAD_CONST_SMALL_INT 5 
+  b8          LOAD_FAST 8 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  42:52       JUMP 18
+  12:81:2f    LOAD_GLOBAL len
+  b8          LOAD_FAST 8 
+  34:01       CALL_FUNCTION 1
+  90          LOAD_CONST_SMALL_INT 16 
+  d9          BINARY_OP 2 __eq__ 
+  44:48       POP_JUMP_IF_FALSE 8
+  b6          LOAD_FAST 6 
+  87          LOAD_CONST_SMALL_INT 7 
+  b8          LOAD_FAST 8 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  42:40       JUMP 0
+  42:bd:7f    JUMP -67
+  b5          LOAD_FAST 5 
+  44:4e       POP_JUMP_IF_FALSE 14
+  b6          LOAD_FAST 6 
+  99          LOAD_CONST_SMALL_INT 25 
+  12:04       LOAD_GLOBAL struct
+  14:14       LOAD_METHOD pack
+  10:16       LOAD_CONST_STRING <h
+  b5          LOAD_FAST 5 
+  36:02       CALL_METHOD 2
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  25:09       LOAD_DEREF 9
+  63          RETURN_VALUE 
+  children: [_append]
+simple_name: _append
+  raw bytecode: 40 43:16:81:18:81:53:81:31:81:54:80:4a:20:25:00:12:04:14:14:10:81:19:12:81:2f:b2:34:01:81:f2:b1:36:03:b2:f2:e5:27:00:51:63
+  prelude: (9, 0, 0, 3, 0, 0)
+  args: ['*', 'adv_type', 'value']
+  line info: 80:4a:20
+  25:00       LOAD_DEREF 0
+  12:04       LOAD_GLOBAL struct
+  14:14       LOAD_METHOD pack
+  10:81:19    LOAD_CONST_STRING BB
+  12:81:2f    LOAD_GLOBAL len
+  b2          LOAD_FAST 2 
+  34:01       CALL_FUNCTION 1
+  81          LOAD_CONST_SMALL_INT 1 
+  f2          BINARY_OP 27 __add__ 
+  b1          LOAD_FAST 1 
+  36:03       CALL_METHOD 3
+  b2          LOAD_FAST 2 
+  f2          BINARY_OP 27 __add__ 
+  e5          BINARY_OP 14 __iadd__ 
+  27:00       STORE_DEREF 0
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: decode_field
+  raw bytecode: 75 5b:1e:17:81:2a:81:30:81:31:80:65:22:23:22:29:34:34:80:c3:2b:00:c4:42:65:b1:b3:81:f2:55:b2:d9:44:54:b4:14:18:b1:b3:82:f2:b3:b1:b3:55:f2:81:f2:2e:02:55:36:01:59:b3:81:b1:b3:55:f2:e5:c3:b3:81:f2:12:81:2f:b1:34:01:d7:43:0f:b4:63
+  prelude: (12, 0, 0, 3, 0, 0)
+  args: ['self', 'payload', 'adv_type']
+  line info: 80:65:22:23:22:29:34:34
+  80          LOAD_CONST_SMALL_INT 0 
+  c3          STORE_FAST 3 
+  2b:00       BUILD_LIST 0
+  c4          STORE_FAST 4 
+  42:65       JUMP 37
+  b1          LOAD_FAST 1 
+  b3          LOAD_FAST 3 
+  81          LOAD_CONST_SMALL_INT 1 
+  f2          BINARY_OP 27 __add__ 
+  55          LOAD_SUBSCR 
+  b2          LOAD_FAST 2 
+  d9          BINARY_OP 2 __eq__ 
+  44:54       POP_JUMP_IF_FALSE 20
+  b4          LOAD_FAST 4 
+  14:18       LOAD_METHOD append
+  b1          LOAD_FAST 1 
+  b3          LOAD_FAST 3 
+  82          LOAD_CONST_SMALL_INT 2 
+  f2          BINARY_OP 27 __add__ 
+  b3          LOAD_FAST 3 
+  b1          LOAD_FAST 1 
+  b3          LOAD_FAST 3 
+  55          LOAD_SUBSCR 
+  f2          BINARY_OP 27 __add__ 
+  81          LOAD_CONST_SMALL_INT 1 
+  f2          BINARY_OP 27 __add__ 
+  2e:02       BUILD_SLICE 2
+  55          LOAD_SUBSCR 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b3          LOAD_FAST 3 
+  81          LOAD_CONST_SMALL_INT 1 
+  b1          LOAD_FAST 1 
+  b3          LOAD_FAST 3 
+  55          LOAD_SUBSCR 
+  f2          BINARY_OP 27 __add__ 
+  e5          BINARY_OP 14 __iadd__ 
+  c3          STORE_FAST 3 
+  b3          LOAD_FAST 3 
+  81          LOAD_CONST_SMALL_INT 1 
+  f2          BINARY_OP 27 __add__ 
+  12:81:2f    LOAD_GLOBAL len
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  d7          BINARY_OP 0 __lt__ 
+  43:0f       POP_JUMP_IF_TRUE -49
+  b4          LOAD_FAST 4 
+  63          RETURN_VALUE 
+  children: []
+simple_name: decode_name
+  raw bytecode: 32 32:10:19:81:2a:81:30:80:6e:28:b0:14:17:b1:89:36:02:c2:b2:44:4b:12:81:32:b2:80:55:10:1a:34:02:63
+  prelude: (7, 0, 0, 2, 0, 0)
+  args: ['self', 'payload']
+  line info: 80:6e:28
+  b0          LOAD_FAST 0 
+  14:17       LOAD_METHOD decode_field
+  b1          LOAD_FAST 1 
+  89          LOAD_CONST_SMALL_INT 9 
+  36:02       CALL_METHOD 2
+  c2          STORE_FAST 2 
+  b2          LOAD_FAST 2 
+  44:4b       POP_JUMP_IF_FALSE 11
+  12:81:32    LOAD_GLOBAL str
+  b2          LOAD_FAST 2 
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  10:1a       LOAD_CONST_STRING utf-8
+  34:02       CALL_FUNCTION 2
+  63          RETURN_VALUE 
+  children: []
+simple_name: decode_services
+  raw bytecode: 119 7a:1c:1c:81:2a:81:30:80:72:23:2b:39:2b:39:2b:2f:2b:00:c2:b0:14:17:b1:83:36:02:5f:4b:1a:c3:b2:14:18:12:05:14:08:12:04:14:1d:10:16:b3:36:02:80:55:36:01:36:01:59:42:24:b0:14:17:b1:85:36:02:5f:4b:1a:c3:b2:14:18:12:05:14:08:12:04:14:1d:10:1e:b3:36:02:80:55:36:01:36:01:59:42:24:b0:14:17:b1:87:36:02:5f:4b:10:c3:b2:14:18:12:05:14:08:b3:36:01:36:01:59:42:2e:b2:63
+  prelude: (16, 0, 0, 2, 0, 0)
+  args: ['self', 'payload']
+  line info: 80:72:23:2b:39:2b:39:2b:2f
+  2b:00       BUILD_LIST 0
+  c2          STORE_FAST 2 
+  b0          LOAD_FAST 0 
+  14:17       LOAD_METHOD decode_field
+  b1          LOAD_FAST 1 
+  83          LOAD_CONST_SMALL_INT 3 
+  36:02       CALL_METHOD 2
+  5f          GET_ITER_STACK 
+  4b:1a       FOR_ITER 26
+  c3          STORE_FAST 3 
+  b2          LOAD_FAST 2 
+  14:18       LOAD_METHOD append
+  12:05       LOAD_GLOBAL bluetooth
+  14:08       LOAD_METHOD UUID
+  12:04       LOAD_GLOBAL struct
+  14:1d       LOAD_METHOD unpack
+  10:16       LOAD_CONST_STRING <h
+  b3          LOAD_FAST 3 
+  36:02       CALL_METHOD 2
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  36:01       CALL_METHOD 1
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  42:24       JUMP -28
+  b0          LOAD_FAST 0 
+  14:17       LOAD_METHOD decode_field
+  b1          LOAD_FAST 1 
+  85          LOAD_CONST_SMALL_INT 5 
+  36:02       CALL_METHOD 2
+  5f          GET_ITER_STACK 
+  4b:1a       FOR_ITER 26
+  c3          STORE_FAST 3 
+  b2          LOAD_FAST 2 
+  14:18       LOAD_METHOD append
+  12:05       LOAD_GLOBAL bluetooth
+  14:08       LOAD_METHOD UUID
+  12:04       LOAD_GLOBAL struct
+  14:1d       LOAD_METHOD unpack
+  10:1e       LOAD_CONST_STRING <d
+  b3          LOAD_FAST 3 
+  36:02       CALL_METHOD 2
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  36:01       CALL_METHOD 1
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  42:24       JUMP -28
+  b0          LOAD_FAST 0 
+  14:17       LOAD_METHOD decode_field
+  b1          LOAD_FAST 1 
+  87          LOAD_CONST_SMALL_INT 7 
+  36:02       CALL_METHOD 2
+  5f          GET_ITER_STACK 
+  4b:10       FOR_ITER 16
+  c3          STORE_FAST 3 
+  b2          LOAD_FAST 2 
+  14:18       LOAD_METHOD append
+  12:05       LOAD_GLOBAL bluetooth
+  14:08       LOAD_METHOD UUID
+  b3          LOAD_FAST 3 
+  36:01       CALL_METHOD 1
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  42:2e       JUMP -18
+  b2          LOAD_FAST 2 
+  63          RETURN_VALUE 
+  children: []
+simple_name: __init__
+  raw bytecode: 71 e1:85:01:1a:1f:81:2a:81:33:22:23:21:80:7c:24:52:24:b1:b0:18:20:b0:14:13:10:21:b4:10:22:b2:10:23:b3:36:86:00:b0:18:24:50:b0:18:25:12:81:34:23:04:b0:14:19:b0:13:24:36:01:23:05:b0:14:1c:b0:13:24:36:01:34:04:59:51:63
+  prelude: (13, 0, 0, 5, 0, 3)
+  args: ['self', 'ble', 'services', 'appearance', 'name']
+  line info: 80:7c:24:52:24
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:20       STORE_ATTR _ble
+  b0          LOAD_FAST 0 
+  14:13       LOAD_METHOD advertising_payload
+  10:21       LOAD_CONST_STRING name
+  b4          LOAD_FAST 4 
+  10:22       LOAD_CONST_STRING services
+  b2          LOAD_FAST 2 
+  10:23       LOAD_CONST_STRING appearance
+  b3          LOAD_FAST 3 
+  36:86:00    CALL_METHOD 768
+  b0          LOAD_FAST 0 
+  18:24       STORE_ATTR _payload
+  50          LOAD_CONST_FALSE 
+  b0          LOAD_FAST 0 
+  18:25       STORE_ATTR advertising
+  12:81:34    LOAD_GLOBAL print
+  23:04       LOAD_CONST_OBJ 'Advertiser created: '
+  b0          LOAD_FAST 0 
+  14:19       LOAD_METHOD decode_name
+  b0          LOAD_FAST 0 
+  13:24       LOAD_ATTR _payload
+  36:01       CALL_METHOD 1
+  23:05       LOAD_CONST_OBJ ' with services: '
+  b0          LOAD_FAST 0 
+  14:1c       LOAD_METHOD decode_services
+  b0          LOAD_FAST 0 
+  13:24       LOAD_ATTR _payload
+  36:01       CALL_METHOD 1
+  34:04       CALL_FUNCTION 4
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: start_advertising
+  raw bytecode: 42 29:0e:26:81:2a:80:83:25:32:b0:13:25:43:5a:b0:13:20:14:27:22:86:8d:20:10:28:b0:13:24:36:82:01:59:12:81:34:23:06:34:01:59:51:63
+  prelude: (6, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:83:25:32
+  b0          LOAD_FAST 0 
+  13:25       LOAD_ATTR advertising
+  43:5a       POP_JUMP_IF_TRUE 26
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:27       LOAD_METHOD gap_advertise
+  22:86:8d:20 LOAD_CONST_SMALL_INT 100000
+  10:28       LOAD_CONST_STRING adv_data
+  b0          LOAD_FAST 0 
+  13:24       LOAD_ATTR _payload
+  36:82:01    CALL_METHOD 257
+  59          POP_TOP 
+  12:81:34    LOAD_GLOBAL print
+  23:06       LOAD_CONST_OBJ 'Started advertising'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: stop_advertising
+  raw bytecode: 39 29:0e:29:81:2a:80:88:25:2f:b0:13:25:44:57:b0:13:20:14:27:80:10:28:b0:13:24:36:82:01:59:12:81:34:23:07:34:01:59:51:63
+  prelude: (6, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:88:25:2f
+  b0          LOAD_FAST 0 
+  13:25       LOAD_ATTR advertising
+  44:57       POP_JUMP_IF_FALSE 23
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:27       LOAD_METHOD gap_advertise
+  80          LOAD_CONST_SMALL_INT 0 
+  10:28       LOAD_CONST_STRING adv_data
+  b0          LOAD_FAST 0 
+  13:24       LOAD_ATTR _payload
+  36:82:01    CALL_METHOD 257
+  59          POP_TOP 
+  12:81:34    LOAD_GLOBAL print
+  23:07       LOAD_CONST_OBJ 'Stopped advertising'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: HumanInterfaceDevice
+  raw bytecode: 233 18:66:0d:8b:8d:23:23:23:43:89:39:84:4a:84:15:84:16:84:0e:84:09:84:0b:64:64:64:64:40:64:64:64:40:64:60:64:64:64:64:84:08:6d:40:6d:40:70:60:64:64:64:64:64:64:40:11:81:27:16:81:28:10:0d:16:81:29:80:16:2c:81:16:4a:82:16:5f:83:16:49:23:00:2a:01:53:33:00:16:1f:32:01:16:47:32:02:16:50:32:03:16:59:32:04:16:5e:32:05:16:46:32:06:16:4d:32:07:16:67:32:08:16:68:32:09:16:69:32:0a:16:48:32:0b:16:6a:32:0c:16:6b:32:0d:16:26:32:0e:16:29:32:0f:16:6c:32:10:16:6d:32:11:16:6e:32:12:16:6f:32:13:16:70:10:11:10:12:10:12:2a:03:53:33:14:16:71:10:12:10:12:10:12:2a:03:53:33:15:16:72:81:22:83:fc:61:81:22:82:23:2a:04:53:33:16:16:73:32:17:16:74:32:18:16:75:32:19:16:76:32:1a:16:77:32:1b:16:78:32:1c:16:79:32:1d:16:7b:51:63
+  prelude: (4, 0, 0, 0, 0, 0)
+  args: []
+  line info: 8b:8d:23:23:23:43:89:39:84:4a:84:15:84:16:84:0e:84:09:84:0b:64:64:64:64:40:64:64:64:40:64:60:64:64:64:64:84:08:6d:40:6d:40:70:60:64:64:64:64:64:64:40
+  11:81:27    LOAD_NAME __name__
+  16:81:28    STORE_NAME __module__
+  10:0d       LOAD_CONST_STRING HumanInterfaceDevice
+  16:81:29    STORE_NAME __qualname__
+  80          LOAD_CONST_SMALL_INT 0 
+  16:2c       STORE_NAME DEVICE_STOPPED
+  81          LOAD_CONST_SMALL_INT 1 
+  16:4a       STORE_NAME DEVICE_IDLE
+  82          LOAD_CONST_SMALL_INT 2 
+  16:5f       STORE_NAME DEVICE_ADVERTISING
+  83          LOAD_CONST_SMALL_INT 3 
+  16:49       STORE_NAME DEVICE_CONNECTED
+  23:00       LOAD_CONST_OBJ 'Generic HID Device'
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:00       MAKE_FUNCTION_DEFARGS 0
+  16:1f       STORE_NAME __init__
+  32:01       MAKE_FUNCTION 1
+  16:47       STORE_NAME ble_irq
+  32:02       MAKE_FUNCTION 2
+  16:50       STORE_NAME start
+  32:03       MAKE_FUNCTION 3
+  16:59       STORE_NAME write_service_characteristics
+  32:04       MAKE_FUNCTION 4
+  16:5e       STORE_NAME stop
+  32:05       MAKE_FUNCTION 5
+  16:46       STORE_NAME load_secrets
+  32:06       MAKE_FUNCTION 6
+  16:4d       STORE_NAME save_secrets
+  32:07       MAKE_FUNCTION 7
+  16:67       STORE_NAME is_running
+  32:08       MAKE_FUNCTION 8
+  16:68       STORE_NAME is_connected
+  32:09       MAKE_FUNCTION 9
+  16:69       STORE_NAME is_advertising
+  32:0a       MAKE_FUNCTION 10
+  16:48       STORE_NAME set_state
+  32:0b       MAKE_FUNCTION 11
+  16:6a       STORE_NAME get_state
+  32:0c       MAKE_FUNCTION 12
+  16:6b       STORE_NAME set_state_change_callback
+  32:0d       MAKE_FUNCTION 13
+  16:26       STORE_NAME start_advertising
+  32:0e       MAKE_FUNCTION 14
+  16:29       STORE_NAME stop_advertising
+  32:0f       MAKE_FUNCTION 15
+  16:6c       STORE_NAME get_device_name
+  32:10       MAKE_FUNCTION 16
+  16:6d       STORE_NAME get_services_uuids
+  32:11       MAKE_FUNCTION 17
+  16:6e       STORE_NAME get_appearance
+  32:12       MAKE_FUNCTION 18
+  16:6f       STORE_NAME get_battery_level
+  32:13       MAKE_FUNCTION 19
+  16:70       STORE_NAME set_battery_level
+  10:11       LOAD_CONST_STRING Homebrew
+  10:12       LOAD_CONST_STRING 1
+  10:12       LOAD_CONST_STRING 1
+  2a:03       BUILD_TUPLE 3
+  53          LOAD_NULL 
+  33:14       MAKE_FUNCTION_DEFARGS 20
+  16:71       STORE_NAME set_device_information
+  10:12       LOAD_CONST_STRING 1
+  10:12       LOAD_CONST_STRING 1
+  10:12       LOAD_CONST_STRING 1
+  2a:03       BUILD_TUPLE 3
+  53          LOAD_NULL 
+  33:15       MAKE_FUNCTION_DEFARGS 21
+  16:72       STORE_NAME set_device_revision
+  81          LOAD_CONST_SMALL_INT 1 
+  22:83:fc:61 LOAD_CONST_SMALL_INT 65121
+  81          LOAD_CONST_SMALL_INT 1 
+  22:82:23    LOAD_CONST_SMALL_INT 291
+  2a:04       BUILD_TUPLE 4
+  53          LOAD_NULL 
+  33:16       MAKE_FUNCTION_DEFARGS 22
+  16:73       STORE_NAME set_device_pnp_information
+  32:17       MAKE_FUNCTION 23
+  16:74       STORE_NAME set_bonding
+  32:18       MAKE_FUNCTION 24
+  16:75       STORE_NAME set_le_secure
+  32:19       MAKE_FUNCTION 25
+  16:76       STORE_NAME set_io_capability
+  32:1a       MAKE_FUNCTION 26
+  16:77       STORE_NAME set_passkey_callback
+  32:1b       MAKE_FUNCTION 27
+  16:78       STORE_NAME set_passkey
+  32:1c       MAKE_FUNCTION 28
+  16:79       STORE_NAME notify_battery_level
+  32:1d       MAKE_FUNCTION 29
+  16:7b       STORE_NAME notify_hid_report
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [__init__, ble_irq, start, write_service_characteristics, stop, load_secrets, save_secrets, is_running, is_connected, is_advertising, set_state, get_state, set_state_change_callback, start_advertising, stop_advertising, get_device_name, get_services_uuids, get_appearance, get_battery_level, set_battery_level, set_device_information, set_device_revision, set_device_pnp_information, set_bonding, set_le_secure, set_io_capability, set_passkey_callback, set_passkey, notify_battery_level, notify_hid_report]
+simple_name: __init__
+  raw bytecode: 358 d2:01:60:1f:81:2a:33:80:93:29:24:27:24:24:24:24:44:48:24:3a:26:46:25:25:25:25:25:25:24:27:24:46:20:27:20:2d:2d:2d:2d:2d:2d:74:20:27:20:74:20:4b:44:46:45:12:05:14:2a:36:00:b0:18:20:51:b0:18:2b:12:0d:13:2c:b0:18:2d:51:b0:18:2e:51:b0:18:2f:83:b0:18:30:50:b0:18:31:50:b0:18:32:12:81:34:23:08:34:01:59:b1:b0:18:33:12:08:22:b0:0a:34:01:12:08:22:b0:0f:34:01:12:08:22:b0:12:34:01:2b:03:b0:18:34:22:87:40:b0:18:35:22:80:64:b0:18:36:10:12:b0:18:37:10:12:b0:18:38:10:12:b0:18:39:10:12:b0:18:3a:10:12:b0:18:3b:10:11:b0:18:3c:81:b0:18:3d:22:83:fc:61:b0:18:3e:81:b0:18:3f:22:82:23:b0:18:40:12:08:22:b0:0a:34:01:12:08:22:80:d4:24:34:01:12:81:20:2a:02:12:08:22:80:d4:25:34:01:12:81:20:2a:02:12:08:22:80:d4:26:34:01:12:81:20:2a:02:12:08:22:80:d4:27:34:01:12:81:20:2a:02:12:08:22:80:d4:28:34:01:12:81:20:2a:02:12:08:22:80:d4:29:34:01:12:81:20:2a:02:12:08:22:80:d4:50:34:01:12:81:20:2a:02:2a:07:2a:02:b0:18:41:12:08:22:b0:0f:34:01:12:08:22:80:d4:19:34:01:12:81:23:2a:02:2a:01:2a:02:b0:18:42:b0:13:41:b0:13:42:2b:02:b0:18:22:51:b0:18:43:22:89:52:b0:18:44:2c:00:b0:18:45:b0:14:46:36:00:59:51:63
+  prelude: (11, 0, 0, 2, 0, 1)
+  args: ['self', 'device_name']
+  line info: 80:93:29:24:27:24:24:24:24:44:48:24:3a:26:46:25:25:25:25:25:25:24:27:24:46:20:27:20:2d:2d:2d:2d:2d:2d:74:20:27:20:74:20:4b:44:46:45
+  12:05       LOAD_GLOBAL bluetooth
+  14:2a       LOAD_METHOD BLE
+  36:00       CALL_METHOD 0
+  b0          LOAD_FAST 0 
+  18:20       STORE_ATTR _ble
+  51          LOAD_CONST_NONE 
+  b0          LOAD_FAST 0 
+  18:2b       STORE_ATTR adv
+  12:0d       LOAD_GLOBAL HumanInterfaceDevice
+  13:2c       LOAD_ATTR DEVICE_STOPPED
+  b0          LOAD_FAST 0 
+  18:2d       STORE_ATTR device_state
+  51          LOAD_CONST_NONE 
+  b0          LOAD_FAST 0 
+  18:2e       STORE_ATTR conn_handle
+  51          LOAD_CONST_NONE 
+  b0          LOAD_FAST 0 
+  18:2f       STORE_ATTR state_change_callback
+  83          LOAD_CONST_SMALL_INT 3 
+  b0          LOAD_FAST 0 
+  18:30       STORE_ATTR io_capability
+  50          LOAD_CONST_FALSE 
+  b0          LOAD_FAST 0 
+  18:31       STORE_ATTR bond
+  50          LOAD_CONST_FALSE 
+  b0          LOAD_FAST 0 
+  18:32       STORE_ATTR le_secure
+  12:81:34    LOAD_GLOBAL print
+  23:08       LOAD_CONST_OBJ 'Server created'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:33       STORE_ATTR device_name
+  12:08       LOAD_GLOBAL UUID
+  22:b0:0a    LOAD_CONST_SMALL_INT 6154
+  34:01       CALL_FUNCTION 1
+  12:08       LOAD_GLOBAL UUID
+  22:b0:0f    LOAD_CONST_SMALL_INT 6159
+  34:01       CALL_FUNCTION 1
+  12:08       LOAD_GLOBAL UUID
+  22:b0:12    LOAD_CONST_SMALL_INT 6162
+  34:01       CALL_FUNCTION 1
+  2b:03       BUILD_LIST 3
+  b0          LOAD_FAST 0 
+  18:34       STORE_ATTR service_uuids
+  22:87:40    LOAD_CONST_SMALL_INT 960
+  b0          LOAD_FAST 0 
+  18:35       STORE_ATTR device_appearance
+  22:80:64    LOAD_CONST_SMALL_INT 100
+  b0          LOAD_FAST 0 
+  18:36       STORE_ATTR battery_level
+  10:12       LOAD_CONST_STRING 1
+  b0          LOAD_FAST 0 
+  18:37       STORE_ATTR model_number
+  10:12       LOAD_CONST_STRING 1
+  b0          LOAD_FAST 0 
+  18:38       STORE_ATTR serial_number
+  10:12       LOAD_CONST_STRING 1
+  b0          LOAD_FAST 0 
+  18:39       STORE_ATTR firmware_revision
+  10:12       LOAD_CONST_STRING 1
+  b0          LOAD_FAST 0 
+  18:3a       STORE_ATTR hardware_revision
+  10:12       LOAD_CONST_STRING 1
+  b0          LOAD_FAST 0 
+  18:3b       STORE_ATTR software_revision
+  10:11       LOAD_CONST_STRING Homebrew
+  b0          LOAD_FAST 0 
+  18:3c       STORE_ATTR manufacture_name
+  81          LOAD_CONST_SMALL_INT 1 
+  b0          LOAD_FAST 0 
+  18:3d       STORE_ATTR pnp_manufacturer_source
+  22:83:fc:61 LOAD_CONST_SMALL_INT 65121
+  b0          LOAD_FAST 0 
+  18:3e       STORE_ATTR pnp_manufacturer_uuid
+  81          LOAD_CONST_SMALL_INT 1 
+  b0          LOAD_FAST 0 
+  18:3f       STORE_ATTR pnp_product_id
+  22:82:23    LOAD_CONST_SMALL_INT 291
+  b0          LOAD_FAST 0 
+  18:40       STORE_ATTR pnp_product_version
+  12:08       LOAD_GLOBAL UUID
+  22:b0:0a    LOAD_CONST_SMALL_INT 6154
+  34:01       CALL_FUNCTION 1
+  12:08       LOAD_GLOBAL UUID
+  22:80:d4:24 LOAD_CONST_SMALL_INT 10788
+  34:01       CALL_FUNCTION 1
+  12:81:20    LOAD_GLOBAL F_READ
+  2a:02       BUILD_TUPLE 2
+  12:08       LOAD_GLOBAL UUID
+  22:80:d4:25 LOAD_CONST_SMALL_INT 10789
+  34:01       CALL_FUNCTION 1
+  12:81:20    LOAD_GLOBAL F_READ
+  2a:02       BUILD_TUPLE 2
+  12:08       LOAD_GLOBAL UUID
+  22:80:d4:26 LOAD_CONST_SMALL_INT 10790
+  34:01       CALL_FUNCTION 1
+  12:81:20    LOAD_GLOBAL F_READ
+  2a:02       BUILD_TUPLE 2
+  12:08       LOAD_GLOBAL UUID
+  22:80:d4:27 LOAD_CONST_SMALL_INT 10791
+  34:01       CALL_FUNCTION 1
+  12:81:20    LOAD_GLOBAL F_READ
+  2a:02       BUILD_TUPLE 2
+  12:08       LOAD_GLOBAL UUID
+  22:80:d4:28 LOAD_CONST_SMALL_INT 10792
+  34:01       CALL_FUNCTION 1
+  12:81:20    LOAD_GLOBAL F_READ
+  2a:02       BUILD_TUPLE 2
+  12:08       LOAD_GLOBAL UUID
+  22:80:d4:29 LOAD_CONST_SMALL_INT 10793
+  34:01       CALL_FUNCTION 1
+  12:81:20    LOAD_GLOBAL F_READ
+  2a:02       BUILD_TUPLE 2
+  12:08       LOAD_GLOBAL UUID
+  22:80:d4:50 LOAD_CONST_SMALL_INT 10832
+  34:01       CALL_FUNCTION 1
+  12:81:20    LOAD_GLOBAL F_READ
+  2a:02       BUILD_TUPLE 2
+  2a:07       BUILD_TUPLE 7
+  2a:02       BUILD_TUPLE 2
+  b0          LOAD_FAST 0 
+  18:41       STORE_ATTR DIS
+  12:08       LOAD_GLOBAL UUID
+  22:b0:0f    LOAD_CONST_SMALL_INT 6159
+  34:01       CALL_FUNCTION 1
+  12:08       LOAD_GLOBAL UUID
+  22:80:d4:19 LOAD_CONST_SMALL_INT 10777
+  34:01       CALL_FUNCTION 1
+  12:81:23    LOAD_GLOBAL F_READ_NOTIFY
+  2a:02       BUILD_TUPLE 2
+  2a:01       BUILD_TUPLE 1
+  2a:02       BUILD_TUPLE 2
+  b0          LOAD_FAST 0 
+  18:42       STORE_ATTR BAS
+  b0          LOAD_FAST 0 
+  13:41       LOAD_ATTR DIS
+  b0          LOAD_FAST 0 
+  13:42       LOAD_ATTR BAS
+  2b:02       BUILD_LIST 2
+  b0          LOAD_FAST 0 
+  18:22       STORE_ATTR services
+  51          LOAD_CONST_NONE 
+  b0          LOAD_FAST 0 
+  18:43       STORE_ATTR HID_INPUT_REPORT
+  22:89:52    LOAD_CONST_SMALL_INT 1234
+  b0          LOAD_FAST 0 
+  18:44       STORE_ATTR passkey
+  2c:00       BUILD_MAP 0
+  b0          LOAD_FAST 0 
+  18:45       STORE_ATTR keys
+  b0          LOAD_FAST 0 
+  14:46       LOAD_METHOD load_secrets
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: ble_irq
+  raw bytecode: 480 fb:10:96:02:47:81:2a:81:35:81:36:80:cc:25:28:2b:2d:25:24:26:29:2d:25:25:2c:25:2a:2b:25:28:30:26:26:2b:25:22:28:26:2e:25:28:2f:25:28:22:28:26:4d:2b:25:28:2c:26:29:2d:30:2c:26:28:28:26:42:44:28:26:22:26:29:3a:26:23:34:27:27:23:28:42:2d:4d:b1:81:d9:44:60:b2:30:03:b0:18:2e:c3:c3:12:81:34:23:09:b0:13:2e:34:02:59:b0:14:48:12:0d:13:49:36:01:59:42:84:84:b1:82:d9:44:60:51:b0:18:2e:b2:30:03:c4:c5:c6:12:81:34:23:0a:b4:34:02:59:b0:14:48:12:0d:13:4a:36:01:59:42:df:83:b1:95:d9:44:51:b2:30:02:c4:c7:12:81:34:23:0b:b7:34:02:59:42:c9:83:b1:9b:d9:44:55:b2:30:05:b0:18:2e:c3:c3:c3:c3:12:81:34:23:0c:34:01:59:42:af:83:b1:9c:d9:44:58:b2:30:05:c4:c8:c9:ca:cb:12:81:34:23:0d:b4:b8:b9:ba:bb:34:06:59:42:92:83:b1:9f:d9:44:85:81:b2:30:03:c4:cc:cd:12:81:34:23:0e:b4:bc:bd:34:04:59:bc:84:d9:44:5e:50:ce:b0:13:4b:51:de:d3:44:46:b0:14:4b:36:00:ce:b0:13:20:14:4c:b4:bc:be:36:03:59:42:ce:80:bc:83:d9:44:57:12:81:34:23:0f:34:01:59:b0:13:20:14:4c:b4:bc:b0:13:44:36:03:59:42:72:bc:82:d9:44:65:12:81:34:23:10:34:01:59:51:cf:b0:13:4b:51:de:d3:44:46:b0:14:4b:36:00:cf:b0:13:20:14:4c:b4:bc:bf:36:03:59:42:48:12:81:34:23:11:34:01:59:42:87:82:b1:94:d9:44:54:b2:30:03:c4:26:10:26:11:12:81:34:23:12:b4:34:02:59:42:ee:81:b1:9e:d9:44:e4:80:b2:30:03:26:12:26:13:26:14:24:12:12:81:2e:24:13:34:01:2a:02:26:13:24:14:44:49:12:81:2e:24:14:34:01:42:41:51:26:14:12:81:34:23:13:24:13:24:14:34:03:59:24:14:51:de:44:5c:24:13:b0:13:45:dd:44:50:b0:13:45:24:13:53:5b:56:b0:14:4d:36:00:59:52:63
+  prelude: (32, 0, 0, 3, 0, 0)
+  args: ['self', 'event', 'data']
+  line info: 80:cc:25:28:2b:2d:25:24:26:29:2d:25:25:2c:25:2a:2b:25:28:30:26:26:2b:25:22:28:26:2e:25:28:2f:25:28:22:28:26:4d:2b:25:28:2c:26:29:2d:30:2c:26:28:28:26:42:44:28:26:22:26:29:3a:26:23:34:27:27:23:28:42:2d:4d
+  b1          LOAD_FAST 1 
+  81          LOAD_CONST_SMALL_INT 1 
+  d9          BINARY_OP 2 __eq__ 
+  44:60       POP_JUMP_IF_FALSE 32
+  b2          LOAD_FAST 2 
+  30:03       UNPACK_SEQUENCE 3
+  b0          LOAD_FAST 0 
+  18:2e       STORE_ATTR conn_handle
+  c3          STORE_FAST 3 
+  c3          STORE_FAST 3 
+  12:81:34    LOAD_GLOBAL print
+  23:09       LOAD_CONST_OBJ 'Central connected: '
+  b0          LOAD_FAST 0 
+  13:2e       LOAD_ATTR conn_handle
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:48       LOAD_METHOD set_state
+  12:0d       LOAD_GLOBAL HumanInterfaceDevice
+  13:49       LOAD_ATTR DEVICE_CONNECTED
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  42:84:84    JUMP 516
+  b1          LOAD_FAST 1 
+  82          LOAD_CONST_SMALL_INT 2 
+  d9          BINARY_OP 2 __eq__ 
+  44:60       POP_JUMP_IF_FALSE 32
+  51          LOAD_CONST_NONE 
+  b0          LOAD_FAST 0 
+  18:2e       STORE_ATTR conn_handle
+  b2          LOAD_FAST 2 
+  30:03       UNPACK_SEQUENCE 3
+  c4          STORE_FAST 4 
+  c5          STORE_FAST 5 
+  c6          STORE_FAST 6 
+  12:81:34    LOAD_GLOBAL print
+  23:0a       LOAD_CONST_OBJ 'Central disconnected: '
+  b4          LOAD_FAST 4 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:48       LOAD_METHOD set_state
+  12:0d       LOAD_GLOBAL HumanInterfaceDevice
+  13:4a       LOAD_ATTR DEVICE_IDLE
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  42:df:83    JUMP 479
+  b1          LOAD_FAST 1 
+  95          LOAD_CONST_SMALL_INT 21 
+  d9          BINARY_OP 2 __eq__ 
+  44:51       POP_JUMP_IF_FALSE 17
+  b2          LOAD_FAST 2 
+  30:02       UNPACK_SEQUENCE 2
+  c4          STORE_FAST 4 
+  c7          STORE_FAST 7 
+  12:81:34    LOAD_GLOBAL print
+  23:0b       LOAD_CONST_OBJ 'MTU exchanged: '
+  b7          LOAD_FAST 7 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  42:c9:83    JUMP 457
+  b1          LOAD_FAST 1 
+  9b          LOAD_CONST_SMALL_INT 27 
+  d9          BINARY_OP 2 __eq__ 
+  44:55       POP_JUMP_IF_FALSE 21
+  b2          LOAD_FAST 2 
+  30:05       UNPACK_SEQUENCE 5
+  b0          LOAD_FAST 0 
+  18:2e       STORE_ATTR conn_handle
+  c3          STORE_FAST 3 
+  c3          STORE_FAST 3 
+  c3          STORE_FAST 3 
+  c3          STORE_FAST 3 
+  12:81:34    LOAD_GLOBAL print
+  23:0c       LOAD_CONST_OBJ 'Connection update'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  42:af:83    JUMP 431
+  b1          LOAD_FAST 1 
+  9c          LOAD_CONST_SMALL_INT 28 
+  d9          BINARY_OP 2 __eq__ 
+  44:58       POP_JUMP_IF_FALSE 24
+  b2          LOAD_FAST 2 
+  30:05       UNPACK_SEQUENCE 5
+  c4          STORE_FAST 4 
+  c8          STORE_FAST 8 
+  c9          STORE_FAST 9 
+  ca          STORE_FAST 10 
+  cb          STORE_FAST 11 
+  12:81:34    LOAD_GLOBAL print
+  23:0d       LOAD_CONST_OBJ 'encryption update'
+  b4          LOAD_FAST 4 
+  b8          LOAD_FAST 8 
+  b9          LOAD_FAST 9 
+  ba          LOAD_FAST 10 
+  bb          LOAD_FAST 11 
+  34:06       CALL_FUNCTION 6
+  59          POP_TOP 
+  42:92:83    JUMP 402
+  b1          LOAD_FAST 1 
+  9f          LOAD_CONST_SMALL_INT 31 
+  d9          BINARY_OP 2 __eq__ 
+  44:85:81    POP_JUMP_IF_FALSE 133
+  b2          LOAD_FAST 2 
+  30:03       UNPACK_SEQUENCE 3
+  c4          STORE_FAST 4 
+  cc          STORE_FAST 12 
+  cd          STORE_FAST 13 
+  12:81:34    LOAD_GLOBAL print
+  23:0e       LOAD_CONST_OBJ 'passkey action'
+  b4          LOAD_FAST 4 
+  bc          LOAD_FAST 12 
+  bd          LOAD_FAST 13 
+  34:04       CALL_FUNCTION 4
+  59          POP_TOP 
+  bc          LOAD_FAST 12 
+  84          LOAD_CONST_SMALL_INT 4 
+  d9          BINARY_OP 2 __eq__ 
+  44:5e       POP_JUMP_IF_FALSE 30
+  50          LOAD_CONST_FALSE 
+  ce          STORE_FAST 14 
+  b0          LOAD_FAST 0 
+  13:4b       LOAD_ATTR passkey_callback
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:46       POP_JUMP_IF_FALSE 6
+  b0          LOAD_FAST 0 
+  14:4b       LOAD_METHOD passkey_callback
+  36:00       CALL_METHOD 0
+  ce          STORE_FAST 14 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:4c       LOAD_METHOD gap_passkey
+  b4          LOAD_FAST 4 
+  bc          LOAD_FAST 12 
+  be          LOAD_FAST 14 
+  36:03       CALL_METHOD 3
+  59          POP_TOP 
+  42:ce:80    JUMP 78
+  bc          LOAD_FAST 12 
+  83          LOAD_CONST_SMALL_INT 3 
+  d9          BINARY_OP 2 __eq__ 
+  44:57       POP_JUMP_IF_FALSE 23
+  12:81:34    LOAD_GLOBAL print
+  23:0f       LOAD_CONST_OBJ 'displaying passkey'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:4c       LOAD_METHOD gap_passkey
+  b4          LOAD_FAST 4 
+  bc          LOAD_FAST 12 
+  b0          LOAD_FAST 0 
+  13:44       LOAD_ATTR passkey
+  36:03       CALL_METHOD 3
+  59          POP_TOP 
+  42:72       JUMP 50
+  bc          LOAD_FAST 12 
+  82          LOAD_CONST_SMALL_INT 2 
+  d9          BINARY_OP 2 __eq__ 
+  44:65       POP_JUMP_IF_FALSE 37
+  12:81:34    LOAD_GLOBAL print
+  23:10       LOAD_CONST_OBJ 'prompting for passkey'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  cf          STORE_FAST 15 
+  b0          LOAD_FAST 0 
+  13:4b       LOAD_ATTR passkey_callback
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:46       POP_JUMP_IF_FALSE 6
+  b0          LOAD_FAST 0 
+  14:4b       LOAD_METHOD passkey_callback
+  36:00       CALL_METHOD 0
+  cf          STORE_FAST 15 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:4c       LOAD_METHOD gap_passkey
+  b4          LOAD_FAST 4 
+  bc          LOAD_FAST 12 
+  bf          LOAD_FAST 15 
+  36:03       CALL_METHOD 3
+  59          POP_TOP 
+  42:48       JUMP 8
+  12:81:34    LOAD_GLOBAL print
+  23:11       LOAD_CONST_OBJ 'unknown action'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  42:87:82    JUMP 263
+  b1          LOAD_FAST 1 
+  94          LOAD_CONST_SMALL_INT 20 
+  d9          BINARY_OP 2 __eq__ 
+  44:54       POP_JUMP_IF_FALSE 20
+  b2          LOAD_FAST 2 
+  30:03       UNPACK_SEQUENCE 3
+  c4          STORE_FAST 4 
+  26:10       STORE_FAST_N 16
+  26:11       STORE_FAST_N 17
+  12:81:34    LOAD_GLOBAL print
+  23:12       LOAD_CONST_OBJ 'gatts done: '
+  b4          LOAD_FAST 4 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  42:ee:81    JUMP 238
+  b1          LOAD_FAST 1 
+  9e          LOAD_CONST_SMALL_INT 30 
+  d9          BINARY_OP 2 __eq__ 
+  44:e4:80    POP_JUMP_IF_FALSE 100
+  b2          LOAD_FAST 2 
+  30:03       UNPACK_SEQUENCE 3
+  26:12       STORE_FAST_N 18
+  26:13       STORE_FAST_N 19
+  26:14       STORE_FAST_N 20
+  24:12       LOAD_FAST_N 18
+  12:81:2e    LOAD_GLOBAL bytes
+  24:13       LOAD_FAST_N 19
+  34:01       CALL_FUNCTION 1
+  2a:02       BUILD_TUPLE 2
+  26:13       STORE_FAST_N 19
+  24:14       LOAD_FAST_N 20
+  44:49       POP_JUMP_IF_FALSE 9
+  12:81:2e    LOAD_GLOBAL bytes
+  24:14       LOAD_FAST_N 20
+  34:01       CALL_FUNCTION 1
+  42:41       JUMP 1
+  51          LOAD_CONST_NONE 
+  26:14       STORE_FAST_N 20
+  12:81:34    LOAD_GLOBAL print
+  23:13       LOAD_CONST_OBJ 'set secret: '
+  24:13       LOAD_FAST_N 19
+  24:14       LOAD_FAST_N 20
+  34:03       CALL_FUNCTION 3
+  59          POP_TOP 
+  24:14       LOAD_FAST_N 20
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  44:5c       POP_JUMP_IF_FALSE 28
+  24:13       LOAD_FAST_N 19
+  b0          LOAD_FAST 0 
+  13:45       LOAD_ATTR keys
+  dd          BINARY_OP 6 <in> 
+  44:50       POP_JUMP_IF_FALSE 16
+  b0          LOAD_FAST 0 
+  13:45       LOAD_ATTR keys
+  24:13       LOAD_FAST_N 19
+  53          LOAD_NULL 
+  5b          ROT_THREE 
+  56          STORE_SUBSCR 
+  b0          LOAD_FAST 0 
+  14:4d       LOAD_METHOD save_secrets
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  52          LOAD_CONST_TRUE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: start
+  raw bytecode: 156 21:22:50:81:2a:90:16:2b:4b:49:4e:4c:25:4c:25:2c:2c:4e:2a:b0:13:2d:12:0d:13:2c:de:44:fc:80:b0:13:20:14:51:b0:13:47:36:01:59:b0:13:20:14:52:81:36:01:59:b0:13:20:14:53:10:54:b0:13:33:36:82:00:59:b0:13:20:14:53:10:55:97:36:82:00:59:b0:13:31:44:4c:b0:13:20:14:53:10:31:52:36:82:00:59:b0:13:32:44:66:b0:13:20:14:53:10:32:52:36:82:00:59:b0:13:20:14:53:10:56:52:36:82:00:59:b0:13:20:14:53:10:57:b0:13:30:36:82:00:59:b0:14:48:12:0d:13:4a:36:01:59:12:81:34:10:58:34:01:59:51:63
+  prelude: (5, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 90:16:2b:4b:49:4e:4c:25:4c:25:2c:2c:4e:2a
+  b0          LOAD_FAST 0 
+  13:2d       LOAD_ATTR device_state
+  12:0d       LOAD_GLOBAL HumanInterfaceDevice
+  13:2c       LOAD_ATTR DEVICE_STOPPED
+  de          BINARY_OP 7 <is> 
+  44:fc:80    POP_JUMP_IF_FALSE 124
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:51       LOAD_METHOD irq
+  b0          LOAD_FAST 0 
+  13:47       LOAD_ATTR ble_irq
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:52       LOAD_METHOD active
+  81          LOAD_CONST_SMALL_INT 1 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:53       LOAD_METHOD config
+  10:54       LOAD_CONST_STRING gap_name
+  b0          LOAD_FAST 0 
+  13:33       LOAD_ATTR device_name
+  36:82:00    CALL_METHOD 256
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:53       LOAD_METHOD config
+  10:55       LOAD_CONST_STRING mtu
+  97          LOAD_CONST_SMALL_INT 23 
+  36:82:00    CALL_METHOD 256
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:31       LOAD_ATTR bond
+  44:4c       POP_JUMP_IF_FALSE 12
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:53       LOAD_METHOD config
+  10:31       LOAD_CONST_STRING bond
+  52          LOAD_CONST_TRUE 
+  36:82:00    CALL_METHOD 256
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:32       LOAD_ATTR le_secure
+  44:66       POP_JUMP_IF_FALSE 38
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:53       LOAD_METHOD config
+  10:32       LOAD_CONST_STRING le_secure
+  52          LOAD_CONST_TRUE 
+  36:82:00    CALL_METHOD 256
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:53       LOAD_METHOD config
+  10:56       LOAD_CONST_STRING mitm
+  52          LOAD_CONST_TRUE 
+  36:82:00    CALL_METHOD 256
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:53       LOAD_METHOD config
+  10:57       LOAD_CONST_STRING io
+  b0          LOAD_FAST 0 
+  13:30       LOAD_ATTR io_capability
+  36:82:00    CALL_METHOD 256
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:48       LOAD_METHOD set_state
+  12:0d       LOAD_GLOBAL HumanInterfaceDevice
+  13:4a       LOAD_ATTR DEVICE_IDLE
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  12:81:34    LOAD_GLOBAL print
+  10:58       LOAD_CONST_STRING BLE on
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: write_service_characteristics
+  raw bytecode: 213 9a:10:28:59:81:2a:81:37:90:2b:48:2c:48:63:48:2f:2f:2f:2f:2f:2f:5d:28:12:81:34:23:16:34:01:59:b1:80:55:30:07:c2:c3:c4:c5:c6:c7:c8:b1:81:55:30:01:b0:18:5a:32:00:c9:12:81:34:23:17:34:01:59:b0:13:20:14:5b:b2:b9:b0:13:37:34:01:36:02:59:b0:13:20:14:5b:b3:b9:b0:13:38:34:01:36:02:59:b0:13:20:14:5b:b4:b9:b0:13:39:34:01:36:02:59:b0:13:20:14:5b:b5:b9:b0:13:3a:34:01:36:02:59:b0:13:20:14:5b:b6:b9:b0:13:3b:34:01:36:02:59:b0:13:20:14:5b:b7:b9:b0:13:3c:34:01:36:02:59:b0:13:20:14:5b:b8:12:04:14:14:10:5c:b0:13:3d:b0:13:3e:b0:13:3f:b0:13:40:36:05:36:02:59:12:81:34:23:18:34:01:59:b0:13:20:14:5b:b0:13:5a:12:04:14:14:10:5d:b0:13:36:36:02:36:02:59:51:63
+  prelude: (20, 0, 0, 2, 0, 0)
+  args: ['self', 'handles']
+  line info: 90:2b:48:2c:48:63:48:2f:2f:2f:2f:2f:2f:5d:28
+  12:81:34    LOAD_GLOBAL print
+  23:16       LOAD_CONST_OBJ 'Writing service characteristics'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  b1          LOAD_FAST 1 
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  30:07       UNPACK_SEQUENCE 7
+  c2          STORE_FAST 2 
+  c3          STORE_FAST 3 
+  c4          STORE_FAST 4 
+  c5          STORE_FAST 5 
+  c6          STORE_FAST 6 
+  c7          STORE_FAST 7 
+  c8          STORE_FAST 8 
+  b1          LOAD_FAST 1 
+  81          LOAD_CONST_SMALL_INT 1 
+  55          LOAD_SUBSCR 
+  30:01       UNPACK_SEQUENCE 1
+  b0          LOAD_FAST 0 
+  18:5a       STORE_ATTR h_bat
+  32:00       MAKE_FUNCTION 0
+  c9          STORE_FAST 9 
+  12:81:34    LOAD_GLOBAL print
+  23:17       LOAD_CONST_OBJ 'Writing device information service characteristics'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:5b       LOAD_METHOD gatts_write
+  b2          LOAD_FAST 2 
+  b9          LOAD_FAST 9 
+  b0          LOAD_FAST 0 
+  13:37       LOAD_ATTR model_number
+  34:01       CALL_FUNCTION 1
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:5b       LOAD_METHOD gatts_write
+  b3          LOAD_FAST 3 
+  b9          LOAD_FAST 9 
+  b0          LOAD_FAST 0 
+  13:38       LOAD_ATTR serial_number
+  34:01       CALL_FUNCTION 1
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:5b       LOAD_METHOD gatts_write
+  b4          LOAD_FAST 4 
+  b9          LOAD_FAST 9 
+  b0          LOAD_FAST 0 
+  13:39       LOAD_ATTR firmware_revision
+  34:01       CALL_FUNCTION 1
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:5b       LOAD_METHOD gatts_write
+  b5          LOAD_FAST 5 
+  b9          LOAD_FAST 9 
+  b0          LOAD_FAST 0 
+  13:3a       LOAD_ATTR hardware_revision
+  34:01       CALL_FUNCTION 1
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:5b       LOAD_METHOD gatts_write
+  b6          LOAD_FAST 6 
+  b9          LOAD_FAST 9 
+  b0          LOAD_FAST 0 
+  13:3b       LOAD_ATTR software_revision
+  34:01       CALL_FUNCTION 1
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:5b       LOAD_METHOD gatts_write
+  b7          LOAD_FAST 7 
+  b9          LOAD_FAST 9 
+  b0          LOAD_FAST 0 
+  13:3c       LOAD_ATTR manufacture_name
+  34:01       CALL_FUNCTION 1
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:5b       LOAD_METHOD gatts_write
+  b8          LOAD_FAST 8 
+  12:04       LOAD_GLOBAL struct
+  14:14       LOAD_METHOD pack
+  10:5c       LOAD_CONST_STRING <BHHH
+  b0          LOAD_FAST 0 
+  13:3d       LOAD_ATTR pnp_manufacturer_source
+  b0          LOAD_FAST 0 
+  13:3e       LOAD_ATTR pnp_manufacturer_uuid
+  b0          LOAD_FAST 0 
+  13:3f       LOAD_ATTR pnp_product_id
+  b0          LOAD_FAST 0 
+  13:40       LOAD_ATTR pnp_product_version
+  36:05       CALL_METHOD 5
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  12:81:34    LOAD_GLOBAL print
+  23:18       LOAD_CONST_OBJ 'Writing battery service characteristics'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:5b       LOAD_METHOD gatts_write
+  b0          LOAD_FAST 0 
+  13:5a       LOAD_ATTR h_bat
+  12:04       LOAD_GLOBAL struct
+  14:14       LOAD_METHOD pack
+  10:5d       LOAD_CONST_STRING <B
+  b0          LOAD_FAST 0 
+  13:36       LOAD_ATTR battery_level
+  36:02       CALL_METHOD 2
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [string_pack]
+simple_name: string_pack
+  raw bytecode: 39 31:0c:81:1a:81:55:90:31:12:04:14:14:12:81:32:12:81:2f:b0:34:01:34:01:10:81:1b:f2:b0:14:81:1c:10:81:1d:36:01:36:02:63
+  prelude: (7, 0, 0, 1, 0, 0)
+  args: ['in_str']
+  line info: 90:31
+  12:04       LOAD_GLOBAL struct
+  14:14       LOAD_METHOD pack
+  12:81:32    LOAD_GLOBAL str
+  12:81:2f    LOAD_GLOBAL len
+  b0          LOAD_FAST 0 
+  34:01       CALL_FUNCTION 1
+  34:01       CALL_FUNCTION 1
+  10:81:1b    LOAD_CONST_STRING s
+  f2          BINARY_OP 27 __add__ 
+  b0          LOAD_FAST 0 
+  14:81:1c    LOAD_METHOD encode
+  10:81:1d    LOAD_CONST_STRING UTF-8
+  36:01       CALL_METHOD 1
+  36:02       CALL_METHOD 2
+  63          RETURN_VALUE 
+  children: []
+simple_name: stop
+  raw bytecode: 97 19:1a:5e:81:2a:90:41:2c:2a:48:28:2b:44:49:2a:b0:13:2d:12:0d:13:2c:de:d3:44:c4:80:b0:13:2d:12:0d:13:5f:de:44:48:b0:13:2b:14:29:36:00:59:b0:13:2e:51:de:d3:44:4f:b0:13:20:14:60:b0:13:2e:36:01:59:51:b0:18:2e:b0:13:20:14:52:80:36:01:59:b0:14:48:12:0d:13:2c:36:01:59:12:81:34:23:19:34:01:59:51:63
+  prelude: (4, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 90:41:2c:2a:48:28:2b:44:49:2a
+  b0          LOAD_FAST 0 
+  13:2d       LOAD_ATTR device_state
+  12:0d       LOAD_GLOBAL HumanInterfaceDevice
+  13:2c       LOAD_ATTR DEVICE_STOPPED
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:c4:80    POP_JUMP_IF_FALSE 68
+  b0          LOAD_FAST 0 
+  13:2d       LOAD_ATTR device_state
+  12:0d       LOAD_GLOBAL HumanInterfaceDevice
+  13:5f       LOAD_ATTR DEVICE_ADVERTISING
+  de          BINARY_OP 7 <is> 
+  44:48       POP_JUMP_IF_FALSE 8
+  b0          LOAD_FAST 0 
+  13:2b       LOAD_ATTR adv
+  14:29       LOAD_METHOD stop_advertising
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:2e       LOAD_ATTR conn_handle
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:4f       POP_JUMP_IF_FALSE 15
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:60       LOAD_METHOD gap_disconnect
+  b0          LOAD_FAST 0 
+  13:2e       LOAD_ATTR conn_handle
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  b0          LOAD_FAST 0 
+  18:2e       STORE_ATTR conn_handle
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:52       LOAD_METHOD active
+  80          LOAD_CONST_SMALL_INT 0 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:48       LOAD_METHOD set_state
+  12:0d       LOAD_GLOBAL HumanInterfaceDevice
+  13:2c       LOAD_ATTR DEVICE_STOPPED
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  12:81:34    LOAD_GLOBAL print
+  23:19       LOAD_CONST_OBJ 'Server stopped'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: load_secrets
+  raw bytecode: 86 89:12:14:46:81:2a:90:4f:22:2c:28:29:5d:48:39:12:81:38:10:61:10:62:34:02:47:2a:c1:12:06:14:63:b1:36:01:c2:b2:5f:4b:1c:30:03:c3:c4:c5:12:07:14:64:b5:36:01:b0:13:45:b3:12:07:14:64:b4:36:01:2a:02:56:42:22:51:5c:5d:4a:0c:59:12:81:34:23:1a:34:01:59:4a:01:5d:51:63
+  prelude: (18, 2, 0, 1, 0, 0)
+  args: ['self']
+  line info: 90:4f:22:2c:28:29:5d
+  48:39       SETUP_EXCEPT 57
+  12:81:38    LOAD_GLOBAL open
+  10:61       LOAD_CONST_STRING keys.json
+  10:62       LOAD_CONST_STRING r
+  34:02       CALL_FUNCTION 2
+  47:2a       SETUP_WITH 42
+  c1          STORE_FAST 1 
+  12:06       LOAD_GLOBAL json
+  14:63       LOAD_METHOD load
+  b1          LOAD_FAST 1 
+  36:01       CALL_METHOD 1
+  c2          STORE_FAST 2 
+  b2          LOAD_FAST 2 
+  5f          GET_ITER_STACK 
+  4b:1c       FOR_ITER 28
+  30:03       UNPACK_SEQUENCE 3
+  c3          STORE_FAST 3 
+  c4          STORE_FAST 4 
+  c5          STORE_FAST 5 
+  12:07       LOAD_GLOBAL binascii
+  14:64       LOAD_METHOD a2b_base64
+  b5          LOAD_FAST 5 
+  36:01       CALL_METHOD 1
+  b0          LOAD_FAST 0 
+  13:45       LOAD_ATTR keys
+  b3          LOAD_FAST 3 
+  12:07       LOAD_GLOBAL binascii
+  14:64       LOAD_METHOD a2b_base64
+  b4          LOAD_FAST 4 
+  36:01       CALL_METHOD 1
+  2a:02       BUILD_TUPLE 2
+  56          STORE_SUBSCR 
+  42:22       JUMP -30
+  51          LOAD_CONST_NONE 
+  5c          WITH_CLEANUP 
+  5d          END_FINALLY 
+  4a:0c       POP_EXCEPT_JUMP 12
+  59          POP_TOP 
+  12:81:34    LOAD_GLOBAL print
+  23:1a       LOAD_CONST_OBJ 'no secrets available'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: save_secrets
+  raw bytecode: 67 c1:02:14:4d:81:2a:90:58:22:2c:42:4a:4f:48:26:12:81:38:10:61:10:65:34:02:47:17:c1:32:00:b0:13:45:14:4e:36:00:34:01:c2:12:06:14:66:b2:b1:36:02:59:51:5c:5d:4a:0c:59:12:81:34:23:1b:34:01:59:4a:01:5d:51:63
+  prelude: (9, 2, 0, 1, 0, 0)
+  args: ['self']
+  line info: 90:58:22:2c:42:4a:4f
+  48:26       SETUP_EXCEPT 38
+  12:81:38    LOAD_GLOBAL open
+  10:61       LOAD_CONST_STRING keys.json
+  10:65       LOAD_CONST_STRING w
+  34:02       CALL_FUNCTION 2
+  47:17       SETUP_WITH 23
+  c1          STORE_FAST 1 
+  32:00       MAKE_FUNCTION 0
+  b0          LOAD_FAST 0 
+  13:45       LOAD_ATTR keys
+  14:4e       LOAD_METHOD items
+  36:00       CALL_METHOD 0
+  34:01       CALL_FUNCTION 1
+  c2          STORE_FAST 2 
+  12:06       LOAD_GLOBAL json
+  14:66       LOAD_METHOD dump
+  b2          LOAD_FAST 2 
+  b1          LOAD_FAST 1 
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  5c          WITH_CLEANUP 
+  5d          END_FINALLY 
+  4a:0c       POP_EXCEPT_JUMP 12
+  59          POP_TOP 
+  12:81:34    LOAD_GLOBAL print
+  23:1b       LOAD_CONST_OBJ 'failed to save secrets'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [<listcomp>]
+simple_name: <listcomp>
+  raw bytecode: 45 69:0c:81:1e:81:53:90:5b:2b:00:b0:5f:4b:1e:30:02:30:02:c1:c2:c3:b1:12:07:14:81:1f:b2:36:01:12:07:14:81:1f:b3:36:01:2a:03:2f:14:42:20:63
+  prelude: (14, 0, 0, 1, 0, 0)
+  args: ['*']
+  line info: 90:5b
+  2b:00       BUILD_LIST 0
+  b0          LOAD_FAST 0 
+  5f          GET_ITER_STACK 
+  4b:1e       FOR_ITER 30
+  30:02       UNPACK_SEQUENCE 2
+  30:02       UNPACK_SEQUENCE 2
+  c1          STORE_FAST 1 
+  c2          STORE_FAST 2 
+  c3          STORE_FAST 3 
+  b1          LOAD_FAST 1 
+  12:07       LOAD_GLOBAL binascii
+  14:81:1f    LOAD_METHOD b2a_base64
+  b2          LOAD_FAST 2 
+  36:01       CALL_METHOD 1
+  12:07       LOAD_GLOBAL binascii
+  14:81:1f    LOAD_METHOD b2a_base64
+  b3          LOAD_FAST 3 
+  36:01       CALL_METHOD 1
+  2a:03       BUILD_TUPLE 3
+  2f:14       STORE_COMP 20
+  42:20       JUMP -32
+  63          RETURN_VALUE 
+  children: []
+simple_name: is_running
+  raw bytecode: 17 11:0a:67:81:2a:90:63:b0:13:2d:12:0d:13:2c:de:d3:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 90:63
+  b0          LOAD_FAST 0 
+  13:2d       LOAD_ATTR device_state
+  12:0d       LOAD_GLOBAL HumanInterfaceDevice
+  13:2c       LOAD_ATTR DEVICE_STOPPED
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  63          RETURN_VALUE 
+  children: []
+simple_name: is_connected
+  raw bytecode: 16 11:0a:68:81:2a:90:66:b0:13:2d:12:0d:13:49:de:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 90:66
+  b0          LOAD_FAST 0 
+  13:2d       LOAD_ATTR device_state
+  12:0d       LOAD_GLOBAL HumanInterfaceDevice
+  13:49       LOAD_ATTR DEVICE_CONNECTED
+  de          BINARY_OP 7 <is> 
+  63          RETURN_VALUE 
+  children: []
+simple_name: is_advertising
+  raw bytecode: 16 11:0a:69:81:2a:90:69:b0:13:2d:12:0d:13:5f:de:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 90:69
+  b0          LOAD_FAST 0 
+  13:2d       LOAD_ATTR device_state
+  12:0d       LOAD_GLOBAL HumanInterfaceDevice
+  13:5f       LOAD_ATTR DEVICE_ADVERTISING
+  de          BINARY_OP 7 <is> 
+  63          RETURN_VALUE 
+  children: []
+simple_name: set_state
+  raw bytecode: 31 1a:12:48:81:2a:81:39:90:6c:24:28:b1:b0:18:2d:b0:13:2f:51:de:d3:44:46:b0:14:2f:36:00:59:51:63
+  prelude: (4, 0, 0, 2, 0, 0)
+  args: ['self', 'state']
+  line info: 90:6c:24:28
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:2d       STORE_ATTR device_state
+  b0          LOAD_FAST 0 
+  13:2f       LOAD_ATTR state_change_callback
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:46       POP_JUMP_IF_FALSE 6
+  b0          LOAD_FAST 0 
+  14:2f       LOAD_METHOD state_change_callback
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: get_state
+  raw bytecode: 11 09:0a:6a:81:2a:90:71:b0:13:2d:63
+  prelude: (2, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 90:71
+  b0          LOAD_FAST 0 
+  13:2d       LOAD_ATTR device_state
+  63          RETURN_VALUE 
+  children: []
+simple_name: set_state_change_callback
+  raw bytecode: 15 1a:0e:6b:81:2a:81:3a:90:74:b1:b0:18:2f:51:63
+  prelude: (4, 0, 0, 2, 0, 0)
+  args: ['self', 'callback']
+  line info: 90:74
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:2f       STORE_ATTR state_change_callback
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: start_advertising
+  raw bytecode: 51 19:0e:26:81:2a:90:77:36:28:b0:13:2d:12:0d:13:2c:de:d3:44:5d:b0:13:2d:12:0d:13:5f:de:d3:44:52:b0:13:2b:14:26:36:00:59:b0:14:48:12:0d:13:5f:36:01:59:51:63
+  prelude: (4, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 90:77:36:28
+  b0          LOAD_FAST 0 
+  13:2d       LOAD_ATTR device_state
+  12:0d       LOAD_GLOBAL HumanInterfaceDevice
+  13:2c       LOAD_ATTR DEVICE_STOPPED
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:5d       POP_JUMP_IF_FALSE 29
+  b0          LOAD_FAST 0 
+  13:2d       LOAD_ATTR device_state
+  12:0d       LOAD_GLOBAL HumanInterfaceDevice
+  13:5f       LOAD_ATTR DEVICE_ADVERTISING
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:52       POP_JUMP_IF_FALSE 18
+  b0          LOAD_FAST 0 
+  13:2b       LOAD_ATTR adv
+  14:26       LOAD_METHOD start_advertising
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:48       LOAD_METHOD set_state
+  12:0d       LOAD_GLOBAL HumanInterfaceDevice
+  13:5f       LOAD_ATTR DEVICE_ADVERTISING
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: stop_advertising
+  raw bytecode: 52 19:10:29:81:2a:90:7c:2b:28:2b:b0:13:2d:12:0d:13:2c:de:d3:44:5d:b0:13:2b:14:29:36:00:59:b0:13:2d:12:0d:13:49:de:d3:44:4a:b0:14:48:12:0d:13:4a:36:01:59:51:63
+  prelude: (4, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 90:7c:2b:28:2b
+  b0          LOAD_FAST 0 
+  13:2d       LOAD_ATTR device_state
+  12:0d       LOAD_GLOBAL HumanInterfaceDevice
+  13:2c       LOAD_ATTR DEVICE_STOPPED
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:5d       POP_JUMP_IF_FALSE 29
+  b0          LOAD_FAST 0 
+  13:2b       LOAD_ATTR adv
+  14:29       LOAD_METHOD stop_advertising
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:2d       LOAD_ATTR device_state
+  12:0d       LOAD_GLOBAL HumanInterfaceDevice
+  13:49       LOAD_ATTR DEVICE_CONNECTED
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:4a       POP_JUMP_IF_FALSE 10
+  b0          LOAD_FAST 0 
+  14:48       LOAD_METHOD set_state
+  12:0d       LOAD_GLOBAL HumanInterfaceDevice
+  13:4a       LOAD_ATTR DEVICE_IDLE
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: get_device_name
+  raw bytecode: 11 09:0a:6c:81:2a:90:82:b0:13:33:63
+  prelude: (2, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 90:82
+  b0          LOAD_FAST 0 
+  13:33       LOAD_ATTR device_name
+  63          RETURN_VALUE 
+  children: []
+simple_name: get_services_uuids
+  raw bytecode: 11 09:0a:6d:81:2a:90:85:b0:13:34:63
+  prelude: (2, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 90:85
+  b0          LOAD_FAST 0 
+  13:34       LOAD_ATTR service_uuids
+  63          RETURN_VALUE 
+  children: []
+simple_name: get_appearance
+  raw bytecode: 11 09:0a:6e:81:2a:90:88:b0:13:35:63
+  prelude: (2, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 90:88
+  b0          LOAD_FAST 0 
+  13:35       LOAD_ATTR device_appearance
+  63          RETURN_VALUE 
+  children: []
+simple_name: get_battery_level
+  raw bytecode: 11 09:0a:6f:81:2a:90:8b:b0:13:36:63
+  prelude: (2, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 90:8b
+  b0          LOAD_FAST 0 
+  13:36       LOAD_ATTR battery_level
+  63          RETURN_VALUE 
+  children: []
+simple_name: set_battery_level
+  raw bytecode: 45 1a:16:70:81:2a:81:3b:90:8e:27:28:25:46:b1:22:80:64:d8:44:48:22:80:64:b0:18:36:42:4f:b1:80:d7:44:46:80:b0:18:36:42:44:b1:b0:18:36:51:63
+  prelude: (4, 0, 0, 2, 0, 0)
+  args: ['self', 'level']
+  line info: 90:8e:27:28:25:46
+  b1          LOAD_FAST 1 
+  22:80:64    LOAD_CONST_SMALL_INT 100
+  d8          BINARY_OP 1 __gt__ 
+  44:48       POP_JUMP_IF_FALSE 8
+  22:80:64    LOAD_CONST_SMALL_INT 100
+  b0          LOAD_FAST 0 
+  18:36       STORE_ATTR battery_level
+  42:4f       JUMP 15
+  b1          LOAD_FAST 1 
+  80          LOAD_CONST_SMALL_INT 0 
+  d7          BINARY_OP 0 __lt__ 
+  44:46       POP_JUMP_IF_FALSE 6
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:36       STORE_ATTR battery_level
+  42:44       JUMP 4
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:36       STORE_ATTR battery_level
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: set_device_information
+  raw bytecode: 28 a8:85:01:14:71:81:2a:3c:37:38:90:96:24:24:b1:b0:18:3c:b2:b0:18:37:b3:b0:18:38:51:63
+  prelude: (6, 0, 0, 4, 0, 3)
+  args: ['self', 'manufacture_name', 'model_number', 'serial_number']
+  line info: 90:96:24:24
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:3c       STORE_ATTR manufacture_name
+  b2          LOAD_FAST 2 
+  b0          LOAD_FAST 0 
+  18:37       STORE_ATTR model_number
+  b3          LOAD_FAST 3 
+  b0          LOAD_FAST 0 
+  18:38       STORE_ATTR serial_number
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: set_device_revision
+  raw bytecode: 28 a8:85:01:14:72:81:2a:39:3a:3b:90:9b:24:24:b1:b0:18:39:b2:b0:18:3a:b3:b0:18:3b:51:63
+  prelude: (6, 0, 0, 4, 0, 3)
+  args: ['self', 'firmware_revision', 'hardware_revision', 'software_revision']
+  line info: 90:9b:24:24
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:39       STORE_ATTR firmware_revision
+  b2          LOAD_FAST 2 
+  b0          LOAD_FAST 0 
+  18:3a       STORE_ATTR hardware_revision
+  b3          LOAD_FAST 3 
+  b0          LOAD_FAST 0 
+  18:3b       STORE_ATTR software_revision
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: set_device_pnp_information
+  raw bytecode: 35 b1:84:80:01:18:73:81:2a:3d:3e:3f:40:90:a0:24:24:24:b1:b0:18:3d:b2:b0:18:3e:b3:b0:18:3f:b4:b0:18:40:51:63
+  prelude: (7, 0, 0, 5, 0, 4)
+  args: ['self', 'pnp_manufacturer_source', 'pnp_manufacturer_uuid', 'pnp_product_id', 'pnp_product_version']
+  line info: 90:a0:24:24:24
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:3d       STORE_ATTR pnp_manufacturer_source
+  b2          LOAD_FAST 2 
+  b0          LOAD_FAST 0 
+  18:3e       STORE_ATTR pnp_manufacturer_uuid
+  b3          LOAD_FAST 3 
+  b0          LOAD_FAST 0 
+  18:3f       STORE_ATTR pnp_product_id
+  b4          LOAD_FAST 4 
+  b0          LOAD_FAST 0 
+  18:40       STORE_ATTR pnp_product_version
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: set_bonding
+  raw bytecode: 14 1a:0c:74:81:2a:31:90:a6:b1:b0:18:31:51:63
+  prelude: (4, 0, 0, 2, 0, 0)
+  args: ['self', 'bond']
+  line info: 90:a6
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:31       STORE_ATTR bond
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: set_le_secure
+  raw bytecode: 14 1a:0c:75:81:2a:32:90:a9:b1:b0:18:32:51:63
+  prelude: (4, 0, 0, 2, 0, 0)
+  args: ['self', 'le_secure']
+  line info: 90:a9
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:32       STORE_ATTR le_secure
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: set_io_capability
+  raw bytecode: 14 1a:0c:76:81:2a:30:90:ac:b1:b0:18:30:51:63
+  prelude: (4, 0, 0, 2, 0, 0)
+  args: ['self', 'io_capability']
+  line info: 90:ac
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:30       STORE_ATTR io_capability
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: set_passkey_callback
+  raw bytecode: 14 1a:0c:77:81:2a:4b:90:af:b1:b0:18:4b:51:63
+  prelude: (4, 0, 0, 2, 0, 0)
+  args: ['self', 'passkey_callback']
+  line info: 90:af
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:4b       STORE_ATTR passkey_callback
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: set_passkey
+  raw bytecode: 14 1a:0c:78:81:2a:44:90:b2:b1:b0:18:44:51:63
+  prelude: (4, 0, 0, 2, 0, 0)
+  args: ['self', 'passkey']
+  line info: 90:b2
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:44       STORE_ATTR passkey
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: notify_battery_level
+  raw bytecode: 54 41:0e:79:81:2a:90:b5:27:2b:b0:14:68:36:00:44:64:12:81:34:23:1c:b0:13:36:34:02:59:b0:13:20:14:7a:b0:13:2e:b0:13:5a:12:04:14:14:10:5d:b0:13:36:36:02:36:03:59:51:63
+  prelude: (9, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 90:b5:27:2b
+  b0          LOAD_FAST 0 
+  14:68       LOAD_METHOD is_connected
+  36:00       CALL_METHOD 0
+  44:64       POP_JUMP_IF_FALSE 36
+  12:81:34    LOAD_GLOBAL print
+  23:1c       LOAD_CONST_OBJ 'Notify battery level: '
+  b0          LOAD_FAST 0 
+  13:36       LOAD_ATTR battery_level
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:7a       LOAD_METHOD gatts_notify
+  b0          LOAD_FAST 0 
+  13:2e       LOAD_ATTR conn_handle
+  b0          LOAD_FAST 0 
+  13:5a       LOAD_ATTR h_bat
+  12:04       LOAD_GLOBAL struct
+  14:14       LOAD_METHOD pack
+  10:5d       LOAD_CONST_STRING <B
+  b0          LOAD_FAST 0 
+  13:36       LOAD_ATTR battery_level
+  36:02       CALL_METHOD 2
+  36:03       CALL_METHOD 3
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: notify_hid_report
+  raw bytecode: 9 09:0a:7b:81:2a:90:ba:51:63
+  prelude: (2, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 90:ba
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: Joystick
+  raw bytecode: 75 38:1a:0e:9b:bd:89:36:84:0b:84:0f:84:08:8a:0e:11:81:27:16:81:28:10:0e:16:81:29:23:01:2a:01:53:33:00:16:1f:32:01:16:50:32:02:16:59:32:03:16:7b:80:80:2a:02:53:33:04:16:81:0b:80:80:80:80:80:80:80:80:2a:08:53:33:05:16:81:0c:51:63
+  prelude: (8, 0, 0, 0, 0, 0)
+  args: []
+  line info: 9b:bd:89:36:84:0b:84:0f:84:08:8a:0e
+  11:81:27    LOAD_NAME __name__
+  16:81:28    STORE_NAME __module__
+  10:0e       LOAD_CONST_STRING Joystick
+  16:81:29    STORE_NAME __qualname__
+  23:01       LOAD_CONST_OBJ 'Bluetooth Joystick'
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:00       MAKE_FUNCTION_DEFARGS 0
+  16:1f       STORE_NAME __init__
+  32:01       MAKE_FUNCTION 1
+  16:50       STORE_NAME start
+  32:02       MAKE_FUNCTION 2
+  16:59       STORE_NAME write_service_characteristics
+  32:03       MAKE_FUNCTION 3
+  16:7b       STORE_NAME notify_hid_report
+  80          LOAD_CONST_SMALL_INT 0 
+  80          LOAD_CONST_SMALL_INT 0 
+  2a:02       BUILD_TUPLE 2
+  53          LOAD_NULL 
+  33:04       MAKE_FUNCTION_DEFARGS 4
+  16:81:0b    STORE_NAME set_axes
+  80          LOAD_CONST_SMALL_INT 0 
+  80          LOAD_CONST_SMALL_INT 0 
+  80          LOAD_CONST_SMALL_INT 0 
+  80          LOAD_CONST_SMALL_INT 0 
+  80          LOAD_CONST_SMALL_INT 0 
+  80          LOAD_CONST_SMALL_INT 0 
+  80          LOAD_CONST_SMALL_INT 0 
+  80          LOAD_CONST_SMALL_INT 0 
+  2a:08       BUILD_TUPLE 8
+  53          LOAD_NULL 
+  33:05       MAKE_FUNCTION_DEFARGS 5
+  16:81:0c    STORE_NAME set_buttons
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [__init__, start, write_service_characteristics, notify_hid_report, set_axes, set_buttons]
+simple_name: __init__
+  raw bytecode: 292 e2:21:40:1f:81:2a:21:90:be:2e:46:20:27:20:2d:2d:2d:3c:74:20:1f:1f:72:80:16:24:44:24:25:25:25:25:25:25:45:12:81:3c:12:0e:b0:34:02:14:1f:b1:36:01:59:22:87:43:b0:18:35:12:08:22:b0:12:34:01:12:08:22:80:d4:4a:34:01:12:81:20:2a:02:12:08:22:80:d4:4b:34:01:12:81:20:2a:02:12:08:22:80:d4:4c:34:01:12:81:21:2a:02:12:08:22:80:d4:4d:34:01:12:81:23:12:08:22:80:d2:08:34:01:12:81:24:2a:02:2a:01:2a:03:12:08:22:80:d4:4e:34:01:12:81:22:2a:02:2a:05:2a:02:b0:18:7c:12:81:2e:85:81:89:84:22:81:21:81:22:81:05:81:22:81:21:80:89:22:30:89:22:31:95:22:81:01:a5:22:80:7f:22:80:75:88:22:81:15:82:22:81:01:82:85:89:a9:88:99:81:22:81:15:88:22:80:75:81:a5:81:95:80:22:81:01:82:22:81:40:22:81:40:2b:2a:34:01:b0:18:43:80:b0:18:7d:80:b0:18:7e:80:b0:18:7f:80:b0:18:81:00:80:b0:18:81:01:80:b0:18:81:02:80:b0:18:81:03:80:b0:18:81:04:80:b0:18:81:05:80:b0:18:81:06:b0:13:41:b0:13:42:b0:13:7c:2b:03:b0:18:22:51:63
+  prelude: (45, 0, 0, 2, 0, 1)
+  args: ['self', 'name']
+  line info: 90:be:2e:46:20:27:20:2d:2d:2d:3c:74:20:1f:1f:72:80:16:24:44:24:25:25:25:25:25:25:45
+  12:81:3c    LOAD_GLOBAL super
+  12:0e       LOAD_GLOBAL Joystick
+  b0          LOAD_FAST 0 
+  34:02       CALL_FUNCTION 2
+  14:1f       LOAD_METHOD __init__
+  b1          LOAD_FAST 1 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  22:87:43    LOAD_CONST_SMALL_INT 963
+  b0          LOAD_FAST 0 
+  18:35       STORE_ATTR device_appearance
+  12:08       LOAD_GLOBAL UUID
+  22:b0:12    LOAD_CONST_SMALL_INT 6162
+  34:01       CALL_FUNCTION 1
+  12:08       LOAD_GLOBAL UUID
+  22:80:d4:4a LOAD_CONST_SMALL_INT 10826
+  34:01       CALL_FUNCTION 1
+  12:81:20    LOAD_GLOBAL F_READ
+  2a:02       BUILD_TUPLE 2
+  12:08       LOAD_GLOBAL UUID
+  22:80:d4:4b LOAD_CONST_SMALL_INT 10827
+  34:01       CALL_FUNCTION 1
+  12:81:20    LOAD_GLOBAL F_READ
+  2a:02       BUILD_TUPLE 2
+  12:08       LOAD_GLOBAL UUID
+  22:80:d4:4c LOAD_CONST_SMALL_INT 10828
+  34:01       CALL_FUNCTION 1
+  12:81:21    LOAD_GLOBAL F_WRITE
+  2a:02       BUILD_TUPLE 2
+  12:08       LOAD_GLOBAL UUID
+  22:80:d4:4d LOAD_CONST_SMALL_INT 10829
+  34:01       CALL_FUNCTION 1
+  12:81:23    LOAD_GLOBAL F_READ_NOTIFY
+  12:08       LOAD_GLOBAL UUID
+  22:80:d2:08 LOAD_CONST_SMALL_INT 10504
+  34:01       CALL_FUNCTION 1
+  12:81:24    LOAD_GLOBAL ATT_F_READ
+  2a:02       BUILD_TUPLE 2
+  2a:01       BUILD_TUPLE 1
+  2a:03       BUILD_TUPLE 3
+  12:08       LOAD_GLOBAL UUID
+  22:80:d4:4e LOAD_CONST_SMALL_INT 10830
+  34:01       CALL_FUNCTION 1
+  12:81:22    LOAD_GLOBAL F_READ_WRITE
+  2a:02       BUILD_TUPLE 2
+  2a:05       BUILD_TUPLE 5
+  2a:02       BUILD_TUPLE 2
+  b0          LOAD_FAST 0 
+  18:7c       STORE_ATTR HIDS
+  12:81:2e    LOAD_GLOBAL bytes
+  85          LOAD_CONST_SMALL_INT 5 
+  81          LOAD_CONST_SMALL_INT 1 
+  89          LOAD_CONST_SMALL_INT 9 
+  84          LOAD_CONST_SMALL_INT 4 
+  22:81:21    LOAD_CONST_SMALL_INT 161
+  81          LOAD_CONST_SMALL_INT 1 
+  22:81:05    LOAD_CONST_SMALL_INT 133
+  81          LOAD_CONST_SMALL_INT 1 
+  22:81:21    LOAD_CONST_SMALL_INT 161
+  80          LOAD_CONST_SMALL_INT 0 
+  89          LOAD_CONST_SMALL_INT 9 
+  22:30       LOAD_CONST_SMALL_INT 48
+  89          LOAD_CONST_SMALL_INT 9 
+  22:31       LOAD_CONST_SMALL_INT 49
+  95          LOAD_CONST_SMALL_INT 21 
+  22:81:01    LOAD_CONST_SMALL_INT 129
+  a5          LOAD_CONST_SMALL_INT 37 
+  22:80:7f    LOAD_CONST_SMALL_INT 127
+  22:80:75    LOAD_CONST_SMALL_INT 117
+  88          LOAD_CONST_SMALL_INT 8 
+  22:81:15    LOAD_CONST_SMALL_INT 149
+  82          LOAD_CONST_SMALL_INT 2 
+  22:81:01    LOAD_CONST_SMALL_INT 129
+  82          LOAD_CONST_SMALL_INT 2 
+  85          LOAD_CONST_SMALL_INT 5 
+  89          LOAD_CONST_SMALL_INT 9 
+  a9          LOAD_CONST_SMALL_INT 41 
+  88          LOAD_CONST_SMALL_INT 8 
+  99          LOAD_CONST_SMALL_INT 25 
+  81          LOAD_CONST_SMALL_INT 1 
+  22:81:15    LOAD_CONST_SMALL_INT 149
+  88          LOAD_CONST_SMALL_INT 8 
+  22:80:75    LOAD_CONST_SMALL_INT 117
+  81          LOAD_CONST_SMALL_INT 1 
+  a5          LOAD_CONST_SMALL_INT 37 
+  81          LOAD_CONST_SMALL_INT 1 
+  95          LOAD_CONST_SMALL_INT 21 
+  80          LOAD_CONST_SMALL_INT 0 
+  22:81:01    LOAD_CONST_SMALL_INT 129
+  82          LOAD_CONST_SMALL_INT 2 
+  22:81:40    LOAD_CONST_SMALL_INT 192
+  22:81:40    LOAD_CONST_SMALL_INT 192
+  2b:2a       BUILD_LIST 42
+  34:01       CALL_FUNCTION 1
+  b0          LOAD_FAST 0 
+  18:43       STORE_ATTR HID_INPUT_REPORT
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:7d       STORE_ATTR x
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:7e       STORE_ATTR y
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:7f       STORE_ATTR button1
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:81:00    STORE_ATTR button2
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:81:01    STORE_ATTR button3
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:81:02    STORE_ATTR button4
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:81:03    STORE_ATTR button5
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:81:04    STORE_ATTR button6
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:81:05    STORE_ATTR button7
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:81:06    STORE_ATTR button8
+  b0          LOAD_FAST 0 
+  13:41       LOAD_ATTR DIS
+  b0          LOAD_FAST 0 
+  13:42       LOAD_ATTR BAS
+  b0          LOAD_FAST 0 
+  13:7c       LOAD_ATTR HIDS
+  2b:03       BUILD_LIST 3
+  b0          LOAD_FAST 0 
+  18:22       STORE_ATTR services
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: start
+  raw bytecode: 87 31:14:50:81:2a:90:f4:4d:28:2c:47:59:12:81:3c:12:0e:b0:34:02:14:50:36:00:59:12:81:34:23:1d:34:01:59:b0:13:20:14:81:07:b0:13:22:36:01:c1:b0:14:59:b1:36:01:59:12:0c:b0:13:20:12:08:22:b0:12:34:01:2b:01:b0:13:35:b0:13:33:34:04:b0:18:2b:12:81:34:23:1e:34:01:59:51:63
+  prelude: (7, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 90:f4:4d:28:2c:47:59
+  12:81:3c    LOAD_GLOBAL super
+  12:0e       LOAD_GLOBAL Joystick
+  b0          LOAD_FAST 0 
+  34:02       CALL_FUNCTION 2
+  14:50       LOAD_METHOD start
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  12:81:34    LOAD_GLOBAL print
+  23:1d       LOAD_CONST_OBJ 'Registering services'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:81:07    LOAD_METHOD gatts_register_services
+  b0          LOAD_FAST 0 
+  13:22       LOAD_ATTR services
+  36:01       CALL_METHOD 1
+  c1          STORE_FAST 1 
+  b0          LOAD_FAST 0 
+  14:59       LOAD_METHOD write_service_characteristics
+  b1          LOAD_FAST 1 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  12:0c       LOAD_GLOBAL Advertiser
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  12:08       LOAD_GLOBAL UUID
+  22:b0:12    LOAD_CONST_SMALL_INT 6162
+  34:01       CALL_FUNCTION 1
+  2b:01       BUILD_LIST 1
+  b0          LOAD_FAST 0 
+  13:35       LOAD_ATTR device_appearance
+  b0          LOAD_FAST 0 
+  13:33       LOAD_ATTR device_name
+  34:04       CALL_FUNCTION 4
+  b0          LOAD_FAST 0 
+  18:2b       STORE_ATTR adv
+  12:81:34    LOAD_GLOBAL print
+  23:1e       LOAD_CONST_OBJ 'Server started'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: write_service_characteristics
+  raw bytecode: 199 82:10:22:59:81:2a:81:37:90:ff:4e:4e:1f:3a:51:28:2b:2c:2d:34:12:81:3c:12:0e:b0:34:02:14:59:b1:36:01:59:b1:82:55:30:06:c2:c3:c4:b0:18:81:08:c5:c6:b0:13:7f:b0:13:81:00:82:f4:f2:b0:13:81:01:84:f4:f2:b0:13:81:02:88:f4:f2:b0:13:81:03:90:f4:f2:b0:13:81:04:a0:f4:f2:b0:13:81:05:22:80:40:f4:f2:b0:13:81:06:22:81:00:f4:f2:c7:12:04:14:14:10:81:09:b0:13:7d:b0:13:7e:b7:36:04:c8:12:81:34:23:1f:34:01:59:b0:13:20:14:5b:b2:23:20:36:02:59:b0:13:20:14:5b:b3:b0:13:43:36:02:59:b0:13:20:14:5b:b0:13:81:08:b8:36:02:59:b0:13:20:14:5b:b5:12:04:14:14:10:81:0a:81:81:36:03:36:02:59:b0:13:20:14:5b:b6:23:21:36:02:59:51:63
+  prelude: (17, 0, 0, 2, 0, 0)
+  args: ['self', 'handles']
+  line info: 90:ff:4e:4e:1f:3a:51:28:2b:2c:2d:34
+  12:81:3c    LOAD_GLOBAL super
+  12:0e       LOAD_GLOBAL Joystick
+  b0          LOAD_FAST 0 
+  34:02       CALL_FUNCTION 2
+  14:59       LOAD_METHOD write_service_characteristics
+  b1          LOAD_FAST 1 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b1          LOAD_FAST 1 
+  82          LOAD_CONST_SMALL_INT 2 
+  55          LOAD_SUBSCR 
+  30:06       UNPACK_SEQUENCE 6
+  c2          STORE_FAST 2 
+  c3          STORE_FAST 3 
+  c4          STORE_FAST 4 
+  b0          LOAD_FAST 0 
+  18:81:08    STORE_ATTR h_rep
+  c5          STORE_FAST 5 
+  c6          STORE_FAST 6 
+  b0          LOAD_FAST 0 
+  13:7f       LOAD_ATTR button1
+  b0          LOAD_FAST 0 
+  13:81:00    LOAD_ATTR button2
+  82          LOAD_CONST_SMALL_INT 2 
+  f4          BINARY_OP 29 __mul__ 
+  f2          BINARY_OP 27 __add__ 
+  b0          LOAD_FAST 0 
+  13:81:01    LOAD_ATTR button3
+  84          LOAD_CONST_SMALL_INT 4 
+  f4          BINARY_OP 29 __mul__ 
+  f2          BINARY_OP 27 __add__ 
+  b0          LOAD_FAST 0 
+  13:81:02    LOAD_ATTR button4
+  88          LOAD_CONST_SMALL_INT 8 
+  f4          BINARY_OP 29 __mul__ 
+  f2          BINARY_OP 27 __add__ 
+  b0          LOAD_FAST 0 
+  13:81:03    LOAD_ATTR button5
+  90          LOAD_CONST_SMALL_INT 16 
+  f4          BINARY_OP 29 __mul__ 
+  f2          BINARY_OP 27 __add__ 
+  b0          LOAD_FAST 0 
+  13:81:04    LOAD_ATTR button6
+  a0          LOAD_CONST_SMALL_INT 32 
+  f4          BINARY_OP 29 __mul__ 
+  f2          BINARY_OP 27 __add__ 
+  b0          LOAD_FAST 0 
+  13:81:05    LOAD_ATTR button7
+  22:80:40    LOAD_CONST_SMALL_INT 64
+  f4          BINARY_OP 29 __mul__ 
+  f2          BINARY_OP 27 __add__ 
+  b0          LOAD_FAST 0 
+  13:81:06    LOAD_ATTR button8
+  22:81:00    LOAD_CONST_SMALL_INT 128
+  f4          BINARY_OP 29 __mul__ 
+  f2          BINARY_OP 27 __add__ 
+  c7          STORE_FAST 7 
+  12:04       LOAD_GLOBAL struct
+  14:14       LOAD_METHOD pack
+  10:81:09    LOAD_CONST_STRING bbB
+  b0          LOAD_FAST 0 
+  13:7d       LOAD_ATTR x
+  b0          LOAD_FAST 0 
+  13:7e       LOAD_ATTR y
+  b7          LOAD_FAST 7 
+  36:04       CALL_METHOD 4
+  c8          STORE_FAST 8 
+  12:81:34    LOAD_GLOBAL print
+  23:1f       LOAD_CONST_OBJ 'Writing hid service characteristics'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:5b       LOAD_METHOD gatts_write
+  b2          LOAD_FAST 2 
+  23:20       LOAD_CONST_OBJ b'\x01\x01\x00\x02'
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:5b       LOAD_METHOD gatts_write
+  b3          LOAD_FAST 3 
+  b0          LOAD_FAST 0 
+  13:43       LOAD_ATTR HID_INPUT_REPORT
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:5b       LOAD_METHOD gatts_write
+  b0          LOAD_FAST 0 
+  13:81:08    LOAD_ATTR h_rep
+  b8          LOAD_FAST 8 
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:5b       LOAD_METHOD gatts_write
+  b5          LOAD_FAST 5 
+  12:04       LOAD_GLOBAL struct
+  14:14       LOAD_METHOD pack
+  10:81:0a    LOAD_CONST_STRING <BB
+  81          LOAD_CONST_SMALL_INT 1 
+  81          LOAD_CONST_SMALL_INT 1 
+  36:03       CALL_METHOD 3
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:5b       LOAD_METHOD gatts_write
+  b6          LOAD_FAST 6 
+  23:21       LOAD_CONST_OBJ b'\x01'
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: notify_hid_report
+  raw bytecode: 130 41:14:7b:81:2a:a0:0e:28:1f:3a:51:32:b0:14:68:36:00:44:ec:80:b0:13:7f:b0:13:81:00:82:f4:f2:b0:13:81:01:84:f4:f2:b0:13:81:02:88:f4:f2:b0:13:81:03:90:f4:f2:b0:13:81:04:a0:f4:f2:b0:13:81:05:22:80:40:f4:f2:b0:13:81:06:22:81:00:f4:f2:c1:12:04:14:14:10:81:09:b0:13:7d:b0:13:7e:b1:36:04:c2:12:81:34:23:22:12:04:14:1d:10:81:09:b2:36:02:34:02:59:b0:13:20:14:7a:b0:13:2e:b0:13:81:08:b2:36:03:59:51:63
+  prelude: (9, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: a0:0e:28:1f:3a:51:32
+  b0          LOAD_FAST 0 
+  14:68       LOAD_METHOD is_connected
+  36:00       CALL_METHOD 0
+  44:ec:80    POP_JUMP_IF_FALSE 108
+  b0          LOAD_FAST 0 
+  13:7f       LOAD_ATTR button1
+  b0          LOAD_FAST 0 
+  13:81:00    LOAD_ATTR button2
+  82          LOAD_CONST_SMALL_INT 2 
+  f4          BINARY_OP 29 __mul__ 
+  f2          BINARY_OP 27 __add__ 
+  b0          LOAD_FAST 0 
+  13:81:01    LOAD_ATTR button3
+  84          LOAD_CONST_SMALL_INT 4 
+  f4          BINARY_OP 29 __mul__ 
+  f2          BINARY_OP 27 __add__ 
+  b0          LOAD_FAST 0 
+  13:81:02    LOAD_ATTR button4
+  88          LOAD_CONST_SMALL_INT 8 
+  f4          BINARY_OP 29 __mul__ 
+  f2          BINARY_OP 27 __add__ 
+  b0          LOAD_FAST 0 
+  13:81:03    LOAD_ATTR button5
+  90          LOAD_CONST_SMALL_INT 16 
+  f4          BINARY_OP 29 __mul__ 
+  f2          BINARY_OP 27 __add__ 
+  b0          LOAD_FAST 0 
+  13:81:04    LOAD_ATTR button6
+  a0          LOAD_CONST_SMALL_INT 32 
+  f4          BINARY_OP 29 __mul__ 
+  f2          BINARY_OP 27 __add__ 
+  b0          LOAD_FAST 0 
+  13:81:05    LOAD_ATTR button7
+  22:80:40    LOAD_CONST_SMALL_INT 64
+  f4          BINARY_OP 29 __mul__ 
+  f2          BINARY_OP 27 __add__ 
+  b0          LOAD_FAST 0 
+  13:81:06    LOAD_ATTR button8
+  22:81:00    LOAD_CONST_SMALL_INT 128
+  f4          BINARY_OP 29 __mul__ 
+  f2          BINARY_OP 27 __add__ 
+  c1          STORE_FAST 1 
+  12:04       LOAD_GLOBAL struct
+  14:14       LOAD_METHOD pack
+  10:81:09    LOAD_CONST_STRING bbB
+  b0          LOAD_FAST 0 
+  13:7d       LOAD_ATTR x
+  b0          LOAD_FAST 0 
+  13:7e       LOAD_ATTR y
+  b1          LOAD_FAST 1 
+  36:04       CALL_METHOD 4
+  c2          STORE_FAST 2 
+  12:81:34    LOAD_GLOBAL print
+  23:22       LOAD_CONST_OBJ 'Notify with report: '
+  12:04       LOAD_GLOBAL struct
+  14:1d       LOAD_METHOD unpack
+  10:81:09    LOAD_CONST_STRING bbB
+  b2          LOAD_FAST 2 
+  36:02       CALL_METHOD 2
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:7a       LOAD_METHOD gatts_notify
+  b0          LOAD_FAST 0 
+  13:2e       LOAD_ATTR conn_handle
+  b0          LOAD_FAST 0 
+  13:81:08    LOAD_ATTR h_rep
+  b2          LOAD_FAST 2 
+  36:03       CALL_METHOD 3
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: set_axes
+  raw bytecode: 83 a3:80:01:22:81:0b:81:2a:7d:7e:a0:16:27:26:27:46:27:26:27:46:24:b1:22:80:7f:d8:44:46:22:80:7f:c1:42:4d:b1:22:ff:01:d7:44:46:22:ff:01:c1:42:40:b2:22:80:7f:d8:44:46:22:80:7f:c2:42:4d:b2:22:ff:01:d7:44:46:22:ff:01:c2:42:40:b1:b0:18:7d:b2:b0:18:7e:51:63
+  prelude: (5, 0, 0, 3, 0, 2)
+  args: ['self', 'x', 'y']
+  line info: a0:16:27:26:27:46:27:26:27:46:24
+  b1          LOAD_FAST 1 
+  22:80:7f    LOAD_CONST_SMALL_INT 127
+  d8          BINARY_OP 1 __gt__ 
+  44:46       POP_JUMP_IF_FALSE 6
+  22:80:7f    LOAD_CONST_SMALL_INT 127
+  c1          STORE_FAST 1 
+  42:4d       JUMP 13
+  b1          LOAD_FAST 1 
+  22:ff:01    LOAD_CONST_SMALL_INT -127
+  d7          BINARY_OP 0 __lt__ 
+  44:46       POP_JUMP_IF_FALSE 6
+  22:ff:01    LOAD_CONST_SMALL_INT -127
+  c1          STORE_FAST 1 
+  42:40       JUMP 0
+  b2          LOAD_FAST 2 
+  22:80:7f    LOAD_CONST_SMALL_INT 127
+  d8          BINARY_OP 1 __gt__ 
+  44:46       POP_JUMP_IF_FALSE 6
+  22:80:7f    LOAD_CONST_SMALL_INT 127
+  c2          STORE_FAST 2 
+  42:4d       JUMP 13
+  b2          LOAD_FAST 2 
+  22:ff:01    LOAD_CONST_SMALL_INT -127
+  d7          BINARY_OP 0 __lt__ 
+  44:46       POP_JUMP_IF_FALSE 6
+  22:ff:01    LOAD_CONST_SMALL_INT -127
+  c2          STORE_FAST 2 
+  42:40       JUMP 0
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:7d       STORE_ATTR x
+  b2          LOAD_FAST 2 
+  b0          LOAD_FAST 0 
+  18:7e       STORE_ATTR y
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: set_buttons
+  raw bytecode: 76 d1:80:84:80:01:3a:81:0c:81:2a:81:3d:81:3e:81:3f:81:40:81:41:81:42:81:43:81:44:a0:24:24:25:25:25:25:25:25:b1:b0:18:7f:b2:b0:18:81:00:b3:b0:18:81:01:b4:b0:18:81:02:b5:b0:18:81:03:b6:b0:18:81:04:b7:b0:18:81:05:b8:b0:18:81:06:51:63
+  prelude: (11, 0, 0, 9, 0, 8)
+  args: ['self', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7', 'b8']
+  line info: a0:24:24:25:25:25:25:25:25
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:7f       STORE_ATTR button1
+  b2          LOAD_FAST 2 
+  b0          LOAD_FAST 0 
+  18:81:00    STORE_ATTR button2
+  b3          LOAD_FAST 3 
+  b0          LOAD_FAST 0 
+  18:81:01    STORE_ATTR button3
+  b4          LOAD_FAST 4 
+  b0          LOAD_FAST 0 
+  18:81:02    STORE_ATTR button4
+  b5          LOAD_FAST 5 
+  b0          LOAD_FAST 0 
+  18:81:03    STORE_ATTR button5
+  b6          LOAD_FAST 6 
+  b0          LOAD_FAST 0 
+  18:81:04    STORE_ATTR button6
+  b7          LOAD_FAST 7 
+  b0          LOAD_FAST 0 
+  18:81:05    STORE_ATTR button7
+  b8          LOAD_FAST 8 
+  b0          LOAD_FAST 0 
+  18:81:06    STORE_ATTR button8
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: Mouse
+  raw bytecode: 81 10:1e:0f:ab:2e:89:38:84:0b:84:0f:84:08:8a:0e:89:08:11:81:27:16:81:28:10:0f:16:81:29:23:02:2a:01:53:33:00:16:1f:32:01:16:50:32:02:16:59:32:03:16:7b:80:80:2a:02:53:33:04:16:81:0b:80:2a:01:53:33:05:16:81:0e:80:80:80:2a:03:53:33:06:16:81:0c:51:63
+  prelude: (3, 0, 0, 0, 0, 0)
+  args: []
+  line info: ab:2e:89:38:84:0b:84:0f:84:08:8a:0e:89:08
+  11:81:27    LOAD_NAME __name__
+  16:81:28    STORE_NAME __module__
+  10:0f       LOAD_CONST_STRING Mouse
+  16:81:29    STORE_NAME __qualname__
+  23:02       LOAD_CONST_OBJ 'Bluetooth Mouse'
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:00       MAKE_FUNCTION_DEFARGS 0
+  16:1f       STORE_NAME __init__
+  32:01       MAKE_FUNCTION 1
+  16:50       STORE_NAME start
+  32:02       MAKE_FUNCTION 2
+  16:59       STORE_NAME write_service_characteristics
+  32:03       MAKE_FUNCTION 3
+  16:7b       STORE_NAME notify_hid_report
+  80          LOAD_CONST_SMALL_INT 0 
+  80          LOAD_CONST_SMALL_INT 0 
+  2a:02       BUILD_TUPLE 2
+  53          LOAD_NULL 
+  33:04       MAKE_FUNCTION_DEFARGS 4
+  16:81:0b    STORE_NAME set_axes
+  80          LOAD_CONST_SMALL_INT 0 
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:05       MAKE_FUNCTION_DEFARGS 5
+  16:81:0e    STORE_NAME set_wheel
+  80          LOAD_CONST_SMALL_INT 0 
+  80          LOAD_CONST_SMALL_INT 0 
+  80          LOAD_CONST_SMALL_INT 0 
+  2a:03       BUILD_TUPLE 3
+  53          LOAD_NULL 
+  33:06       MAKE_FUNCTION_DEFARGS 6
+  16:81:0c    STORE_NAME set_buttons
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [__init__, start, write_service_characteristics, notify_hid_report, set_axes, set_wheel, set_buttons]
+simple_name: __init__
+  raw bytecode: 286 c2:31:38:1f:81:2a:21:a0:2f:2e:46:20:27:20:2d:2d:2d:3c:74:20:1f:1f:1f:86:1f:24:24:44:24:25:45:12:81:3c:12:0f:b0:34:02:14:1f:b1:36:01:59:22:87:42:b0:18:35:12:08:22:b0:12:34:01:12:08:22:80:d4:4a:34:01:12:81:20:2a:02:12:08:22:80:d4:4b:34:01:12:81:20:2a:02:12:08:22:80:d4:4c:34:01:12:81:21:2a:02:12:08:22:80:d4:4d:34:01:12:81:23:12:08:22:80:d2:08:34:01:12:81:24:2a:02:2a:01:2a:03:12:08:22:80:d4:4e:34:01:12:81:22:2a:02:2a:05:2a:02:b0:18:7c:12:81:2e:85:81:89:82:22:81:21:81:22:81:05:81:89:81:22:81:21:80:85:89:99:81:a9:83:95:80:a5:81:22:81:15:83:22:80:75:81:22:81:01:82:22:81:15:81:22:80:75:85:22:81:01:83:85:81:89:22:30:89:22:31:89:22:38:95:22:81:01:a5:22:80:7f:22:80:75:88:22:81:15:83:22:81:01:86:22:81:40:22:81:40:2b:36:34:01:b0:18:43:80:b0:18:7d:80:b0:18:7e:80:b0:18:65:80:b0:18:7f:80:b0:18:81:00:80:b0:18:81:01:b0:13:41:b0:13:42:b0:13:7c:2b:03:b0:18:22:51:63
+  prelude: (57, 0, 0, 2, 0, 1)
+  args: ['self', 'name']
+  line info: a0:2f:2e:46:20:27:20:2d:2d:2d:3c:74:20:1f:1f:1f:86:1f:24:24:44:24:25:45
+  12:81:3c    LOAD_GLOBAL super
+  12:0f       LOAD_GLOBAL Mouse
+  b0          LOAD_FAST 0 
+  34:02       CALL_FUNCTION 2
+  14:1f       LOAD_METHOD __init__
+  b1          LOAD_FAST 1 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  22:87:42    LOAD_CONST_SMALL_INT 962
+  b0          LOAD_FAST 0 
+  18:35       STORE_ATTR device_appearance
+  12:08       LOAD_GLOBAL UUID
+  22:b0:12    LOAD_CONST_SMALL_INT 6162
+  34:01       CALL_FUNCTION 1
+  12:08       LOAD_GLOBAL UUID
+  22:80:d4:4a LOAD_CONST_SMALL_INT 10826
+  34:01       CALL_FUNCTION 1
+  12:81:20    LOAD_GLOBAL F_READ
+  2a:02       BUILD_TUPLE 2
+  12:08       LOAD_GLOBAL UUID
+  22:80:d4:4b LOAD_CONST_SMALL_INT 10827
+  34:01       CALL_FUNCTION 1
+  12:81:20    LOAD_GLOBAL F_READ
+  2a:02       BUILD_TUPLE 2
+  12:08       LOAD_GLOBAL UUID
+  22:80:d4:4c LOAD_CONST_SMALL_INT 10828
+  34:01       CALL_FUNCTION 1
+  12:81:21    LOAD_GLOBAL F_WRITE
+  2a:02       BUILD_TUPLE 2
+  12:08       LOAD_GLOBAL UUID
+  22:80:d4:4d LOAD_CONST_SMALL_INT 10829
+  34:01       CALL_FUNCTION 1
+  12:81:23    LOAD_GLOBAL F_READ_NOTIFY
+  12:08       LOAD_GLOBAL UUID
+  22:80:d2:08 LOAD_CONST_SMALL_INT 10504
+  34:01       CALL_FUNCTION 1
+  12:81:24    LOAD_GLOBAL ATT_F_READ
+  2a:02       BUILD_TUPLE 2
+  2a:01       BUILD_TUPLE 1
+  2a:03       BUILD_TUPLE 3
+  12:08       LOAD_GLOBAL UUID
+  22:80:d4:4e LOAD_CONST_SMALL_INT 10830
+  34:01       CALL_FUNCTION 1
+  12:81:22    LOAD_GLOBAL F_READ_WRITE
+  2a:02       BUILD_TUPLE 2
+  2a:05       BUILD_TUPLE 5
+  2a:02       BUILD_TUPLE 2
+  b0          LOAD_FAST 0 
+  18:7c       STORE_ATTR HIDS
+  12:81:2e    LOAD_GLOBAL bytes
+  85          LOAD_CONST_SMALL_INT 5 
+  81          LOAD_CONST_SMALL_INT 1 
+  89          LOAD_CONST_SMALL_INT 9 
+  82          LOAD_CONST_SMALL_INT 2 
+  22:81:21    LOAD_CONST_SMALL_INT 161
+  81          LOAD_CONST_SMALL_INT 1 
+  22:81:05    LOAD_CONST_SMALL_INT 133
+  81          LOAD_CONST_SMALL_INT 1 
+  89          LOAD_CONST_SMALL_INT 9 
+  81          LOAD_CONST_SMALL_INT 1 
+  22:81:21    LOAD_CONST_SMALL_INT 161
+  80          LOAD_CONST_SMALL_INT 0 
+  85          LOAD_CONST_SMALL_INT 5 
+  89          LOAD_CONST_SMALL_INT 9 
+  99          LOAD_CONST_SMALL_INT 25 
+  81          LOAD_CONST_SMALL_INT 1 
+  a9          LOAD_CONST_SMALL_INT 41 
+  83          LOAD_CONST_SMALL_INT 3 
+  95          LOAD_CONST_SMALL_INT 21 
+  80          LOAD_CONST_SMALL_INT 0 
+  a5          LOAD_CONST_SMALL_INT 37 
+  81          LOAD_CONST_SMALL_INT 1 
+  22:81:15    LOAD_CONST_SMALL_INT 149
+  83          LOAD_CONST_SMALL_INT 3 
+  22:80:75    LOAD_CONST_SMALL_INT 117
+  81          LOAD_CONST_SMALL_INT 1 
+  22:81:01    LOAD_CONST_SMALL_INT 129
+  82          LOAD_CONST_SMALL_INT 2 
+  22:81:15    LOAD_CONST_SMALL_INT 149
+  81          LOAD_CONST_SMALL_INT 1 
+  22:80:75    LOAD_CONST_SMALL_INT 117
+  85          LOAD_CONST_SMALL_INT 5 
+  22:81:01    LOAD_CONST_SMALL_INT 129
+  83          LOAD_CONST_SMALL_INT 3 
+  85          LOAD_CONST_SMALL_INT 5 
+  81          LOAD_CONST_SMALL_INT 1 
+  89          LOAD_CONST_SMALL_INT 9 
+  22:30       LOAD_CONST_SMALL_INT 48
+  89          LOAD_CONST_SMALL_INT 9 
+  22:31       LOAD_CONST_SMALL_INT 49
+  89          LOAD_CONST_SMALL_INT 9 
+  22:38       LOAD_CONST_SMALL_INT 56
+  95          LOAD_CONST_SMALL_INT 21 
+  22:81:01    LOAD_CONST_SMALL_INT 129
+  a5          LOAD_CONST_SMALL_INT 37 
+  22:80:7f    LOAD_CONST_SMALL_INT 127
+  22:80:75    LOAD_CONST_SMALL_INT 117
+  88          LOAD_CONST_SMALL_INT 8 
+  22:81:15    LOAD_CONST_SMALL_INT 149
+  83          LOAD_CONST_SMALL_INT 3 
+  22:81:01    LOAD_CONST_SMALL_INT 129
+  86          LOAD_CONST_SMALL_INT 6 
+  22:81:40    LOAD_CONST_SMALL_INT 192
+  22:81:40    LOAD_CONST_SMALL_INT 192
+  2b:36       BUILD_LIST 54
+  34:01       CALL_FUNCTION 1
+  b0          LOAD_FAST 0 
+  18:43       STORE_ATTR HID_INPUT_REPORT
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:7d       STORE_ATTR x
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:7e       STORE_ATTR y
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:65       STORE_ATTR w
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:7f       STORE_ATTR button1
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:81:00    STORE_ATTR button2
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:81:01    STORE_ATTR button3
+  b0          LOAD_FAST 0 
+  13:41       LOAD_ATTR DIS
+  b0          LOAD_FAST 0 
+  13:42       LOAD_ATTR BAS
+  b0          LOAD_FAST 0 
+  13:7c       LOAD_ATTR HIDS
+  2b:03       BUILD_LIST 3
+  b0          LOAD_FAST 0 
+  18:22       STORE_ATTR services
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: start
+  raw bytecode: 87 31:14:50:81:2a:a0:67:4d:28:2c:47:59:12:81:3c:12:0f:b0:34:02:14:50:36:00:59:12:81:34:23:1d:34:01:59:b0:13:20:14:81:07:b0:13:22:36:01:c1:b0:14:59:b1:36:01:59:12:0c:b0:13:20:12:08:22:b0:12:34:01:2b:01:b0:13:35:b0:13:33:34:04:b0:18:2b:12:81:34:23:1e:34:01:59:51:63
+  prelude: (7, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: a0:67:4d:28:2c:47:59
+  12:81:3c    LOAD_GLOBAL super
+  12:0f       LOAD_GLOBAL Mouse
+  b0          LOAD_FAST 0 
+  34:02       CALL_FUNCTION 2
+  14:50       LOAD_METHOD start
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  12:81:34    LOAD_GLOBAL print
+  23:1d       LOAD_CONST_OBJ 'Registering services'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:81:07    LOAD_METHOD gatts_register_services
+  b0          LOAD_FAST 0 
+  13:22       LOAD_ATTR services
+  36:01       CALL_METHOD 1
+  c1          STORE_FAST 1 
+  b0          LOAD_FAST 0 
+  14:59       LOAD_METHOD write_service_characteristics
+  b1          LOAD_FAST 1 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  12:0c       LOAD_GLOBAL Advertiser
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  12:08       LOAD_GLOBAL UUID
+  22:b0:12    LOAD_CONST_SMALL_INT 6162
+  34:01       CALL_FUNCTION 1
+  2b:01       BUILD_LIST 1
+  b0          LOAD_FAST 0 
+  13:35       LOAD_ATTR device_appearance
+  b0          LOAD_FAST 0 
+  13:33       LOAD_ATTR device_name
+  34:04       CALL_FUNCTION 4
+  b0          LOAD_FAST 0 
+  18:2b       STORE_ATTR adv
+  12:81:34    LOAD_GLOBAL print
+  23:1e       LOAD_CONST_OBJ 'Server started'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: write_service_characteristics
+  raw bytecode: 162 82:10:20:59:81:2a:81:37:a0:72:4e:4e:32:54:28:2b:2c:2d:34:12:81:3c:12:0f:b0:34:02:14:59:b1:36:01:59:b1:82:55:30:06:c2:c3:c4:b0:18:81:08:c5:c6:b0:13:7f:b0:13:81:00:82:f4:f2:b0:13:81:01:84:f4:f2:c7:12:04:14:14:10:81:0d:b7:b0:13:7d:b0:13:7e:b0:13:65:36:05:c8:12:81:34:23:1f:34:01:59:b0:13:20:14:5b:b2:23:20:36:02:59:b0:13:20:14:5b:b3:b0:13:43:36:02:59:b0:13:20:14:5b:b0:13:81:08:b8:36:02:59:b0:13:20:14:5b:b5:12:04:14:14:10:81:0a:81:81:36:03:36:02:59:b0:13:20:14:5b:b6:23:21:36:02:59:51:63
+  prelude: (17, 0, 0, 2, 0, 0)
+  args: ['self', 'handles']
+  line info: a0:72:4e:4e:32:54:28:2b:2c:2d:34
+  12:81:3c    LOAD_GLOBAL super
+  12:0f       LOAD_GLOBAL Mouse
+  b0          LOAD_FAST 0 
+  34:02       CALL_FUNCTION 2
+  14:59       LOAD_METHOD write_service_characteristics
+  b1          LOAD_FAST 1 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b1          LOAD_FAST 1 
+  82          LOAD_CONST_SMALL_INT 2 
+  55          LOAD_SUBSCR 
+  30:06       UNPACK_SEQUENCE 6
+  c2          STORE_FAST 2 
+  c3          STORE_FAST 3 
+  c4          STORE_FAST 4 
+  b0          LOAD_FAST 0 
+  18:81:08    STORE_ATTR h_rep
+  c5          STORE_FAST 5 
+  c6          STORE_FAST 6 
+  b0          LOAD_FAST 0 
+  13:7f       LOAD_ATTR button1
+  b0          LOAD_FAST 0 
+  13:81:00    LOAD_ATTR button2
+  82          LOAD_CONST_SMALL_INT 2 
+  f4          BINARY_OP 29 __mul__ 
+  f2          BINARY_OP 27 __add__ 
+  b0          LOAD_FAST 0 
+  13:81:01    LOAD_ATTR button3
+  84          LOAD_CONST_SMALL_INT 4 
+  f4          BINARY_OP 29 __mul__ 
+  f2          BINARY_OP 27 __add__ 
+  c7          STORE_FAST 7 
+  12:04       LOAD_GLOBAL struct
+  14:14       LOAD_METHOD pack
+  10:81:0d    LOAD_CONST_STRING Bbbb
+  b7          LOAD_FAST 7 
+  b0          LOAD_FAST 0 
+  13:7d       LOAD_ATTR x
+  b0          LOAD_FAST 0 
+  13:7e       LOAD_ATTR y
+  b0          LOAD_FAST 0 
+  13:65       LOAD_ATTR w
+  36:05       CALL_METHOD 5
+  c8          STORE_FAST 8 
+  12:81:34    LOAD_GLOBAL print
+  23:1f       LOAD_CONST_OBJ 'Writing hid service characteristics'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:5b       LOAD_METHOD gatts_write
+  b2          LOAD_FAST 2 
+  23:20       LOAD_CONST_OBJ b'\x01\x01\x00\x02'
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:5b       LOAD_METHOD gatts_write
+  b3          LOAD_FAST 3 
+  b0          LOAD_FAST 0 
+  13:43       LOAD_ATTR HID_INPUT_REPORT
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:5b       LOAD_METHOD gatts_write
+  b0          LOAD_FAST 0 
+  13:81:08    LOAD_ATTR h_rep
+  b8          LOAD_FAST 8 
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:5b       LOAD_METHOD gatts_write
+  b5          LOAD_FAST 5 
+  12:04       LOAD_GLOBAL struct
+  14:14       LOAD_METHOD pack
+  10:81:0a    LOAD_CONST_STRING <BB
+  81          LOAD_CONST_SMALL_INT 1 
+  81          LOAD_CONST_SMALL_INT 1 
+  36:03       CALL_METHOD 3
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:5b       LOAD_METHOD gatts_write
+  b6          LOAD_FAST 6 
+  23:21       LOAD_CONST_OBJ b'\x01'
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: notify_hid_report
+  raw bytecode: 91 49:12:7b:81:2a:a0:81:28:30:54:32:b0:14:68:36:00:44:c6:80:b0:13:7f:b0:13:81:00:82:f4:f2:b0:13:81:01:f2:c1:12:04:14:14:10:81:0d:b1:b0:13:7d:b0:13:7e:b0:13:65:36:05:c2:12:81:34:23:22:12:04:14:1d:10:81:0d:b2:36:02:34:02:59:b0:13:20:14:7a:b0:13:2e:b0:13:81:08:b2:36:03:59:51:63
+  prelude: (10, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: a0:81:28:30:54:32
+  b0          LOAD_FAST 0 
+  14:68       LOAD_METHOD is_connected
+  36:00       CALL_METHOD 0
+  44:c6:80    POP_JUMP_IF_FALSE 70
+  b0          LOAD_FAST 0 
+  13:7f       LOAD_ATTR button1
+  b0          LOAD_FAST 0 
+  13:81:00    LOAD_ATTR button2
+  82          LOAD_CONST_SMALL_INT 2 
+  f4          BINARY_OP 29 __mul__ 
+  f2          BINARY_OP 27 __add__ 
+  b0          LOAD_FAST 0 
+  13:81:01    LOAD_ATTR button3
+  f2          BINARY_OP 27 __add__ 
+  c1          STORE_FAST 1 
+  12:04       LOAD_GLOBAL struct
+  14:14       LOAD_METHOD pack
+  10:81:0d    LOAD_CONST_STRING Bbbb
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  13:7d       LOAD_ATTR x
+  b0          LOAD_FAST 0 
+  13:7e       LOAD_ATTR y
+  b0          LOAD_FAST 0 
+  13:65       LOAD_ATTR w
+  36:05       CALL_METHOD 5
+  c2          STORE_FAST 2 
+  12:81:34    LOAD_GLOBAL print
+  23:22       LOAD_CONST_OBJ 'Notify with report: '
+  12:04       LOAD_GLOBAL struct
+  14:1d       LOAD_METHOD unpack
+  10:81:0d    LOAD_CONST_STRING Bbbb
+  b2          LOAD_FAST 2 
+  36:02       CALL_METHOD 2
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:7a       LOAD_METHOD gatts_notify
+  b0          LOAD_FAST 0 
+  13:2e       LOAD_ATTR conn_handle
+  b0          LOAD_FAST 0 
+  13:81:08    LOAD_ATTR h_rep
+  b2          LOAD_FAST 2 
+  36:03       CALL_METHOD 3
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: set_axes
+  raw bytecode: 83 a3:80:01:22:81:0b:81:2a:7d:7e:a0:89:27:26:27:46:27:26:27:46:24:b1:22:80:7f:d8:44:46:22:80:7f:c1:42:4d:b1:22:ff:01:d7:44:46:22:ff:01:c1:42:40:b2:22:80:7f:d8:44:46:22:80:7f:c2:42:4d:b2:22:ff:01:d7:44:46:22:ff:01:c2:42:40:b1:b0:18:7d:b2:b0:18:7e:51:63
+  prelude: (5, 0, 0, 3, 0, 2)
+  args: ['self', 'x', 'y']
+  line info: a0:89:27:26:27:46:27:26:27:46:24
+  b1          LOAD_FAST 1 
+  22:80:7f    LOAD_CONST_SMALL_INT 127
+  d8          BINARY_OP 1 __gt__ 
+  44:46       POP_JUMP_IF_FALSE 6
+  22:80:7f    LOAD_CONST_SMALL_INT 127
+  c1          STORE_FAST 1 
+  42:4d       JUMP 13
+  b1          LOAD_FAST 1 
+  22:ff:01    LOAD_CONST_SMALL_INT -127
+  d7          BINARY_OP 0 __lt__ 
+  44:46       POP_JUMP_IF_FALSE 6
+  22:ff:01    LOAD_CONST_SMALL_INT -127
+  c1          STORE_FAST 1 
+  42:40       JUMP 0
+  b2          LOAD_FAST 2 
+  22:80:7f    LOAD_CONST_SMALL_INT 127
+  d8          BINARY_OP 1 __gt__ 
+  44:46       POP_JUMP_IF_FALSE 6
+  22:80:7f    LOAD_CONST_SMALL_INT 127
+  c2          STORE_FAST 2 
+  42:4d       JUMP 13
+  b2          LOAD_FAST 2 
+  22:ff:01    LOAD_CONST_SMALL_INT -127
+  d7          BINARY_OP 0 __lt__ 
+  44:46       POP_JUMP_IF_FALSE 6
+  22:ff:01    LOAD_CONST_SMALL_INT -127
+  c2          STORE_FAST 2 
+  42:40       JUMP 0
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:7d       STORE_ATTR x
+  b2          LOAD_FAST 2 
+  b0          LOAD_FAST 0 
+  18:7e       STORE_ATTR y
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: set_wheel
+  raw bytecode: 46 9a:01:16:81:0e:81:2a:65:a0:97:27:26:27:46:b1:22:80:7f:d8:44:46:22:80:7f:c1:42:4d:b1:22:ff:01:d7:44:46:22:ff:01:c1:42:40:b1:b0:18:65:51:63
+  prelude: (4, 0, 0, 2, 0, 1)
+  args: ['self', 'w']
+  line info: a0:97:27:26:27:46
+  b1          LOAD_FAST 1 
+  22:80:7f    LOAD_CONST_SMALL_INT 127
+  d8          BINARY_OP 1 __gt__ 
+  44:46       POP_JUMP_IF_FALSE 6
+  22:80:7f    LOAD_CONST_SMALL_INT 127
+  c1          STORE_FAST 1 
+  42:4d       JUMP 13
+  b1          LOAD_FAST 1 
+  22:ff:01    LOAD_CONST_SMALL_INT -127
+  d7          BINARY_OP 0 __lt__ 
+  44:46       POP_JUMP_IF_FALSE 6
+  22:ff:01    LOAD_CONST_SMALL_INT -127
+  c1          STORE_FAST 1 
+  42:40       JUMP 0
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:65       STORE_ATTR w
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: set_buttons
+  raw bytecode: 34 a8:85:01:1c:81:0c:81:2a:81:3d:81:3e:81:3f:a0:9f:24:25:b1:b0:18:7f:b2:b0:18:81:00:b3:b0:18:81:01:51:63
+  prelude: (6, 0, 0, 4, 0, 3)
+  args: ['self', 'b1', 'b2', 'b3']
+  line info: a0:9f:24:25
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:7f       STORE_ATTR button1
+  b2          LOAD_FAST 2 
+  b0          LOAD_FAST 0 
+  18:81:00    STORE_ATTR button2
+  b3          LOAD_FAST 3 
+  b0          LOAD_FAST 0 
+  18:81:01    STORE_ATTR button3
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: Keyboard
+  raw bytecode: 90 38:1e:10:ab:a4:89:3b:84:0b:84:0b:84:0c:84:07:70:6e:11:81:27:16:81:28:10:10:16:81:29:23:03:2a:01:53:33:00:16:1f:32:01:16:47:32:02:16:50:32:03:16:59:32:04:16:7b:80:80:80:80:80:80:80:80:2a:08:53:33:05:16:81:15:80:80:80:80:80:80:2a:06:53:33:06:16:81:16:32:07:16:81:17:51:63
+  prelude: (8, 0, 0, 0, 0, 0)
+  args: []
+  line info: ab:a4:89:3b:84:0b:84:0b:84:0c:84:07:70:6e
+  11:81:27    LOAD_NAME __name__
+  16:81:28    STORE_NAME __module__
+  10:10       LOAD_CONST_STRING Keyboard
+  16:81:29    STORE_NAME __qualname__
+  23:03       LOAD_CONST_OBJ 'Bluetooth Keyboard'
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:00       MAKE_FUNCTION_DEFARGS 0
+  16:1f       STORE_NAME __init__
+  32:01       MAKE_FUNCTION 1
+  16:47       STORE_NAME ble_irq
+  32:02       MAKE_FUNCTION 2
+  16:50       STORE_NAME start
+  32:03       MAKE_FUNCTION 3
+  16:59       STORE_NAME write_service_characteristics
+  32:04       MAKE_FUNCTION 4
+  16:7b       STORE_NAME notify_hid_report
+  80          LOAD_CONST_SMALL_INT 0 
+  80          LOAD_CONST_SMALL_INT 0 
+  80          LOAD_CONST_SMALL_INT 0 
+  80          LOAD_CONST_SMALL_INT 0 
+  80          LOAD_CONST_SMALL_INT 0 
+  80          LOAD_CONST_SMALL_INT 0 
+  80          LOAD_CONST_SMALL_INT 0 
+  80          LOAD_CONST_SMALL_INT 0 
+  2a:08       BUILD_TUPLE 8
+  53          LOAD_NULL 
+  33:05       MAKE_FUNCTION_DEFARGS 5
+  16:81:15    STORE_NAME set_modifiers
+  80          LOAD_CONST_SMALL_INT 0 
+  80          LOAD_CONST_SMALL_INT 0 
+  80          LOAD_CONST_SMALL_INT 0 
+  80          LOAD_CONST_SMALL_INT 0 
+  80          LOAD_CONST_SMALL_INT 0 
+  80          LOAD_CONST_SMALL_INT 0 
+  2a:06       BUILD_TUPLE 6
+  53          LOAD_NULL 
+  33:06       MAKE_FUNCTION_DEFARGS 6
+  16:81:16    STORE_NAME set_keys
+  32:07       MAKE_FUNCTION 7
+  16:81:17    STORE_NAME set_kb_callback
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [__init__, ble_irq, start, write_service_characteristics, notify_hid_report, set_modifiers, set_keys, set_kb_callback]
+simple_name: __init__
+  raw bytecode: 327 9a:81:10:36:1f:81:2a:21:a0:a5:2e:46:20:27:20:2d:2d:2d:3c:3c:74:20:1f:1f:1f:7a:80:21:25:49:45:12:81:3c:12:10:b0:34:02:14:1f:b1:36:01:59:22:87:41:b0:18:35:12:08:22:b0:12:34:01:12:08:22:80:d4:4a:34:01:12:81:20:2a:02:12:08:22:80:d4:4b:34:01:12:81:20:2a:02:12:08:22:80:d4:4c:34:01:12:81:21:2a:02:12:08:22:80:d4:4d:34:01:12:81:23:12:08:22:80:d2:08:34:01:12:81:24:2a:02:2a:01:2a:03:12:08:22:80:d4:4d:34:01:12:81:22:12:08:22:80:d2:08:34:01:12:81:24:2a:02:2a:01:2a:03:12:08:22:80:d4:4e:34:01:12:81:22:2a:02:2a:06:2a:02:b0:18:7c:12:81:2e:85:81:89:86:22:81:21:81:22:81:05:81:22:80:75:81:22:81:15:88:85:87:99:22:81:60:a9:22:81:67:95:80:a5:81:22:81:01:82:22:81:15:81:22:80:75:88:22:81:01:81:22:81:15:85:22:80:75:81:85:88:99:81:a9:85:22:81:11:82:22:81:15:81:22:80:75:83:22:81:11:81:22:81:15:86:22:80:75:88:95:80:a5:22:80:65:85:87:99:80:a9:22:80:65:22:81:01:80:22:81:40:2b:41:34:01:b0:18:43:80:b0:18:81:0f:80:2b:01:86:f4:b0:18:81:10:51:b0:18:81:11:b0:13:41:b0:13:42:b0:13:7c:2b:03:b0:18:22:51:63
+  prelude: (68, 0, 0, 2, 0, 1)
+  args: ['self', 'name']
+  line info: a0:a5:2e:46:20:27:20:2d:2d:2d:3c:3c:74:20:1f:1f:1f:7a:80:21:25:49:45
+  12:81:3c    LOAD_GLOBAL super
+  12:10       LOAD_GLOBAL Keyboard
+  b0          LOAD_FAST 0 
+  34:02       CALL_FUNCTION 2
+  14:1f       LOAD_METHOD __init__
+  b1          LOAD_FAST 1 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  22:87:41    LOAD_CONST_SMALL_INT 961
+  b0          LOAD_FAST 0 
+  18:35       STORE_ATTR device_appearance
+  12:08       LOAD_GLOBAL UUID
+  22:b0:12    LOAD_CONST_SMALL_INT 6162
+  34:01       CALL_FUNCTION 1
+  12:08       LOAD_GLOBAL UUID
+  22:80:d4:4a LOAD_CONST_SMALL_INT 10826
+  34:01       CALL_FUNCTION 1
+  12:81:20    LOAD_GLOBAL F_READ
+  2a:02       BUILD_TUPLE 2
+  12:08       LOAD_GLOBAL UUID
+  22:80:d4:4b LOAD_CONST_SMALL_INT 10827
+  34:01       CALL_FUNCTION 1
+  12:81:20    LOAD_GLOBAL F_READ
+  2a:02       BUILD_TUPLE 2
+  12:08       LOAD_GLOBAL UUID
+  22:80:d4:4c LOAD_CONST_SMALL_INT 10828
+  34:01       CALL_FUNCTION 1
+  12:81:21    LOAD_GLOBAL F_WRITE
+  2a:02       BUILD_TUPLE 2
+  12:08       LOAD_GLOBAL UUID
+  22:80:d4:4d LOAD_CONST_SMALL_INT 10829
+  34:01       CALL_FUNCTION 1
+  12:81:23    LOAD_GLOBAL F_READ_NOTIFY
+  12:08       LOAD_GLOBAL UUID
+  22:80:d2:08 LOAD_CONST_SMALL_INT 10504
+  34:01       CALL_FUNCTION 1
+  12:81:24    LOAD_GLOBAL ATT_F_READ
+  2a:02       BUILD_TUPLE 2
+  2a:01       BUILD_TUPLE 1
+  2a:03       BUILD_TUPLE 3
+  12:08       LOAD_GLOBAL UUID
+  22:80:d4:4d LOAD_CONST_SMALL_INT 10829
+  34:01       CALL_FUNCTION 1
+  12:81:22    LOAD_GLOBAL F_READ_WRITE
+  12:08       LOAD_GLOBAL UUID
+  22:80:d2:08 LOAD_CONST_SMALL_INT 10504
+  34:01       CALL_FUNCTION 1
+  12:81:24    LOAD_GLOBAL ATT_F_READ
+  2a:02       BUILD_TUPLE 2
+  2a:01       BUILD_TUPLE 1
+  2a:03       BUILD_TUPLE 3
+  12:08       LOAD_GLOBAL UUID
+  22:80:d4:4e LOAD_CONST_SMALL_INT 10830
+  34:01       CALL_FUNCTION 1
+  12:81:22    LOAD_GLOBAL F_READ_WRITE
+  2a:02       BUILD_TUPLE 2
+  2a:06       BUILD_TUPLE 6
+  2a:02       BUILD_TUPLE 2
+  b0          LOAD_FAST 0 
+  18:7c       STORE_ATTR HIDS
+  12:81:2e    LOAD_GLOBAL bytes
+  85          LOAD_CONST_SMALL_INT 5 
+  81          LOAD_CONST_SMALL_INT 1 
+  89          LOAD_CONST_SMALL_INT 9 
+  86          LOAD_CONST_SMALL_INT 6 
+  22:81:21    LOAD_CONST_SMALL_INT 161
+  81          LOAD_CONST_SMALL_INT 1 
+  22:81:05    LOAD_CONST_SMALL_INT 133
+  81          LOAD_CONST_SMALL_INT 1 
+  22:80:75    LOAD_CONST_SMALL_INT 117
+  81          LOAD_CONST_SMALL_INT 1 
+  22:81:15    LOAD_CONST_SMALL_INT 149
+  88          LOAD_CONST_SMALL_INT 8 
+  85          LOAD_CONST_SMALL_INT 5 
+  87          LOAD_CONST_SMALL_INT 7 
+  99          LOAD_CONST_SMALL_INT 25 
+  22:81:60    LOAD_CONST_SMALL_INT 224
+  a9          LOAD_CONST_SMALL_INT 41 
+  22:81:67    LOAD_CONST_SMALL_INT 231
+  95          LOAD_CONST_SMALL_INT 21 
+  80          LOAD_CONST_SMALL_INT 0 
+  a5          LOAD_CONST_SMALL_INT 37 
+  81          LOAD_CONST_SMALL_INT 1 
+  22:81:01    LOAD_CONST_SMALL_INT 129
+  82          LOAD_CONST_SMALL_INT 2 
+  22:81:15    LOAD_CONST_SMALL_INT 149
+  81          LOAD_CONST_SMALL_INT 1 
+  22:80:75    LOAD_CONST_SMALL_INT 117
+  88          LOAD_CONST_SMALL_INT 8 
+  22:81:01    LOAD_CONST_SMALL_INT 129
+  81          LOAD_CONST_SMALL_INT 1 
+  22:81:15    LOAD_CONST_SMALL_INT 149
+  85          LOAD_CONST_SMALL_INT 5 
+  22:80:75    LOAD_CONST_SMALL_INT 117
+  81          LOAD_CONST_SMALL_INT 1 
+  85          LOAD_CONST_SMALL_INT 5 
+  88          LOAD_CONST_SMALL_INT 8 
+  99          LOAD_CONST_SMALL_INT 25 
+  81          LOAD_CONST_SMALL_INT 1 
+  a9          LOAD_CONST_SMALL_INT 41 
+  85          LOAD_CONST_SMALL_INT 5 
+  22:81:11    LOAD_CONST_SMALL_INT 145
+  82          LOAD_CONST_SMALL_INT 2 
+  22:81:15    LOAD_CONST_SMALL_INT 149
+  81          LOAD_CONST_SMALL_INT 1 
+  22:80:75    LOAD_CONST_SMALL_INT 117
+  83          LOAD_CONST_SMALL_INT 3 
+  22:81:11    LOAD_CONST_SMALL_INT 145
+  81          LOAD_CONST_SMALL_INT 1 
+  22:81:15    LOAD_CONST_SMALL_INT 149
+  86          LOAD_CONST_SMALL_INT 6 
+  22:80:75    LOAD_CONST_SMALL_INT 117
+  88          LOAD_CONST_SMALL_INT 8 
+  95          LOAD_CONST_SMALL_INT 21 
+  80          LOAD_CONST_SMALL_INT 0 
+  a5          LOAD_CONST_SMALL_INT 37 
+  22:80:65    LOAD_CONST_SMALL_INT 101
+  85          LOAD_CONST_SMALL_INT 5 
+  87          LOAD_CONST_SMALL_INT 7 
+  99          LOAD_CONST_SMALL_INT 25 
+  80          LOAD_CONST_SMALL_INT 0 
+  a9          LOAD_CONST_SMALL_INT 41 
+  22:80:65    LOAD_CONST_SMALL_INT 101
+  22:81:01    LOAD_CONST_SMALL_INT 129
+  80          LOAD_CONST_SMALL_INT 0 
+  22:81:40    LOAD_CONST_SMALL_INT 192
+  2b:41       BUILD_LIST 65
+  34:01       CALL_FUNCTION 1
+  b0          LOAD_FAST 0 
+  18:43       STORE_ATTR HID_INPUT_REPORT
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:81:0f    STORE_ATTR modifiers
+  80          LOAD_CONST_SMALL_INT 0 
+  2b:01       BUILD_LIST 1
+  86          LOAD_CONST_SMALL_INT 6 
+  f4          BINARY_OP 29 __mul__ 
+  b0          LOAD_FAST 0 
+  18:81:10    STORE_ATTR keypresses
+  51          LOAD_CONST_NONE 
+  b0          LOAD_FAST 0 
+  18:81:11    STORE_ATTR kb_callback
+  b0          LOAD_FAST 0 
+  13:41       LOAD_ATTR DIS
+  b0          LOAD_FAST 0 
+  13:42       LOAD_ATTR BAS
+  b0          LOAD_FAST 0 
+  13:7c       LOAD_ATTR HIDS
+  2b:03       BUILD_LIST 3
+  b0          LOAD_FAST 0 
+  18:22       STORE_ATTR services
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: ble_irq
+  raw bytecode: 92 53:20:47:81:2a:81:35:81:36:a0:e0:25:28:25:2a:2a:29:4a:b1:83:d9:44:74:12:81:34:23:23:34:01:59:b2:30:02:c3:c4:b0:13:20:14:81:12:b4:36:01:c5:12:04:14:1d:10:15:b5:36:02:c6:b0:13:81:11:51:de:d3:44:48:b0:14:81:11:b6:36:01:59:42:4f:12:81:3c:12:10:b0:34:02:14:47:b1:b2:36:02:59:51:63
+  prelude: (11, 0, 0, 3, 0, 0)
+  args: ['self', 'event', 'data']
+  line info: a0:e0:25:28:25:2a:2a:29:4a
+  b1          LOAD_FAST 1 
+  83          LOAD_CONST_SMALL_INT 3 
+  d9          BINARY_OP 2 __eq__ 
+  44:74       POP_JUMP_IF_FALSE 52
+  12:81:34    LOAD_GLOBAL print
+  23:23       LOAD_CONST_OBJ 'Keyboard changed by Central'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  b2          LOAD_FAST 2 
+  30:02       UNPACK_SEQUENCE 2
+  c3          STORE_FAST 3 
+  c4          STORE_FAST 4 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:81:12    LOAD_METHOD gatts_read
+  b4          LOAD_FAST 4 
+  36:01       CALL_METHOD 1
+  c5          STORE_FAST 5 
+  12:04       LOAD_GLOBAL struct
+  14:1d       LOAD_METHOD unpack
+  10:15       LOAD_CONST_STRING B
+  b5          LOAD_FAST 5 
+  36:02       CALL_METHOD 2
+  c6          STORE_FAST 6 
+  b0          LOAD_FAST 0 
+  13:81:11    LOAD_ATTR kb_callback
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:48       POP_JUMP_IF_FALSE 8
+  b0          LOAD_FAST 0 
+  14:81:11    LOAD_METHOD kb_callback
+  b6          LOAD_FAST 6 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  42:4f       JUMP 15
+  12:81:3c    LOAD_GLOBAL super
+  12:10       LOAD_GLOBAL Keyboard
+  b0          LOAD_FAST 0 
+  34:02       CALL_FUNCTION 2
+  14:47       LOAD_METHOD ble_irq
+  b1          LOAD_FAST 1 
+  b2          LOAD_FAST 2 
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: start
+  raw bytecode: 87 31:14:50:81:2a:a0:eb:4d:28:2c:47:59:12:81:3c:12:10:b0:34:02:14:50:36:00:59:12:81:34:23:1d:34:01:59:b0:13:20:14:81:07:b0:13:22:36:01:c1:b0:14:59:b1:36:01:59:12:0c:b0:13:20:12:08:22:b0:12:34:01:2b:01:b0:13:35:b0:13:33:34:04:b0:18:2b:12:81:34:23:1e:34:01:59:51:63
+  prelude: (7, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: a0:eb:4d:28:2c:47:59
+  12:81:3c    LOAD_GLOBAL super
+  12:10       LOAD_GLOBAL Keyboard
+  b0          LOAD_FAST 0 
+  34:02       CALL_FUNCTION 2
+  14:50       LOAD_METHOD start
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  12:81:34    LOAD_GLOBAL print
+  23:1d       LOAD_CONST_OBJ 'Registering services'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:81:07    LOAD_METHOD gatts_register_services
+  b0          LOAD_FAST 0 
+  13:22       LOAD_ATTR services
+  36:01       CALL_METHOD 1
+  c1          STORE_FAST 1 
+  b0          LOAD_FAST 0 
+  14:59       LOAD_METHOD write_service_characteristics
+  b1          LOAD_FAST 1 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  12:0c       LOAD_GLOBAL Advertiser
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  12:08       LOAD_GLOBAL UUID
+  22:b0:12    LOAD_CONST_SMALL_INT 6162
+  34:01       CALL_FUNCTION 1
+  2b:01       BUILD_LIST 1
+  b0          LOAD_FAST 0 
+  13:35       LOAD_ATTR device_appearance
+  b0          LOAD_FAST 0 
+  13:33       LOAD_ATTR device_name
+  34:04       CALL_FUNCTION 4
+  b0          LOAD_FAST 0 
+  18:2b       STORE_ATTR adv
+  12:81:34    LOAD_GLOBAL print
+  23:1e       LOAD_CONST_OBJ 'Server started'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: write_service_characteristics
+  raw bytecode: 133 7a:1c:59:81:2a:81:37:a0:f6:4e:53:28:2b:2c:34:34:12:81:3c:12:10:b0:34:02:14:59:b1:36:01:59:b1:82:55:30:08:c2:c3:c4:b0:18:81:08:c5:b0:18:81:13:c6:c7:12:81:34:23:1f:34:01:59:b0:13:20:14:5b:b2:23:20:36:02:59:b0:13:20:14:5b:b3:b0:13:43:36:02:59:b0:13:20:14:5b:b5:12:04:14:14:10:81:0a:81:81:36:03:36:02:59:b0:13:20:14:5b:b6:12:04:14:14:10:81:0a:81:82:36:03:36:02:59:b0:13:20:14:5b:b7:23:21:36:02:59:51:63
+  prelude: (16, 0, 0, 2, 0, 0)
+  args: ['self', 'handles']
+  line info: a0:f6:4e:53:28:2b:2c:34:34
+  12:81:3c    LOAD_GLOBAL super
+  12:10       LOAD_GLOBAL Keyboard
+  b0          LOAD_FAST 0 
+  34:02       CALL_FUNCTION 2
+  14:59       LOAD_METHOD write_service_characteristics
+  b1          LOAD_FAST 1 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b1          LOAD_FAST 1 
+  82          LOAD_CONST_SMALL_INT 2 
+  55          LOAD_SUBSCR 
+  30:08       UNPACK_SEQUENCE 8
+  c2          STORE_FAST 2 
+  c3          STORE_FAST 3 
+  c4          STORE_FAST 4 
+  b0          LOAD_FAST 0 
+  18:81:08    STORE_ATTR h_rep
+  c5          STORE_FAST 5 
+  b0          LOAD_FAST 0 
+  18:81:13    STORE_ATTR h_repout
+  c6          STORE_FAST 6 
+  c7          STORE_FAST 7 
+  12:81:34    LOAD_GLOBAL print
+  23:1f       LOAD_CONST_OBJ 'Writing hid service characteristics'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:5b       LOAD_METHOD gatts_write
+  b2          LOAD_FAST 2 
+  23:20       LOAD_CONST_OBJ b'\x01\x01\x00\x02'
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:5b       LOAD_METHOD gatts_write
+  b3          LOAD_FAST 3 
+  b0          LOAD_FAST 0 
+  13:43       LOAD_ATTR HID_INPUT_REPORT
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:5b       LOAD_METHOD gatts_write
+  b5          LOAD_FAST 5 
+  12:04       LOAD_GLOBAL struct
+  14:14       LOAD_METHOD pack
+  10:81:0a    LOAD_CONST_STRING <BB
+  81          LOAD_CONST_SMALL_INT 1 
+  81          LOAD_CONST_SMALL_INT 1 
+  36:03       CALL_METHOD 3
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:5b       LOAD_METHOD gatts_write
+  b6          LOAD_FAST 6 
+  12:04       LOAD_GLOBAL struct
+  14:14       LOAD_METHOD pack
+  10:81:0a    LOAD_CONST_STRING <BB
+  81          LOAD_CONST_SMALL_INT 1 
+  82          LOAD_CONST_SMALL_INT 2 
+  36:03       CALL_METHOD 3
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:5b       LOAD_METHOD gatts_write
+  b7          LOAD_FAST 7 
+  23:21       LOAD_CONST_OBJ b'\x01'
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: notify_hid_report
+  raw bytecode: 106 69:12:7b:81:2a:b0:02:28:1f:54:32:b0:14:68:36:00:44:d5:80:12:04:14:14:10:81:14:b0:13:81:0f:80:b0:13:81:10:80:55:b0:13:81:10:81:55:b0:13:81:10:82:55:b0:13:81:10:83:55:b0:13:81:10:84:55:b0:13:81:10:85:55:36:09:c1:12:81:34:23:22:12:04:14:1d:10:81:14:b1:36:02:34:02:59:b0:13:20:14:7a:b0:13:2e:b0:13:81:08:b1:36:03:59:51:63
+  prelude: (14, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: b0:02:28:1f:54:32
+  b0          LOAD_FAST 0 
+  14:68       LOAD_METHOD is_connected
+  36:00       CALL_METHOD 0
+  44:d5:80    POP_JUMP_IF_FALSE 85
+  12:04       LOAD_GLOBAL struct
+  14:14       LOAD_METHOD pack
+  10:81:14    LOAD_CONST_STRING 8B
+  b0          LOAD_FAST 0 
+  13:81:0f    LOAD_ATTR modifiers
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  13:81:10    LOAD_ATTR keypresses
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  b0          LOAD_FAST 0 
+  13:81:10    LOAD_ATTR keypresses
+  81          LOAD_CONST_SMALL_INT 1 
+  55          LOAD_SUBSCR 
+  b0          LOAD_FAST 0 
+  13:81:10    LOAD_ATTR keypresses
+  82          LOAD_CONST_SMALL_INT 2 
+  55          LOAD_SUBSCR 
+  b0          LOAD_FAST 0 
+  13:81:10    LOAD_ATTR keypresses
+  83          LOAD_CONST_SMALL_INT 3 
+  55          LOAD_SUBSCR 
+  b0          LOAD_FAST 0 
+  13:81:10    LOAD_ATTR keypresses
+  84          LOAD_CONST_SMALL_INT 4 
+  55          LOAD_SUBSCR 
+  b0          LOAD_FAST 0 
+  13:81:10    LOAD_ATTR keypresses
+  85          LOAD_CONST_SMALL_INT 5 
+  55          LOAD_SUBSCR 
+  36:09       CALL_METHOD 9
+  c1          STORE_FAST 1 
+  12:81:34    LOAD_GLOBAL print
+  23:22       LOAD_CONST_OBJ 'Notify with report: '
+  12:04       LOAD_GLOBAL struct
+  14:1d       LOAD_METHOD unpack
+  10:81:14    LOAD_CONST_STRING 8B
+  b1          LOAD_FAST 1 
+  36:02       CALL_METHOD 2
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:20       LOAD_ATTR _ble
+  14:7a       LOAD_METHOD gatts_notify
+  b0          LOAD_FAST 0 
+  13:2e       LOAD_ATTR conn_handle
+  b0          LOAD_FAST 0 
+  13:81:08    LOAD_ATTR h_rep
+  b1          LOAD_FAST 1 
+  36:03       CALL_METHOD 3
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: set_modifiers
+  raw bytecode: 63 d9:80:84:80:01:2c:81:15:81:2a:81:45:81:46:81:47:81:48:81:49:81:4a:81:4b:81:4c:b0:09:b1:87:f0:b2:86:f0:f2:b3:85:f0:f2:b4:84:f0:f2:b5:83:f0:f2:b6:82:f0:f2:b7:81:f0:f2:b8:f2:b0:18:81:0f:51:63
+  prelude: (12, 0, 0, 9, 0, 8)
+  args: ['self', 'right_gui', 'right_alt', 'right_shift', 'right_control', 'left_gui', 'left_alt', 'left_shift', 'left_control']
+  line info: b0:09
+  b1          LOAD_FAST 1 
+  87          LOAD_CONST_SMALL_INT 7 
+  f0          BINARY_OP 25 __lshift__ 
+  b2          LOAD_FAST 2 
+  86          LOAD_CONST_SMALL_INT 6 
+  f0          BINARY_OP 25 __lshift__ 
+  f2          BINARY_OP 27 __add__ 
+  b3          LOAD_FAST 3 
+  85          LOAD_CONST_SMALL_INT 5 
+  f0          BINARY_OP 25 __lshift__ 
+  f2          BINARY_OP 27 __add__ 
+  b4          LOAD_FAST 4 
+  84          LOAD_CONST_SMALL_INT 4 
+  f0          BINARY_OP 25 __lshift__ 
+  f2          BINARY_OP 27 __add__ 
+  b5          LOAD_FAST 5 
+  83          LOAD_CONST_SMALL_INT 3 
+  f0          BINARY_OP 25 __lshift__ 
+  f2          BINARY_OP 27 __add__ 
+  b6          LOAD_FAST 6 
+  82          LOAD_CONST_SMALL_INT 2 
+  f0          BINARY_OP 25 __lshift__ 
+  f2          BINARY_OP 27 __add__ 
+  b7          LOAD_FAST 7 
+  81          LOAD_CONST_SMALL_INT 1 
+  f0          BINARY_OP 25 __lshift__ 
+  f2          BINARY_OP 27 __add__ 
+  b8          LOAD_FAST 8 
+  f2          BINARY_OP 27 __add__ 
+  b0          LOAD_FAST 0 
+  18:81:0f    STORE_ATTR modifiers
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: set_keys
+  raw bytecode: 37 e3:84:81:01:24:81:16:81:2a:81:4d:81:4e:81:4f:81:50:81:51:81:52:b0:0c:b1:b2:b3:b4:b5:b6:2b:06:b0:18:81:10:51:63
+  prelude: (13, 0, 0, 7, 0, 6)
+  args: ['self', 'k0', 'k1', 'k2', 'k3', 'k4', 'k5']
+  line info: b0:0c
+  b1          LOAD_FAST 1 
+  b2          LOAD_FAST 2 
+  b3          LOAD_FAST 3 
+  b4          LOAD_FAST 4 
+  b5          LOAD_FAST 5 
+  b6          LOAD_FAST 6 
+  2b:06       BUILD_LIST 6
+  b0          LOAD_FAST 0 
+  18:81:10    STORE_ATTR keypresses
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: set_kb_callback
+  raw bytecode: 17 1a:10:81:17:81:2a:81:11:b0:0f:b1:b0:18:81:11:51:63
+  prelude: (4, 0, 0, 2, 0, 0)
+  args: ['self', 'kb_callback']
+  line info: b0:0f
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:81:11    STORE_ATTR kb_callback
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []

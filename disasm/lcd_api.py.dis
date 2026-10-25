@@ -1,0 +1,655 @@
+mpy_source_file: extracted/lcd_api.py.mpy
+source_file: lcd_api.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[64] (* for static qstrs):
+    'lcd_api.py' 
+    '<module>' *
+    'time' 
+    'LcdApi' 
+    '__init__' *
+    'num_lines' 
+    'num_columns' 
+    'cursor_x' 
+    'cursor_y' 
+    'backlight' 
+    'display_off' 
+    'backlight_on' 
+    'clear' *
+    'hal_write_command' 
+    'LCD_ENTRY_MODE' 
+    'LCD_ENTRY_INC' 
+    'hide_cursor' 
+    'display_on' 
+    'LCD_CLR' 
+    'LCD_HOME' 
+    'show_cursor' 
+    'LCD_ON_CTRL' 
+    'LCD_ON_DISPLAY' 
+    'LCD_ON_CURSOR' 
+    'blink_cursor_on' 
+    'LCD_ON_BLINK' 
+    'blink_cursor_off' 
+    'hal_backlight_on' 
+    'backlight_off' 
+    'hal_backlight_off' 
+    'move_to' 
+    'LCD_DDRAM' 
+    'putchar' 
+    '\n' *
+    'hal_write_data' 
+    'putstr' 
+    'custom_char' 
+    'LCD_CGRAM' 
+    'sleep_us' 
+    '__name__' *
+    '__module__' *
+    '__qualname__' *
+    'LCD_ENTRY_SHIFT' 
+    'LCD_MOVE' 
+    'LCD_MOVE_DISP' 
+    'LCD_MOVE_RIGHT' 
+    'LCD_FUNCTION' 
+    'LCD_FUNCTION_8BIT' 
+    'LCD_FUNCTION_2LINES' 
+    'LCD_FUNCTION_10DOTS' 
+    'LCD_FUNCTION_RESET' 
+    'LCD_RS_CMD' 
+    'LCD_RS_DATA' 
+    'LCD_RW_WRITE' 
+    'LCD_RW_READ' 
+    'self' *
+    'char' 
+    'ord' *
+    'string' 
+    'location' 
+    'charmap' 
+    'cmd' 
+    'NotImplementedError' *
+    'data' 
+obj_table: [None]
+simple_name: <module>
+  raw bytecode: 22 10:06:01:40:46:80:51:1b:02:16:02:54:32:00:10:03:34:02:16:03:51:63
+  prelude: (3, 0, 0, 0, 0, 0)
+  args: []
+  line info: 40:46
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:02       IMPORT_NAME time
+  16:02       STORE_NAME time
+  54          LOAD_BUILD_CLASS 
+  32:00       MAKE_FUNCTION 0
+  10:03       LOAD_CONST_STRING LcdApi
+  34:02       CALL_FUNCTION 2
+  16:03       STORE_NAME LcdApi
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [LcdApi]
+simple_name: LcdApi
+  raw bytecode: 218 00:78:03:68:60:23:43:23:23:43:23:23:23:43:23:23:43:23:23:23:23:44:25:45:23:43:23:43:84:11:84:07:64:40:64:20:64:40:64:40:64:20:64:20:64:40:64:40:84:0b:84:0c:64:40:84:0a:64:20:64:20:64:20:11:27:16:28:10:03:16:29:81:16:12:82:16:13:84:16:0e:82:16:0f:81:16:2a:88:16:15:84:16:16:82:16:17:81:16:19:90:16:2b:88:16:2c:84:16:2d:a0:16:2e:90:16:2f:88:16:30:84:16:31:22:30:16:32:22:80:40:16:25:22:81:00:16:1f:80:16:33:81:16:34:80:16:35:81:16:36:32:00:16:04:32:01:16:0c:32:02:16:14:32:03:16:10:32:04:16:18:32:05:16:1a:32:06:16:11:32:07:16:0a:32:08:16:0b:32:09:16:1c:32:0a:16:1e:32:0b:16:20:32:0c:16:23:32:0d:16:24:32:0e:16:1b:32:0f:16:1d:32:10:16:0d:32:11:16:22:51:63
+  prelude: (1, 0, 0, 0, 0, 0)
+  args: []
+  line info: 68:60:23:43:23:23:43:23:23:23:43:23:23:43:23:23:23:23:44:25:45:23:43:23:43:84:11:84:07:64:40:64:20:64:40:64:40:64:20:64:20:64:40:64:40:84:0b:84:0c:64:40:84:0a:64:20:64:20:64:20
+  11:27       LOAD_NAME __name__
+  16:28       STORE_NAME __module__
+  10:03       LOAD_CONST_STRING LcdApi
+  16:29       STORE_NAME __qualname__
+  81          LOAD_CONST_SMALL_INT 1 
+  16:12       STORE_NAME LCD_CLR
+  82          LOAD_CONST_SMALL_INT 2 
+  16:13       STORE_NAME LCD_HOME
+  84          LOAD_CONST_SMALL_INT 4 
+  16:0e       STORE_NAME LCD_ENTRY_MODE
+  82          LOAD_CONST_SMALL_INT 2 
+  16:0f       STORE_NAME LCD_ENTRY_INC
+  81          LOAD_CONST_SMALL_INT 1 
+  16:2a       STORE_NAME LCD_ENTRY_SHIFT
+  88          LOAD_CONST_SMALL_INT 8 
+  16:15       STORE_NAME LCD_ON_CTRL
+  84          LOAD_CONST_SMALL_INT 4 
+  16:16       STORE_NAME LCD_ON_DISPLAY
+  82          LOAD_CONST_SMALL_INT 2 
+  16:17       STORE_NAME LCD_ON_CURSOR
+  81          LOAD_CONST_SMALL_INT 1 
+  16:19       STORE_NAME LCD_ON_BLINK
+  90          LOAD_CONST_SMALL_INT 16 
+  16:2b       STORE_NAME LCD_MOVE
+  88          LOAD_CONST_SMALL_INT 8 
+  16:2c       STORE_NAME LCD_MOVE_DISP
+  84          LOAD_CONST_SMALL_INT 4 
+  16:2d       STORE_NAME LCD_MOVE_RIGHT
+  a0          LOAD_CONST_SMALL_INT 32 
+  16:2e       STORE_NAME LCD_FUNCTION
+  90          LOAD_CONST_SMALL_INT 16 
+  16:2f       STORE_NAME LCD_FUNCTION_8BIT
+  88          LOAD_CONST_SMALL_INT 8 
+  16:30       STORE_NAME LCD_FUNCTION_2LINES
+  84          LOAD_CONST_SMALL_INT 4 
+  16:31       STORE_NAME LCD_FUNCTION_10DOTS
+  22:30       LOAD_CONST_SMALL_INT 48
+  16:32       STORE_NAME LCD_FUNCTION_RESET
+  22:80:40    LOAD_CONST_SMALL_INT 64
+  16:25       STORE_NAME LCD_CGRAM
+  22:81:00    LOAD_CONST_SMALL_INT 128
+  16:1f       STORE_NAME LCD_DDRAM
+  80          LOAD_CONST_SMALL_INT 0 
+  16:33       STORE_NAME LCD_RS_CMD
+  81          LOAD_CONST_SMALL_INT 1 
+  16:34       STORE_NAME LCD_RS_DATA
+  80          LOAD_CONST_SMALL_INT 0 
+  16:35       STORE_NAME LCD_RW_WRITE
+  81          LOAD_CONST_SMALL_INT 1 
+  16:36       STORE_NAME LCD_RW_READ
+  32:00       MAKE_FUNCTION 0
+  16:04       STORE_NAME __init__
+  32:01       MAKE_FUNCTION 1
+  16:0c       STORE_NAME clear
+  32:02       MAKE_FUNCTION 2
+  16:14       STORE_NAME show_cursor
+  32:03       MAKE_FUNCTION 3
+  16:10       STORE_NAME hide_cursor
+  32:04       MAKE_FUNCTION 4
+  16:18       STORE_NAME blink_cursor_on
+  32:05       MAKE_FUNCTION 5
+  16:1a       STORE_NAME blink_cursor_off
+  32:06       MAKE_FUNCTION 6
+  16:11       STORE_NAME display_on
+  32:07       MAKE_FUNCTION 7
+  16:0a       STORE_NAME display_off
+  32:08       MAKE_FUNCTION 8
+  16:0b       STORE_NAME backlight_on
+  32:09       MAKE_FUNCTION 9
+  16:1c       STORE_NAME backlight_off
+  32:0a       MAKE_FUNCTION 10
+  16:1e       STORE_NAME move_to
+  32:0b       MAKE_FUNCTION 11
+  16:20       STORE_NAME putchar
+  32:0c       MAKE_FUNCTION 12
+  16:23       STORE_NAME putstr
+  32:0d       MAKE_FUNCTION 13
+  16:24       STORE_NAME custom_char
+  32:0e       MAKE_FUNCTION 14
+  16:1b       STORE_NAME hal_backlight_on
+  32:0f       MAKE_FUNCTION 15
+  16:1d       STORE_NAME hal_backlight_off
+  32:10       MAKE_FUNCTION 16
+  16:0d       STORE_NAME hal_write_command
+  32:11       MAKE_FUNCTION 17
+  16:22       STORE_NAME hal_write_data
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [__init__, clear, show_cursor, hide_cursor, blink_cursor_on, blink_cursor_off, display_on, display_off, backlight_on, backlight_off, move_to, putchar, putstr, custom_char, hal_backlight_on, hal_backlight_off, hal_write_command, hal_write_data]
+simple_name: __init__
+  raw bytecode: 109 33:28:04:37:05:06:80:26:24:27:24:24:27:24:24:24:24:26:26:26:2d:26:b1:b0:18:05:b0:13:05:84:d8:44:44:84:b0:18:05:b2:b0:18:06:b0:13:06:a8:d8:44:44:a8:b0:18:06:80:b0:18:07:80:b0:18:08:52:b0:18:09:b0:14:0a:36:00:59:b0:14:0b:36:00:59:b0:14:0c:36:00:59:b0:14:0d:b0:13:0e:b0:13:0f:ed:36:01:59:b0:14:10:36:00:59:b0:14:11:36:00:59:51:63
+  prelude: (7, 0, 0, 3, 0, 0)
+  args: ['self', 'num_lines', 'num_columns']
+  line info: 80:26:24:27:24:24:27:24:24:24:24:26:26:26:2d:26
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:05       STORE_ATTR num_lines
+  b0          LOAD_FAST 0 
+  13:05       LOAD_ATTR num_lines
+  84          LOAD_CONST_SMALL_INT 4 
+  d8          BINARY_OP 1 __gt__ 
+  44:44       POP_JUMP_IF_FALSE 4
+  84          LOAD_CONST_SMALL_INT 4 
+  b0          LOAD_FAST 0 
+  18:05       STORE_ATTR num_lines
+  b2          LOAD_FAST 2 
+  b0          LOAD_FAST 0 
+  18:06       STORE_ATTR num_columns
+  b0          LOAD_FAST 0 
+  13:06       LOAD_ATTR num_columns
+  a8          LOAD_CONST_SMALL_INT 40 
+  d8          BINARY_OP 1 __gt__ 
+  44:44       POP_JUMP_IF_FALSE 4
+  a8          LOAD_CONST_SMALL_INT 40 
+  b0          LOAD_FAST 0 
+  18:06       STORE_ATTR num_columns
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:07       STORE_ATTR cursor_x
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:08       STORE_ATTR cursor_y
+  52          LOAD_CONST_TRUE 
+  b0          LOAD_FAST 0 
+  18:09       STORE_ATTR backlight
+  b0          LOAD_FAST 0 
+  14:0a       LOAD_METHOD display_off
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:0b       LOAD_METHOD backlight_on
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:0c       LOAD_METHOD clear
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:0d       LOAD_METHOD hal_write_command
+  b0          LOAD_FAST 0 
+  13:0e       LOAD_ATTR LCD_ENTRY_MODE
+  b0          LOAD_FAST 0 
+  13:0f       LOAD_ATTR LCD_ENTRY_INC
+  ed          BINARY_OP 22 __or__ 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:10       LOAD_METHOD hide_cursor
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:11       LOAD_METHOD display_on
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: clear
+  raw bytecode: 37 19:0e:0c:37:80:38:29:29:24:b0:14:0d:b0:13:12:36:01:59:b0:14:0d:b0:13:13:36:01:59:80:b0:18:07:80:b0:18:08:51:63
+  prelude: (4, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:38:29:29:24
+  b0          LOAD_FAST 0 
+  14:0d       LOAD_METHOD hal_write_command
+  b0          LOAD_FAST 0 
+  13:12       LOAD_ATTR LCD_CLR
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:0d       LOAD_METHOD hal_write_command
+  b0          LOAD_FAST 0 
+  13:13       LOAD_ATTR LCD_HOME
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:07       STORE_ATTR cursor_x
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:08       STORE_ATTR cursor_y
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: show_cursor
+  raw bytecode: 26 21:0a:14:37:80:3f:2a:b0:14:0d:b0:13:15:b0:13:16:ed:b0:13:17:ed:36:01:59:51:63
+  prelude: (5, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:3f:2a
+  b0          LOAD_FAST 0 
+  14:0d       LOAD_METHOD hal_write_command
+  b0          LOAD_FAST 0 
+  13:15       LOAD_ATTR LCD_ON_CTRL
+  b0          LOAD_FAST 0 
+  13:16       LOAD_ATTR LCD_ON_DISPLAY
+  ed          BINARY_OP 22 __or__ 
+  b0          LOAD_FAST 0 
+  13:17       LOAD_ATTR LCD_ON_CURSOR
+  ed          BINARY_OP 22 __or__ 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: hide_cursor
+  raw bytecode: 21 21:08:10:37:80:44:b0:14:0d:b0:13:15:b0:13:16:ed:36:01:59:51:63
+  prelude: (5, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:44
+  b0          LOAD_FAST 0 
+  14:0d       LOAD_METHOD hal_write_command
+  b0          LOAD_FAST 0 
+  13:15       LOAD_ATTR LCD_ON_CTRL
+  b0          LOAD_FAST 0 
+  13:16       LOAD_ATTR LCD_ON_DISPLAY
+  ed          BINARY_OP 22 __or__ 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: blink_cursor_on
+  raw bytecode: 30 21:0a:18:37:80:48:2a:b0:14:0d:b0:13:15:b0:13:16:ed:b0:13:17:ed:b0:13:19:ed:36:01:59:51:63
+  prelude: (5, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:48:2a
+  b0          LOAD_FAST 0 
+  14:0d       LOAD_METHOD hal_write_command
+  b0          LOAD_FAST 0 
+  13:15       LOAD_ATTR LCD_ON_CTRL
+  b0          LOAD_FAST 0 
+  13:16       LOAD_ATTR LCD_ON_DISPLAY
+  ed          BINARY_OP 22 __or__ 
+  b0          LOAD_FAST 0 
+  13:17       LOAD_ATTR LCD_ON_CURSOR
+  ed          BINARY_OP 22 __or__ 
+  b0          LOAD_FAST 0 
+  13:19       LOAD_ATTR LCD_ON_BLINK
+  ed          BINARY_OP 22 __or__ 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: blink_cursor_off
+  raw bytecode: 26 21:0a:1a:37:80:4d:2a:b0:14:0d:b0:13:15:b0:13:16:ed:b0:13:17:ed:36:01:59:51:63
+  prelude: (5, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:4d:2a
+  b0          LOAD_FAST 0 
+  14:0d       LOAD_METHOD hal_write_command
+  b0          LOAD_FAST 0 
+  13:15       LOAD_ATTR LCD_ON_CTRL
+  b0          LOAD_FAST 0 
+  13:16       LOAD_ATTR LCD_ON_DISPLAY
+  ed          BINARY_OP 22 __or__ 
+  b0          LOAD_FAST 0 
+  13:17       LOAD_ATTR LCD_ON_CURSOR
+  ed          BINARY_OP 22 __or__ 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: display_on
+  raw bytecode: 21 21:08:11:37:80:52:b0:14:0d:b0:13:15:b0:13:16:ed:36:01:59:51:63
+  prelude: (5, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:52
+  b0          LOAD_FAST 0 
+  14:0d       LOAD_METHOD hal_write_command
+  b0          LOAD_FAST 0 
+  13:15       LOAD_ATTR LCD_ON_CTRL
+  b0          LOAD_FAST 0 
+  13:16       LOAD_ATTR LCD_ON_DISPLAY
+  ed          BINARY_OP 22 __or__ 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: display_off
+  raw bytecode: 17 19:08:0a:37:80:56:b0:14:0d:b0:13:15:36:01:59:51:63
+  prelude: (4, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:56
+  b0          LOAD_FAST 0 
+  14:0d       LOAD_METHOD hal_write_command
+  b0          LOAD_FAST 0 
+  13:15       LOAD_ATTR LCD_ON_CTRL
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: backlight_on
+  raw bytecode: 19 11:0a:0b:37:80:5a:24:52:b0:18:09:b0:14:1b:36:00:59:51:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:5a:24
+  52          LOAD_CONST_TRUE 
+  b0          LOAD_FAST 0 
+  18:09       STORE_ATTR backlight
+  b0          LOAD_FAST 0 
+  14:1b       LOAD_METHOD hal_backlight_on
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: backlight_off
+  raw bytecode: 19 11:0a:1c:37:80:5f:24:50:b0:18:09:b0:14:1d:36:00:59:51:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:5f:24
+  50          LOAD_CONST_FALSE 
+  b0          LOAD_FAST 0 
+  18:09       STORE_ATTR backlight
+  b0          LOAD_FAST 0 
+  14:1d       LOAD_METHOD hal_backlight_off
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: move_to
+  raw bytecode: 61 3b:1a:1e:37:07:08:80:64:24:24:25:25:26:25:24:b1:b0:18:07:b2:b0:18:08:b1:22:3f:ef:c3:b2:81:ef:44:46:b3:22:80:40:e5:c3:b2:82:ef:44:44:b3:94:e5:c3:b0:14:0d:b0:13:1f:b3:ed:36:01:59:51:63
+  prelude: (8, 0, 0, 3, 0, 0)
+  args: ['self', 'cursor_x', 'cursor_y']
+  line info: 80:64:24:24:25:25:26:25:24
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:07       STORE_ATTR cursor_x
+  b2          LOAD_FAST 2 
+  b0          LOAD_FAST 0 
+  18:08       STORE_ATTR cursor_y
+  b1          LOAD_FAST 1 
+  22:3f       LOAD_CONST_SMALL_INT 63
+  ef          BINARY_OP 24 __and__ 
+  c3          STORE_FAST 3 
+  b2          LOAD_FAST 2 
+  81          LOAD_CONST_SMALL_INT 1 
+  ef          BINARY_OP 24 __and__ 
+  44:46       POP_JUMP_IF_FALSE 6
+  b3          LOAD_FAST 3 
+  22:80:40    LOAD_CONST_SMALL_INT 64
+  e5          BINARY_OP 14 __iadd__ 
+  c3          STORE_FAST 3 
+  b2          LOAD_FAST 2 
+  82          LOAD_CONST_SMALL_INT 2 
+  ef          BINARY_OP 24 __and__ 
+  44:44       POP_JUMP_IF_FALSE 4
+  b3          LOAD_FAST 3 
+  94          LOAD_CONST_SMALL_INT 20 
+  e5          BINARY_OP 14 __iadd__ 
+  c3          STORE_FAST 3 
+  b0          LOAD_FAST 0 
+  14:0d       LOAD_METHOD hal_write_command
+  b0          LOAD_FAST 0 
+  13:1f       LOAD_ATTR LCD_DDRAM
+  b3          LOAD_FAST 3 
+  ed          BINARY_OP 22 __or__ 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: putchar
+  raw bytecode: 96 2a:1a:20:37:38:80:6f:26:2b:29:2f:24:29:29:24:b1:10:21:dc:44:54:b0:14:22:12:39:b1:34:01:36:01:59:b0:57:13:07:81:e5:5a:18:07:b0:13:07:b0:13:06:db:43:46:b1:10:21:d9:44:66:80:b0:18:07:b0:57:13:08:81:e5:5a:18:08:b0:13:08:b0:13:05:db:44:44:80:b0:18:08:b0:14:1e:b0:13:07:b0:13:08:36:02:59:51:63
+  prelude: (6, 0, 0, 2, 0, 0)
+  args: ['self', 'char']
+  line info: 80:6f:26:2b:29:2f:24:29:29:24
+  b1          LOAD_FAST 1 
+  10:21       LOAD_CONST_STRING 
+
+  dc          BINARY_OP 5 __ne__ 
+  44:54       POP_JUMP_IF_FALSE 20
+  b0          LOAD_FAST 0 
+  14:22       LOAD_METHOD hal_write_data
+  12:39       LOAD_GLOBAL ord
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  57          DUP_TOP 
+  13:07       LOAD_ATTR cursor_x
+  81          LOAD_CONST_SMALL_INT 1 
+  e5          BINARY_OP 14 __iadd__ 
+  5a          ROT_TWO 
+  18:07       STORE_ATTR cursor_x
+  b0          LOAD_FAST 0 
+  13:07       LOAD_ATTR cursor_x
+  b0          LOAD_FAST 0 
+  13:06       LOAD_ATTR num_columns
+  db          BINARY_OP 4 __ge__ 
+  43:46       POP_JUMP_IF_TRUE 6
+  b1          LOAD_FAST 1 
+  10:21       LOAD_CONST_STRING 
+
+  d9          BINARY_OP 2 __eq__ 
+  44:66       POP_JUMP_IF_FALSE 38
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:07       STORE_ATTR cursor_x
+  b0          LOAD_FAST 0 
+  57          DUP_TOP 
+  13:08       LOAD_ATTR cursor_y
+  81          LOAD_CONST_SMALL_INT 1 
+  e5          BINARY_OP 14 __iadd__ 
+  5a          ROT_TWO 
+  18:08       STORE_ATTR cursor_y
+  b0          LOAD_FAST 0 
+  13:08       LOAD_ATTR cursor_y
+  b0          LOAD_FAST 0 
+  13:05       LOAD_ATTR num_lines
+  db          BINARY_OP 4 __ge__ 
+  44:44       POP_JUMP_IF_FALSE 4
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:08       STORE_ATTR cursor_y
+  b0          LOAD_FAST 0 
+  14:1e       LOAD_METHOD move_to
+  b0          LOAD_FAST 0 
+  13:07       LOAD_ATTR cursor_x
+  b0          LOAD_FAST 0 
+  13:08       LOAD_ATTR cursor_y
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: putstr
+  raw bytecode: 24 4a:0c:23:37:3a:80:7b:25:b1:5f:4b:0a:c2:b0:14:20:b2:36:01:59:42:34:51:63
+  prelude: (10, 0, 0, 2, 0, 0)
+  args: ['self', 'string']
+  line info: 80:7b:25
+  b1          LOAD_FAST 1 
+  5f          GET_ITER_STACK 
+  4b:0a       FOR_ITER 10
+  c2          STORE_FAST 2 
+  b0          LOAD_FAST 0 
+  14:20       LOAD_METHOD putchar
+  b2          LOAD_FAST 2 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  42:34       JUMP -12
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: custom_char
+  raw bytecode: 83 43:18:24:37:3b:3c:80:80:24:2d:28:25:29:30:b1:87:e2:c1:b0:14:0d:b0:13:25:b1:83:f0:ed:36:01:59:12:02:14:26:a8:36:01:59:80:42:55:57:c3:b0:14:22:b2:b3:55:36:01:59:12:02:14:26:a8:36:01:59:81:e5:57:88:d7:43:26:59:b0:14:1e:b0:13:07:b0:13:08:36:02:59:51:63
+  prelude: (9, 0, 0, 3, 0, 0)
+  args: ['self', 'location', 'charmap']
+  line info: 80:80:24:2d:28:25:29:30
+  b1          LOAD_FAST 1 
+  87          LOAD_CONST_SMALL_INT 7 
+  e2          BINARY_OP 11 __iand__ 
+  c1          STORE_FAST 1 
+  b0          LOAD_FAST 0 
+  14:0d       LOAD_METHOD hal_write_command
+  b0          LOAD_FAST 0 
+  13:25       LOAD_ATTR LCD_CGRAM
+  b1          LOAD_FAST 1 
+  83          LOAD_CONST_SMALL_INT 3 
+  f0          BINARY_OP 25 __lshift__ 
+  ed          BINARY_OP 22 __or__ 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  12:02       LOAD_GLOBAL time
+  14:26       LOAD_METHOD sleep_us
+  a8          LOAD_CONST_SMALL_INT 40 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  80          LOAD_CONST_SMALL_INT 0 
+  42:55       JUMP 21
+  57          DUP_TOP 
+  c3          STORE_FAST 3 
+  b0          LOAD_FAST 0 
+  14:22       LOAD_METHOD hal_write_data
+  b2          LOAD_FAST 2 
+  b3          LOAD_FAST 3 
+  55          LOAD_SUBSCR 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  12:02       LOAD_GLOBAL time
+  14:26       LOAD_METHOD sleep_us
+  a8          LOAD_CONST_SMALL_INT 40 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  81          LOAD_CONST_SMALL_INT 1 
+  e5          BINARY_OP 14 __iadd__ 
+  57          DUP_TOP 
+  88          LOAD_CONST_SMALL_INT 8 
+  d7          BINARY_OP 0 __lt__ 
+  43:26       POP_JUMP_IF_TRUE -26
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:1e       LOAD_METHOD move_to
+  b0          LOAD_FAST 0 
+  13:07       LOAD_ATTR cursor_x
+  b0          LOAD_FAST 0 
+  13:08       LOAD_ATTR cursor_y
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: hal_backlight_on
+  raw bytecode: 8 09:08:1b:37:80:8a:51:63
+  prelude: (2, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:8a
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: hal_backlight_off
+  raw bytecode: 8 09:08:1d:37:80:8e:51:63
+  prelude: (2, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:8e
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: hal_write_command
+  raw bytecode: 20 12:0a:0d:37:3d:80:92:12:3e:65:00:00:09:08:1d:37:80:8e:51:63
+  prelude: (3, 0, 0, 2, 0, 0)
+  args: ['self', 'cmd']
+  line info: 80:92
+  12:3e       LOAD_GLOBAL NotImplementedError
+  65          RAISE_OBJ 
+  00:00       BASE_RESERVED 
+  09          unknown 
+  08          unknown 
+  1d:37       unknown self
+  80          LOAD_CONST_SMALL_INT 0 
+  8e          LOAD_CONST_SMALL_INT 14 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: hal_write_data
+  raw bytecode: 32 12:0a:22:37:3f:80:96:12:3e:65:00:00:12:0a:0d:37:3d:80:92:12:3e:65:00:00:09:08:1d:37:80:8e:51:63
+  prelude: (3, 0, 0, 2, 0, 0)
+  args: ['self', 'data']
+  line info: 80:96
+  12:3e       LOAD_GLOBAL NotImplementedError
+  65          RAISE_OBJ 
+  00:00       BASE_RESERVED 
+  12:0a       LOAD_GLOBAL display_off
+  0d          unknown 
+  37:3d       CALL_METHOD_VAR_KW 61
+  80          LOAD_CONST_SMALL_INT 0 
+  92          LOAD_CONST_SMALL_INT 18 
+  12:3e       LOAD_GLOBAL NotImplementedError
+  65          RAISE_OBJ 
+  00:00       BASE_RESERVED 
+  09          unknown 
+  08          unknown 
+  1d:37       unknown self
+  80          LOAD_CONST_SMALL_INT 0 
+  8e          LOAD_CONST_SMALL_INT 14 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []

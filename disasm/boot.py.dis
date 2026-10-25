@@ -1,0 +1,195 @@
+mpy_source_file: extracted/boot.py.mpy
+source_file: boot.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[20] (* for static qstrs):
+    'boot.py' 
+    '<module>' *
+    'gc' 
+    'esp32' 
+    '*' *
+    'user' 
+    'collect' 
+    '_report' 
+    'os' 
+    'uname' 
+    'mem_free' 
+    'mem_alloc' 
+    'idf_heap_info' 
+    'HEAP_DATA' 
+    'ImportError' *
+    'Exception' *
+    'e' 
+    'print' *
+    '__import__' 
+    'max' 
+obj_table: ['boot report error:', 'user boot error:', 'microesp32s3 boot:', 'gc mem_free=%d mem_alloc=%d', 'idf heap: free_total=%d largest=%d', 'idf heap info error:']
+simple_name: <module>
+  raw bytecode: 139 a8:02:1e:01:80:07:46:22:4f:66:84:0f:22:51:73:22:54:53:80:51:1b:02:16:02:48:08:80:51:1b:03:16:03:4a:0d:57:11:0e:df:44:46:59:51:16:03:4a:01:5d:32:00:16:07:48:07:11:07:34:00:59:4a:1d:57:11:0f:df:44:56:16:10:49:0a:11:11:23:00:11:10:34:02:59:51:51:16:10:19:10:5d:4a:01:5d:48:0a:80:10:04:2a:01:1b:05:69:4a:1d:57:11:0f:df:44:56:16:10:49:0a:11:11:23:01:11:10:34:02:59:51:51:16:10:19:10:5d:4a:01:5d:11:02:14:06:36:00:59:51:63
+  prelude: (6, 2, 0, 0, 0, 0)
+  args: []
+  line info: 80:07:46:22:4f:66:84:0f:22:51:73:22:54:53
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:02       IMPORT_NAME gc
+  16:02       STORE_NAME gc
+  48:08       SETUP_EXCEPT 8
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:03       IMPORT_NAME esp32
+  16:03       STORE_NAME esp32
+  4a:0d       POP_EXCEPT_JUMP 13
+  57          DUP_TOP 
+  11:0e       LOAD_NAME ImportError
+  df          BINARY_OP 8 <exception match> 
+  44:46       POP_JUMP_IF_FALSE 6
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  16:03       STORE_NAME esp32
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  32:00       MAKE_FUNCTION 0
+  16:07       STORE_NAME _report
+  48:07       SETUP_EXCEPT 7
+  11:07       LOAD_NAME _report
+  34:00       CALL_FUNCTION 0
+  59          POP_TOP 
+  4a:1d       POP_EXCEPT_JUMP 29
+  57          DUP_TOP 
+  11:0f       LOAD_NAME Exception
+  df          BINARY_OP 8 <exception match> 
+  44:56       POP_JUMP_IF_FALSE 22
+  16:10       STORE_NAME e
+  49:0a       SETUP_FINALLY 10
+  11:11       LOAD_NAME print
+  23:00       LOAD_CONST_OBJ 'boot report error:'
+  11:10       LOAD_NAME e
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  16:10       STORE_NAME e
+  19:10       DELETE_NAME e
+  5d          END_FINALLY 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  48:0a       SETUP_EXCEPT 10
+  80          LOAD_CONST_SMALL_INT 0 
+  10:04       LOAD_CONST_STRING *
+  2a:01       BUILD_TUPLE 1
+  1b:05       IMPORT_NAME user
+  69          IMPORT_STAR 
+  4a:1d       POP_EXCEPT_JUMP 29
+  57          DUP_TOP 
+  11:0f       LOAD_NAME Exception
+  df          BINARY_OP 8 <exception match> 
+  44:56       POP_JUMP_IF_FALSE 22
+  16:10       STORE_NAME e
+  49:0a       SETUP_FINALLY 10
+  11:11       LOAD_NAME print
+  23:01       LOAD_CONST_OBJ 'user boot error:'
+  11:10       LOAD_NAME e
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  16:10       STORE_NAME e
+  19:10       DELETE_NAME e
+  5d          END_FINALLY 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  11:02       LOAD_NAME gc
+  14:06       LOAD_METHOD collect
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [_report]
+simple_name: _report
+  raw bytecode: 143 f0:02:1a:07:80:10:31:36:28:22:22:22:33:24:29:57:12:11:23:02:12:12:10:08:34:01:14:09:36:00:34:02:59:12:11:23:03:12:02:14:0a:36:00:12:02:14:0b:36:00:2a:02:f8:34:01:59:12:03:51:de:d3:44:ce:80:48:32:80:c0:80:c1:12:03:14:0c:12:03:13:0d:36:01:5f:4b:13:30:04:c2:c3:c4:c5:b0:b3:e5:c0:12:13:b1:b4:34:02:c1:42:2b:12:11:23:04:b0:b1:2a:02:f8:34:01:59:4a:1a:57:12:0f:df:44:53:c6:49:09:12:11:23:05:b6:34:02:59:51:51:c6:28:06:5d:4a:01:5d:51:63
+  prelude: (15, 2, 0, 0, 0, 0)
+  args: []
+  line info: 80:10:31:36:28:22:22:22:33:24:29:57
+  12:11       LOAD_GLOBAL print
+  23:02       LOAD_CONST_OBJ 'microesp32s3 boot:'
+  12:12       LOAD_GLOBAL __import__
+  10:08       LOAD_CONST_STRING os
+  34:01       CALL_FUNCTION 1
+  14:09       LOAD_METHOD uname
+  36:00       CALL_METHOD 0
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  12:11       LOAD_GLOBAL print
+  23:03       LOAD_CONST_OBJ 'gc mem_free=%d mem_alloc=%d'
+  12:02       LOAD_GLOBAL gc
+  14:0a       LOAD_METHOD mem_free
+  36:00       CALL_METHOD 0
+  12:02       LOAD_GLOBAL gc
+  14:0b       LOAD_METHOD mem_alloc
+  36:00       CALL_METHOD 0
+  2a:02       BUILD_TUPLE 2
+  f8          BINARY_OP 33 __mod__ 
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  12:03       LOAD_GLOBAL esp32
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:ce:80    POP_JUMP_IF_FALSE 78
+  48:32       SETUP_EXCEPT 50
+  80          LOAD_CONST_SMALL_INT 0 
+  c0          STORE_FAST 0 
+  80          LOAD_CONST_SMALL_INT 0 
+  c1          STORE_FAST 1 
+  12:03       LOAD_GLOBAL esp32
+  14:0c       LOAD_METHOD idf_heap_info
+  12:03       LOAD_GLOBAL esp32
+  13:0d       LOAD_ATTR HEAP_DATA
+  36:01       CALL_METHOD 1
+  5f          GET_ITER_STACK 
+  4b:13       FOR_ITER 19
+  30:04       UNPACK_SEQUENCE 4
+  c2          STORE_FAST 2 
+  c3          STORE_FAST 3 
+  c4          STORE_FAST 4 
+  c5          STORE_FAST 5 
+  b0          LOAD_FAST 0 
+  b3          LOAD_FAST 3 
+  e5          BINARY_OP 14 __iadd__ 
+  c0          STORE_FAST 0 
+  12:13       LOAD_GLOBAL max
+  b1          LOAD_FAST 1 
+  b4          LOAD_FAST 4 
+  34:02       CALL_FUNCTION 2
+  c1          STORE_FAST 1 
+  42:2b       JUMP -21
+  12:11       LOAD_GLOBAL print
+  23:04       LOAD_CONST_OBJ 'idf heap: free_total=%d largest=%d'
+  b0          LOAD_FAST 0 
+  b1          LOAD_FAST 1 
+  2a:02       BUILD_TUPLE 2
+  f8          BINARY_OP 33 __mod__ 
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  4a:1a       POP_EXCEPT_JUMP 26
+  57          DUP_TOP 
+  12:0f       LOAD_GLOBAL Exception
+  df          BINARY_OP 8 <exception match> 
+  44:53       POP_JUMP_IF_FALSE 19
+  c6          STORE_FAST 6 
+  49:09       SETUP_FINALLY 9
+  12:11       LOAD_GLOBAL print
+  23:05       LOAD_CONST_OBJ 'idf heap info error:'
+  b6          LOAD_FAST 6 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  c6          STORE_FAST 6 
+  28:06       DELETE_FAST 6
+  5d          END_FINALLY 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []

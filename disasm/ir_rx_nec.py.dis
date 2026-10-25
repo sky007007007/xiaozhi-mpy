@@ -1,0 +1,461 @@
+mpy_source_file: extracted/ir_rx_nec.py.mpy
+source_file: ir_rx/nec.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[39] (* for static qstrs):
+    'ir_rx/nec.py' 
+    '<module>' *
+    'ticks_us' 
+    'ticks_diff' 
+    'utime' 
+    'IR_RX' 
+    'ir_rx' 
+    'NEC_ABC' 
+    'NEC_8' 
+    'NEC_16' 
+    'SAMSUNG' 
+    '__init__' *
+    '_extended' 
+    '_addr' 
+    '_leader' 
+    'decode' 
+    'edge' 
+    'OVERRUN' 
+    '_times' 
+    'BADSTART' 
+    'BADBLOCK' 
+    'REPEAT' 
+    'BADREP' 
+    'BADDATA' 
+    'BADADDR' 
+    'args' *
+    'do_callback' 
+    '__name__' *
+    '__module__' *
+    '__qualname__' *
+    '*' *
+    'self' *
+    'pin' 
+    'extended' 
+    'samsung' 
+    'callback' 
+    'super' *
+    '_' *
+    'RuntimeError' *
+obj_table: [0]
+simple_name: <module>
+  raw bytecode: 89 18:16:01:80:09:32:4c:8b:2e:6b:20:6b:20:80:10:02:10:03:2a:02:1b:04:1c:02:16:02:1c:03:16:03:59:80:10:05:2a:01:1b:06:1c:05:16:05:59:54:32:00:10:07:11:05:34:03:16:07:54:32:01:10:08:11:07:34:03:16:08:54:32:02:10:09:11:07:34:03:16:09:54:32:03:10:0a:11:07:34:03:16:0a:51:63
+  prelude: (4, 0, 0, 0, 0, 0)
+  args: []
+  line info: 80:09:32:4c:8b:2e:6b:20:6b:20
+  80          LOAD_CONST_SMALL_INT 0 
+  10:02       LOAD_CONST_STRING ticks_us
+  10:03       LOAD_CONST_STRING ticks_diff
+  2a:02       BUILD_TUPLE 2
+  1b:04       IMPORT_NAME utime
+  1c:02       IMPORT_FROM ticks_us
+  16:02       STORE_NAME ticks_us
+  1c:03       IMPORT_FROM ticks_diff
+  16:03       STORE_NAME ticks_diff
+  59          POP_TOP 
+  80          LOAD_CONST_SMALL_INT 0 
+  10:05       LOAD_CONST_STRING IR_RX
+  2a:01       BUILD_TUPLE 1
+  1b:06       IMPORT_NAME ir_rx
+  1c:05       IMPORT_FROM IR_RX
+  16:05       STORE_NAME IR_RX
+  59          POP_TOP 
+  54          LOAD_BUILD_CLASS 
+  32:00       MAKE_FUNCTION 0
+  10:07       LOAD_CONST_STRING NEC_ABC
+  11:05       LOAD_NAME IR_RX
+  34:03       CALL_FUNCTION 3
+  16:07       STORE_NAME NEC_ABC
+  54          LOAD_BUILD_CLASS 
+  32:01       MAKE_FUNCTION 1
+  10:08       LOAD_CONST_STRING NEC_8
+  11:07       LOAD_NAME NEC_ABC
+  34:03       CALL_FUNCTION 3
+  16:08       STORE_NAME NEC_8
+  54          LOAD_BUILD_CLASS 
+  32:02       MAKE_FUNCTION 2
+  10:09       LOAD_CONST_STRING NEC_16
+  11:07       LOAD_NAME NEC_ABC
+  34:03       CALL_FUNCTION 3
+  16:09       STORE_NAME NEC_16
+  54          LOAD_BUILD_CLASS 
+  32:03       MAKE_FUNCTION 3
+  10:0a       LOAD_CONST_STRING SAMSUNG
+  11:07       LOAD_NAME NEC_ABC
+  34:03       CALL_FUNCTION 3
+  16:0a       STORE_NAME SAMSUNG
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [NEC_ABC, NEC_8, NEC_16, SAMSUNG]
+simple_name: NEC_ABC
+  raw bytecode: 28 08:0b:07:88:0d:86:07:00:11:1b:16:1c:10:07:16:1d:b0:20:00:01:16:0b:32:01:16:0f:b0:63
+  prelude: (2, 0, 0, 0, 0, 0)
+  args: []
+  line info: 88:0d:86:07:00
+  11:1b       LOAD_NAME __name__
+  16:1c       STORE_NAME __module__
+  10:07       LOAD_CONST_STRING NEC_ABC
+  16:1d       STORE_NAME __qualname__
+  b0          LOAD_FAST 0 
+  20:00:01    MAKE_CLOSURE 0
+  16:0b       STORE_NAME __init__
+  32:01       MAKE_FUNCTION 1
+  16:0f       STORE_NAME decode
+  b0          LOAD_FAST 0 
+  63          RETURN_VALUE 
+  children: [__init__, decode]
+simple_name: __init__
+  raw bytecode: 61 f2:84:80:40:18:0b:1e:1f:20:21:22:23:80:0f:34:24:24:12:24:25:00:b1:15:0b:b2:22:80:44:22:80:50:b5:b6:90:37:05:59:b3:b1:18:0c:80:b1:18:0d:b4:44:45:22:93:44:42:43:22:9f:20:b1:18:0e:51:63
+  prelude: (15, 0, 4, 6, 0, 0)
+  args: ['*', 'self', 'pin', 'extended', 'samsung', 'callback']
+  line info: 80:0f:34:24:24
+  12:24       LOAD_GLOBAL super
+  25:00       LOAD_DEREF 0
+  b1          LOAD_FAST 1 
+  15:0b       LOAD_SUPER_METHOD __init__
+  b2          LOAD_FAST 2 
+  22:80:44    LOAD_CONST_SMALL_INT 68
+  22:80:50    LOAD_CONST_SMALL_INT 80
+  b5          LOAD_FAST 5 
+  b6          LOAD_FAST 6 
+  90          LOAD_CONST_SMALL_INT 16 
+  37:05       CALL_METHOD_VAR_KW 5
+  59          POP_TOP 
+  b3          LOAD_FAST 3 
+  b1          LOAD_FAST 1 
+  18:0c       STORE_ATTR _extended
+  80          LOAD_CONST_SMALL_INT 0 
+  b1          LOAD_FAST 1 
+  18:0d       STORE_ATTR _addr
+  b4          LOAD_FAST 4 
+  44:45       POP_JUMP_IF_FALSE 5
+  22:93:44    LOAD_CONST_SMALL_INT 2500
+  42:43       JUMP 3
+  22:9f:20    LOAD_CONST_SMALL_INT 4000
+  b1          LOAD_FAST 1 
+  18:0e       STORE_ATTR _leader
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: decode
+  raw bytecode: 341 ea:02:46:0f:1f:25:80:15:23:29:28:2f:27:28:2f:28:29:68:20:22:25:24:36:31:27:54:28:26:28:2b:28:2f:25:28:29:4f:26:57:48:f8:01:b0:13:10:22:80:44:d8:44:48:12:26:b0:13:11:34:01:65:12:03:b0:13:12:81:55:b0:13:12:80:55:34:02:c2:b2:b0:13:0e:d7:44:48:12:26:b0:13:13:34:01:65:12:03:b0:13:12:82:55:b0:13:12:81:55:34:02:c2:b2:22:97:38:d8:44:c3:80:b0:13:10:22:80:44:d7:44:48:12:26:b0:13:14:34:01:65:80:c3:83:42:63:57:c4:b3:81:e4:c3:12:03:b0:13:12:b4:81:f2:55:b0:13:12:b4:55:34:02:22:88:60:d8:44:45:b3:23:00:e0:c3:82:e5:57:22:80:42:d7:43:16:59:42:63:b2:22:8d:24:d8:44:54:12:26:b0:13:10:84:d9:44:45:b0:13:15:42:43:b0:13:16:34:01:65:12:26:b0:13:13:34:01:65:b3:22:81:7f:ef:c5:b3:90:f1:22:81:7f:ef:c6:b6:b3:98:f1:22:81:7f:ee:dc:44:48:12:26:b0:13:17:34:01:65:b5:b3:88:f1:22:81:7f:ee:22:81:7f:ef:dc:44:56:b0:13:0c:43:48:12:26:b0:13:18:34:01:65:b5:b3:22:83:fe:00:ef:e0:c5:b5:b0:18:0d:4a:26:57:12:26:df:44:5f:c7:49:15:b7:13:19:80:55:c6:b6:b0:13:15:d9:44:45:b0:13:0d:42:41:80:c5:51:51:c7:28:07:5d:4a:01:5d:b0:14:1a:b6:b5:80:b0:13:15:36:04:59:51:63
+  prelude: (14, 2, 0, 2, 0, 0)
+  args: ['self', '_']
+  line info: 80:15:23:29:28:2f:27:28:2f:28:29:68:20:22:25:24:36:31:27:54:28:26:28:2b:28:2f:25:28:29:4f:26:57
+  48:f8:01    SETUP_EXCEPT 248
+  b0          LOAD_FAST 0 
+  13:10       LOAD_ATTR edge
+  22:80:44    LOAD_CONST_SMALL_INT 68
+  d8          BINARY_OP 1 __gt__ 
+  44:48       POP_JUMP_IF_FALSE 8
+  12:26       LOAD_GLOBAL RuntimeError
+  b0          LOAD_FAST 0 
+  13:11       LOAD_ATTR OVERRUN
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  12:03       LOAD_GLOBAL ticks_diff
+  b0          LOAD_FAST 0 
+  13:12       LOAD_ATTR _times
+  81          LOAD_CONST_SMALL_INT 1 
+  55          LOAD_SUBSCR 
+  b0          LOAD_FAST 0 
+  13:12       LOAD_ATTR _times
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  34:02       CALL_FUNCTION 2
+  c2          STORE_FAST 2 
+  b2          LOAD_FAST 2 
+  b0          LOAD_FAST 0 
+  13:0e       LOAD_ATTR _leader
+  d7          BINARY_OP 0 __lt__ 
+  44:48       POP_JUMP_IF_FALSE 8
+  12:26       LOAD_GLOBAL RuntimeError
+  b0          LOAD_FAST 0 
+  13:13       LOAD_ATTR BADSTART
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  12:03       LOAD_GLOBAL ticks_diff
+  b0          LOAD_FAST 0 
+  13:12       LOAD_ATTR _times
+  82          LOAD_CONST_SMALL_INT 2 
+  55          LOAD_SUBSCR 
+  b0          LOAD_FAST 0 
+  13:12       LOAD_ATTR _times
+  81          LOAD_CONST_SMALL_INT 1 
+  55          LOAD_SUBSCR 
+  34:02       CALL_FUNCTION 2
+  c2          STORE_FAST 2 
+  b2          LOAD_FAST 2 
+  22:97:38    LOAD_CONST_SMALL_INT 3000
+  d8          BINARY_OP 1 __gt__ 
+  44:c3:80    POP_JUMP_IF_FALSE 67
+  b0          LOAD_FAST 0 
+  13:10       LOAD_ATTR edge
+  22:80:44    LOAD_CONST_SMALL_INT 68
+  d7          BINARY_OP 0 __lt__ 
+  44:48       POP_JUMP_IF_FALSE 8
+  12:26       LOAD_GLOBAL RuntimeError
+  b0          LOAD_FAST 0 
+  13:14       LOAD_ATTR BADBLOCK
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  80          LOAD_CONST_SMALL_INT 0 
+  c3          STORE_FAST 3 
+  83          LOAD_CONST_SMALL_INT 3 
+  42:63       JUMP 35
+  57          DUP_TOP 
+  c4          STORE_FAST 4 
+  b3          LOAD_FAST 3 
+  81          LOAD_CONST_SMALL_INT 1 
+  e4          BINARY_OP 13 __irshift__ 
+  c3          STORE_FAST 3 
+  12:03       LOAD_GLOBAL ticks_diff
+  b0          LOAD_FAST 0 
+  13:12       LOAD_ATTR _times
+  b4          LOAD_FAST 4 
+  81          LOAD_CONST_SMALL_INT 1 
+  f2          BINARY_OP 27 __add__ 
+  55          LOAD_SUBSCR 
+  b0          LOAD_FAST 0 
+  13:12       LOAD_ATTR _times
+  b4          LOAD_FAST 4 
+  55          LOAD_SUBSCR 
+  34:02       CALL_FUNCTION 2
+  22:88:60    LOAD_CONST_SMALL_INT 1120
+  d8          BINARY_OP 1 __gt__ 
+  44:45       POP_JUMP_IF_FALSE 5
+  b3          LOAD_FAST 3 
+  23:00       LOAD_CONST_OBJ 0
+  e0          BINARY_OP 9 __ior__ 
+  c3          STORE_FAST 3 
+  82          LOAD_CONST_SMALL_INT 2 
+  e5          BINARY_OP 14 __iadd__ 
+  57          DUP_TOP 
+  22:80:42    LOAD_CONST_SMALL_INT 66
+  d7          BINARY_OP 0 __lt__ 
+  43:16       POP_JUMP_IF_TRUE -42
+  59          POP_TOP 
+  42:63       JUMP 35
+  b2          LOAD_FAST 2 
+  22:8d:24    LOAD_CONST_SMALL_INT 1700
+  d8          BINARY_OP 1 __gt__ 
+  44:54       POP_JUMP_IF_FALSE 20
+  12:26       LOAD_GLOBAL RuntimeError
+  b0          LOAD_FAST 0 
+  13:10       LOAD_ATTR edge
+  84          LOAD_CONST_SMALL_INT 4 
+  d9          BINARY_OP 2 __eq__ 
+  44:45       POP_JUMP_IF_FALSE 5
+  b0          LOAD_FAST 0 
+  13:15       LOAD_ATTR REPEAT
+  42:43       JUMP 3
+  b0          LOAD_FAST 0 
+  13:16       LOAD_ATTR BADREP
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  12:26       LOAD_GLOBAL RuntimeError
+  b0          LOAD_FAST 0 
+  13:13       LOAD_ATTR BADSTART
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  b3          LOAD_FAST 3 
+  22:81:7f    LOAD_CONST_SMALL_INT 255
+  ef          BINARY_OP 24 __and__ 
+  c5          STORE_FAST 5 
+  b3          LOAD_FAST 3 
+  90          LOAD_CONST_SMALL_INT 16 
+  f1          BINARY_OP 26 __rshift__ 
+  22:81:7f    LOAD_CONST_SMALL_INT 255
+  ef          BINARY_OP 24 __and__ 
+  c6          STORE_FAST 6 
+  b6          LOAD_FAST 6 
+  b3          LOAD_FAST 3 
+  98          LOAD_CONST_SMALL_INT 24 
+  f1          BINARY_OP 26 __rshift__ 
+  22:81:7f    LOAD_CONST_SMALL_INT 255
+  ee          BINARY_OP 23 __xor__ 
+  dc          BINARY_OP 5 __ne__ 
+  44:48       POP_JUMP_IF_FALSE 8
+  12:26       LOAD_GLOBAL RuntimeError
+  b0          LOAD_FAST 0 
+  13:17       LOAD_ATTR BADDATA
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  b5          LOAD_FAST 5 
+  b3          LOAD_FAST 3 
+  88          LOAD_CONST_SMALL_INT 8 
+  f1          BINARY_OP 26 __rshift__ 
+  22:81:7f    LOAD_CONST_SMALL_INT 255
+  ee          BINARY_OP 23 __xor__ 
+  22:81:7f    LOAD_CONST_SMALL_INT 255
+  ef          BINARY_OP 24 __and__ 
+  dc          BINARY_OP 5 __ne__ 
+  44:56       POP_JUMP_IF_FALSE 22
+  b0          LOAD_FAST 0 
+  13:0c       LOAD_ATTR _extended
+  43:48       POP_JUMP_IF_TRUE 8
+  12:26       LOAD_GLOBAL RuntimeError
+  b0          LOAD_FAST 0 
+  13:18       LOAD_ATTR BADADDR
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  b5          LOAD_FAST 5 
+  b3          LOAD_FAST 3 
+  22:83:fe:00 LOAD_CONST_SMALL_INT 65280
+  ef          BINARY_OP 24 __and__ 
+  e0          BINARY_OP 9 __ior__ 
+  c5          STORE_FAST 5 
+  b5          LOAD_FAST 5 
+  b0          LOAD_FAST 0 
+  18:0d       STORE_ATTR _addr
+  4a:26       POP_EXCEPT_JUMP 38
+  57          DUP_TOP 
+  12:26       LOAD_GLOBAL RuntimeError
+  df          BINARY_OP 8 <exception match> 
+  44:5f       POP_JUMP_IF_FALSE 31
+  c7          STORE_FAST 7 
+  49:15       SETUP_FINALLY 21
+  b7          LOAD_FAST 7 
+  13:19       LOAD_ATTR args
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  c6          STORE_FAST 6 
+  b6          LOAD_FAST 6 
+  b0          LOAD_FAST 0 
+  13:15       LOAD_ATTR REPEAT
+  d9          BINARY_OP 2 __eq__ 
+  44:45       POP_JUMP_IF_FALSE 5
+  b0          LOAD_FAST 0 
+  13:0d       LOAD_ATTR _addr
+  42:41       JUMP 1
+  80          LOAD_CONST_SMALL_INT 0 
+  c5          STORE_FAST 5 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  c7          STORE_FAST 7 
+  28:07       DELETE_FAST 7
+  5d          END_FINALLY 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  b0          LOAD_FAST 0 
+  14:1a       LOAD_METHOD do_callback
+  b6          LOAD_FAST 6 
+  b5          LOAD_FAST 5 
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  13:15       LOAD_ATTR REPEAT
+  36:04       CALL_METHOD 4
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: NEC_8
+  raw bytecode: 22 08:07:08:88:3b:00:11:1b:16:1c:10:08:16:1d:b0:20:00:01:16:0b:b0:63
+  prelude: (2, 0, 0, 0, 0, 0)
+  args: []
+  line info: 88:3b:00
+  11:1b       LOAD_NAME __name__
+  16:1c       STORE_NAME __module__
+  10:08       LOAD_CONST_STRING NEC_8
+  16:1d       STORE_NAME __qualname__
+  b0          LOAD_FAST 0 
+  20:00:01    MAKE_CLOSURE 0
+  16:0b       STORE_NAME __init__
+  b0          LOAD_FAST 0 
+  63          RETURN_VALUE 
+  children: [__init__]
+simple_name: __init__
+  raw bytecode: 30 e0:84:80:40:0e:0b:1e:1f:20:23:80:3c:12:24:25:00:b1:15:0b:b2:50:50:b3:b4:90:37:05:59:51:63
+  prelude: (13, 0, 4, 4, 0, 0)
+  args: ['*', 'self', 'pin', 'callback']
+  line info: 80:3c
+  12:24       LOAD_GLOBAL super
+  25:00       LOAD_DEREF 0
+  b1          LOAD_FAST 1 
+  15:0b       LOAD_SUPER_METHOD __init__
+  b2          LOAD_FAST 2 
+  50          LOAD_CONST_FALSE 
+  50          LOAD_CONST_FALSE 
+  b3          LOAD_FAST 3 
+  b4          LOAD_FAST 4 
+  90          LOAD_CONST_SMALL_INT 16 
+  37:05       CALL_METHOD_VAR_KW 5
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: NEC_16
+  raw bytecode: 22 08:07:09:88:3f:00:11:1b:16:1c:10:09:16:1d:b0:20:00:01:16:0b:b0:63
+  prelude: (2, 0, 0, 0, 0, 0)
+  args: []
+  line info: 88:3f:00
+  11:1b       LOAD_NAME __name__
+  16:1c       STORE_NAME __module__
+  10:09       LOAD_CONST_STRING NEC_16
+  16:1d       STORE_NAME __qualname__
+  b0          LOAD_FAST 0 
+  20:00:01    MAKE_CLOSURE 0
+  16:0b       STORE_NAME __init__
+  b0          LOAD_FAST 0 
+  63          RETURN_VALUE 
+  children: [__init__]
+simple_name: __init__
+  raw bytecode: 30 e0:84:80:40:0e:0b:1e:1f:20:23:80:40:12:24:25:00:b1:15:0b:b2:52:50:b3:b4:90:37:05:59:51:63
+  prelude: (13, 0, 4, 4, 0, 0)
+  args: ['*', 'self', 'pin', 'callback']
+  line info: 80:40
+  12:24       LOAD_GLOBAL super
+  25:00       LOAD_DEREF 0
+  b1          LOAD_FAST 1 
+  15:0b       LOAD_SUPER_METHOD __init__
+  b2          LOAD_FAST 2 
+  52          LOAD_CONST_TRUE 
+  50          LOAD_CONST_FALSE 
+  b3          LOAD_FAST 3 
+  b4          LOAD_FAST 4 
+  90          LOAD_CONST_SMALL_INT 16 
+  37:05       CALL_METHOD_VAR_KW 5
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: SAMSUNG
+  raw bytecode: 22 08:07:0a:88:43:00:11:1b:16:1c:10:0a:16:1d:b0:20:00:01:16:0b:b0:63
+  prelude: (2, 0, 0, 0, 0, 0)
+  args: []
+  line info: 88:43:00
+  11:1b       LOAD_NAME __name__
+  16:1c       STORE_NAME __module__
+  10:0a       LOAD_CONST_STRING SAMSUNG
+  16:1d       STORE_NAME __qualname__
+  b0          LOAD_FAST 0 
+  20:00:01    MAKE_CLOSURE 0
+  16:0b       STORE_NAME __init__
+  b0          LOAD_FAST 0 
+  63          RETURN_VALUE 
+  children: [__init__]
+simple_name: __init__
+  raw bytecode: 30 e0:84:80:40:0e:0b:1e:1f:20:23:80:44:12:24:25:00:b1:15:0b:b2:52:52:b3:b4:90:37:05:59:51:63
+  prelude: (13, 0, 4, 4, 0, 0)
+  args: ['*', 'self', 'pin', 'callback']
+  line info: 80:44
+  12:24       LOAD_GLOBAL super
+  25:00       LOAD_DEREF 0
+  b1          LOAD_FAST 1 
+  15:0b       LOAD_SUPER_METHOD __init__
+  b2          LOAD_FAST 2 
+  52          LOAD_CONST_TRUE 
+  52          LOAD_CONST_TRUE 
+  b3          LOAD_FAST 3 
+  b4          LOAD_FAST 4 
+  90          LOAD_CONST_SMALL_INT 16 
+  37:05       CALL_METHOD_VAR_KW 5
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []

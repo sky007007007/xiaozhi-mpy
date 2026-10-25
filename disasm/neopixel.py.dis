@@ -1,0 +1,307 @@
+mpy_source_file: extracted/neopixel.py.mpy
+source_file: neopixel.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[35] (* for static qstrs):
+    'neopixel.py' 
+    '<module>' *
+    'bitstream' 
+    'machine' 
+    'NeoPixel' 
+    '0.1.0' 
+    '__init__' *
+    'pin' 
+    'n' 
+    'bpp' 
+    'buf' 
+    'init' 
+    'OUT' 
+    'timing' 
+    '__len__' *
+    '__setitem__' *
+    'ORDER' 
+    '__getitem__' *
+    'fill' 
+    'write' *
+    '<genexpr>' 
+    '__version__' 
+    '__name__' *
+    '__module__' *
+    '__qualname__' *
+    'self' *
+    'bytearray' *
+    'isinstance' *
+    'int' *
+    'i' 
+    'v' 
+    'tuple' *
+    'range' *
+    'len' *
+    '*' *
+obj_table: [(1, 0, 2, 3), (400, 850, 800, 450), (800, 1700, 1600, 900)]
+simple_name: <module>
+  raw bytecode: 30 10:02:01:80:10:02:2a:01:1b:03:1c:02:16:02:59:54:32:00:10:04:34:02:16:04:10:05:16:15:51:63
+  prelude: (3, 0, 0, 0, 0, 0)
+  args: []
+  line info: 
+  80          LOAD_CONST_SMALL_INT 0 
+  10:02       LOAD_CONST_STRING bitstream
+  2a:01       BUILD_TUPLE 1
+  1b:03       IMPORT_NAME machine
+  1c:02       IMPORT_FROM bitstream
+  16:02       STORE_NAME bitstream
+  59          POP_TOP 
+  54          LOAD_BUILD_CLASS 
+  32:00       MAKE_FUNCTION 0
+  10:04       LOAD_CONST_STRING NeoPixel
+  34:02       CALL_FUNCTION 2
+  16:04       STORE_NAME NeoPixel
+  10:05       LOAD_CONST_STRING 0.1.0
+  16:15       STORE_NAME __version__
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [NeoPixel]
+simple_name: NeoPixel
+  raw bytecode: 46 08:02:04:11:16:16:17:10:04:16:18:23:00:16:10:83:81:2a:02:53:33:00:16:06:32:01:16:0e:32:02:16:0f:32:03:16:11:32:04:16:12:32:05:16:13:51:63
+  prelude: (2, 0, 0, 0, 0, 0)
+  args: []
+  line info: 
+  11:16       LOAD_NAME __name__
+  16:17       STORE_NAME __module__
+  10:04       LOAD_CONST_STRING NeoPixel
+  16:18       STORE_NAME __qualname__
+  23:00       LOAD_CONST_OBJ (1, 0, 2, 3)
+  16:10       STORE_NAME ORDER
+  83          LOAD_CONST_SMALL_INT 3 
+  81          LOAD_CONST_SMALL_INT 1 
+  2a:02       BUILD_TUPLE 2
+  53          LOAD_NULL 
+  33:00       MAKE_FUNCTION_DEFARGS 0
+  16:06       STORE_NAME __init__
+  32:01       MAKE_FUNCTION 1
+  16:0e       STORE_NAME __len__
+  32:02       MAKE_FUNCTION 2
+  16:0f       STORE_NAME __setitem__
+  32:03       MAKE_FUNCTION 3
+  16:11       STORE_NAME __getitem__
+  32:04       MAKE_FUNCTION 4
+  16:12       STORE_NAME fill
+  32:05       MAKE_FUNCTION 5
+  16:13       STORE_NAME write
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [__init__, __len__, __setitem__, __getitem__, fill, write]
+simple_name: __init__
+  raw bytecode: 69 b9:84:01:0c:06:19:07:08:09:0d:b1:b0:18:07:b2:b0:18:08:b3:b0:18:09:12:1a:b2:b3:f4:34:01:b0:18:0a:b0:13:07:14:0b:b1:13:0c:36:01:59:12:1b:b4:12:1c:34:02:44:4b:b4:44:44:23:01:42:42:23:02:42:41:b4:b0:18:0d:51:63
+  prelude: (8, 0, 0, 5, 0, 2)
+  args: ['self', 'pin', 'n', 'bpp', 'timing']
+  line info: 
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:07       STORE_ATTR pin
+  b2          LOAD_FAST 2 
+  b0          LOAD_FAST 0 
+  18:08       STORE_ATTR n
+  b3          LOAD_FAST 3 
+  b0          LOAD_FAST 0 
+  18:09       STORE_ATTR bpp
+  12:1a       LOAD_GLOBAL bytearray
+  b2          LOAD_FAST 2 
+  b3          LOAD_FAST 3 
+  f4          BINARY_OP 29 __mul__ 
+  34:01       CALL_FUNCTION 1
+  b0          LOAD_FAST 0 
+  18:0a       STORE_ATTR buf
+  b0          LOAD_FAST 0 
+  13:07       LOAD_ATTR pin
+  14:0b       LOAD_METHOD init
+  b1          LOAD_FAST 1 
+  13:0c       LOAD_ATTR OUT
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  12:1b       LOAD_GLOBAL isinstance
+  b4          LOAD_FAST 4 
+  12:1c       LOAD_GLOBAL int
+  34:02       CALL_FUNCTION 2
+  44:4b       POP_JUMP_IF_FALSE 11
+  b4          LOAD_FAST 4 
+  44:44       POP_JUMP_IF_FALSE 4
+  23:01       LOAD_CONST_OBJ (400, 850, 800, 450)
+  42:42       JUMP 2
+  23:02       LOAD_CONST_OBJ (800, 1700, 1600, 900)
+  42:41       JUMP 1
+  b4          LOAD_FAST 4 
+  b0          LOAD_FAST 0 
+  18:0d       STORE_ATTR timing
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: __len__
+  raw bytecode: 8 09:04:0e:19:b0:13:08:63
+  prelude: (2, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 
+  b0          LOAD_FAST 0 
+  13:08       LOAD_ATTR n
+  63          RETURN_VALUE 
+  children: []
+simple_name: __setitem__
+  raw bytecode: 45 53:08:0f:19:1d:1e:b1:b0:13:09:f4:c3:b0:13:09:80:42:52:57:c1:b2:b1:55:b0:13:0a:b3:b0:13:10:b1:55:f2:56:81:e5:58:5a:d7:43:29:59:59:51:63
+  prelude: (11, 0, 0, 3, 0, 0)
+  args: ['self', 'i', 'v']
+  line info: 
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  13:09       LOAD_ATTR bpp
+  f4          BINARY_OP 29 __mul__ 
+  c3          STORE_FAST 3 
+  b0          LOAD_FAST 0 
+  13:09       LOAD_ATTR bpp
+  80          LOAD_CONST_SMALL_INT 0 
+  42:52       JUMP 18
+  57          DUP_TOP 
+  c1          STORE_FAST 1 
+  b2          LOAD_FAST 2 
+  b1          LOAD_FAST 1 
+  55          LOAD_SUBSCR 
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR buf
+  b3          LOAD_FAST 3 
+  b0          LOAD_FAST 0 
+  13:10       LOAD_ATTR ORDER
+  b1          LOAD_FAST 1 
+  55          LOAD_SUBSCR 
+  f2          BINARY_OP 27 __add__ 
+  56          STORE_SUBSCR 
+  81          LOAD_CONST_SMALL_INT 1 
+  e5          BINARY_OP 14 __iadd__ 
+  58          DUP_TOP_TWO 
+  5a          ROT_TWO 
+  d7          BINARY_OP 0 __lt__ 
+  43:29       POP_JUMP_IF_TRUE -23
+  59          POP_TOP 
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: __getitem__
+  raw bytecode: 37 32:86:01:11:19:1d:00:02:b1:25:00:13:09:f4:27:02:12:1f:b0:b2:20:00:02:12:20:25:00:13:09:34:01:5e:34:01:34:01:63
+  prelude: (7, 0, 0, 2, 0, 0)
+  args: ['self', 'i']
+  line info: 00:02
+  b1          LOAD_FAST 1 
+  25:00       LOAD_DEREF 0
+  13:09       LOAD_ATTR bpp
+  f4          BINARY_OP 29 __mul__ 
+  27:02       STORE_DEREF 2
+  12:1f       LOAD_GLOBAL tuple
+  b0          LOAD_FAST 0 
+  b2          LOAD_FAST 2 
+  20:00:02    MAKE_CLOSURE 0
+  12:20       LOAD_GLOBAL range
+  25:00       LOAD_DEREF 0
+  13:09       LOAD_ATTR bpp
+  34:01       CALL_FUNCTION 1
+  5e          GET_ITER 
+  34:01       CALL_FUNCTION 1
+  34:01       CALL_FUNCTION 1
+  63          RETURN_VALUE 
+  children: [<genexpr>]
+simple_name: <genexpr>
+  raw bytecode: 34 db:40:08:14:22:22:22:53:b2:53:53:4b:13:c3:25:00:13:0a:25:01:25:00:13:10:b3:55:f2:55:67:59:42:2b:51:63
+  prelude: (12, 0, 1, 3, 0, 0)
+  args: ['*', '*', '*']
+  line info: 
+  53          LOAD_NULL 
+  b2          LOAD_FAST 2 
+  53          LOAD_NULL 
+  53          LOAD_NULL 
+  4b:13       FOR_ITER 19
+  c3          STORE_FAST 3 
+  25:00       LOAD_DEREF 0
+  13:0a       LOAD_ATTR buf
+  25:01       LOAD_DEREF 1
+  25:00       LOAD_DEREF 0
+  13:10       LOAD_ATTR ORDER
+  b3          LOAD_FAST 3 
+  55          LOAD_SUBSCR 
+  f2          BINARY_OP 27 __add__ 
+  55          LOAD_SUBSCR 
+  67          YIELD_VALUE 
+  59          POP_TOP 
+  42:2b       JUMP -21
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: fill
+  raw bytecode: 63 62:06:12:19:1e:b0:13:0a:c2:12:21:b0:13:0a:34:01:c3:b0:13:09:c4:b4:80:42:5d:57:c5:b1:b5:55:c6:b0:13:10:b5:55:c7:42:48:b6:b2:b7:56:b7:b4:e5:c7:b7:b3:d7:43:33:81:e5:58:5a:d7:43:1e:59:59:51:63
+  prelude: (13, 0, 0, 2, 0, 0)
+  args: ['self', 'v']
+  line info: 
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR buf
+  c2          STORE_FAST 2 
+  12:21       LOAD_GLOBAL len
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR buf
+  34:01       CALL_FUNCTION 1
+  c3          STORE_FAST 3 
+  b0          LOAD_FAST 0 
+  13:09       LOAD_ATTR bpp
+  c4          STORE_FAST 4 
+  b4          LOAD_FAST 4 
+  80          LOAD_CONST_SMALL_INT 0 
+  42:5d       JUMP 29
+  57          DUP_TOP 
+  c5          STORE_FAST 5 
+  b1          LOAD_FAST 1 
+  b5          LOAD_FAST 5 
+  55          LOAD_SUBSCR 
+  c6          STORE_FAST 6 
+  b0          LOAD_FAST 0 
+  13:10       LOAD_ATTR ORDER
+  b5          LOAD_FAST 5 
+  55          LOAD_SUBSCR 
+  c7          STORE_FAST 7 
+  42:48       JUMP 8
+  b6          LOAD_FAST 6 
+  b2          LOAD_FAST 2 
+  b7          LOAD_FAST 7 
+  56          STORE_SUBSCR 
+  b7          LOAD_FAST 7 
+  b4          LOAD_FAST 4 
+  e5          BINARY_OP 14 __iadd__ 
+  c7          STORE_FAST 7 
+  b7          LOAD_FAST 7 
+  b3          LOAD_FAST 3 
+  d7          BINARY_OP 0 __lt__ 
+  43:33       POP_JUMP_IF_TRUE -13
+  81          LOAD_CONST_SMALL_INT 1 
+  e5          BINARY_OP 14 __iadd__ 
+  58          DUP_TOP_TWO 
+  5a          ROT_TWO 
+  d7          BINARY_OP 0 __lt__ 
+  43:1e       POP_JUMP_IF_TRUE -34
+  59          POP_TOP 
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: write
+  raw bytecode: 21 29:04:13:19:12:02:b0:13:07:80:b0:13:0d:b0:13:0a:34:04:59:51:63
+  prelude: (6, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 
+  12:02       LOAD_GLOBAL bitstream
+  b0          LOAD_FAST 0 
+  13:07       LOAD_ATTR pin
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  13:0d       LOAD_ATTR timing
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR buf
+  34:04       CALL_FUNCTION 4
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []

@@ -1,0 +1,70 @@
+mpy_source_file: extracted/_boot.py.mpy
+source_file: _boot.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[12] (* for static qstrs):
+    '_boot.py' 
+    '<module>' *
+    'gc' 
+    'vfs' 
+    'bdev' 
+    'flashbdev' 
+    'mount' 
+    '/' *
+    'inisetup' 
+    'setup' 
+    'collect' 
+    'OSError' *
+obj_table: [None]
+simple_name: <module>
+  raw bytecode: 86 2c:12:01:26:26:4c:22:24:54:46:4a:80:51:1b:02:16:02:80:51:1b:03:16:03:80:10:04:2a:01:1b:05:1c:04:16:04:59:48:11:11:04:44:4b:11:03:14:06:11:04:10:07:36:02:59:4a:17:57:11:0b:df:44:50:59:80:51:1b:08:16:08:11:08:14:09:36:00:59:4a:01:5d:11:02:14:0a:36:00:59:51:63
+  prelude: (6, 1, 0, 0, 0, 0)
+  args: []
+  line info: 26:26:4c:22:24:54:46:4a
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:02       IMPORT_NAME gc
+  16:02       STORE_NAME gc
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:03       IMPORT_NAME vfs
+  16:03       STORE_NAME vfs
+  80          LOAD_CONST_SMALL_INT 0 
+  10:04       LOAD_CONST_STRING bdev
+  2a:01       BUILD_TUPLE 1
+  1b:05       IMPORT_NAME flashbdev
+  1c:04       IMPORT_FROM bdev
+  16:04       STORE_NAME bdev
+  59          POP_TOP 
+  48:11       SETUP_EXCEPT 17
+  11:04       LOAD_NAME bdev
+  44:4b       POP_JUMP_IF_FALSE 11
+  11:03       LOAD_NAME vfs
+  14:06       LOAD_METHOD mount
+  11:04       LOAD_NAME bdev
+  10:07       LOAD_CONST_STRING /
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  4a:17       POP_EXCEPT_JUMP 23
+  57          DUP_TOP 
+  11:0b       LOAD_NAME OSError
+  df          BINARY_OP 8 <exception match> 
+  44:50       POP_JUMP_IF_FALSE 16
+  59          POP_TOP 
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:08       IMPORT_NAME inisetup
+  16:08       STORE_NAME inisetup
+  11:08       LOAD_NAME inisetup
+  14:09       LOAD_METHOD setup
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  11:02       LOAD_NAME gc
+  14:0a       LOAD_METHOD collect
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []

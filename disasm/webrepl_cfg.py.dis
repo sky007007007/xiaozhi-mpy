@@ -1,0 +1,20 @@
+mpy_source_file: extracted/webrepl_cfg.py.mpy
+source_file: webrepl_cfg.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[4] (* for static qstrs):
+    'webrepl_cfg.py' 
+    '<module>' *
+    'ovorobot' 
+    'PASS' 
+obj_table: [None]
+simple_name: <module>
+  raw bytecode: 9 00:02:01:10:02:16:03:51:63
+  prelude: (1, 0, 0, 0, 0, 0)
+  args: []
+  line info: 
+  10:02       LOAD_CONST_STRING ovorobot
+  16:03       STORE_NAME PASS
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []

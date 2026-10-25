@@ -1,0 +1,795 @@
+mpy_source_file: extracted/asyncio_stream.py.mpy
+source_file: asyncio/stream.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[82] (* for static qstrs):
+    'asyncio/stream.py' 
+    '<module>' *
+    'core' 
+    'q1' 
+    'Stream' 
+    'Server' 
+    'wait_closed' 
+    'aclose' 
+    'awrite' 
+    'awritestr' 
+    'open_connection' 
+    'EINPROGRESS' 
+    'errno' 
+    'socket' 
+    'getaddrinfo' 
+    'SOCK_STREAM' 
+    'setblocking' 
+    'connect' 
+    'ssl' 
+    'SSLContext' 
+    'PROTOCOL_TLS_CLIENT' 
+    'wrap_socket' 
+    'server_hostname' 
+    'do_handshake_on_connect' 
+    '_io_queue' 
+    'queue_write' 
+    'start_server' 
+    'setsockopt' 
+    'SOL_SOCKET' 
+    'SO_REUSEADDR' 
+    'bind' 
+    'listen' 
+    'create_task' 
+    '_serve' 
+    'task' 
+    'sleep_ms' 
+    'CancelledError' 
+    'cancel' 
+    'stream_awrite' 
+    'write' *
+    'drain' 
+    '__init__' *
+    's' 
+    'e' 
+    'out_buf' 
+    'get_extra_info' 
+    'close' *
+    'read' *
+    'queue_read' 
+    'readinto' *
+    'readexactly' 
+    'readline' *
+    '__aenter__' 
+    '__aexit__' 
+    'state' 
+    'accept' 
+    'server_side' 
+    'sys' 
+    'print_exception' 
+    'peername' 
+    'StreamReader' 
+    'StreamWriter' 
+    '__name__' *
+    '__module__' *
+    '__qualname__' *
+    'host' 
+    'port' 
+    'OSError' *
+    'cb' 
+    'backlog' 
+    'self' *
+    'buf' 
+    'off' 
+    'sz' 
+    'memoryview' 
+    'len' *
+    'v' 
+    'n' 
+    'EOFError' *
+    'exc_type' 
+    'exc' 
+    'tb' 
+obj_table: [b'']
+simple_name: <module>
+  raw bytecode: 90 10:02:01:81:10:02:2a:01:1b:03:1c:02:16:02:59:54:32:00:10:04:34:02:16:04:11:04:16:3c:11:04:16:3d:51:51:2a:02:53:33:01:16:0a:54:32:02:10:05:34:02:16:05:85:51:2a:02:53:33:03:16:1a:80:7f:2a:02:53:33:04:16:26:11:04:13:06:11:04:18:07:11:26:11:04:18:08:11:26:11:04:18:09:51:63
+  prelude: (3, 0, 0, 0, 0, 0)
+  args: []
+  line info: 
+  81          LOAD_CONST_SMALL_INT 1 
+  10:02       LOAD_CONST_STRING core
+  2a:01       BUILD_TUPLE 1
+  1b:03       IMPORT_NAME q1
+  1c:02       IMPORT_FROM core
+  16:02       STORE_NAME core
+  59          POP_TOP 
+  54          LOAD_BUILD_CLASS 
+  32:00       MAKE_FUNCTION 0
+  10:04       LOAD_CONST_STRING Stream
+  34:02       CALL_FUNCTION 2
+  16:04       STORE_NAME Stream
+  11:04       LOAD_NAME Stream
+  16:3c       STORE_NAME StreamReader
+  11:04       LOAD_NAME Stream
+  16:3d       STORE_NAME StreamWriter
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  2a:02       BUILD_TUPLE 2
+  53          LOAD_NULL 
+  33:01       MAKE_FUNCTION_DEFARGS 1
+  16:0a       STORE_NAME open_connection
+  54          LOAD_BUILD_CLASS 
+  32:02       MAKE_FUNCTION 2
+  10:05       LOAD_CONST_STRING Server
+  34:02       CALL_FUNCTION 2
+  16:05       STORE_NAME Server
+  85          LOAD_CONST_SMALL_INT 5 
+  51          LOAD_CONST_NONE 
+  2a:02       BUILD_TUPLE 2
+  53          LOAD_NULL 
+  33:03       MAKE_FUNCTION_DEFARGS 3
+  16:1a       STORE_NAME start_server
+  80          LOAD_CONST_SMALL_INT 0 
+  7f          LOAD_CONST_SMALL_INT -1 
+  2a:02       BUILD_TUPLE 2
+  53          LOAD_NULL 
+  33:04       MAKE_FUNCTION_DEFARGS 4
+  16:26       STORE_NAME stream_awrite
+  11:04       LOAD_NAME Stream
+  13:06       LOAD_ATTR wait_closed
+  11:04       LOAD_NAME Stream
+  18:07       STORE_ATTR aclose
+  11:26       LOAD_NAME stream_awrite
+  11:04       LOAD_NAME Stream
+  18:08       STORE_ATTR awrite
+  11:26       LOAD_NAME stream_awrite
+  11:04       LOAD_NAME Stream
+  18:09       STORE_ATTR awritestr
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [Stream, open_connection, Server, start_server, stream_awrite]
+simple_name: Stream
+  raw bytecode: 62 08:02:04:11:3e:16:3f:10:04:16:40:2c:00:2a:01:53:33:00:16:29:32:01:16:2d:32:02:16:2e:32:03:16:06:7f:2a:01:53:33:04:16:2f:32:05:16:31:32:06:16:32:32:07:16:33:32:08:16:27:32:09:16:28:51:63
+  prelude: (2, 0, 0, 0, 0, 0)
+  args: []
+  line info: 
+  11:3e       LOAD_NAME __name__
+  16:3f       STORE_NAME __module__
+  10:04       LOAD_CONST_STRING Stream
+  16:40       STORE_NAME __qualname__
+  2c:00       BUILD_MAP 0
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:00       MAKE_FUNCTION_DEFARGS 0
+  16:29       STORE_NAME __init__
+  32:01       MAKE_FUNCTION 1
+  16:2d       STORE_NAME get_extra_info
+  32:02       MAKE_FUNCTION 2
+  16:2e       STORE_NAME close
+  32:03       MAKE_FUNCTION 3
+  16:06       STORE_NAME wait_closed
+  7f          LOAD_CONST_SMALL_INT -1 
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:04       MAKE_FUNCTION_DEFARGS 4
+  16:2f       STORE_NAME read
+  32:05       MAKE_FUNCTION 5
+  16:31       STORE_NAME readinto
+  32:06       MAKE_FUNCTION 6
+  16:32       STORE_NAME readexactly
+  32:07       MAKE_FUNCTION 7
+  16:33       STORE_NAME readline
+  32:08       MAKE_FUNCTION 8
+  16:27       STORE_NAME write
+  32:09       MAKE_FUNCTION 9
+  16:28       STORE_NAME drain
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [__init__, get_extra_info, close, wait_closed, read, readinto, readexactly, readline, write, drain]
+simple_name: __init__
+  raw bytecode: 22 a3:01:08:29:46:2a:2b:b1:b0:18:2a:b2:b0:18:2b:23:00:b0:18:2c:51:63
+  prelude: (5, 0, 0, 3, 0, 1)
+  args: ['self', 's', 'e']
+  line info: 
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:2a       STORE_ATTR s
+  b2          LOAD_FAST 2 
+  b0          LOAD_FAST 0 
+  18:2b       STORE_ATTR e
+  23:00       LOAD_CONST_OBJ b''
+  b0          LOAD_FAST 0 
+  18:2c       STORE_ATTR out_buf
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: get_extra_info
+  raw bytecode: 11 1a:06:2d:46:4c:b0:13:2b:b1:55:63
+  prelude: (4, 0, 0, 2, 0, 0)
+  args: ['self', 'v']
+  line info: 
+  b0          LOAD_FAST 0 
+  13:2b       LOAD_ATTR e
+  b1          LOAD_FAST 1 
+  55          LOAD_SUBSCR 
+  63          RETURN_VALUE 
+  children: []
+simple_name: close
+  raw bytecode: 6 09:04:2e:46:51:63
+  prelude: (2, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: wait_closed
+  raw bytecode: 15 91:40:04:06:46:b0:13:2a:14:2e:36:00:59:51:63
+  prelude: (3, 0, 1, 1, 0, 0)
+  args: ['self']
+  line info: 
+  b0          LOAD_FAST 0 
+  13:2a       LOAD_ATTR s
+  14:2e       LOAD_METHOD close
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: read
+  raw bytecode: 44 b2:41:06:2f:46:4d:23:00:c2:12:02:13:18:14:30:b0:13:2a:36:01:67:59:b0:13:2a:14:2f:b1:36:01:c3:b3:51:de:d3:44:54:b1:80:db:44:42:b3:63
+  prelude: (7, 0, 1, 2, 0, 1)
+  args: ['self', 'n']
+  line info: 
+  23:00       LOAD_CONST_OBJ b''
+  c2          STORE_FAST 2 
+  12:02       LOAD_GLOBAL core
+  13:18       LOAD_ATTR _io_queue
+  14:30       LOAD_METHOD queue_read
+  b0          LOAD_FAST 0 
+  13:2a       LOAD_ATTR s
+  36:01       CALL_METHOD 1
+  67          YIELD_VALUE 
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:2a       LOAD_ATTR s
+  14:2f       LOAD_METHOD read
+  b1          LOAD_FAST 1 
+  36:01       CALL_METHOD 1
+  c3          STORE_FAST 3 
+  b3          LOAD_FAST 3 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:54       POP_JUMP_IF_FALSE 20
+  b1          LOAD_FAST 1 
+  80          LOAD_CONST_SMALL_INT 0 
+  db          BINARY_OP 4 __ge__ 
+  44:42       POP_JUMP_IF_FALSE 2
+  b3          LOAD_FAST 3 
+  63          RETURN_VALUE 
+  children: []
+simple_name: readinto
+  raw bytecode: 28 a2:40:06:31:46:47:12:02:13:18:14:30:b0:13:2a:36:01:67:59:b0:13:2a:14:31:b1:36:01:63
+  prelude: (5, 0, 1, 2, 0, 0)
+  args: ['self', 'buf']
+  line info: 
+  12:02       LOAD_GLOBAL core
+  13:18       LOAD_ATTR _io_queue
+  14:30       LOAD_METHOD queue_read
+  b0          LOAD_FAST 0 
+  13:2a       LOAD_ATTR s
+  36:01       CALL_METHOD 1
+  67          YIELD_VALUE 
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:2a       LOAD_ATTR s
+  14:31       LOAD_METHOD readinto
+  b1          LOAD_FAST 1 
+  36:01       CALL_METHOD 1
+  63          RETURN_VALUE 
+  children: []
+simple_name: readexactly
+  raw bytecode: 66 b2:40:06:32:46:4d:23:00:c2:42:72:12:02:13:18:14:30:b0:13:2a:36:01:67:59:b0:13:2a:14:2f:b1:36:01:c3:b3:51:de:d3:44:56:12:4b:b3:34:01:43:43:12:4e:65:b2:b3:e5:c2:b1:12:4b:b3:34:01:e6:c1:b1:43:0b:b2:63
+  prelude: (7, 0, 1, 2, 0, 0)
+  args: ['self', 'n']
+  line info: 
+  23:00       LOAD_CONST_OBJ b''
+  c2          STORE_FAST 2 
+  42:72       JUMP 50
+  12:02       LOAD_GLOBAL core
+  13:18       LOAD_ATTR _io_queue
+  14:30       LOAD_METHOD queue_read
+  b0          LOAD_FAST 0 
+  13:2a       LOAD_ATTR s
+  36:01       CALL_METHOD 1
+  67          YIELD_VALUE 
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:2a       LOAD_ATTR s
+  14:2f       LOAD_METHOD read
+  b1          LOAD_FAST 1 
+  36:01       CALL_METHOD 1
+  c3          STORE_FAST 3 
+  b3          LOAD_FAST 3 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:56       POP_JUMP_IF_FALSE 22
+  12:4b       LOAD_GLOBAL len
+  b3          LOAD_FAST 3 
+  34:01       CALL_FUNCTION 1
+  43:43       POP_JUMP_IF_TRUE 3
+  12:4e       LOAD_GLOBAL EOFError
+  65          RAISE_OBJ 
+  b2          LOAD_FAST 2 
+  b3          LOAD_FAST 3 
+  e5          BINARY_OP 14 __iadd__ 
+  c2          STORE_FAST 2 
+  b1          LOAD_FAST 1 
+  12:4b       LOAD_GLOBAL len
+  b3          LOAD_FAST 3 
+  34:01       CALL_FUNCTION 1
+  e6          BINARY_OP 15 __isub__ 
+  c1          STORE_FAST 1 
+  b1          LOAD_FAST 1 
+  43:0b       POP_JUMP_IF_TRUE -53
+  b2          LOAD_FAST 2 
+  63          RETURN_VALUE 
+  children: []
+simple_name: readline
+  raw bytecode: 52 a9:40:04:33:46:23:00:c1:12:02:13:18:14:30:b0:13:2a:36:01:67:59:b0:13:2a:14:33:36:00:c2:b2:51:de:44:42:42:50:b1:b2:e5:c1:b2:44:47:b1:7f:55:8a:d9:44:42:b1:63
+  prelude: (6, 0, 1, 1, 0, 0)
+  args: ['self']
+  line info: 
+  23:00       LOAD_CONST_OBJ b''
+  c1          STORE_FAST 1 
+  12:02       LOAD_GLOBAL core
+  13:18       LOAD_ATTR _io_queue
+  14:30       LOAD_METHOD queue_read
+  b0          LOAD_FAST 0 
+  13:2a       LOAD_ATTR s
+  36:01       CALL_METHOD 1
+  67          YIELD_VALUE 
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:2a       LOAD_ATTR s
+  14:33       LOAD_METHOD readline
+  36:00       CALL_METHOD 0
+  c2          STORE_FAST 2 
+  b2          LOAD_FAST 2 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  44:42       POP_JUMP_IF_FALSE 2
+  42:50       JUMP 16
+  b1          LOAD_FAST 1 
+  b2          LOAD_FAST 2 
+  e5          BINARY_OP 14 __iadd__ 
+  c1          STORE_FAST 1 
+  b2          LOAD_FAST 2 
+  44:47       POP_JUMP_IF_FALSE 7
+  b1          LOAD_FAST 1 
+  7f          LOAD_CONST_SMALL_INT -1 
+  55          LOAD_SUBSCR 
+  8a          LOAD_CONST_SMALL_INT 10 
+  d9          BINARY_OP 2 __eq__ 
+  44:42       POP_JUMP_IF_FALSE 2
+  b1          LOAD_FAST 1 
+  63          RETURN_VALUE 
+  children: []
+simple_name: write
+  raw bytecode: 30 2a:06:27:46:47:b0:13:2c:43:61:b0:13:2a:14:27:b1:36:01:c2:b2:12:4b:b1:34:01:d9:44:42:51:63
+  prelude: (6, 0, 0, 2, 0, 0)
+  args: ['self', 'buf']
+  line info: 
+  b0          LOAD_FAST 0 
+  13:2c       LOAD_ATTR out_buf
+  43:61       POP_JUMP_IF_TRUE 33
+  b0          LOAD_FAST 0 
+  13:2a       LOAD_ATTR s
+  14:27       LOAD_METHOD write
+  b1          LOAD_FAST 1 
+  36:01       CALL_METHOD 1
+  c2          STORE_FAST 2 
+  b2          LOAD_FAST 2 
+  12:4b       LOAD_GLOBAL len
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  d9          BINARY_OP 2 __eq__ 
+  44:42       POP_JUMP_IF_FALSE 2
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: drain
+  raw bytecode: 21 c1:40:04:28:46:b0:13:2c:43:4b:12:02:14:23:80:36:01:5e:51:68:63
+  prelude: (9, 0, 1, 1, 0, 0)
+  args: ['self']
+  line info: 
+  b0          LOAD_FAST 0 
+  13:2c       LOAD_ATTR out_buf
+  43:4b       POP_JUMP_IF_TRUE 11
+  12:02       LOAD_GLOBAL core
+  14:23       LOAD_METHOD sleep_ms
+  80          LOAD_CONST_SMALL_INT 0 
+  36:01       CALL_METHOD 1
+  5e          GET_ITER 
+  51          LOAD_CONST_NONE 
+  68          YIELD_FROM 
+  63          RETURN_VALUE 
+  children: []
+simple_name: open_connection
+  raw bytecode: 171 88:d6:01:0a:0a:41:42:12:16:80:10:0b:2a:01:1b:0c:1c:0b:c4:59:80:51:1b:0d:c5:b5:14:0e:b0:b1:80:b5:13:0f:36:04:80:55:c6:b5:14:0d:b6:80:55:b6:81:55:b6:82:55:36:03:c7:b7:14:10:50:36:01:59:48:0b:b7:14:11:b6:7f:55:36:01:59:4a:1b:57:12:43:df:44:54:c8:49:0a:b8:13:0c:b4:dc:44:42:b8:65:51:51:c8:28:08:5d:4a:01:5d:b2:44:6d:b2:52:de:44:4e:80:51:1b:12:c9:b9:14:13:b9:13:14:36:01:c2:b3:43:42:b0:c3:b2:14:15:b7:10:16:b3:10:17:50:36:84:01:c7:b7:14:10:50:36:01:59:12:04:b7:34:01:ca:12:02:13:18:14:19:b7:36:01:67:59:ba:ba:2a:02:63
+  prelude: (18, 2, 1, 4, 0, 2)
+  args: ['host', 'port', 'ssl', 'server_hostname']
+  line info: 
+  80          LOAD_CONST_SMALL_INT 0 
+  10:0b       LOAD_CONST_STRING EINPROGRESS
+  2a:01       BUILD_TUPLE 1
+  1b:0c       IMPORT_NAME errno
+  1c:0b       IMPORT_FROM EINPROGRESS
+  c4          STORE_FAST 4 
+  59          POP_TOP 
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:0d       IMPORT_NAME socket
+  c5          STORE_FAST 5 
+  b5          LOAD_FAST 5 
+  14:0e       LOAD_METHOD getaddrinfo
+  b0          LOAD_FAST 0 
+  b1          LOAD_FAST 1 
+  80          LOAD_CONST_SMALL_INT 0 
+  b5          LOAD_FAST 5 
+  13:0f       LOAD_ATTR SOCK_STREAM
+  36:04       CALL_METHOD 4
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  c6          STORE_FAST 6 
+  b5          LOAD_FAST 5 
+  14:0d       LOAD_METHOD socket
+  b6          LOAD_FAST 6 
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  b6          LOAD_FAST 6 
+  81          LOAD_CONST_SMALL_INT 1 
+  55          LOAD_SUBSCR 
+  b6          LOAD_FAST 6 
+  82          LOAD_CONST_SMALL_INT 2 
+  55          LOAD_SUBSCR 
+  36:03       CALL_METHOD 3
+  c7          STORE_FAST 7 
+  b7          LOAD_FAST 7 
+  14:10       LOAD_METHOD setblocking
+  50          LOAD_CONST_FALSE 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  48:0b       SETUP_EXCEPT 11
+  b7          LOAD_FAST 7 
+  14:11       LOAD_METHOD connect
+  b6          LOAD_FAST 6 
+  7f          LOAD_CONST_SMALL_INT -1 
+  55          LOAD_SUBSCR 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  4a:1b       POP_EXCEPT_JUMP 27
+  57          DUP_TOP 
+  12:43       LOAD_GLOBAL OSError
+  df          BINARY_OP 8 <exception match> 
+  44:54       POP_JUMP_IF_FALSE 20
+  c8          STORE_FAST 8 
+  49:0a       SETUP_FINALLY 10
+  b8          LOAD_FAST 8 
+  13:0c       LOAD_ATTR errno
+  b4          LOAD_FAST 4 
+  dc          BINARY_OP 5 __ne__ 
+  44:42       POP_JUMP_IF_FALSE 2
+  b8          LOAD_FAST 8 
+  65          RAISE_OBJ 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  c8          STORE_FAST 8 
+  28:08       DELETE_FAST 8
+  5d          END_FINALLY 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  b2          LOAD_FAST 2 
+  44:6d       POP_JUMP_IF_FALSE 45
+  b2          LOAD_FAST 2 
+  52          LOAD_CONST_TRUE 
+  de          BINARY_OP 7 <is> 
+  44:4e       POP_JUMP_IF_FALSE 14
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:12       IMPORT_NAME ssl
+  c9          STORE_FAST 9 
+  b9          LOAD_FAST 9 
+  14:13       LOAD_METHOD SSLContext
+  b9          LOAD_FAST 9 
+  13:14       LOAD_ATTR PROTOCOL_TLS_CLIENT
+  36:01       CALL_METHOD 1
+  c2          STORE_FAST 2 
+  b3          LOAD_FAST 3 
+  43:42       POP_JUMP_IF_TRUE 2
+  b0          LOAD_FAST 0 
+  c3          STORE_FAST 3 
+  b2          LOAD_FAST 2 
+  14:15       LOAD_METHOD wrap_socket
+  b7          LOAD_FAST 7 
+  10:16       LOAD_CONST_STRING server_hostname
+  b3          LOAD_FAST 3 
+  10:17       LOAD_CONST_STRING do_handshake_on_connect
+  50          LOAD_CONST_FALSE 
+  36:84:01    CALL_METHOD 513
+  c7          STORE_FAST 7 
+  b7          LOAD_FAST 7 
+  14:10       LOAD_METHOD setblocking
+  50          LOAD_CONST_FALSE 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  12:04       LOAD_GLOBAL Stream
+  b7          LOAD_FAST 7 
+  34:01       CALL_FUNCTION 1
+  ca          STORE_FAST 10 
+  12:02       LOAD_GLOBAL core
+  13:18       LOAD_ATTR _io_queue
+  14:19       LOAD_METHOD queue_write
+  b7          LOAD_FAST 7 
+  36:01       CALL_METHOD 1
+  67          YIELD_VALUE 
+  59          POP_TOP 
+  ba          LOAD_FAST 10 
+  ba          LOAD_FAST 10 
+  2a:02       BUILD_TUPLE 2
+  63          RETURN_VALUE 
+  children: []
+simple_name: Server
+  raw bytecode: 33 00:02:05:11:3e:16:3f:10:05:16:40:32:00:16:34:32:01:16:35:32:02:16:2e:32:03:16:06:32:04:16:21:51:63
+  prelude: (1, 0, 0, 0, 0, 0)
+  args: []
+  line info: 
+  11:3e       LOAD_NAME __name__
+  16:3f       STORE_NAME __module__
+  10:05       LOAD_CONST_STRING Server
+  16:40       STORE_NAME __qualname__
+  32:00       MAKE_FUNCTION 0
+  16:34       STORE_NAME __aenter__
+  32:01       MAKE_FUNCTION 1
+  16:35       STORE_NAME __aexit__
+  32:02       MAKE_FUNCTION 2
+  16:2e       STORE_NAME close
+  32:03       MAKE_FUNCTION 3
+  16:06       STORE_NAME wait_closed
+  32:04       MAKE_FUNCTION 4
+  16:21       STORE_NAME _serve
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [__aenter__, __aexit__, close, wait_closed, _serve]
+simple_name: __aenter__
+  raw bytecode: 7 89:40:04:34:46:b0:63
+  prelude: (2, 0, 1, 1, 0, 0)
+  args: ['self']
+  line info: 
+  b0          LOAD_FAST 0 
+  63          RETURN_VALUE 
+  children: []
+simple_name: __aexit__
+  raw bytecode: 25 a8:44:0a:35:46:4f:50:51:b0:14:2e:36:00:59:b0:14:06:36:00:5e:51:68:59:51:63
+  prelude: (6, 0, 1, 4, 0, 0)
+  args: ['self', 'exc_type', 'exc', 'tb']
+  line info: 
+  b0          LOAD_FAST 0 
+  14:2e       LOAD_METHOD close
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:06       LOAD_METHOD wait_closed
+  36:00       CALL_METHOD 0
+  5e          GET_ITER 
+  51          LOAD_CONST_NONE 
+  68          YIELD_FROM 
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: close
+  raw bytecode: 18 11:04:2e:46:52:b0:18:36:b0:13:22:14:25:36:00:59:51:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 
+  52          LOAD_CONST_TRUE 
+  b0          LOAD_FAST 0 
+  18:36       STORE_ATTR state
+  b0          LOAD_FAST 0 
+  13:22       LOAD_ATTR task
+  14:25       LOAD_METHOD cancel
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: wait_closed
+  raw bytecode: 14 91:40:04:06:46:b0:13:22:5e:51:68:59:51:63
+  prelude: (3, 0, 1, 1, 0, 0)
+  args: ['self']
+  line info: 
+  b0          LOAD_FAST 0 
+  13:22       LOAD_ATTR task
+  5e          GET_ITER 
+  51          LOAD_CONST_NONE 
+  68          YIELD_FROM 
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _serve
+  raw bytecode: 51 f8:46:0a:21:46:2a:44:12:50:b0:18:36:48:0d:12:02:13:18:14:30:b1:36:01:67:59:4a:23:57:12:02:13:24:df:44:5a:c4:49:10:b1:14:2e:36:00:59:b0:13:36:44:42:51:63
+  prelude: (16, 2, 1, 4, 0, 0)
+  args: ['self', 's', 'cb', 'ssl']
+  line info: 
+  50          LOAD_CONST_FALSE 
+  b0          LOAD_FAST 0 
+  18:36       STORE_ATTR state
+  48:0d       SETUP_EXCEPT 13
+  12:02       LOAD_GLOBAL core
+  13:18       LOAD_ATTR _io_queue
+  14:30       LOAD_METHOD queue_read
+  b1          LOAD_FAST 1 
+  36:01       CALL_METHOD 1
+  67          YIELD_VALUE 
+  59          POP_TOP 
+  4a:23       POP_EXCEPT_JUMP 35
+  57          DUP_TOP 
+  12:02       LOAD_GLOBAL core
+  13:24       LOAD_ATTR CancelledError
+  df          BINARY_OP 8 <exception match> 
+  44:5a       POP_JUMP_IF_FALSE 26
+  c4          STORE_FAST 4 
+  49:10       SETUP_FINALLY 16
+  b1          LOAD_FAST 1 
+  14:2e       LOAD_METHOD close
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:36       LOAD_ATTR state
+  44:42       POP_JUMP_IF_FALSE 2
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: start_server
+  raw bytecode: 138 81:d6:01:0c:1a:44:41:42:45:12:80:51:1b:0d:c5:b5:14:0e:b1:b2:36:02:80:55:c6:b5:14:0d:b6:80:55:36:01:c7:b7:14:10:50:36:01:59:b7:14:1b:b5:13:1c:b5:13:1d:81:36:03:59:b7:14:1e:b6:7f:55:36:01:59:b7:14:1f:b3:36:01:59:12:05:34:00:c8:12:02:14:20:b8:14:21:b7:b0:b4:36:03:36:01:b8:18:22:48:0d:12:02:14:23:80:36:01:5e:51:68:59:4a:1d:57:12:02:13:24:df:44:54:c9:49:0a:b8:13:22:14:25:36:00:59:b9:65:51:c9:28:09:5d:4a:01:5d:b8:63
+  prelude: (17, 2, 1, 5, 0, 2)
+  args: ['cb', 'host', 'port', 'backlog', 'ssl']
+  line info: 
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:0d       IMPORT_NAME socket
+  c5          STORE_FAST 5 
+  b5          LOAD_FAST 5 
+  14:0e       LOAD_METHOD getaddrinfo
+  b1          LOAD_FAST 1 
+  b2          LOAD_FAST 2 
+  36:02       CALL_METHOD 2
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  c6          STORE_FAST 6 
+  b5          LOAD_FAST 5 
+  14:0d       LOAD_METHOD socket
+  b6          LOAD_FAST 6 
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  36:01       CALL_METHOD 1
+  c7          STORE_FAST 7 
+  b7          LOAD_FAST 7 
+  14:10       LOAD_METHOD setblocking
+  50          LOAD_CONST_FALSE 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b7          LOAD_FAST 7 
+  14:1b       LOAD_METHOD setsockopt
+  b5          LOAD_FAST 5 
+  13:1c       LOAD_ATTR SOL_SOCKET
+  b5          LOAD_FAST 5 
+  13:1d       LOAD_ATTR SO_REUSEADDR
+  81          LOAD_CONST_SMALL_INT 1 
+  36:03       CALL_METHOD 3
+  59          POP_TOP 
+  b7          LOAD_FAST 7 
+  14:1e       LOAD_METHOD bind
+  b6          LOAD_FAST 6 
+  7f          LOAD_CONST_SMALL_INT -1 
+  55          LOAD_SUBSCR 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b7          LOAD_FAST 7 
+  14:1f       LOAD_METHOD listen
+  b3          LOAD_FAST 3 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  12:05       LOAD_GLOBAL Server
+  34:00       CALL_FUNCTION 0
+  c8          STORE_FAST 8 
+  12:02       LOAD_GLOBAL core
+  14:20       LOAD_METHOD create_task
+  b8          LOAD_FAST 8 
+  14:21       LOAD_METHOD _serve
+  b7          LOAD_FAST 7 
+  b0          LOAD_FAST 0 
+  b4          LOAD_FAST 4 
+  36:03       CALL_METHOD 3
+  36:01       CALL_METHOD 1
+  b8          LOAD_FAST 8 
+  18:22       STORE_ATTR task
+  48:0d       SETUP_EXCEPT 13
+  12:02       LOAD_GLOBAL core
+  14:23       LOAD_METHOD sleep_ms
+  80          LOAD_CONST_SMALL_INT 0 
+  36:01       CALL_METHOD 1
+  5e          GET_ITER 
+  51          LOAD_CONST_NONE 
+  68          YIELD_FROM 
+  59          POP_TOP 
+  4a:1d       POP_EXCEPT_JUMP 29
+  57          DUP_TOP 
+  12:02       LOAD_GLOBAL core
+  13:24       LOAD_ATTR CancelledError
+  df          BINARY_OP 8 <exception match> 
+  44:54       POP_JUMP_IF_FALSE 20
+  c9          STORE_FAST 9 
+  49:0a       SETUP_FINALLY 10
+  b8          LOAD_FAST 8 
+  13:22       LOAD_ATTR task
+  14:25       LOAD_METHOD cancel
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  b9          LOAD_FAST 9 
+  65          RAISE_OBJ 
+  51          LOAD_CONST_NONE 
+  c9          STORE_FAST 9 
+  28:09       DELETE_FAST 9
+  5d          END_FINALLY 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  b8          LOAD_FAST 8 
+  63          RETURN_VALUE 
+  children: []
+simple_name: stream_awrite
+  raw bytecode: 63 b8:c4:01:0a:26:46:47:48:49:b2:80:dc:43:45:b3:7f:dc:44:5a:12:4a:b1:34:01:c1:b3:7f:d9:44:46:12:4b:b1:34:01:c3:b1:b2:b2:b3:f2:2e:02:55:c1:b0:14:27:b1:36:01:59:b0:14:28:36:00:5e:51:68:59:51:63
+  prelude: (8, 0, 1, 4, 0, 2)
+  args: ['self', 'buf', 'off', 'sz']
+  line info: 
+  b2          LOAD_FAST 2 
+  80          LOAD_CONST_SMALL_INT 0 
+  dc          BINARY_OP 5 __ne__ 
+  43:45       POP_JUMP_IF_TRUE 5
+  b3          LOAD_FAST 3 
+  7f          LOAD_CONST_SMALL_INT -1 
+  dc          BINARY_OP 5 __ne__ 
+  44:5a       POP_JUMP_IF_FALSE 26
+  12:4a       LOAD_GLOBAL memoryview
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  c1          STORE_FAST 1 
+  b3          LOAD_FAST 3 
+  7f          LOAD_CONST_SMALL_INT -1 
+  d9          BINARY_OP 2 __eq__ 
+  44:46       POP_JUMP_IF_FALSE 6
+  12:4b       LOAD_GLOBAL len
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  c3          STORE_FAST 3 
+  b1          LOAD_FAST 1 
+  b2          LOAD_FAST 2 
+  b2          LOAD_FAST 2 
+  b3          LOAD_FAST 3 
+  f2          BINARY_OP 27 __add__ 
+  2e:02       BUILD_SLICE 2
+  55          LOAD_SUBSCR 
+  c1          STORE_FAST 1 
+  b0          LOAD_FAST 0 
+  14:27       LOAD_METHOD write
+  b1          LOAD_FAST 1 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:28       LOAD_METHOD drain
+  36:00       CALL_METHOD 0
+  5e          GET_ITER 
+  51          LOAD_CONST_NONE 
+  68          YIELD_FROM 
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []

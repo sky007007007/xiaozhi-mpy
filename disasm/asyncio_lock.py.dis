@@ -1,0 +1,229 @@
+mpy_source_file: extracted/asyncio_lock.py.mpy
+source_file: asyncio/lock.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[29] (* for static qstrs):
+    'asyncio/lock.py' 
+    '<module>' *
+    'core' 
+    'q1' 
+    'Lock' 
+    '__init__' *
+    'state' 
+    'TaskQueue' 
+    'waiting' 
+    'locked' 
+    'release' 
+    'peek' 
+    'pop' *
+    '_task_queue' 
+    'push' 
+    'acquire' 
+    'cur_task' 
+    'data' 
+    'CancelledError' 
+    '__aenter__' 
+    '__aexit__' 
+    '__name__' *
+    '__module__' *
+    '__qualname__' *
+    'self' *
+    'RuntimeError' *
+    'exc_type' 
+    'exc' 
+    'tb' 
+obj_table: ['Lock not acquired']
+simple_name: <module>
+  raw bytecode: 26 10:02:01:81:10:02:2a:01:1b:03:1c:02:16:02:59:54:32:00:10:04:34:02:16:04:51:63
+  prelude: (3, 0, 0, 0, 0, 0)
+  args: []
+  line info: 
+  81          LOAD_CONST_SMALL_INT 1 
+  10:02       LOAD_CONST_STRING core
+  2a:01       BUILD_TUPLE 1
+  1b:03       IMPORT_NAME q1
+  1c:02       IMPORT_FROM core
+  16:02       STORE_NAME core
+  59          POP_TOP 
+  54          LOAD_BUILD_CLASS 
+  32:00       MAKE_FUNCTION 0
+  10:04       LOAD_CONST_STRING Lock
+  34:02       CALL_FUNCTION 2
+  16:04       STORE_NAME Lock
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [Lock]
+simple_name: Lock
+  raw bytecode: 37 00:02:04:11:15:16:16:10:04:16:17:32:00:16:05:32:01:16:09:32:02:16:0a:32:03:16:0f:32:04:16:13:32:05:16:14:51:63
+  prelude: (1, 0, 0, 0, 0, 0)
+  args: []
+  line info: 
+  11:15       LOAD_NAME __name__
+  16:16       STORE_NAME __module__
+  10:04       LOAD_CONST_STRING Lock
+  16:17       STORE_NAME __qualname__
+  32:00       MAKE_FUNCTION 0
+  16:05       STORE_NAME __init__
+  32:01       MAKE_FUNCTION 1
+  16:09       STORE_NAME locked
+  32:02       MAKE_FUNCTION 2
+  16:0a       STORE_NAME release
+  32:03       MAKE_FUNCTION 3
+  16:0f       STORE_NAME acquire
+  32:04       MAKE_FUNCTION 4
+  16:13       STORE_NAME __aenter__
+  32:05       MAKE_FUNCTION 5
+  16:14       STORE_NAME __aexit__
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [__init__, locked, release, acquire, __aenter__, __aexit__]
+simple_name: __init__
+  raw bytecode: 19 11:04:05:18:80:b0:18:06:12:02:14:07:36:00:b0:18:08:51:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:06       STORE_ATTR state
+  12:02       LOAD_GLOBAL core
+  14:07       LOAD_METHOD TaskQueue
+  36:00       CALL_METHOD 0
+  b0          LOAD_FAST 0 
+  18:08       STORE_ATTR waiting
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: locked
+  raw bytecode: 10 11:04:09:18:b0:13:06:81:d9:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 
+  b0          LOAD_FAST 0 
+  13:06       LOAD_ATTR state
+  81          LOAD_CONST_SMALL_INT 1 
+  d9          BINARY_OP 2 __eq__ 
+  63          RETURN_VALUE 
+  children: []
+simple_name: release
+  raw bytecode: 57 19:04:0a:18:b0:13:06:81:dc:44:47:12:19:23:00:34:01:65:b0:13:08:14:0b:36:00:44:58:b0:13:08:14:0c:36:00:b0:18:06:12:02:13:0d:14:0e:b0:13:06:36:01:59:42:44:80:b0:18:06:51:63
+  prelude: (4, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 
+  b0          LOAD_FAST 0 
+  13:06       LOAD_ATTR state
+  81          LOAD_CONST_SMALL_INT 1 
+  dc          BINARY_OP 5 __ne__ 
+  44:47       POP_JUMP_IF_FALSE 7
+  12:19       LOAD_GLOBAL RuntimeError
+  23:00       LOAD_CONST_OBJ 'Lock not acquired'
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  b0          LOAD_FAST 0 
+  13:08       LOAD_ATTR waiting
+  14:0b       LOAD_METHOD peek
+  36:00       CALL_METHOD 0
+  44:58       POP_JUMP_IF_FALSE 24
+  b0          LOAD_FAST 0 
+  13:08       LOAD_ATTR waiting
+  14:0c       LOAD_METHOD pop
+  36:00       CALL_METHOD 0
+  b0          LOAD_FAST 0 
+  18:06       STORE_ATTR state
+  12:02       LOAD_GLOBAL core
+  13:0d       LOAD_ATTR _task_queue
+  14:0e       LOAD_METHOD push
+  b0          LOAD_FAST 0 
+  13:06       LOAD_ATTR state
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  42:44       JUMP 4
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:06       STORE_ATTR state
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: acquire
+  raw bytecode: 88 b9:42:04:0f:18:b0:13:06:80:dc:44:c5:80:b0:13:08:14:0e:12:02:13:10:36:01:59:b0:13:08:12:02:13:10:18:11:48:05:51:67:59:4a:29:57:12:02:13:12:df:44:60:c1:49:16:b0:13:06:12:02:13:10:d9:44:4a:81:b0:18:06:b0:14:0a:36:00:59:b1:65:51:c1:28:01:5d:4a:01:5d:81:b0:18:06:52:63
+  prelude: (8, 2, 1, 1, 0, 0)
+  args: ['self']
+  line info: 
+  b0          LOAD_FAST 0 
+  13:06       LOAD_ATTR state
+  80          LOAD_CONST_SMALL_INT 0 
+  dc          BINARY_OP 5 __ne__ 
+  44:c5:80    POP_JUMP_IF_FALSE 69
+  b0          LOAD_FAST 0 
+  13:08       LOAD_ATTR waiting
+  14:0e       LOAD_METHOD push
+  12:02       LOAD_GLOBAL core
+  13:10       LOAD_ATTR cur_task
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:08       LOAD_ATTR waiting
+  12:02       LOAD_GLOBAL core
+  13:10       LOAD_ATTR cur_task
+  18:11       STORE_ATTR data
+  48:05       SETUP_EXCEPT 5
+  51          LOAD_CONST_NONE 
+  67          YIELD_VALUE 
+  59          POP_TOP 
+  4a:29       POP_EXCEPT_JUMP 41
+  57          DUP_TOP 
+  12:02       LOAD_GLOBAL core
+  13:12       LOAD_ATTR CancelledError
+  df          BINARY_OP 8 <exception match> 
+  44:60       POP_JUMP_IF_FALSE 32
+  c1          STORE_FAST 1 
+  49:16       SETUP_FINALLY 22
+  b0          LOAD_FAST 0 
+  13:06       LOAD_ATTR state
+  12:02       LOAD_GLOBAL core
+  13:10       LOAD_ATTR cur_task
+  d9          BINARY_OP 2 __eq__ 
+  44:4a       POP_JUMP_IF_FALSE 10
+  81          LOAD_CONST_SMALL_INT 1 
+  b0          LOAD_FAST 0 
+  18:06       STORE_ATTR state
+  b0          LOAD_FAST 0 
+  14:0a       LOAD_METHOD release
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  b1          LOAD_FAST 1 
+  65          RAISE_OBJ 
+  51          LOAD_CONST_NONE 
+  c1          STORE_FAST 1 
+  28:01       DELETE_FAST 1
+  5d          END_FINALLY 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  81          LOAD_CONST_SMALL_INT 1 
+  b0          LOAD_FAST 0 
+  18:06       STORE_ATTR state
+  52          LOAD_CONST_TRUE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: __aenter__
+  raw bytecode: 14 91:40:04:13:18:b0:14:0f:36:00:5e:51:68:63
+  prelude: (3, 0, 1, 1, 0, 0)
+  args: ['self']
+  line info: 
+  b0          LOAD_FAST 0 
+  14:0f       LOAD_METHOD acquire
+  36:00       CALL_METHOD 0
+  5e          GET_ITER 
+  51          LOAD_CONST_NONE 
+  68          YIELD_FROM 
+  63          RETURN_VALUE 
+  children: []
+simple_name: __aexit__
+  raw bytecode: 14 a8:44:0a:14:18:1a:1b:1c:b0:14:0a:36:00:63
+  prelude: (6, 0, 1, 4, 0, 0)
+  args: ['self', 'exc_type', 'exc', 'tb']
+  line info: 
+  b0          LOAD_FAST 0 
+  14:0a       LOAD_METHOD release
+  36:00       CALL_METHOD 0
+  63          RETURN_VALUE 
+  children: []

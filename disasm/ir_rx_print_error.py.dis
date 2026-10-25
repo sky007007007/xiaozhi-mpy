@@ -1,0 +1,87 @@
+mpy_source_file: extracted/ir_rx_print_error.py.mpy
+source_file: ir_rx/print_error.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[14] (* for static qstrs):
+    'ir_rx/print_error.py' 
+    '<module>' *
+    'IR_RX' 
+    'ir_rx' 
+    'BADSTART' 
+    'BADBLOCK' 
+    'BADREP' 
+    'OVERRUN' 
+    'BADDATA' 
+    'BADADDR' 
+    'print_error' 
+    '_errors' 
+    'data' 
+    'print' *
+obj_table: ['Invalid start pulse', 'Error: bad block', 'Error: repeat', 'Error: overrun', 'Error: invalid data', 'Error: invalid address', 'Unknown error code:']
+simple_name: <module>
+  raw bytecode: 76 10:14:01:60:40:4c:29:27:27:27:27:49:80:10:02:2a:01:1b:03:1c:02:16:02:59:2c:06:23:00:11:02:13:04:62:23:01:11:02:13:05:62:23:02:11:02:13:06:62:23:03:11:02:13:07:62:23:04:11:02:13:08:62:23:05:11:02:13:09:62:16:0b:32:00:16:0a:51:63
+  prelude: (3, 0, 0, 0, 0, 0)
+  args: []
+  line info: 60:40:4c:29:27:27:27:27:49
+  80          LOAD_CONST_SMALL_INT 0 
+  10:02       LOAD_CONST_STRING IR_RX
+  2a:01       BUILD_TUPLE 1
+  1b:03       IMPORT_NAME ir_rx
+  1c:02       IMPORT_FROM IR_RX
+  16:02       STORE_NAME IR_RX
+  59          POP_TOP 
+  2c:06       BUILD_MAP 6
+  23:00       LOAD_CONST_OBJ 'Invalid start pulse'
+  11:02       LOAD_NAME IR_RX
+  13:04       LOAD_ATTR BADSTART
+  62          STORE_MAP 
+  23:01       LOAD_CONST_OBJ 'Error: bad block'
+  11:02       LOAD_NAME IR_RX
+  13:05       LOAD_ATTR BADBLOCK
+  62          STORE_MAP 
+  23:02       LOAD_CONST_OBJ 'Error: repeat'
+  11:02       LOAD_NAME IR_RX
+  13:06       LOAD_ATTR BADREP
+  62          STORE_MAP 
+  23:03       LOAD_CONST_OBJ 'Error: overrun'
+  11:02       LOAD_NAME IR_RX
+  13:07       LOAD_ATTR OVERRUN
+  62          STORE_MAP 
+  23:04       LOAD_CONST_OBJ 'Error: invalid data'
+  11:02       LOAD_NAME IR_RX
+  13:08       LOAD_ATTR BADDATA
+  62          STORE_MAP 
+  23:05       LOAD_CONST_OBJ 'Error: invalid address'
+  11:02       LOAD_NAME IR_RX
+  13:09       LOAD_ATTR BADADDR
+  62          STORE_MAP 
+  16:0b       STORE_NAME _errors
+  32:00       MAKE_FUNCTION 0
+  16:0a       STORE_NAME print_error
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [print_error]
+simple_name: print_error
+  raw bytecode: 35 19:0c:0a:0c:80:0f:26:4b:b0:12:0b:dd:44:4b:12:0d:12:0b:b0:55:34:01:59:42:48:12:0d:23:06:b0:34:02:59:51:63
+  prelude: (4, 0, 0, 1, 0, 0)
+  args: ['data']
+  line info: 80:0f:26:4b
+  b0          LOAD_FAST 0 
+  12:0b       LOAD_GLOBAL _errors
+  dd          BINARY_OP 6 <in> 
+  44:4b       POP_JUMP_IF_FALSE 11
+  12:0d       LOAD_GLOBAL print
+  12:0b       LOAD_GLOBAL _errors
+  b0          LOAD_FAST 0 
+  55          LOAD_SUBSCR 
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  42:48       JUMP 8
+  12:0d       LOAD_GLOBAL print
+  23:06       LOAD_CONST_OBJ 'Unknown error code:'
+  b0          LOAD_FAST 0 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []

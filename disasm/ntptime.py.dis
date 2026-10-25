@@ -1,0 +1,223 @@
+mpy_source_file: extracted/ntptime.py.mpy
+source_file: ntptime.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[26] (* for static qstrs):
+    'ntptime.py' 
+    '<module>' *
+    'gmtime' 
+    'time' 
+    'socket' 
+    'struct' 
+    '0.1.1' 
+    'getaddrinfo' 
+    'AF_INET' 
+    'SOCK_DGRAM' 
+    'settimeout' 
+    'sendto' 
+    'recv' 
+    'close' *
+    'unpack' 
+    '!I' 
+    'format' *
+    'settime' 
+    'machine' 
+    'RTC' 
+    'datetime' 
+    'host' 
+    'timeout' 
+    '__version__' 
+    'bytearray' *
+    'Exception' *
+obj_table: ['pool.ntp.org', 0, 0, 0, 0, 'Unsupported epoch: {}']
+simple_name: <module>
+  raw bytecode: 48 08:02:01:80:10:02:2a:01:1b:03:1c:02:16:02:59:80:51:1b:04:16:04:80:51:1b:05:16:05:23:00:16:15:81:16:16:32:00:16:03:32:01:16:11:10:06:16:17:51:63
+  prelude: (2, 0, 0, 0, 0, 0)
+  args: []
+  line info: 
+  80          LOAD_CONST_SMALL_INT 0 
+  10:02       LOAD_CONST_STRING gmtime
+  2a:01       BUILD_TUPLE 1
+  1b:03       IMPORT_NAME time
+  1c:02       IMPORT_FROM gmtime
+  16:02       STORE_NAME gmtime
+  59          POP_TOP 
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:04       IMPORT_NAME socket
+  16:04       STORE_NAME socket
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:05       IMPORT_NAME struct
+  16:05       STORE_NAME struct
+  23:00       LOAD_CONST_OBJ 'pool.ntp.org'
+  16:15       STORE_NAME host
+  81          LOAD_CONST_SMALL_INT 1 
+  16:16       STORE_NAME timeout
+  32:00       MAKE_FUNCTION 0
+  16:03       STORE_NAME time
+  32:01       MAKE_FUNCTION 1
+  16:11       STORE_NAME settime
+  10:06       LOAD_CONST_STRING 0.1.1
+  16:17       STORE_NAME __version__
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [time, settime]
+simple_name: time
+  raw bytecode: 157 74:02:03:12:18:22:30:34:01:c0:9b:b0:80:56:12:04:14:07:12:15:22:80:7b:36:02:80:55:7f:55:c1:12:04:14:04:12:04:13:08:12:04:13:09:36:02:c2:49:19:b2:14:0a:12:16:36:01:59:b2:14:0b:b0:b1:36:02:59:b2:14:0c:22:30:36:01:c3:51:b2:14:0d:36:00:59:5d:12:05:14:0e:10:0f:b3:a8:ac:2e:02:55:36:02:80:55:c4:23:01:c5:b4:b5:d7:44:45:b4:23:02:e5:c4:12:02:80:34:01:80:55:c6:b6:22:8f:50:d9:44:45:23:03:c7:42:58:b6:22:8f:32:d9:44:45:23:04:c7:42:4c:12:19:23:05:14:10:b6:36:01:34:01:65:b4:b7:f3:63
+  prelude: (15, 1, 0, 0, 0, 0)
+  args: []
+  line info: 
+  12:18       LOAD_GLOBAL bytearray
+  22:30       LOAD_CONST_SMALL_INT 48
+  34:01       CALL_FUNCTION 1
+  c0          STORE_FAST 0 
+  9b          LOAD_CONST_SMALL_INT 27 
+  b0          LOAD_FAST 0 
+  80          LOAD_CONST_SMALL_INT 0 
+  56          STORE_SUBSCR 
+  12:04       LOAD_GLOBAL socket
+  14:07       LOAD_METHOD getaddrinfo
+  12:15       LOAD_GLOBAL host
+  22:80:7b    LOAD_CONST_SMALL_INT 123
+  36:02       CALL_METHOD 2
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  7f          LOAD_CONST_SMALL_INT -1 
+  55          LOAD_SUBSCR 
+  c1          STORE_FAST 1 
+  12:04       LOAD_GLOBAL socket
+  14:04       LOAD_METHOD socket
+  12:04       LOAD_GLOBAL socket
+  13:08       LOAD_ATTR AF_INET
+  12:04       LOAD_GLOBAL socket
+  13:09       LOAD_ATTR SOCK_DGRAM
+  36:02       CALL_METHOD 2
+  c2          STORE_FAST 2 
+  49:19       SETUP_FINALLY 25
+  b2          LOAD_FAST 2 
+  14:0a       LOAD_METHOD settimeout
+  12:16       LOAD_GLOBAL timeout
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b2          LOAD_FAST 2 
+  14:0b       LOAD_METHOD sendto
+  b0          LOAD_FAST 0 
+  b1          LOAD_FAST 1 
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b2          LOAD_FAST 2 
+  14:0c       LOAD_METHOD recv
+  22:30       LOAD_CONST_SMALL_INT 48
+  36:01       CALL_METHOD 1
+  c3          STORE_FAST 3 
+  51          LOAD_CONST_NONE 
+  b2          LOAD_FAST 2 
+  14:0d       LOAD_METHOD close
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  5d          END_FINALLY 
+  12:05       LOAD_GLOBAL struct
+  14:0e       LOAD_METHOD unpack
+  10:0f       LOAD_CONST_STRING !I
+  b3          LOAD_FAST 3 
+  a8          LOAD_CONST_SMALL_INT 40 
+  ac          LOAD_CONST_SMALL_INT 44 
+  2e:02       BUILD_SLICE 2
+  55          LOAD_SUBSCR 
+  36:02       CALL_METHOD 2
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  c4          STORE_FAST 4 
+  23:01       LOAD_CONST_OBJ 0
+  c5          STORE_FAST 5 
+  b4          LOAD_FAST 4 
+  b5          LOAD_FAST 5 
+  d7          BINARY_OP 0 __lt__ 
+  44:45       POP_JUMP_IF_FALSE 5
+  b4          LOAD_FAST 4 
+  23:02       LOAD_CONST_OBJ 0
+  e5          BINARY_OP 14 __iadd__ 
+  c4          STORE_FAST 4 
+  12:02       LOAD_GLOBAL gmtime
+  80          LOAD_CONST_SMALL_INT 0 
+  34:01       CALL_FUNCTION 1
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  c6          STORE_FAST 6 
+  b6          LOAD_FAST 6 
+  22:8f:50    LOAD_CONST_SMALL_INT 2000
+  d9          BINARY_OP 2 __eq__ 
+  44:45       POP_JUMP_IF_FALSE 5
+  23:03       LOAD_CONST_OBJ 0
+  c7          STORE_FAST 7 
+  42:58       JUMP 24
+  b6          LOAD_FAST 6 
+  22:8f:32    LOAD_CONST_SMALL_INT 1970
+  d9          BINARY_OP 2 __eq__ 
+  44:45       POP_JUMP_IF_FALSE 5
+  23:04       LOAD_CONST_OBJ 0
+  c7          STORE_FAST 7 
+  42:4c       JUMP 12
+  12:19       LOAD_GLOBAL Exception
+  23:05       LOAD_CONST_OBJ 'Unsupported epoch: {}'
+  14:10       LOAD_METHOD format
+  b6          LOAD_FAST 6 
+  36:01       CALL_METHOD 1
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  b4          LOAD_FAST 4 
+  b7          LOAD_FAST 7 
+  f3          BINARY_OP 28 __sub__ 
+  63          RETURN_VALUE 
+  children: []
+simple_name: settime
+  raw bytecode: 57 60:02:11:12:03:34:00:c0:80:51:1b:12:c1:12:02:b0:34:01:c2:b1:14:13:36:00:14:14:b2:80:55:b2:81:55:b2:82:55:b2:86:55:81:f2:b2:83:55:b2:84:55:b2:85:55:80:2a:08:36:01:59:51:63
+  prelude: (13, 0, 0, 0, 0, 0)
+  args: []
+  line info: 
+  12:03       LOAD_GLOBAL time
+  34:00       CALL_FUNCTION 0
+  c0          STORE_FAST 0 
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:12       IMPORT_NAME machine
+  c1          STORE_FAST 1 
+  12:02       LOAD_GLOBAL gmtime
+  b0          LOAD_FAST 0 
+  34:01       CALL_FUNCTION 1
+  c2          STORE_FAST 2 
+  b1          LOAD_FAST 1 
+  14:13       LOAD_METHOD RTC
+  36:00       CALL_METHOD 0
+  14:14       LOAD_METHOD datetime
+  b2          LOAD_FAST 2 
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  b2          LOAD_FAST 2 
+  81          LOAD_CONST_SMALL_INT 1 
+  55          LOAD_SUBSCR 
+  b2          LOAD_FAST 2 
+  82          LOAD_CONST_SMALL_INT 2 
+  55          LOAD_SUBSCR 
+  b2          LOAD_FAST 2 
+  86          LOAD_CONST_SMALL_INT 6 
+  55          LOAD_SUBSCR 
+  81          LOAD_CONST_SMALL_INT 1 
+  f2          BINARY_OP 27 __add__ 
+  b2          LOAD_FAST 2 
+  83          LOAD_CONST_SMALL_INT 3 
+  55          LOAD_SUBSCR 
+  b2          LOAD_FAST 2 
+  84          LOAD_CONST_SMALL_INT 4 
+  55          LOAD_SUBSCR 
+  b2          LOAD_FAST 2 
+  85          LOAD_CONST_SMALL_INT 5 
+  55          LOAD_SUBSCR 
+  80          LOAD_CONST_SMALL_INT 0 
+  2a:08       BUILD_TUPLE 8
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []

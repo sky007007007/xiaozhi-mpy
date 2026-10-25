@@ -1,0 +1,60 @@
+mpy_source_file: extracted/flashbdev.py.mpy
+source_file: flashbdev.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[11] (* for static qstrs):
+    'flashbdev.py' 
+    '<module>' *
+    'Partition' 
+    'esp32' 
+    'find' *
+    'TYPE_DATA' 
+    'label' 
+    'vfs' 
+    'ffat' 
+    'block_size' 
+    'bdev' 
+obj_table: [None]
+simple_name: <module>
+  raw bytecode: 77 30:0a:01:6c:31:24:36:80:10:02:2a:01:1b:03:1c:02:16:02:59:11:02:14:04:11:02:13:05:10:06:10:07:36:82:01:16:0a:11:0a:43:56:11:02:14:04:11:02:13:05:10:06:10:08:10:09:22:84:00:36:84:01:16:0a:11:0a:44:46:11:0a:80:55:42:41:51:16:0a:51:63
+  prelude: (7, 0, 0, 0, 0, 0)
+  args: []
+  line info: 6c:31:24:36
+  80          LOAD_CONST_SMALL_INT 0 
+  10:02       LOAD_CONST_STRING Partition
+  2a:01       BUILD_TUPLE 1
+  1b:03       IMPORT_NAME esp32
+  1c:02       IMPORT_FROM Partition
+  16:02       STORE_NAME Partition
+  59          POP_TOP 
+  11:02       LOAD_NAME Partition
+  14:04       LOAD_METHOD find
+  11:02       LOAD_NAME Partition
+  13:05       LOAD_ATTR TYPE_DATA
+  10:06       LOAD_CONST_STRING label
+  10:07       LOAD_CONST_STRING vfs
+  36:82:01    CALL_METHOD 257
+  16:0a       STORE_NAME bdev
+  11:0a       LOAD_NAME bdev
+  43:56       POP_JUMP_IF_TRUE 22
+  11:02       LOAD_NAME Partition
+  14:04       LOAD_METHOD find
+  11:02       LOAD_NAME Partition
+  13:05       LOAD_ATTR TYPE_DATA
+  10:06       LOAD_CONST_STRING label
+  10:08       LOAD_CONST_STRING ffat
+  10:09       LOAD_CONST_STRING block_size
+  22:84:00    LOAD_CONST_SMALL_INT 512
+  36:84:01    CALL_METHOD 513
+  16:0a       STORE_NAME bdev
+  11:0a       LOAD_NAME bdev
+  44:46       POP_JUMP_IF_FALSE 6
+  11:0a       LOAD_NAME bdev
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  42:41       JUMP 1
+  51          LOAD_CONST_NONE 
+  16:0a       STORE_NAME bdev
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []

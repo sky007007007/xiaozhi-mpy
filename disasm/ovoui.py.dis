@@ -1,0 +1,1980 @@
+mpy_source_file: extracted/ovoui.py.mpy
+source_file: ovoui.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[160] (* for static qstrs):
+    'ovoui.py' 
+    '<module>' *
+    'os' 
+    'time' 
+    'get_display' 
+    'BOARD_NAME' 
+    'ovomini' 
+    'urandom' 
+    'wifi' 
+    'connecting' 
+    'ready' 
+    'listening' 
+    'processing' 
+    'speaking' 
+    'OvoUI' 
+    '_rand_interval' 
+    '_next_idle' 
+    'index' *
+    '_ring' 
+    'ellipse' 
+    '_pupil' 
+    '_closed' 
+    'hline' 
+    '_x_eye' 
+    'line' 
+    '_brow' 
+    'flat' 
+    'raised' 
+    'angry' 
+    'sad' 
+    '_draw_idle' 
+    'cross' 
+    'dx' 
+    'dy' 
+    'asym' 
+    'r' 
+    'look' 
+    'goofy' 
+    'squint' 
+    'yr' 
+    'askew' 
+    'wide' 
+    'draw_face' 
+    'thinking' 
+    'happy' 
+    'm' 
+    'sleepy' 
+    'dismissed' 
+    'error' 
+    'log' 
+    'get_ui' 
+    '__init__' *
+    'pinutil' 
+    'oled_off' 
+    '[ui] pins:' 
+    'd' 
+    'word' 
+    'neutral' 
+    'face' 
+    'q1' 
+    '_sub' 
+    '_sub_off' 
+    '_sub_at' 
+    '_bound' 
+    'normal' 
+    '_mode' 
+    '_code' 
+    '_face_lock' 
+    '_target_face' 
+    '_line' 
+    'bind' 
+    'join' *
+    '_draw' 
+    'fill' 
+    '_blink_on_face' 
+    'text' 
+    'show' 
+    '_draw_line' 
+    'fill_rect' 
+    'set_word' 
+    'note_face' 
+    'finish_speaking' 
+    'status' 
+    'speak' 
+    'emotion' 
+    'subtitle' 
+    'ticks_ms' 
+    'clear_subtitles' 
+    'splash' 
+    's3' 
+    'tick' 
+    'sleep_ms' 
+    'ticks_diff' 
+    'bind_code' 
+    'unbind' 
+    'error_screen' 
+    '%s %s' 
+    'ticks_add' 
+    'attach' 
+    'on' 
+    'asr' 
+    'tts' 
+    'llm' 
+    'connected' 
+    'binding' 
+    '<genexpr>' 
+    '_on_status' 
+    'get' *
+    'state' 
+    'lock' 
+    '_on_asr' 
+    '_on_tts' 
+    'stop' *
+    '_on_llm' 
+    'laughing' 
+    '_on_disconnected' 
+    'sleep' 
+    'bye' 
+    'offline' 
+    '_on_connected' 
+    '_on_binding' 
+    'code' 
+    '_on_error' 
+    'where' 
+    'exc' 
+    '_WIDTH' 
+    '_LINE_Y' 
+    '_CHARS' 
+    '_EYE_Y' 
+    '_EYE_R' 
+    '_LX' 
+    '_RX' 
+    '_TOP' 
+    '_BOT' 
+    '_IDLE_POOL' 
+    'len' *
+    '_idle' 
+    '_speaking_frame' 
+    '_anim_at' 
+    '_blink_on' 
+    '_blink_at' 
+    '_STATUS_MAP' 
+    '_ui' 
+    'cx' 
+    'style' 
+    'inner' 
+    'kind' 
+    'frame' 
+    '__name__' *
+    '__module__' *
+    '__qualname__' *
+    'print' *
+    'self' *
+    'OSError' *
+    'AttributeError' *
+    'Exception' *
+    'str' *
+    'xz' 
+    '*' *
+    'ord' *
+obj_table: [('calm', 'cross', 'asym', 'raised', 'look', 'angry', 'goofy', 'squint', 'askew', 'wide'), ('wifi', 'neutral'), ('ready', 'neutral'), ('listen', 'listening'), ('think', 'thinking'), ('speak', 'speaking'), 'OLED disabled (pins: no_oled)', '[ui] display unavailable:', '%s www.xiaozhi.me', 'www.xiaozhi.me', ('neutral', 'listening'), 'disconnected']
+simple_name: <module>
+  raw bytecode: 292 18:6c:01:80:16:26:46:52:25:24:63:20:24:24:24:66:24:64:60:45:59:24:24:24:64:64:60:84:0a:6b:20:6b:40:6a:20:64:40:88:0c:84:3c:88:25:22:25:25:25:25:25:68:20:99:4f:64:20:64:80:51:1b:02:16:02:80:51:1b:03:16:03:80:10:04:10:05:2a:02:1b:06:1c:04:16:04:1c:05:16:05:59:22:81:00:16:7d:22:34:16:7e:90:16:7f:98:16:81:00:91:16:81:01:a8:16:81:02:22:80:58:16:81:03:83:16:81:04:8c:16:81:05:23:00:16:81:06:11:81:06:11:02:14:07:81:36:01:80:55:11:81:07:11:81:06:34:01:f8:55:17:81:08:80:17:81:09:80:17:81:0a:50:17:81:0b:51:17:81:0c:32:00:16:0f:32:01:16:10:11:81:01:8f:2a:02:53:33:02:16:12:88:80:80:51:2a:04:53:33:03:16:14:11:81:01:2a:01:53:33:04:16:15:32:05:16:17:81:2a:01:53:33:06:16:19:32:07:16:1e:80:2a:01:53:33:08:16:2a:2c:06:23:01:10:08:62:23:01:10:09:62:23:02:10:0a:62:23:03:10:0b:62:23:04:10:0c:62:23:05:10:0d:62:16:81:0d:54:32:09:10:0e:34:02:16:0e:32:0a:16:31:51:17:81:0e:32:0b:16:32:51:63
+  prelude: (4, 0, 0, 0, 0, 0)
+  args: []
+  line info: 80:16:26:46:52:25:24:63:20:24:24:24:66:24:64:60:45:59:24:24:24:64:64:60:84:0a:6b:20:6b:40:6a:20:64:40:88:0c:84:3c:88:25:22:25:25:25:25:25:68:20:99:4f:64:20:64
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:02       IMPORT_NAME os
+  16:02       STORE_NAME os
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:03       IMPORT_NAME time
+  16:03       STORE_NAME time
+  80          LOAD_CONST_SMALL_INT 0 
+  10:04       LOAD_CONST_STRING get_display
+  10:05       LOAD_CONST_STRING BOARD_NAME
+  2a:02       BUILD_TUPLE 2
+  1b:06       IMPORT_NAME ovomini
+  1c:04       IMPORT_FROM get_display
+  16:04       STORE_NAME get_display
+  1c:05       IMPORT_FROM BOARD_NAME
+  16:05       STORE_NAME BOARD_NAME
+  59          POP_TOP 
+  22:81:00    LOAD_CONST_SMALL_INT 128
+  16:7d       STORE_NAME _WIDTH
+  22:34       LOAD_CONST_SMALL_INT 52
+  16:7e       STORE_NAME _LINE_Y
+  90          LOAD_CONST_SMALL_INT 16 
+  16:7f       STORE_NAME _CHARS
+  98          LOAD_CONST_SMALL_INT 24 
+  16:81:00    STORE_NAME _EYE_Y
+  91          LOAD_CONST_SMALL_INT 17 
+  16:81:01    STORE_NAME _EYE_R
+  a8          LOAD_CONST_SMALL_INT 40 
+  16:81:02    STORE_NAME _LX
+  22:80:58    LOAD_CONST_SMALL_INT 88
+  16:81:03    STORE_NAME _RX
+  83          LOAD_CONST_SMALL_INT 3 
+  16:81:04    STORE_NAME _TOP
+  8c          LOAD_CONST_SMALL_INT 12 
+  16:81:05    STORE_NAME _BOT
+  23:00       LOAD_CONST_OBJ ('calm', 'cross', 'asym', 'raised', 'look', 'angry', 'goofy', 'squint', 'askew', 'wide')
+  16:81:06    STORE_NAME _IDLE_POOL
+  11:81:06    LOAD_NAME _IDLE_POOL
+  11:02       LOAD_NAME os
+  14:07       LOAD_METHOD urandom
+  81          LOAD_CONST_SMALL_INT 1 
+  36:01       CALL_METHOD 1
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  11:81:07    LOAD_NAME len
+  11:81:06    LOAD_NAME _IDLE_POOL
+  34:01       CALL_FUNCTION 1
+  f8          BINARY_OP 33 __mod__ 
+  55          LOAD_SUBSCR 
+  17:81:08    STORE_GLOBAL _idle
+  80          LOAD_CONST_SMALL_INT 0 
+  17:81:09    STORE_GLOBAL _speaking_frame
+  80          LOAD_CONST_SMALL_INT 0 
+  17:81:0a    STORE_GLOBAL _anim_at
+  50          LOAD_CONST_FALSE 
+  17:81:0b    STORE_GLOBAL _blink_on
+  51          LOAD_CONST_NONE 
+  17:81:0c    STORE_GLOBAL _blink_at
+  32:00       MAKE_FUNCTION 0
+  16:0f       STORE_NAME _rand_interval
+  32:01       MAKE_FUNCTION 1
+  16:10       STORE_NAME _next_idle
+  11:81:01    LOAD_NAME _EYE_R
+  8f          LOAD_CONST_SMALL_INT 15 
+  2a:02       BUILD_TUPLE 2
+  53          LOAD_NULL 
+  33:02       MAKE_FUNCTION_DEFARGS 2
+  16:12       STORE_NAME _ring
+  88          LOAD_CONST_SMALL_INT 8 
+  80          LOAD_CONST_SMALL_INT 0 
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  2a:04       BUILD_TUPLE 4
+  53          LOAD_NULL 
+  33:03       MAKE_FUNCTION_DEFARGS 3
+  16:14       STORE_NAME _pupil
+  11:81:01    LOAD_NAME _EYE_R
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:04       MAKE_FUNCTION_DEFARGS 4
+  16:15       STORE_NAME _closed
+  32:05       MAKE_FUNCTION 5
+  16:17       STORE_NAME _x_eye
+  81          LOAD_CONST_SMALL_INT 1 
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:06       MAKE_FUNCTION_DEFARGS 6
+  16:19       STORE_NAME _brow
+  32:07       MAKE_FUNCTION 7
+  16:1e       STORE_NAME _draw_idle
+  80          LOAD_CONST_SMALL_INT 0 
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:08       MAKE_FUNCTION_DEFARGS 8
+  16:2a       STORE_NAME draw_face
+  2c:06       BUILD_MAP 6
+  23:01       LOAD_CONST_OBJ ('wifi', 'neutral')
+  10:08       LOAD_CONST_STRING wifi
+  62          STORE_MAP 
+  23:01       LOAD_CONST_OBJ ('wifi', 'neutral')
+  10:09       LOAD_CONST_STRING connecting
+  62          STORE_MAP 
+  23:02       LOAD_CONST_OBJ ('ready', 'neutral')
+  10:0a       LOAD_CONST_STRING ready
+  62          STORE_MAP 
+  23:03       LOAD_CONST_OBJ ('listen', 'listening')
+  10:0b       LOAD_CONST_STRING listening
+  62          STORE_MAP 
+  23:04       LOAD_CONST_OBJ ('think', 'thinking')
+  10:0c       LOAD_CONST_STRING processing
+  62          STORE_MAP 
+  23:05       LOAD_CONST_OBJ ('speak', 'speaking')
+  10:0d       LOAD_CONST_STRING speaking
+  62          STORE_MAP 
+  16:81:0d    STORE_NAME _STATUS_MAP
+  54          LOAD_BUILD_CLASS 
+  32:09       MAKE_FUNCTION 9
+  10:0e       LOAD_CONST_STRING OvoUI
+  34:02       CALL_FUNCTION 2
+  16:0e       STORE_NAME OvoUI
+  32:0a       MAKE_FUNCTION 10
+  16:31       STORE_NAME log
+  51          LOAD_CONST_NONE 
+  17:81:0e    STORE_GLOBAL _ui
+  32:0b       MAKE_FUNCTION 11
+  16:32       STORE_NAME get_ui
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [_rand_interval, _next_idle, _ring, _pupil, _closed, _x_eye, _brow, _draw_idle, draw_face, OvoUI, log, get_ui]
+simple_name: _rand_interval
+  raw bytecode: 33 20:0a:0f:80:39:20:28:12:02:14:07:82:36:01:c0:22:8f:50:b0:80:55:88:f0:b0:81:55:ed:22:97:39:f8:f2:63
+  prelude: (5, 0, 0, 0, 0, 0)
+  args: []
+  line info: 80:39:20:28
+  12:02       LOAD_GLOBAL os
+  14:07       LOAD_METHOD urandom
+  82          LOAD_CONST_SMALL_INT 2 
+  36:01       CALL_METHOD 1
+  c0          STORE_FAST 0 
+  22:8f:50    LOAD_CONST_SMALL_INT 2000
+  b0          LOAD_FAST 0 
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  88          LOAD_CONST_SMALL_INT 8 
+  f0          BINARY_OP 25 __lshift__ 
+  b0          LOAD_FAST 0 
+  81          LOAD_CONST_SMALL_INT 1 
+  55          LOAD_SUBSCR 
+  ed          BINARY_OP 22 __or__ 
+  22:97:39    LOAD_CONST_SMALL_INT 3001
+  f8          BINARY_OP 33 __mod__ 
+  f2          BINARY_OP 27 __add__ 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _next_idle
+  raw bytecode: 31 28:12:10:80:3f:20:29:25:26:2e:2b:12:81:07:12:81:06:34:01:c0:b0:82:d7:44:46:12:81:06:80:55:63
+  prelude: (6, 0, 0, 0, 0, 0)
+  args: []
+  line info: 80:3f:20:29:25:26:2e:2b
+  12:81:07    LOAD_GLOBAL len
+  12:81:06    LOAD_GLOBAL _IDLE_POOL
+  34:01       CALL_FUNCTION 1
+  c0          STORE_FAST 0 
+  b0          LOAD_FAST 0 
+  82          LOAD_CONST_SMALL_INT 2 
+  d7          BINARY_OP 0 __lt__ 
+  44:46       POP_JUMP_IF_FALSE 6
+  12:81:06    LOAD_GLOBAL _IDLE_POOL
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _ring
+  raw bytecode: 29 e0:84:01:10:12:37:81:0f:23:2d:80:49:b0:14:13:b1:12:81:00:b2:b2:81:50:b3:36:07:59:51:63
+  prelude: (13, 0, 0, 4, 0, 2)
+  args: ['d', 'cx', 'r', 'm']
+  line info: 80:49
+  b0          LOAD_FAST 0 
+  14:13       LOAD_METHOD ellipse
+  b1          LOAD_FAST 1 
+  12:81:00    LOAD_GLOBAL _EYE_Y
+  b2          LOAD_FAST 2 
+  b2          LOAD_FAST 2 
+  81          LOAD_CONST_SMALL_INT 1 
+  50          LOAD_CONST_FALSE 
+  b3          LOAD_FAST 3 
+  36:07       CALL_METHOD 7
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _pupil
+  raw bytecode: 49 ea:84:80:01:16:14:37:81:0f:23:20:21:27:80:4d:25:b2:80:d8:44:5a:b0:14:13:b1:b3:f2:12:81:00:b4:f2:b2:b5:51:de:44:43:b2:42:41:b5:81:52:36:06:59:51:63
+  prelude: (14, 0, 0, 6, 0, 4)
+  args: ['d', 'cx', 'r', 'dx', 'dy', 'yr']
+  line info: 80:4d:25
+  b2          LOAD_FAST 2 
+  80          LOAD_CONST_SMALL_INT 0 
+  d8          BINARY_OP 1 __gt__ 
+  44:5a       POP_JUMP_IF_FALSE 26
+  b0          LOAD_FAST 0 
+  14:13       LOAD_METHOD ellipse
+  b1          LOAD_FAST 1 
+  b3          LOAD_FAST 3 
+  f2          BINARY_OP 27 __add__ 
+  12:81:00    LOAD_GLOBAL _EYE_Y
+  b4          LOAD_FAST 4 
+  f2          BINARY_OP 27 __add__ 
+  b2          LOAD_FAST 2 
+  b5          LOAD_FAST 5 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  44:43       POP_JUMP_IF_FALSE 3
+  b2          LOAD_FAST 2 
+  42:41       JUMP 1
+  b5          LOAD_FAST 5 
+  81          LOAD_CONST_SMALL_INT 1 
+  52          LOAD_CONST_TRUE 
+  36:06       CALL_METHOD 6
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _closed
+  raw bytecode: 30 c3:01:0e:15:37:81:0f:23:80:52:b0:14:16:b1:b2:f3:12:81:00:b2:82:f4:81:f2:81:36:04:59:51:63
+  prelude: (9, 0, 0, 3, 0, 1)
+  args: ['d', 'cx', 'r']
+  line info: 80:52
+  b0          LOAD_FAST 0 
+  14:16       LOAD_METHOD hline
+  b1          LOAD_FAST 1 
+  b2          LOAD_FAST 2 
+  f3          BINARY_OP 28 __sub__ 
+  12:81:00    LOAD_GLOBAL _EYE_Y
+  b2          LOAD_FAST 2 
+  82          LOAD_CONST_SMALL_INT 2 
+  f4          BINARY_OP 29 __mul__ 
+  81          LOAD_CONST_SMALL_INT 1 
+  f2          BINARY_OP 27 __add__ 
+  81          LOAD_CONST_SMALL_INT 1 
+  36:04       CALL_METHOD 4
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _x_eye
+  raw bytecode: 57 42:0e:17:37:81:0f:80:56:37:b0:14:18:b1:8a:f3:12:81:00:8a:f3:b1:8a:f2:12:81:00:8a:f2:81:36:05:59:b0:14:18:b1:8a:f3:12:81:00:8a:f2:b1:8a:f2:12:81:00:8a:f3:81:36:05:59:51:63
+  prelude: (9, 0, 0, 2, 0, 0)
+  args: ['d', 'cx']
+  line info: 80:56:37
+  b0          LOAD_FAST 0 
+  14:18       LOAD_METHOD line
+  b1          LOAD_FAST 1 
+  8a          LOAD_CONST_SMALL_INT 10 
+  f3          BINARY_OP 28 __sub__ 
+  12:81:00    LOAD_GLOBAL _EYE_Y
+  8a          LOAD_CONST_SMALL_INT 10 
+  f3          BINARY_OP 28 __sub__ 
+  b1          LOAD_FAST 1 
+  8a          LOAD_CONST_SMALL_INT 10 
+  f2          BINARY_OP 27 __add__ 
+  12:81:00    LOAD_GLOBAL _EYE_Y
+  8a          LOAD_CONST_SMALL_INT 10 
+  f2          BINARY_OP 27 __add__ 
+  81          LOAD_CONST_SMALL_INT 1 
+  36:05       CALL_METHOD 5
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:18       LOAD_METHOD line
+  b1          LOAD_FAST 1 
+  8a          LOAD_CONST_SMALL_INT 10 
+  f3          BINARY_OP 28 __sub__ 
+  12:81:00    LOAD_GLOBAL _EYE_Y
+  8a          LOAD_CONST_SMALL_INT 10 
+  f2          BINARY_OP 27 __add__ 
+  b1          LOAD_FAST 1 
+  8a          LOAD_CONST_SMALL_INT 10 
+  f2          BINARY_OP 27 __add__ 
+  12:81:00    LOAD_GLOBAL _EYE_Y
+  8a          LOAD_CONST_SMALL_INT 10 
+  f3          BINARY_OP 28 __sub__ 
+  81          LOAD_CONST_SMALL_INT 1 
+  36:05       CALL_METHOD 5
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _brow
+  raw bytecode: 120 e0:05:22:19:37:81:0f:81:10:81:11:80:5c:26:2f:26:31:26:35:26:b2:10:1a:d9:44:4f:b0:14:16:b1:8d:f3:81:9b:81:36:04:59:42:cd:80:b2:10:1b:d9:44:51:b0:14:13:b1:86:90:86:81:50:12:81:04:36:07:59:42:76:b2:10:1c:d9:44:55:b0:14:18:b1:8d:b3:f4:f3:80:b1:8d:b3:f4:f2:85:81:36:05:59:42:5b:b2:10:1d:d9:44:55:b0:14:18:b1:8d:b3:f4:f3:85:b1:8d:b3:f4:f2:80:81:36:05:59:42:40:51:63
+  prelude: (13, 0, 0, 4, 0, 1)
+  args: ['d', 'cx', 'style', 'inner']
+  line info: 80:5c:26:2f:26:31:26:35:26
+  b2          LOAD_FAST 2 
+  10:1a       LOAD_CONST_STRING flat
+  d9          BINARY_OP 2 __eq__ 
+  44:4f       POP_JUMP_IF_FALSE 15
+  b0          LOAD_FAST 0 
+  14:16       LOAD_METHOD hline
+  b1          LOAD_FAST 1 
+  8d          LOAD_CONST_SMALL_INT 13 
+  f3          BINARY_OP 28 __sub__ 
+  81          LOAD_CONST_SMALL_INT 1 
+  9b          LOAD_CONST_SMALL_INT 27 
+  81          LOAD_CONST_SMALL_INT 1 
+  36:04       CALL_METHOD 4
+  59          POP_TOP 
+  42:cd:80    JUMP 77
+  b2          LOAD_FAST 2 
+  10:1b       LOAD_CONST_STRING raised
+  d9          BINARY_OP 2 __eq__ 
+  44:51       POP_JUMP_IF_FALSE 17
+  b0          LOAD_FAST 0 
+  14:13       LOAD_METHOD ellipse
+  b1          LOAD_FAST 1 
+  86          LOAD_CONST_SMALL_INT 6 
+  90          LOAD_CONST_SMALL_INT 16 
+  86          LOAD_CONST_SMALL_INT 6 
+  81          LOAD_CONST_SMALL_INT 1 
+  50          LOAD_CONST_FALSE 
+  12:81:04    LOAD_GLOBAL _TOP
+  36:07       CALL_METHOD 7
+  59          POP_TOP 
+  42:76       JUMP 54
+  b2          LOAD_FAST 2 
+  10:1c       LOAD_CONST_STRING angry
+  d9          BINARY_OP 2 __eq__ 
+  44:55       POP_JUMP_IF_FALSE 21
+  b0          LOAD_FAST 0 
+  14:18       LOAD_METHOD line
+  b1          LOAD_FAST 1 
+  8d          LOAD_CONST_SMALL_INT 13 
+  b3          LOAD_FAST 3 
+  f4          BINARY_OP 29 __mul__ 
+  f3          BINARY_OP 28 __sub__ 
+  80          LOAD_CONST_SMALL_INT 0 
+  b1          LOAD_FAST 1 
+  8d          LOAD_CONST_SMALL_INT 13 
+  b3          LOAD_FAST 3 
+  f4          BINARY_OP 29 __mul__ 
+  f2          BINARY_OP 27 __add__ 
+  85          LOAD_CONST_SMALL_INT 5 
+  81          LOAD_CONST_SMALL_INT 1 
+  36:05       CALL_METHOD 5
+  59          POP_TOP 
+  42:5b       JUMP 27
+  b2          LOAD_FAST 2 
+  10:1d       LOAD_CONST_STRING sad
+  d9          BINARY_OP 2 __eq__ 
+  44:55       POP_JUMP_IF_FALSE 21
+  b0          LOAD_FAST 0 
+  14:18       LOAD_METHOD line
+  b1          LOAD_FAST 1 
+  8d          LOAD_CONST_SMALL_INT 13 
+  b3          LOAD_FAST 3 
+  f4          BINARY_OP 29 __mul__ 
+  f3          BINARY_OP 28 __sub__ 
+  85          LOAD_CONST_SMALL_INT 5 
+  b1          LOAD_FAST 1 
+  8d          LOAD_CONST_SMALL_INT 13 
+  b3          LOAD_FAST 3 
+  f4          BINARY_OP 29 __mul__ 
+  f2          BINARY_OP 27 __add__ 
+  80          LOAD_CONST_SMALL_INT 0 
+  81          LOAD_CONST_SMALL_INT 1 
+  36:05       CALL_METHOD 5
+  59          POP_TOP 
+  42:40       JUMP 0
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _draw_idle
+  raw bytecode: 579 82:10:6a:1e:37:81:12:80:67:46:35:27:34:46:29:2a:2d:2d:26:2c:27:28:2e:46:2c:27:31:46:2c:27:2c:39:46:29:2b:29:2a:2e:46:2c:27:2c:2e:47:38:27:31:2b:2e:46:2c:27:28:4d:2c:27:b1:10:1f:d9:44:70:12:81:02:88:2a:02:12:81:03:78:2a:02:2a:02:5f:4b:1c:30:02:c2:c3:12:12:b0:b2:34:02:59:12:14:b0:b2:88:10:20:b3:10:21:81:34:84:03:59:42:22:42:d3:83:b1:10:22:d9:44:6d:12:12:b0:12:81:02:34:02:59:12:14:b0:12:81:02:8a:34:03:59:12:12:b0:12:81:03:10:23:8e:34:82:02:59:12:14:b0:12:81:03:85:34:03:59:42:a0:83:b1:10:1b:d9:44:69:12:81:02:12:81:03:2a:02:5f:4b:1b:c2:12:12:b0:b2:34:02:59:12:14:b0:b2:88:34:03:59:12:19:b0:b2:10:1b:34:03:59:42:23:42:f1:82:b1:10:24:d9:44:64:12:81:02:12:81:03:2a:02:5f:4b:16:c2:12:12:b0:b2:34:02:59:12:14:b0:b2:88:10:20:88:34:82:03:59:42:28:42:c7:82:b1:10:1c:d9:44:78:12:81:02:12:81:03:2a:02:5f:4b:2a:c2:12:12:b0:b2:34:02:59:12:14:b0:b2:88:10:21:83:34:82:03:59:12:19:b0:b2:10:1c:b2:12:81:02:d9:44:43:81:42:41:7f:34:04:59:42:14:42:89:82:b1:10:25:d9:44:75:12:15:b0:12:81:02:34:02:59:12:19:b0:12:81:02:10:1a:34:03:59:12:12:b0:12:81:03:34:02:59:12:14:b0:12:81:03:89:34:03:59:12:19:b0:12:81:03:10:1b:34:03:59:42:ce:81:b1:10:26:d9:44:6d:12:81:02:12:81:03:2a:02:5f:4b:1f:c2:12:12:b0:b2:34:02:59:12:14:b0:b2:8b:10:27:83:34:82:03:59:12:19:b0:b2:10:1a:34:03:59:42:1f:42:9b:81:b1:10:28:d9:44:c9:80:12:81:02:87:7c:2a:03:12:81:03:79:84:2a:03:2a:02:5f:4b:1d:30:03:c2:c3:c4:12:12:b0:b2:34:02:59:12:14:b0:b2:88:10:20:b3:10:21:b4:34:84:03:59:42:21:12:19:b0:12:81:02:10:1b:34:03:59:12:19:b0:12:81:03:10:1a:34:03:59:42:cb:80:b1:10:29:d9:44:68:12:81:02:12:81:03:2a:02:5f:4b:1b:c2:12:12:b0:b2:34:02:59:12:14:b0:b2:8c:34:03:59:12:19:b0:b2:10:1b:34:03:59:42:23:42:5d:12:81:02:12:81:03:2a:02:5f:4b:12:c2:12:12:b0:b2:34:02:59:12:14:b0:b2:88:34:03:59:42:2c:51:63
+  prelude: (17, 0, 0, 2, 0, 0)
+  args: ['d', 'kind']
+  line info: 80:67:46:35:27:34:46:29:2a:2d:2d:26:2c:27:28:2e:46:2c:27:31:46:2c:27:2c:39:46:29:2b:29:2a:2e:46:2c:27:2c:2e:47:38:27:31:2b:2e:46:2c:27:28:4d:2c:27
+  b1          LOAD_FAST 1 
+  10:1f       LOAD_CONST_STRING cross
+  d9          BINARY_OP 2 __eq__ 
+  44:70       POP_JUMP_IF_FALSE 48
+  12:81:02    LOAD_GLOBAL _LX
+  88          LOAD_CONST_SMALL_INT 8 
+  2a:02       BUILD_TUPLE 2
+  12:81:03    LOAD_GLOBAL _RX
+  78          LOAD_CONST_SMALL_INT -8 
+  2a:02       BUILD_TUPLE 2
+  2a:02       BUILD_TUPLE 2
+  5f          GET_ITER_STACK 
+  4b:1c       FOR_ITER 28
+  30:02       UNPACK_SEQUENCE 2
+  c2          STORE_FAST 2 
+  c3          STORE_FAST 3 
+  12:12       LOAD_GLOBAL _ring
+  b0          LOAD_FAST 0 
+  b2          LOAD_FAST 2 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  12:14       LOAD_GLOBAL _pupil
+  b0          LOAD_FAST 0 
+  b2          LOAD_FAST 2 
+  88          LOAD_CONST_SMALL_INT 8 
+  10:20       LOAD_CONST_STRING dx
+  b3          LOAD_FAST 3 
+  10:21       LOAD_CONST_STRING dy
+  81          LOAD_CONST_SMALL_INT 1 
+  34:84:03    CALL_FUNCTION 515
+  59          POP_TOP 
+  42:22       JUMP -30
+  42:d3:83    JUMP 467
+  b1          LOAD_FAST 1 
+  10:22       LOAD_CONST_STRING asym
+  d9          BINARY_OP 2 __eq__ 
+  44:6d       POP_JUMP_IF_FALSE 45
+  12:12       LOAD_GLOBAL _ring
+  b0          LOAD_FAST 0 
+  12:81:02    LOAD_GLOBAL _LX
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  12:14       LOAD_GLOBAL _pupil
+  b0          LOAD_FAST 0 
+  12:81:02    LOAD_GLOBAL _LX
+  8a          LOAD_CONST_SMALL_INT 10 
+  34:03       CALL_FUNCTION 3
+  59          POP_TOP 
+  12:12       LOAD_GLOBAL _ring
+  b0          LOAD_FAST 0 
+  12:81:03    LOAD_GLOBAL _RX
+  10:23       LOAD_CONST_STRING r
+  8e          LOAD_CONST_SMALL_INT 14 
+  34:82:02    CALL_FUNCTION 258
+  59          POP_TOP 
+  12:14       LOAD_GLOBAL _pupil
+  b0          LOAD_FAST 0 
+  12:81:03    LOAD_GLOBAL _RX
+  85          LOAD_CONST_SMALL_INT 5 
+  34:03       CALL_FUNCTION 3
+  59          POP_TOP 
+  42:a0:83    JUMP 416
+  b1          LOAD_FAST 1 
+  10:1b       LOAD_CONST_STRING raised
+  d9          BINARY_OP 2 __eq__ 
+  44:69       POP_JUMP_IF_FALSE 41
+  12:81:02    LOAD_GLOBAL _LX
+  12:81:03    LOAD_GLOBAL _RX
+  2a:02       BUILD_TUPLE 2
+  5f          GET_ITER_STACK 
+  4b:1b       FOR_ITER 27
+  c2          STORE_FAST 2 
+  12:12       LOAD_GLOBAL _ring
+  b0          LOAD_FAST 0 
+  b2          LOAD_FAST 2 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  12:14       LOAD_GLOBAL _pupil
+  b0          LOAD_FAST 0 
+  b2          LOAD_FAST 2 
+  88          LOAD_CONST_SMALL_INT 8 
+  34:03       CALL_FUNCTION 3
+  59          POP_TOP 
+  12:19       LOAD_GLOBAL _brow
+  b0          LOAD_FAST 0 
+  b2          LOAD_FAST 2 
+  10:1b       LOAD_CONST_STRING raised
+  34:03       CALL_FUNCTION 3
+  59          POP_TOP 
+  42:23       JUMP -29
+  42:f1:82    JUMP 369
+  b1          LOAD_FAST 1 
+  10:24       LOAD_CONST_STRING look
+  d9          BINARY_OP 2 __eq__ 
+  44:64       POP_JUMP_IF_FALSE 36
+  12:81:02    LOAD_GLOBAL _LX
+  12:81:03    LOAD_GLOBAL _RX
+  2a:02       BUILD_TUPLE 2
+  5f          GET_ITER_STACK 
+  4b:16       FOR_ITER 22
+  c2          STORE_FAST 2 
+  12:12       LOAD_GLOBAL _ring
+  b0          LOAD_FAST 0 
+  b2          LOAD_FAST 2 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  12:14       LOAD_GLOBAL _pupil
+  b0          LOAD_FAST 0 
+  b2          LOAD_FAST 2 
+  88          LOAD_CONST_SMALL_INT 8 
+  10:20       LOAD_CONST_STRING dx
+  88          LOAD_CONST_SMALL_INT 8 
+  34:82:03    CALL_FUNCTION 259
+  59          POP_TOP 
+  42:28       JUMP -24
+  42:c7:82    JUMP 327
+  b1          LOAD_FAST 1 
+  10:1c       LOAD_CONST_STRING angry
+  d9          BINARY_OP 2 __eq__ 
+  44:78       POP_JUMP_IF_FALSE 56
+  12:81:02    LOAD_GLOBAL _LX
+  12:81:03    LOAD_GLOBAL _RX
+  2a:02       BUILD_TUPLE 2
+  5f          GET_ITER_STACK 
+  4b:2a       FOR_ITER 42
+  c2          STORE_FAST 2 
+  12:12       LOAD_GLOBAL _ring
+  b0          LOAD_FAST 0 
+  b2          LOAD_FAST 2 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  12:14       LOAD_GLOBAL _pupil
+  b0          LOAD_FAST 0 
+  b2          LOAD_FAST 2 
+  88          LOAD_CONST_SMALL_INT 8 
+  10:21       LOAD_CONST_STRING dy
+  83          LOAD_CONST_SMALL_INT 3 
+  34:82:03    CALL_FUNCTION 259
+  59          POP_TOP 
+  12:19       LOAD_GLOBAL _brow
+  b0          LOAD_FAST 0 
+  b2          LOAD_FAST 2 
+  10:1c       LOAD_CONST_STRING angry
+  b2          LOAD_FAST 2 
+  12:81:02    LOAD_GLOBAL _LX
+  d9          BINARY_OP 2 __eq__ 
+  44:43       POP_JUMP_IF_FALSE 3
+  81          LOAD_CONST_SMALL_INT 1 
+  42:41       JUMP 1
+  7f          LOAD_CONST_SMALL_INT -1 
+  34:04       CALL_FUNCTION 4
+  59          POP_TOP 
+  42:14       JUMP -44
+  42:89:82    JUMP 265
+  b1          LOAD_FAST 1 
+  10:25       LOAD_CONST_STRING goofy
+  d9          BINARY_OP 2 __eq__ 
+  44:75       POP_JUMP_IF_FALSE 53
+  12:15       LOAD_GLOBAL _closed
+  b0          LOAD_FAST 0 
+  12:81:02    LOAD_GLOBAL _LX
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  12:19       LOAD_GLOBAL _brow
+  b0          LOAD_FAST 0 
+  12:81:02    LOAD_GLOBAL _LX
+  10:1a       LOAD_CONST_STRING flat
+  34:03       CALL_FUNCTION 3
+  59          POP_TOP 
+  12:12       LOAD_GLOBAL _ring
+  b0          LOAD_FAST 0 
+  12:81:03    LOAD_GLOBAL _RX
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  12:14       LOAD_GLOBAL _pupil
+  b0          LOAD_FAST 0 
+  12:81:03    LOAD_GLOBAL _RX
+  89          LOAD_CONST_SMALL_INT 9 
+  34:03       CALL_FUNCTION 3
+  59          POP_TOP 
+  12:19       LOAD_GLOBAL _brow
+  b0          LOAD_FAST 0 
+  12:81:03    LOAD_GLOBAL _RX
+  10:1b       LOAD_CONST_STRING raised
+  34:03       CALL_FUNCTION 3
+  59          POP_TOP 
+  42:ce:81    JUMP 206
+  b1          LOAD_FAST 1 
+  10:26       LOAD_CONST_STRING squint
+  d9          BINARY_OP 2 __eq__ 
+  44:6d       POP_JUMP_IF_FALSE 45
+  12:81:02    LOAD_GLOBAL _LX
+  12:81:03    LOAD_GLOBAL _RX
+  2a:02       BUILD_TUPLE 2
+  5f          GET_ITER_STACK 
+  4b:1f       FOR_ITER 31
+  c2          STORE_FAST 2 
+  12:12       LOAD_GLOBAL _ring
+  b0          LOAD_FAST 0 
+  b2          LOAD_FAST 2 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  12:14       LOAD_GLOBAL _pupil
+  b0          LOAD_FAST 0 
+  b2          LOAD_FAST 2 
+  8b          LOAD_CONST_SMALL_INT 11 
+  10:27       LOAD_CONST_STRING yr
+  83          LOAD_CONST_SMALL_INT 3 
+  34:82:03    CALL_FUNCTION 259
+  59          POP_TOP 
+  12:19       LOAD_GLOBAL _brow
+  b0          LOAD_FAST 0 
+  b2          LOAD_FAST 2 
+  10:1a       LOAD_CONST_STRING flat
+  34:03       CALL_FUNCTION 3
+  59          POP_TOP 
+  42:1f       JUMP -33
+  42:9b:81    JUMP 155
+  b1          LOAD_FAST 1 
+  10:28       LOAD_CONST_STRING askew
+  d9          BINARY_OP 2 __eq__ 
+  44:c9:80    POP_JUMP_IF_FALSE 73
+  12:81:02    LOAD_GLOBAL _LX
+  87          LOAD_CONST_SMALL_INT 7 
+  7c          LOAD_CONST_SMALL_INT -4 
+  2a:03       BUILD_TUPLE 3
+  12:81:03    LOAD_GLOBAL _RX
+  79          LOAD_CONST_SMALL_INT -7 
+  84          LOAD_CONST_SMALL_INT 4 
+  2a:03       BUILD_TUPLE 3
+  2a:02       BUILD_TUPLE 2
+  5f          GET_ITER_STACK 
+  4b:1d       FOR_ITER 29
+  30:03       UNPACK_SEQUENCE 3
+  c2          STORE_FAST 2 
+  c3          STORE_FAST 3 
+  c4          STORE_FAST 4 
+  12:12       LOAD_GLOBAL _ring
+  b0          LOAD_FAST 0 
+  b2          LOAD_FAST 2 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  12:14       LOAD_GLOBAL _pupil
+  b0          LOAD_FAST 0 
+  b2          LOAD_FAST 2 
+  88          LOAD_CONST_SMALL_INT 8 
+  10:20       LOAD_CONST_STRING dx
+  b3          LOAD_FAST 3 
+  10:21       LOAD_CONST_STRING dy
+  b4          LOAD_FAST 4 
+  34:84:03    CALL_FUNCTION 515
+  59          POP_TOP 
+  42:21       JUMP -31
+  12:19       LOAD_GLOBAL _brow
+  b0          LOAD_FAST 0 
+  12:81:02    LOAD_GLOBAL _LX
+  10:1b       LOAD_CONST_STRING raised
+  34:03       CALL_FUNCTION 3
+  59          POP_TOP 
+  12:19       LOAD_GLOBAL _brow
+  b0          LOAD_FAST 0 
+  12:81:03    LOAD_GLOBAL _RX
+  10:1a       LOAD_CONST_STRING flat
+  34:03       CALL_FUNCTION 3
+  59          POP_TOP 
+  42:cb:80    JUMP 75
+  b1          LOAD_FAST 1 
+  10:29       LOAD_CONST_STRING wide
+  d9          BINARY_OP 2 __eq__ 
+  44:68       POP_JUMP_IF_FALSE 40
+  12:81:02    LOAD_GLOBAL _LX
+  12:81:03    LOAD_GLOBAL _RX
+  2a:02       BUILD_TUPLE 2
+  5f          GET_ITER_STACK 
+  4b:1b       FOR_ITER 27
+  c2          STORE_FAST 2 
+  12:12       LOAD_GLOBAL _ring
+  b0          LOAD_FAST 0 
+  b2          LOAD_FAST 2 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  12:14       LOAD_GLOBAL _pupil
+  b0          LOAD_FAST 0 
+  b2          LOAD_FAST 2 
+  8c          LOAD_CONST_SMALL_INT 12 
+  34:03       CALL_FUNCTION 3
+  59          POP_TOP 
+  12:19       LOAD_GLOBAL _brow
+  b0          LOAD_FAST 0 
+  b2          LOAD_FAST 2 
+  10:1b       LOAD_CONST_STRING raised
+  34:03       CALL_FUNCTION 3
+  59          POP_TOP 
+  42:23       JUMP -29
+  42:5d       JUMP 29
+  12:81:02    LOAD_GLOBAL _LX
+  12:81:03    LOAD_GLOBAL _RX
+  2a:02       BUILD_TUPLE 2
+  5f          GET_ITER_STACK 
+  4b:12       FOR_ITER 18
+  c2          STORE_FAST 2 
+  12:12       LOAD_GLOBAL _ring
+  b0          LOAD_FAST 0 
+  b2          LOAD_FAST 2 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  12:14       LOAD_GLOBAL _pupil
+  b0          LOAD_FAST 0 
+  b2          LOAD_FAST 2 
+  88          LOAD_CONST_SMALL_INT 8 
+  34:03       CALL_FUNCTION 3
+  59          POP_TOP 
+  42:2c       JUMP -20
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: draw_face
+  raw bytecode: 389 f3:01:4e:2a:37:6c:81:13:80:a3:20:26:2c:27:28:2e:26:2c:27:2e:2b:2e:26:28:2c:27:2d:26:2c:2d:2e:26:2c:2d:39:26:2c:2b:26:2c:27:58:b1:10:0b:d9:44:69:12:81:02:12:81:03:2a:02:5f:4b:1b:c3:12:12:b0:b3:34:02:59:12:14:b0:b3:8b:34:03:59:12:19:b0:b3:10:1b:34:03:59:42:23:42:aa:82:b1:10:2b:d9:44:7a:12:81:02:12:81:03:2a:02:5f:4b:16:c3:12:12:b0:b3:34:02:59:12:14:b0:b3:88:10:21:7a:34:82:03:59:42:28:12:19:b0:12:81:02:10:1a:34:03:59:12:19:b0:12:81:03:10:1b:34:03:59:42:ea:81:b1:10:0d:d9:44:68:b2:44:43:8b:42:41:86:c4:12:81:02:12:81:03:2a:02:5f:4b:12:c3:12:12:b0:b3:34:02:59:12:14:b0:b3:b4:34:03:59:42:2c:42:bc:81:b1:10:2c:d9:44:67:12:81:02:12:81:03:2a:02:5f:4b:19:c3:12:12:b0:b3:10:2d:12:81:04:34:82:02:59:12:19:b0:b3:10:1b:34:03:59:42:25:42:8f:81:b1:10:2e:d9:44:72:12:81:02:12:81:03:2a:02:5f:4b:24:c3:12:12:b0:b3:10:2d:12:81:05:34:82:02:59:12:19:b0:b3:10:1d:b3:12:81:02:d9:44:43:81:42:41:7f:34:04:59:42:1a:42:d7:80:b1:10:2f:d9:44:57:12:81:02:12:81:03:2a:02:5f:4b:0a:c3:12:15:b0:b3:34:02:59:42:34:42:7a:b1:10:30:d9:44:6b:12:81:02:12:81:03:2a:02:5f:4b:1e:c3:12:17:b0:b3:34:02:59:12:19:b0:b3:10:1c:b3:12:81:02:d9:44:43:81:42:41:7f:34:04:59:42:20:42:49:12:1e:b0:12:81:08:34:02:59:51:63
+  prelude: (15, 0, 0, 3, 0, 1)
+  args: ['d', 'state', 'frame']
+  line info: 80:a3:20:26:2c:27:28:2e:26:2c:27:2e:2b:2e:26:28:2c:27:2d:26:2c:2d:2e:26:2c:2d:39:26:2c:2b:26:2c:27:58
+  b1          LOAD_FAST 1 
+  10:0b       LOAD_CONST_STRING listening
+  d9          BINARY_OP 2 __eq__ 
+  44:69       POP_JUMP_IF_FALSE 41
+  12:81:02    LOAD_GLOBAL _LX
+  12:81:03    LOAD_GLOBAL _RX
+  2a:02       BUILD_TUPLE 2
+  5f          GET_ITER_STACK 
+  4b:1b       FOR_ITER 27
+  c3          STORE_FAST 3 
+  12:12       LOAD_GLOBAL _ring
+  b0          LOAD_FAST 0 
+  b3          LOAD_FAST 3 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  12:14       LOAD_GLOBAL _pupil
+  b0          LOAD_FAST 0 
+  b3          LOAD_FAST 3 
+  8b          LOAD_CONST_SMALL_INT 11 
+  34:03       CALL_FUNCTION 3
+  59          POP_TOP 
+  12:19       LOAD_GLOBAL _brow
+  b0          LOAD_FAST 0 
+  b3          LOAD_FAST 3 
+  10:1b       LOAD_CONST_STRING raised
+  34:03       CALL_FUNCTION 3
+  59          POP_TOP 
+  42:23       JUMP -29
+  42:aa:82    JUMP 298
+  b1          LOAD_FAST 1 
+  10:2b       LOAD_CONST_STRING thinking
+  d9          BINARY_OP 2 __eq__ 
+  44:7a       POP_JUMP_IF_FALSE 58
+  12:81:02    LOAD_GLOBAL _LX
+  12:81:03    LOAD_GLOBAL _RX
+  2a:02       BUILD_TUPLE 2
+  5f          GET_ITER_STACK 
+  4b:16       FOR_ITER 22
+  c3          STORE_FAST 3 
+  12:12       LOAD_GLOBAL _ring
+  b0          LOAD_FAST 0 
+  b3          LOAD_FAST 3 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  12:14       LOAD_GLOBAL _pupil
+  b0          LOAD_FAST 0 
+  b3          LOAD_FAST 3 
+  88          LOAD_CONST_SMALL_INT 8 
+  10:21       LOAD_CONST_STRING dy
+  7a          LOAD_CONST_SMALL_INT -6 
+  34:82:03    CALL_FUNCTION 259
+  59          POP_TOP 
+  42:28       JUMP -24
+  12:19       LOAD_GLOBAL _brow
+  b0          LOAD_FAST 0 
+  12:81:02    LOAD_GLOBAL _LX
+  10:1a       LOAD_CONST_STRING flat
+  34:03       CALL_FUNCTION 3
+  59          POP_TOP 
+  12:19       LOAD_GLOBAL _brow
+  b0          LOAD_FAST 0 
+  12:81:03    LOAD_GLOBAL _RX
+  10:1b       LOAD_CONST_STRING raised
+  34:03       CALL_FUNCTION 3
+  59          POP_TOP 
+  42:ea:81    JUMP 234
+  b1          LOAD_FAST 1 
+  10:0d       LOAD_CONST_STRING speaking
+  d9          BINARY_OP 2 __eq__ 
+  44:68       POP_JUMP_IF_FALSE 40
+  b2          LOAD_FAST 2 
+  44:43       POP_JUMP_IF_FALSE 3
+  8b          LOAD_CONST_SMALL_INT 11 
+  42:41       JUMP 1
+  86          LOAD_CONST_SMALL_INT 6 
+  c4          STORE_FAST 4 
+  12:81:02    LOAD_GLOBAL _LX
+  12:81:03    LOAD_GLOBAL _RX
+  2a:02       BUILD_TUPLE 2
+  5f          GET_ITER_STACK 
+  4b:12       FOR_ITER 18
+  c3          STORE_FAST 3 
+  12:12       LOAD_GLOBAL _ring
+  b0          LOAD_FAST 0 
+  b3          LOAD_FAST 3 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  12:14       LOAD_GLOBAL _pupil
+  b0          LOAD_FAST 0 
+  b3          LOAD_FAST 3 
+  b4          LOAD_FAST 4 
+  34:03       CALL_FUNCTION 3
+  59          POP_TOP 
+  42:2c       JUMP -20
+  42:bc:81    JUMP 188
+  b1          LOAD_FAST 1 
+  10:2c       LOAD_CONST_STRING happy
+  d9          BINARY_OP 2 __eq__ 
+  44:67       POP_JUMP_IF_FALSE 39
+  12:81:02    LOAD_GLOBAL _LX
+  12:81:03    LOAD_GLOBAL _RX
+  2a:02       BUILD_TUPLE 2
+  5f          GET_ITER_STACK 
+  4b:19       FOR_ITER 25
+  c3          STORE_FAST 3 
+  12:12       LOAD_GLOBAL _ring
+  b0          LOAD_FAST 0 
+  b3          LOAD_FAST 3 
+  10:2d       LOAD_CONST_STRING m
+  12:81:04    LOAD_GLOBAL _TOP
+  34:82:02    CALL_FUNCTION 258
+  59          POP_TOP 
+  12:19       LOAD_GLOBAL _brow
+  b0          LOAD_FAST 0 
+  b3          LOAD_FAST 3 
+  10:1b       LOAD_CONST_STRING raised
+  34:03       CALL_FUNCTION 3
+  59          POP_TOP 
+  42:25       JUMP -27
+  42:8f:81    JUMP 143
+  b1          LOAD_FAST 1 
+  10:2e       LOAD_CONST_STRING sleepy
+  d9          BINARY_OP 2 __eq__ 
+  44:72       POP_JUMP_IF_FALSE 50
+  12:81:02    LOAD_GLOBAL _LX
+  12:81:03    LOAD_GLOBAL _RX
+  2a:02       BUILD_TUPLE 2
+  5f          GET_ITER_STACK 
+  4b:24       FOR_ITER 36
+  c3          STORE_FAST 3 
+  12:12       LOAD_GLOBAL _ring
+  b0          LOAD_FAST 0 
+  b3          LOAD_FAST 3 
+  10:2d       LOAD_CONST_STRING m
+  12:81:05    LOAD_GLOBAL _BOT
+  34:82:02    CALL_FUNCTION 258
+  59          POP_TOP 
+  12:19       LOAD_GLOBAL _brow
+  b0          LOAD_FAST 0 
+  b3          LOAD_FAST 3 
+  10:1d       LOAD_CONST_STRING sad
+  b3          LOAD_FAST 3 
+  12:81:02    LOAD_GLOBAL _LX
+  d9          BINARY_OP 2 __eq__ 
+  44:43       POP_JUMP_IF_FALSE 3
+  81          LOAD_CONST_SMALL_INT 1 
+  42:41       JUMP 1
+  7f          LOAD_CONST_SMALL_INT -1 
+  34:04       CALL_FUNCTION 4
+  59          POP_TOP 
+  42:1a       JUMP -38
+  42:d7:80    JUMP 87
+  b1          LOAD_FAST 1 
+  10:2f       LOAD_CONST_STRING dismissed
+  d9          BINARY_OP 2 __eq__ 
+  44:57       POP_JUMP_IF_FALSE 23
+  12:81:02    LOAD_GLOBAL _LX
+  12:81:03    LOAD_GLOBAL _RX
+  2a:02       BUILD_TUPLE 2
+  5f          GET_ITER_STACK 
+  4b:0a       FOR_ITER 10
+  c3          STORE_FAST 3 
+  12:15       LOAD_GLOBAL _closed
+  b0          LOAD_FAST 0 
+  b3          LOAD_FAST 3 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  42:34       JUMP -12
+  42:7a       JUMP 58
+  b1          LOAD_FAST 1 
+  10:30       LOAD_CONST_STRING error
+  d9          BINARY_OP 2 __eq__ 
+  44:6b       POP_JUMP_IF_FALSE 43
+  12:81:02    LOAD_GLOBAL _LX
+  12:81:03    LOAD_GLOBAL _RX
+  2a:02       BUILD_TUPLE 2
+  5f          GET_ITER_STACK 
+  4b:1e       FOR_ITER 30
+  c3          STORE_FAST 3 
+  12:17       LOAD_GLOBAL _x_eye
+  b0          LOAD_FAST 0 
+  b3          LOAD_FAST 3 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  12:19       LOAD_GLOBAL _brow
+  b0          LOAD_FAST 0 
+  b3          LOAD_FAST 3 
+  10:1c       LOAD_CONST_STRING angry
+  b3          LOAD_FAST 3 
+  12:81:02    LOAD_GLOBAL _LX
+  d9          BINARY_OP 2 __eq__ 
+  44:43       POP_JUMP_IF_FALSE 3
+  81          LOAD_CONST_SMALL_INT 1 
+  42:41       JUMP 1
+  7f          LOAD_CONST_SMALL_INT -1 
+  34:04       CALL_FUNCTION 4
+  59          POP_TOP 
+  42:20       JUMP -32
+  42:49       JUMP 9
+  12:1e       LOAD_GLOBAL _draw_idle
+  b0          LOAD_FAST 0 
+  12:81:08    LOAD_GLOBAL _idle
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: OvoUI
+  raw bytecode: 140 08:4a:0e:8b:d2:88:20:84:0d:84:15:84:10:64:20:64:60:88:07:88:0b:88:12:84:09:84:09:84:09:84:11:84:0a:64:40:84:09:84:2d:11:81:14:16:81:15:10:0e:16:81:16:51:2a:01:53:33:00:16:33:32:01:16:45:32:02:16:48:32:03:16:4d:32:04:16:4a:32:05:16:4f:50:2a:01:53:33:06:16:50:51:2a:01:53:33:07:16:51:51:2a:01:53:33:08:16:52:32:09:16:54:32:0a:16:55:32:0b:16:57:32:0c:16:58:32:0d:16:5d:32:0e:16:5e:32:0f:16:5f:32:10:16:5a:32:11:16:62:51:63
+  prelude: (2, 0, 0, 0, 0, 0)
+  args: []
+  line info: 8b:d2:88:20:84:0d:84:15:84:10:64:20:64:60:88:07:88:0b:88:12:84:09:84:09:84:09:84:11:84:0a:64:40:84:09:84:2d
+  11:81:14    LOAD_NAME __name__
+  16:81:15    STORE_NAME __module__
+  10:0e       LOAD_CONST_STRING OvoUI
+  16:81:16    STORE_NAME __qualname__
+  51          LOAD_CONST_NONE 
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:00       MAKE_FUNCTION_DEFARGS 0
+  16:33       STORE_NAME __init__
+  32:01       MAKE_FUNCTION 1
+  16:45       STORE_NAME _line
+  32:02       MAKE_FUNCTION 2
+  16:48       STORE_NAME _draw
+  32:03       MAKE_FUNCTION 3
+  16:4d       STORE_NAME _draw_line
+  32:04       MAKE_FUNCTION 4
+  16:4a       STORE_NAME _blink_on_face
+  32:05       MAKE_FUNCTION 5
+  16:4f       STORE_NAME set_word
+  50          LOAD_CONST_FALSE 
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:06       MAKE_FUNCTION_DEFARGS 6
+  16:50       STORE_NAME note_face
+  51          LOAD_CONST_NONE 
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:07       MAKE_FUNCTION_DEFARGS 7
+  16:51       STORE_NAME finish_speaking
+  51          LOAD_CONST_NONE 
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:08       MAKE_FUNCTION_DEFARGS 8
+  16:52       STORE_NAME status
+  32:09       MAKE_FUNCTION 9
+  16:54       STORE_NAME emotion
+  32:0a       MAKE_FUNCTION 10
+  16:55       STORE_NAME subtitle
+  32:0b       MAKE_FUNCTION 11
+  16:57       STORE_NAME clear_subtitles
+  32:0c       MAKE_FUNCTION 12
+  16:58       STORE_NAME splash
+  32:0d       MAKE_FUNCTION 13
+  16:5d       STORE_NAME bind_code
+  32:0e       MAKE_FUNCTION 14
+  16:5e       STORE_NAME unbind
+  32:0f       MAKE_FUNCTION 15
+  16:5f       STORE_NAME error_screen
+  32:10       MAKE_FUNCTION 16
+  16:5a       STORE_NAME tick
+  32:11       MAKE_FUNCTION 17
+  16:62       STORE_NAME attach
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [__init__, _line, _draw, _draw_line, _blink_on_face, set_word, note_face, finish_speaking, status, emotion, subtitle, clear_subtitles, splash, bind_code, unbind, error_screen, tick, attach]
+simple_name: __init__
+  raw bytecode: 191 ca:03:38:33:81:18:37:80:d3:26:22:25:47:52:4c:32:22:71:20:29:2b:24:25:25:25:24:24:24:25:25:24:b1:51:de:44:e5:80:48:16:80:51:1b:34:c2:b2:14:35:36:00:44:48:12:81:19:23:06:34:01:65:4a:26:57:12:81:1a:df:44:43:59:4a:1c:57:12:81:1b:df:44:54:c3:49:0a:12:81:17:10:36:b3:34:02:59:51:51:c3:28:03:5d:4a:01:5d:48:07:12:04:34:00:c1:4a:1e:57:12:81:1b:df:44:56:c3:49:0c:12:81:17:23:07:b3:34:02:59:51:c1:51:51:c3:28:03:5d:4a:01:5d:b1:b0:18:37:10:0a:b0:18:38:10:39:b0:18:3a:10:3b:b0:18:3c:80:b0:18:3d:80:b0:18:3e:50:b0:18:3f:10:40:b0:18:41:10:3b:b0:18:42:50:b0:18:43:b0:13:3a:b0:18:44:51:63
+  prelude: (10, 2, 0, 2, 0, 1)
+  args: ['self', 'd']
+  line info: 80:d3:26:22:25:47:52:4c:32:22:71:20:29:2b:24:25:25:25:24:24:24:25:25:24
+  b1          LOAD_FAST 1 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  44:e5:80    POP_JUMP_IF_FALSE 101
+  48:16       SETUP_EXCEPT 22
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:34       IMPORT_NAME pinutil
+  c2          STORE_FAST 2 
+  b2          LOAD_FAST 2 
+  14:35       LOAD_METHOD oled_off
+  36:00       CALL_METHOD 0
+  44:48       POP_JUMP_IF_FALSE 8
+  12:81:19    LOAD_GLOBAL OSError
+  23:06       LOAD_CONST_OBJ 'OLED disabled (pins: no_oled)'
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  4a:26       POP_EXCEPT_JUMP 38
+  57          DUP_TOP 
+  12:81:1a    LOAD_GLOBAL AttributeError
+  df          BINARY_OP 8 <exception match> 
+  44:43       POP_JUMP_IF_FALSE 3
+  59          POP_TOP 
+  4a:1c       POP_EXCEPT_JUMP 28
+  57          DUP_TOP 
+  12:81:1b    LOAD_GLOBAL Exception
+  df          BINARY_OP 8 <exception match> 
+  44:54       POP_JUMP_IF_FALSE 20
+  c3          STORE_FAST 3 
+  49:0a       SETUP_FINALLY 10
+  12:81:17    LOAD_GLOBAL print
+  10:36       LOAD_CONST_STRING [ui] pins:
+  b3          LOAD_FAST 3 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  c3          STORE_FAST 3 
+  28:03       DELETE_FAST 3
+  5d          END_FINALLY 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  48:07       SETUP_EXCEPT 7
+  12:04       LOAD_GLOBAL get_display
+  34:00       CALL_FUNCTION 0
+  c1          STORE_FAST 1 
+  4a:1e       POP_EXCEPT_JUMP 30
+  57          DUP_TOP 
+  12:81:1b    LOAD_GLOBAL Exception
+  df          BINARY_OP 8 <exception match> 
+  44:56       POP_JUMP_IF_FALSE 22
+  c3          STORE_FAST 3 
+  49:0c       SETUP_FINALLY 12
+  12:81:17    LOAD_GLOBAL print
+  23:07       LOAD_CONST_OBJ '[ui] display unavailable:'
+  b3          LOAD_FAST 3 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  c1          STORE_FAST 1 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  c3          STORE_FAST 3 
+  28:03       DELETE_FAST 3
+  5d          END_FINALLY 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:37       STORE_ATTR d
+  10:0a       LOAD_CONST_STRING ready
+  b0          LOAD_FAST 0 
+  18:38       STORE_ATTR word
+  10:39       LOAD_CONST_STRING neutral
+  b0          LOAD_FAST 0 
+  18:3a       STORE_ATTR face
+  10:3b       LOAD_CONST_STRING q1
+  b0          LOAD_FAST 0 
+  18:3c       STORE_ATTR _sub
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:3d       STORE_ATTR _sub_off
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:3e       STORE_ATTR _sub_at
+  50          LOAD_CONST_FALSE 
+  b0          LOAD_FAST 0 
+  18:3f       STORE_ATTR _bound
+  10:40       LOAD_CONST_STRING normal
+  b0          LOAD_FAST 0 
+  18:41       STORE_ATTR _mode
+  10:3b       LOAD_CONST_STRING q1
+  b0          LOAD_FAST 0 
+  18:42       STORE_ATTR _code
+  50          LOAD_CONST_FALSE 
+  b0          LOAD_FAST 0 
+  18:43       STORE_ATTR _face_lock
+  b0          LOAD_FAST 0 
+  13:3a       LOAD_ATTR face
+  b0          LOAD_FAST 0 
+  18:44       STORE_ATTR _target_face
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _line
+  raw bytecode: 69 29:18:45:81:18:80:f3:20:28:2d:45:69:20:2d:b0:13:41:10:46:d9:44:52:b0:13:42:44:48:23:08:b0:13:42:f8:42:42:23:09:c1:42:49:b0:13:3c:45:03:b0:13:38:c1:10:3b:14:47:32:00:b1:5e:34:01:36:01:c1:b1:45:03:b0:13:38:63
+  prelude: (6, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:f3:20:28:2d:45:69:20:2d
+  b0          LOAD_FAST 0 
+  13:41       LOAD_ATTR _mode
+  10:46       LOAD_CONST_STRING bind
+  d9          BINARY_OP 2 __eq__ 
+  44:52       POP_JUMP_IF_FALSE 18
+  b0          LOAD_FAST 0 
+  13:42       LOAD_ATTR _code
+  44:48       POP_JUMP_IF_FALSE 8
+  23:08       LOAD_CONST_OBJ '%s www.xiaozhi.me'
+  b0          LOAD_FAST 0 
+  13:42       LOAD_ATTR _code
+  f8          BINARY_OP 33 __mod__ 
+  42:42       JUMP 2
+  23:09       LOAD_CONST_OBJ 'www.xiaozhi.me'
+  c1          STORE_FAST 1 
+  42:49       JUMP 9
+  b0          LOAD_FAST 0 
+  13:3c       LOAD_ATTR _sub
+  45:03       JUMP_IF_TRUE_OR_POP 3
+  b0          LOAD_FAST 0 
+  13:38       LOAD_ATTR word
+  c1          STORE_FAST 1 
+  10:3b       LOAD_CONST_STRING q1
+  14:47       LOAD_METHOD join
+  32:00       MAKE_FUNCTION 0
+  b1          LOAD_FAST 1 
+  5e          GET_ITER 
+  34:01       CALL_FUNCTION 1
+  36:01       CALL_METHOD 1
+  c1          STORE_FAST 1 
+  b1          LOAD_FAST 1 
+  45:03       JUMP_IF_TRUE_OR_POP 3
+  b0          LOAD_FAST 0 
+  13:38       LOAD_ATTR word
+  63          RETURN_VALUE 
+  children: [<genexpr>]
+simple_name: <genexpr>
+  raw bytecode: 44 c1:40:0a:69:81:1e:80:fc:53:b0:53:53:4b:1c:c1:a0:12:81:1f:b1:34:01:57:5b:da:46:06:22:80:7f:d7:42:42:5a:59:44:27:b1:67:59:42:22:51:63
+  prelude: (9, 0, 1, 1, 0, 0)
+  args: ['*']
+  line info: 80:fc
+  53          LOAD_NULL 
+  b0          LOAD_FAST 0 
+  53          LOAD_NULL 
+  53          LOAD_NULL 
+  4b:1c       FOR_ITER 28
+  c1          STORE_FAST 1 
+  a0          LOAD_CONST_SMALL_INT 32 
+  12:81:1f    LOAD_GLOBAL ord
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  57          DUP_TOP 
+  5b          ROT_THREE 
+  da          BINARY_OP 3 __le__ 
+  46:06       JUMP_IF_FALSE_OR_POP 6
+  22:80:7f    LOAD_CONST_SMALL_INT 127
+  d7          BINARY_OP 0 __lt__ 
+  42:42       JUMP 2
+  5a          ROT_TWO 
+  59          POP_TOP 
+  44:27       POP_JUMP_IF_FALSE -25
+  b1          LOAD_FAST 1 
+  67          YIELD_VALUE 
+  59          POP_TOP 
+  42:22       JUMP -30
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _draw
+  raw bytecode: 34 59:2a:48:81:18:90:00:24:25:22:27:28:2a:27:2c:4b:2c:26:27:46:2e:23:32:b0:13:37:c1:b1:51:de:44:42:51:63
+  prelude: (12, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 90:00:24:25:22:27:28:2a:27:2c:4b:2c:26:27:46:2e:23:32
+  b0          LOAD_FAST 0 
+  13:37       LOAD_ATTR d
+  c1          STORE_FAST 1 
+  b1          LOAD_FAST 1 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  44:42       POP_JUMP_IF_FALSE 2
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _draw_line
+  raw bytecode: 29 51:20:4d:81:18:90:15:60:24:25:22:2d:26:27:26:2e:23:32:b0:13:37:c1:b1:51:de:44:42:51:63
+  prelude: (11, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 90:15:60:24:25:22:2d:26:27:26:2e:23:32
+  b0          LOAD_FAST 0 
+  13:37       LOAD_ATTR d
+  c1          STORE_FAST 1 
+  b1          LOAD_FAST 1 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  44:42       POP_JUMP_IF_FALSE 2
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _blink_on_face
+  raw bytecode: 28 11:0c:4a:81:18:90:25:2d:12:81:0b:46:0e:b0:13:3a:23:0a:dd:46:06:b0:13:41:10:40:d9:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 90:25:2d
+  12:81:0b    LOAD_GLOBAL _blink_on
+  46:0e       JUMP_IF_FALSE_OR_POP 14
+  b0          LOAD_FAST 0 
+  13:3a       LOAD_ATTR face
+  23:0a       LOAD_CONST_OBJ ('neutral', 'listening')
+  dd          BINARY_OP 6 <in> 
+  46:06       JUMP_IF_FALSE_OR_POP 6
+  b0          LOAD_FAST 0 
+  13:41       LOAD_ATTR _mode
+  10:40       LOAD_CONST_STRING normal
+  d9          BINARY_OP 2 __eq__ 
+  63          RETURN_VALUE 
+  children: []
+simple_name: set_word
+  raw bytecode: 20 1a:12:4f:81:18:38:90:29:27:22:24:b1:b0:13:38:d9:44:42:51:63
+  prelude: (4, 0, 0, 2, 0, 0)
+  args: ['self', 'word']
+  line info: 90:29:27:22:24
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  13:38       LOAD_ATTR word
+  d9          BINARY_OP 2 __eq__ 
+  44:42       POP_JUMP_IF_FALSE 2
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: note_face
+  raw bytecode: 21 a3:01:16:50:81:18:3a:6d:90:2f:25:22:24:23:b1:51:de:44:42:51:63
+  prelude: (5, 0, 0, 3, 0, 1)
+  args: ['self', 'face', 'lock']
+  line info: 90:2f:25:22:24:23
+  b1          LOAD_FAST 1 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  44:42       POP_JUMP_IF_FALSE 2
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: finish_speaking
+  raw bytecode: 42 a2:01:1c:51:81:18:3a:90:36:26:24:2d:22:24:24:27:24:b1:51:de:d3:44:44:b1:b0:18:44:b0:13:43:43:4a:b0:13:3a:10:0d:d9:43:42:51:63
+  prelude: (5, 0, 0, 2, 0, 1)
+  args: ['self', 'face']
+  line info: 90:36:26:24:2d:22:24:24:27:24
+  b1          LOAD_FAST 1 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:44       POP_JUMP_IF_FALSE 4
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:44       STORE_ATTR _target_face
+  b0          LOAD_FAST 0 
+  13:43       LOAD_ATTR _face_lock
+  43:4a       POP_JUMP_IF_TRUE 10
+  b0          LOAD_FAST 0 
+  13:3a       LOAD_ATTR face
+  10:0d       LOAD_CONST_STRING speaking
+  d9          BINARY_OP 2 __eq__ 
+  43:42       POP_JUMP_IF_TRUE 2
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: status
+  raw bytecode: 113 b3:01:26:52:81:18:38:3a:90:41:29:24:2c:25:24:4a:25:24:26:24:66:2e:b0:13:38:b0:13:3a:5a:c3:c4:b1:b0:18:38:b1:10:53:d9:43:46:b2:10:0d:d9:44:53:b0:13:43:43:4c:52:b0:18:43:b2:45:02:10:0d:b0:18:3a:42:53:b0:13:43:44:44:50:b0:18:43:b2:51:de:d3:44:44:b2:b0:18:3a:b0:13:3a:b0:18:44:b0:13:38:b3:dc:43:47:b0:13:3a:b4:dc:44:46:b0:14:48:36:00:59:51:63
+  prelude: (7, 0, 0, 3, 0, 1)
+  args: ['self', 'word', 'face']
+  line info: 90:41:29:24:2c:25:24:4a:25:24:26:24:66:2e
+  b0          LOAD_FAST 0 
+  13:38       LOAD_ATTR word
+  b0          LOAD_FAST 0 
+  13:3a       LOAD_ATTR face
+  5a          ROT_TWO 
+  c3          STORE_FAST 3 
+  c4          STORE_FAST 4 
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:38       STORE_ATTR word
+  b1          LOAD_FAST 1 
+  10:53       LOAD_CONST_STRING speak
+  d9          BINARY_OP 2 __eq__ 
+  43:46       POP_JUMP_IF_TRUE 6
+  b2          LOAD_FAST 2 
+  10:0d       LOAD_CONST_STRING speaking
+  d9          BINARY_OP 2 __eq__ 
+  44:53       POP_JUMP_IF_FALSE 19
+  b0          LOAD_FAST 0 
+  13:43       LOAD_ATTR _face_lock
+  43:4c       POP_JUMP_IF_TRUE 12
+  52          LOAD_CONST_TRUE 
+  b0          LOAD_FAST 0 
+  18:43       STORE_ATTR _face_lock
+  b2          LOAD_FAST 2 
+  45:02       JUMP_IF_TRUE_OR_POP 2
+  10:0d       LOAD_CONST_STRING speaking
+  b0          LOAD_FAST 0 
+  18:3a       STORE_ATTR face
+  42:53       JUMP 19
+  b0          LOAD_FAST 0 
+  13:43       LOAD_ATTR _face_lock
+  44:44       POP_JUMP_IF_FALSE 4
+  50          LOAD_CONST_FALSE 
+  b0          LOAD_FAST 0 
+  18:43       STORE_ATTR _face_lock
+  b2          LOAD_FAST 2 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:44       POP_JUMP_IF_FALSE 4
+  b2          LOAD_FAST 2 
+  b0          LOAD_FAST 0 
+  18:3a       STORE_ATTR face
+  b0          LOAD_FAST 0 
+  13:3a       LOAD_ATTR face
+  b0          LOAD_FAST 0 
+  18:44       STORE_ATTR _target_face
+  b0          LOAD_FAST 0 
+  13:38       LOAD_ATTR word
+  b3          LOAD_FAST 3 
+  dc          BINARY_OP 5 __ne__ 
+  43:47       POP_JUMP_IF_TRUE 7
+  b0          LOAD_FAST 0 
+  13:3a       LOAD_ATTR face
+  b4          LOAD_FAST 4 
+  dc          BINARY_OP 5 __ne__ 
+  44:46       POP_JUMP_IF_FALSE 6
+  b0          LOAD_FAST 0 
+  14:48       LOAD_METHOD _draw
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: emotion
+  raw bytecode: 29 1a:18:54:81:18:3a:90:53:2d:22:2e:22:24:24:b0:13:41:10:40:dc:43:45:b0:13:3f:44:42:51:63
+  prelude: (4, 0, 0, 2, 0, 0)
+  args: ['self', 'face']
+  line info: 90:53:2d:22:2e:22:24:24
+  b0          LOAD_FAST 0 
+  13:41       LOAD_ATTR _mode
+  10:40       LOAD_CONST_STRING normal
+  dc          BINARY_OP 5 __ne__ 
+  43:45       POP_JUMP_IF_TRUE 5
+  b0          LOAD_FAST 0 
+  13:3f       LOAD_ATTR _bound
+  44:42       POP_JUMP_IF_FALSE 2
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: subtitle
+  raw bytecode: 29 1a:18:55:81:18:4b:90:5c:26:27:22:24:24:29:b1:45:02:10:3b:c1:b1:b0:13:3c:d9:44:42:51:63
+  prelude: (4, 0, 0, 2, 0, 0)
+  args: ['self', 'text']
+  line info: 90:5c:26:27:22:24:24:29
+  b1          LOAD_FAST 1 
+  45:02       JUMP_IF_TRUE_OR_POP 2
+  10:3b       LOAD_CONST_STRING q1
+  c1          STORE_FAST 1 
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  13:3c       LOAD_ATTR _sub
+  d9          BINARY_OP 2 __eq__ 
+  44:42       POP_JUMP_IF_FALSE 2
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: clear_subtitles
+  raw bytecode: 23 11:12:57:81:18:90:65:2a:22:25:24:b0:13:3c:43:47:b0:13:3d:43:42:51:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 90:65:2a:22:25:24
+  b0          LOAD_FAST 0 
+  13:3c       LOAD_ATTR _sub
+  43:47       POP_JUMP_IF_TRUE 7
+  b0          LOAD_FAST 0 
+  13:3d       LOAD_ATTR _sub_off
+  43:42       POP_JUMP_IF_TRUE 2
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: splash
+  raw bytecode: 111 29:24:58:81:18:90:6e:20:24:25:24:25:25:25:24:29:46:27:22:26:50:b0:18:3f:10:40:b0:18:41:50:b0:18:43:10:39:b0:18:3a:10:59:b0:18:38:12:05:b0:18:3c:80:b0:18:3d:12:03:14:56:36:00:b0:18:3e:b0:14:48:36:00:59:12:03:14:56:36:00:c1:42:4e:b0:14:5a:36:00:59:12:03:14:5b:9e:36:01:59:12:03:14:5c:12:03:14:56:36:00:b1:36:02:22:87:68:d7:43:1f:51:63
+  prelude: (6, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 90:6e:20:24:25:24:25:25:25:24:29:46:27:22:26
+  50          LOAD_CONST_FALSE 
+  b0          LOAD_FAST 0 
+  18:3f       STORE_ATTR _bound
+  10:40       LOAD_CONST_STRING normal
+  b0          LOAD_FAST 0 
+  18:41       STORE_ATTR _mode
+  50          LOAD_CONST_FALSE 
+  b0          LOAD_FAST 0 
+  18:43       STORE_ATTR _face_lock
+  10:39       LOAD_CONST_STRING neutral
+  b0          LOAD_FAST 0 
+  18:3a       STORE_ATTR face
+  10:59       LOAD_CONST_STRING s3
+  b0          LOAD_FAST 0 
+  18:38       STORE_ATTR word
+  12:05       LOAD_GLOBAL BOARD_NAME
+  b0          LOAD_FAST 0 
+  18:3c       STORE_ATTR _sub
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:3d       STORE_ATTR _sub_off
+  12:03       LOAD_GLOBAL time
+  14:56       LOAD_METHOD ticks_ms
+  36:00       CALL_METHOD 0
+  b0          LOAD_FAST 0 
+  18:3e       STORE_ATTR _sub_at
+  b0          LOAD_FAST 0 
+  14:48       LOAD_METHOD _draw
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  12:03       LOAD_GLOBAL time
+  14:56       LOAD_METHOD ticks_ms
+  36:00       CALL_METHOD 0
+  c1          STORE_FAST 1 
+  42:4e       JUMP 14
+  b0          LOAD_FAST 0 
+  14:5a       LOAD_METHOD tick
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  12:03       LOAD_GLOBAL time
+  14:5b       LOAD_METHOD sleep_ms
+  9e          LOAD_CONST_SMALL_INT 30 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  12:03       LOAD_GLOBAL time
+  14:5c       LOAD_METHOD ticks_diff
+  12:03       LOAD_GLOBAL time
+  14:56       LOAD_METHOD ticks_ms
+  36:00       CALL_METHOD 0
+  b1          LOAD_FAST 1 
+  36:02       CALL_METHOD 2
+  22:87:68    LOAD_CONST_SMALL_INT 1000
+  d7          BINARY_OP 0 __lt__ 
+  43:1f       POP_JUMP_IF_TRUE -33
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: bind_code
+  raw bytecode: 64 1a:1a:5d:81:18:79:90:7f:24:25:29:25:25:24:29:52:b0:18:3f:10:46:b0:18:41:12:81:1c:b1:34:01:b0:18:42:10:46:b0:18:38:10:3b:b0:18:3c:80:b0:18:3d:12:03:14:56:36:00:b0:18:3e:b0:14:48:36:00:59:51:63
+  prelude: (4, 0, 0, 2, 0, 0)
+  args: ['self', 'code']
+  line info: 90:7f:24:25:29:25:25:24:29
+  52          LOAD_CONST_TRUE 
+  b0          LOAD_FAST 0 
+  18:3f       STORE_ATTR _bound
+  10:46       LOAD_CONST_STRING bind
+  b0          LOAD_FAST 0 
+  18:41       STORE_ATTR _mode
+  12:81:1c    LOAD_GLOBAL str
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  b0          LOAD_FAST 0 
+  18:42       STORE_ATTR _code
+  10:46       LOAD_CONST_STRING bind
+  b0          LOAD_FAST 0 
+  18:38       STORE_ATTR word
+  10:3b       LOAD_CONST_STRING q1
+  b0          LOAD_FAST 0 
+  18:3c       STORE_ATTR _sub
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:3d       STORE_ATTR _sub_off
+  12:03       LOAD_GLOBAL time
+  14:56       LOAD_METHOD ticks_ms
+  36:00       CALL_METHOD 0
+  b0          LOAD_FAST 0 
+  18:3e       STORE_ATTR _sub_at
+  b0          LOAD_FAST 0 
+  14:48       LOAD_METHOD _draw
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: unbind
+  raw bytecode: 25 11:0e:5e:81:18:90:89:24:25:50:b0:18:3f:10:40:b0:18:41:10:3b:b0:18:42:51:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 90:89:24:25
+  50          LOAD_CONST_FALSE 
+  b0          LOAD_FAST 0 
+  18:3f       STORE_ATTR _bound
+  10:40       LOAD_CONST_STRING normal
+  b0          LOAD_FAST 0 
+  18:41       STORE_ATTR _mode
+  10:3b       LOAD_CONST_STRING q1
+  b0          LOAD_FAST 0 
+  18:42       STORE_ATTR _code
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: error_screen
+  raw bytecode: 48 3b:16:5f:81:18:7b:7c:90:8e:26:24:25:25:b0:14:5e:36:00:59:50:b0:18:43:10:30:b0:18:3a:10:30:b0:18:38:b0:14:55:10:60:b1:b2:2a:02:f8:36:01:59:51:63
+  prelude: (8, 0, 0, 3, 0, 0)
+  args: ['self', 'where', 'exc']
+  line info: 90:8e:26:24:25:25
+  b0          LOAD_FAST 0 
+  14:5e       LOAD_METHOD unbind
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  50          LOAD_CONST_FALSE 
+  b0          LOAD_FAST 0 
+  18:43       STORE_ATTR _face_lock
+  10:30       LOAD_CONST_STRING error
+  b0          LOAD_FAST 0 
+  18:3a       STORE_ATTR face
+  10:30       LOAD_CONST_STRING error
+  b0          LOAD_FAST 0 
+  18:38       STORE_ATTR word
+  b0          LOAD_FAST 0 
+  14:55       LOAD_METHOD subtitle
+  10:60       LOAD_CONST_STRING %s %s
+  b1          LOAD_FAST 1 
+  b2          LOAD_FAST 2 
+  2a:02       BUILD_TUPLE 2
+  f8          BINARY_OP 33 __mod__ 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: tick
+  raw bytecode: 344 41:54:5a:81:18:90:97:20:27:22:22:26:3b:24:29:2f:24:22:22:2d:2d:30:24:28:22:22:29:2f:27:36:4e:2d:24:22:29:4e:24:27:2e:22:24:23:23:48:12:03:14:56:36:00:c1:50:c2:50:c3:b0:14:45:36:00:c4:12:81:07:b4:34:01:12:7f:d8:44:74:12:03:14:5c:b1:b0:13:3e:36:02:22:83:10:db:44:64:b1:b0:18:3e:b0:57:13:3d:81:e5:5a:18:3d:b0:13:3d:12:81:07:b4:34:01:12:7f:f3:d8:44:44:80:b0:18:3d:52:c2:52:c3:b0:13:3a:10:0d:d9:44:72:b0:13:3c:43:6d:b0:13:43:43:68:b0:13:41:10:40:d9:44:60:12:03:14:5c:b1:12:81:0a:36:02:22:82:18:db:44:50:b1:17:81:0a:12:81:09:81:e1:17:81:09:52:c2:50:c3:b0:13:3a:23:0a:dd:44:83:81:b0:13:43:43:fd:80:b0:13:41:10:40:d9:44:f4:80:12:81:0c:51:de:44:51:12:03:14:61:b1:12:0f:34:00:36:02:17:81:0c:42:dc:80:12:81:0b:43:65:12:03:14:5c:b1:12:81:0c:36:02:80:db:44:57:12:03:14:61:b1:22:80:78:36:02:17:81:0c:52:17:81:0b:52:c2:50:c3:42:72:12:81:0b:44:6d:12:03:14:5c:b1:12:81:0c:36:02:80:db:44:5f:50:17:81:0b:12:10:34:00:17:81:08:12:03:14:61:b1:12:0f:34:00:36:02:17:81:0c:52:c2:50:c3:42:40:b2:44:51:b3:44:48:b0:14:4d:36:00:59:42:46:b0:14:48:36:00:59:51:63
+  prelude: (9, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 90:97:20:27:22:22:26:3b:24:29:2f:24:22:22:2d:2d:30:24:28:22:22:29:2f:27:36:4e:2d:24:22:29:4e:24:27:2e:22:24:23:23:48
+  12:03       LOAD_GLOBAL time
+  14:56       LOAD_METHOD ticks_ms
+  36:00       CALL_METHOD 0
+  c1          STORE_FAST 1 
+  50          LOAD_CONST_FALSE 
+  c2          STORE_FAST 2 
+  50          LOAD_CONST_FALSE 
+  c3          STORE_FAST 3 
+  b0          LOAD_FAST 0 
+  14:45       LOAD_METHOD _line
+  36:00       CALL_METHOD 0
+  c4          STORE_FAST 4 
+  12:81:07    LOAD_GLOBAL len
+  b4          LOAD_FAST 4 
+  34:01       CALL_FUNCTION 1
+  12:7f       LOAD_GLOBAL _CHARS
+  d8          BINARY_OP 1 __gt__ 
+  44:74       POP_JUMP_IF_FALSE 52
+  12:03       LOAD_GLOBAL time
+  14:5c       LOAD_METHOD ticks_diff
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  13:3e       LOAD_ATTR _sub_at
+  36:02       CALL_METHOD 2
+  22:83:10    LOAD_CONST_SMALL_INT 400
+  db          BINARY_OP 4 __ge__ 
+  44:64       POP_JUMP_IF_FALSE 36
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:3e       STORE_ATTR _sub_at
+  b0          LOAD_FAST 0 
+  57          DUP_TOP 
+  13:3d       LOAD_ATTR _sub_off
+  81          LOAD_CONST_SMALL_INT 1 
+  e5          BINARY_OP 14 __iadd__ 
+  5a          ROT_TWO 
+  18:3d       STORE_ATTR _sub_off
+  b0          LOAD_FAST 0 
+  13:3d       LOAD_ATTR _sub_off
+  12:81:07    LOAD_GLOBAL len
+  b4          LOAD_FAST 4 
+  34:01       CALL_FUNCTION 1
+  12:7f       LOAD_GLOBAL _CHARS
+  f3          BINARY_OP 28 __sub__ 
+  d8          BINARY_OP 1 __gt__ 
+  44:44       POP_JUMP_IF_FALSE 4
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:3d       STORE_ATTR _sub_off
+  52          LOAD_CONST_TRUE 
+  c2          STORE_FAST 2 
+  52          LOAD_CONST_TRUE 
+  c3          STORE_FAST 3 
+  b0          LOAD_FAST 0 
+  13:3a       LOAD_ATTR face
+  10:0d       LOAD_CONST_STRING speaking
+  d9          BINARY_OP 2 __eq__ 
+  44:72       POP_JUMP_IF_FALSE 50
+  b0          LOAD_FAST 0 
+  13:3c       LOAD_ATTR _sub
+  43:6d       POP_JUMP_IF_TRUE 45
+  b0          LOAD_FAST 0 
+  13:43       LOAD_ATTR _face_lock
+  43:68       POP_JUMP_IF_TRUE 40
+  b0          LOAD_FAST 0 
+  13:41       LOAD_ATTR _mode
+  10:40       LOAD_CONST_STRING normal
+  d9          BINARY_OP 2 __eq__ 
+  44:60       POP_JUMP_IF_FALSE 32
+  12:03       LOAD_GLOBAL time
+  14:5c       LOAD_METHOD ticks_diff
+  b1          LOAD_FAST 1 
+  12:81:0a    LOAD_GLOBAL _anim_at
+  36:02       CALL_METHOD 2
+  22:82:18    LOAD_CONST_SMALL_INT 280
+  db          BINARY_OP 4 __ge__ 
+  44:50       POP_JUMP_IF_FALSE 16
+  b1          LOAD_FAST 1 
+  17:81:0a    STORE_GLOBAL _anim_at
+  12:81:09    LOAD_GLOBAL _speaking_frame
+  81          LOAD_CONST_SMALL_INT 1 
+  e1          BINARY_OP 10 __ixor__ 
+  17:81:09    STORE_GLOBAL _speaking_frame
+  52          LOAD_CONST_TRUE 
+  c2          STORE_FAST 2 
+  50          LOAD_CONST_FALSE 
+  c3          STORE_FAST 3 
+  b0          LOAD_FAST 0 
+  13:3a       LOAD_ATTR face
+  23:0a       LOAD_CONST_OBJ ('neutral', 'listening')
+  dd          BINARY_OP 6 <in> 
+  44:83:81    POP_JUMP_IF_FALSE 131
+  b0          LOAD_FAST 0 
+  13:43       LOAD_ATTR _face_lock
+  43:fd:80    POP_JUMP_IF_TRUE 125
+  b0          LOAD_FAST 0 
+  13:41       LOAD_ATTR _mode
+  10:40       LOAD_CONST_STRING normal
+  d9          BINARY_OP 2 __eq__ 
+  44:f4:80    POP_JUMP_IF_FALSE 116
+  12:81:0c    LOAD_GLOBAL _blink_at
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  44:51       POP_JUMP_IF_FALSE 17
+  12:03       LOAD_GLOBAL time
+  14:61       LOAD_METHOD ticks_add
+  b1          LOAD_FAST 1 
+  12:0f       LOAD_GLOBAL _rand_interval
+  34:00       CALL_FUNCTION 0
+  36:02       CALL_METHOD 2
+  17:81:0c    STORE_GLOBAL _blink_at
+  42:dc:80    JUMP 92
+  12:81:0b    LOAD_GLOBAL _blink_on
+  43:65       POP_JUMP_IF_TRUE 37
+  12:03       LOAD_GLOBAL time
+  14:5c       LOAD_METHOD ticks_diff
+  b1          LOAD_FAST 1 
+  12:81:0c    LOAD_GLOBAL _blink_at
+  36:02       CALL_METHOD 2
+  80          LOAD_CONST_SMALL_INT 0 
+  db          BINARY_OP 4 __ge__ 
+  44:57       POP_JUMP_IF_FALSE 23
+  12:03       LOAD_GLOBAL time
+  14:61       LOAD_METHOD ticks_add
+  b1          LOAD_FAST 1 
+  22:80:78    LOAD_CONST_SMALL_INT 120
+  36:02       CALL_METHOD 2
+  17:81:0c    STORE_GLOBAL _blink_at
+  52          LOAD_CONST_TRUE 
+  17:81:0b    STORE_GLOBAL _blink_on
+  52          LOAD_CONST_TRUE 
+  c2          STORE_FAST 2 
+  50          LOAD_CONST_FALSE 
+  c3          STORE_FAST 3 
+  42:72       JUMP 50
+  12:81:0b    LOAD_GLOBAL _blink_on
+  44:6d       POP_JUMP_IF_FALSE 45
+  12:03       LOAD_GLOBAL time
+  14:5c       LOAD_METHOD ticks_diff
+  b1          LOAD_FAST 1 
+  12:81:0c    LOAD_GLOBAL _blink_at
+  36:02       CALL_METHOD 2
+  80          LOAD_CONST_SMALL_INT 0 
+  db          BINARY_OP 4 __ge__ 
+  44:5f       POP_JUMP_IF_FALSE 31
+  50          LOAD_CONST_FALSE 
+  17:81:0b    STORE_GLOBAL _blink_on
+  12:10       LOAD_GLOBAL _next_idle
+  34:00       CALL_FUNCTION 0
+  17:81:08    STORE_GLOBAL _idle
+  12:03       LOAD_GLOBAL time
+  14:61       LOAD_METHOD ticks_add
+  b1          LOAD_FAST 1 
+  12:0f       LOAD_GLOBAL _rand_interval
+  34:00       CALL_FUNCTION 0
+  36:02       CALL_METHOD 2
+  17:81:0c    STORE_GLOBAL _blink_at
+  52          LOAD_CONST_TRUE 
+  c2          STORE_FAST 2 
+  50          LOAD_CONST_FALSE 
+  c3          STORE_FAST 3 
+  42:40       JUMP 0
+  b2          LOAD_FAST 2 
+  44:51       POP_JUMP_IF_FALSE 17
+  b3          LOAD_FAST 3 
+  44:48       POP_JUMP_IF_FALSE 8
+  b0          LOAD_FAST 0 
+  14:4d       LOAD_METHOD _draw_line
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  42:46       JUMP 6
+  b0          LOAD_FAST 0 
+  14:48       LOAD_METHOD _draw
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: attach
+  raw bytecode: 159 6a:b4:01:62:81:18:81:1d:90:c4:43:70:80:15:6f:60:70:80:0f:8f:09:8f:0c:6f:60:6f:60:6f:60:01:0a:b0:27:0a:25:01:13:63:10:52:34:01:b1:ba:20:00:02:34:01:c2:25:01:13:63:10:64:34:01:ba:20:01:01:34:01:c3:25:01:13:63:10:65:34:01:b1:ba:20:02:02:34:01:c4:25:01:13:63:10:66:34:01:ba:20:03:01:34:01:c5:25:01:13:63:23:0b:34:01:ba:20:04:01:34:01:c6:25:01:13:63:10:67:34:01:ba:20:05:01:34:01:c7:25:01:13:63:10:68:34:01:ba:20:06:01:34:01:c8:25:01:13:63:10:30:34:01:ba:20:07:01:34:01:c9:25:0a:63
+  prelude: (14, 0, 0, 2, 0, 0)
+  args: ['self', 'xz']
+  line info: 90:c4:43:70:80:15:6f:60:70:80:0f:8f:09:8f:0c:6f:60:6f:60:6f:60:01:0a
+  b0          LOAD_FAST 0 
+  27:0a       STORE_DEREF 10
+  25:01       LOAD_DEREF 1
+  13:63       LOAD_ATTR on
+  10:52       LOAD_CONST_STRING status
+  34:01       CALL_FUNCTION 1
+  b1          LOAD_FAST 1 
+  ba          LOAD_FAST 10 
+  20:00:02    MAKE_CLOSURE 0
+  34:01       CALL_FUNCTION 1
+  c2          STORE_FAST 2 
+  25:01       LOAD_DEREF 1
+  13:63       LOAD_ATTR on
+  10:64       LOAD_CONST_STRING asr
+  34:01       CALL_FUNCTION 1
+  ba          LOAD_FAST 10 
+  20:01:01    MAKE_CLOSURE 1
+  34:01       CALL_FUNCTION 1
+  c3          STORE_FAST 3 
+  25:01       LOAD_DEREF 1
+  13:63       LOAD_ATTR on
+  10:65       LOAD_CONST_STRING tts
+  34:01       CALL_FUNCTION 1
+  b1          LOAD_FAST 1 
+  ba          LOAD_FAST 10 
+  20:02:02    MAKE_CLOSURE 2
+  34:01       CALL_FUNCTION 1
+  c4          STORE_FAST 4 
+  25:01       LOAD_DEREF 1
+  13:63       LOAD_ATTR on
+  10:66       LOAD_CONST_STRING llm
+  34:01       CALL_FUNCTION 1
+  ba          LOAD_FAST 10 
+  20:03:01    MAKE_CLOSURE 3
+  34:01       CALL_FUNCTION 1
+  c5          STORE_FAST 5 
+  25:01       LOAD_DEREF 1
+  13:63       LOAD_ATTR on
+  23:0b       LOAD_CONST_OBJ 'disconnected'
+  34:01       CALL_FUNCTION 1
+  ba          LOAD_FAST 10 
+  20:04:01    MAKE_CLOSURE 4
+  34:01       CALL_FUNCTION 1
+  c6          STORE_FAST 6 
+  25:01       LOAD_DEREF 1
+  13:63       LOAD_ATTR on
+  10:67       LOAD_CONST_STRING connected
+  34:01       CALL_FUNCTION 1
+  ba          LOAD_FAST 10 
+  20:05:01    MAKE_CLOSURE 5
+  34:01       CALL_FUNCTION 1
+  c7          STORE_FAST 7 
+  25:01       LOAD_DEREF 1
+  13:63       LOAD_ATTR on
+  10:68       LOAD_CONST_STRING binding
+  34:01       CALL_FUNCTION 1
+  ba          LOAD_FAST 10 
+  20:06:01    MAKE_CLOSURE 6
+  34:01       CALL_FUNCTION 1
+  c8          STORE_FAST 8 
+  25:01       LOAD_DEREF 1
+  13:63       LOAD_ATTR on
+  10:30       LOAD_CONST_STRING error
+  34:01       CALL_FUNCTION 1
+  ba          LOAD_FAST 10 
+  20:07:01    MAKE_CLOSURE 7
+  34:01       CALL_FUNCTION 1
+  c9          STORE_FAST 9 
+  25:0a       LOAD_DEREF 10
+  63          RETURN_VALUE 
+  children: [_on_status]
+simple_name: _on_status
+  raw bytecode: 43 5f:32:6a:81:1e:81:1e:2d:90:c8:28:26:22:29:23:22:2a:28:2e:22:22:56:25:26:2d:54:4c:b2:14:6b:10:6c:36:01:c3:25:01:13:3f:44:42:51:63
+  prelude: (12, 1, 0, 3, 0, 0)
+  args: ['*', '*', 'm']
+  line info: 90:c8:28:26:22:29:23:22:2a:28:2e:22:22:56:25:26:2d:54:4c
+  b2          LOAD_FAST 2 
+  14:6b       LOAD_METHOD get
+  10:6c       LOAD_CONST_STRING state
+  36:01       CALL_METHOD 1
+  c3          STORE_FAST 3 
+  25:01       LOAD_DEREF 1
+  13:3f       LOAD_ATTR _bound
+  44:42       POP_JUMP_IF_FALSE 2
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: log
+  raw bytecode: 18 98:80:80:40:06:31:a0:21:12:81:17:b0:81:35:01:59:51:63
+  prelude: (4, 0, 4, 0, 0, 0)
+  args: []
+  line info: a0:21
+  12:81:17    LOAD_GLOBAL print
+  b0          LOAD_FAST 0 
+  81          LOAD_CONST_SMALL_INT 1 
+  35:01       CALL_FUNCTION_VAR_KW 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: get_ui
+  raw bytecode: 26 08:0c:32:a0:28:20:27:27:12:81:0e:51:de:44:47:12:0e:34:00:17:81:0e:12:81:0e:63
+  prelude: (2, 0, 0, 0, 0, 0)
+  args: []
+  line info: a0:28:20:27:27
+  12:81:0e    LOAD_GLOBAL _ui
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  44:47       POP_JUMP_IF_FALSE 7
+  12:0e       LOAD_GLOBAL OvoUI
+  34:00       CALL_FUNCTION 0
+  17:81:0e    STORE_GLOBAL _ui
+  12:81:0e    LOAD_GLOBAL _ui
+  63          RETURN_VALUE 
+  children: []

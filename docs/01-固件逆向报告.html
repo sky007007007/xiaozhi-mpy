@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>小智 ESP32-S3 MicroPython 固件逆向报告</title>
+<style>
+body{font-family:"Microsoft YaHei",sans-serif;max-width:960px;margin:24px auto;padding:0 16px;color:#222;line-height:1.65;background:#fafafa}
+h1{border-bottom:3px solid #2b6cb0;padding-bottom:8px;font-size:24px}
+h2{color:#2b6cb0;margin-top:28px;font-size:19px;border-left:4px solid #2b6cb0;padding-left:10px}
+table{border-collapse:collapse;width:100%;margin:12px 0;font-size:13.5px;background:#fff}
+th,td{border:1px solid #ccc;padding:5px 9px;text-align:left}
+th{background:#e8f0fe}
+code,pre{background:#f0f0f0;border-radius:4px;font-family:Consolas,monospace}
+pre{padding:10px;overflow-x:auto;font-size:12.5px}
+.tag{display:inline-block;background:#2b6cb0;color:#fff;border-radius:10px;padding:1px 9px;font-size:12px;margin-right:6px}
+.warn{background:#fff8e1;border:1px solid #f0d47a;padding:10px 14px;border-radius:6px}
+.ok{background:#e8f5e9;border:1px solid #a5d6a7;padding:10px 14px;border-radius:6px}
+.small{font-size:12px;color:#666}
+li{margin:4px 0}
+</style>
+</head>
+<body>
+<h1>小智 ESP32-S3 (N16R8) MicroPython 固件逆向报告</h1>
+<p><span class="tag">固件</span>firmware_esp32s3_N16R8_xiaozhi (3).bin · <span class="tag">目标</span>提取全部 51 个冻结 MicroPython 模块并恢复为可分析的 .mpy / 反汇编</p>
+
+<div class="ok"><b>结果：51/51 个冻结模块全部成功重建为 .mpy v6，并全部通过官方 mpy_tool 反汇编验证。</b>核心定制模块（xiaozhi / client / ovoui / ovomini / user / onboarding / wifinet 等）常量对象全部恢复真实值。</div>
+
+<h2>一、固件身份与镜像布局</h2>
+<ul>
+<li>MicroPython <b>1.30.0-preview</b>，fork commit <code>8cb7558d00-dirty</code>（含修改，未公开发布），构建于 2026-10-25</li>
+<li>ESP-IDF v5.5.3，机器 <code>ESP32-S3 N16R8 (microesp32s3)</code>，含原生 C 模块 <code>usermods/xiaozhi_native/modxiaozhi.c</code>（XiaoZhi AI 原生接口）</li>
+<li>0x0 处一个小引导 app；<b>主 MicroPython 固件镜像在文件偏移 0x10000</b>（7 段）；0x290000 起为 ESP-SR 唤醒词模型 <code>wn9_nihaoxiaozhi_tts</code></li>
+<li>冻结模块表：<code>mp_frozen_names[51]</code> + <code>mp_frozen_mpy_content[51]</code>（@file 0x49b70），每项 <code>mp_frozen_module_t {qstr_table, obj_table, proto_fun}</code></li>
+</ul>
+
+<h2>二、fork 的格式差异（本次逆向的 5 个关键发现）</h2>
+<p>该 fork 对 MicroPython 持久化格式做了多处修改，逐项通过数据验证：</p>
+<table>
+<tr><th>#</th><th>差异点</th><th>标准 master</th><th>本 fork</th><th>验证证据</th></tr>
+<tr><td>1</td><td>qstr 对象编码</td><td><code>qst&lt;&lt;4 | 6</code></td><td><b><code>qst&lt;&lt;3 | 2</code></b></td><td>0x2912→qstr1314='AUDIO_ENABLED'，0x4692→'disconnected'，40 个样本全部语义吻合</td></tr>
+<tr><td>2</td><td>obj_table 为空</td><td>不存在该情况</td><td><b><code>ot=NULL</code> 表示模块无独立 obj 表</b>（引用按常量处理）</td><td>10 个模块 ot=0（_boot/ssl/DS1302 等），重建后全部可解析</td></tr>
+<tr><td>3</td><td>无子码 rawcode</td><td>完整 mp_raw_code_t</td><td><b>指针直接指向字节码</b>（无 {00 00 kind gen} 头）</td><td>neopixel 6 个方法的 children 数组直接指字节码</td></tr>
+<tr><td>4</td><td>qstr 池结构</td><td>标准三段池</td><td><code>{prev,total_prev_len,alloc,len}</code> + 2 个非 qstr 值 + 条目（4B 指针直指字符串）</td><td>2940/2942 个字符串全部映射成功（含中文 UTF-8："红/橙/黄/绿/青/蓝/紫/白/粉/暖/关"）</td></tr>
+<tr><td>5</td><td>.mpy varint 编码</td><td>大端 7-bit 组</td><td>同标准（文件级重建时曾误用小端导致解析失败）</td><td>修正后 mpy_tool 完整解析</td></tr>
+</table>
+<p class="small">另注意：.mpy 头部的 n_qstr 必须计入所有函数 prelude 中 simple_name/参数名的最大索引（否则 genexpr 等闭包参数名越界）；qstr 对象 (v&amp;7)==2 且 v&lt;0x5C20 与 float 编码值域不重叠，可无损区分。</p>
+
+<h2>三、模块清单（51 个，均为冻结 .py）</h2>
+<table>
+<tr><th>分类</th><th>模块（函数数）</th></tr>
+<tr><td><b>定制核心</b></td><td><b>xiaozhi.py</b> (60+)：XiaoZhi 类、状态机 (connecting/ready/listening/speaking/processing)、事件 on/off/_emit、OTA/WS URL/token/volume、native handlers<br>
+<b>client.py</b> (10)：客户端主控、getattr(ovomini,'AUDIO_ENABLED')、"[client] creds/pins/apply_pins" 日志<br>
+<b>ovoui.py</b> (33)：OLED 表情 UI——OvoUI 类、_ring/_pupil/_closed/_x_eye/_brow 眼睛绘制、draw_face 状态表情、set_word/note_face/finish_speaking<br>
+<b>ovomini.py</b> (25)：硬件抽象——PINS、rgb（中文颜色名 红/橙/黄/绿/青/蓝/紫/白/粉/暖/关）、mic/spk/oled_scl/oled_sda<br>
+<b>user.py</b> (60)：BLEUART 蓝牙串口——ble_send/_process_command/_process_upload（BLE 文件上传）、user_code_wrapper（用户脚本运行）<br>
+<b>onboarding.py</b> (24)：首次配网 "Performing initial setup"、WiFi 扫描/连接、BLE 上传模式<br>
+<b>wifinet.py</b> (12)：多网络管理 "trying next network..."、"wifi failed"、省电控制</td></tr>
+<tr><td>系统/存储</td><td>_boot (1), boot (2), flashbdev (1), inisetup (4), webrepl_cfg (1), machine (13), pinutil (12)（"%s needs 3 pins"、"pin %d used twice"、PCNT 冲突检测）</td></tr>
+<tr><td>asyncio</td><td>asyncio/__init__ (2), core (35), event (13), funcs (9), lock (8), stream (21), uasyncio (1)</td></tr>
+<tr><td>驱动</td><td>ssd1306 (21), lcd_api (20), i2c_lcd (8), sdcard (14), tm1637 (5), neopixel (9，含 ORDER=(1,0,2,3) 与两套 timing 常量), bmp280 (13), mpu6050 (19), hcsr04 (6), pn532 (16), hx711 (16), DS1302 (21)</td></tr>
+<tr><td>通信</td><td>espnow (9), umqtt/simple (9), umqtt/robust (7), ssl (6), requests (14), mip (11), ntptime (3), upysh (7), simple (8)（SIMPLE 协议）, hid_services (67，BLE HID)</td></tr>
+<tr><td>红外</td><td>ir_rx/__init__ (9), nec (10), sony (10), philips (7), mce (5), acquire (8), print_error (2), test (3)</td></tr>
+</table>
+
+<h2>四、交付文件</h2>
+<table>
+<tr><th>目录/文件</th><th>内容</th></tr>
+<tr><td><code>rea_work/extracted/*.mpy</code></td><td>51 个重建的 MicroPython v6 模块（头 M 06 00 1f，31 位小整数），可用官方 mpy_tool 反汇编/冻结/合并</td></tr>
+<tr><td><code>rea_work/disasm/*.dis</code></td><td>51 个模块的完整官方反汇编（qstr 表、obj 表常量、prelude、逐条 opcode、子码树）</td></tr>
+<tr><td><code>rea_work/extract_mpy2.py</code></td><td>提取器源码（含全部格式差异处理）</td></tr>
+<tr><td><code>rea_work/mpy_tool.py</code></td><td>MicroPython 官方 mpy 工具（master）</td></tr>
+</table>
+
+<h2>五、重建 .mpy 的用途</h2>
+<ul>
+<li><b>反汇编学习/审计</b>：已完成（disasm/ 目录）</li>
+<li><b>冻结回固件</b>：<code>mpy_tool.py -f -q qstrdefs.generated.h extracted/x.py.mpy</code> 可生成 C 冻结数组（需对应 fork 的 qstr 头）</li>
+<li><b>合并/裁剪</b>：--merge 可将多模块合并；配合 -o 可重组</li>
+<li><b>完整反编译为 .py</b>：mpy_tool 无此功能，需第三方 decompiler（如 mpy-decompiler 项目），且需适配本 fork 的 <code>qst&lt;&lt;3|2</code> 对象编码；当前反汇编已足够人工还原逻辑</li>
+</ul>
+
+<h2>六、xiaozhi.py 关键符号速览</h2>
+<pre>状态机:  connecting → ready → listening → speaking → processing (DISCONNECTED='disconnected')
+类:      XiaoZhiError, XiaoZhi
+XiaoZhi: __init__(self) / on(event,cb) / off / _emit(event,msg) / _emit_error(where,exc)
+         _install_native_handlers → 绑定 native 事件:
+           state→_on_native_state, wake→_on_native_wake, stt→_on_native_stt,
+           llm→_on_native_llm, tts→_on_native_tts, mcp→_on_native_mcp,
+           error→_on_native_error, binding→_on_native_binding
+属性:    _ota_url, _ws_url, _token, _volume, _started, _mcp_ready, _state
+模块级:  status_led(mode), led_blink(color,period_ms), apply_pins(mic,spk,led,mic_on,spk_on),
+         connect_wifi(ssid,password,timeout_ms), _loads(text,fallback),
+         DEFAULT_OTA_URL, DISCONNECTED, CONNECTED...状态串
+事件串:  'sentence_start' 等对话流事件</pre>
+
+<p class="small">报告生成：WorkBuddy · 提取器 extract_mpy2.py · 2026-10-25</p>
+</body>
+</html>

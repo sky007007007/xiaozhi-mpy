@@ -1,0 +1,635 @@
+mpy_source_file: extracted/upysh.py.mpy
+source_file: upysh.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[70] (* for static qstrs):
+    'upysh.py' 
+    '<module>' *
+    'sys' 
+    'os' 
+    'LS' 
+    'PWD' 
+    'CLEAR' 
+    'Man' 
+    'chdir' 
+    'mkdir' 
+    'rename' 
+    'rmdir' 
+    '0.6.1' 
+    '.' 
+    'head' 
+    'readline' *
+    'stdout' 
+    'write' *
+    'cat' 
+    'cp' 
+    'stat' 
+    'rstrip' *
+    '/' *
+    'rb' 
+    'wb' 
+    'readinto' *
+    'newfile' 
+    'w' 
+    '\n' *
+    'rm' 
+    'ilistdir' 
+    '..' 
+    'join' *
+    'remove' *
+    '__repr__' *
+    '__call__' *
+    'q1' 
+    'sort' *
+    '% 9d %s' 
+    'statvfs' 
+    'format' *
+    'getcwd' 
+    '\x1b[2J\x1b[H' 
+    'man' 
+    'pwd' 
+    'ls' 
+    'clear' *
+    'cd' 
+    'mv' 
+    'print' *
+    '__version__' 
+    '__name__' *
+    '__module__' *
+    '__qualname__' *
+    'f' 
+    'n' 
+    'open' *
+    's' 
+    't' 
+    'OSError' *
+    'bytearray' *
+    'memoryview' 
+    'path' 
+    'input' 
+    'EOFError' *
+    'd' 
+    'recursive' 
+    'self' *
+    'list' *
+    'len' *
+obj_table: [0, 'Type file contents line by line, finish with EOF (Ctrl+D).', "rm of '%s' failed", '    <dir> %s', '          %s', '\n{:,d}k free', '\nupysh is intended to be imported using:\nfrom upysh import *\n\nTo see this help text again, type "man".\n\nupysh commands:\nclear, ls, ls(...), head(...), cat(...), newfile(...)\ncp(\'src\', \'dest\'), mv(\'old\', \'new\'), rm(...)\npwd, cd(...), mkdir(...), rmdir(...)\n']
+simple_name: <module>
+  raw bytecode: 169 10:3c:01:26:66:89:18:89:08:89:08:88:09:64:20:84:10:84:0c:88:0d:89:0f:26:26:26:46:26:26:26:46:67:80:51:1b:02:16:02:80:51:1b:03:16:03:54:32:00:10:04:34:02:16:04:54:32:01:10:05:34:02:16:05:54:32:02:10:06:34:02:16:06:8a:2a:01:53:33:03:16:0e:32:04:16:12:32:05:16:13:32:06:16:1a:50:2a:01:53:33:07:16:1d:54:32:08:10:07:34:02:16:07:11:07:34:00:16:2b:11:05:34:00:16:2c:11:04:34:00:16:2d:11:06:34:00:16:2e:11:03:13:08:16:2f:11:03:13:09:16:09:11:03:13:0a:16:30:11:03:13:0b:16:0b:11:31:11:2b:34:01:59:10:0c:16:32:51:63
+  prelude: (3, 0, 0, 0, 0, 0)
+  args: []
+  line info: 26:66:89:18:89:08:89:08:88:09:64:20:84:10:84:0c:88:0d:89:0f:26:26:26:46:26:26:26:46:67
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:02       IMPORT_NAME sys
+  16:02       STORE_NAME sys
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:03       IMPORT_NAME os
+  16:03       STORE_NAME os
+  54          LOAD_BUILD_CLASS 
+  32:00       MAKE_FUNCTION 0
+  10:04       LOAD_CONST_STRING LS
+  34:02       CALL_FUNCTION 2
+  16:04       STORE_NAME LS
+  54          LOAD_BUILD_CLASS 
+  32:01       MAKE_FUNCTION 1
+  10:05       LOAD_CONST_STRING PWD
+  34:02       CALL_FUNCTION 2
+  16:05       STORE_NAME PWD
+  54          LOAD_BUILD_CLASS 
+  32:02       MAKE_FUNCTION 2
+  10:06       LOAD_CONST_STRING CLEAR
+  34:02       CALL_FUNCTION 2
+  16:06       STORE_NAME CLEAR
+  8a          LOAD_CONST_SMALL_INT 10 
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:03       MAKE_FUNCTION_DEFARGS 3
+  16:0e       STORE_NAME head
+  32:04       MAKE_FUNCTION 4
+  16:12       STORE_NAME cat
+  32:05       MAKE_FUNCTION 5
+  16:13       STORE_NAME cp
+  32:06       MAKE_FUNCTION 6
+  16:1a       STORE_NAME newfile
+  50          LOAD_CONST_FALSE 
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:07       MAKE_FUNCTION_DEFARGS 7
+  16:1d       STORE_NAME rm
+  54          LOAD_BUILD_CLASS 
+  32:08       MAKE_FUNCTION 8
+  10:07       LOAD_CONST_STRING Man
+  34:02       CALL_FUNCTION 2
+  16:07       STORE_NAME Man
+  11:07       LOAD_NAME Man
+  34:00       CALL_FUNCTION 0
+  16:2b       STORE_NAME man
+  11:05       LOAD_NAME PWD
+  34:00       CALL_FUNCTION 0
+  16:2c       STORE_NAME pwd
+  11:04       LOAD_NAME LS
+  34:00       CALL_FUNCTION 0
+  16:2d       STORE_NAME ls
+  11:06       LOAD_NAME CLEAR
+  34:00       CALL_FUNCTION 0
+  16:2e       STORE_NAME clear
+  11:03       LOAD_NAME os
+  13:08       LOAD_ATTR chdir
+  16:2f       STORE_NAME cd
+  11:03       LOAD_NAME os
+  13:09       LOAD_ATTR mkdir
+  16:09       STORE_NAME mkdir
+  11:03       LOAD_NAME os
+  13:0a       LOAD_ATTR rename
+  16:30       STORE_NAME mv
+  11:03       LOAD_NAME os
+  13:0b       LOAD_ATTR rmdir
+  16:0b       STORE_NAME rmdir
+  11:31       LOAD_NAME print
+  11:2b       LOAD_NAME man
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  10:0c       LOAD_CONST_STRING 0.6.1
+  16:32       STORE_NAME __version__
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [LS, PWD, CLEAR, head, cat, cp, newfile, rm, Man]
+simple_name: LS
+  raw bytecode: 30 08:0a:04:68:40:64:20:11:33:16:34:10:04:16:35:32:00:16:22:10:0d:2a:01:53:33:01:16:23:51:63
+  prelude: (2, 0, 0, 0, 0, 0)
+  args: []
+  line info: 68:40:64:20
+  11:33       LOAD_NAME __name__
+  16:34       STORE_NAME __module__
+  10:04       LOAD_CONST_STRING LS
+  16:35       STORE_NAME __qualname__
+  32:00       MAKE_FUNCTION 0
+  16:22       STORE_NAME __repr__
+  10:0d       LOAD_CONST_STRING .
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:01       MAKE_FUNCTION_DEFARGS 1
+  16:23       STORE_NAME __call__
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [__repr__, __call__]
+simple_name: __repr__
+  raw bytecode: 16 11:0a:22:43:60:60:26:b0:14:23:36:00:59:10:24:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 60:60:26
+  b0          LOAD_FAST 0 
+  14:23       LOAD_METHOD __call__
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  10:24       LOAD_CONST_STRING q1
+  63          RETURN_VALUE 
+  children: []
+simple_name: __call__
+  raw bytecode: 162 ee:01:24:23:43:3e:80:0a:2c:26:25:2a:2d:25:2a:29:52:2d:22:28:59:12:44:12:03:14:1e:b1:36:01:34:01:c2:b2:14:25:36:00:59:b2:5f:4b:18:c3:b3:81:55:22:81:80:00:d9:44:4b:12:31:23:03:b3:80:55:f8:34:01:59:42:26:b2:5f:4b:33:c3:b3:81:55:22:81:80:00:dc:44:66:12:45:b3:34:01:83:d8:44:52:12:31:10:26:b3:83:55:b3:80:55:2a:02:f8:34:01:59:42:4b:12:31:23:04:b3:80:55:f8:34:01:59:42:0b:48:20:12:03:14:27:b1:36:01:c4:12:31:23:05:14:28:b4:81:55:b4:83:55:f4:22:88:00:f6:36:01:34:01:59:4a:04:59:4a:01:5d:51:63
+  prelude: (14, 1, 0, 2, 0, 1)
+  args: ['self', 'path']
+  line info: 80:0a:2c:26:25:2a:2d:25:2a:29:52:2d:22:28:59
+  12:44       LOAD_GLOBAL list
+  12:03       LOAD_GLOBAL os
+  14:1e       LOAD_METHOD ilistdir
+  b1          LOAD_FAST 1 
+  36:01       CALL_METHOD 1
+  34:01       CALL_FUNCTION 1
+  c2          STORE_FAST 2 
+  b2          LOAD_FAST 2 
+  14:25       LOAD_METHOD sort
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  b2          LOAD_FAST 2 
+  5f          GET_ITER_STACK 
+  4b:18       FOR_ITER 24
+  c3          STORE_FAST 3 
+  b3          LOAD_FAST 3 
+  81          LOAD_CONST_SMALL_INT 1 
+  55          LOAD_SUBSCR 
+  22:81:80:00 LOAD_CONST_SMALL_INT 16384
+  d9          BINARY_OP 2 __eq__ 
+  44:4b       POP_JUMP_IF_FALSE 11
+  12:31       LOAD_GLOBAL print
+  23:03       LOAD_CONST_OBJ '    <dir> %s'
+  b3          LOAD_FAST 3 
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  f8          BINARY_OP 33 __mod__ 
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  42:26       JUMP -26
+  b2          LOAD_FAST 2 
+  5f          GET_ITER_STACK 
+  4b:33       FOR_ITER 51
+  c3          STORE_FAST 3 
+  b3          LOAD_FAST 3 
+  81          LOAD_CONST_SMALL_INT 1 
+  55          LOAD_SUBSCR 
+  22:81:80:00 LOAD_CONST_SMALL_INT 16384
+  dc          BINARY_OP 5 __ne__ 
+  44:66       POP_JUMP_IF_FALSE 38
+  12:45       LOAD_GLOBAL len
+  b3          LOAD_FAST 3 
+  34:01       CALL_FUNCTION 1
+  83          LOAD_CONST_SMALL_INT 3 
+  d8          BINARY_OP 1 __gt__ 
+  44:52       POP_JUMP_IF_FALSE 18
+  12:31       LOAD_GLOBAL print
+  10:26       LOAD_CONST_STRING % 9d %s
+  b3          LOAD_FAST 3 
+  83          LOAD_CONST_SMALL_INT 3 
+  55          LOAD_SUBSCR 
+  b3          LOAD_FAST 3 
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  2a:02       BUILD_TUPLE 2
+  f8          BINARY_OP 33 __mod__ 
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  42:4b       JUMP 11
+  12:31       LOAD_GLOBAL print
+  23:04       LOAD_CONST_OBJ '          %s'
+  b3          LOAD_FAST 3 
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  f8          BINARY_OP 33 __mod__ 
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  42:0b       JUMP -53
+  48:20       SETUP_EXCEPT 32
+  12:03       LOAD_GLOBAL os
+  14:27       LOAD_METHOD statvfs
+  b1          LOAD_FAST 1 
+  36:01       CALL_METHOD 1
+  c4          STORE_FAST 4 
+  12:31       LOAD_GLOBAL print
+  23:05       LOAD_CONST_OBJ '\n{:,d}k free'
+  14:28       LOAD_METHOD format
+  b4          LOAD_FAST 4 
+  81          LOAD_CONST_SMALL_INT 1 
+  55          LOAD_SUBSCR 
+  b4          LOAD_FAST 4 
+  83          LOAD_CONST_SMALL_INT 3 
+  55          LOAD_SUBSCR 
+  f4          BINARY_OP 29 __mul__ 
+  22:88:00    LOAD_CONST_SMALL_INT 1024
+  f6          BINARY_OP 31 __floordiv__ 
+  36:01       CALL_METHOD 1
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  4a:04       POP_EXCEPT_JUMP 4
+  59          POP_TOP 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: PWD
+  raw bytecode: 24 00:08:05:88:1d:64:11:33:16:34:10:05:16:35:32:00:16:22:32:01:16:23:51:63
+  prelude: (1, 0, 0, 0, 0, 0)
+  args: []
+  line info: 88:1d:64
+  11:33       LOAD_NAME __name__
+  16:34       STORE_NAME __module__
+  10:05       LOAD_CONST_STRING PWD
+  16:35       STORE_NAME __qualname__
+  32:00       MAKE_FUNCTION 0
+  16:22       STORE_NAME __repr__
+  32:01       MAKE_FUNCTION 1
+  16:23       STORE_NAME __call__
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [__repr__, __call__]
+simple_name: __repr__
+  raw bytecode: 13 11:08:22:43:80:1e:12:03:14:29:36:00:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:1e
+  12:03       LOAD_GLOBAL os
+  14:29       LOAD_METHOD getcwd
+  36:00       CALL_METHOD 0
+  63          RETURN_VALUE 
+  children: []
+simple_name: __call__
+  raw bytecode: 12 11:08:23:43:80:21:b0:14:22:36:00:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:21
+  b0          LOAD_FAST 0 
+  14:22       LOAD_METHOD __repr__
+  36:00       CALL_METHOD 0
+  63          RETURN_VALUE 
+  children: []
+simple_name: CLEAR
+  raw bytecode: 24 00:08:06:88:25:64:11:33:16:34:10:06:16:35:32:00:16:22:32:01:16:23:51:63
+  prelude: (1, 0, 0, 0, 0, 0)
+  args: []
+  line info: 88:25:64
+  11:33       LOAD_NAME __name__
+  16:34       STORE_NAME __module__
+  10:06       LOAD_CONST_STRING CLEAR
+  16:35       STORE_NAME __qualname__
+  32:00       MAKE_FUNCTION 0
+  16:22       STORE_NAME __repr__
+  32:01       MAKE_FUNCTION 1
+  16:23       STORE_NAME __call__
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [__repr__, __call__]
+simple_name: __repr__
+  raw bytecode: 9 09:08:22:43:80:26:10:2a:63
+  prelude: (2, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:26
+  10:2a       LOAD_CONST_STRING [2J[H
+  63          RETURN_VALUE 
+  children: []
+simple_name: __call__
+  raw bytecode: 12 11:08:23:43:80:29:b0:14:22:36:00:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:29
+  b0          LOAD_FAST 0 
+  14:22       LOAD_METHOD __repr__
+  36:00       CALL_METHOD 0
+  63          RETURN_VALUE 
+  children: []
+simple_name: head
+  raw bytecode: 62 d6:01:14:0e:36:37:80:2d:28:26:26:23:22:12:38:b0:34:01:47:26:c0:b1:80:42:59:57:c2:b0:14:0f:36:00:c3:b3:43:42:42:51:12:02:13:10:14:11:b3:36:01:59:81:e5:58:5a:d7:43:22:59:59:51:5c:5d:51:63
+  prelude: (11, 1, 0, 2, 0, 1)
+  args: ['f', 'n']
+  line info: 80:2d:28:26:26:23:22
+  12:38       LOAD_GLOBAL open
+  b0          LOAD_FAST 0 
+  34:01       CALL_FUNCTION 1
+  47:26       SETUP_WITH 38
+  c0          STORE_FAST 0 
+  b1          LOAD_FAST 1 
+  80          LOAD_CONST_SMALL_INT 0 
+  42:59       JUMP 25
+  57          DUP_TOP 
+  c2          STORE_FAST 2 
+  b0          LOAD_FAST 0 
+  14:0f       LOAD_METHOD readline
+  36:00       CALL_METHOD 0
+  c3          STORE_FAST 3 
+  b3          LOAD_FAST 3 
+  43:42       POP_JUMP_IF_TRUE 2
+  42:51       JUMP 17
+  12:02       LOAD_GLOBAL sys
+  13:10       LOAD_ATTR stdout
+  14:11       LOAD_METHOD write
+  b3          LOAD_FAST 3 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  81          LOAD_CONST_SMALL_INT 1 
+  e5          BINARY_OP 14 __iadd__ 
+  58          DUP_TOP_TWO 
+  5a          ROT_TWO 
+  d7          BINARY_OP 0 __lt__ 
+  43:22       POP_JUMP_IF_TRUE -30
+  59          POP_TOP 
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  5c          WITH_CLEANUP 
+  5d          END_FINALLY 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: cat
+  raw bytecode: 16 19:08:12:36:80:36:12:0e:b0:23:00:34:02:59:51:63
+  prelude: (4, 0, 0, 1, 0, 0)
+  args: ['f']
+  line info: 80:36
+  12:0e       LOAD_GLOBAL head
+  b0          LOAD_FAST 0 
+  23:00       LOAD_CONST_OBJ 0
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: cp
+  raw bytecode: 132 ea:02:20:13:39:3a:80:3a:22:30:56:23:28:26:34:20:27:25:22:48:1f:12:03:14:14:b1:36:01:80:55:22:81:80:00:ef:44:4d:b1:14:15:10:16:36:01:10:16:f2:b0:f2:c1:4a:0a:57:12:3b:df:44:43:59:4a:01:5d:12:3c:22:84:00:34:01:c2:12:3d:b2:34:01:c3:12:38:b0:10:17:34:02:47:2b:c0:12:38:b1:10:18:34:02:47:1e:c1:b0:14:19:b2:36:01:c4:b4:80:da:44:42:42:4e:b1:14:11:b3:51:b4:2e:02:55:36:01:59:42:24:51:5c:5d:51:5c:5d:51:63
+  prelude: (14, 2, 0, 2, 0, 0)
+  args: ['s', 't']
+  line info: 80:3a:22:30:56:23:28:26:34:20:27:25:22
+  48:1f       SETUP_EXCEPT 31
+  12:03       LOAD_GLOBAL os
+  14:14       LOAD_METHOD stat
+  b1          LOAD_FAST 1 
+  36:01       CALL_METHOD 1
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  22:81:80:00 LOAD_CONST_SMALL_INT 16384
+  ef          BINARY_OP 24 __and__ 
+  44:4d       POP_JUMP_IF_FALSE 13
+  b1          LOAD_FAST 1 
+  14:15       LOAD_METHOD rstrip
+  10:16       LOAD_CONST_STRING /
+  36:01       CALL_METHOD 1
+  10:16       LOAD_CONST_STRING /
+  f2          BINARY_OP 27 __add__ 
+  b0          LOAD_FAST 0 
+  f2          BINARY_OP 27 __add__ 
+  c1          STORE_FAST 1 
+  4a:0a       POP_EXCEPT_JUMP 10
+  57          DUP_TOP 
+  12:3b       LOAD_GLOBAL OSError
+  df          BINARY_OP 8 <exception match> 
+  44:43       POP_JUMP_IF_FALSE 3
+  59          POP_TOP 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  12:3c       LOAD_GLOBAL bytearray
+  22:84:00    LOAD_CONST_SMALL_INT 512
+  34:01       CALL_FUNCTION 1
+  c2          STORE_FAST 2 
+  12:3d       LOAD_GLOBAL memoryview
+  b2          LOAD_FAST 2 
+  34:01       CALL_FUNCTION 1
+  c3          STORE_FAST 3 
+  12:38       LOAD_GLOBAL open
+  b0          LOAD_FAST 0 
+  10:17       LOAD_CONST_STRING rb
+  34:02       CALL_FUNCTION 2
+  47:2b       SETUP_WITH 43
+  c0          STORE_FAST 0 
+  12:38       LOAD_GLOBAL open
+  b1          LOAD_FAST 1 
+  10:18       LOAD_CONST_STRING wb
+  34:02       CALL_FUNCTION 2
+  47:1e       SETUP_WITH 30
+  c1          STORE_FAST 1 
+  b0          LOAD_FAST 0 
+  14:19       LOAD_METHOD readinto
+  b2          LOAD_FAST 2 
+  36:01       CALL_METHOD 1
+  c4          STORE_FAST 4 
+  b4          LOAD_FAST 4 
+  80          LOAD_CONST_SMALL_INT 0 
+  da          BINARY_OP 3 __le__ 
+  44:42       POP_JUMP_IF_FALSE 2
+  42:4e       JUMP 14
+  b1          LOAD_FAST 1 
+  14:11       LOAD_METHOD write
+  b3          LOAD_FAST 3 
+  51          LOAD_CONST_NONE 
+  b4          LOAD_FAST 4 
+  2e:02       BUILD_SLICE 2
+  55          LOAD_SUBSCR 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  42:24       JUMP -28
+  51          LOAD_CONST_NONE 
+  5c          WITH_CLEANUP 
+  5d          END_FINALLY 
+  51          LOAD_CONST_NONE 
+  5c          WITH_CLEANUP 
+  5d          END_FINALLY 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: newfile
+  raw bytecode: 73 d1:02:16:1a:3e:80:4a:27:2a:20:22:4e:24:27:12:31:23:01:34:01:59:12:38:b0:10:1b:34:02:47:27:c1:48:07:12:3f:34:00:c2:4a:0b:57:12:40:df:44:44:59:40:53:01:5d:b1:14:11:b2:36:01:59:b1:14:11:10:1c:36:01:59:42:1b:51:5c:5d:51:63
+  prelude: (11, 2, 0, 1, 0, 0)
+  args: ['path']
+  line info: 80:4a:27:2a:20:22:4e:24:27
+  12:31       LOAD_GLOBAL print
+  23:01       LOAD_CONST_OBJ 'Type file contents line by line, finish with EOF (Ctrl+D).'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  12:38       LOAD_GLOBAL open
+  b0          LOAD_FAST 0 
+  10:1b       LOAD_CONST_STRING w
+  34:02       CALL_FUNCTION 2
+  47:27       SETUP_WITH 39
+  c1          STORE_FAST 1 
+  48:07       SETUP_EXCEPT 7
+  12:3f       LOAD_GLOBAL input
+  34:00       CALL_FUNCTION 0
+  c2          STORE_FAST 2 
+  4a:0b       POP_EXCEPT_JUMP 11
+  57          DUP_TOP 
+  12:40       LOAD_GLOBAL EOFError
+  df          BINARY_OP 8 <exception match> 
+  44:44       POP_JUMP_IF_FALSE 4
+  59          POP_TOP 
+  40:53:01    UNWIND_JUMP 19
+  5d          END_FINALLY 
+  b1          LOAD_FAST 1 
+  14:11       LOAD_METHOD write
+  b2          LOAD_FAST 2 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b1          LOAD_FAST 1 
+  14:11       LOAD_METHOD write
+  10:1c       LOAD_CONST_STRING 
+
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  42:1b       JUMP -37
+  51          LOAD_CONST_NONE 
+  5c          WITH_CLEANUP 
+  5d          END_FINALLY 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: rm
+  raw bytecode: 117 e6:01:18:1d:41:42:80:56:22:33:2b:30:33:4a:4b:48:55:12:03:14:14:b0:36:01:80:55:22:81:80:00:ef:44:7b:b1:44:78:12:03:14:1e:b0:36:01:5f:4b:24:c2:b2:80:55:10:0d:dc:44:59:b2:80:55:10:1f:dc:44:51:12:1d:10:16:14:20:b0:b2:80:55:2a:02:36:01:34:01:59:42:1a:12:03:14:0b:b0:36:01:59:42:48:12:03:14:21:b0:36:01:59:4a:0d:59:12:31:23:02:b0:f8:34:01:59:4a:01:5d:51:63
+  prelude: (13, 1, 0, 2, 0, 1)
+  args: ['d', 'recursive']
+  line info: 80:56:22:33:2b:30:33:4a:4b
+  48:55       SETUP_EXCEPT 85
+  12:03       LOAD_GLOBAL os
+  14:14       LOAD_METHOD stat
+  b0          LOAD_FAST 0 
+  36:01       CALL_METHOD 1
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  22:81:80:00 LOAD_CONST_SMALL_INT 16384
+  ef          BINARY_OP 24 __and__ 
+  44:7b       POP_JUMP_IF_FALSE 59
+  b1          LOAD_FAST 1 
+  44:78       POP_JUMP_IF_FALSE 56
+  12:03       LOAD_GLOBAL os
+  14:1e       LOAD_METHOD ilistdir
+  b0          LOAD_FAST 0 
+  36:01       CALL_METHOD 1
+  5f          GET_ITER_STACK 
+  4b:24       FOR_ITER 36
+  c2          STORE_FAST 2 
+  b2          LOAD_FAST 2 
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  10:0d       LOAD_CONST_STRING .
+  dc          BINARY_OP 5 __ne__ 
+  44:59       POP_JUMP_IF_FALSE 25
+  b2          LOAD_FAST 2 
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  10:1f       LOAD_CONST_STRING ..
+  dc          BINARY_OP 5 __ne__ 
+  44:51       POP_JUMP_IF_FALSE 17
+  12:1d       LOAD_GLOBAL rm
+  10:16       LOAD_CONST_STRING /
+  14:20       LOAD_METHOD join
+  b0          LOAD_FAST 0 
+  b2          LOAD_FAST 2 
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  2a:02       BUILD_TUPLE 2
+  36:01       CALL_METHOD 1
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  42:1a       JUMP -38
+  12:03       LOAD_GLOBAL os
+  14:0b       LOAD_METHOD rmdir
+  b0          LOAD_FAST 0 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  42:48       JUMP 8
+  12:03       LOAD_GLOBAL os
+  14:21       LOAD_METHOD remove
+  b0          LOAD_FAST 0 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  4a:0d       POP_EXCEPT_JUMP 13
+  59          POP_TOP 
+  12:31       LOAD_GLOBAL print
+  23:02       LOAD_CONST_OBJ "rm of '%s' failed"
+  b0          LOAD_FAST 0 
+  f8          BINARY_OP 33 __mod__ 
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: Man
+  raw bytecode: 19 00:06:07:88:63:11:33:16:34:10:07:16:35:32:00:16:22:51:63
+  prelude: (1, 0, 0, 0, 0, 0)
+  args: []
+  line info: 88:63
+  11:33       LOAD_NAME __name__
+  16:34       STORE_NAME __module__
+  10:07       LOAD_CONST_STRING Man
+  16:35       STORE_NAME __qualname__
+  32:00       MAKE_FUNCTION 0
+  16:22       STORE_NAME __repr__
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [__repr__]
+simple_name: __repr__
+  raw bytecode: 9 09:08:22:43:80:64:23:06:63
+  prelude: (2, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:64
+  23:06       LOAD_CONST_OBJ '\nupysh is intended to be imported using:\nfrom upysh import *\n\nTo see this help text again, type "man".\n\nupysh commands:\nclear, ls, ls(...), head(...), cat(...), newfile(...)\ncp(\'src\', \'dest\'), mv(\'old\', \'new\'), rm(...)\npwd, cd(...), mkdir(...), rmdir(...)\n'
+  63          RETURN_VALUE 
+  children: []

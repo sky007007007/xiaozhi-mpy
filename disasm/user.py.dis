@@ -1,0 +1,2409 @@
+mpy_source_file: extracted/user.py.mpy
+source_file: user.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[230] (* for static qstrs):
+    'user.py' 
+    '<module>' *
+    'bluetooth' 
+    'time' 
+    '_thread' 
+    'machine' 
+    'os' 
+    'Pin' 
+    'ovoblue' 
+    'V=1' 
+    's3-v1' 
+    'UUID' 
+    'BLEUART' 
+    'ovomini' 
+    'BOOT_PIN' 
+    'IN' 
+    'PULL_UP' 
+    'xiaozhi_native' 
+    'led_mode' 
+    'set_led_color' 
+    'red' 
+    'pinutil' 
+    'oled_off' 
+    'I2C_SDA' 
+    'I2C_SCL' 
+    'get_display' 
+    'fill' 
+    'show' 
+    '_display' 
+    'd' 
+    's3' 
+    'neutral' 
+    'BOARD_NAME' 
+    'wifi' 
+    'led_status' 
+    'scan' 
+    'ticks_ms' 
+    'value' *
+    'sleep_ms' 
+    'ticks_diff' 
+    'rgb_tick' 
+    'tick' 
+    'done' 
+    'ble' 
+    'happy' 
+    'blue' 
+    'aps' 
+    'off' 
+    'BLE' 
+    'process' 
+    'remove' *
+    'test.py' 
+    'wipe' 
+    'error' 
+    'ble_data_tick' 
+    'builtins' *
+    'wifi_scan' 
+    'listdir' 
+    'run' 
+    'client' 
+    'main' *
+    'sys' 
+    'print_exception' 
+    'app error' 
+    'wifinet' 
+    'reset' 
+    '_uart' 
+    'get' *
+    'uart' 
+    'ble_send' 
+    'send' *
+    'ble_send_bytes' 
+    'send_bytes' 
+    'ble_is_connected' 
+    'is_connected' 
+    'user_code_wrapper' 
+    'rb' 
+    'read' *
+    'decode' 
+    'utf-8' *
+    'start_user_code' 
+    'stack_size' 
+    'start_new_thread' 
+    '_ui_get' 
+    'ovoui' 
+    'get_ui' 
+    '_ui_show' 
+    'status' 
+    'subtitle' 
+    'q1' 
+    '[ui] show:' 
+    '_ui_tick' 
+    '_scan_wifi_async' 
+    'network' 
+    '_i2c_recover' 
+    'OPEN_DRAIN' 
+    'sleep_us' 
+    '__init__' *
+    '_ble' 
+    'active' 
+    'irq' 
+    '_irq' 
+    '_callback' 
+    '_conn_handle' 
+    '_rx_handle' 
+    '_tx_handle' 
+    'FLAG_WRITE' 
+    'FLAG_WRITE_NO_RESPONSE' 
+    'FLAG_NOTIFY' 
+    'gatts_register_services' 
+    'tx:' 
+    '_rx_buffer' 
+    '_upload_mode' 
+    '_filename' 
+    '_file_data' 
+    '_max' 
+    '_advertise' 
+    '_valid_name' 
+    '.' 
+    'lower' *
+    '._-' 
+    'a' 
+    'z' 
+    'A' 
+    'Z' 
+    '0' 
+    '9' 
+    'gatts_read' 
+    'extend' *
+    'encode' 
+    'gap_advertise' 
+    'adv_data' 
+    'endswith' *
+    '\n' *
+    'gatts_notify' 
+    '[TX]' 
+    '[TX bytes]' 
+    'set_callback' 
+    '_process_command' 
+    '_process_upload' 
+    'find' *
+    'strip' *
+    '[cmd]' 
+    'split' *
+    '#STOP' 
+    'OK' 
+    '#VER' 
+    '#Z' 
+    'statvfs' 
+    '/' *
+    'ERR' 
+    '[cmd] #Z' 
+    'startswith' *
+    'w' 
+    'write' *
+    'bytes' *
+    'sleep' 
+    '_worker' 
+    'WLAN' 
+    'STA_IF' 
+    'append' *
+    'sort' *
+    'key' *
+    'networks' 
+    '<lambda>' 
+    'BLE_NAME' 
+    'FIRMWARE_VER' 
+    'APP_VER' 
+    'DEBUG' 
+    'UART_SERVICE_UUID' 
+    'UART_RX_CHAR_UUID' 
+    'UART_TX_CHAR_UUID' 
+    '_IRQ_CENTRAL_CONNECT' 
+    '_IRQ_CENTRAL_DISCONNECT' 
+    '_IRQ_GATTS_WRITE' 
+    'u_s_f' 
+    'user_thread' 
+    'running_from_file' 
+    'boot_btn' 
+    'Exception' *
+    'print' *
+    'ble_mode' 
+    'box' 
+    'oled' 
+    '_try' 
+    'e' 
+    'ui' 
+    't0' 
+    '_g0' 
+    '_t' 
+    'len' *
+    '_ble_activity' 
+    'prev_b' 
+    'press_t0' 
+    'hinted' 
+    'v' 
+    'now' 
+    'held' 
+    'OSError' *
+    'has_test' 
+    'we' 
+    'globals' *
+    'text' 
+    'data' 
+    'bool' *
+    'filename' 
+    'open' *
+    'exec' *
+    '__name__' *
+    '__module__' *
+    '__qualname__' *
+    'staticmethod' *
+    'word' 
+    'face' 
+    'msg' 
+    'ms' 
+    'sda' 
+    'scl' 
+    'self' *
+    'name' 
+    'callback' 
+    'bytearray' *
+    'fname' 
+    'event' 
+    'repr' *
+    'min' 
+    '*' *
+    'isinstance' *
+    'str' *
+    'x' 
+obj_table: ['6E400001-B5A3-F393-E0A9-E50E24DCCA9E', '6E400002-B5A3-F393-E0A9-E50E24DCCA9E', '6E400003-B5A3-F393-E0A9-E50E24DCCA9E', '[init] %s boot', '[init] OLED disabled (pins: no_oled)', '[init] OLED ready', '[init] OLED error:', 'scanning wifi...', '[scan] timeout', 'ble upload mode', '[init] scan done, %d APs', 'waiting for ble...', '[init] BLE started, name:', '[ble] BOOT hold 2s=del test.py (short press=hint only)', '[loop] error:', '[ble] test.py deleted', 'test.py deleted', '[ble] no test.py', 'no test.py found', '[ble] del error:', 'delete failed', 'hold: del test.py', 'hold 2s=del', '[init] listdir:', 'run test.py', '[init] starting test.py', '[init] test.py error:', 'test.py error', 'starting app...', '[init] client error:', 'short=reboot hold=wipe', 'reset wifi, rebooting', '[init] wipe:', '[thread] start:', '[thread] error:', '[thread] ended:', '[run] starting:', '[ui] ovoui unavailable:', '[scan] thread:', '[BLE] service registered, rx:', ('boot.py', 'main.py'), '[conn] connected, handle:', '[conn] disconnected', b'\x02\x01\x06', '[BLE] advertising:', '[TX] no connection, skip:', '[TX bytes] no connection, skip:', '[cb] error:', b'\n', b'\r', '[cmd] #Z cap:', '[cmd] #Z rejected:', '[cmd] unknown:', b'#END#', '[upload] saved:', '[upload] restarting in 1s...', '[upload] save error:', '[upload] too large, cap %d', '[scan] found', '[scan] error:']
+simple_name: <module>
+  raw bytecode: 2266 c8:80:02:d4:06:01:26:26:26:26:26:4c:25:25:25:24:2b:2b:4b:24:24:44:24:24:44:64:40:64:40:64:40:64:40:84:14:84:12:89:d1:84:0a:84:0b:84:0e:84:2b:66:40:33:22:26:52:23:29:6c:20:24:24:47:84:15:24:26:68:20:4b:2d:28:42:26:29:29:28:28:51:2b:2d:22:26:4f:78:27:30:68:30:6b:20:4e:29:29:23:2b:28:4b:24:23:35:28:22:27:28:22:52:23:71:20:26:29:43:2b:28:2b:24:23:27:28:22:52:23:1f:47:46:2e:29:29:22:5e:2c:30:45:49:44:26:2e:28:2b:4b:22:33:28:24:24:24:20:22:55:37:2a:29:2e:28:2b:26:46:27:2e:2f:2a:24:22:29:26:27:28:58:28:5c:2b:3a:22:35:2e:24:32:4c:24:30:66:37:4c:29:28:22:52:23:4e:26:46:24:22:5a:37:26:2e:28:22:55:2b:2e:20:5c:2e:22:26:1f:44:2b:22:26:54:23:2e:22:33:2e:20:2b:2a:23:28:2b:23:29:23:36:29:25:2b:22:26:55:37:22:26:51:23:27:36:80:51:1b:02:16:02:80:51:1b:03:16:03:80:51:1b:04:16:04:80:51:1b:05:16:05:80:51:1b:06:16:06:80:10:07:2a:01:1b:05:1c:07:16:07:59:10:08:16:81:25:10:09:16:81:26:10:0a:16:81:27:50:16:81:28:11:02:14:0b:23:00:36:01:16:81:29:11:02:14:0b:23:01:36:01:16:81:2a:11:02:14:0b:23:02:36:01:16:81:2b:81:16:81:2c:82:16:81:2d:83:16:81:2e:50:17:81:2f:51:17:81:30:50:17:81:31:32:00:16:42:32:01:16:45:32:02:16:47:32:03:16:49:32:04:16:4b:32:05:16:50:54:32:06:10:0c:34:02:16:0c:32:07:16:53:32:08:16:56:32:09:16:5b:32:0a:16:5c:80:51:1b:0d:16:0d:11:07:11:0d:13:0e:11:07:13:0f:11:07:13:10:34:03:16:81:32:48:10:80:51:1b:11:16:11:11:11:14:12:50:36:01:59:4a:0b:57:11:81:33:df:44:43:59:4a:01:5d:11:0d:14:13:10:14:36:01:59:11:81:34:23:03:11:81:27:f8:34:01:59:50:16:81:35:2b:00:16:2e:11:5c:34:00:16:81:36:32:0b:16:5e:51:16:81:37:80:51:1b:15:16:15:11:15:14:16:36:00:44:4b:11:81:34:23:04:34:01:59:42:97:81:11:5e:11:0d:13:17:11:0d:13:18:34:02:59:80:42:ff:80:57:16:81:38:48:2c:80:51:1b:0d:16:0d:11:0d:14:19:36:00:16:81:37:11:81:37:14:1a:80:36:01:59:11:81:37:14:1b:36:00:59:11:81:34:23:05:34:01:59:40:d4:80:01:57:11:81:33:df:44:c2:80:16:81:39:49:33:11:81:34:23:06:11:81:39:34:02:59:11:5e:11:0d:13:17:11:0d:13:18:34:02:59:48:0d:80:51:1b:0d:16:0d:51:11:0d:18:1c:4a:0b:57:11:81:33:df:44:43:59:4a:01:5d:51:51:16:81:39:19:81:39:5d:4a:01:5d:81:e5:57:82:d7:43:fb:7e:59:11:53:34:00:16:81:3a:11:81:3a:51:de:d3:44:50:11:81:37:51:de:d3:44:48:11:81:37:11:81:3a:18:1d:11:56:11:81:3a:10:1e:10:1f:11:0d:13:20:34:04:59:11:5b:11:81:3a:22:84:58:34:02:59:11:56:11:81:3a:10:21:10:1f:23:07:34:04:59:11:0d:14:22:10:23:36:01:59:11:03:14:24:36:00:16:81:3b:42:f2:80:11:81:32:14:25:36:00:80:d9:44:5a:11:03:14:26:99:36:01:59:11:81:32:14:25:36:00:80:d9:44:47:52:16:81:35:42:d6:80:11:03:14:27:11:03:14:24:36:00:11:81:3b:36:02:22:ae:70:db:44:4a:11:81:34:23:08:34:01:59:42:77:11:0d:14:28:36:00:59:11:81:3a:51:de:d3:44:57:48:0a:11:81:3a:14:29:36:00:59:4a:0b:57:11:81:33:df:44:43:59:4a:01:5d:11:03:14:26:9e:36:01:59:11:81:36:10:2a:55:44:85:7f:11:81:35:43:fd:80:11:03:14:24:36:00:16:81:3c:42:d3:80:11:81:32:14:25:36:00:80:d9:44:5a:11:03:14:26:99:36:01:59:11:81:32:14:25:36:00:80:d9:44:47:52:16:81:35:42:cc:80:11:0d:14:28:36:00:59:11:81:3a:51:de:d3:44:57:48:0a:11:81:3a:14:29:36:00:59:4a:0b:57:11:81:33:df:44:43:59:4a:01:5d:11:03:14:26:9e:36:01:59:11:81:36:10:2a:55:43:56:11:03:14:27:11:03:14:24:36:00:11:81:3c:36:02:22:8b:5c:d7:43:8f:7f:11:81:35:44:c0:80:11:56:11:81:3a:10:2b:10:2c:23:09:34:04:59:11:0d:14:13:10:2d:36:01:59:11:03:14:24:36:00:16:81:3d:42:49:11:5b:11:81:3a:9e:34:02:59:11:03:14:27:11:03:14:24:36:00:11:81:3d:36:02:22:87:68:d7:43:22:11:81:36:10:2e:55:45:02:2b:00:16:2e:11:81:34:23:0a:11:81:3e:11:2e:34:01:f8:34:01:59:11:81:35:43:49:11:0d:14:13:10:2f:36:01:59:80:17:81:3f:11:81:35:44:b0:84:11:56:11:81:3a:10:2b:10:2c:23:0b:34:04:59:11:02:14:30:36:00:16:2b:11:0c:11:2b:11:81:25:34:02:16:44:11:81:34:23:0c:11:81:25:34:02:59:42:48:11:03:14:26:8a:36:01:59:11:81:32:14:25:36:00:80:d9:43:2d:11:81:34:23:0d:34:01:59:81:16:81:40:80:16:81:41:50:16:81:42:48:09:11:44:14:31:36:00:59:4a:23:57:11:81:33:df:44:5b:16:81:39:49:0c:11:81:34:23:0e:11:81:39:34:02:59:51:51:16:81:39:19:81:39:5d:4a:01:5d:11:81:32:14:25:36:00:16:81:43:11:03:14:24:36:00:16:81:44:11:81:43:80:d9:44:6d:11:81:40:81:d9:44:66:11:03:14:26:99:36:01:59:11:81:32:14:25:36:00:80:d9:44:4c:11:81:44:16:81:41:50:16:81:42:42:44:80:16:81:41:42:87:82:11:81:43:80:d9:44:df:81:11:81:41:44:d9:81:11:03:14:27:11:81:44:11:81:41:36:02:16:81:45:11:81:45:22:8f:50:db:44:9c:81:80:16:81:41:48:2e:11:06:14:32:10:33:36:01:59:80:51:1b:15:16:15:11:15:14:34:36:00:59:11:81:34:23:0f:34:01:59:11:56:11:81:3a:10:2b:10:2c:23:10:34:04:59:4a:51:57:11:81:46:df:44:59:59:11:81:34:23:11:34:01:59:11:56:11:81:3a:10:2b:10:1f:23:12:34:04:59:4a:31:57:11:81:33:df:44:69:16:81:39:49:1a:11:81:34:23:13:11:81:39:34:02:59:11:56:11:81:3a:10:35:10:35:23:14:34:04:59:51:51:16:81:39:19:81:39:5d:4a:01:5d:42:48:11:03:14:26:8a:36:01:59:11:81:32:14:25:36:00:80:d9:43:2d:42:62:11:81:45:22:84:58:db:44:59:11:81:42:43:54:52:16:81:42:11:56:11:81:3a:10:2b:10:1f:23:15:34:04:59:42:40:42:60:11:81:43:81:d9:44:59:11:81:41:44:54:80:16:81:41:11:56:11:81:3a:10:2b:10:1f:23:16:34:04:59:42:40:11:81:43:16:81:40:12:81:3f:44:5e:11:03:14:27:11:81:44:12:81:3f:36:02:22:83:10:d7:44:4c:11:0d:14:36:11:81:44:36:01:59:42:49:11:0d:14:13:10:2d:36:01:59:11:81:3a:51:de:d3:44:57:48:0a:11:81:3a:14:29:36:00:59:4a:0b:57:11:81:33:df:44:43:59:4a:01:5d:11:03:14:26:9e:36:01:59:42:a8:7c:42:ab:84:80:51:1b:37:16:37:11:2e:11:37:18:38:50:16:81:47:48:0e:10:33:11:06:14:39:36:00:dd:16:81:47:4a:23:57:11:81:33:df:44:5b:16:81:39:49:0c:11:81:34:23:17:11:81:39:34:02:59:51:51:16:81:39:19:81:39:5d:4a:01:5d:11:81:47:44:e2:80:11:56:11:81:3a:10:3a:10:1f:23:18:34:04:59:11:81:34:23:19:34:01:59:48:09:11:50:10:33:34:01:59:4a:3e:57:11:81:33:df:44:76:16:81:39:49:27:11:81:34:23:1a:11:81:39:34:02:59:11:56:11:81:3a:10:35:10:35:23:1b:34:04:59:11:5b:11:81:3a:22:87:68:34:02:59:42:33:51:51:16:81:39:19:81:39:5d:4a:01:5d:42:80:83:11:56:11:81:3a:10:3a:10:1f:23:1c:34:04:59:48:1b:80:51:1b:3b:16:3b:11:3b:14:3c:11:81:37:11:81:32:10:2e:11:2e:36:82:02:59:4a:d5:02:57:11:81:33:df:44:cc:82:16:81:39:49:bc:02:11:81:34:23:1d:11:81:39:34:02:59:48:12:80:51:1b:3d:16:3d:11:3d:14:3e:11:81:39:36:01:59:4a:0b:57:11:81:33:df:44:43:59:4a:01:5d:11:56:11:81:3a:10:35:10:35:10:3f:34:04:59:42:48:11:03:14:26:8a:36:01:59:11:81:32:14:25:36:00:80:d9:43:2d:11:56:11:81:3a:10:35:10:35:23:1e:34:04:59:11:81:32:14:25:36:00:81:d9:44:4d:11:5b:11:81:3a:22:32:34:02:59:42:c5:81:11:03:14:26:99:36:01:59:11:81:32:14:25:36:00:81:d9:44:43:42:af:81:11:03:14:24:36:00:16:81:3b:42:90:81:11:03:14:27:11:03:14:24:36:00:11:81:3b:36:02:22:97:38:db:44:f0:80:11:56:11:81:3a:10:21:10:35:23:1f:34:04:59:11:5b:11:81:3a:22:83:74:34:02:59:48:0f:80:51:1b:40:16:40:11:40:14:34:36:00:59:4a:23:57:11:81:33:df:44:5b:16:81:48:49:0c:11:81:34:23:20:11:81:48:34:02:59:51:51:16:81:48:19:81:48:5d:4a:01:5d:48:0f:80:51:1b:15:16:15:11:15:14:34:36:00:59:4a:0b:57:11:81:33:df:44:43:59:4a:01:5d:11:05:14:41:36:00:59:11:5b:11:81:3a:22:32:34:02:59:11:81:32:14:25:36:00:80:d9:43:e4:7e:11:05:14:41:36:00:59:42:a0:7e:51:51:16:81:39:19:81:39:5d:4a:01:5d:51:63
+  prelude: (10, 4, 0, 0, 0, 0)
+  args: []
+  line info: 26:26:26:26:26:4c:25:25:25:24:2b:2b:4b:24:24:44:24:24:44:64:40:64:40:64:40:64:40:84:14:84:12:89:d1:84:0a:84:0b:84:0e:84:2b:66:40:33:22:26:52:23:29:6c:20:24:24:47:84:15:24:26:68:20:4b:2d:28:42:26:29:29:28:28:51:2b:2d:22:26:4f:78:27:30:68:30:6b:20:4e:29:29:23:2b:28:4b:24:23:35:28:22:27:28:22:52:23:71:20:26:29:43:2b:28:2b:24:23:27:28:22:52:23:1f:47:46:2e:29:29:22:5e:2c:30:45:49:44:26:2e:28:2b:4b:22:33:28:24:24:24:20:22:55:37:2a:29:2e:28:2b:26:46:27:2e:2f:2a:24:22:29:26:27:28:58:28:5c:2b:3a:22:35:2e:24:32:4c:24:30:66:37:4c:29:28:22:52:23:4e:26:46:24:22:5a:37:26:2e:28:22:55:2b:2e:20:5c:2e:22:26:1f:44:2b:22:26:54:23:2e:22:33:2e:20:2b:2a:23:28:2b:23:29:23:36:29:25:2b:22:26:55:37:22:26:51:23:27:36
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:02       IMPORT_NAME bluetooth
+  16:02       STORE_NAME bluetooth
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:03       IMPORT_NAME time
+  16:03       STORE_NAME time
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:04       IMPORT_NAME _thread
+  16:04       STORE_NAME _thread
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:05       IMPORT_NAME machine
+  16:05       STORE_NAME machine
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:06       IMPORT_NAME os
+  16:06       STORE_NAME os
+  80          LOAD_CONST_SMALL_INT 0 
+  10:07       LOAD_CONST_STRING Pin
+  2a:01       BUILD_TUPLE 1
+  1b:05       IMPORT_NAME machine
+  1c:07       IMPORT_FROM Pin
+  16:07       STORE_NAME Pin
+  59          POP_TOP 
+  10:08       LOAD_CONST_STRING ovoblue
+  16:81:25    STORE_NAME BLE_NAME
+  10:09       LOAD_CONST_STRING V=1
+  16:81:26    STORE_NAME FIRMWARE_VER
+  10:0a       LOAD_CONST_STRING s3-v1
+  16:81:27    STORE_NAME APP_VER
+  50          LOAD_CONST_FALSE 
+  16:81:28    STORE_NAME DEBUG
+  11:02       LOAD_NAME bluetooth
+  14:0b       LOAD_METHOD UUID
+  23:00       LOAD_CONST_OBJ '6E400001-B5A3-F393-E0A9-E50E24DCCA9E'
+  36:01       CALL_METHOD 1
+  16:81:29    STORE_NAME UART_SERVICE_UUID
+  11:02       LOAD_NAME bluetooth
+  14:0b       LOAD_METHOD UUID
+  23:01       LOAD_CONST_OBJ '6E400002-B5A3-F393-E0A9-E50E24DCCA9E'
+  36:01       CALL_METHOD 1
+  16:81:2a    STORE_NAME UART_RX_CHAR_UUID
+  11:02       LOAD_NAME bluetooth
+  14:0b       LOAD_METHOD UUID
+  23:02       LOAD_CONST_OBJ '6E400003-B5A3-F393-E0A9-E50E24DCCA9E'
+  36:01       CALL_METHOD 1
+  16:81:2b    STORE_NAME UART_TX_CHAR_UUID
+  81          LOAD_CONST_SMALL_INT 1 
+  16:81:2c    STORE_NAME _IRQ_CENTRAL_CONNECT
+  82          LOAD_CONST_SMALL_INT 2 
+  16:81:2d    STORE_NAME _IRQ_CENTRAL_DISCONNECT
+  83          LOAD_CONST_SMALL_INT 3 
+  16:81:2e    STORE_NAME _IRQ_GATTS_WRITE
+  50          LOAD_CONST_FALSE 
+  17:81:2f    STORE_GLOBAL u_s_f
+  51          LOAD_CONST_NONE 
+  17:81:30    STORE_GLOBAL user_thread
+  50          LOAD_CONST_FALSE 
+  17:81:31    STORE_GLOBAL running_from_file
+  32:00       MAKE_FUNCTION 0
+  16:42       STORE_NAME _uart
+  32:01       MAKE_FUNCTION 1
+  16:45       STORE_NAME ble_send
+  32:02       MAKE_FUNCTION 2
+  16:47       STORE_NAME ble_send_bytes
+  32:03       MAKE_FUNCTION 3
+  16:49       STORE_NAME ble_is_connected
+  32:04       MAKE_FUNCTION 4
+  16:4b       STORE_NAME user_code_wrapper
+  32:05       MAKE_FUNCTION 5
+  16:50       STORE_NAME start_user_code
+  54          LOAD_BUILD_CLASS 
+  32:06       MAKE_FUNCTION 6
+  10:0c       LOAD_CONST_STRING BLEUART
+  34:02       CALL_FUNCTION 2
+  16:0c       STORE_NAME BLEUART
+  32:07       MAKE_FUNCTION 7
+  16:53       STORE_NAME _ui_get
+  32:08       MAKE_FUNCTION 8
+  16:56       STORE_NAME _ui_show
+  32:09       MAKE_FUNCTION 9
+  16:5b       STORE_NAME _ui_tick
+  32:0a       MAKE_FUNCTION 10
+  16:5c       STORE_NAME _scan_wifi_async
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:0d       IMPORT_NAME ovomini
+  16:0d       STORE_NAME ovomini
+  11:07       LOAD_NAME Pin
+  11:0d       LOAD_NAME ovomini
+  13:0e       LOAD_ATTR BOOT_PIN
+  11:07       LOAD_NAME Pin
+  13:0f       LOAD_ATTR IN
+  11:07       LOAD_NAME Pin
+  13:10       LOAD_ATTR PULL_UP
+  34:03       CALL_FUNCTION 3
+  16:81:32    STORE_NAME boot_btn
+  48:10       SETUP_EXCEPT 16
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:11       IMPORT_NAME xiaozhi_native
+  16:11       STORE_NAME xiaozhi_native
+  11:11       LOAD_NAME xiaozhi_native
+  14:12       LOAD_METHOD led_mode
+  50          LOAD_CONST_FALSE 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  4a:0b       POP_EXCEPT_JUMP 11
+  57          DUP_TOP 
+  11:81:33    LOAD_NAME Exception
+  df          BINARY_OP 8 <exception match> 
+  44:43       POP_JUMP_IF_FALSE 3
+  59          POP_TOP 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  11:0d       LOAD_NAME ovomini
+  14:13       LOAD_METHOD set_led_color
+  10:14       LOAD_CONST_STRING red
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  11:81:34    LOAD_NAME print
+  23:03       LOAD_CONST_OBJ '[init] %s boot'
+  11:81:27    LOAD_NAME APP_VER
+  f8          BINARY_OP 33 __mod__ 
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  50          LOAD_CONST_FALSE 
+  16:81:35    STORE_NAME ble_mode
+  2b:00       BUILD_LIST 0
+  16:2e       STORE_NAME aps
+  11:5c       LOAD_NAME _scan_wifi_async
+  34:00       CALL_FUNCTION 0
+  16:81:36    STORE_NAME box
+  32:0b       MAKE_FUNCTION 11
+  16:5e       STORE_NAME _i2c_recover
+  51          LOAD_CONST_NONE 
+  16:81:37    STORE_NAME oled
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:15       IMPORT_NAME pinutil
+  16:15       STORE_NAME pinutil
+  11:15       LOAD_NAME pinutil
+  14:16       LOAD_METHOD oled_off
+  36:00       CALL_METHOD 0
+  44:4b       POP_JUMP_IF_FALSE 11
+  11:81:34    LOAD_NAME print
+  23:04       LOAD_CONST_OBJ '[init] OLED disabled (pins: no_oled)'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  42:97:81    JUMP 151
+  11:5e       LOAD_NAME _i2c_recover
+  11:0d       LOAD_NAME ovomini
+  13:17       LOAD_ATTR I2C_SDA
+  11:0d       LOAD_NAME ovomini
+  13:18       LOAD_ATTR I2C_SCL
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  80          LOAD_CONST_SMALL_INT 0 
+  42:ff:80    JUMP 127
+  57          DUP_TOP 
+  16:81:38    STORE_NAME _try
+  48:2c       SETUP_EXCEPT 44
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:0d       IMPORT_NAME ovomini
+  16:0d       STORE_NAME ovomini
+  11:0d       LOAD_NAME ovomini
+  14:19       LOAD_METHOD get_display
+  36:00       CALL_METHOD 0
+  16:81:37    STORE_NAME oled
+  11:81:37    LOAD_NAME oled
+  14:1a       LOAD_METHOD fill
+  80          LOAD_CONST_SMALL_INT 0 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  11:81:37    LOAD_NAME oled
+  14:1b       LOAD_METHOD show
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  11:81:34    LOAD_NAME print
+  23:05       LOAD_CONST_OBJ '[init] OLED ready'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  40:d4:80:01 UNWIND_JUMP 84
+  57          DUP_TOP 
+  11:81:33    LOAD_NAME Exception
+  df          BINARY_OP 8 <exception match> 
+  44:c2:80    POP_JUMP_IF_FALSE 66
+  16:81:39    STORE_NAME e
+  49:33       SETUP_FINALLY 51
+  11:81:34    LOAD_NAME print
+  23:06       LOAD_CONST_OBJ '[init] OLED error:'
+  11:81:39    LOAD_NAME e
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  11:5e       LOAD_NAME _i2c_recover
+  11:0d       LOAD_NAME ovomini
+  13:17       LOAD_ATTR I2C_SDA
+  11:0d       LOAD_NAME ovomini
+  13:18       LOAD_ATTR I2C_SCL
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  48:0d       SETUP_EXCEPT 13
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:0d       IMPORT_NAME ovomini
+  16:0d       STORE_NAME ovomini
+  51          LOAD_CONST_NONE 
+  11:0d       LOAD_NAME ovomini
+  18:1c       STORE_ATTR _display
+  4a:0b       POP_EXCEPT_JUMP 11
+  57          DUP_TOP 
+  11:81:33    LOAD_NAME Exception
+  df          BINARY_OP 8 <exception match> 
+  44:43       POP_JUMP_IF_FALSE 3
+  59          POP_TOP 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  16:81:39    STORE_NAME e
+  19:81:39    DELETE_NAME e
+  5d          END_FINALLY 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  81          LOAD_CONST_SMALL_INT 1 
+  e5          BINARY_OP 14 __iadd__ 
+  57          DUP_TOP 
+  82          LOAD_CONST_SMALL_INT 2 
+  d7          BINARY_OP 0 __lt__ 
+  43:fb:7e    POP_JUMP_IF_TRUE -133
+  59          POP_TOP 
+  11:53       LOAD_NAME _ui_get
+  34:00       CALL_FUNCTION 0
+  16:81:3a    STORE_NAME ui
+  11:81:3a    LOAD_NAME ui
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:50       POP_JUMP_IF_FALSE 16
+  11:81:37    LOAD_NAME oled
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:48       POP_JUMP_IF_FALSE 8
+  11:81:37    LOAD_NAME oled
+  11:81:3a    LOAD_NAME ui
+  18:1d       STORE_ATTR d
+  11:56       LOAD_NAME _ui_show
+  11:81:3a    LOAD_NAME ui
+  10:1e       LOAD_CONST_STRING s3
+  10:1f       LOAD_CONST_STRING neutral
+  11:0d       LOAD_NAME ovomini
+  13:20       LOAD_ATTR BOARD_NAME
+  34:04       CALL_FUNCTION 4
+  59          POP_TOP 
+  11:5b       LOAD_NAME _ui_tick
+  11:81:3a    LOAD_NAME ui
+  22:84:58    LOAD_CONST_SMALL_INT 600
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  11:56       LOAD_NAME _ui_show
+  11:81:3a    LOAD_NAME ui
+  10:21       LOAD_CONST_STRING wifi
+  10:1f       LOAD_CONST_STRING neutral
+  23:07       LOAD_CONST_OBJ 'scanning wifi...'
+  34:04       CALL_FUNCTION 4
+  59          POP_TOP 
+  11:0d       LOAD_NAME ovomini
+  14:22       LOAD_METHOD led_status
+  10:23       LOAD_CONST_STRING scan
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  11:03       LOAD_NAME time
+  14:24       LOAD_METHOD ticks_ms
+  36:00       CALL_METHOD 0
+  16:81:3b    STORE_NAME t0
+  42:f2:80    JUMP 114
+  11:81:32    LOAD_NAME boot_btn
+  14:25       LOAD_METHOD value
+  36:00       CALL_METHOD 0
+  80          LOAD_CONST_SMALL_INT 0 
+  d9          BINARY_OP 2 __eq__ 
+  44:5a       POP_JUMP_IF_FALSE 26
+  11:03       LOAD_NAME time
+  14:26       LOAD_METHOD sleep_ms
+  99          LOAD_CONST_SMALL_INT 25 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  11:81:32    LOAD_NAME boot_btn
+  14:25       LOAD_METHOD value
+  36:00       CALL_METHOD 0
+  80          LOAD_CONST_SMALL_INT 0 
+  d9          BINARY_OP 2 __eq__ 
+  44:47       POP_JUMP_IF_FALSE 7
+  52          LOAD_CONST_TRUE 
+  16:81:35    STORE_NAME ble_mode
+  42:d6:80    JUMP 86
+  11:03       LOAD_NAME time
+  14:27       LOAD_METHOD ticks_diff
+  11:03       LOAD_NAME time
+  14:24       LOAD_METHOD ticks_ms
+  36:00       CALL_METHOD 0
+  11:81:3b    LOAD_NAME t0
+  36:02       CALL_METHOD 2
+  22:ae:70    LOAD_CONST_SMALL_INT 6000
+  db          BINARY_OP 4 __ge__ 
+  44:4a       POP_JUMP_IF_FALSE 10
+  11:81:34    LOAD_NAME print
+  23:08       LOAD_CONST_OBJ '[scan] timeout'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  42:77       JUMP 55
+  11:0d       LOAD_NAME ovomini
+  14:28       LOAD_METHOD rgb_tick
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  11:81:3a    LOAD_NAME ui
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:57       POP_JUMP_IF_FALSE 23
+  48:0a       SETUP_EXCEPT 10
+  11:81:3a    LOAD_NAME ui
+  14:29       LOAD_METHOD tick
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  4a:0b       POP_EXCEPT_JUMP 11
+  57          DUP_TOP 
+  11:81:33    LOAD_NAME Exception
+  df          BINARY_OP 8 <exception match> 
+  44:43       POP_JUMP_IF_FALSE 3
+  59          POP_TOP 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  11:03       LOAD_NAME time
+  14:26       LOAD_METHOD sleep_ms
+  9e          LOAD_CONST_SMALL_INT 30 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  11:81:36    LOAD_NAME box
+  10:2a       LOAD_CONST_STRING done
+  55          LOAD_SUBSCR 
+  44:85:7f    POP_JUMP_IF_FALSE -123
+  11:81:35    LOAD_NAME ble_mode
+  43:fd:80    POP_JUMP_IF_TRUE 125
+  11:03       LOAD_NAME time
+  14:24       LOAD_METHOD ticks_ms
+  36:00       CALL_METHOD 0
+  16:81:3c    STORE_NAME _g0
+  42:d3:80    JUMP 83
+  11:81:32    LOAD_NAME boot_btn
+  14:25       LOAD_METHOD value
+  36:00       CALL_METHOD 0
+  80          LOAD_CONST_SMALL_INT 0 
+  d9          BINARY_OP 2 __eq__ 
+  44:5a       POP_JUMP_IF_FALSE 26
+  11:03       LOAD_NAME time
+  14:26       LOAD_METHOD sleep_ms
+  99          LOAD_CONST_SMALL_INT 25 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  11:81:32    LOAD_NAME boot_btn
+  14:25       LOAD_METHOD value
+  36:00       CALL_METHOD 0
+  80          LOAD_CONST_SMALL_INT 0 
+  d9          BINARY_OP 2 __eq__ 
+  44:47       POP_JUMP_IF_FALSE 7
+  52          LOAD_CONST_TRUE 
+  16:81:35    STORE_NAME ble_mode
+  42:cc:80    JUMP 76
+  11:0d       LOAD_NAME ovomini
+  14:28       LOAD_METHOD rgb_tick
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  11:81:3a    LOAD_NAME ui
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:57       POP_JUMP_IF_FALSE 23
+  48:0a       SETUP_EXCEPT 10
+  11:81:3a    LOAD_NAME ui
+  14:29       LOAD_METHOD tick
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  4a:0b       POP_EXCEPT_JUMP 11
+  57          DUP_TOP 
+  11:81:33    LOAD_NAME Exception
+  df          BINARY_OP 8 <exception match> 
+  44:43       POP_JUMP_IF_FALSE 3
+  59          POP_TOP 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  11:03       LOAD_NAME time
+  14:26       LOAD_METHOD sleep_ms
+  9e          LOAD_CONST_SMALL_INT 30 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  11:81:36    LOAD_NAME box
+  10:2a       LOAD_CONST_STRING done
+  55          LOAD_SUBSCR 
+  43:56       POP_JUMP_IF_TRUE 22
+  11:03       LOAD_NAME time
+  14:27       LOAD_METHOD ticks_diff
+  11:03       LOAD_NAME time
+  14:24       LOAD_METHOD ticks_ms
+  36:00       CALL_METHOD 0
+  11:81:3c    LOAD_NAME _g0
+  36:02       CALL_METHOD 2
+  22:8b:5c    LOAD_CONST_SMALL_INT 1500
+  d7          BINARY_OP 0 __lt__ 
+  43:8f:7f    POP_JUMP_IF_TRUE -113
+  11:81:35    LOAD_NAME ble_mode
+  44:c0:80    POP_JUMP_IF_FALSE 64
+  11:56       LOAD_NAME _ui_show
+  11:81:3a    LOAD_NAME ui
+  10:2b       LOAD_CONST_STRING ble
+  10:2c       LOAD_CONST_STRING happy
+  23:09       LOAD_CONST_OBJ 'ble upload mode'
+  34:04       CALL_FUNCTION 4
+  59          POP_TOP 
+  11:0d       LOAD_NAME ovomini
+  14:13       LOAD_METHOD set_led_color
+  10:2d       LOAD_CONST_STRING blue
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  11:03       LOAD_NAME time
+  14:24       LOAD_METHOD ticks_ms
+  36:00       CALL_METHOD 0
+  16:81:3d    STORE_NAME _t
+  42:49       JUMP 9
+  11:5b       LOAD_NAME _ui_tick
+  11:81:3a    LOAD_NAME ui
+  9e          LOAD_CONST_SMALL_INT 30 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  11:03       LOAD_NAME time
+  14:27       LOAD_METHOD ticks_diff
+  11:03       LOAD_NAME time
+  14:24       LOAD_METHOD ticks_ms
+  36:00       CALL_METHOD 0
+  11:81:3d    LOAD_NAME _t
+  36:02       CALL_METHOD 2
+  22:87:68    LOAD_CONST_SMALL_INT 1000
+  d7          BINARY_OP 0 __lt__ 
+  43:22       POP_JUMP_IF_TRUE -30
+  11:81:36    LOAD_NAME box
+  10:2e       LOAD_CONST_STRING aps
+  55          LOAD_SUBSCR 
+  45:02       JUMP_IF_TRUE_OR_POP 2
+  2b:00       BUILD_LIST 0
+  16:2e       STORE_NAME aps
+  11:81:34    LOAD_NAME print
+  23:0a       LOAD_CONST_OBJ '[init] scan done, %d APs'
+  11:81:3e    LOAD_NAME len
+  11:2e       LOAD_NAME aps
+  34:01       CALL_FUNCTION 1
+  f8          BINARY_OP 33 __mod__ 
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  11:81:35    LOAD_NAME ble_mode
+  43:49       POP_JUMP_IF_TRUE 9
+  11:0d       LOAD_NAME ovomini
+  14:13       LOAD_METHOD set_led_color
+  10:2f       LOAD_CONST_STRING off
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  80          LOAD_CONST_SMALL_INT 0 
+  17:81:3f    STORE_GLOBAL _ble_activity
+  11:81:35    LOAD_NAME ble_mode
+  44:b0:84    POP_JUMP_IF_FALSE 560
+  11:56       LOAD_NAME _ui_show
+  11:81:3a    LOAD_NAME ui
+  10:2b       LOAD_CONST_STRING ble
+  10:2c       LOAD_CONST_STRING happy
+  23:0b       LOAD_CONST_OBJ 'waiting for ble...'
+  34:04       CALL_FUNCTION 4
+  59          POP_TOP 
+  11:02       LOAD_NAME bluetooth
+  14:30       LOAD_METHOD BLE
+  36:00       CALL_METHOD 0
+  16:2b       STORE_NAME ble
+  11:0c       LOAD_NAME BLEUART
+  11:2b       LOAD_NAME ble
+  11:81:25    LOAD_NAME BLE_NAME
+  34:02       CALL_FUNCTION 2
+  16:44       STORE_NAME uart
+  11:81:34    LOAD_NAME print
+  23:0c       LOAD_CONST_OBJ '[init] BLE started, name:'
+  11:81:25    LOAD_NAME BLE_NAME
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  42:48       JUMP 8
+  11:03       LOAD_NAME time
+  14:26       LOAD_METHOD sleep_ms
+  8a          LOAD_CONST_SMALL_INT 10 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  11:81:32    LOAD_NAME boot_btn
+  14:25       LOAD_METHOD value
+  36:00       CALL_METHOD 0
+  80          LOAD_CONST_SMALL_INT 0 
+  d9          BINARY_OP 2 __eq__ 
+  43:2d       POP_JUMP_IF_TRUE -19
+  11:81:34    LOAD_NAME print
+  23:0d       LOAD_CONST_OBJ '[ble] BOOT hold 2s=del test.py (short press=hint only)'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  81          LOAD_CONST_SMALL_INT 1 
+  16:81:40    STORE_NAME prev_b
+  80          LOAD_CONST_SMALL_INT 0 
+  16:81:41    STORE_NAME press_t0
+  50          LOAD_CONST_FALSE 
+  16:81:42    STORE_NAME hinted
+  48:09       SETUP_EXCEPT 9
+  11:44       LOAD_NAME uart
+  14:31       LOAD_METHOD process
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  4a:23       POP_EXCEPT_JUMP 35
+  57          DUP_TOP 
+  11:81:33    LOAD_NAME Exception
+  df          BINARY_OP 8 <exception match> 
+  44:5b       POP_JUMP_IF_FALSE 27
+  16:81:39    STORE_NAME e
+  49:0c       SETUP_FINALLY 12
+  11:81:34    LOAD_NAME print
+  23:0e       LOAD_CONST_OBJ '[loop] error:'
+  11:81:39    LOAD_NAME e
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  16:81:39    STORE_NAME e
+  19:81:39    DELETE_NAME e
+  5d          END_FINALLY 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  11:81:32    LOAD_NAME boot_btn
+  14:25       LOAD_METHOD value
+  36:00       CALL_METHOD 0
+  16:81:43    STORE_NAME v
+  11:03       LOAD_NAME time
+  14:24       LOAD_METHOD ticks_ms
+  36:00       CALL_METHOD 0
+  16:81:44    STORE_NAME now
+  11:81:43    LOAD_NAME v
+  80          LOAD_CONST_SMALL_INT 0 
+  d9          BINARY_OP 2 __eq__ 
+  44:6d       POP_JUMP_IF_FALSE 45
+  11:81:40    LOAD_NAME prev_b
+  81          LOAD_CONST_SMALL_INT 1 
+  d9          BINARY_OP 2 __eq__ 
+  44:66       POP_JUMP_IF_FALSE 38
+  11:03       LOAD_NAME time
+  14:26       LOAD_METHOD sleep_ms
+  99          LOAD_CONST_SMALL_INT 25 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  11:81:32    LOAD_NAME boot_btn
+  14:25       LOAD_METHOD value
+  36:00       CALL_METHOD 0
+  80          LOAD_CONST_SMALL_INT 0 
+  d9          BINARY_OP 2 __eq__ 
+  44:4c       POP_JUMP_IF_FALSE 12
+  11:81:44    LOAD_NAME now
+  16:81:41    STORE_NAME press_t0
+  50          LOAD_CONST_FALSE 
+  16:81:42    STORE_NAME hinted
+  42:44       JUMP 4
+  80          LOAD_CONST_SMALL_INT 0 
+  16:81:41    STORE_NAME press_t0
+  42:87:82    JUMP 263
+  11:81:43    LOAD_NAME v
+  80          LOAD_CONST_SMALL_INT 0 
+  d9          BINARY_OP 2 __eq__ 
+  44:df:81    POP_JUMP_IF_FALSE 223
+  11:81:41    LOAD_NAME press_t0
+  44:d9:81    POP_JUMP_IF_FALSE 217
+  11:03       LOAD_NAME time
+  14:27       LOAD_METHOD ticks_diff
+  11:81:44    LOAD_NAME now
+  11:81:41    LOAD_NAME press_t0
+  36:02       CALL_METHOD 2
+  16:81:45    STORE_NAME held
+  11:81:45    LOAD_NAME held
+  22:8f:50    LOAD_CONST_SMALL_INT 2000
+  db          BINARY_OP 4 __ge__ 
+  44:9c:81    POP_JUMP_IF_FALSE 156
+  80          LOAD_CONST_SMALL_INT 0 
+  16:81:41    STORE_NAME press_t0
+  48:2e       SETUP_EXCEPT 46
+  11:06       LOAD_NAME os
+  14:32       LOAD_METHOD remove
+  10:33       LOAD_CONST_STRING test.py
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:15       IMPORT_NAME pinutil
+  16:15       STORE_NAME pinutil
+  11:15       LOAD_NAME pinutil
+  14:34       LOAD_METHOD wipe
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  11:81:34    LOAD_NAME print
+  23:0f       LOAD_CONST_OBJ '[ble] test.py deleted'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  11:56       LOAD_NAME _ui_show
+  11:81:3a    LOAD_NAME ui
+  10:2b       LOAD_CONST_STRING ble
+  10:2c       LOAD_CONST_STRING happy
+  23:10       LOAD_CONST_OBJ 'test.py deleted'
+  34:04       CALL_FUNCTION 4
+  59          POP_TOP 
+  4a:51       POP_EXCEPT_JUMP 81
+  57          DUP_TOP 
+  11:81:46    LOAD_NAME OSError
+  df          BINARY_OP 8 <exception match> 
+  44:59       POP_JUMP_IF_FALSE 25
+  59          POP_TOP 
+  11:81:34    LOAD_NAME print
+  23:11       LOAD_CONST_OBJ '[ble] no test.py'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  11:56       LOAD_NAME _ui_show
+  11:81:3a    LOAD_NAME ui
+  10:2b       LOAD_CONST_STRING ble
+  10:1f       LOAD_CONST_STRING neutral
+  23:12       LOAD_CONST_OBJ 'no test.py found'
+  34:04       CALL_FUNCTION 4
+  59          POP_TOP 
+  4a:31       POP_EXCEPT_JUMP 49
+  57          DUP_TOP 
+  11:81:33    LOAD_NAME Exception
+  df          BINARY_OP 8 <exception match> 
+  44:69       POP_JUMP_IF_FALSE 41
+  16:81:39    STORE_NAME e
+  49:1a       SETUP_FINALLY 26
+  11:81:34    LOAD_NAME print
+  23:13       LOAD_CONST_OBJ '[ble] del error:'
+  11:81:39    LOAD_NAME e
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  11:56       LOAD_NAME _ui_show
+  11:81:3a    LOAD_NAME ui
+  10:35       LOAD_CONST_STRING error
+  10:35       LOAD_CONST_STRING error
+  23:14       LOAD_CONST_OBJ 'delete failed'
+  34:04       CALL_FUNCTION 4
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  16:81:39    STORE_NAME e
+  19:81:39    DELETE_NAME e
+  5d          END_FINALLY 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  42:48       JUMP 8
+  11:03       LOAD_NAME time
+  14:26       LOAD_METHOD sleep_ms
+  8a          LOAD_CONST_SMALL_INT 10 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  11:81:32    LOAD_NAME boot_btn
+  14:25       LOAD_METHOD value
+  36:00       CALL_METHOD 0
+  80          LOAD_CONST_SMALL_INT 0 
+  d9          BINARY_OP 2 __eq__ 
+  43:2d       POP_JUMP_IF_TRUE -19
+  42:62       JUMP 34
+  11:81:45    LOAD_NAME held
+  22:84:58    LOAD_CONST_SMALL_INT 600
+  db          BINARY_OP 4 __ge__ 
+  44:59       POP_JUMP_IF_FALSE 25
+  11:81:42    LOAD_NAME hinted
+  43:54       POP_JUMP_IF_TRUE 20
+  52          LOAD_CONST_TRUE 
+  16:81:42    STORE_NAME hinted
+  11:56       LOAD_NAME _ui_show
+  11:81:3a    LOAD_NAME ui
+  10:2b       LOAD_CONST_STRING ble
+  10:1f       LOAD_CONST_STRING neutral
+  23:15       LOAD_CONST_OBJ 'hold: del test.py'
+  34:04       CALL_FUNCTION 4
+  59          POP_TOP 
+  42:40       JUMP 0
+  42:60       JUMP 32
+  11:81:43    LOAD_NAME v
+  81          LOAD_CONST_SMALL_INT 1 
+  d9          BINARY_OP 2 __eq__ 
+  44:59       POP_JUMP_IF_FALSE 25
+  11:81:41    LOAD_NAME press_t0
+  44:54       POP_JUMP_IF_FALSE 20
+  80          LOAD_CONST_SMALL_INT 0 
+  16:81:41    STORE_NAME press_t0
+  11:56       LOAD_NAME _ui_show
+  11:81:3a    LOAD_NAME ui
+  10:2b       LOAD_CONST_STRING ble
+  10:1f       LOAD_CONST_STRING neutral
+  23:16       LOAD_CONST_OBJ 'hold 2s=del'
+  34:04       CALL_FUNCTION 4
+  59          POP_TOP 
+  42:40       JUMP 0
+  11:81:43    LOAD_NAME v
+  16:81:40    STORE_NAME prev_b
+  12:81:3f    LOAD_GLOBAL _ble_activity
+  44:5e       POP_JUMP_IF_FALSE 30
+  11:03       LOAD_NAME time
+  14:27       LOAD_METHOD ticks_diff
+  11:81:44    LOAD_NAME now
+  12:81:3f    LOAD_GLOBAL _ble_activity
+  36:02       CALL_METHOD 2
+  22:83:10    LOAD_CONST_SMALL_INT 400
+  d7          BINARY_OP 0 __lt__ 
+  44:4c       POP_JUMP_IF_FALSE 12
+  11:0d       LOAD_NAME ovomini
+  14:36       LOAD_METHOD ble_data_tick
+  11:81:44    LOAD_NAME now
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  42:49       JUMP 9
+  11:0d       LOAD_NAME ovomini
+  14:13       LOAD_METHOD set_led_color
+  10:2d       LOAD_CONST_STRING blue
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  11:81:3a    LOAD_NAME ui
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:57       POP_JUMP_IF_FALSE 23
+  48:0a       SETUP_EXCEPT 10
+  11:81:3a    LOAD_NAME ui
+  14:29       LOAD_METHOD tick
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  4a:0b       POP_EXCEPT_JUMP 11
+  57          DUP_TOP 
+  11:81:33    LOAD_NAME Exception
+  df          BINARY_OP 8 <exception match> 
+  44:43       POP_JUMP_IF_FALSE 3
+  59          POP_TOP 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  11:03       LOAD_NAME time
+  14:26       LOAD_METHOD sleep_ms
+  9e          LOAD_CONST_SMALL_INT 30 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  42:a8:7c    JUMP -472
+  42:ab:84    JUMP 555
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:37       IMPORT_NAME builtins
+  16:37       STORE_NAME builtins
+  11:2e       LOAD_NAME aps
+  11:37       LOAD_NAME builtins
+  18:38       STORE_ATTR wifi_scan
+  50          LOAD_CONST_FALSE 
+  16:81:47    STORE_NAME has_test
+  48:0e       SETUP_EXCEPT 14
+  10:33       LOAD_CONST_STRING test.py
+  11:06       LOAD_NAME os
+  14:39       LOAD_METHOD listdir
+  36:00       CALL_METHOD 0
+  dd          BINARY_OP 6 <in> 
+  16:81:47    STORE_NAME has_test
+  4a:23       POP_EXCEPT_JUMP 35
+  57          DUP_TOP 
+  11:81:33    LOAD_NAME Exception
+  df          BINARY_OP 8 <exception match> 
+  44:5b       POP_JUMP_IF_FALSE 27
+  16:81:39    STORE_NAME e
+  49:0c       SETUP_FINALLY 12
+  11:81:34    LOAD_NAME print
+  23:17       LOAD_CONST_OBJ '[init] listdir:'
+  11:81:39    LOAD_NAME e
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  16:81:39    STORE_NAME e
+  19:81:39    DELETE_NAME e
+  5d          END_FINALLY 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  11:81:47    LOAD_NAME has_test
+  44:e2:80    POP_JUMP_IF_FALSE 98
+  11:56       LOAD_NAME _ui_show
+  11:81:3a    LOAD_NAME ui
+  10:3a       LOAD_CONST_STRING run
+  10:1f       LOAD_CONST_STRING neutral
+  23:18       LOAD_CONST_OBJ 'run test.py'
+  34:04       CALL_FUNCTION 4
+  59          POP_TOP 
+  11:81:34    LOAD_NAME print
+  23:19       LOAD_CONST_OBJ '[init] starting test.py'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  48:09       SETUP_EXCEPT 9
+  11:50       LOAD_NAME start_user_code
+  10:33       LOAD_CONST_STRING test.py
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  4a:3e       POP_EXCEPT_JUMP 62
+  57          DUP_TOP 
+  11:81:33    LOAD_NAME Exception
+  df          BINARY_OP 8 <exception match> 
+  44:76       POP_JUMP_IF_FALSE 54
+  16:81:39    STORE_NAME e
+  49:27       SETUP_FINALLY 39
+  11:81:34    LOAD_NAME print
+  23:1a       LOAD_CONST_OBJ '[init] test.py error:'
+  11:81:39    LOAD_NAME e
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  11:56       LOAD_NAME _ui_show
+  11:81:3a    LOAD_NAME ui
+  10:35       LOAD_CONST_STRING error
+  10:35       LOAD_CONST_STRING error
+  23:1b       LOAD_CONST_OBJ 'test.py error'
+  34:04       CALL_FUNCTION 4
+  59          POP_TOP 
+  11:5b       LOAD_NAME _ui_tick
+  11:81:3a    LOAD_NAME ui
+  22:87:68    LOAD_CONST_SMALL_INT 1000
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  42:33       JUMP -13
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  16:81:39    STORE_NAME e
+  19:81:39    DELETE_NAME e
+  5d          END_FINALLY 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  42:80:83    JUMP 384
+  11:56       LOAD_NAME _ui_show
+  11:81:3a    LOAD_NAME ui
+  10:3a       LOAD_CONST_STRING run
+  10:1f       LOAD_CONST_STRING neutral
+  23:1c       LOAD_CONST_OBJ 'starting app...'
+  34:04       CALL_FUNCTION 4
+  59          POP_TOP 
+  48:1b       SETUP_EXCEPT 27
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:3b       IMPORT_NAME client
+  16:3b       STORE_NAME client
+  11:3b       LOAD_NAME client
+  14:3c       LOAD_METHOD main
+  11:81:37    LOAD_NAME oled
+  11:81:32    LOAD_NAME boot_btn
+  10:2e       LOAD_CONST_STRING aps
+  11:2e       LOAD_NAME aps
+  36:82:02    CALL_METHOD 258
+  59          POP_TOP 
+  4a:d5:02    POP_EXCEPT_JUMP 341
+  57          DUP_TOP 
+  11:81:33    LOAD_NAME Exception
+  df          BINARY_OP 8 <exception match> 
+  44:cc:82    POP_JUMP_IF_FALSE 332
+  16:81:39    STORE_NAME e
+  49:bc:02    SETUP_FINALLY 316
+  11:81:34    LOAD_NAME print
+  23:1d       LOAD_CONST_OBJ '[init] client error:'
+  11:81:39    LOAD_NAME e
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  48:12       SETUP_EXCEPT 18
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:3d       IMPORT_NAME sys
+  16:3d       STORE_NAME sys
+  11:3d       LOAD_NAME sys
+  14:3e       LOAD_METHOD print_exception
+  11:81:39    LOAD_NAME e
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  4a:0b       POP_EXCEPT_JUMP 11
+  57          DUP_TOP 
+  11:81:33    LOAD_NAME Exception
+  df          BINARY_OP 8 <exception match> 
+  44:43       POP_JUMP_IF_FALSE 3
+  59          POP_TOP 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  11:56       LOAD_NAME _ui_show
+  11:81:3a    LOAD_NAME ui
+  10:35       LOAD_CONST_STRING error
+  10:35       LOAD_CONST_STRING error
+  10:3f       LOAD_CONST_STRING app error
+  34:04       CALL_FUNCTION 4
+  59          POP_TOP 
+  42:48       JUMP 8
+  11:03       LOAD_NAME time
+  14:26       LOAD_METHOD sleep_ms
+  8a          LOAD_CONST_SMALL_INT 10 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  11:81:32    LOAD_NAME boot_btn
+  14:25       LOAD_METHOD value
+  36:00       CALL_METHOD 0
+  80          LOAD_CONST_SMALL_INT 0 
+  d9          BINARY_OP 2 __eq__ 
+  43:2d       POP_JUMP_IF_TRUE -19
+  11:56       LOAD_NAME _ui_show
+  11:81:3a    LOAD_NAME ui
+  10:35       LOAD_CONST_STRING error
+  10:35       LOAD_CONST_STRING error
+  23:1e       LOAD_CONST_OBJ 'short=reboot hold=wipe'
+  34:04       CALL_FUNCTION 4
+  59          POP_TOP 
+  11:81:32    LOAD_NAME boot_btn
+  14:25       LOAD_METHOD value
+  36:00       CALL_METHOD 0
+  81          LOAD_CONST_SMALL_INT 1 
+  d9          BINARY_OP 2 __eq__ 
+  44:4d       POP_JUMP_IF_FALSE 13
+  11:5b       LOAD_NAME _ui_tick
+  11:81:3a    LOAD_NAME ui
+  22:32       LOAD_CONST_SMALL_INT 50
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  42:c5:81    JUMP 197
+  11:03       LOAD_NAME time
+  14:26       LOAD_METHOD sleep_ms
+  99          LOAD_CONST_SMALL_INT 25 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  11:81:32    LOAD_NAME boot_btn
+  14:25       LOAD_METHOD value
+  36:00       CALL_METHOD 0
+  81          LOAD_CONST_SMALL_INT 1 
+  d9          BINARY_OP 2 __eq__ 
+  44:43       POP_JUMP_IF_FALSE 3
+  42:af:81    JUMP 175
+  11:03       LOAD_NAME time
+  14:24       LOAD_METHOD ticks_ms
+  36:00       CALL_METHOD 0
+  16:81:3b    STORE_NAME t0
+  42:90:81    JUMP 144
+  11:03       LOAD_NAME time
+  14:27       LOAD_METHOD ticks_diff
+  11:03       LOAD_NAME time
+  14:24       LOAD_METHOD ticks_ms
+  36:00       CALL_METHOD 0
+  11:81:3b    LOAD_NAME t0
+  36:02       CALL_METHOD 2
+  22:97:38    LOAD_CONST_SMALL_INT 3000
+  db          BINARY_OP 4 __ge__ 
+  44:f0:80    POP_JUMP_IF_FALSE 112
+  11:56       LOAD_NAME _ui_show
+  11:81:3a    LOAD_NAME ui
+  10:21       LOAD_CONST_STRING wifi
+  10:35       LOAD_CONST_STRING error
+  23:1f       LOAD_CONST_OBJ 'reset wifi, rebooting'
+  34:04       CALL_FUNCTION 4
+  59          POP_TOP 
+  11:5b       LOAD_NAME _ui_tick
+  11:81:3a    LOAD_NAME ui
+  22:83:74    LOAD_CONST_SMALL_INT 500
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  48:0f       SETUP_EXCEPT 15
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:40       IMPORT_NAME wifinet
+  16:40       STORE_NAME wifinet
+  11:40       LOAD_NAME wifinet
+  14:34       LOAD_METHOD wipe
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  4a:23       POP_EXCEPT_JUMP 35
+  57          DUP_TOP 
+  11:81:33    LOAD_NAME Exception
+  df          BINARY_OP 8 <exception match> 
+  44:5b       POP_JUMP_IF_FALSE 27
+  16:81:48    STORE_NAME we
+  49:0c       SETUP_FINALLY 12
+  11:81:34    LOAD_NAME print
+  23:20       LOAD_CONST_OBJ '[init] wipe:'
+  11:81:48    LOAD_NAME we
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  16:81:48    STORE_NAME we
+  19:81:48    DELETE_NAME we
+  5d          END_FINALLY 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  48:0f       SETUP_EXCEPT 15
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:15       IMPORT_NAME pinutil
+  16:15       STORE_NAME pinutil
+  11:15       LOAD_NAME pinutil
+  14:34       LOAD_METHOD wipe
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  4a:0b       POP_EXCEPT_JUMP 11
+  57          DUP_TOP 
+  11:81:33    LOAD_NAME Exception
+  df          BINARY_OP 8 <exception match> 
+  44:43       POP_JUMP_IF_FALSE 3
+  59          POP_TOP 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  11:05       LOAD_NAME machine
+  14:41       LOAD_METHOD reset
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  11:5b       LOAD_NAME _ui_tick
+  11:81:3a    LOAD_NAME ui
+  22:32       LOAD_CONST_SMALL_INT 50
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  11:81:32    LOAD_NAME boot_btn
+  14:25       LOAD_METHOD value
+  36:00       CALL_METHOD 0
+  80          LOAD_CONST_SMALL_INT 0 
+  d9          BINARY_OP 2 __eq__ 
+  43:e4:7e    POP_JUMP_IF_TRUE -156
+  11:05       LOAD_NAME machine
+  14:41       LOAD_METHOD reset
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  42:a0:7e    JUMP -224
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  16:81:39    STORE_NAME e
+  19:81:39    DELETE_NAME e
+  5d          END_FINALLY 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [_uart, ble_send, ble_send_bytes, ble_is_connected, user_code_wrapper, start_user_code, BLEUART, _ui_get, _ui_show, _ui_tick, _scan_wifi_async, _i2c_recover]
+simple_name: _uart
+  raw bytecode: 18 10:08:42:80:18:20:12:81:49:34:00:14:43:10:44:36:01:63
+  prelude: (3, 0, 0, 0, 0, 0)
+  args: []
+  line info: 80:18:20
+  12:81:49    LOAD_GLOBAL globals
+  34:00       CALL_FUNCTION 0
+  14:43       LOAD_METHOD get
+  10:44       LOAD_CONST_STRING uart
+  36:01       CALL_METHOD 1
+  63          RETURN_VALUE 
+  children: []
+simple_name: ble_send
+  raw bytecode: 29 21:0e:45:81:4a:80:1d:25:26:12:42:34:00:c1:b1:51:de:d3:44:47:b1:14:46:b0:36:01:59:51:63
+  prelude: (5, 0, 0, 1, 0, 0)
+  args: ['text']
+  line info: 80:1d:25:26
+  12:42       LOAD_GLOBAL _uart
+  34:00       CALL_FUNCTION 0
+  c1          STORE_FAST 1 
+  b1          LOAD_FAST 1 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:47       POP_JUMP_IF_FALSE 7
+  b1          LOAD_FAST 1 
+  14:46       LOAD_METHOD send
+  b0          LOAD_FAST 0 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: ble_send_bytes
+  raw bytecode: 29 21:0e:47:81:4b:80:22:25:26:12:42:34:00:c1:b1:51:de:d3:44:47:b1:14:48:b0:36:01:59:51:63
+  prelude: (5, 0, 0, 1, 0, 0)
+  args: ['data']
+  line info: 80:22:25:26
+  12:42       LOAD_GLOBAL _uart
+  34:00       CALL_FUNCTION 0
+  c1          STORE_FAST 1 
+  b1          LOAD_FAST 1 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:47       POP_JUMP_IF_FALSE 7
+  b1          LOAD_FAST 1 
+  14:48       LOAD_METHOD send_bytes
+  b0          LOAD_FAST 0 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: ble_is_connected
+  raw bytecode: 25 18:08:49:80:27:25:12:42:34:00:c0:12:81:4c:b0:46:05:b0:14:4a:36:00:34:01:63
+  prelude: (4, 0, 0, 0, 0, 0)
+  args: []
+  line info: 80:27:25
+  12:42       LOAD_GLOBAL _uart
+  34:00       CALL_FUNCTION 0
+  c0          STORE_FAST 0 
+  12:81:4c    LOAD_GLOBAL bool
+  b0          LOAD_FAST 0 
+  46:05       JUMP_IF_FALSE_OR_POP 5
+  b0          LOAD_FAST 0 
+  14:4a       LOAD_METHOD is_connected
+  36:00       CALL_METHOD 0
+  34:01       CALL_FUNCTION 1
+  63          RETURN_VALUE 
+  children: []
+simple_name: user_code_wrapper
+  raw bytecode: 149 f5:02:26:4b:81:4d:80:2c:20:29:22:2b:29:28:58:29:22:25:51:2c:24:24:12:81:34:23:21:b0:34:02:59:48:2a:12:81:4e:b0:10:4c:34:02:47:08:c1:b1:14:4d:36:00:c2:51:5c:5d:b2:14:4e:10:4f:36:01:c3:12:81:4f:b3:12:81:49:34:00:34:02:59:4a:37:57:12:81:33:df:44:6f:c4:49:25:12:81:34:23:22:b4:34:02:59:48:0e:80:51:1b:3d:c5:b5:14:3e:b4:36:01:59:4a:0b:57:12:81:33:df:44:43:59:4a:01:5d:51:51:c4:28:04:5d:4a:01:5d:51:17:81:30:50:17:81:31:12:81:34:23:23:b0:34:02:59:51:63
+  prelude: (15, 3, 0, 1, 0, 0)
+  args: ['filename']
+  line info: 80:2c:20:29:22:2b:29:28:58:29:22:25:51:2c:24:24
+  12:81:34    LOAD_GLOBAL print
+  23:21       LOAD_CONST_OBJ '[thread] start:'
+  b0          LOAD_FAST 0 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  48:2a       SETUP_EXCEPT 42
+  12:81:4e    LOAD_GLOBAL open
+  b0          LOAD_FAST 0 
+  10:4c       LOAD_CONST_STRING rb
+  34:02       CALL_FUNCTION 2
+  47:08       SETUP_WITH 8
+  c1          STORE_FAST 1 
+  b1          LOAD_FAST 1 
+  14:4d       LOAD_METHOD read
+  36:00       CALL_METHOD 0
+  c2          STORE_FAST 2 
+  51          LOAD_CONST_NONE 
+  5c          WITH_CLEANUP 
+  5d          END_FINALLY 
+  b2          LOAD_FAST 2 
+  14:4e       LOAD_METHOD decode
+  10:4f       LOAD_CONST_STRING utf-8
+  36:01       CALL_METHOD 1
+  c3          STORE_FAST 3 
+  12:81:4f    LOAD_GLOBAL exec
+  b3          LOAD_FAST 3 
+  12:81:49    LOAD_GLOBAL globals
+  34:00       CALL_FUNCTION 0
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  4a:37       POP_EXCEPT_JUMP 55
+  57          DUP_TOP 
+  12:81:33    LOAD_GLOBAL Exception
+  df          BINARY_OP 8 <exception match> 
+  44:6f       POP_JUMP_IF_FALSE 47
+  c4          STORE_FAST 4 
+  49:25       SETUP_FINALLY 37
+  12:81:34    LOAD_GLOBAL print
+  23:22       LOAD_CONST_OBJ '[thread] error:'
+  b4          LOAD_FAST 4 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  48:0e       SETUP_EXCEPT 14
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:3d       IMPORT_NAME sys
+  c5          STORE_FAST 5 
+  b5          LOAD_FAST 5 
+  14:3e       LOAD_METHOD print_exception
+  b4          LOAD_FAST 4 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  4a:0b       POP_EXCEPT_JUMP 11
+  57          DUP_TOP 
+  12:81:33    LOAD_GLOBAL Exception
+  df          BINARY_OP 8 <exception match> 
+  44:43       POP_JUMP_IF_FALSE 3
+  59          POP_TOP 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  c4          STORE_FAST 4 
+  28:04       DELETE_FAST 4
+  5d          END_FINALLY 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  51          LOAD_CONST_NONE 
+  17:81:30    STORE_GLOBAL user_thread
+  50          LOAD_CONST_FALSE 
+  17:81:31    STORE_GLOBAL running_from_file
+  12:81:34    LOAD_GLOBAL print
+  23:23       LOAD_CONST_OBJ '[thread] ended:'
+  b0          LOAD_FAST 0 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: start_user_code
+  raw bytecode: 49 35:20:50:81:4d:80:40:20:24:24:69:20:26:26:22:22:55:23:50:17:81:2f:52:17:81:31:12:81:34:23:24:b0:34:02:59:b0:10:33:d9:44:48:12:4b:b0:34:01:59:51:63
+  prelude: (7, 1, 0, 1, 0, 0)
+  args: ['filename']
+  line info: 80:40:20:24:24:69:20:26:26:22:22:55:23
+  50          LOAD_CONST_FALSE 
+  17:81:2f    STORE_GLOBAL u_s_f
+  52          LOAD_CONST_TRUE 
+  17:81:31    STORE_GLOBAL running_from_file
+  12:81:34    LOAD_GLOBAL print
+  23:24       LOAD_CONST_OBJ '[run] starting:'
+  b0          LOAD_FAST 0 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  10:33       LOAD_CONST_STRING test.py
+  d9          BINARY_OP 2 __eq__ 
+  44:48       POP_JUMP_IF_FALSE 8
+  12:4b       LOAD_GLOBAL user_code_wrapper
+  b0          LOAD_FAST 0 
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: BLEUART
+  raw bytecode: 96 08:2c:0c:8b:52:8b:1d:89:10:84:13:64:40:84:0a:84:08:64:65:60:84:13:85:36:11:81:50:16:81:51:10:0c:16:81:52:11:81:25:51:2a:02:53:33:00:16:61:11:81:53:32:01:34:01:16:75:32:02:16:65:32:03:16:74:32:04:16:46:32:05:16:48:32:06:16:4a:32:07:16:81:09:32:08:16:31:32:09:16:81:0a:32:0a:16:81:0b:51:63
+  prelude: (2, 0, 0, 0, 0, 0)
+  args: []
+  line info: 8b:52:8b:1d:89:10:84:13:64:40:84:0a:84:08:64:65:60:84:13:85:36
+  11:81:50    LOAD_NAME __name__
+  16:81:51    STORE_NAME __module__
+  10:0c       LOAD_CONST_STRING BLEUART
+  16:81:52    STORE_NAME __qualname__
+  11:81:25    LOAD_NAME BLE_NAME
+  51          LOAD_CONST_NONE 
+  2a:02       BUILD_TUPLE 2
+  53          LOAD_NULL 
+  33:00       MAKE_FUNCTION_DEFARGS 0
+  16:61       STORE_NAME __init__
+  11:81:53    LOAD_NAME staticmethod
+  32:01       MAKE_FUNCTION 1
+  34:01       CALL_FUNCTION 1
+  16:75       STORE_NAME _valid_name
+  32:02       MAKE_FUNCTION 2
+  16:65       STORE_NAME _irq
+  32:03       MAKE_FUNCTION 3
+  16:74       STORE_NAME _advertise
+  32:04       MAKE_FUNCTION 4
+  16:46       STORE_NAME send
+  32:05       MAKE_FUNCTION 5
+  16:48       STORE_NAME send_bytes
+  32:06       MAKE_FUNCTION 6
+  16:4a       STORE_NAME is_connected
+  32:07       MAKE_FUNCTION 7
+  16:81:09    STORE_NAME set_callback
+  32:08       MAKE_FUNCTION 8
+  16:31       STORE_NAME process
+  32:09       MAKE_FUNCTION 9
+  16:81:0a    STORE_NAME _process_command
+  32:0a       MAKE_FUNCTION 10
+  16:81:0b    STORE_NAME _process_upload
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [__init__, _valid_name, _irq, _advertise, send, send_bytes, is_connected, set_callback, process, _process_command, _process_upload]
+simple_name: __init__
+  raw bytecode: 180 c8:84:01:38:61:81:5a:2b:81:5b:81:5c:80:53:24:29:2b:44:24:24:44:43:20:2e:6e:34:50:48:24:25:28:47:b1:b0:18:62:b0:13:62:14:63:52:36:01:59:b0:13:62:14:64:b0:13:65:36:01:59:b3:b0:18:66:51:b0:18:67:51:b0:18:68:51:b0:18:69:12:81:29:12:81:2a:12:02:13:6a:12:02:13:6b:ed:2a:02:12:81:2b:12:02:13:6c:2a:02:2a:02:2a:02:c4:b0:13:62:14:6d:b4:2a:01:36:01:30:01:30:02:b0:18:68:b0:18:69:12:81:34:23:27:b0:13:68:10:6e:b0:13:69:34:04:59:12:81:5d:34:00:b0:18:6f:50:b0:18:70:10:59:b0:18:71:12:81:5d:34:00:b0:18:72:22:82:f7:00:b0:18:73:b0:14:74:b2:36:01:59:51:63
+  prelude: (10, 0, 0, 4, 0, 2)
+  args: ['self', 'ble', 'name', 'callback']
+  line info: 80:53:24:29:2b:44:24:24:44:43:20:2e:6e:34:50:48:24:25:28:47
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:62       STORE_ATTR _ble
+  b0          LOAD_FAST 0 
+  13:62       LOAD_ATTR _ble
+  14:63       LOAD_METHOD active
+  52          LOAD_CONST_TRUE 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:62       LOAD_ATTR _ble
+  14:64       LOAD_METHOD irq
+  b0          LOAD_FAST 0 
+  13:65       LOAD_ATTR _irq
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b3          LOAD_FAST 3 
+  b0          LOAD_FAST 0 
+  18:66       STORE_ATTR _callback
+  51          LOAD_CONST_NONE 
+  b0          LOAD_FAST 0 
+  18:67       STORE_ATTR _conn_handle
+  51          LOAD_CONST_NONE 
+  b0          LOAD_FAST 0 
+  18:68       STORE_ATTR _rx_handle
+  51          LOAD_CONST_NONE 
+  b0          LOAD_FAST 0 
+  18:69       STORE_ATTR _tx_handle
+  12:81:29    LOAD_GLOBAL UART_SERVICE_UUID
+  12:81:2a    LOAD_GLOBAL UART_RX_CHAR_UUID
+  12:02       LOAD_GLOBAL bluetooth
+  13:6a       LOAD_ATTR FLAG_WRITE
+  12:02       LOAD_GLOBAL bluetooth
+  13:6b       LOAD_ATTR FLAG_WRITE_NO_RESPONSE
+  ed          BINARY_OP 22 __or__ 
+  2a:02       BUILD_TUPLE 2
+  12:81:2b    LOAD_GLOBAL UART_TX_CHAR_UUID
+  12:02       LOAD_GLOBAL bluetooth
+  13:6c       LOAD_ATTR FLAG_NOTIFY
+  2a:02       BUILD_TUPLE 2
+  2a:02       BUILD_TUPLE 2
+  2a:02       BUILD_TUPLE 2
+  c4          STORE_FAST 4 
+  b0          LOAD_FAST 0 
+  13:62       LOAD_ATTR _ble
+  14:6d       LOAD_METHOD gatts_register_services
+  b4          LOAD_FAST 4 
+  2a:01       BUILD_TUPLE 1
+  36:01       CALL_METHOD 1
+  30:01       UNPACK_SEQUENCE 1
+  30:02       UNPACK_SEQUENCE 2
+  b0          LOAD_FAST 0 
+  18:68       STORE_ATTR _rx_handle
+  b0          LOAD_FAST 0 
+  18:69       STORE_ATTR _tx_handle
+  12:81:34    LOAD_GLOBAL print
+  23:27       LOAD_CONST_OBJ '[BLE] service registered, rx:'
+  b0          LOAD_FAST 0 
+  13:68       LOAD_ATTR _rx_handle
+  10:6e       LOAD_CONST_STRING tx:
+  b0          LOAD_FAST 0 
+  13:69       LOAD_ATTR _tx_handle
+  34:04       CALL_FUNCTION 4
+  59          POP_TOP 
+  12:81:5d    LOAD_GLOBAL bytearray
+  34:00       CALL_FUNCTION 0
+  b0          LOAD_FAST 0 
+  18:6f       STORE_ATTR _rx_buffer
+  50          LOAD_CONST_FALSE 
+  b0          LOAD_FAST 0 
+  18:70       STORE_ATTR _upload_mode
+  10:59       LOAD_CONST_STRING q1
+  b0          LOAD_FAST 0 
+  18:71       STORE_ATTR _filename
+  12:81:5d    LOAD_GLOBAL bytearray
+  34:00       CALL_FUNCTION 0
+  b0          LOAD_FAST 0 
+  18:72       STORE_ATTR _file_data
+  22:82:f7:00 LOAD_CONST_SMALL_INT 48000
+  b0          LOAD_FAST 0 
+  18:73       STORE_ATTR _max
+  b0          LOAD_FAST 0 
+  14:74       LOAD_METHOD _advertise
+  b2          LOAD_FAST 2 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _valid_name
+  raw bytecode: 35 41:24:75:81:5e:80:71:20:2d:22:32:22:25:26:22:1f:23:31:22:22:b0:44:4a:12:81:3e:b0:34:01:9f:d8:44:42:50:63
+  prelude: (9, 0, 0, 1, 0, 0)
+  args: ['fname']
+  line info: 80:71:20:2d:22:32:22:25:26:22:1f:23:31:22:22
+  b0          LOAD_FAST 0 
+  44:4a       POP_JUMP_IF_FALSE 10
+  12:81:3e    LOAD_GLOBAL len
+  b0          LOAD_FAST 0 
+  34:01       CALL_FUNCTION 1
+  9f          LOAD_CONST_SMALL_INT 31 
+  d8          BINARY_OP 1 __gt__ 
+  44:42       POP_JUMP_IF_FALSE 2
+  50          LOAD_CONST_FALSE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _irq
+  raw bytecode: 154 4b:32:65:81:5a:81:5f:81:4b:80:80:27:26:29:27:27:26:28:24:28:24:28:2b:27:25:27:29:b1:12:81:2c:d9:44:56:b2:30:03:c3:c4:c4:12:81:34:23:29:b3:34:02:59:b3:b0:18:67:42:e0:80:b1:12:81:2d:d9:44:71:b2:30:03:c3:c4:c4:12:81:34:23:2a:34:01:59:51:b0:18:67:12:81:5d:34:00:b0:18:6f:50:b0:18:70:12:81:5d:34:00:b0:18:72:b0:14:74:12:81:25:36:01:59:42:68:b1:12:81:2e:d9:44:61:b2:30:02:c3:c5:b5:b0:13:68:d9:44:53:b0:13:62:14:7f:b5:36:01:c6:b0:13:6f:14:81:00:b6:36:01:59:42:40:51:63
+  prelude: (10, 0, 0, 3, 0, 0)
+  args: ['self', 'event', 'data']
+  line info: 80:80:27:26:29:27:27:26:28:24:28:24:28:2b:27:25:27:29
+  b1          LOAD_FAST 1 
+  12:81:2c    LOAD_GLOBAL _IRQ_CENTRAL_CONNECT
+  d9          BINARY_OP 2 __eq__ 
+  44:56       POP_JUMP_IF_FALSE 22
+  b2          LOAD_FAST 2 
+  30:03       UNPACK_SEQUENCE 3
+  c3          STORE_FAST 3 
+  c4          STORE_FAST 4 
+  c4          STORE_FAST 4 
+  12:81:34    LOAD_GLOBAL print
+  23:29       LOAD_CONST_OBJ '[conn] connected, handle:'
+  b3          LOAD_FAST 3 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  b3          LOAD_FAST 3 
+  b0          LOAD_FAST 0 
+  18:67       STORE_ATTR _conn_handle
+  42:e0:80    JUMP 96
+  b1          LOAD_FAST 1 
+  12:81:2d    LOAD_GLOBAL _IRQ_CENTRAL_DISCONNECT
+  d9          BINARY_OP 2 __eq__ 
+  44:71       POP_JUMP_IF_FALSE 49
+  b2          LOAD_FAST 2 
+  30:03       UNPACK_SEQUENCE 3
+  c3          STORE_FAST 3 
+  c4          STORE_FAST 4 
+  c4          STORE_FAST 4 
+  12:81:34    LOAD_GLOBAL print
+  23:2a       LOAD_CONST_OBJ '[conn] disconnected'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  b0          LOAD_FAST 0 
+  18:67       STORE_ATTR _conn_handle
+  12:81:5d    LOAD_GLOBAL bytearray
+  34:00       CALL_FUNCTION 0
+  b0          LOAD_FAST 0 
+  18:6f       STORE_ATTR _rx_buffer
+  50          LOAD_CONST_FALSE 
+  b0          LOAD_FAST 0 
+  18:70       STORE_ATTR _upload_mode
+  12:81:5d    LOAD_GLOBAL bytearray
+  34:00       CALL_FUNCTION 0
+  b0          LOAD_FAST 0 
+  18:72       STORE_ATTR _file_data
+  b0          LOAD_FAST 0 
+  14:74       LOAD_METHOD _advertise
+  12:81:25    LOAD_GLOBAL BLE_NAME
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  42:68       JUMP 40
+  b1          LOAD_FAST 1 
+  12:81:2e    LOAD_GLOBAL _IRQ_GATTS_WRITE
+  d9          BINARY_OP 2 __eq__ 
+  44:61       POP_JUMP_IF_FALSE 33
+  b2          LOAD_FAST 2 
+  30:02       UNPACK_SEQUENCE 2
+  c3          STORE_FAST 3 
+  c5          STORE_FAST 5 
+  b5          LOAD_FAST 5 
+  b0          LOAD_FAST 0 
+  13:68       LOAD_ATTR _rx_handle
+  d9          BINARY_OP 2 __eq__ 
+  44:53       POP_JUMP_IF_FALSE 19
+  b0          LOAD_FAST 0 
+  13:62       LOAD_ATTR _ble
+  14:7f       LOAD_METHOD gatts_read
+  b5          LOAD_FAST 5 
+  36:01       CALL_METHOD 1
+  c6          STORE_FAST 6 
+  b0          LOAD_FAST 0 
+  13:6f       LOAD_ATTR _rx_buffer
+  14:81:00    LOAD_METHOD extend
+  b6          LOAD_FAST 6 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  42:40       JUMP 0
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _advertise
+  raw bytecode: 67 3a:12:74:81:5a:81:5b:80:93:3b:32:23:2b:12:81:1b:12:81:3e:b1:34:01:81:f2:89:2b:02:34:01:f2:b1:14:81:01:36:00:f2:c2:b0:13:62:14:81:02:22:86:8d:20:10:81:03:b2:36:82:01:59:12:81:34:23:2c:b1:34:02:59:51:63
+  prelude: (8, 0, 0, 2, 0, 0)
+  args: ['self', 'name']
+  line info: 80:93:3b:32
+  23:2b       LOAD_CONST_OBJ b'\x02\x01\x06'
+  12:81:1b    LOAD_GLOBAL bytes
+  12:81:3e    LOAD_GLOBAL len
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  81          LOAD_CONST_SMALL_INT 1 
+  f2          BINARY_OP 27 __add__ 
+  89          LOAD_CONST_SMALL_INT 9 
+  2b:02       BUILD_LIST 2
+  34:01       CALL_FUNCTION 1
+  f2          BINARY_OP 27 __add__ 
+  b1          LOAD_FAST 1 
+  14:81:01    LOAD_METHOD encode
+  36:00       CALL_METHOD 0
+  f2          BINARY_OP 27 __add__ 
+  c2          STORE_FAST 2 
+  b0          LOAD_FAST 0 
+  13:62       LOAD_ATTR _ble
+  14:81:02    LOAD_METHOD gap_advertise
+  22:86:8d:20 LOAD_CONST_SMALL_INT 100000
+  10:81:03    LOAD_CONST_STRING adv_data
+  b2          LOAD_FAST 2 
+  36:82:01    CALL_METHOD 257
+  59          POP_TOP 
+  12:81:34    LOAD_GLOBAL print
+  23:2c       LOAD_CONST_OBJ '[BLE] advertising:'
+  b1          LOAD_FAST 1 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: send
+  raw bytecode: 99 3a:1a:46:81:5a:81:4a:80:98:28:2b:26:35:25:51:b0:13:67:51:de:d3:44:7c:b1:14:81:04:10:81:05:36:01:43:46:b1:10:81:05:e5:c1:b0:13:62:14:81:06:b0:13:67:b0:13:69:b1:14:81:01:36:00:36:03:59:12:81:28:44:4f:12:81:34:10:81:07:12:81:60:b1:34:01:34:02:59:42:4e:12:81:34:23:2d:12:81:60:b1:34:01:34:02:59:51:63
+  prelude: (8, 0, 0, 2, 0, 0)
+  args: ['self', 'text']
+  line info: 80:98:28:2b:26:35:25:51
+  b0          LOAD_FAST 0 
+  13:67       LOAD_ATTR _conn_handle
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:7c       POP_JUMP_IF_FALSE 60
+  b1          LOAD_FAST 1 
+  14:81:04    LOAD_METHOD endswith
+  10:81:05    LOAD_CONST_STRING 
+
+  36:01       CALL_METHOD 1
+  43:46       POP_JUMP_IF_TRUE 6
+  b1          LOAD_FAST 1 
+  10:81:05    LOAD_CONST_STRING 
+
+  e5          BINARY_OP 14 __iadd__ 
+  c1          STORE_FAST 1 
+  b0          LOAD_FAST 0 
+  13:62       LOAD_ATTR _ble
+  14:81:06    LOAD_METHOD gatts_notify
+  b0          LOAD_FAST 0 
+  13:67       LOAD_ATTR _conn_handle
+  b0          LOAD_FAST 0 
+  13:69       LOAD_ATTR _tx_handle
+  b1          LOAD_FAST 1 
+  14:81:01    LOAD_METHOD encode
+  36:00       CALL_METHOD 0
+  36:03       CALL_METHOD 3
+  59          POP_TOP 
+  12:81:28    LOAD_GLOBAL DEBUG
+  44:4f       POP_JUMP_IF_FALSE 15
+  12:81:34    LOAD_GLOBAL print
+  10:81:07    LOAD_CONST_STRING [TX]
+  12:81:60    LOAD_GLOBAL repr
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  42:4e       JUMP 14
+  12:81:34    LOAD_GLOBAL print
+  23:2d       LOAD_CONST_OBJ '[TX] no connection, skip:'
+  12:81:60    LOAD_GLOBAL repr
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: send_bytes
+  raw bytecode: 75 32:16:48:81:5a:81:4b:80:a2:28:30:25:51:b0:13:67:51:de:d3:44:66:b0:13:62:14:81:06:b0:13:67:b0:13:69:b1:36:03:59:12:81:28:44:4f:12:81:34:10:81:08:12:81:3e:b1:34:01:34:02:59:42:4e:12:81:34:23:2e:12:81:3e:b1:34:01:34:02:59:51:63
+  prelude: (7, 0, 0, 2, 0, 0)
+  args: ['self', 'data']
+  line info: 80:a2:28:30:25:51
+  b0          LOAD_FAST 0 
+  13:67       LOAD_ATTR _conn_handle
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:66       POP_JUMP_IF_FALSE 38
+  b0          LOAD_FAST 0 
+  13:62       LOAD_ATTR _ble
+  14:81:06    LOAD_METHOD gatts_notify
+  b0          LOAD_FAST 0 
+  13:67       LOAD_ATTR _conn_handle
+  b0          LOAD_FAST 0 
+  13:69       LOAD_ATTR _tx_handle
+  b1          LOAD_FAST 1 
+  36:03       CALL_METHOD 3
+  59          POP_TOP 
+  12:81:28    LOAD_GLOBAL DEBUG
+  44:4f       POP_JUMP_IF_FALSE 15
+  12:81:34    LOAD_GLOBAL print
+  10:81:08    LOAD_CONST_STRING [TX bytes]
+  12:81:3e    LOAD_GLOBAL len
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  42:4e       JUMP 14
+  12:81:34    LOAD_GLOBAL print
+  23:2e       LOAD_CONST_OBJ '[TX bytes] no connection, skip:'
+  12:81:3e    LOAD_GLOBAL len
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: is_connected
+  raw bytecode: 14 11:0a:4a:81:5a:80:aa:b0:13:67:51:de:d3:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:aa
+  b0          LOAD_FAST 0 
+  13:67       LOAD_ATTR _conn_handle
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  63          RETURN_VALUE 
+  children: []
+simple_name: set_callback
+  raw bytecode: 36 1a:16:81:09:81:5a:81:5c:80:ad:24:24:25:b1:b0:18:66:50:b0:18:70:10:59:b0:18:71:12:81:5d:34:00:b0:18:72:51:63
+  prelude: (4, 0, 0, 2, 0, 0)
+  args: ['self', 'callback']
+  line info: 80:ad:24:24:25
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:66       STORE_ATTR _callback
+  50          LOAD_CONST_FALSE 
+  b0          LOAD_FAST 0 
+  18:70       STORE_ATTR _upload_mode
+  10:59       LOAD_CONST_STRING q1
+  b0          LOAD_FAST 0 
+  18:71       STORE_ATTR _filename
+  12:81:5d    LOAD_GLOBAL bytearray
+  34:00       CALL_FUNCTION 0
+  b0          LOAD_FAST 0 
+  18:72       STORE_ATTR _file_data
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: process
+  raw bytecode: 29 c1:02:22:31:81:5a:80:b3:27:42:26:25:29:28:22:53:32:42:25:49:b0:13:67:51:de:44:42:51:63
+  prelude: (9, 2, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:b3:27:42:26:25:29:28:22:53:32:42:25:49
+  b0          LOAD_FAST 0 
+  13:67       LOAD_ATTR _conn_handle
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  44:42       POP_JUMP_IF_FALSE 2
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _process_command
+  raw bytecode: 87 65:66:81:0a:81:5a:80:c6:20:2b:25:2b:25:22:29:2d:2b:25:4f:27:23:22:44:27:24:2c:27:2c:28:36:24:24:28:64:27:22:33:1f:41:23:27:24:25:29:22:25:2b:2a:4b:25:3d:4b:25:b0:13:6f:14:81:0c:23:30:36:01:c1:b1:7f:d9:44:4b:b0:13:6f:14:81:0c:23:31:36:01:c1:b1:7f:d9:44:42:51:63
+  prelude: (13, 1, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:c6:20:2b:25:2b:25:22:29:2d:2b:25:4f:27:23:22:44:27:24:2c:27:2c:28:36:24:24:28:64:27:22:33:1f:41:23:27:24:25:29:22:25:2b:2a:4b:25:3d:4b:25
+  b0          LOAD_FAST 0 
+  13:6f       LOAD_ATTR _rx_buffer
+  14:81:0c    LOAD_METHOD find
+  23:30       LOAD_CONST_OBJ b'\n'
+  36:01       CALL_METHOD 1
+  c1          STORE_FAST 1 
+  b1          LOAD_FAST 1 
+  7f          LOAD_CONST_SMALL_INT -1 
+  d9          BINARY_OP 2 __eq__ 
+  44:4b       POP_JUMP_IF_FALSE 11
+  b0          LOAD_FAST 0 
+  13:6f       LOAD_ATTR _rx_buffer
+  14:81:0c    LOAD_METHOD find
+  23:31       LOAD_CONST_OBJ b'\r'
+  36:01       CALL_METHOD 1
+  c1          STORE_FAST 1 
+  b1          LOAD_FAST 1 
+  7f          LOAD_CONST_SMALL_INT -1 
+  d9          BINARY_OP 2 __eq__ 
+  44:42       POP_JUMP_IF_FALSE 2
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _process_upload
+  raw bytecode: 306 d1:02:4a:81:0b:81:5a:80:fc:20:23:2c:30:22:2a:2e:2b:36:29:28:29:53:29:32:24:28:48:2d:31:26:2c:29:24:25:28:28:22:2c:28:29:23:35:c1:b0:13:6f:14:81:18:b1:36:01:44:a7:81:b0:13:6f:12:81:3e:b1:34:01:51:2e:02:55:b0:18:6f:48:5c:b0:13:72:14:4e:10:4f:36:01:c2:12:81:4e:b0:13:71:10:81:19:34:02:47:0a:c3:b3:14:81:1a:b2:36:01:59:51:5c:5d:12:81:34:23:36:b0:13:71:12:81:3e:b0:13:72:34:01:10:81:1b:34:04:59:b0:14:46:10:81:11:36:01:59:12:81:34:23:37:34:01:59:12:03:14:81:1c:81:36:01:59:12:05:14:41:36:00:59:4a:25:57:12:81:33:df:44:5d:c4:49:13:12:81:34:23:38:b4:34:02:59:b0:14:46:10:81:16:36:01:59:51:51:c4:28:04:5d:4a:01:5d:50:b0:18:70:12:81:5d:34:00:b0:18:72:10:59:b0:18:71:42:fa:80:12:81:3e:b0:13:6f:34:01:80:d8:44:ed:80:12:81:3e:b0:13:72:34:01:12:81:3e:b0:13:6f:34:01:f2:b0:13:73:d8:44:70:12:81:34:23:39:b0:13:73:f8:34:01:59:b0:14:46:10:81:16:36:01:59:50:b0:18:70:10:59:b0:18:71:12:81:5d:34:00:b0:18:72:12:81:5d:34:00:b0:18:6f:51:63
+  prelude: (11, 2, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:fc:20:23:2c:30:22:2a:2e:2b:36:29:28:29:53:29:32:24:28:48:2d:31:26:2c:29:24:25:28:28:22:2c:28:29
+  23:35       LOAD_CONST_OBJ b'#END#'
+  c1          STORE_FAST 1 
+  b0          LOAD_FAST 0 
+  13:6f       LOAD_ATTR _rx_buffer
+  14:81:18    LOAD_METHOD startswith
+  b1          LOAD_FAST 1 
+  36:01       CALL_METHOD 1
+  44:a7:81    POP_JUMP_IF_FALSE 167
+  b0          LOAD_FAST 0 
+  13:6f       LOAD_ATTR _rx_buffer
+  12:81:3e    LOAD_GLOBAL len
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  51          LOAD_CONST_NONE 
+  2e:02       BUILD_SLICE 2
+  55          LOAD_SUBSCR 
+  b0          LOAD_FAST 0 
+  18:6f       STORE_ATTR _rx_buffer
+  48:5c       SETUP_EXCEPT 92
+  b0          LOAD_FAST 0 
+  13:72       LOAD_ATTR _file_data
+  14:4e       LOAD_METHOD decode
+  10:4f       LOAD_CONST_STRING utf-8
+  36:01       CALL_METHOD 1
+  c2          STORE_FAST 2 
+  12:81:4e    LOAD_GLOBAL open
+  b0          LOAD_FAST 0 
+  13:71       LOAD_ATTR _filename
+  10:81:19    LOAD_CONST_STRING w
+  34:02       CALL_FUNCTION 2
+  47:0a       SETUP_WITH 10
+  c3          STORE_FAST 3 
+  b3          LOAD_FAST 3 
+  14:81:1a    LOAD_METHOD write
+  b2          LOAD_FAST 2 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  5c          WITH_CLEANUP 
+  5d          END_FINALLY 
+  12:81:34    LOAD_GLOBAL print
+  23:36       LOAD_CONST_OBJ '[upload] saved:'
+  b0          LOAD_FAST 0 
+  13:71       LOAD_ATTR _filename
+  12:81:3e    LOAD_GLOBAL len
+  b0          LOAD_FAST 0 
+  13:72       LOAD_ATTR _file_data
+  34:01       CALL_FUNCTION 1
+  10:81:1b    LOAD_CONST_STRING bytes
+  34:04       CALL_FUNCTION 4
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:46       LOAD_METHOD send
+  10:81:11    LOAD_CONST_STRING OK
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  12:81:34    LOAD_GLOBAL print
+  23:37       LOAD_CONST_OBJ '[upload] restarting in 1s...'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  12:03       LOAD_GLOBAL time
+  14:81:1c    LOAD_METHOD sleep
+  81          LOAD_CONST_SMALL_INT 1 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  12:05       LOAD_GLOBAL machine
+  14:41       LOAD_METHOD reset
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  4a:25       POP_EXCEPT_JUMP 37
+  57          DUP_TOP 
+  12:81:33    LOAD_GLOBAL Exception
+  df          BINARY_OP 8 <exception match> 
+  44:5d       POP_JUMP_IF_FALSE 29
+  c4          STORE_FAST 4 
+  49:13       SETUP_FINALLY 19
+  12:81:34    LOAD_GLOBAL print
+  23:38       LOAD_CONST_OBJ '[upload] save error:'
+  b4          LOAD_FAST 4 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:46       LOAD_METHOD send
+  10:81:16    LOAD_CONST_STRING ERR
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  c4          STORE_FAST 4 
+  28:04       DELETE_FAST 4
+  5d          END_FINALLY 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  50          LOAD_CONST_FALSE 
+  b0          LOAD_FAST 0 
+  18:70       STORE_ATTR _upload_mode
+  12:81:5d    LOAD_GLOBAL bytearray
+  34:00       CALL_FUNCTION 0
+  b0          LOAD_FAST 0 
+  18:72       STORE_ATTR _file_data
+  10:59       LOAD_CONST_STRING q1
+  b0          LOAD_FAST 0 
+  18:71       STORE_ATTR _filename
+  42:fa:80    JUMP 122
+  12:81:3e    LOAD_GLOBAL len
+  b0          LOAD_FAST 0 
+  13:6f       LOAD_ATTR _rx_buffer
+  34:01       CALL_FUNCTION 1
+  80          LOAD_CONST_SMALL_INT 0 
+  d8          BINARY_OP 1 __gt__ 
+  44:ed:80    POP_JUMP_IF_FALSE 109
+  12:81:3e    LOAD_GLOBAL len
+  b0          LOAD_FAST 0 
+  13:72       LOAD_ATTR _file_data
+  34:01       CALL_FUNCTION 1
+  12:81:3e    LOAD_GLOBAL len
+  b0          LOAD_FAST 0 
+  13:6f       LOAD_ATTR _rx_buffer
+  34:01       CALL_FUNCTION 1
+  f2          BINARY_OP 27 __add__ 
+  b0          LOAD_FAST 0 
+  13:73       LOAD_ATTR _max
+  d8          BINARY_OP 1 __gt__ 
+  44:70       POP_JUMP_IF_FALSE 48
+  12:81:34    LOAD_GLOBAL print
+  23:39       LOAD_CONST_OBJ '[upload] too large, cap %d'
+  b0          LOAD_FAST 0 
+  13:73       LOAD_ATTR _max
+  f8          BINARY_OP 33 __mod__ 
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:46       LOAD_METHOD send
+  10:81:16    LOAD_CONST_STRING ERR
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  50          LOAD_CONST_FALSE 
+  b0          LOAD_FAST 0 
+  18:70       STORE_ATTR _upload_mode
+  10:59       LOAD_CONST_STRING q1
+  b0          LOAD_FAST 0 
+  18:71       STORE_ATTR _filename
+  12:81:5d    LOAD_GLOBAL bytearray
+  34:00       CALL_FUNCTION 0
+  b0          LOAD_FAST 0 
+  18:72       STORE_ATTR _file_data
+  12:81:5d    LOAD_GLOBAL bytearray
+  34:00       CALL_FUNCTION 0
+  b0          LOAD_FAST 0 
+  18:6f       STORE_ATTR _rx_buffer
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _ui_get
+  raw bytecode: 24 b8:02:10:53:90:23:20:22:25:50:29:48:0b:80:51:1b:54:c0:b0:14:55:36:00:63
+  prelude: (8, 2, 0, 0, 0, 0)
+  args: []
+  line info: 90:23:20:22:25:50:29
+  48:0b       SETUP_EXCEPT 11
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:54       IMPORT_NAME ovoui
+  c0          STORE_FAST 0 
+  b0          LOAD_FAST 0 
+  14:55       LOAD_METHOD get_ui
+  36:00       CALL_METHOD 0
+  63          RETURN_VALUE 
+  children: []
+simple_name: _ui_show
+  raw bytecode: 27 d0:06:22:56:81:3a:81:54:81:55:81:56:90:2d:20:25:22:22:28:57:b0:51:de:44:42:51:63
+  prelude: (11, 2, 0, 4, 0, 0)
+  args: ['ui', 'word', 'face', 'msg']
+  line info: 90:2d:20:25:22:22:28:57
+  b0          LOAD_FAST 0 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  44:42       POP_JUMP_IF_FALSE 2
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _ui_tick
+  raw bytecode: 33 46:20:5b:81:3a:81:57:90:38:20:25:28:22:27:22:22:50:23:b0:51:de:44:4a:12:03:14:26:b1:36:01:59:51:63
+  prelude: (9, 1, 0, 2, 0, 0)
+  args: ['ui', 'ms']
+  line info: 90:38:20:25:28:22:27:22:22:50:23
+  b0          LOAD_FAST 0 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  44:4a       POP_JUMP_IF_FALSE 10
+  12:03       LOAD_GLOBAL time
+  14:26       LOAD_METHOD sleep_ms
+  b1          LOAD_FAST 1 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _scan_wifi_async
+  raw bytecode: 99 d0:02:9a:01:5c:90:46:20:25:26:4d:86:1d:22:55:29:2f:03:04:80:51:1b:04:c0:80:51:1b:5d:27:03:2c:02:2b:00:10:2e:62:50:10:2a:62:27:04:b3:b4:20:00:02:c1:48:0b:b0:14:52:b1:2a:00:36:02:59:4a:22:57:12:81:33:df:44:5a:c2:49:10:12:81:34:23:26:b2:34:02:59:52:25:04:10:2a:56:51:51:c2:28:02:5d:4a:01:5d:25:04:63
+  prelude: (11, 2, 0, 0, 0, 0)
+  args: []
+  line info: 90:46:20:25:26:4d:86:1d:22:55:29:2f:03:04
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:04       IMPORT_NAME _thread
+  c0          STORE_FAST 0 
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:5d       IMPORT_NAME network
+  27:03       STORE_DEREF 3
+  2c:02       BUILD_MAP 2
+  2b:00       BUILD_LIST 0
+  10:2e       LOAD_CONST_STRING aps
+  62          STORE_MAP 
+  50          LOAD_CONST_FALSE 
+  10:2a       LOAD_CONST_STRING done
+  62          STORE_MAP 
+  27:04       STORE_DEREF 4
+  b3          LOAD_FAST 3 
+  b4          LOAD_FAST 4 
+  20:00:02    MAKE_CLOSURE 0
+  c1          STORE_FAST 1 
+  48:0b       SETUP_EXCEPT 11
+  b0          LOAD_FAST 0 
+  14:52       LOAD_METHOD start_new_thread
+  b1          LOAD_FAST 1 
+  2a:00       BUILD_TUPLE 0
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  4a:22       POP_EXCEPT_JUMP 34
+  57          DUP_TOP 
+  12:81:33    LOAD_GLOBAL Exception
+  df          BINARY_OP 8 <exception match> 
+  44:5a       POP_JUMP_IF_FALSE 26
+  c2          STORE_FAST 2 
+  49:10       SETUP_FINALLY 16
+  12:81:34    LOAD_GLOBAL print
+  23:26       LOAD_CONST_OBJ '[scan] thread:'
+  b2          LOAD_FAST 2 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  52          LOAD_CONST_TRUE 
+  25:04       LOAD_DEREF 4
+  10:2a       LOAD_CONST_STRING done
+  56          STORE_SUBSCR 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  c2          STORE_FAST 2 
+  28:02       DELETE_FAST 2
+  5d          END_FINALLY 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  25:04       LOAD_DEREF 4
+  63          RETURN_VALUE 
+  children: [_worker]
+simple_name: _worker
+  raw bytecode: 261 a2:12:40:81:1d:81:62:81:62:90:4c:23:2d:27:27:2a:26:23:29:24:24:24:31:23:22:22:32:51:25:23:2f:2d:26:5d:32:48:bb:01:25:00:14:81:1e:25:00:13:81:1f:36:01:c2:b2:14:63:36:00:43:51:b2:14:63:52:36:01:59:12:03:14:26:22:81:48:36:01:59:b2:14:23:36:00:c3:2b:00:c4:b3:45:02:2b:00:5f:4b:5f:c5:b5:80:55:c6:b5:83:55:c7:b5:84:55:c8:12:81:3e:b5:34:01:85:d8:44:45:b5:85:55:42:41:80:c9:b9:44:42:42:1b:48:1b:12:81:63:b6:12:81:1b:34:02:44:47:b6:14:4e:36:00:42:46:12:81:64:b6:34:01:c6:4a:0d:57:12:81:33:df:44:45:59:40:b3:7f:01:5d:b6:44:4c:b4:14:81:20:b6:b7:b8:2a:03:36:01:59:42:9f:7f:b4:14:81:21:10:81:22:32:00:36:82:00:59:b4:25:01:10:2e:56:12:81:34:23:3a:12:81:3e:b4:34:01:10:81:23:34:03:59:4a:1c:57:12:81:33:df:44:54:ca:49:0a:12:81:34:23:3b:ba:34:02:59:51:51:ca:28:0a:5d:4a:01:5d:52:25:01:10:2a:56:51:63
+  prelude: (21, 2, 0, 2, 0, 0)
+  args: ['*', '*']
+  line info: 90:4c:23:2d:27:27:2a:26:23:29:24:24:24:31:23:22:22:32:51:25:23:2f:2d:26:5d:32
+  48:bb:01    SETUP_EXCEPT 187
+  25:00       LOAD_DEREF 0
+  14:81:1e    LOAD_METHOD WLAN
+  25:00       LOAD_DEREF 0
+  13:81:1f    LOAD_ATTR STA_IF
+  36:01       CALL_METHOD 1
+  c2          STORE_FAST 2 
+  b2          LOAD_FAST 2 
+  14:63       LOAD_METHOD active
+  36:00       CALL_METHOD 0
+  43:51       POP_JUMP_IF_TRUE 17
+  b2          LOAD_FAST 2 
+  14:63       LOAD_METHOD active
+  52          LOAD_CONST_TRUE 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  12:03       LOAD_GLOBAL time
+  14:26       LOAD_METHOD sleep_ms
+  22:81:48    LOAD_CONST_SMALL_INT 200
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b2          LOAD_FAST 2 
+  14:23       LOAD_METHOD scan
+  36:00       CALL_METHOD 0
+  c3          STORE_FAST 3 
+  2b:00       BUILD_LIST 0
+  c4          STORE_FAST 4 
+  b3          LOAD_FAST 3 
+  45:02       JUMP_IF_TRUE_OR_POP 2
+  2b:00       BUILD_LIST 0
+  5f          GET_ITER_STACK 
+  4b:5f       FOR_ITER 95
+  c5          STORE_FAST 5 
+  b5          LOAD_FAST 5 
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  c6          STORE_FAST 6 
+  b5          LOAD_FAST 5 
+  83          LOAD_CONST_SMALL_INT 3 
+  55          LOAD_SUBSCR 
+  c7          STORE_FAST 7 
+  b5          LOAD_FAST 5 
+  84          LOAD_CONST_SMALL_INT 4 
+  55          LOAD_SUBSCR 
+  c8          STORE_FAST 8 
+  12:81:3e    LOAD_GLOBAL len
+  b5          LOAD_FAST 5 
+  34:01       CALL_FUNCTION 1
+  85          LOAD_CONST_SMALL_INT 5 
+  d8          BINARY_OP 1 __gt__ 
+  44:45       POP_JUMP_IF_FALSE 5
+  b5          LOAD_FAST 5 
+  85          LOAD_CONST_SMALL_INT 5 
+  55          LOAD_SUBSCR 
+  42:41       JUMP 1
+  80          LOAD_CONST_SMALL_INT 0 
+  c9          STORE_FAST 9 
+  b9          LOAD_FAST 9 
+  44:42       POP_JUMP_IF_FALSE 2
+  42:1b       JUMP -37
+  48:1b       SETUP_EXCEPT 27
+  12:81:63    LOAD_GLOBAL isinstance
+  b6          LOAD_FAST 6 
+  12:81:1b    LOAD_GLOBAL bytes
+  34:02       CALL_FUNCTION 2
+  44:47       POP_JUMP_IF_FALSE 7
+  b6          LOAD_FAST 6 
+  14:4e       LOAD_METHOD decode
+  36:00       CALL_METHOD 0
+  42:46       JUMP 6
+  12:81:64    LOAD_GLOBAL str
+  b6          LOAD_FAST 6 
+  34:01       CALL_FUNCTION 1
+  c6          STORE_FAST 6 
+  4a:0d       POP_EXCEPT_JUMP 13
+  57          DUP_TOP 
+  12:81:33    LOAD_GLOBAL Exception
+  df          BINARY_OP 8 <exception match> 
+  44:45       POP_JUMP_IF_FALSE 5
+  59          POP_TOP 
+  40:b3:7f:01 UNWIND_JUMP -77
+  5d          END_FINALLY 
+  b6          LOAD_FAST 6 
+  44:4c       POP_JUMP_IF_FALSE 12
+  b4          LOAD_FAST 4 
+  14:81:20    LOAD_METHOD append
+  b6          LOAD_FAST 6 
+  b7          LOAD_FAST 7 
+  b8          LOAD_FAST 8 
+  2a:03       BUILD_TUPLE 3
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  42:9f:7f    JUMP -97
+  b4          LOAD_FAST 4 
+  14:81:21    LOAD_METHOD sort
+  10:81:22    LOAD_CONST_STRING key
+  32:00       MAKE_FUNCTION 0
+  36:82:00    CALL_METHOD 256
+  59          POP_TOP 
+  b4          LOAD_FAST 4 
+  25:01       LOAD_DEREF 1
+  10:2e       LOAD_CONST_STRING aps
+  56          STORE_SUBSCR 
+  12:81:34    LOAD_GLOBAL print
+  23:3a       LOAD_CONST_OBJ '[scan] found'
+  12:81:3e    LOAD_GLOBAL len
+  b4          LOAD_FAST 4 
+  34:01       CALL_FUNCTION 1
+  10:81:23    LOAD_CONST_STRING networks
+  34:03       CALL_FUNCTION 3
+  59          POP_TOP 
+  4a:1c       POP_EXCEPT_JUMP 28
+  57          DUP_TOP 
+  12:81:33    LOAD_GLOBAL Exception
+  df          BINARY_OP 8 <exception match> 
+  44:54       POP_JUMP_IF_FALSE 20
+  ca          STORE_FAST 10 
+  49:0a       SETUP_FINALLY 10
+  12:81:34    LOAD_GLOBAL print
+  23:3b       LOAD_CONST_OBJ '[scan] error:'
+  ba          LOAD_FAST 10 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  ca          STORE_FAST 10 
+  28:0a       DELETE_FAST 10
+  5d          END_FINALLY 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  52          LOAD_CONST_TRUE 
+  25:01       LOAD_DEREF 1
+  10:2a       LOAD_CONST_STRING done
+  56          STORE_SUBSCR 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [<lambda>]
+simple_name: <lambda>
+  raw bytecode: 13 11:0c:81:24:81:65:90:61:b0:81:55:d1:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['x']
+  line info: 90:61
+  b0          LOAD_FAST 0 
+  81          LOAD_CONST_SMALL_INT 1 
+  55          LOAD_SUBSCR 
+  d1          UNARY_OP 1 __neg__ 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _i2c_recover
+  raw bytecode: 146 4a:28:5e:81:58:81:59:90:89:2e:2e:25:27:28:27:30:27:27:28:27:28:27:12:07:b0:12:07:13:5f:10:25:81:34:82:02:c2:12:07:b1:12:07:13:5f:10:25:81:34:82:02:c3:80:42:62:57:c4:b3:14:25:80:36:01:59:12:03:14:60:85:36:01:59:b3:14:25:81:36:01:59:12:03:14:60:85:36:01:59:81:e5:57:89:d7:43:19:59:b2:14:25:81:36:01:59:b3:14:25:80:36:01:59:12:03:14:60:85:36:01:59:b3:14:25:81:36:01:59:12:03:14:60:85:36:01:59:b2:14:25:80:36:01:59:b2:14:25:81:36:01:59:51:63
+  prelude: (10, 0, 0, 2, 0, 0)
+  args: ['sda', 'scl']
+  line info: 90:89:2e:2e:25:27:28:27:30:27:27:28:27:28:27
+  12:07       LOAD_GLOBAL Pin
+  b0          LOAD_FAST 0 
+  12:07       LOAD_GLOBAL Pin
+  13:5f       LOAD_ATTR OPEN_DRAIN
+  10:25       LOAD_CONST_STRING value
+  81          LOAD_CONST_SMALL_INT 1 
+  34:82:02    CALL_FUNCTION 258
+  c2          STORE_FAST 2 
+  12:07       LOAD_GLOBAL Pin
+  b1          LOAD_FAST 1 
+  12:07       LOAD_GLOBAL Pin
+  13:5f       LOAD_ATTR OPEN_DRAIN
+  10:25       LOAD_CONST_STRING value
+  81          LOAD_CONST_SMALL_INT 1 
+  34:82:02    CALL_FUNCTION 258
+  c3          STORE_FAST 3 
+  80          LOAD_CONST_SMALL_INT 0 
+  42:62       JUMP 34
+  57          DUP_TOP 
+  c4          STORE_FAST 4 
+  b3          LOAD_FAST 3 
+  14:25       LOAD_METHOD value
+  80          LOAD_CONST_SMALL_INT 0 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  12:03       LOAD_GLOBAL time
+  14:60       LOAD_METHOD sleep_us
+  85          LOAD_CONST_SMALL_INT 5 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b3          LOAD_FAST 3 
+  14:25       LOAD_METHOD value
+  81          LOAD_CONST_SMALL_INT 1 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  12:03       LOAD_GLOBAL time
+  14:60       LOAD_METHOD sleep_us
+  85          LOAD_CONST_SMALL_INT 5 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  81          LOAD_CONST_SMALL_INT 1 
+  e5          BINARY_OP 14 __iadd__ 
+  57          DUP_TOP 
+  89          LOAD_CONST_SMALL_INT 9 
+  d7          BINARY_OP 0 __lt__ 
+  43:19       POP_JUMP_IF_TRUE -39
+  59          POP_TOP 
+  b2          LOAD_FAST 2 
+  14:25       LOAD_METHOD value
+  81          LOAD_CONST_SMALL_INT 1 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b3          LOAD_FAST 3 
+  14:25       LOAD_METHOD value
+  80          LOAD_CONST_SMALL_INT 0 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  12:03       LOAD_GLOBAL time
+  14:60       LOAD_METHOD sleep_us
+  85          LOAD_CONST_SMALL_INT 5 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b3          LOAD_FAST 3 
+  14:25       LOAD_METHOD value
+  81          LOAD_CONST_SMALL_INT 1 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  12:03       LOAD_GLOBAL time
+  14:60       LOAD_METHOD sleep_us
+  85          LOAD_CONST_SMALL_INT 5 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b2          LOAD_FAST 2 
+  14:25       LOAD_METHOD value
+  80          LOAD_CONST_SMALL_INT 0 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b2          LOAD_FAST 2 
+  14:25       LOAD_METHOD value
+  81          LOAD_CONST_SMALL_INT 1 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []

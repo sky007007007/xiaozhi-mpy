@@ -1,0 +1,818 @@
+mpy_source_file: extracted/client.py.mpy
+source_file: client.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[194] (* for static qstrs):
+    'client.py' 
+    '<module>' *
+    'builtins' *
+    'esp32' 
+    'gc' 
+    'json' 
+    'time' 
+    'ovomini' 
+    'wifinet' 
+    'xiaozhi' 
+    'MIC_PINS' 
+    'SPK_PINS' 
+    '_nvs_creds' 
+    'NVS' 
+    'get_blob' 
+    'creds' 
+    'loads' 
+    'decode' 
+    'get' *
+    'ssid' 
+    'q1' 
+    'pass' 
+    '_wipe_creds' 
+    'wipe' 
+    'pinutil' 
+    'portal' 
+    'onboarding' 
+    'aps' 
+    '_localtime' 
+    'localtime' 
+    'mktime' 
+    '_wifi_connected' 
+    'network' 
+    'WLAN' 
+    'STA_IF' 
+    'isconnected' 
+    '_ps_off' 
+    'config' 
+    'pm' 
+    'PM_NONE' 
+    '[wifi] pm:' 
+    '_try_join' 
+    'active' 
+    'sleep_ms' 
+    'essid' 
+    'disconnect' 
+    'led_status' 
+    'connecting' 
+    'connect' 
+    'ticks_ms' 
+    'tick' 
+    'ticks_diff' 
+    '[wifi] ok' 
+    'ifconfig' 
+    'joined' 
+    'main' *
+    'ovoui' 
+    'get_ui' 
+    'd' 
+    'led_engine_mode' 
+    'status' 
+    'wifi' 
+    'neutral' 
+    'subtitle' 
+    'load' 
+    'timeout_ms' 
+    'ui' 
+    'error' 
+    'XiaoZhi' 
+    'volume' 
+    'auto_listen' 
+    'vad' 
+    'energy' 
+    'vad_threshold' 
+    'sleep_interval_ms' 
+    'i2s_mic' 
+    'i2s_spk' 
+    'i2s_ibuf' 
+    'audio_stack' 
+    'event_stack' 
+    'xz' 
+    'splash' 
+    'attach' 
+    'log' 
+    'on' 
+    'connected' 
+    'wake' 
+    'asr' 
+    'binding' 
+    'tts' 
+    'llm' 
+    'mcp' 
+    'tool' 
+    'say' 
+    'register_tool' 
+    'get_time' 
+    'custom_tools' 
+    'register' 
+    'Pin' 
+    'machine' 
+    'BOOT_PIN' 
+    'IN' 
+    'PULL_UP' 
+    'wifi_scan' 
+    'user' 
+    'box' 
+    'collect' 
+    'apply_pins' 
+    'mic' 
+    'spk' 
+    'led' 
+    'LED_PIN' 
+    'mic_on' 
+    'PINS' 
+    'spk_on' 
+    'init' 
+    'init...' 
+    'value' *
+    'reset' 
+    '_bound' 
+    'offline' 
+    'rgb_tick' 
+    '_on_connected' 
+    'ready' 
+    'ntptime' 
+    'settime' 
+    '_on_disconnected' 
+    'sleep' 
+    'bye' 
+    '_on_status' 
+    '[status]' 
+    'prev' 
+    '->' 
+    'state' 
+    'reason' 
+    '_on_wake' 
+    '_on_asr' 
+    'text' 
+    '[asr]' 
+    '_on_binding' 
+    'code' 
+    '_on_error' 
+    '[error]' 
+    'where' 
+    'exc' 
+    '_on_tts' 
+    '[tts]' 
+    '_on_llm' 
+    '[llm]' 
+    'emotion' 
+    '_on_mcp' 
+    '[mcp]' 
+    'payload' 
+    '_on_tool' 
+    '[tool]' 
+    'name' 
+    'arguments' 
+    '_on_say' 
+    '[say]' 
+    '_get_time' 
+    '_device_info' 
+    'APP_VER' 
+    'unknown' 
+    'idf_heap_info' 
+    'HEAP_DATA' 
+    'firmware' 
+    'esp32s3' 
+    'chip' 
+    'mem_free' 
+    'free_kb' 
+    '_toggle_chat' 
+    'READY' 
+    'start_listening' 
+    'LISTENING' 
+    'stop_listening' 
+    '[btn] stop' 
+    'SPEAKING' 
+    'PROCESSING' 
+    'abort' 
+    'getattr' *
+    '_AUDIO' 
+    'MIC' 
+    'SPK' 
+    'print' *
+    'bytearray' *
+    'bytes' *
+    'Exception' *
+    'oled' 
+    'sta' 
+    'boot_btn' 
+    'extra_tools' 
+    'ImportError' *
+    '*' *
+    'm' 
+obj_table: ['AUDIO_ENABLED', '[client] audio disabled by board config', '[client] creds read:', '[client] pins wipe:', '[wifi] power save off', '[wifi] already on', '[wifi] join', '[wifi] join timeout', '[wifi] join error:', 'connecting...', 'trying next network...', 'wifi failed', '[client] all saved nets failed, start portal', '[client] no wifi creds, starting portal', 'wifi setup...', 'disconnected', 'Get the current date and time from the device clock. Use when the user asks about time or date.', 'device_info', 'Get device information: firmware version, chip model, free memory and largest free heap block (for audio alloc-fail diagnosis). Use for questions about the device itself or troubleshooting sound problems.', '[mcp] custom_tools loaded', '[mcp] custom_tools error:', '[mcp] extra_tools loaded', '[mcp] extra_tools error:', '[client] creds ssid=%s', 'client ready: BOOT click=start/stop talk, hold 3s(no wifi)=reset', '[client] apply_pins:', '[btn] wifi reset -> portal', 'reset wifi, rebooting', '[client] wifi up but server unreachable', 'server offline', '[client] still offline, check ssid/pass/2.4G; hold boot 3s to reset', 'wifi fail? hold boot 3s', '[connected]', '[client] ntp ok', '[client] ntp:']
+simple_name: <module>
+  raw bytecode: 189 18:3a:01:26:26:26:26:26:26:26:86:07:2d:2f:2f:25:68:84:14:84:09:89:07:84:0a:84:08:84:08:8c:34:80:51:1b:02:16:02:80:51:1b:03:16:03:80:51:1b:04:16:04:80:51:1b:05:16:05:80:51:1b:06:16:06:80:51:1b:07:16:07:80:51:1b:08:16:08:80:51:1b:09:16:09:11:81:33:11:07:23:00:52:34:03:16:81:34:11:81:34:44:46:11:07:13:0a:42:41:51:16:81:35:11:81:34:44:46:11:07:13:0b:42:41:51:16:81:36:11:81:34:43:48:11:81:37:23:01:34:01:59:32:00:16:0c:32:01:16:16:51:51:2a:02:53:33:02:16:19:32:03:16:1c:32:04:16:1f:32:05:16:24:22:81:9c:20:51:2a:02:53:33:06:16:29:51:51:51:51:2a:04:53:33:07:16:37:51:63
+  prelude: (4, 0, 0, 0, 0, 0)
+  args: []
+  line info: 26:26:26:26:26:26:26:86:07:2d:2f:2f:25:68:84:14:84:09:89:07:84:0a:84:08:84:08:8c:34
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:02       IMPORT_NAME builtins
+  16:02       STORE_NAME builtins
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:03       IMPORT_NAME esp32
+  16:03       STORE_NAME esp32
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:04       IMPORT_NAME gc
+  16:04       STORE_NAME gc
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:05       IMPORT_NAME json
+  16:05       STORE_NAME json
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:06       IMPORT_NAME time
+  16:06       STORE_NAME time
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:07       IMPORT_NAME ovomini
+  16:07       STORE_NAME ovomini
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:08       IMPORT_NAME wifinet
+  16:08       STORE_NAME wifinet
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:09       IMPORT_NAME xiaozhi
+  16:09       STORE_NAME xiaozhi
+  11:81:33    LOAD_NAME getattr
+  11:07       LOAD_NAME ovomini
+  23:00       LOAD_CONST_OBJ 'AUDIO_ENABLED'
+  52          LOAD_CONST_TRUE 
+  34:03       CALL_FUNCTION 3
+  16:81:34    STORE_NAME _AUDIO
+  11:81:34    LOAD_NAME _AUDIO
+  44:46       POP_JUMP_IF_FALSE 6
+  11:07       LOAD_NAME ovomini
+  13:0a       LOAD_ATTR MIC_PINS
+  42:41       JUMP 1
+  51          LOAD_CONST_NONE 
+  16:81:35    STORE_NAME MIC
+  11:81:34    LOAD_NAME _AUDIO
+  44:46       POP_JUMP_IF_FALSE 6
+  11:07       LOAD_NAME ovomini
+  13:0b       LOAD_ATTR SPK_PINS
+  42:41       JUMP 1
+  51          LOAD_CONST_NONE 
+  16:81:36    STORE_NAME SPK
+  11:81:34    LOAD_NAME _AUDIO
+  43:48       POP_JUMP_IF_TRUE 8
+  11:81:37    LOAD_NAME print
+  23:01       LOAD_CONST_OBJ '[client] audio disabled by board config'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  32:00       MAKE_FUNCTION 0
+  16:0c       STORE_NAME _nvs_creds
+  32:01       MAKE_FUNCTION 1
+  16:16       STORE_NAME _wipe_creds
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  2a:02       BUILD_TUPLE 2
+  53          LOAD_NULL 
+  33:02       MAKE_FUNCTION_DEFARGS 2
+  16:19       STORE_NAME portal
+  32:03       MAKE_FUNCTION 3
+  16:1c       STORE_NAME _localtime
+  32:04       MAKE_FUNCTION 4
+  16:1f       STORE_NAME _wifi_connected
+  32:05       MAKE_FUNCTION 5
+  16:24       STORE_NAME _ps_off
+  22:81:9c:20 LOAD_CONST_SMALL_INT 20000
+  51          LOAD_CONST_NONE 
+  2a:02       BUILD_TUPLE 2
+  53          LOAD_NULL 
+  33:06       MAKE_FUNCTION_DEFARGS 6
+  16:29       STORE_NAME _try_join
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  2a:04       BUILD_TUPLE 4
+  53          LOAD_NULL 
+  33:07       MAKE_FUNCTION_DEFARGS 7
+  16:37       STORE_NAME main
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [_nvs_creds, _wipe_creds, portal, _localtime, _wifi_connected, _ps_off, _try_join, main]
+simple_name: _nvs_creds
+  raw bytecode: 52 d8:02:1e:0c:80:16:22:69:29:29:23:22:36:2c:23:22:79:29:48:56:12:03:14:0d:10:09:36:01:c0:12:81:38:22:83:00:34:01:c1:b0:14:0e:10:0f:b1:36:02:c2:b2:43:42:51:63
+  prelude: (12, 2, 0, 0, 0, 0)
+  args: []
+  line info: 80:16:22:69:29:29:23:22:36:2c:23:22:79:29
+  48:56       SETUP_EXCEPT 86
+  12:03       LOAD_GLOBAL esp32
+  14:0d       LOAD_METHOD NVS
+  10:09       LOAD_CONST_STRING xiaozhi
+  36:01       CALL_METHOD 1
+  c0          STORE_FAST 0 
+  12:81:38    LOAD_GLOBAL bytearray
+  22:83:00    LOAD_CONST_SMALL_INT 384
+  34:01       CALL_FUNCTION 1
+  c1          STORE_FAST 1 
+  b0          LOAD_FAST 0 
+  14:0e       LOAD_METHOD get_blob
+  10:0f       LOAD_CONST_STRING creds
+  b1          LOAD_FAST 1 
+  36:02       CALL_METHOD 2
+  c2          STORE_FAST 2 
+  b2          LOAD_FAST 2 
+  43:42       POP_JUMP_IF_TRUE 2
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _wipe_creds
+  raw bytecode: 62 b8:02:0e:16:80:2a:27:22:25:52:12:08:14:17:36:00:59:48:0d:80:51:1b:18:c0:b0:14:17:36:00:59:4a:1c:57:12:81:3a:df:44:54:c1:49:0a:12:81:37:23:03:b1:34:02:59:51:51:c1:28:01:5d:4a:01:5d:51:63
+  prelude: (8, 2, 0, 0, 0, 0)
+  args: []
+  line info: 80:2a:27:22:25:52
+  12:08       LOAD_GLOBAL wifinet
+  14:17       LOAD_METHOD wipe
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  48:0d       SETUP_EXCEPT 13
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:18       IMPORT_NAME pinutil
+  c0          STORE_FAST 0 
+  b0          LOAD_FAST 0 
+  14:17       LOAD_METHOD wipe
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  4a:1c       POP_EXCEPT_JUMP 28
+  57          DUP_TOP 
+  12:81:3a    LOAD_GLOBAL Exception
+  df          BINARY_OP 8 <exception match> 
+  44:54       POP_JUMP_IF_FALSE 20
+  c1          STORE_FAST 1 
+  49:0a       SETUP_FINALLY 10
+  12:81:37    LOAD_GLOBAL print
+  23:03       LOAD_CONST_OBJ '[client] pins wipe:'
+  b1          LOAD_FAST 1 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  c1          STORE_FAST 1 
+  28:01       DELETE_FAST 1
+  5d          END_FINALLY 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: portal
+  raw bytecode: 30 ba:80:01:10:19:81:3b:1b:80:33:40:25:80:51:1b:1a:c2:b2:14:19:b0:10:1b:b1:36:82:01:59:51:63
+  prelude: (8, 0, 0, 2, 0, 2)
+  args: ['oled', 'aps']
+  line info: 80:33:40:25
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:1a       IMPORT_NAME onboarding
+  c2          STORE_FAST 2 
+  b2          LOAD_FAST 2 
+  14:19       LOAD_METHOD portal
+  b0          LOAD_FAST 0 
+  10:1b       LOAD_CONST_STRING aps
+  b1          LOAD_FAST 1 
+  36:82:01    CALL_METHOD 257
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _localtime
+  raw bytecode: 55 3c:10:1c:80:3a:27:22:2d:52:23:12:06:14:1d:36:00:c0:48:17:12:06:14:1e:b0:36:01:22:81:e1:00:f2:c1:12:06:14:1d:b1:36:01:c0:4a:0b:57:12:81:3a:df:44:43:59:4a:01:5d:b0:63
+  prelude: (8, 1, 0, 0, 0, 0)
+  args: []
+  line info: 80:3a:27:22:2d:52:23
+  12:06       LOAD_GLOBAL time
+  14:1d       LOAD_METHOD localtime
+  36:00       CALL_METHOD 0
+  c0          STORE_FAST 0 
+  48:17       SETUP_EXCEPT 23
+  12:06       LOAD_GLOBAL time
+  14:1e       LOAD_METHOD mktime
+  b0          LOAD_FAST 0 
+  36:01       CALL_METHOD 1
+  22:81:e1:00 LOAD_CONST_SMALL_INT 28800
+  f2          BINARY_OP 27 __add__ 
+  c1          STORE_FAST 1 
+  12:06       LOAD_GLOBAL time
+  14:1d       LOAD_METHOD localtime
+  b1          LOAD_FAST 1 
+  36:01       CALL_METHOD 1
+  c0          STORE_FAST 0 
+  4a:0b       POP_EXCEPT_JUMP 11
+  57          DUP_TOP 
+  12:81:3a    LOAD_GLOBAL Exception
+  df          BINARY_OP 8 <exception match> 
+  44:43       POP_JUMP_IF_FALSE 3
+  59          POP_TOP 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  b0          LOAD_FAST 0 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _wifi_connected
+  raw bytecode: 28 34:0c:1f:80:44:22:25:55:48:12:80:51:1b:20:c0:b0:14:21:b0:13:22:36:01:14:23:36:00:63
+  prelude: (7, 1, 0, 0, 0, 0)
+  args: []
+  line info: 80:44:22:25:55
+  48:12       SETUP_EXCEPT 18
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:20       IMPORT_NAME network
+  c0          STORE_FAST 0 
+  b0          LOAD_FAST 0 
+  14:21       LOAD_METHOD WLAN
+  b0          LOAD_FAST 0 
+  13:22       LOAD_ATTR STA_IF
+  36:01       CALL_METHOD 1
+  14:23       LOAD_METHOD isconnected
+  36:00       CALL_METHOD 0
+  63          RETURN_VALUE 
+  children: []
+simple_name: _ps_off
+  raw bytecode: 65 b9:02:10:24:81:3c:80:4c:22:2c:54:48:16:b0:14:25:10:26:b0:13:27:36:82:00:59:12:81:37:23:04:34:01:59:4a:1c:57:12:81:3a:df:44:54:c1:49:0a:12:81:37:10:28:b1:34:02:59:51:51:c1:28:01:5d:4a:01:5d:51:63
+  prelude: (8, 2, 0, 1, 0, 0)
+  args: ['sta']
+  line info: 80:4c:22:2c:54
+  48:16       SETUP_EXCEPT 22
+  b0          LOAD_FAST 0 
+  14:25       LOAD_METHOD config
+  10:26       LOAD_CONST_STRING pm
+  b0          LOAD_FAST 0 
+  13:27       LOAD_ATTR PM_NONE
+  36:82:00    CALL_METHOD 256
+  59          POP_TOP 
+  12:81:37    LOAD_GLOBAL print
+  23:04       LOAD_CONST_OBJ '[wifi] power save off'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  4a:1c       POP_EXCEPT_JUMP 28
+  57          DUP_TOP 
+  12:81:3a    LOAD_GLOBAL Exception
+  df          BINARY_OP 8 <exception match> 
+  44:54       POP_JUMP_IF_FALSE 20
+  c1          STORE_FAST 1 
+  49:0a       SETUP_FINALLY 10
+  12:81:37    LOAD_GLOBAL print
+  10:28       LOAD_CONST_STRING [wifi] pm:
+  b1          LOAD_FAST 1 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  c1          STORE_FAST 1 
+  28:01       DELETE_FAST 1
+  5d          END_FINALLY 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _try_join
+  raw bytecode: 132 f3:82:01:5a:29:0f:41:42:80:54:20:25:25:23:29:27:27:2a:27:22:2b:29:26:4c:23:26:2a:69:22:53:23:28:27:23:26:22:50:23:31:29:22:32:6d:22:53:23:26:4c:29:80:51:1b:20:c3:b0:30:02:c4:c5:48:8c:02:b3:14:21:b3:13:22:36:01:c6:b6:14:2a:36:00:43:51:b6:14:2a:52:36:01:59:12:06:14:2b:22:81:48:36:01:59:b6:14:23:36:00:44:7b:48:1e:b6:14:25:10:2c:36:01:b4:d9:44:51:12:81:37:23:05:b4:34:02:59:12:24:b6:34:01:59:52:63
+  prelude: (15, 2, 0, 3, 0, 2)
+  args: ['creds', 'timeout_ms', 'ui']
+  line info: 80:54:20:25:25:23:29:27:27:2a:27:22:2b:29:26:4c:23:26:2a:69:22:53:23:28:27:23:26:22:50:23:31:29:22:32:6d:22:53:23:26:4c:29
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:20       IMPORT_NAME network
+  c3          STORE_FAST 3 
+  b0          LOAD_FAST 0 
+  30:02       UNPACK_SEQUENCE 2
+  c4          STORE_FAST 4 
+  c5          STORE_FAST 5 
+  48:8c:02    SETUP_EXCEPT 268
+  b3          LOAD_FAST 3 
+  14:21       LOAD_METHOD WLAN
+  b3          LOAD_FAST 3 
+  13:22       LOAD_ATTR STA_IF
+  36:01       CALL_METHOD 1
+  c6          STORE_FAST 6 
+  b6          LOAD_FAST 6 
+  14:2a       LOAD_METHOD active
+  36:00       CALL_METHOD 0
+  43:51       POP_JUMP_IF_TRUE 17
+  b6          LOAD_FAST 6 
+  14:2a       LOAD_METHOD active
+  52          LOAD_CONST_TRUE 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  12:06       LOAD_GLOBAL time
+  14:2b       LOAD_METHOD sleep_ms
+  22:81:48    LOAD_CONST_SMALL_INT 200
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b6          LOAD_FAST 6 
+  14:23       LOAD_METHOD isconnected
+  36:00       CALL_METHOD 0
+  44:7b       POP_JUMP_IF_FALSE 59
+  48:1e       SETUP_EXCEPT 30
+  b6          LOAD_FAST 6 
+  14:25       LOAD_METHOD config
+  10:2c       LOAD_CONST_STRING essid
+  36:01       CALL_METHOD 1
+  b4          LOAD_FAST 4 
+  d9          BINARY_OP 2 __eq__ 
+  44:51       POP_JUMP_IF_FALSE 17
+  12:81:37    LOAD_GLOBAL print
+  23:05       LOAD_CONST_OBJ '[wifi] already on'
+  b4          LOAD_FAST 4 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  12:24       LOAD_GLOBAL _ps_off
+  b6          LOAD_FAST 6 
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  52          LOAD_CONST_TRUE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: main
+  raw bytecode: 506 b0:86:90:01:84:86:01:37:81:3b:81:3d:1b:81:3e:80:88:27:25:27:26:65:22:52:23:25:22:47:22:2b:53:43:69:20:2a:31:22:26:22:53:25:25:22:2b:53:23:28:44:42:29:65:28:22:2b:53:23:25:2b:22:1f:7e:80:10:26:27:29:27:25:25:74:80:14:8d:17:70:80:0c:72:80:09:6d:20:6d:20:6e:71:80:07:6e:6e:6e:6e:64:46:68:40:84:15:24:22:88:0a:22:26:2c:24:27:52:4d:34:26:22:26:55:34:2c:65:20:31:2c:68:20:25:22:22:26:25:4f:23:67:40:22:26:36:2d:5c:54:22:53:23:27:22:2b:53:23:89:13:23:23:23:68:23:23:23:20:28:27:27:24:44:37:46:24:65:2c:2c:25:44:2e:2c:55:28:22:2b:53:23:25:2a:26:27:2e:31:2d:23:26:28:46:48:24:22:2b:53:23:26:22:53:23:22:53:23:27:2b:2c:2d:2e:12:06:14:31:36:00:c4:80:51:1b:38:c5:b5:14:39:36:00:27:2b:b0:51:de:d3:44:45:b0:25:2b:18:3a:48:0a:12:07:14:3b:52:36:01:59:4a:0b:57:12:81:3a:df:44:43:59:4a:01:5d:12:0c:34:00:c6:51:c7:b6:51:de:d3:44:a8:81:48:16:25:2b:14:3c:10:3d:10:3e:36:02:59:25:2b:14:3f:23:09:36:01:59:4a:0b:57:12:81:3a:df:44:43:59:4a:01:5d:12:07:14:2e:10:2f:36:01:59:12:08:14:40:36:00:5f:4b:34:c8:12:29:b8:10:41:22:ae:70:10:42:25:2b:34:84:01:44:48:b8:c7:59:59:59:59:42:5a:48:0b:25:2b:14:3f:23:0a:36:01:59:4a:0b:57:12:81:3a:df:44:43:59:4a:01:5d:42:0a:b7:51:de:44:6f:48:16:25:2b:14:3c:10:43:10:43:36:02:59:25:2b:14:3f:23:0b:36:01:59:4a:0b:57:12:81:3a:df:44:43:59:4a:01:5d:12:81:37:23:0c:34:01:59:51:c6:42:4b:b7:c6:12:07:14:2e:10:36:36:01:59:b6:51:de:44:7d:12:81:37:23:0d:34:01:59:48:16:25:2b:14:3c:10:3d:10:3e:36:02:59:25:2b:14:3f:23:0e:36:01:59:4a:0b:57:12:81:3a:df:44:43:59:4a:01:5d:80:51:1b:1a:c9:b9:14:19:b0:10:1b:b2:36:82:01:59:51:63
+  prelude: (71, 2, 0, 4, 0, 4)
+  args: ['oled', 'boot_btn', 'aps', 'extra_tools']
+  line info: 80:88:27:25:27:26:65:22:52:23:25:22:47:22:2b:53:43:69:20:2a:31:22:26:22:53:25:25:22:2b:53:23:28:44:42:29:65:28:22:2b:53:23:25:2b:22:1f:7e:80:10:26:27:29:27:25:25:74:80:14:8d:17:70:80:0c:72:80:09:6d:20:6d:20:6e:71:80:07:6e:6e:6e:6e:64:46:68:40:84:15:24:22:88:0a:22:26:2c:24:27:52:4d:34:26:22:26:55:34:2c:65:20:31:2c:68:20:25:22:22:26:25:4f:23:67:40:22:26:36:2d:5c:54:22:53:23:27:22:2b:53:23:89:13:23:23:23:68:23:23:23:20:28:27:27:24:44:37:46:24:65:2c:2c:25:44:2e:2c:55:28:22:2b:53:23:25:2a:26:27:2e:31:2d:23:26:28:46:48:24:22:2b:53:23:26:22:53:23:22:53:23:27:2b:2c:2d:2e
+  12:06       LOAD_GLOBAL time
+  14:31       LOAD_METHOD ticks_ms
+  36:00       CALL_METHOD 0
+  c4          STORE_FAST 4 
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:38       IMPORT_NAME ovoui
+  c5          STORE_FAST 5 
+  b5          LOAD_FAST 5 
+  14:39       LOAD_METHOD get_ui
+  36:00       CALL_METHOD 0
+  27:2b       STORE_DEREF 43
+  b0          LOAD_FAST 0 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:45       POP_JUMP_IF_FALSE 5
+  b0          LOAD_FAST 0 
+  25:2b       LOAD_DEREF 43
+  18:3a       STORE_ATTR d
+  48:0a       SETUP_EXCEPT 10
+  12:07       LOAD_GLOBAL ovomini
+  14:3b       LOAD_METHOD led_engine_mode
+  52          LOAD_CONST_TRUE 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  4a:0b       POP_EXCEPT_JUMP 11
+  57          DUP_TOP 
+  12:81:3a    LOAD_GLOBAL Exception
+  df          BINARY_OP 8 <exception match> 
+  44:43       POP_JUMP_IF_FALSE 3
+  59          POP_TOP 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  12:0c       LOAD_GLOBAL _nvs_creds
+  34:00       CALL_FUNCTION 0
+  c6          STORE_FAST 6 
+  51          LOAD_CONST_NONE 
+  c7          STORE_FAST 7 
+  b6          LOAD_FAST 6 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:a8:81    POP_JUMP_IF_FALSE 168
+  48:16       SETUP_EXCEPT 22
+  25:2b       LOAD_DEREF 43
+  14:3c       LOAD_METHOD status
+  10:3d       LOAD_CONST_STRING wifi
+  10:3e       LOAD_CONST_STRING neutral
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  25:2b       LOAD_DEREF 43
+  14:3f       LOAD_METHOD subtitle
+  23:09       LOAD_CONST_OBJ 'connecting...'
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  4a:0b       POP_EXCEPT_JUMP 11
+  57          DUP_TOP 
+  12:81:3a    LOAD_GLOBAL Exception
+  df          BINARY_OP 8 <exception match> 
+  44:43       POP_JUMP_IF_FALSE 3
+  59          POP_TOP 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  12:07       LOAD_GLOBAL ovomini
+  14:2e       LOAD_METHOD led_status
+  10:2f       LOAD_CONST_STRING connecting
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  12:08       LOAD_GLOBAL wifinet
+  14:40       LOAD_METHOD load
+  36:00       CALL_METHOD 0
+  5f          GET_ITER_STACK 
+  4b:34       FOR_ITER 52
+  c8          STORE_FAST 8 
+  12:29       LOAD_GLOBAL _try_join
+  b8          LOAD_FAST 8 
+  10:41       LOAD_CONST_STRING timeout_ms
+  22:ae:70    LOAD_CONST_SMALL_INT 6000
+  10:42       LOAD_CONST_STRING ui
+  25:2b       LOAD_DEREF 43
+  34:84:01    CALL_FUNCTION 513
+  44:48       POP_JUMP_IF_FALSE 8
+  b8          LOAD_FAST 8 
+  c7          STORE_FAST 7 
+  59          POP_TOP 
+  59          POP_TOP 
+  59          POP_TOP 
+  59          POP_TOP 
+  42:5a       JUMP 26
+  48:0b       SETUP_EXCEPT 11
+  25:2b       LOAD_DEREF 43
+  14:3f       LOAD_METHOD subtitle
+  23:0a       LOAD_CONST_OBJ 'trying next network...'
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  4a:0b       POP_EXCEPT_JUMP 11
+  57          DUP_TOP 
+  12:81:3a    LOAD_GLOBAL Exception
+  df          BINARY_OP 8 <exception match> 
+  44:43       POP_JUMP_IF_FALSE 3
+  59          POP_TOP 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  42:0a       JUMP -54
+  b7          LOAD_FAST 7 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  44:6f       POP_JUMP_IF_FALSE 47
+  48:16       SETUP_EXCEPT 22
+  25:2b       LOAD_DEREF 43
+  14:3c       LOAD_METHOD status
+  10:43       LOAD_CONST_STRING error
+  10:43       LOAD_CONST_STRING error
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  25:2b       LOAD_DEREF 43
+  14:3f       LOAD_METHOD subtitle
+  23:0b       LOAD_CONST_OBJ 'wifi failed'
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  4a:0b       POP_EXCEPT_JUMP 11
+  57          DUP_TOP 
+  12:81:3a    LOAD_GLOBAL Exception
+  df          BINARY_OP 8 <exception match> 
+  44:43       POP_JUMP_IF_FALSE 3
+  59          POP_TOP 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  12:81:37    LOAD_GLOBAL print
+  23:0c       LOAD_CONST_OBJ '[client] all saved nets failed, start portal'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  c6          STORE_FAST 6 
+  42:4b       JUMP 11
+  b7          LOAD_FAST 7 
+  c6          STORE_FAST 6 
+  12:07       LOAD_GLOBAL ovomini
+  14:2e       LOAD_METHOD led_status
+  10:36       LOAD_CONST_STRING joined
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b6          LOAD_FAST 6 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  44:7d       POP_JUMP_IF_FALSE 61
+  12:81:37    LOAD_GLOBAL print
+  23:0d       LOAD_CONST_OBJ '[client] no wifi creds, starting portal'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  48:16       SETUP_EXCEPT 22
+  25:2b       LOAD_DEREF 43
+  14:3c       LOAD_METHOD status
+  10:3d       LOAD_CONST_STRING wifi
+  10:3e       LOAD_CONST_STRING neutral
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  25:2b       LOAD_DEREF 43
+  14:3f       LOAD_METHOD subtitle
+  23:0e       LOAD_CONST_OBJ 'wifi setup...'
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  4a:0b       POP_EXCEPT_JUMP 11
+  57          DUP_TOP 
+  12:81:3a    LOAD_GLOBAL Exception
+  df          BINARY_OP 8 <exception match> 
+  44:43       POP_JUMP_IF_FALSE 3
+  59          POP_TOP 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:1a       IMPORT_NAME onboarding
+  c9          STORE_FAST 9 
+  b9          LOAD_FAST 9 
+  14:19       LOAD_METHOD portal
+  b0          LOAD_FAST 0 
+  10:1b       LOAD_CONST_STRING aps
+  b2          LOAD_FAST 2 
+  36:82:01    CALL_METHOD 257
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [_on_connected]
+simple_name: _on_connected
+  raw bytecode: 180 f0:06:34:7a:81:40:81:40:81:40:81:41:80:de:29:22:29:2b:53:22:53:26:2a:26:25:22:25:26:54:12:81:37:23:20:b3:34:02:59:48:1f:12:07:14:2e:10:7b:36:01:59:25:00:14:3c:10:7b:10:3e:36:02:59:25:00:14:3f:10:14:36:01:59:4a:23:57:12:81:3a:df:44:5b:59:48:0b:12:07:14:2e:10:7b:36:01:59:4a:0b:57:12:81:3a:df:44:43:59:4a:01:5d:4a:01:5d:12:06:14:31:36:00:25:02:80:56:25:01:80:55:43:78:52:25:01:80:56:48:15:80:51:1b:7c:c4:b4:14:7d:36:00:59:12:81:37:23:21:34:01:59:4a:1c:57:12:81:3a:df:44:54:c5:49:0a:12:81:37:23:22:b5:34:02:59:51:51:c5:28:05:5d:4a:01:5d:51:63
+  prelude: (15, 2, 0, 4, 0, 0)
+  args: ['*', '*', '*', 'm']
+  line info: 80:de:29:22:29:2b:53:22:53:26:2a:26:25:22:25:26:54
+  12:81:37    LOAD_GLOBAL print
+  23:20       LOAD_CONST_OBJ '[connected]'
+  b3          LOAD_FAST 3 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  48:1f       SETUP_EXCEPT 31
+  12:07       LOAD_GLOBAL ovomini
+  14:2e       LOAD_METHOD led_status
+  10:7b       LOAD_CONST_STRING ready
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  25:00       LOAD_DEREF 0
+  14:3c       LOAD_METHOD status
+  10:7b       LOAD_CONST_STRING ready
+  10:3e       LOAD_CONST_STRING neutral
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  25:00       LOAD_DEREF 0
+  14:3f       LOAD_METHOD subtitle
+  10:14       LOAD_CONST_STRING q1
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  4a:23       POP_EXCEPT_JUMP 35
+  57          DUP_TOP 
+  12:81:3a    LOAD_GLOBAL Exception
+  df          BINARY_OP 8 <exception match> 
+  44:5b       POP_JUMP_IF_FALSE 27
+  59          POP_TOP 
+  48:0b       SETUP_EXCEPT 11
+  12:07       LOAD_GLOBAL ovomini
+  14:2e       LOAD_METHOD led_status
+  10:7b       LOAD_CONST_STRING ready
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  4a:0b       POP_EXCEPT_JUMP 11
+  57          DUP_TOP 
+  12:81:3a    LOAD_GLOBAL Exception
+  df          BINARY_OP 8 <exception match> 
+  44:43       POP_JUMP_IF_FALSE 3
+  59          POP_TOP 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  12:06       LOAD_GLOBAL time
+  14:31       LOAD_METHOD ticks_ms
+  36:00       CALL_METHOD 0
+  25:02       LOAD_DEREF 2
+  80          LOAD_CONST_SMALL_INT 0 
+  56          STORE_SUBSCR 
+  25:01       LOAD_DEREF 1
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  43:78       POP_JUMP_IF_TRUE 56
+  52          LOAD_CONST_TRUE 
+  25:01       LOAD_DEREF 1
+  80          LOAD_CONST_SMALL_INT 0 
+  56          STORE_SUBSCR 
+  48:15       SETUP_EXCEPT 21
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:7c       IMPORT_NAME ntptime
+  c4          STORE_FAST 4 
+  b4          LOAD_FAST 4 
+  14:7d       LOAD_METHOD settime
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  12:81:37    LOAD_GLOBAL print
+  23:21       LOAD_CONST_OBJ '[client] ntp ok'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  4a:1c       POP_EXCEPT_JUMP 28
+  57          DUP_TOP 
+  12:81:3a    LOAD_GLOBAL Exception
+  df          BINARY_OP 8 <exception match> 
+  44:54       POP_JUMP_IF_FALSE 20
+  c5          STORE_FAST 5 
+  49:0a       SETUP_FINALLY 10
+  12:81:37    LOAD_GLOBAL print
+  23:22       LOAD_CONST_OBJ '[client] ntp:'
+  b5          LOAD_FAST 5 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  c5          STORE_FAST 5 
+  28:05       DELETE_FAST 5
+  5d          END_FINALLY 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []

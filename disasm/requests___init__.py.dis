@@ -1,0 +1,935 @@
+mpy_source_file: extracted/requests___init__.py.mpy
+source_file: requests/__init__.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[90] (* for static qstrs):
+    'requests/__init__.py' 
+    '<module>' *
+    'socket' 
+    'Response' 
+    '0.10.2' 
+    'request' 
+    'copy' *
+    '__next__' *
+    '__len__' *
+    'binascii' 
+    'format' *
+    'b2a_base64' 
+    'ascii' 
+    'Basic {}' 
+    'split' *
+    '/' *
+    'q1' 
+    'http:' 
+    'https:' 
+    'tls' 
+    ':' 
+    'getaddrinfo' 
+    'SOCK_STREAM' 
+    'settimeout' 
+    'connect' 
+    'SSLContext' 
+    'PROTOCOL_TLS_CLIENT' 
+    'CERT_NONE' 
+    'verify_mode' 
+    'wrap_socket' 
+    'server_hostname' 
+    'write' *
+    'Host' 
+    'AssertionError' *
+    'dumps' 
+    'json' 
+    'chunked' 
+    'Connection' 
+    'close' *
+    'get' *
+    '0\r\n\r\n' 
+    'readline' *
+    'rstrip' *
+    'startswith' *
+    'utf-8' *
+    'strip' *
+    'pop' *
+    'GET' 
+    'status_code' 
+    'reason' 
+    'headers' 
+    'head' 
+    'HEAD' 
+    'post' 
+    'POST' 
+    'put' 
+    'PUT' 
+    'patch' 
+    'PATCH' 
+    'delete' 
+    'DELETE' 
+    '__init__' *
+    'raw' 
+    'encoding' 
+    '_cached' 
+    'content' 
+    'read' *
+    'text' 
+    'loads' 
+    '__version__' 
+    '__name__' *
+    '__module__' *
+    '__qualname__' *
+    'property' 
+    'method' 
+    'url' 
+    'data' 
+    'stream' 
+    'auth' 
+    'timeout' 
+    'parse_headers' 
+    'getattr' *
+    'str' *
+    'ValueError' *
+    'int' *
+    'len' *
+    'NotImplementedError' *
+    'OSError' *
+    'self' *
+    'f' 
+obj_table: [b'{}:{}', 'Authorization', 'Unsupported protocol: ', b'%s /%s HTTP/1.0\r\n', 'Content-Type', 'application/json', 'Transfer-Encoding', 'Content-Length', b': ', b'\r\n', b'%x\r\n', 'HTTP error: BadStatusLine:\n%s', b'Transfer-Encoding:', b'chunked', 'Unsupported ', b'Location:', 'Redirect %d not yet supported']
+simple_name: <module>
+  raw bytecode: 79 30:24:01:66:89:20:8e:a4:64:20:64:20:64:20:64:20:64:20:64:20:80:51:1b:02:16:02:54:32:00:10:03:34:02:16:03:51:51:51:51:51:51:52:2a:07:53:33:01:16:05:32:02:16:33:32:03:16:27:32:04:16:35:32:05:16:37:32:06:16:39:32:07:16:3b:10:04:16:45:51:63
+  prelude: (7, 0, 0, 0, 0, 0)
+  args: []
+  line info: 66:89:20:8e:a4:64:20:64:20:64:20:64:20:64:20:64:20
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:02       IMPORT_NAME socket
+  16:02       STORE_NAME socket
+  54          LOAD_BUILD_CLASS 
+  32:00       MAKE_FUNCTION 0
+  10:03       LOAD_CONST_STRING Response
+  34:02       CALL_FUNCTION 2
+  16:03       STORE_NAME Response
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  52          LOAD_CONST_TRUE 
+  2a:07       BUILD_TUPLE 7
+  53          LOAD_NULL 
+  33:01       MAKE_FUNCTION_DEFARGS 1
+  16:05       STORE_NAME request
+  32:02       MAKE_FUNCTION 2
+  16:33       STORE_NAME head
+  32:03       MAKE_FUNCTION 3
+  16:27       STORE_NAME get
+  32:04       MAKE_FUNCTION 4
+  16:35       STORE_NAME post
+  32:05       MAKE_FUNCTION 5
+  16:37       STORE_NAME put
+  32:06       MAKE_FUNCTION 6
+  16:39       STORE_NAME patch
+  32:07       MAKE_FUNCTION 7
+  16:3b       STORE_NAME delete
+  10:04       LOAD_CONST_STRING 0.10.2
+  16:45       STORE_NAME __version__
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [Response, request, head, get, post, put, patch, delete]
+simple_name: Response
+  raw bytecode: 51 08:16:03:68:20:64:40:64:60:88:0a:68:20:11:46:16:47:10:03:16:48:32:00:16:3d:32:01:16:26:11:49:32:02:34:01:16:41:11:49:32:03:34:01:16:43:32:04:16:23:51:63
+  prelude: (2, 0, 0, 0, 0, 0)
+  args: []
+  line info: 68:20:64:40:64:60:88:0a:68:20
+  11:46       LOAD_NAME __name__
+  16:47       STORE_NAME __module__
+  10:03       LOAD_CONST_STRING Response
+  16:48       STORE_NAME __qualname__
+  32:00       MAKE_FUNCTION 0
+  16:3d       STORE_NAME __init__
+  32:01       MAKE_FUNCTION 1
+  16:26       STORE_NAME close
+  11:49       LOAD_NAME property
+  32:02       MAKE_FUNCTION 2
+  34:01       CALL_FUNCTION 1
+  16:41       STORE_NAME content
+  11:49       LOAD_NAME property
+  32:03       MAKE_FUNCTION 3
+  34:01       CALL_FUNCTION 1
+  16:43       STORE_NAME text
+  32:04       MAKE_FUNCTION 4
+  16:23       STORE_NAME json
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [__init__, close, content, text, json]
+simple_name: __init__
+  raw bytecode: 24 1a:0e:3d:58:59:60:40:24:25:b1:b0:18:3e:10:2c:b0:18:3f:51:b0:18:40:51:63
+  prelude: (4, 0, 0, 2, 0, 0)
+  args: ['self', 'f']
+  line info: 60:40:24:25
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:3e       STORE_ATTR raw
+  10:2c       LOAD_CONST_STRING utf-8
+  b0          LOAD_FAST 0 
+  18:3f       STORE_ATTR encoding
+  51          LOAD_CONST_NONE 
+  b0          LOAD_FAST 0 
+  18:40       STORE_ATTR _cached
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: close
+  raw bytecode: 32 11:0e:26:58:80:0a:25:28:24:b0:13:3e:44:4c:b0:13:3e:14:26:36:00:59:51:b0:18:3e:51:b0:18:40:51:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:0a:25:28:24
+  b0          LOAD_FAST 0 
+  13:3e       LOAD_ATTR raw
+  44:4c       POP_JUMP_IF_FALSE 12
+  b0          LOAD_FAST 0 
+  13:3e       LOAD_ATTR raw
+  14:26       LOAD_METHOD close
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  b0          LOAD_FAST 0 
+  18:3e       STORE_ATTR raw
+  51          LOAD_CONST_NONE 
+  b0          LOAD_FAST 0 
+  18:40       STORE_ATTR _cached
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: content
+  raw bytecode: 48 2d:12:41:58:80:11:27:22:4b:28:25:b0:13:40:51:de:44:5a:49:0b:b0:13:3e:14:42:36:00:b0:18:40:51:b0:13:3e:14:26:36:00:59:51:b0:18:3e:5d:b0:13:40:63
+  prelude: (6, 1, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:11:27:22:4b:28:25
+  b0          LOAD_FAST 0 
+  13:40       LOAD_ATTR _cached
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  44:5a       POP_JUMP_IF_FALSE 26
+  49:0b       SETUP_FINALLY 11
+  b0          LOAD_FAST 0 
+  13:3e       LOAD_ATTR raw
+  14:42       LOAD_METHOD read
+  36:00       CALL_METHOD 0
+  b0          LOAD_FAST 0 
+  18:40       STORE_ATTR _cached
+  51          LOAD_CONST_NONE 
+  b0          LOAD_FAST 0 
+  13:3e       LOAD_ATTR raw
+  14:26       LOAD_METHOD close
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  b0          LOAD_FAST 0 
+  18:3e       STORE_ATTR raw
+  5d          END_FINALLY 
+  b0          LOAD_FAST 0 
+  13:40       LOAD_ATTR _cached
+  63          RETURN_VALUE 
+  children: []
+simple_name: text
+  raw bytecode: 17 19:08:43:58:80:1b:12:52:b0:13:41:b0:13:3f:34:02:63
+  prelude: (4, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:1b
+  12:52       LOAD_GLOBAL str
+  b0          LOAD_FAST 0 
+  13:41       LOAD_ATTR content
+  b0          LOAD_FAST 0 
+  13:3f       LOAD_ATTR encoding
+  34:02       CALL_FUNCTION 2
+  63          RETURN_VALUE 
+  children: []
+simple_name: json
+  raw bytecode: 21 21:0a:23:58:80:1e:45:80:51:1b:23:c1:b1:14:44:b0:13:41:36:01:63
+  prelude: (5, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:1e:45
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:23       IMPORT_NAME json
+  c1          STORE_FAST 1 
+  b1          LOAD_FAST 1 
+  14:44       LOAD_METHOD loads
+  b0          LOAD_FAST 0 
+  13:41       LOAD_ATTR content
+  36:01       CALL_METHOD 1
+  63          RETURN_VALUE 
+  children: []
+simple_name: request
+  raw bytecode: 1099 cd:a1:85:01:f6:02:05:4a:4b:4c:23:32:4d:4e:4f:50:80:2e:25:45:46:22:57:26:45:25:29:32:4b:22:5a:2f:27:26:27:26:46:47:49:27:2f:48:31:46:23:26:44:54:66:48:23:2b:26:2c:28:2f:4f:27:46:26:28:4c:46:27:46:23:23:2e:28:27:4f:27:66:26:29:29:2b:4b:49:24:24:2d:26:30:29:2b:4b:26:4d:48:48:2a:4a:2a:2a:24:2a:2a:20:28:2b:43:2a:27:33:3f:36:50:2c:25:22:25:2a:2f:4d:54:27:42:23:47:29:30:4c:4d:28:26:26:27:26:b4:51:de:44:45:2c:00:c4:42:46:b4:14:06:36:00:c4:51:c9:b2:46:13:12:51:b2:10:07:51:34:03:46:09:12:51:b2:10:08:51:34:03:d3:ca:b6:51:de:d3:44:70:80:51:1b:09:cb:b6:30:02:cc:cd:23:00:14:0a:bc:bd:36:02:ce:12:52:bb:14:0b:be:36:01:51:7f:2e:02:55:10:0c:34:02:ce:10:0d:14:0a:be:36:01:b4:23:01:56:48:13:b1:14:0e:10:0f:83:36:02:30:04:cf:26:10:26:11:26:12:4a:1d:57:12:53:df:44:56:59:b1:14:0e:10:0f:82:36:02:30:03:cf:26:10:26:11:10:10:26:12:4a:01:5d:bf:10:11:d9:44:47:22:80:50:26:13:42:5c:bf:10:12:d9:44:4d:80:51:1b:13:26:14:22:83:3b:26:13:42:49:12:53:23:02:bf:f2:34:01:65:10:14:24:11:dd:44:57:24:11:14:0e:10:14:81:36:02:30:02:26:11:26:13:12:54:24:13:34:01:26:13:12:02:14:15:24:11:24:13:80:12:02:13:16:36:04:26:15:24:15:80:55:26:15:51:26:16:b8:50:de:d3:44:44:2c:00:26:16:12:02:14:02:24:15:80:55:12:02:13:16:24:15:82:55:36:03:26:17:b7:51:de:d3:44:48:24:17:14:17:b7:36:01:59:48:ea:04:24:17:14:18:24:15:7f:55:36:01:59:bf:10:12:d9:44:63:24:14:14:19:24:14:13:1a:36:01:26:18:24:14:13:1b:24:18:18:1c:24:18:14:1d:24:17:10:1e:24:11:36:82:01:26:17:24:17:14:1f:23:03:b0:24:12:2a:02:f8:36:01:59:10:20:b4:dd:d3:44:46:24:11:b4:10:20:56:b3:51:de:d3:44:67:b2:51:de:43:43:12:21:65:80:10:22:2a:01:1b:23:1c:22:26:19:59:24:19:b3:34:01:c2:23:04:b4:dd:d3:44:46:23:05:b4:23:04:56:b2:44:6f:ba:44:56:23:06:b4:dd:d3:44:4d:23:07:b4:dd:d3:44:46:10:24:b4:23:06:56:42:56:23:07:b4:dd:d3:44:4f:12:52:12:55:b2:34:01:34:01:b4:23:07:56:42:40:10:25:b4:dd:d3:44:46:10:26:b4:10:25:56:b4:5f:4b:2a:26:1a:24:17:14:1f:24:1a:36:01:59:24:17:14:1f:23:08:36:01:59:24:17:14:1f:b4:24:1a:55:36:01:59:24:17:14:1f:23:09:36:01:59:42:14:24:17:14:1f:23:09:36:01:59:b2:44:e1:80:ba:44:d5:80:b4:14:27:23:06:51:36:02:10:24:d9:44:75:b2:5f:4b:26:26:1b:24:17:14:1f:23:0a:12:55:24:1b:34:01:f8:36:01:59:24:17:14:1f:24:1b:36:01:59:24:17:14:1f:23:09:36:01:59:42:18:24:17:14:1f:10:28:36:01:59:42:51:b2:5f:4b:0d:26:1b:24:17:14:1f:24:1b:36:01:59:42:31:42:48:24:17:14:1f:b2:36:01:59:24:17:14:29:36:00:26:1c:24:1c:14:0e:51:82:36:02:26:1c:12:55:24:1c:34:01:82:d7:44:4a:12:53:23:0b:24:1c:f8:34:01:65:12:54:24:1c:81:55:34:01:26:1d:10:10:26:1e:12:55:24:1c:34:01:82:d8:44:4a:24:1c:82:55:14:2a:36:00:26:1e:24:17:14:29:36:00:26:1c:24:1c:44:47:24:1c:23:09:d9:44:43:42:b2:81:24:1c:14:2b:23:0c:36:01:44:5a:23:0d:24:1c:dd:44:50:12:53:23:0e:12:52:24:1c:10:2c:34:02:f2:34:01:65:42:d1:80:24:1c:14:2b:23:0f:36:01:44:c6:80:22:81:48:24:1d:57:5b:da:46:06:22:82:2b:da:42:42:5a:59:43:72:24:1d:22:82:2d:22:82:2e:22:82:2f:22:82:33:22:82:34:2b:05:dd:44:50:12:52:24:1c:8a:7e:2e:02:55:10:2c:34:02:c9:42:4a:12:56:23:10:24:1d:f8:34:01:65:42:40:b8:50:de:44:42:42:73:b8:52:de:44:66:12:52:24:1c:10:2c:34:02:26:1c:24:1c:14:0e:10:14:81:36:02:30:02:26:1a:26:1f:24:1f:14:2d:36:00:24:16:24:1a:56:42:48:b8:24:1c:24:16:34:02:59:42:b8:7e:4a:10:57:12:57:df:44:49:59:24:17:14:26:36:00:59:64:5d:b9:44:79:24:17:14:26:36:00:59:b4:14:2e:10:20:51:36:02:59:24:1d:22:82:2d:22:82:2e:22:82:2f:2b:03:dd:44:4c:12:05:10:2f:b9:51:51:b4:b5:34:06:63
+  prelude: (42, 1, 0, 9, 0, 7)
+  args: ['method', 'url', 'data', 'json', 'headers', 'stream', 'auth', 'timeout', 'parse_headers']
+  line info: 80:2e:25:45:46:22:57:26:45:25:29:32:4b:22:5a:2f:27:26:27:26:46:47:49:27:2f:48:31:46:23:26:44:54:66:48:23:2b:26:2c:28:2f:4f:27:46:26:28:4c:46:27:46:23:23:2e:28:27:4f:27:66:26:29:29:2b:4b:49:24:24:2d:26:30:29:2b:4b:26:4d:48:48:2a:4a:2a:2a:24:2a:2a:20:28:2b:43:2a:27:33:3f:36:50:2c:25:22:25:2a:2f:4d:54:27:42:23:47:29:30:4c:4d:28:26:26:27:26
+  b4          LOAD_FAST 4 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  44:45       POP_JUMP_IF_FALSE 5
+  2c:00       BUILD_MAP 0
+  c4          STORE_FAST 4 
+  42:46       JUMP 6
+  b4          LOAD_FAST 4 
+  14:06       LOAD_METHOD copy
+  36:00       CALL_METHOD 0
+  c4          STORE_FAST 4 
+  51          LOAD_CONST_NONE 
+  c9          STORE_FAST 9 
+  b2          LOAD_FAST 2 
+  46:13       JUMP_IF_FALSE_OR_POP 19
+  12:51       LOAD_GLOBAL getattr
+  b2          LOAD_FAST 2 
+  10:07       LOAD_CONST_STRING __next__
+  51          LOAD_CONST_NONE 
+  34:03       CALL_FUNCTION 3
+  46:09       JUMP_IF_FALSE_OR_POP 9
+  12:51       LOAD_GLOBAL getattr
+  b2          LOAD_FAST 2 
+  10:08       LOAD_CONST_STRING __len__
+  51          LOAD_CONST_NONE 
+  34:03       CALL_FUNCTION 3
+  d3          UNARY_OP 3 <not> 
+  ca          STORE_FAST 10 
+  b6          LOAD_FAST 6 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:70       POP_JUMP_IF_FALSE 48
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:09       IMPORT_NAME binascii
+  cb          STORE_FAST 11 
+  b6          LOAD_FAST 6 
+  30:02       UNPACK_SEQUENCE 2
+  cc          STORE_FAST 12 
+  cd          STORE_FAST 13 
+  23:00       LOAD_CONST_OBJ b'{}:{}'
+  14:0a       LOAD_METHOD format
+  bc          LOAD_FAST 12 
+  bd          LOAD_FAST 13 
+  36:02       CALL_METHOD 2
+  ce          STORE_FAST 14 
+  12:52       LOAD_GLOBAL str
+  bb          LOAD_FAST 11 
+  14:0b       LOAD_METHOD b2a_base64
+  be          LOAD_FAST 14 
+  36:01       CALL_METHOD 1
+  51          LOAD_CONST_NONE 
+  7f          LOAD_CONST_SMALL_INT -1 
+  2e:02       BUILD_SLICE 2
+  55          LOAD_SUBSCR 
+  10:0c       LOAD_CONST_STRING ascii
+  34:02       CALL_FUNCTION 2
+  ce          STORE_FAST 14 
+  10:0d       LOAD_CONST_STRING Basic {}
+  14:0a       LOAD_METHOD format
+  be          LOAD_FAST 14 
+  36:01       CALL_METHOD 1
+  b4          LOAD_FAST 4 
+  23:01       LOAD_CONST_OBJ 'Authorization'
+  56          STORE_SUBSCR 
+  48:13       SETUP_EXCEPT 19
+  b1          LOAD_FAST 1 
+  14:0e       LOAD_METHOD split
+  10:0f       LOAD_CONST_STRING /
+  83          LOAD_CONST_SMALL_INT 3 
+  36:02       CALL_METHOD 2
+  30:04       UNPACK_SEQUENCE 4
+  cf          STORE_FAST 15 
+  26:10       STORE_FAST_N 16
+  26:11       STORE_FAST_N 17
+  26:12       STORE_FAST_N 18
+  4a:1d       POP_EXCEPT_JUMP 29
+  57          DUP_TOP 
+  12:53       LOAD_GLOBAL ValueError
+  df          BINARY_OP 8 <exception match> 
+  44:56       POP_JUMP_IF_FALSE 22
+  59          POP_TOP 
+  b1          LOAD_FAST 1 
+  14:0e       LOAD_METHOD split
+  10:0f       LOAD_CONST_STRING /
+  82          LOAD_CONST_SMALL_INT 2 
+  36:02       CALL_METHOD 2
+  30:03       UNPACK_SEQUENCE 3
+  cf          STORE_FAST 15 
+  26:10       STORE_FAST_N 16
+  26:11       STORE_FAST_N 17
+  10:10       LOAD_CONST_STRING q1
+  26:12       STORE_FAST_N 18
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  bf          LOAD_FAST 15 
+  10:11       LOAD_CONST_STRING http:
+  d9          BINARY_OP 2 __eq__ 
+  44:47       POP_JUMP_IF_FALSE 7
+  22:80:50    LOAD_CONST_SMALL_INT 80
+  26:13       STORE_FAST_N 19
+  42:5c       JUMP 28
+  bf          LOAD_FAST 15 
+  10:12       LOAD_CONST_STRING https:
+  d9          BINARY_OP 2 __eq__ 
+  44:4d       POP_JUMP_IF_FALSE 13
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:13       IMPORT_NAME tls
+  26:14       STORE_FAST_N 20
+  22:83:3b    LOAD_CONST_SMALL_INT 443
+  26:13       STORE_FAST_N 19
+  42:49       JUMP 9
+  12:53       LOAD_GLOBAL ValueError
+  23:02       LOAD_CONST_OBJ 'Unsupported protocol: '
+  bf          LOAD_FAST 15 
+  f2          BINARY_OP 27 __add__ 
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  10:14       LOAD_CONST_STRING :
+  24:11       LOAD_FAST_N 17
+  dd          BINARY_OP 6 <in> 
+  44:57       POP_JUMP_IF_FALSE 23
+  24:11       LOAD_FAST_N 17
+  14:0e       LOAD_METHOD split
+  10:14       LOAD_CONST_STRING :
+  81          LOAD_CONST_SMALL_INT 1 
+  36:02       CALL_METHOD 2
+  30:02       UNPACK_SEQUENCE 2
+  26:11       STORE_FAST_N 17
+  26:13       STORE_FAST_N 19
+  12:54       LOAD_GLOBAL int
+  24:13       LOAD_FAST_N 19
+  34:01       CALL_FUNCTION 1
+  26:13       STORE_FAST_N 19
+  12:02       LOAD_GLOBAL socket
+  14:15       LOAD_METHOD getaddrinfo
+  24:11       LOAD_FAST_N 17
+  24:13       LOAD_FAST_N 19
+  80          LOAD_CONST_SMALL_INT 0 
+  12:02       LOAD_GLOBAL socket
+  13:16       LOAD_ATTR SOCK_STREAM
+  36:04       CALL_METHOD 4
+  26:15       STORE_FAST_N 21
+  24:15       LOAD_FAST_N 21
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  26:15       STORE_FAST_N 21
+  51          LOAD_CONST_NONE 
+  26:16       STORE_FAST_N 22
+  b8          LOAD_FAST 8 
+  50          LOAD_CONST_FALSE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:44       POP_JUMP_IF_FALSE 4
+  2c:00       BUILD_MAP 0
+  26:16       STORE_FAST_N 22
+  12:02       LOAD_GLOBAL socket
+  14:02       LOAD_METHOD socket
+  24:15       LOAD_FAST_N 21
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  12:02       LOAD_GLOBAL socket
+  13:16       LOAD_ATTR SOCK_STREAM
+  24:15       LOAD_FAST_N 21
+  82          LOAD_CONST_SMALL_INT 2 
+  55          LOAD_SUBSCR 
+  36:03       CALL_METHOD 3
+  26:17       STORE_FAST_N 23
+  b7          LOAD_FAST 7 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:48       POP_JUMP_IF_FALSE 8
+  24:17       LOAD_FAST_N 23
+  14:17       LOAD_METHOD settimeout
+  b7          LOAD_FAST 7 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  48:ea:04    SETUP_EXCEPT 618
+  24:17       LOAD_FAST_N 23
+  14:18       LOAD_METHOD connect
+  24:15       LOAD_FAST_N 21
+  7f          LOAD_CONST_SMALL_INT -1 
+  55          LOAD_SUBSCR 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  bf          LOAD_FAST 15 
+  10:12       LOAD_CONST_STRING https:
+  d9          BINARY_OP 2 __eq__ 
+  44:63       POP_JUMP_IF_FALSE 35
+  24:14       LOAD_FAST_N 20
+  14:19       LOAD_METHOD SSLContext
+  24:14       LOAD_FAST_N 20
+  13:1a       LOAD_ATTR PROTOCOL_TLS_CLIENT
+  36:01       CALL_METHOD 1
+  26:18       STORE_FAST_N 24
+  24:14       LOAD_FAST_N 20
+  13:1b       LOAD_ATTR CERT_NONE
+  24:18       LOAD_FAST_N 24
+  18:1c       STORE_ATTR verify_mode
+  24:18       LOAD_FAST_N 24
+  14:1d       LOAD_METHOD wrap_socket
+  24:17       LOAD_FAST_N 23
+  10:1e       LOAD_CONST_STRING server_hostname
+  24:11       LOAD_FAST_N 17
+  36:82:01    CALL_METHOD 257
+  26:17       STORE_FAST_N 23
+  24:17       LOAD_FAST_N 23
+  14:1f       LOAD_METHOD write
+  23:03       LOAD_CONST_OBJ b'%s /%s HTTP/1.0\r\n'
+  b0          LOAD_FAST 0 
+  24:12       LOAD_FAST_N 18
+  2a:02       BUILD_TUPLE 2
+  f8          BINARY_OP 33 __mod__ 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  10:20       LOAD_CONST_STRING Host
+  b4          LOAD_FAST 4 
+  dd          BINARY_OP 6 <in> 
+  d3          UNARY_OP 3 <not> 
+  44:46       POP_JUMP_IF_FALSE 6
+  24:11       LOAD_FAST_N 17
+  b4          LOAD_FAST 4 
+  10:20       LOAD_CONST_STRING Host
+  56          STORE_SUBSCR 
+  b3          LOAD_FAST 3 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:67       POP_JUMP_IF_FALSE 39
+  b2          LOAD_FAST 2 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  43:43       POP_JUMP_IF_TRUE 3
+  12:21       LOAD_GLOBAL AssertionError
+  65          RAISE_OBJ 
+  80          LOAD_CONST_SMALL_INT 0 
+  10:22       LOAD_CONST_STRING dumps
+  2a:01       BUILD_TUPLE 1
+  1b:23       IMPORT_NAME json
+  1c:22       IMPORT_FROM dumps
+  26:19       STORE_FAST_N 25
+  59          POP_TOP 
+  24:19       LOAD_FAST_N 25
+  b3          LOAD_FAST 3 
+  34:01       CALL_FUNCTION 1
+  c2          STORE_FAST 2 
+  23:04       LOAD_CONST_OBJ 'Content-Type'
+  b4          LOAD_FAST 4 
+  dd          BINARY_OP 6 <in> 
+  d3          UNARY_OP 3 <not> 
+  44:46       POP_JUMP_IF_FALSE 6
+  23:05       LOAD_CONST_OBJ 'application/json'
+  b4          LOAD_FAST 4 
+  23:04       LOAD_CONST_OBJ 'Content-Type'
+  56          STORE_SUBSCR 
+  b2          LOAD_FAST 2 
+  44:6f       POP_JUMP_IF_FALSE 47
+  ba          LOAD_FAST 10 
+  44:56       POP_JUMP_IF_FALSE 22
+  23:06       LOAD_CONST_OBJ 'Transfer-Encoding'
+  b4          LOAD_FAST 4 
+  dd          BINARY_OP 6 <in> 
+  d3          UNARY_OP 3 <not> 
+  44:4d       POP_JUMP_IF_FALSE 13
+  23:07       LOAD_CONST_OBJ 'Content-Length'
+  b4          LOAD_FAST 4 
+  dd          BINARY_OP 6 <in> 
+  d3          UNARY_OP 3 <not> 
+  44:46       POP_JUMP_IF_FALSE 6
+  10:24       LOAD_CONST_STRING chunked
+  b4          LOAD_FAST 4 
+  23:06       LOAD_CONST_OBJ 'Transfer-Encoding'
+  56          STORE_SUBSCR 
+  42:56       JUMP 22
+  23:07       LOAD_CONST_OBJ 'Content-Length'
+  b4          LOAD_FAST 4 
+  dd          BINARY_OP 6 <in> 
+  d3          UNARY_OP 3 <not> 
+  44:4f       POP_JUMP_IF_FALSE 15
+  12:52       LOAD_GLOBAL str
+  12:55       LOAD_GLOBAL len
+  b2          LOAD_FAST 2 
+  34:01       CALL_FUNCTION 1
+  34:01       CALL_FUNCTION 1
+  b4          LOAD_FAST 4 
+  23:07       LOAD_CONST_OBJ 'Content-Length'
+  56          STORE_SUBSCR 
+  42:40       JUMP 0
+  10:25       LOAD_CONST_STRING Connection
+  b4          LOAD_FAST 4 
+  dd          BINARY_OP 6 <in> 
+  d3          UNARY_OP 3 <not> 
+  44:46       POP_JUMP_IF_FALSE 6
+  10:26       LOAD_CONST_STRING close
+  b4          LOAD_FAST 4 
+  10:25       LOAD_CONST_STRING Connection
+  56          STORE_SUBSCR 
+  b4          LOAD_FAST 4 
+  5f          GET_ITER_STACK 
+  4b:2a       FOR_ITER 42
+  26:1a       STORE_FAST_N 26
+  24:17       LOAD_FAST_N 23
+  14:1f       LOAD_METHOD write
+  24:1a       LOAD_FAST_N 26
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  24:17       LOAD_FAST_N 23
+  14:1f       LOAD_METHOD write
+  23:08       LOAD_CONST_OBJ b': '
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  24:17       LOAD_FAST_N 23
+  14:1f       LOAD_METHOD write
+  b4          LOAD_FAST 4 
+  24:1a       LOAD_FAST_N 26
+  55          LOAD_SUBSCR 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  24:17       LOAD_FAST_N 23
+  14:1f       LOAD_METHOD write
+  23:09       LOAD_CONST_OBJ b'\r\n'
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  42:14       JUMP -44
+  24:17       LOAD_FAST_N 23
+  14:1f       LOAD_METHOD write
+  23:09       LOAD_CONST_OBJ b'\r\n'
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b2          LOAD_FAST 2 
+  44:e1:80    POP_JUMP_IF_FALSE 97
+  ba          LOAD_FAST 10 
+  44:d5:80    POP_JUMP_IF_FALSE 85
+  b4          LOAD_FAST 4 
+  14:27       LOAD_METHOD get
+  23:06       LOAD_CONST_OBJ 'Transfer-Encoding'
+  51          LOAD_CONST_NONE 
+  36:02       CALL_METHOD 2
+  10:24       LOAD_CONST_STRING chunked
+  d9          BINARY_OP 2 __eq__ 
+  44:75       POP_JUMP_IF_FALSE 53
+  b2          LOAD_FAST 2 
+  5f          GET_ITER_STACK 
+  4b:26       FOR_ITER 38
+  26:1b       STORE_FAST_N 27
+  24:17       LOAD_FAST_N 23
+  14:1f       LOAD_METHOD write
+  23:0a       LOAD_CONST_OBJ b'%x\r\n'
+  12:55       LOAD_GLOBAL len
+  24:1b       LOAD_FAST_N 27
+  34:01       CALL_FUNCTION 1
+  f8          BINARY_OP 33 __mod__ 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  24:17       LOAD_FAST_N 23
+  14:1f       LOAD_METHOD write
+  24:1b       LOAD_FAST_N 27
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  24:17       LOAD_FAST_N 23
+  14:1f       LOAD_METHOD write
+  23:09       LOAD_CONST_OBJ b'\r\n'
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  42:18       JUMP -40
+  24:17       LOAD_FAST_N 23
+  14:1f       LOAD_METHOD write
+  10:28       LOAD_CONST_STRING 0
+
+
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  42:51       JUMP 17
+  b2          LOAD_FAST 2 
+  5f          GET_ITER_STACK 
+  4b:0d       FOR_ITER 13
+  26:1b       STORE_FAST_N 27
+  24:17       LOAD_FAST_N 23
+  14:1f       LOAD_METHOD write
+  24:1b       LOAD_FAST_N 27
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  42:31       JUMP -15
+  42:48       JUMP 8
+  24:17       LOAD_FAST_N 23
+  14:1f       LOAD_METHOD write
+  b2          LOAD_FAST 2 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  24:17       LOAD_FAST_N 23
+  14:29       LOAD_METHOD readline
+  36:00       CALL_METHOD 0
+  26:1c       STORE_FAST_N 28
+  24:1c       LOAD_FAST_N 28
+  14:0e       LOAD_METHOD split
+  51          LOAD_CONST_NONE 
+  82          LOAD_CONST_SMALL_INT 2 
+  36:02       CALL_METHOD 2
+  26:1c       STORE_FAST_N 28
+  12:55       LOAD_GLOBAL len
+  24:1c       LOAD_FAST_N 28
+  34:01       CALL_FUNCTION 1
+  82          LOAD_CONST_SMALL_INT 2 
+  d7          BINARY_OP 0 __lt__ 
+  44:4a       POP_JUMP_IF_FALSE 10
+  12:53       LOAD_GLOBAL ValueError
+  23:0b       LOAD_CONST_OBJ 'HTTP error: BadStatusLine:\n%s'
+  24:1c       LOAD_FAST_N 28
+  f8          BINARY_OP 33 __mod__ 
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  12:54       LOAD_GLOBAL int
+  24:1c       LOAD_FAST_N 28
+  81          LOAD_CONST_SMALL_INT 1 
+  55          LOAD_SUBSCR 
+  34:01       CALL_FUNCTION 1
+  26:1d       STORE_FAST_N 29
+  10:10       LOAD_CONST_STRING q1
+  26:1e       STORE_FAST_N 30
+  12:55       LOAD_GLOBAL len
+  24:1c       LOAD_FAST_N 28
+  34:01       CALL_FUNCTION 1
+  82          LOAD_CONST_SMALL_INT 2 
+  d8          BINARY_OP 1 __gt__ 
+  44:4a       POP_JUMP_IF_FALSE 10
+  24:1c       LOAD_FAST_N 28
+  82          LOAD_CONST_SMALL_INT 2 
+  55          LOAD_SUBSCR 
+  14:2a       LOAD_METHOD rstrip
+  36:00       CALL_METHOD 0
+  26:1e       STORE_FAST_N 30
+  24:17       LOAD_FAST_N 23
+  14:29       LOAD_METHOD readline
+  36:00       CALL_METHOD 0
+  26:1c       STORE_FAST_N 28
+  24:1c       LOAD_FAST_N 28
+  44:47       POP_JUMP_IF_FALSE 7
+  24:1c       LOAD_FAST_N 28
+  23:09       LOAD_CONST_OBJ b'\r\n'
+  d9          BINARY_OP 2 __eq__ 
+  44:43       POP_JUMP_IF_FALSE 3
+  42:b2:81    JUMP 178
+  24:1c       LOAD_FAST_N 28
+  14:2b       LOAD_METHOD startswith
+  23:0c       LOAD_CONST_OBJ b'Transfer-Encoding:'
+  36:01       CALL_METHOD 1
+  44:5a       POP_JUMP_IF_FALSE 26
+  23:0d       LOAD_CONST_OBJ b'chunked'
+  24:1c       LOAD_FAST_N 28
+  dd          BINARY_OP 6 <in> 
+  44:50       POP_JUMP_IF_FALSE 16
+  12:53       LOAD_GLOBAL ValueError
+  23:0e       LOAD_CONST_OBJ 'Unsupported '
+  12:52       LOAD_GLOBAL str
+  24:1c       LOAD_FAST_N 28
+  10:2c       LOAD_CONST_STRING utf-8
+  34:02       CALL_FUNCTION 2
+  f2          BINARY_OP 27 __add__ 
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  42:d1:80    JUMP 81
+  24:1c       LOAD_FAST_N 28
+  14:2b       LOAD_METHOD startswith
+  23:0f       LOAD_CONST_OBJ b'Location:'
+  36:01       CALL_METHOD 1
+  44:c6:80    POP_JUMP_IF_FALSE 70
+  22:81:48    LOAD_CONST_SMALL_INT 200
+  24:1d       LOAD_FAST_N 29
+  57          DUP_TOP 
+  5b          ROT_THREE 
+  da          BINARY_OP 3 __le__ 
+  46:06       JUMP_IF_FALSE_OR_POP 6
+  22:82:2b    LOAD_CONST_SMALL_INT 299
+  da          BINARY_OP 3 __le__ 
+  42:42       JUMP 2
+  5a          ROT_TWO 
+  59          POP_TOP 
+  43:72       POP_JUMP_IF_TRUE 50
+  24:1d       LOAD_FAST_N 29
+  22:82:2d    LOAD_CONST_SMALL_INT 301
+  22:82:2e    LOAD_CONST_SMALL_INT 302
+  22:82:2f    LOAD_CONST_SMALL_INT 303
+  22:82:33    LOAD_CONST_SMALL_INT 307
+  22:82:34    LOAD_CONST_SMALL_INT 308
+  2b:05       BUILD_LIST 5
+  dd          BINARY_OP 6 <in> 
+  44:50       POP_JUMP_IF_FALSE 16
+  12:52       LOAD_GLOBAL str
+  24:1c       LOAD_FAST_N 28
+  8a          LOAD_CONST_SMALL_INT 10 
+  7e          LOAD_CONST_SMALL_INT -2 
+  2e:02       BUILD_SLICE 2
+  55          LOAD_SUBSCR 
+  10:2c       LOAD_CONST_STRING utf-8
+  34:02       CALL_FUNCTION 2
+  c9          STORE_FAST 9 
+  42:4a       JUMP 10
+  12:56       LOAD_GLOBAL NotImplementedError
+  23:10       LOAD_CONST_OBJ 'Redirect %d not yet supported'
+  24:1d       LOAD_FAST_N 29
+  f8          BINARY_OP 33 __mod__ 
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  42:40       JUMP 0
+  b8          LOAD_FAST 8 
+  50          LOAD_CONST_FALSE 
+  de          BINARY_OP 7 <is> 
+  44:42       POP_JUMP_IF_FALSE 2
+  42:73       JUMP 51
+  b8          LOAD_FAST 8 
+  52          LOAD_CONST_TRUE 
+  de          BINARY_OP 7 <is> 
+  44:66       POP_JUMP_IF_FALSE 38
+  12:52       LOAD_GLOBAL str
+  24:1c       LOAD_FAST_N 28
+  10:2c       LOAD_CONST_STRING utf-8
+  34:02       CALL_FUNCTION 2
+  26:1c       STORE_FAST_N 28
+  24:1c       LOAD_FAST_N 28
+  14:0e       LOAD_METHOD split
+  10:14       LOAD_CONST_STRING :
+  81          LOAD_CONST_SMALL_INT 1 
+  36:02       CALL_METHOD 2
+  30:02       UNPACK_SEQUENCE 2
+  26:1a       STORE_FAST_N 26
+  26:1f       STORE_FAST_N 31
+  24:1f       LOAD_FAST_N 31
+  14:2d       LOAD_METHOD strip
+  36:00       CALL_METHOD 0
+  24:16       LOAD_FAST_N 22
+  24:1a       LOAD_FAST_N 26
+  56          STORE_SUBSCR 
+  42:48       JUMP 8
+  b8          LOAD_FAST 8 
+  24:1c       LOAD_FAST_N 28
+  24:16       LOAD_FAST_N 22
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  42:b8:7e    JUMP -200
+  4a:10       POP_EXCEPT_JUMP 16
+  57          DUP_TOP 
+  12:57       LOAD_GLOBAL OSError
+  df          BINARY_OP 8 <exception match> 
+  44:49       POP_JUMP_IF_FALSE 9
+  59          POP_TOP 
+  24:17       LOAD_FAST_N 23
+  14:26       LOAD_METHOD close
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  64          RAISE_LAST 
+  5d          END_FINALLY 
+  b9          LOAD_FAST 9 
+  44:79       POP_JUMP_IF_FALSE 57
+  24:17       LOAD_FAST_N 23
+  14:26       LOAD_METHOD close
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  b4          LOAD_FAST 4 
+  14:2e       LOAD_METHOD pop
+  10:20       LOAD_CONST_STRING Host
+  51          LOAD_CONST_NONE 
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  24:1d       LOAD_FAST_N 29
+  22:82:2d    LOAD_CONST_SMALL_INT 301
+  22:82:2e    LOAD_CONST_SMALL_INT 302
+  22:82:2f    LOAD_CONST_SMALL_INT 303
+  2b:03       BUILD_LIST 3
+  dd          BINARY_OP 6 <in> 
+  44:4c       POP_JUMP_IF_FALSE 12
+  12:05       LOAD_GLOBAL request
+  10:2f       LOAD_CONST_STRING GET
+  b9          LOAD_FAST 9 
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  b4          LOAD_FAST 4 
+  b5          LOAD_FAST 5 
+  34:06       CALL_FUNCTION 6
+  63          RETURN_VALUE 
+  children: []
+simple_name: head
+  raw bytecode: 20 b9:80:40:08:33:4b:80:c8:12:05:10:34:b0:53:b1:80:35:82:02:63
+  prelude: (8, 0, 2, 1, 0, 0)
+  args: ['url']
+  line info: 80:c8
+  12:05       LOAD_GLOBAL request
+  10:34       LOAD_CONST_STRING HEAD
+  b0          LOAD_FAST 0 
+  53          LOAD_NULL 
+  b1          LOAD_FAST 1 
+  80          LOAD_CONST_SMALL_INT 0 
+  35:82:02    CALL_FUNCTION_VAR_KW 258
+  63          RETURN_VALUE 
+  children: []
+simple_name: get
+  raw bytecode: 20 b9:80:40:08:27:4b:80:cc:12:05:10:2f:b0:53:b1:80:35:82:02:63
+  prelude: (8, 0, 2, 1, 0, 0)
+  args: ['url']
+  line info: 80:cc
+  12:05       LOAD_GLOBAL request
+  10:2f       LOAD_CONST_STRING GET
+  b0          LOAD_FAST 0 
+  53          LOAD_NULL 
+  b1          LOAD_FAST 1 
+  80          LOAD_CONST_SMALL_INT 0 
+  35:82:02    CALL_FUNCTION_VAR_KW 258
+  63          RETURN_VALUE 
+  children: []
+simple_name: post
+  raw bytecode: 20 b9:80:40:08:35:4b:80:d0:12:05:10:36:b0:53:b1:80:35:82:02:63
+  prelude: (8, 0, 2, 1, 0, 0)
+  args: ['url']
+  line info: 80:d0
+  12:05       LOAD_GLOBAL request
+  10:36       LOAD_CONST_STRING POST
+  b0          LOAD_FAST 0 
+  53          LOAD_NULL 
+  b1          LOAD_FAST 1 
+  80          LOAD_CONST_SMALL_INT 0 
+  35:82:02    CALL_FUNCTION_VAR_KW 258
+  63          RETURN_VALUE 
+  children: []
+simple_name: put
+  raw bytecode: 20 b9:80:40:08:37:4b:80:d4:12:05:10:38:b0:53:b1:80:35:82:02:63
+  prelude: (8, 0, 2, 1, 0, 0)
+  args: ['url']
+  line info: 80:d4
+  12:05       LOAD_GLOBAL request
+  10:38       LOAD_CONST_STRING PUT
+  b0          LOAD_FAST 0 
+  53          LOAD_NULL 
+  b1          LOAD_FAST 1 
+  80          LOAD_CONST_SMALL_INT 0 
+  35:82:02    CALL_FUNCTION_VAR_KW 258
+  63          RETURN_VALUE 
+  children: []
+simple_name: patch
+  raw bytecode: 20 b9:80:40:08:39:4b:80:d8:12:05:10:3a:b0:53:b1:80:35:82:02:63
+  prelude: (8, 0, 2, 1, 0, 0)
+  args: ['url']
+  line info: 80:d8
+  12:05       LOAD_GLOBAL request
+  10:3a       LOAD_CONST_STRING PATCH
+  b0          LOAD_FAST 0 
+  53          LOAD_NULL 
+  b1          LOAD_FAST 1 
+  80          LOAD_CONST_SMALL_INT 0 
+  35:82:02    CALL_FUNCTION_VAR_KW 258
+  63          RETURN_VALUE 
+  children: []
+simple_name: delete
+  raw bytecode: 20 b9:80:40:08:3b:4b:80:dc:12:05:10:3c:b0:53:b1:80:35:82:02:63
+  prelude: (8, 0, 2, 1, 0, 0)
+  args: ['url']
+  line info: 80:dc
+  12:05       LOAD_GLOBAL request
+  10:3c       LOAD_CONST_STRING DELETE
+  b0          LOAD_FAST 0 
+  53          LOAD_NULL 
+  b1          LOAD_FAST 1 
+  80          LOAD_CONST_SMALL_INT 0 
+  35:82:02    CALL_FUNCTION_VAR_KW 258
+  63          RETURN_VALUE 
+  children: []

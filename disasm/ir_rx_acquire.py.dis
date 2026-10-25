@@ -1,0 +1,304 @@
+mpy_source_file: extracted/ir_rx_acquire.py.mpy
+source_file: ir_rx/acquire.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[55] (* for static qstrs):
+    'ir_rx/acquire.py' 
+    '<module>' *
+    'Pin' 
+    'freq' 
+    'machine' 
+    'platform' 
+    'sys' 
+    'sleep_ms' 
+    'ticks_us' 
+    'ticks_diff' 
+    'utime' 
+    'IR_RX' 
+    'ir_rx' 
+    'IR_GET' 
+    'test' 
+    'pyboard' 
+    'X3' 
+    'IN' 
+    'esp8266' 
+    'esp32' 
+    'esp32_LoBo' 
+    'rp2' 
+    'acquire' 
+    '__init__' *
+    'display' 
+    'data' 
+    'decode' 
+    'edge' 
+    '_times' 
+    'append' *
+    'format' *
+    'NEC' 
+    'Sony {}bit' 
+    'Samsung' 
+    'do_callback' 
+    'close' *
+    '<lambda>' 
+    'near' 
+    '__name__' *
+    '__module__' *
+    '__qualname__' *
+    'print' *
+    '*' *
+    'self' *
+    'pin' 
+    'nedges' 
+    'twait' 
+    'super' *
+    '_' *
+    'len' *
+    'enumerate' 
+    'KeyError' *
+    'max' 
+    'v' 
+    'target' 
+obj_table: ['Waiting for IR data...', '{:03d} {:5d}', 'Philps RC-5', 'Philips RC-6 mode 0', 'Microsoft MCE edition protocol.', 'Protocol start {} {} Burst length {} duration {}', 'Unsupported protocol. Panasonic?', 'Unknown protocol start {} {} Burst length {} duration {}', 0.800000011920929, 1.2000000476837158]
+simple_name: <module>
+  raw bytecode: 94 18:12:01:80:07:32:4c:38:6c:8b:50:80:10:02:10:03:2a:02:1b:04:1c:02:16:02:1c:03:16:03:59:80:10:05:2a:01:1b:06:1c:05:16:05:59:80:10:07:10:08:10:09:2a:03:1b:0a:1c:07:16:07:1c:08:16:08:1c:09:16:09:59:80:10:0b:2a:01:1b:0c:1c:0b:16:0b:59:54:32:00:10:0d:11:0b:34:03:16:0d:32:01:16:0e:51:63
+  prelude: (4, 0, 0, 0, 0, 0)
+  args: []
+  line info: 80:07:32:4c:38:6c:8b:50
+  80          LOAD_CONST_SMALL_INT 0 
+  10:02       LOAD_CONST_STRING Pin
+  10:03       LOAD_CONST_STRING freq
+  2a:02       BUILD_TUPLE 2
+  1b:04       IMPORT_NAME machine
+  1c:02       IMPORT_FROM Pin
+  16:02       STORE_NAME Pin
+  1c:03       IMPORT_FROM freq
+  16:03       STORE_NAME freq
+  59          POP_TOP 
+  80          LOAD_CONST_SMALL_INT 0 
+  10:05       LOAD_CONST_STRING platform
+  2a:01       BUILD_TUPLE 1
+  1b:06       IMPORT_NAME sys
+  1c:05       IMPORT_FROM platform
+  16:05       STORE_NAME platform
+  59          POP_TOP 
+  80          LOAD_CONST_SMALL_INT 0 
+  10:07       LOAD_CONST_STRING sleep_ms
+  10:08       LOAD_CONST_STRING ticks_us
+  10:09       LOAD_CONST_STRING ticks_diff
+  2a:03       BUILD_TUPLE 3
+  1b:0a       IMPORT_NAME utime
+  1c:07       IMPORT_FROM sleep_ms
+  16:07       STORE_NAME sleep_ms
+  1c:08       IMPORT_FROM ticks_us
+  16:08       STORE_NAME ticks_us
+  1c:09       IMPORT_FROM ticks_diff
+  16:09       STORE_NAME ticks_diff
+  59          POP_TOP 
+  80          LOAD_CONST_SMALL_INT 0 
+  10:0b       LOAD_CONST_STRING IR_RX
+  2a:01       BUILD_TUPLE 1
+  1b:0c       IMPORT_NAME ir_rx
+  1c:0b       IMPORT_FROM IR_RX
+  16:0b       STORE_NAME IR_RX
+  59          POP_TOP 
+  54          LOAD_BUILD_CLASS 
+  32:00       MAKE_FUNCTION 0
+  10:0d       LOAD_CONST_STRING IR_GET
+  11:0b       LOAD_NAME IR_RX
+  34:03       CALL_FUNCTION 3
+  16:0d       STORE_NAME IR_GET
+  32:01       MAKE_FUNCTION 1
+  16:0e       STORE_NAME test
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [IR_GET, test]
+simple_name: IR_GET
+  raw bytecode: 44 18:0f:0d:88:0f:70:40:84:44:00:11:26:16:27:10:0d:16:28:22:80:64:22:80:64:52:2a:03:53:b0:21:00:01:16:17:32:01:16:1a:32:02:16:16:b0:63
+  prelude: (4, 0, 0, 0, 0, 0)
+  args: []
+  line info: 88:0f:70:40:84:44:00
+  11:26       LOAD_NAME __name__
+  16:27       STORE_NAME __module__
+  10:0d       LOAD_CONST_STRING IR_GET
+  16:28       STORE_NAME __qualname__
+  22:80:64    LOAD_CONST_SMALL_INT 100
+  22:80:64    LOAD_CONST_SMALL_INT 100
+  52          LOAD_CONST_TRUE 
+  2a:03       BUILD_TUPLE 3
+  53          LOAD_NULL 
+  b0          LOAD_FAST 0 
+  21:00:01    MAKE_CLOSURE_DEFARGS 0
+  16:17       STORE_NAME __init__
+  32:01       MAKE_FUNCTION 1
+  16:1a       STORE_NAME decode
+  32:02       MAKE_FUNCTION 2
+  16:16       STORE_NAME acquire
+  b0          LOAD_FAST 0 
+  63          RETURN_VALUE 
+  children: [__init__, decode, acquire]
+simple_name: __init__
+  raw bytecode: 40 da:85:01:16:17:2a:2b:2c:2d:2e:18:80:10:24:2f:b5:b1:18:18:12:2f:25:00:b1:15:17:b2:b3:b4:32:00:36:04:59:51:b1:18:19:51:63
+  prelude: (12, 0, 0, 6, 0, 3)
+  args: ['*', 'self', 'pin', 'nedges', 'twait', 'display']
+  line info: 80:10:24:2f
+  b5          LOAD_FAST 5 
+  b1          LOAD_FAST 1 
+  18:18       STORE_ATTR display
+  12:2f       LOAD_GLOBAL super
+  25:00       LOAD_DEREF 0
+  b1          LOAD_FAST 1 
+  15:17       LOAD_SUPER_METHOD __init__
+  b2          LOAD_FAST 2 
+  b3          LOAD_FAST 3 
+  b4          LOAD_FAST 4 
+  32:00       MAKE_FUNCTION 0
+  36:04       CALL_METHOD 4
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  b1          LOAD_FAST 1 
+  18:19       STORE_ATTR data
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [<lambda>]
+simple_name: <lambda>
+  raw bytecode: 10 88:80:80:40:06:24:80:11:51:63
+  prelude: (2, 0, 4, 0, 0, 0)
+  args: []
+  line info: 80:11
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: decode
+  raw bytecode: 75 9e:10:70:1a:2b:30:80:15:43:26:25:22:23:26:31:2d:22:30:46:51:26:2c:2f:45:22:33:27:42:3a:22:57:43:22:4c:2e:37:27:42:3a:1f:21:27:42:39:2a:47:33:42:1f:21:27:42:39:27:42:23:53:25:44:32:00:c2:b0:13:1b:81:f3:c3:b3:83:d7:44:42:51:63
+  prelude: (20, 1, 0, 2, 0, 0)
+  args: ['self', '_']
+  line info: 80:15:43:26:25:22:23:26:31:2d:22:30:46:51:26:2c:2f:45:22:33:27:42:3a:22:57:43:22:4c:2e:37:27:42:3a:1f:21:27:42:39:2a:47:33:42:1f:21:27:42:39:27:42:23:53:25:44
+  32:00       MAKE_FUNCTION 0
+  c2          STORE_FAST 2 
+  b0          LOAD_FAST 0 
+  13:1b       LOAD_ATTR edge
+  81          LOAD_CONST_SMALL_INT 1 
+  f3          BINARY_OP 28 __sub__ 
+  c3          STORE_FAST 3 
+  b3          LOAD_FAST 3 
+  83          LOAD_CONST_SMALL_INT 3 
+  d7          BINARY_OP 0 __lt__ 
+  44:42       POP_JUMP_IF_FALSE 2
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [near]
+simple_name: near
+  raw bytecode: 27 22:0a:25:35:36:80:16:b1:23:08:f4:b0:57:5b:d7:46:07:b1:23:09:f4:d7:42:42:5a:59:63
+  prelude: (5, 0, 0, 2, 0, 0)
+  args: ['v', 'target']
+  line info: 80:16
+  b1          LOAD_FAST 1 
+  23:08       LOAD_CONST_OBJ 0.800000011920929
+  f4          BINARY_OP 29 __mul__ 
+  b0          LOAD_FAST 0 
+  57          DUP_TOP 
+  5b          ROT_THREE 
+  d7          BINARY_OP 0 __lt__ 
+  46:07       JUMP_IF_FALSE_OR_POP 7
+  b1          LOAD_FAST 1 
+  23:09       LOAD_CONST_OBJ 1.2000000476837158
+  f4          BINARY_OP 29 __mul__ 
+  d7          BINARY_OP 0 __lt__ 
+  42:42       JUMP 2
+  5a          ROT_TWO 
+  59          POP_TOP 
+  63          RETURN_VALUE 
+  children: []
+simple_name: acquire
+  raw bytecode: 34 11:0e:16:2b:80:59:22:2d:26:42:46:12:07:85:34:01:59:b0:13:19:51:de:43:33:b0:14:23:36:00:59:b0:13:19:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:59:22:2d:26
+  42:46       JUMP 6
+  12:07       LOAD_GLOBAL sleep_ms
+  85          LOAD_CONST_SMALL_INT 5 
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:19       LOAD_ATTR data
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  43:33       POP_JUMP_IF_TRUE -13
+  b0          LOAD_FAST 0 
+  14:23       LOAD_METHOD close
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:19       LOAD_ATTR data
+  63          RETURN_VALUE 
+  children: []
+simple_name: test
+  raw bytecode: 131 20:1c:0e:80:60:27:2e:27:2b:2c:2e:2c:27:2c:26:27:12:05:10:0f:d9:44:4e:12:02:10:10:12:02:13:11:34:02:c0:42:cb:80:12:05:10:12:d9:44:57:12:03:22:80:cc:a5:d0:00:34:01:59:12:02:8d:12:02:13:11:34:02:c0:42:6d:12:05:10:13:d9:43:47:12:05:10:14:d9:44:4c:12:02:97:12:02:13:11:34:02:c0:42:53:12:05:10:15:d9:44:4c:12:02:90:12:02:13:11:34:02:c0:42:40:12:0d:b0:34:01:c1:12:29:23:00:34:01:59:b1:14:16:36:00:63
+  prelude: (5, 0, 0, 0, 0, 0)
+  args: []
+  line info: 80:60:27:2e:27:2b:2c:2e:2c:27:2c:26:27
+  12:05       LOAD_GLOBAL platform
+  10:0f       LOAD_CONST_STRING pyboard
+  d9          BINARY_OP 2 __eq__ 
+  44:4e       POP_JUMP_IF_FALSE 14
+  12:02       LOAD_GLOBAL Pin
+  10:10       LOAD_CONST_STRING X3
+  12:02       LOAD_GLOBAL Pin
+  13:11       LOAD_ATTR IN
+  34:02       CALL_FUNCTION 2
+  c0          STORE_FAST 0 
+  42:cb:80    JUMP 75
+  12:05       LOAD_GLOBAL platform
+  10:12       LOAD_CONST_STRING esp8266
+  d9          BINARY_OP 2 __eq__ 
+  44:57       POP_JUMP_IF_FALSE 23
+  12:03       LOAD_GLOBAL freq
+  22:80:cc:a5:d0:00 LOAD_CONST_SMALL_INT 160000000
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  12:02       LOAD_GLOBAL Pin
+  8d          LOAD_CONST_SMALL_INT 13 
+  12:02       LOAD_GLOBAL Pin
+  13:11       LOAD_ATTR IN
+  34:02       CALL_FUNCTION 2
+  c0          STORE_FAST 0 
+  42:6d       JUMP 45
+  12:05       LOAD_GLOBAL platform
+  10:13       LOAD_CONST_STRING esp32
+  d9          BINARY_OP 2 __eq__ 
+  43:47       POP_JUMP_IF_TRUE 7
+  12:05       LOAD_GLOBAL platform
+  10:14       LOAD_CONST_STRING esp32_LoBo
+  d9          BINARY_OP 2 __eq__ 
+  44:4c       POP_JUMP_IF_FALSE 12
+  12:02       LOAD_GLOBAL Pin
+  97          LOAD_CONST_SMALL_INT 23 
+  12:02       LOAD_GLOBAL Pin
+  13:11       LOAD_ATTR IN
+  34:02       CALL_FUNCTION 2
+  c0          STORE_FAST 0 
+  42:53       JUMP 19
+  12:05       LOAD_GLOBAL platform
+  10:15       LOAD_CONST_STRING rp2
+  d9          BINARY_OP 2 __eq__ 
+  44:4c       POP_JUMP_IF_FALSE 12
+  12:02       LOAD_GLOBAL Pin
+  90          LOAD_CONST_SMALL_INT 16 
+  12:02       LOAD_GLOBAL Pin
+  13:11       LOAD_ATTR IN
+  34:02       CALL_FUNCTION 2
+  c0          STORE_FAST 0 
+  42:40       JUMP 0
+  12:0d       LOAD_GLOBAL IR_GET
+  b0          LOAD_FAST 0 
+  34:01       CALL_FUNCTION 1
+  c1          STORE_FAST 1 
+  12:29       LOAD_GLOBAL print
+  23:00       LOAD_CONST_OBJ 'Waiting for IR data...'
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  b1          LOAD_FAST 1 
+  14:16       LOAD_METHOD acquire
+  36:00       CALL_METHOD 0
+  63          RETURN_VALUE 
+  children: []

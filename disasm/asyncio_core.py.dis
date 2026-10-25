@@ -1,0 +1,1023 @@
+mpy_source_file: extracted/asyncio_core.py.mpy
+source_file: asyncio/core.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[108] (* for static qstrs):
+    'asyncio/core.py' 
+    '<module>' *
+    'ticks_ms' 
+    'ticks_diff' 
+    'ticks_add' 
+    'time' 
+    'sys' 
+    'select' 
+    'TaskQueue' 
+    'Task' 
+    '_asyncio' 
+    'task' 
+    'CancelledError' 
+    'TimeoutError' 
+    'message' 
+    'exception' 
+    'future' 
+    'SingletonGenerator' 
+    'IOQueue' 
+    'Loop' 
+    'sleep_ms' 
+    'state' 
+    'sleep' 
+    '_promote_to_task' 
+    'create_task' 
+    'send' *
+    'push' 
+    'run_until_complete' 
+    'peek' 
+    'ph_key' 
+    'map' *
+    'wait_io_event' 
+    'pop' *
+    'data' 
+    'coro' 
+    'throw' *
+    'call_exception_handler' 
+    'value' *
+    'run' 
+    '_stopper' 
+    'get_event_loop' 
+    'current_task' 
+    'new_event_loop' 
+    '__init__' *
+    'exc' 
+    '__iter__' *
+    '__next__' *
+    '__traceback__' 
+    'poll' 
+    'poller' 
+    '_enqueue' 
+    'register' 
+    'POLLIN' 
+    'POLLOUT' 
+    'modify' 
+    '_dequeue' 
+    'unregister' 
+    'queue_read' 
+    'queue_write' 
+    'remove' *
+    'ipoll' 
+    'run_forever' 
+    'stop' *
+    'close' *
+    'set_exception_handler' 
+    '_exc_handler' 
+    'get_exception_handler' 
+    'default_exception_handler' 
+    'file' 
+    'stderr' 
+    'future:' 
+    'coro=' 
+    'print_exception' 
+    'ticks' 
+    'BaseException' *
+    'Exception' *
+    '_exc_context' 
+    'cur_task' 
+    '_stop_task' 
+    '__name__' *
+    '__module__' *
+    '__qualname__' *
+    't' 
+    'sgen' 
+    'max' 
+    'int' *
+    'aw' 
+    'isinstance' *
+    'hasattr' *
+    'TypeError' *
+    'globals' *
+    '_task_queue' 
+    'main_task' 
+    'StopIteration' *
+    '_io_queue' 
+    'callable' *
+    'runq_len' 
+    'waitq_len' 
+    'RuntimeError' *
+    'self' *
+    's' 
+    'idx' 
+    'id' *
+    'dt' 
+    'handler' 
+    'loop' 
+    'context' 
+    'print' *
+obj_table: ["Task exception wasn't retrieved", 'coroutine expected', 'no running event loop']
+simple_name: <module>
+  raw bytecode: 218 2c:02:01:80:10:02:10:03:10:04:2a:03:1b:05:1c:02:16:49:1c:03:16:03:1c:04:16:04:59:80:51:1b:06:16:06:80:51:1b:07:16:07:48:14:80:10:08:10:09:2a:02:1b:0a:1c:08:16:08:1c:09:16:09:59:4a:16:59:81:10:08:10:09:2a:02:1b:0b:1c:08:16:08:1c:09:16:09:59:4a:01:5d:54:32:00:10:0c:11:4a:34:03:16:0c:54:32:01:10:0d:11:4b:34:03:16:0d:2c:03:23:00:10:0e:62:51:10:0f:62:51:10:10:62:16:4c:54:32:02:10:11:34:02:16:11:11:11:34:00:2a:01:53:33:03:16:14:32:04:16:16:54:32:05:10:12:34:02:16:12:32:06:16:17:32:07:16:18:51:2a:01:53:33:08:16:1b:32:09:16:26:32:0a:16:27:51:17:4d:51:17:4e:54:32:0b:10:13:34:02:16:13:80:80:2a:02:53:33:0c:16:28:32:0d:16:29:32:0e:16:2a:11:2a:34:00:59:51:63
+  prelude: (6, 1, 0, 0, 0, 0)
+  args: []
+  line info: 
+  80          LOAD_CONST_SMALL_INT 0 
+  10:02       LOAD_CONST_STRING ticks_ms
+  10:03       LOAD_CONST_STRING ticks_diff
+  10:04       LOAD_CONST_STRING ticks_add
+  2a:03       BUILD_TUPLE 3
+  1b:05       IMPORT_NAME time
+  1c:02       IMPORT_FROM ticks_ms
+  16:49       STORE_NAME ticks
+  1c:03       IMPORT_FROM ticks_diff
+  16:03       STORE_NAME ticks_diff
+  1c:04       IMPORT_FROM ticks_add
+  16:04       STORE_NAME ticks_add
+  59          POP_TOP 
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:06       IMPORT_NAME sys
+  16:06       STORE_NAME sys
+  80          LOAD_CONST_SMALL_INT 0 
+  51          LOAD_CONST_NONE 
+  1b:07       IMPORT_NAME select
+  16:07       STORE_NAME select
+  48:14       SETUP_EXCEPT 20
+  80          LOAD_CONST_SMALL_INT 0 
+  10:08       LOAD_CONST_STRING TaskQueue
+  10:09       LOAD_CONST_STRING Task
+  2a:02       BUILD_TUPLE 2
+  1b:0a       IMPORT_NAME _asyncio
+  1c:08       IMPORT_FROM TaskQueue
+  16:08       STORE_NAME TaskQueue
+  1c:09       IMPORT_FROM Task
+  16:09       STORE_NAME Task
+  59          POP_TOP 
+  4a:16       POP_EXCEPT_JUMP 22
+  59          POP_TOP 
+  81          LOAD_CONST_SMALL_INT 1 
+  10:08       LOAD_CONST_STRING TaskQueue
+  10:09       LOAD_CONST_STRING Task
+  2a:02       BUILD_TUPLE 2
+  1b:0b       IMPORT_NAME task
+  1c:08       IMPORT_FROM TaskQueue
+  16:08       STORE_NAME TaskQueue
+  1c:09       IMPORT_FROM Task
+  16:09       STORE_NAME Task
+  59          POP_TOP 
+  4a:01       POP_EXCEPT_JUMP 1
+  5d          END_FINALLY 
+  54          LOAD_BUILD_CLASS 
+  32:00       MAKE_FUNCTION 0
+  10:0c       LOAD_CONST_STRING CancelledError
+  11:4a       LOAD_NAME BaseException
+  34:03       CALL_FUNCTION 3
+  16:0c       STORE_NAME CancelledError
+  54          LOAD_BUILD_CLASS 
+  32:01       MAKE_FUNCTION 1
+  10:0d       LOAD_CONST_STRING TimeoutError
+  11:4b       LOAD_NAME Exception
+  34:03       CALL_FUNCTION 3
+  16:0d       STORE_NAME TimeoutError
+  2c:03       BUILD_MAP 3
+  23:00       LOAD_CONST_OBJ "Task exception wasn't retrieved"
+  10:0e       LOAD_CONST_STRING message
+  62          STORE_MAP 
+  51          LOAD_CONST_NONE 
+  10:0f       LOAD_CONST_STRING exception
+  62          STORE_MAP 
+  51          LOAD_CONST_NONE 
+  10:10       LOAD_CONST_STRING future
+  62          STORE_MAP 
+  16:4c       STORE_NAME _exc_context
+  54          LOAD_BUILD_CLASS 
+  32:02       MAKE_FUNCTION 2
+  10:11       LOAD_CONST_STRING SingletonGenerator
+  34:02       CALL_FUNCTION 2
+  16:11       STORE_NAME SingletonGenerator
+  11:11       LOAD_NAME SingletonGenerator
+  34:00       CALL_FUNCTION 0
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:03       MAKE_FUNCTION_DEFARGS 3
+  16:14       STORE_NAME sleep_ms
+  32:04       MAKE_FUNCTION 4
+  16:16       STORE_NAME sleep
+  54          LOAD_BUILD_CLASS 
+  32:05       MAKE_FUNCTION 5
+  10:12       LOAD_CONST_STRING IOQueue
+  34:02       CALL_FUNCTION 2
+  16:12       STORE_NAME IOQueue
+  32:06       MAKE_FUNCTION 6
+  16:17       STORE_NAME _promote_to_task
+  32:07       MAKE_FUNCTION 7
+  16:18       STORE_NAME create_task
+  51          LOAD_CONST_NONE 
+  2a:01       BUILD_TUPLE 1
+  53          LOAD_NULL 
+  33:08       MAKE_FUNCTION_DEFARGS 8
+  16:1b       STORE_NAME run_until_complete
+  32:09       MAKE_FUNCTION 9
+  16:26       STORE_NAME run
+  32:0a       MAKE_FUNCTION 10
+  16:27       STORE_NAME _stopper
+  51          LOAD_CONST_NONE 
+  17:4d       STORE_GLOBAL cur_task
+  51          LOAD_CONST_NONE 
+  17:4e       STORE_GLOBAL _stop_task
+  54          LOAD_BUILD_CLASS 
+  32:0b       MAKE_FUNCTION 11
+  10:13       LOAD_CONST_STRING Loop
+  34:02       CALL_FUNCTION 2
+  16:13       STORE_NAME Loop
+  80          LOAD_CONST_SMALL_INT 0 
+  80          LOAD_CONST_SMALL_INT 0 
+  2a:02       BUILD_TUPLE 2
+  53          LOAD_NULL 
+  33:0c       MAKE_FUNCTION_DEFARGS 12
+  16:28       STORE_NAME get_event_loop
+  32:0d       MAKE_FUNCTION 13
+  16:29       STORE_NAME current_task
+  32:0e       MAKE_FUNCTION 14
+  16:2a       STORE_NAME new_event_loop
+  11:2a       LOAD_NAME new_event_loop
+  34:00       CALL_FUNCTION 0
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [CancelledError, TimeoutError, SingletonGenerator, sleep_ms, sleep, IOQueue, _promote_to_task, create_task, run_until_complete, run, _stopper, Loop, get_event_loop, current_task, new_event_loop]
+simple_name: CancelledError
+  raw bytecode: 13 00:02:0c:11:4f:16:50:10:0c:16:51:51:63
+  prelude: (1, 0, 0, 0, 0, 0)
+  args: []
+  line info: 
+  11:4f       LOAD_NAME __name__
+  16:50       STORE_NAME __module__
+  10:0c       LOAD_CONST_STRING CancelledError
+  16:51       STORE_NAME __qualname__
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: TimeoutError
+  raw bytecode: 13 00:02:0d:11:4f:16:50:10:0d:16:51:51:63
+  prelude: (1, 0, 0, 0, 0, 0)
+  args: []
+  line info: 
+  11:4f       LOAD_NAME __name__
+  16:50       STORE_NAME __module__
+  10:0d       LOAD_CONST_STRING TimeoutError
+  16:51       STORE_NAME __qualname__
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: SingletonGenerator
+  raw bytecode: 25 00:02:11:11:4f:16:50:10:11:16:51:32:00:16:2b:32:01:16:2d:32:02:16:2e:51:63
+  prelude: (1, 0, 0, 0, 0, 0)
+  args: []
+  line info: 
+  11:4f       LOAD_NAME __name__
+  16:50       STORE_NAME __module__
+  10:11       LOAD_CONST_STRING SingletonGenerator
+  16:51       STORE_NAME __qualname__
+  32:00       MAKE_FUNCTION 0
+  16:2b       STORE_NAME __init__
+  32:01       MAKE_FUNCTION 1
+  16:2d       STORE_NAME __iter__
+  32:02       MAKE_FUNCTION 2
+  16:2e       STORE_NAME __next__
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [__init__, __iter__, __next__]
+simple_name: __init__
+  raw bytecode: 17 11:04:2b:63:51:b0:18:15:12:5d:34:00:b0:18:2c:51:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 
+  51          LOAD_CONST_NONE 
+  b0          LOAD_FAST 0 
+  18:15       STORE_ATTR state
+  12:5d       LOAD_GLOBAL StopIteration
+  34:00       CALL_FUNCTION 0
+  b0          LOAD_FAST 0 
+  18:2c       STORE_ATTR exc
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: __iter__
+  raw bytecode: 6 09:04:2d:63:b0:63
+  prelude: (2, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 
+  b0          LOAD_FAST 0 
+  63          RETURN_VALUE 
+  children: []
+simple_name: __next__
+  raw bytecode: 30 21:04:2e:63:b0:13:15:51:de:d3:44:52:12:5b:14:1a:12:4d:b0:13:15:36:02:59:51:b0:18:15:51:63
+  prelude: (5, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 
+  b0          LOAD_FAST 0 
+  13:15       LOAD_ATTR state
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:52       POP_JUMP_IF_FALSE 18
+  12:5b       LOAD_GLOBAL _task_queue
+  14:1a       LOAD_METHOD push
+  12:4d       LOAD_GLOBAL cur_task
+  b0          LOAD_FAST 0 
+  13:15       LOAD_ATTR state
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  b0          LOAD_FAST 0 
+  18:15       STORE_ATTR state
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: sleep_ms
+  raw bytecode: 25 b2:01:06:14:52:53:12:04:12:49:34:00:12:54:80:b0:34:02:34:02:b1:18:15:b1:63
+  prelude: (7, 0, 0, 2, 0, 1)
+  args: ['t', 'sgen']
+  line info: 
+  12:04       LOAD_GLOBAL ticks_add
+  12:49       LOAD_GLOBAL ticks
+  34:00       CALL_FUNCTION 0
+  12:54       LOAD_GLOBAL max
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  34:02       CALL_FUNCTION 2
+  34:02       CALL_FUNCTION 2
+  b1          LOAD_FAST 1 
+  18:15       STORE_ATTR state
+  b1          LOAD_FAST 1 
+  63          RETURN_VALUE 
+  children: []
+simple_name: sleep
+  raw bytecode: 18 21:04:16:52:12:14:12:55:b0:22:87:68:f4:34:01:34:01:63
+  prelude: (5, 0, 0, 1, 0, 0)
+  args: ['t']
+  line info: 
+  12:14       LOAD_GLOBAL sleep_ms
+  12:55       LOAD_GLOBAL int
+  b0          LOAD_FAST 0 
+  22:87:68    LOAD_CONST_SMALL_INT 1000
+  f4          BINARY_OP 29 __mul__ 
+  34:01       CALL_FUNCTION 1
+  34:01       CALL_FUNCTION 1
+  63          RETURN_VALUE 
+  children: []
+simple_name: IOQueue
+  raw bytecode: 41 00:02:12:11:4f:16:50:10:12:16:51:32:00:16:2b:32:01:16:32:32:02:16:37:32:03:16:39:32:04:16:3a:32:05:16:3b:32:06:16:1f:51:63
+  prelude: (1, 0, 0, 0, 0, 0)
+  args: []
+  line info: 
+  11:4f       LOAD_NAME __name__
+  16:50       STORE_NAME __module__
+  10:12       LOAD_CONST_STRING IOQueue
+  16:51       STORE_NAME __qualname__
+  32:00       MAKE_FUNCTION 0
+  16:2b       STORE_NAME __init__
+  32:01       MAKE_FUNCTION 1
+  16:32       STORE_NAME _enqueue
+  32:02       MAKE_FUNCTION 2
+  16:37       STORE_NAME _dequeue
+  32:03       MAKE_FUNCTION 3
+  16:39       STORE_NAME queue_read
+  32:04       MAKE_FUNCTION 4
+  16:3a       STORE_NAME queue_write
+  32:05       MAKE_FUNCTION 5
+  16:3b       STORE_NAME remove
+  32:06       MAKE_FUNCTION 6
+  16:1f       STORE_NAME wait_io_event
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [__init__, _enqueue, _dequeue, queue_read, queue_write, remove, wait_io_event]
+simple_name: __init__
+  raw bytecode: 20 11:04:2b:63:12:07:14:30:36:00:b0:18:31:2c:00:b0:18:1e:51:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 
+  12:07       LOAD_GLOBAL select
+  14:30       LOAD_METHOD poll
+  36:00       CALL_METHOD 0
+  b0          LOAD_FAST 0 
+  18:31       STORE_ATTR poller
+  2c:00       BUILD_MAP 0
+  b0          LOAD_FAST 0 
+  18:1e       STORE_ATTR map
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _enqueue
+  raw bytecode: 105 4b:08:32:63:64:65:12:66:b1:34:01:b0:13:1e:dd:d3:44:6f:51:51:b1:2b:03:c3:12:4d:b3:b2:56:b3:b0:13:1e:12:66:b1:34:01:56:b0:13:31:14:33:b1:b2:80:d9:44:46:12:07:13:34:42:44:12:07:13:35:36:02:59:42:61:b0:13:1e:12:66:b1:34:01:55:c4:12:4d:b4:b2:56:b0:13:31:14:36:b1:12:07:13:34:12:07:13:35:ed:36:02:59:b0:12:4d:18:21:51:63
+  prelude: (10, 0, 0, 3, 0, 0)
+  args: ['self', 's', 'idx']
+  line info: 
+  12:66       LOAD_GLOBAL id
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  b0          LOAD_FAST 0 
+  13:1e       LOAD_ATTR map
+  dd          BINARY_OP 6 <in> 
+  d3          UNARY_OP 3 <not> 
+  44:6f       POP_JUMP_IF_FALSE 47
+  51          LOAD_CONST_NONE 
+  51          LOAD_CONST_NONE 
+  b1          LOAD_FAST 1 
+  2b:03       BUILD_LIST 3
+  c3          STORE_FAST 3 
+  12:4d       LOAD_GLOBAL cur_task
+  b3          LOAD_FAST 3 
+  b2          LOAD_FAST 2 
+  56          STORE_SUBSCR 
+  b3          LOAD_FAST 3 
+  b0          LOAD_FAST 0 
+  13:1e       LOAD_ATTR map
+  12:66       LOAD_GLOBAL id
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  56          STORE_SUBSCR 
+  b0          LOAD_FAST 0 
+  13:31       LOAD_ATTR poller
+  14:33       LOAD_METHOD register
+  b1          LOAD_FAST 1 
+  b2          LOAD_FAST 2 
+  80          LOAD_CONST_SMALL_INT 0 
+  d9          BINARY_OP 2 __eq__ 
+  44:46       POP_JUMP_IF_FALSE 6
+  12:07       LOAD_GLOBAL select
+  13:34       LOAD_ATTR POLLIN
+  42:44       JUMP 4
+  12:07       LOAD_GLOBAL select
+  13:35       LOAD_ATTR POLLOUT
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  42:61       JUMP 33
+  b0          LOAD_FAST 0 
+  13:1e       LOAD_ATTR map
+  12:66       LOAD_GLOBAL id
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  55          LOAD_SUBSCR 
+  c4          STORE_FAST 4 
+  12:4d       LOAD_GLOBAL cur_task
+  b4          LOAD_FAST 4 
+  b2          LOAD_FAST 2 
+  56          STORE_SUBSCR 
+  b0          LOAD_FAST 0 
+  13:31       LOAD_ATTR poller
+  14:36       LOAD_METHOD modify
+  b1          LOAD_FAST 1 
+  12:07       LOAD_GLOBAL select
+  13:34       LOAD_ATTR POLLIN
+  12:07       LOAD_GLOBAL select
+  13:35       LOAD_ATTR POLLOUT
+  ed          BINARY_OP 22 __or__ 
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  12:4d       LOAD_GLOBAL cur_task
+  18:21       STORE_ATTR data
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _dequeue
+  raw bytecode: 27 22:06:37:63:64:b0:13:1e:12:66:b1:34:01:53:5b:56:b0:13:31:14:38:b1:36:01:59:51:63
+  prelude: (5, 0, 0, 2, 0, 0)
+  args: ['self', 's']
+  line info: 
+  b0          LOAD_FAST 0 
+  13:1e       LOAD_ATTR map
+  12:66       LOAD_GLOBAL id
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  53          LOAD_NULL 
+  5b          ROT_THREE 
+  56          STORE_SUBSCR 
+  b0          LOAD_FAST 0 
+  13:31       LOAD_ATTR poller
+  14:38       LOAD_METHOD unregister
+  b1          LOAD_FAST 1 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: queue_read
+  raw bytecode: 15 2a:06:39:63:64:b0:14:32:b1:80:36:02:59:51:63
+  prelude: (6, 0, 0, 2, 0, 0)
+  args: ['self', 's']
+  line info: 
+  b0          LOAD_FAST 0 
+  14:32       LOAD_METHOD _enqueue
+  b1          LOAD_FAST 1 
+  80          LOAD_CONST_SMALL_INT 0 
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: queue_write
+  raw bytecode: 15 2a:06:3a:63:64:b0:14:32:b1:81:36:02:59:51:63
+  prelude: (6, 0, 0, 2, 0, 0)
+  args: ['self', 's']
+  line info: 
+  b0          LOAD_FAST 0 
+  14:32       LOAD_METHOD _enqueue
+  b1          LOAD_FAST 1 
+  81          LOAD_CONST_SMALL_INT 1 
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: remove
+  raw bytecode: 65 6a:06:3b:63:0b:51:c2:b0:13:1e:5f:4b:1f:c3:b0:13:1e:b3:55:30:03:c4:c5:c6:b4:b1:de:43:45:b5:b1:de:44:48:b6:c2:59:59:59:59:42:42:42:1f:b2:51:de:d3:44:49:b0:14:37:b6:36:01:59:42:42:42:42:42:06:51:63
+  prelude: (14, 0, 0, 2, 0, 0)
+  args: ['self', 'task']
+  line info: 
+  51          LOAD_CONST_NONE 
+  c2          STORE_FAST 2 
+  b0          LOAD_FAST 0 
+  13:1e       LOAD_ATTR map
+  5f          GET_ITER_STACK 
+  4b:1f       FOR_ITER 31
+  c3          STORE_FAST 3 
+  b0          LOAD_FAST 0 
+  13:1e       LOAD_ATTR map
+  b3          LOAD_FAST 3 
+  55          LOAD_SUBSCR 
+  30:03       UNPACK_SEQUENCE 3
+  c4          STORE_FAST 4 
+  c5          STORE_FAST 5 
+  c6          STORE_FAST 6 
+  b4          LOAD_FAST 4 
+  b1          LOAD_FAST 1 
+  de          BINARY_OP 7 <is> 
+  43:45       POP_JUMP_IF_TRUE 5
+  b5          LOAD_FAST 5 
+  b1          LOAD_FAST 1 
+  de          BINARY_OP 7 <is> 
+  44:48       POP_JUMP_IF_FALSE 8
+  b6          LOAD_FAST 6 
+  c2          STORE_FAST 2 
+  59          POP_TOP 
+  59          POP_TOP 
+  59          POP_TOP 
+  59          POP_TOP 
+  42:42       JUMP 2
+  42:1f       JUMP -33
+  b2          LOAD_FAST 2 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:49       POP_JUMP_IF_FALSE 9
+  b0          LOAD_FAST 0 
+  14:37       LOAD_METHOD _dequeue
+  b6          LOAD_FAST 6 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  42:42       JUMP 2
+  42:42       JUMP 2
+  42:06       JUMP -58
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: wait_io_event
+  raw bytecode: 156 62:06:1f:63:67:b0:13:31:14:3c:b1:36:01:5f:4b:89:01:30:02:c2:c3:b0:13:1e:12:66:b2:34:01:55:c4:b3:12:07:13:35:d2:ef:44:56:b4:80:55:51:de:d3:44:4e:12:5b:14:1a:b4:80:55:36:01:59:51:b4:80:56:b3:12:07:13:34:d2:ef:44:56:b4:81:55:51:de:d3:44:4e:12:5b:14:1a:b4:81:55:36:01:59:51:b4:81:56:b4:80:55:51:de:44:50:b4:81:55:51:de:44:49:b0:14:37:b2:36:01:59:42:63:b4:80:55:51:de:44:4f:b0:13:31:14:36:b2:12:07:13:35:36:02:59:42:4d:b0:13:31:14:36:b2:12:07:13:34:36:02:59:42:f4:7e:51:63
+  prelude: (13, 0, 0, 2, 0, 0)
+  args: ['self', 'dt']
+  line info: 
+  b0          LOAD_FAST 0 
+  13:31       LOAD_ATTR poller
+  14:3c       LOAD_METHOD ipoll
+  b1          LOAD_FAST 1 
+  36:01       CALL_METHOD 1
+  5f          GET_ITER_STACK 
+  4b:89:01    FOR_ITER 137
+  30:02       UNPACK_SEQUENCE 2
+  c2          STORE_FAST 2 
+  c3          STORE_FAST 3 
+  b0          LOAD_FAST 0 
+  13:1e       LOAD_ATTR map
+  12:66       LOAD_GLOBAL id
+  b2          LOAD_FAST 2 
+  34:01       CALL_FUNCTION 1
+  55          LOAD_SUBSCR 
+  c4          STORE_FAST 4 
+  b3          LOAD_FAST 3 
+  12:07       LOAD_GLOBAL select
+  13:35       LOAD_ATTR POLLOUT
+  d2          UNARY_OP 2 __invert__ 
+  ef          BINARY_OP 24 __and__ 
+  44:56       POP_JUMP_IF_FALSE 22
+  b4          LOAD_FAST 4 
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:4e       POP_JUMP_IF_FALSE 14
+  12:5b       LOAD_GLOBAL _task_queue
+  14:1a       LOAD_METHOD push
+  b4          LOAD_FAST 4 
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  b4          LOAD_FAST 4 
+  80          LOAD_CONST_SMALL_INT 0 
+  56          STORE_SUBSCR 
+  b3          LOAD_FAST 3 
+  12:07       LOAD_GLOBAL select
+  13:34       LOAD_ATTR POLLIN
+  d2          UNARY_OP 2 __invert__ 
+  ef          BINARY_OP 24 __and__ 
+  44:56       POP_JUMP_IF_FALSE 22
+  b4          LOAD_FAST 4 
+  81          LOAD_CONST_SMALL_INT 1 
+  55          LOAD_SUBSCR 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:4e       POP_JUMP_IF_FALSE 14
+  12:5b       LOAD_GLOBAL _task_queue
+  14:1a       LOAD_METHOD push
+  b4          LOAD_FAST 4 
+  81          LOAD_CONST_SMALL_INT 1 
+  55          LOAD_SUBSCR 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  b4          LOAD_FAST 4 
+  81          LOAD_CONST_SMALL_INT 1 
+  56          STORE_SUBSCR 
+  b4          LOAD_FAST 4 
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  44:50       POP_JUMP_IF_FALSE 16
+  b4          LOAD_FAST 4 
+  81          LOAD_CONST_SMALL_INT 1 
+  55          LOAD_SUBSCR 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  44:49       POP_JUMP_IF_FALSE 9
+  b0          LOAD_FAST 0 
+  14:37       LOAD_METHOD _dequeue
+  b2          LOAD_FAST 2 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  42:63       JUMP 35
+  b4          LOAD_FAST 4 
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  44:4f       POP_JUMP_IF_FALSE 15
+  b0          LOAD_FAST 0 
+  13:31       LOAD_ATTR poller
+  14:36       LOAD_METHOD modify
+  b2          LOAD_FAST 2 
+  12:07       LOAD_GLOBAL select
+  13:35       LOAD_ATTR POLLOUT
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  42:4d       JUMP 13
+  b0          LOAD_FAST 0 
+  13:31       LOAD_ATTR poller
+  14:36       LOAD_METHOD modify
+  b2          LOAD_FAST 2 
+  12:07       LOAD_GLOBAL select
+  13:34       LOAD_ATTR POLLIN
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  42:f4:7e    JUMP -140
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: _promote_to_task
+  raw bytecode: 15 19:04:17:56:12:57:b0:12:09:34:02:44:42:b0:63
+  prelude: (4, 0, 0, 1, 0, 0)
+  args: ['aw']
+  line info: 
+  12:57       LOAD_GLOBAL isinstance
+  b0          LOAD_FAST 0 
+  12:09       LOAD_GLOBAL Task
+  34:02       CALL_FUNCTION 2
+  44:42       POP_JUMP_IF_FALSE 2
+  b0          LOAD_FAST 0 
+  63          RETURN_VALUE 
+  children: []
+simple_name: create_task
+  raw bytecode: 40 21:04:18:22:12:58:b0:10:19:34:02:43:47:12:59:23:01:34:01:65:12:09:b0:12:5a:34:00:34:02:c1:12:5b:14:1a:b1:36:01:59:b1:63
+  prelude: (5, 0, 0, 1, 0, 0)
+  args: ['coro']
+  line info: 
+  12:58       LOAD_GLOBAL hasattr
+  b0          LOAD_FAST 0 
+  10:19       LOAD_CONST_STRING send
+  34:02       CALL_FUNCTION 2
+  43:47       POP_JUMP_IF_TRUE 7
+  12:59       LOAD_GLOBAL TypeError
+  23:01       LOAD_CONST_OBJ 'coroutine expected'
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  12:09       LOAD_GLOBAL Task
+  b0          LOAD_FAST 0 
+  12:5a       LOAD_GLOBAL globals
+  34:00       CALL_FUNCTION 0
+  34:02       CALL_FUNCTION 2
+  c1          STORE_FAST 1 
+  12:5b       LOAD_GLOBAL _task_queue
+  14:1a       LOAD_METHOD push
+  b1          LOAD_FAST 1 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  b1          LOAD_FAST 1 
+  63          RETURN_VALUE 
+  children: []
+simple_name: run_until_complete
+  raw bytecode: 73 f1:03:04:1b:5c:12:0c:12:4b:2a:02:c1:12:0c:12:5d:2a:02:c2:81:c3:42:7e:7f:c3:12:5b:14:1c:36:00:c4:b4:44:53:12:54:80:12:03:b4:13:1d:12:49:34:00:34:02:34:02:c3:42:57:12:5e:13:1e:43:51:51:17:4d:b0:44:45:b0:13:15:43:42:51:63
+  prelude: (15, 2, 0, 1, 0, 1)
+  args: ['main_task']
+  line info: 
+  12:0c       LOAD_GLOBAL CancelledError
+  12:4b       LOAD_GLOBAL Exception
+  2a:02       BUILD_TUPLE 2
+  c1          STORE_FAST 1 
+  12:0c       LOAD_GLOBAL CancelledError
+  12:5d       LOAD_GLOBAL StopIteration
+  2a:02       BUILD_TUPLE 2
+  c2          STORE_FAST 2 
+  81          LOAD_CONST_SMALL_INT 1 
+  c3          STORE_FAST 3 
+  42:7e       JUMP 62
+  7f          LOAD_CONST_SMALL_INT -1 
+  c3          STORE_FAST 3 
+  12:5b       LOAD_GLOBAL _task_queue
+  14:1c       LOAD_METHOD peek
+  36:00       CALL_METHOD 0
+  c4          STORE_FAST 4 
+  b4          LOAD_FAST 4 
+  44:53       POP_JUMP_IF_FALSE 19
+  12:54       LOAD_GLOBAL max
+  80          LOAD_CONST_SMALL_INT 0 
+  12:03       LOAD_GLOBAL ticks_diff
+  b4          LOAD_FAST 4 
+  13:1d       LOAD_ATTR ph_key
+  12:49       LOAD_GLOBAL ticks
+  34:00       CALL_FUNCTION 0
+  34:02       CALL_FUNCTION 2
+  34:02       CALL_FUNCTION 2
+  c3          STORE_FAST 3 
+  42:57       JUMP 23
+  12:5e       LOAD_GLOBAL _io_queue
+  13:1e       LOAD_ATTR map
+  43:51       POP_JUMP_IF_TRUE 17
+  51          LOAD_CONST_NONE 
+  17:4d       STORE_GLOBAL cur_task
+  b0          LOAD_FAST 0 
+  44:45       POP_JUMP_IF_FALSE 5
+  b0          LOAD_FAST 0 
+  13:15       LOAD_ATTR state
+  43:42       POP_JUMP_IF_TRUE 2
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: run
+  raw bytecode: 14 19:04:26:22:12:1b:12:18:b0:34:01:34:01:63
+  prelude: (4, 0, 0, 1, 0, 0)
+  args: ['coro']
+  line info: 
+  12:1b       LOAD_GLOBAL run_until_complete
+  12:18       LOAD_GLOBAL create_task
+  b0          LOAD_FAST 0 
+  34:01       CALL_FUNCTION 1
+  34:01       CALL_FUNCTION 1
+  63          RETURN_VALUE 
+  children: []
+simple_name: _stopper
+  raw bytecode: 6 80:40:02:27:51:63
+  prelude: (1, 0, 1, 0, 0, 0)
+  args: []
+  line info: 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: Loop
+  raw bytecode: 52 00:02:13:11:4f:16:50:10:13:16:51:51:16:41:32:00:16:18:32:01:16:3d:32:02:16:1b:32:03:16:3e:32:04:16:3f:32:05:16:40:32:06:16:42:32:07:16:43:32:08:16:24:51:63
+  prelude: (1, 0, 0, 0, 0, 0)
+  args: []
+  line info: 
+  11:4f       LOAD_NAME __name__
+  16:50       STORE_NAME __module__
+  10:13       LOAD_CONST_STRING Loop
+  16:51       STORE_NAME __qualname__
+  51          LOAD_CONST_NONE 
+  16:41       STORE_NAME _exc_handler
+  32:00       MAKE_FUNCTION 0
+  16:18       STORE_NAME create_task
+  32:01       MAKE_FUNCTION 1
+  16:3d       STORE_NAME run_forever
+  32:02       MAKE_FUNCTION 2
+  16:1b       STORE_NAME run_until_complete
+  32:03       MAKE_FUNCTION 3
+  16:3e       STORE_NAME stop
+  32:04       MAKE_FUNCTION 4
+  16:3f       STORE_NAME close
+  32:05       MAKE_FUNCTION 5
+  16:40       STORE_NAME set_exception_handler
+  32:06       MAKE_FUNCTION 6
+  16:42       STORE_NAME get_exception_handler
+  32:07       MAKE_FUNCTION 7
+  16:43       STORE_NAME default_exception_handler
+  32:08       MAKE_FUNCTION 8
+  16:24       STORE_NAME call_exception_handler
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [create_task, run_forever, run_until_complete, stop, close, set_exception_handler, get_exception_handler, default_exception_handler, call_exception_handler]
+simple_name: create_task
+  raw bytecode: 10 11:04:18:22:12:18:b0:34:01:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['coro']
+  line info: 
+  12:18       LOAD_GLOBAL create_task
+  b0          LOAD_FAST 0 
+  34:01       CALL_FUNCTION 1
+  63          RETURN_VALUE 
+  children: []
+simple_name: run_forever
+  raw bytecode: 26 10:02:3d:12:09:12:27:34:00:12:5a:34:00:34:02:17:4e:12:1b:12:4e:34:01:59:51:63
+  prelude: (3, 0, 0, 0, 0, 0)
+  args: []
+  line info: 
+  12:09       LOAD_GLOBAL Task
+  12:27       LOAD_GLOBAL _stopper
+  34:00       CALL_FUNCTION 0
+  12:5a       LOAD_GLOBAL globals
+  34:00       CALL_FUNCTION 0
+  34:02       CALL_FUNCTION 2
+  17:4e       STORE_GLOBAL _stop_task
+  12:1b       LOAD_GLOBAL run_until_complete
+  12:4e       LOAD_GLOBAL _stop_task
+  34:01       CALL_FUNCTION 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: run_until_complete
+  raw bytecode: 14 19:04:1b:56:12:1b:12:17:b0:34:01:34:01:63
+  prelude: (4, 0, 0, 1, 0, 0)
+  args: ['aw']
+  line info: 
+  12:1b       LOAD_GLOBAL run_until_complete
+  12:17       LOAD_GLOBAL _promote_to_task
+  b0          LOAD_FAST 0 
+  34:01       CALL_FUNCTION 1
+  34:01       CALL_FUNCTION 1
+  63          RETURN_VALUE 
+  children: []
+simple_name: stop
+  raw bytecode: 24 10:02:3e:12:4e:51:de:d3:44:4c:12:5b:14:1a:12:4e:36:01:59:51:17:4e:51:63
+  prelude: (3, 0, 0, 0, 0, 0)
+  args: []
+  line info: 
+  12:4e       LOAD_GLOBAL _stop_task
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  d3          UNARY_OP 3 <not> 
+  44:4c       POP_JUMP_IF_FALSE 12
+  12:5b       LOAD_GLOBAL _task_queue
+  14:1a       LOAD_METHOD push
+  12:4e       LOAD_GLOBAL _stop_task
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  17:4e       STORE_GLOBAL _stop_task
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: close
+  raw bytecode: 5 00:02:3f:51:63
+  prelude: (1, 0, 0, 0, 0, 0)
+  args: []
+  line info: 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: set_exception_handler
+  raw bytecode: 11 11:04:40:68:b0:12:13:18:41:51:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['handler']
+  line info: 
+  b0          LOAD_FAST 0 
+  12:13       LOAD_GLOBAL Loop
+  18:41       STORE_ATTR _exc_handler
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: get_exception_handler
+  raw bytecode: 8 00:02:42:12:13:13:41:63
+  prelude: (1, 0, 0, 0, 0, 0)
+  args: []
+  line info: 
+  12:13       LOAD_GLOBAL Loop
+  13:41       LOAD_ATTR _exc_handler
+  63          RETURN_VALUE 
+  children: []
+simple_name: default_exception_handler
+  raw bytecode: 64 42:06:43:69:6a:12:6b:b1:10:0e:55:10:44:12:06:13:45:34:82:01:59:12:6b:10:46:b1:10:10:55:10:47:b1:10:10:55:13:22:10:44:12:06:13:45:34:82:04:59:12:06:14:48:b1:10:0f:55:12:06:13:45:36:02:59:51:63
+  prelude: (9, 0, 0, 2, 0, 0)
+  args: ['loop', 'context']
+  line info: 
+  12:6b       LOAD_GLOBAL print
+  b1          LOAD_FAST 1 
+  10:0e       LOAD_CONST_STRING message
+  55          LOAD_SUBSCR 
+  10:44       LOAD_CONST_STRING file
+  12:06       LOAD_GLOBAL sys
+  13:45       LOAD_ATTR stderr
+  34:82:01    CALL_FUNCTION 257
+  59          POP_TOP 
+  12:6b       LOAD_GLOBAL print
+  10:46       LOAD_CONST_STRING future:
+  b1          LOAD_FAST 1 
+  10:10       LOAD_CONST_STRING future
+  55          LOAD_SUBSCR 
+  10:47       LOAD_CONST_STRING coro=
+  b1          LOAD_FAST 1 
+  10:10       LOAD_CONST_STRING future
+  55          LOAD_SUBSCR 
+  13:22       LOAD_ATTR coro
+  10:44       LOAD_CONST_STRING file
+  12:06       LOAD_GLOBAL sys
+  13:45       LOAD_ATTR stderr
+  34:82:04    CALL_FUNCTION 260
+  59          POP_TOP 
+  12:06       LOAD_GLOBAL sys
+  14:48       LOAD_METHOD print_exception
+  b1          LOAD_FAST 1 
+  10:0f       LOAD_CONST_STRING exception
+  55          LOAD_SUBSCR 
+  12:06       LOAD_GLOBAL sys
+  13:45       LOAD_ATTR stderr
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: call_exception_handler
+  raw bytecode: 22 19:04:24:6a:12:13:13:41:45:04:12:13:13:43:12:13:b0:34:02:59:51:63
+  prelude: (4, 0, 0, 1, 0, 0)
+  args: ['context']
+  line info: 
+  12:13       LOAD_GLOBAL Loop
+  13:41       LOAD_ATTR _exc_handler
+  45:04       JUMP_IF_TRUE_OR_POP 4
+  12:13       LOAD_GLOBAL Loop
+  13:43       LOAD_ATTR default_exception_handler
+  12:13       LOAD_GLOBAL Loop
+  b0          LOAD_FAST 0 
+  34:02       CALL_FUNCTION 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: get_event_loop
+  raw bytecode: 10 92:80:01:06:28:60:61:12:13:63
+  prelude: (3, 0, 0, 2, 0, 2)
+  args: ['runq_len', 'waitq_len']
+  line info: 
+  12:13       LOAD_GLOBAL Loop
+  63          RETURN_VALUE 
+  children: []
+simple_name: current_task
+  raw bytecode: 19 08:02:29:12:4d:51:de:44:47:12:62:23:02:34:01:65:12:4d:63
+  prelude: (2, 0, 0, 0, 0, 0)
+  args: []
+  line info: 
+  12:4d       LOAD_GLOBAL cur_task
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  44:47       POP_JUMP_IF_FALSE 7
+  12:62       LOAD_GLOBAL RuntimeError
+  23:02       LOAD_CONST_OBJ 'no running event loop'
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  12:4d       LOAD_GLOBAL cur_task
+  63          RETURN_VALUE 
+  children: []
+simple_name: new_event_loop
+  raw bytecode: 18 00:02:2a:12:08:34:00:17:5b:12:12:34:00:17:5e:12:13:63
+  prelude: (1, 0, 0, 0, 0, 0)
+  args: []
+  line info: 
+  12:08       LOAD_GLOBAL TaskQueue
+  34:00       CALL_FUNCTION 0
+  17:5b       STORE_GLOBAL _task_queue
+  12:12       LOAD_GLOBAL IOQueue
+  34:00       CALL_FUNCTION 0
+  17:5e       STORE_GLOBAL _io_queue
+  12:13       LOAD_GLOBAL Loop
+  63          RETURN_VALUE 
+  children: []

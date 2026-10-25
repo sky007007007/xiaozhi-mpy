@@ -1,0 +1,567 @@
+mpy_source_file: extracted/bmp280.py.mpy
+source_file: bmp280.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[46] (* for static qstrs):
+    'bmp280.py' 
+    '<module>' *
+    'BMP280' 
+    '__init__' *
+    'i2c' 
+    'get2Reg' 
+    'dig_T1' 
+    'short' 
+    'dig_T2' 
+    'dig_T3' 
+    'dig_P1' 
+    'dig_P2' 
+    'dig_P3' 
+    'dig_P4' 
+    'dig_P5' 
+    'dig_P6' 
+    'dig_P7' 
+    'dig_P8' 
+    'dig_P9' 
+    'mode' 
+    'osrs_p' 
+    'osrs_t' 
+    'setReg' 
+    'filter' 
+    'T' 
+    'P' 
+    '1.0' 
+    'version' 
+    'writeto' 
+    'getReg' 
+    'readfrom' 
+    'get' *
+    'getTemp' 
+    'getPress' 
+    'getAltitude' 
+    '%.2f' 
+    'poweroff' 
+    'poweron' 
+    'BMP280_I2C_ADDR' 
+    '__name__' *
+    '__module__' *
+    '__qualname__' *
+    'self' *
+    'dat' 
+    'reg' 
+    'bytearray' *
+obj_table: [0, 0.19025875627994537]
+simple_name: <module>
+  raw bytecode: 21 10:06:01:20:45:22:80:76:16:26:54:32:00:10:02:34:02:16:02:51:63
+  prelude: (3, 0, 0, 0, 0, 0)
+  args: []
+  line info: 20:45
+  22:80:76    LOAD_CONST_SMALL_INT 118
+  16:26       STORE_NAME BMP280_I2C_ADDR
+  54          LOAD_BUILD_CLASS 
+  32:00       MAKE_FUNCTION 0
+  10:02       LOAD_CONST_STRING BMP280
+  34:02       CALL_FUNCTION 2
+  16:02       STORE_NAME BMP280
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [BMP280]
+simple_name: BMP280
+  raw bytecode: 76 00:28:02:68:20:84:18:64:60:64:64:40:64:40:84:19:64:20:64:20:64:64:11:27:16:28:10:02:16:29:32:00:16:03:32:01:16:07:32:02:16:16:32:03:16:1d:32:04:16:05:32:05:16:1f:32:06:16:20:32:07:16:21:32:08:16:22:32:09:16:24:32:0a:16:25:51:63
+  prelude: (1, 0, 0, 0, 0, 0)
+  args: []
+  line info: 68:20:84:18:64:60:64:64:40:64:40:84:19:64:20:64:20:64:64
+  11:27       LOAD_NAME __name__
+  16:28       STORE_NAME __module__
+  10:02       LOAD_CONST_STRING BMP280
+  16:29       STORE_NAME __qualname__
+  32:00       MAKE_FUNCTION 0
+  16:03       STORE_NAME __init__
+  32:01       MAKE_FUNCTION 1
+  16:07       STORE_NAME short
+  32:02       MAKE_FUNCTION 2
+  16:16       STORE_NAME setReg
+  32:03       MAKE_FUNCTION 3
+  16:1d       STORE_NAME getReg
+  32:04       MAKE_FUNCTION 4
+  16:05       STORE_NAME get2Reg
+  32:05       MAKE_FUNCTION 5
+  16:1f       STORE_NAME get
+  32:06       MAKE_FUNCTION 6
+  16:20       STORE_NAME getTemp
+  32:07       MAKE_FUNCTION 7
+  16:21       STORE_NAME getPress
+  32:08       MAKE_FUNCTION 8
+  16:22       STORE_NAME getAltitude
+  32:09       MAKE_FUNCTION 9
+  16:24       STORE_NAME poweroff
+  32:0a       MAKE_FUNCTION 10
+  16:25       STORE_NAME poweron
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [__init__, short, setReg, getReg, get2Reg, get, getTemp, getPress, getAltitude, poweroff, poweron]
+simple_name: __init__
+  raw bytecode: 265 32:34:03:2a:04:60:40:24:2b:30:30:2b:30:30:30:30:30:30:30:30:24:24:24:2a:2a:24:24:24:b1:b0:18:04:b0:14:05:22:81:08:36:01:b0:18:06:b0:14:07:b0:14:05:22:81:0a:36:01:36:01:b0:18:08:b0:14:07:b0:14:05:22:81:0c:36:01:36:01:b0:18:09:b0:14:05:22:81:0e:36:01:b0:18:0a:b0:14:07:b0:14:05:22:81:10:36:01:36:01:b0:18:0b:b0:14:07:b0:14:05:22:81:12:36:01:36:01:b0:18:0c:b0:14:07:b0:14:05:22:81:14:36:01:36:01:b0:18:0d:b0:14:07:b0:14:05:22:81:16:36:01:36:01:b0:18:0e:b0:14:07:b0:14:05:22:81:18:36:01:36:01:b0:18:0f:b0:14:07:b0:14:05:22:81:1a:36:01:36:01:b0:18:10:b0:14:07:b0:14:05:22:81:1c:36:01:36:01:b0:18:11:b0:14:07:b0:14:05:22:81:1e:36:01:36:01:b0:18:12:83:b0:18:13:83:b0:18:14:81:b0:18:15:b0:14:16:22:81:74:af:36:02:59:b0:14:16:22:81:75:8c:36:02:59:83:b0:18:17:80:b0:18:18:80:b0:18:19:10:1a:b0:18:1b:51:63
+  prelude: (7, 0, 0, 2, 0, 0)
+  args: ['self', 'i2c']
+  line info: 60:40:24:2b:30:30:2b:30:30:30:30:30:30:30:30:24:24:24:2a:2a:24:24:24
+  b1          LOAD_FAST 1 
+  b0          LOAD_FAST 0 
+  18:04       STORE_ATTR i2c
+  b0          LOAD_FAST 0 
+  14:05       LOAD_METHOD get2Reg
+  22:81:08    LOAD_CONST_SMALL_INT 136
+  36:01       CALL_METHOD 1
+  b0          LOAD_FAST 0 
+  18:06       STORE_ATTR dig_T1
+  b0          LOAD_FAST 0 
+  14:07       LOAD_METHOD short
+  b0          LOAD_FAST 0 
+  14:05       LOAD_METHOD get2Reg
+  22:81:0a    LOAD_CONST_SMALL_INT 138
+  36:01       CALL_METHOD 1
+  36:01       CALL_METHOD 1
+  b0          LOAD_FAST 0 
+  18:08       STORE_ATTR dig_T2
+  b0          LOAD_FAST 0 
+  14:07       LOAD_METHOD short
+  b0          LOAD_FAST 0 
+  14:05       LOAD_METHOD get2Reg
+  22:81:0c    LOAD_CONST_SMALL_INT 140
+  36:01       CALL_METHOD 1
+  36:01       CALL_METHOD 1
+  b0          LOAD_FAST 0 
+  18:09       STORE_ATTR dig_T3
+  b0          LOAD_FAST 0 
+  14:05       LOAD_METHOD get2Reg
+  22:81:0e    LOAD_CONST_SMALL_INT 142
+  36:01       CALL_METHOD 1
+  b0          LOAD_FAST 0 
+  18:0a       STORE_ATTR dig_P1
+  b0          LOAD_FAST 0 
+  14:07       LOAD_METHOD short
+  b0          LOAD_FAST 0 
+  14:05       LOAD_METHOD get2Reg
+  22:81:10    LOAD_CONST_SMALL_INT 144
+  36:01       CALL_METHOD 1
+  36:01       CALL_METHOD 1
+  b0          LOAD_FAST 0 
+  18:0b       STORE_ATTR dig_P2
+  b0          LOAD_FAST 0 
+  14:07       LOAD_METHOD short
+  b0          LOAD_FAST 0 
+  14:05       LOAD_METHOD get2Reg
+  22:81:12    LOAD_CONST_SMALL_INT 146
+  36:01       CALL_METHOD 1
+  36:01       CALL_METHOD 1
+  b0          LOAD_FAST 0 
+  18:0c       STORE_ATTR dig_P3
+  b0          LOAD_FAST 0 
+  14:07       LOAD_METHOD short
+  b0          LOAD_FAST 0 
+  14:05       LOAD_METHOD get2Reg
+  22:81:14    LOAD_CONST_SMALL_INT 148
+  36:01       CALL_METHOD 1
+  36:01       CALL_METHOD 1
+  b0          LOAD_FAST 0 
+  18:0d       STORE_ATTR dig_P4
+  b0          LOAD_FAST 0 
+  14:07       LOAD_METHOD short
+  b0          LOAD_FAST 0 
+  14:05       LOAD_METHOD get2Reg
+  22:81:16    LOAD_CONST_SMALL_INT 150
+  36:01       CALL_METHOD 1
+  36:01       CALL_METHOD 1
+  b0          LOAD_FAST 0 
+  18:0e       STORE_ATTR dig_P5
+  b0          LOAD_FAST 0 
+  14:07       LOAD_METHOD short
+  b0          LOAD_FAST 0 
+  14:05       LOAD_METHOD get2Reg
+  22:81:18    LOAD_CONST_SMALL_INT 152
+  36:01       CALL_METHOD 1
+  36:01       CALL_METHOD 1
+  b0          LOAD_FAST 0 
+  18:0f       STORE_ATTR dig_P6
+  b0          LOAD_FAST 0 
+  14:07       LOAD_METHOD short
+  b0          LOAD_FAST 0 
+  14:05       LOAD_METHOD get2Reg
+  22:81:1a    LOAD_CONST_SMALL_INT 154
+  36:01       CALL_METHOD 1
+  36:01       CALL_METHOD 1
+  b0          LOAD_FAST 0 
+  18:10       STORE_ATTR dig_P7
+  b0          LOAD_FAST 0 
+  14:07       LOAD_METHOD short
+  b0          LOAD_FAST 0 
+  14:05       LOAD_METHOD get2Reg
+  22:81:1c    LOAD_CONST_SMALL_INT 156
+  36:01       CALL_METHOD 1
+  36:01       CALL_METHOD 1
+  b0          LOAD_FAST 0 
+  18:11       STORE_ATTR dig_P8
+  b0          LOAD_FAST 0 
+  14:07       LOAD_METHOD short
+  b0          LOAD_FAST 0 
+  14:05       LOAD_METHOD get2Reg
+  22:81:1e    LOAD_CONST_SMALL_INT 158
+  36:01       CALL_METHOD 1
+  36:01       CALL_METHOD 1
+  b0          LOAD_FAST 0 
+  18:12       STORE_ATTR dig_P9
+  83          LOAD_CONST_SMALL_INT 3 
+  b0          LOAD_FAST 0 
+  18:13       STORE_ATTR mode
+  83          LOAD_CONST_SMALL_INT 3 
+  b0          LOAD_FAST 0 
+  18:14       STORE_ATTR osrs_p
+  81          LOAD_CONST_SMALL_INT 1 
+  b0          LOAD_FAST 0 
+  18:15       STORE_ATTR osrs_t
+  b0          LOAD_FAST 0 
+  14:16       LOAD_METHOD setReg
+  22:81:74    LOAD_CONST_SMALL_INT 244
+  af          LOAD_CONST_SMALL_INT 47 
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  14:16       LOAD_METHOD setReg
+  22:81:75    LOAD_CONST_SMALL_INT 245
+  8c          LOAD_CONST_SMALL_INT 12 
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  83          LOAD_CONST_SMALL_INT 3 
+  b0          LOAD_FAST 0 
+  18:17       STORE_ATTR filter
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:18       STORE_ATTR T
+  80          LOAD_CONST_SMALL_INT 0 
+  b0          LOAD_FAST 0 
+  18:19       STORE_ATTR P
+  10:1a       LOAD_CONST_STRING 1.0
+  b0          LOAD_FAST 0 
+  18:1b       STORE_ATTR version
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: short
+  raw bytecode: 24 1a:0e:07:2a:2b:80:1d:28:47:b1:22:81:ff:7f:d8:44:47:b1:22:84:80:00:f3:63
+  prelude: (4, 0, 0, 2, 0, 0)
+  args: ['self', 'dat']
+  line info: 80:1d:28:47
+  b1          LOAD_FAST 1 
+  22:81:ff:7f LOAD_CONST_SMALL_INT 32767
+  d8          BINARY_OP 1 __gt__ 
+  44:47       POP_JUMP_IF_FALSE 7
+  b1          LOAD_FAST 1 
+  22:84:80:00 LOAD_CONST_SMALL_INT 65536
+  f3          BINARY_OP 28 __sub__ 
+  63          RETURN_VALUE 
+  children: []
+simple_name: setReg
+  raw bytecode: 29 43:0c:16:2a:2c:2b:80:23:b0:13:04:14:1c:22:80:76:12:2d:b1:b2:2b:02:34:01:36:02:59:51:63
+  prelude: (9, 0, 0, 3, 0, 0)
+  args: ['self', 'reg', 'dat']
+  line info: 80:23
+  b0          LOAD_FAST 0 
+  13:04       LOAD_ATTR i2c
+  14:1c       LOAD_METHOD writeto
+  22:80:76    LOAD_CONST_SMALL_INT 118
+  12:2d       LOAD_GLOBAL bytearray
+  b1          LOAD_FAST 1 
+  b2          LOAD_FAST 2 
+  2b:02       BUILD_LIST 2
+  34:01       CALL_FUNCTION 1
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: getReg
+  raw bytecode: 43 3a:0e:1d:2a:2c:80:26:32:2c:b0:13:04:14:1c:22:80:76:12:2d:b1:2b:01:34:01:36:02:59:b0:13:04:14:1e:22:80:76:81:36:02:c2:b2:80:55:63
+  prelude: (8, 0, 0, 2, 0, 0)
+  args: ['self', 'reg']
+  line info: 80:26:32:2c
+  b0          LOAD_FAST 0 
+  13:04       LOAD_ATTR i2c
+  14:1c       LOAD_METHOD writeto
+  22:80:76    LOAD_CONST_SMALL_INT 118
+  12:2d       LOAD_GLOBAL bytearray
+  b1          LOAD_FAST 1 
+  2b:01       BUILD_LIST 1
+  34:01       CALL_FUNCTION 1
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:04       LOAD_ATTR i2c
+  14:1e       LOAD_METHOD readfrom
+  22:80:76    LOAD_CONST_SMALL_INT 118
+  81          LOAD_CONST_SMALL_INT 1 
+  36:02       CALL_METHOD 2
+  c2          STORE_FAST 2 
+  b2          LOAD_FAST 2 
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  63          RETURN_VALUE 
+  children: []
+simple_name: get2Reg
+  raw bytecode: 51 3a:0e:05:2a:2c:80:2b:32:2c:b0:13:04:14:1c:22:80:76:12:2d:b1:2b:01:34:01:36:02:59:b0:13:04:14:1e:22:80:76:82:36:02:c2:b2:80:55:b2:81:55:22:82:00:f4:f2:63
+  prelude: (8, 0, 0, 2, 0, 0)
+  args: ['self', 'reg']
+  line info: 80:2b:32:2c
+  b0          LOAD_FAST 0 
+  13:04       LOAD_ATTR i2c
+  14:1c       LOAD_METHOD writeto
+  22:80:76    LOAD_CONST_SMALL_INT 118
+  12:2d       LOAD_GLOBAL bytearray
+  b1          LOAD_FAST 1 
+  2b:01       BUILD_LIST 1
+  34:01       CALL_FUNCTION 1
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:04       LOAD_ATTR i2c
+  14:1e       LOAD_METHOD readfrom
+  22:80:76    LOAD_CONST_SMALL_INT 118
+  82          LOAD_CONST_SMALL_INT 2 
+  36:02       CALL_METHOD 2
+  c2          STORE_FAST 2 
+  b2          LOAD_FAST 2 
+  80          LOAD_CONST_SMALL_INT 0 
+  55          LOAD_SUBSCR 
+  b2          LOAD_FAST 2 
+  81          LOAD_CONST_SMALL_INT 1 
+  55          LOAD_SUBSCR 
+  22:82:00    LOAD_CONST_SMALL_INT 256
+  f4          BINARY_OP 29 __mul__ 
+  f2          BINARY_OP 27 __add__ 
+  63          RETURN_VALUE 
+  children: []
+simple_name: get
+  raw bytecode: 211 51:36:1f:2a:80:30:1f:22:30:38:24:30:29:2e:2a:2a:3a:2d:25:22:1f:22:30:26:48:26:30:2a:2e:b0:14:1d:22:81:7a:36:01:8c:f0:b0:14:1d:22:81:7b:36:01:84:f0:f2:b0:14:1d:22:81:7c:36:01:84:f1:f2:c1:b1:83:f1:b0:13:06:81:f0:f3:b0:13:08:f4:8b:f1:c2:b1:84:f1:b0:13:06:f3:b1:84:f1:b0:13:06:f3:f4:8c:f1:b0:13:09:f4:8e:f1:c3:b2:b3:f2:c4:b4:85:f4:22:81:00:f2:88:f1:22:80:64:f7:b0:18:18:b4:81:f1:22:83:f4:00:f3:c2:b2:82:f1:b2:82:f1:f4:8b:f1:b0:13:0f:f4:c3:b3:b2:b0:13:0e:f4:81:f0:f2:c3:b3:82:f1:b0:13:0d:90:f0:f2:c3:b0:13:0c:b2:82:f1:b2:82:f1:f4:f4:8d:f1:83:f1:b0:13:0b:b2:f4:81:f1:f2:92:f1:c2:22:82:80:00:b2:f2:b0:13:0a:f4:8f:f1:c2:b2:80:d9:44:42:51:63
+  prelude: (11, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:30:1f:22:30:38:24:30:29:2e:2a:2a:3a:2d:25:22:1f:22:30:26:48:26:30:2a:2e
+  b0          LOAD_FAST 0 
+  14:1d       LOAD_METHOD getReg
+  22:81:7a    LOAD_CONST_SMALL_INT 250
+  36:01       CALL_METHOD 1
+  8c          LOAD_CONST_SMALL_INT 12 
+  f0          BINARY_OP 25 __lshift__ 
+  b0          LOAD_FAST 0 
+  14:1d       LOAD_METHOD getReg
+  22:81:7b    LOAD_CONST_SMALL_INT 251
+  36:01       CALL_METHOD 1
+  84          LOAD_CONST_SMALL_INT 4 
+  f0          BINARY_OP 25 __lshift__ 
+  f2          BINARY_OP 27 __add__ 
+  b0          LOAD_FAST 0 
+  14:1d       LOAD_METHOD getReg
+  22:81:7c    LOAD_CONST_SMALL_INT 252
+  36:01       CALL_METHOD 1
+  84          LOAD_CONST_SMALL_INT 4 
+  f1          BINARY_OP 26 __rshift__ 
+  f2          BINARY_OP 27 __add__ 
+  c1          STORE_FAST 1 
+  b1          LOAD_FAST 1 
+  83          LOAD_CONST_SMALL_INT 3 
+  f1          BINARY_OP 26 __rshift__ 
+  b0          LOAD_FAST 0 
+  13:06       LOAD_ATTR dig_T1
+  81          LOAD_CONST_SMALL_INT 1 
+  f0          BINARY_OP 25 __lshift__ 
+  f3          BINARY_OP 28 __sub__ 
+  b0          LOAD_FAST 0 
+  13:08       LOAD_ATTR dig_T2
+  f4          BINARY_OP 29 __mul__ 
+  8b          LOAD_CONST_SMALL_INT 11 
+  f1          BINARY_OP 26 __rshift__ 
+  c2          STORE_FAST 2 
+  b1          LOAD_FAST 1 
+  84          LOAD_CONST_SMALL_INT 4 
+  f1          BINARY_OP 26 __rshift__ 
+  b0          LOAD_FAST 0 
+  13:06       LOAD_ATTR dig_T1
+  f3          BINARY_OP 28 __sub__ 
+  b1          LOAD_FAST 1 
+  84          LOAD_CONST_SMALL_INT 4 
+  f1          BINARY_OP 26 __rshift__ 
+  b0          LOAD_FAST 0 
+  13:06       LOAD_ATTR dig_T1
+  f3          BINARY_OP 28 __sub__ 
+  f4          BINARY_OP 29 __mul__ 
+  8c          LOAD_CONST_SMALL_INT 12 
+  f1          BINARY_OP 26 __rshift__ 
+  b0          LOAD_FAST 0 
+  13:09       LOAD_ATTR dig_T3
+  f4          BINARY_OP 29 __mul__ 
+  8e          LOAD_CONST_SMALL_INT 14 
+  f1          BINARY_OP 26 __rshift__ 
+  c3          STORE_FAST 3 
+  b2          LOAD_FAST 2 
+  b3          LOAD_FAST 3 
+  f2          BINARY_OP 27 __add__ 
+  c4          STORE_FAST 4 
+  b4          LOAD_FAST 4 
+  85          LOAD_CONST_SMALL_INT 5 
+  f4          BINARY_OP 29 __mul__ 
+  22:81:00    LOAD_CONST_SMALL_INT 128
+  f2          BINARY_OP 27 __add__ 
+  88          LOAD_CONST_SMALL_INT 8 
+  f1          BINARY_OP 26 __rshift__ 
+  22:80:64    LOAD_CONST_SMALL_INT 100
+  f7          BINARY_OP 32 __truediv__ 
+  b0          LOAD_FAST 0 
+  18:18       STORE_ATTR T
+  b4          LOAD_FAST 4 
+  81          LOAD_CONST_SMALL_INT 1 
+  f1          BINARY_OP 26 __rshift__ 
+  22:83:f4:00 LOAD_CONST_SMALL_INT 64000
+  f3          BINARY_OP 28 __sub__ 
+  c2          STORE_FAST 2 
+  b2          LOAD_FAST 2 
+  82          LOAD_CONST_SMALL_INT 2 
+  f1          BINARY_OP 26 __rshift__ 
+  b2          LOAD_FAST 2 
+  82          LOAD_CONST_SMALL_INT 2 
+  f1          BINARY_OP 26 __rshift__ 
+  f4          BINARY_OP 29 __mul__ 
+  8b          LOAD_CONST_SMALL_INT 11 
+  f1          BINARY_OP 26 __rshift__ 
+  b0          LOAD_FAST 0 
+  13:0f       LOAD_ATTR dig_P6
+  f4          BINARY_OP 29 __mul__ 
+  c3          STORE_FAST 3 
+  b3          LOAD_FAST 3 
+  b2          LOAD_FAST 2 
+  b0          LOAD_FAST 0 
+  13:0e       LOAD_ATTR dig_P5
+  f4          BINARY_OP 29 __mul__ 
+  81          LOAD_CONST_SMALL_INT 1 
+  f0          BINARY_OP 25 __lshift__ 
+  f2          BINARY_OP 27 __add__ 
+  c3          STORE_FAST 3 
+  b3          LOAD_FAST 3 
+  82          LOAD_CONST_SMALL_INT 2 
+  f1          BINARY_OP 26 __rshift__ 
+  b0          LOAD_FAST 0 
+  13:0d       LOAD_ATTR dig_P4
+  90          LOAD_CONST_SMALL_INT 16 
+  f0          BINARY_OP 25 __lshift__ 
+  f2          BINARY_OP 27 __add__ 
+  c3          STORE_FAST 3 
+  b0          LOAD_FAST 0 
+  13:0c       LOAD_ATTR dig_P3
+  b2          LOAD_FAST 2 
+  82          LOAD_CONST_SMALL_INT 2 
+  f1          BINARY_OP 26 __rshift__ 
+  b2          LOAD_FAST 2 
+  82          LOAD_CONST_SMALL_INT 2 
+  f1          BINARY_OP 26 __rshift__ 
+  f4          BINARY_OP 29 __mul__ 
+  f4          BINARY_OP 29 __mul__ 
+  8d          LOAD_CONST_SMALL_INT 13 
+  f1          BINARY_OP 26 __rshift__ 
+  83          LOAD_CONST_SMALL_INT 3 
+  f1          BINARY_OP 26 __rshift__ 
+  b0          LOAD_FAST 0 
+  13:0b       LOAD_ATTR dig_P2
+  b2          LOAD_FAST 2 
+  f4          BINARY_OP 29 __mul__ 
+  81          LOAD_CONST_SMALL_INT 1 
+  f1          BINARY_OP 26 __rshift__ 
+  f2          BINARY_OP 27 __add__ 
+  92          LOAD_CONST_SMALL_INT 18 
+  f1          BINARY_OP 26 __rshift__ 
+  c2          STORE_FAST 2 
+  22:82:80:00 LOAD_CONST_SMALL_INT 32768
+  b2          LOAD_FAST 2 
+  f2          BINARY_OP 27 __add__ 
+  b0          LOAD_FAST 0 
+  13:0a       LOAD_ATTR dig_P1
+  f4          BINARY_OP 29 __mul__ 
+  8f          LOAD_CONST_SMALL_INT 15 
+  f1          BINARY_OP 26 __rshift__ 
+  c2          STORE_FAST 2 
+  b2          LOAD_FAST 2 
+  80          LOAD_CONST_SMALL_INT 0 
+  d9          BINARY_OP 2 __eq__ 
+  44:42       POP_JUMP_IF_FALSE 2
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: getTemp
+  raw bytecode: 17 11:0a:20:2a:80:49:26:b0:14:1f:36:00:59:b0:13:18:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:49:26
+  b0          LOAD_FAST 0 
+  14:1f       LOAD_METHOD get
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:18       LOAD_ATTR T
+  63          RETURN_VALUE 
+  children: []
+simple_name: getPress
+  raw bytecode: 17 11:0a:21:2a:80:4d:26:b0:14:1f:36:00:59:b0:13:19:63
+  prelude: (3, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:4d:26
+  b0          LOAD_FAST 0 
+  14:1f       LOAD_METHOD get
+  36:00       CALL_METHOD 0
+  59          POP_TOP 
+  b0          LOAD_FAST 0 
+  13:19       LOAD_ATTR P
+  63          RETURN_VALUE 
+  children: []
+simple_name: getAltitude
+  raw bytecode: 30 29:08:22:2a:80:51:10:23:22:82:da:2a:81:b0:14:21:36:00:22:86:97:4d:f7:23:01:f9:f3:f4:f8:63
+  prelude: (6, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:51
+  10:23       LOAD_CONST_STRING %.2f
+  22:82:da:2a LOAD_CONST_SMALL_INT 44330
+  81          LOAD_CONST_SMALL_INT 1 
+  b0          LOAD_FAST 0 
+  14:21       LOAD_METHOD getPress
+  36:00       CALL_METHOD 0
+  22:86:97:4d LOAD_CONST_SMALL_INT 101325
+  f7          BINARY_OP 32 __truediv__ 
+  23:01       LOAD_CONST_OBJ 0.19025875627994537
+  f9          BINARY_OP 34 __pow__ 
+  f3          BINARY_OP 28 __sub__ 
+  f4          BINARY_OP 29 __mul__ 
+  f8          BINARY_OP 33 __mod__ 
+  63          RETURN_VALUE 
+  children: []
+simple_name: poweroff
+  raw bytecode: 18 21:08:24:2a:80:54:b0:14:16:22:81:74:80:36:02:59:51:63
+  prelude: (5, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:54
+  b0          LOAD_FAST 0 
+  14:16       LOAD_METHOD setReg
+  22:81:74    LOAD_CONST_SMALL_INT 244
+  80          LOAD_CONST_SMALL_INT 0 
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []
+simple_name: poweron
+  raw bytecode: 18 21:08:25:2a:80:57:b0:14:16:22:81:74:af:36:02:59:51:63
+  prelude: (5, 0, 0, 1, 0, 0)
+  args: ['self']
+  line info: 80:57
+  b0          LOAD_FAST 0 
+  14:16       LOAD_METHOD setReg
+  22:81:74    LOAD_CONST_SMALL_INT 244
+  af          LOAD_CONST_SMALL_INT 47 
+  36:02       CALL_METHOD 2
+  59          POP_TOP 
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: []

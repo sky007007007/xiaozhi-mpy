@@ -1,0 +1,115 @@
+mpy_source_file: extracted/asyncio___init__.py.mpy
+source_file: asyncio/__init__.py
+header: 4d:06:00:1f
+arch: NONE
+qstr_table[21] (* for static qstrs):
+    'asyncio/__init__.py' 
+    '<module>' *
+    '*' *
+    'core' 
+    'funcs' 
+    'wait_for' 
+    'gather' 
+    'event' 
+    'Event' 
+    'lock' 
+    'Lock' 
+    'stream' 
+    '__getattr__' *
+    'get' *
+    '__version__' 
+    '_attrs' 
+    'attr' 
+    'AttributeError' *
+    'getattr' *
+    '__import__' 
+    'globals' *
+obj_table: [(3, 0, 0), 'wait_for_ms', 'ThreadSafeFlag', 'open_connection', 'start_server', 'StreamReader', 'StreamWriter']
+simple_name: <module>
+  raw bytecode: 75 10:02:01:81:10:02:2a:01:1b:03:69:23:00:16:0e:2c:0a:10:04:10:05:62:10:04:23:01:62:10:04:10:06:62:10:07:10:08:62:10:07:23:02:62:10:09:10:0a:62:10:0b:23:03:62:10:0b:23:04:62:10:0b:23:05:62:10:0b:23:06:62:16:0f:32:00:16:0c:51:63
+  prelude: (3, 0, 0, 0, 0, 0)
+  args: []
+  line info: 
+  81          LOAD_CONST_SMALL_INT 1 
+  10:02       LOAD_CONST_STRING *
+  2a:01       BUILD_TUPLE 1
+  1b:03       IMPORT_NAME core
+  69          IMPORT_STAR 
+  23:00       LOAD_CONST_OBJ (3, 0, 0)
+  16:0e       STORE_NAME __version__
+  2c:0a       BUILD_MAP 10
+  10:04       LOAD_CONST_STRING funcs
+  10:05       LOAD_CONST_STRING wait_for
+  62          STORE_MAP 
+  10:04       LOAD_CONST_STRING funcs
+  23:01       LOAD_CONST_OBJ 'wait_for_ms'
+  62          STORE_MAP 
+  10:04       LOAD_CONST_STRING funcs
+  10:06       LOAD_CONST_STRING gather
+  62          STORE_MAP 
+  10:07       LOAD_CONST_STRING event
+  10:08       LOAD_CONST_STRING Event
+  62          STORE_MAP 
+  10:07       LOAD_CONST_STRING event
+  23:02       LOAD_CONST_OBJ 'ThreadSafeFlag'
+  62          STORE_MAP 
+  10:09       LOAD_CONST_STRING lock
+  10:0a       LOAD_CONST_STRING Lock
+  62          STORE_MAP 
+  10:0b       LOAD_CONST_STRING stream
+  23:03       LOAD_CONST_OBJ 'open_connection'
+  62          STORE_MAP 
+  10:0b       LOAD_CONST_STRING stream
+  23:04       LOAD_CONST_OBJ 'start_server'
+  62          STORE_MAP 
+  10:0b       LOAD_CONST_STRING stream
+  23:05       LOAD_CONST_OBJ 'StreamReader'
+  62          STORE_MAP 
+  10:0b       LOAD_CONST_STRING stream
+  23:06       LOAD_CONST_OBJ 'StreamWriter'
+  62          STORE_MAP 
+  16:0f       STORE_NAME _attrs
+  32:00       MAKE_FUNCTION 0
+  16:0c       STORE_NAME __getattr__
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: [__getattr__]
+simple_name: __getattr__
+  raw bytecode: 51 49:04:0c:10:12:0f:14:0d:b0:51:36:02:c1:b1:51:de:44:46:12:11:b0:34:01:65:12:12:12:13:b1:12:14:34:00:51:52:81:34:05:b0:34:02:c2:b2:12:14:34:00:b0:56:b2:63
+  prelude: (10, 0, 0, 1, 0, 0)
+  args: ['attr']
+  line info: 
+  12:0f       LOAD_GLOBAL _attrs
+  14:0d       LOAD_METHOD get
+  b0          LOAD_FAST 0 
+  51          LOAD_CONST_NONE 
+  36:02       CALL_METHOD 2
+  c1          STORE_FAST 1 
+  b1          LOAD_FAST 1 
+  51          LOAD_CONST_NONE 
+  de          BINARY_OP 7 <is> 
+  44:46       POP_JUMP_IF_FALSE 6
+  12:11       LOAD_GLOBAL AttributeError
+  b0          LOAD_FAST 0 
+  34:01       CALL_FUNCTION 1
+  65          RAISE_OBJ 
+  12:12       LOAD_GLOBAL getattr
+  12:13       LOAD_GLOBAL __import__
+  b1          LOAD_FAST 1 
+  12:14       LOAD_GLOBAL globals
+  34:00       CALL_FUNCTION 0
+  51          LOAD_CONST_NONE 
+  52          LOAD_CONST_TRUE 
+  81          LOAD_CONST_SMALL_INT 1 
+  34:05       CALL_FUNCTION 5
+  b0          LOAD_FAST 0 
+  34:02       CALL_FUNCTION 2
+  c2          STORE_FAST 2 
+  b2          LOAD_FAST 2 
+  12:14       LOAD_GLOBAL globals
+  34:00       CALL_FUNCTION 0
+  b0          LOAD_FAST 0 
+  56          STORE_SUBSCR 
+  b2          LOAD_FAST 2 
+  63          RETURN_VALUE 
+  children: []

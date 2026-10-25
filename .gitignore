@@ -1,0 +1,13 @@
+# 工作文件
+__pycache__/
+*.pyc
+.DS_Store
+
+# 构建产物
+build/
+dist/
+*.elf
+*.map
+
+# 串口日志
+*.log
